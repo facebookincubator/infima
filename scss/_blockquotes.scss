@@ -1,0 +1,15 @@
+.markswatch-body blockquote {
+  border-left: 0.25em solid #dfe2e5;
+  color: #6a737d;
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0 1em;
+}
+
+.markswatch-body blockquote > :first-child {
+  margin-top: 0;
+}
+
+.markswatch-body blockquote > :last-child {
+  margin-bottom: 0;
+}

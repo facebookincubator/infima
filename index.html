@@ -6,21 +6,36 @@
     <title>Markswatch</title>
     <style>
       body {
-      box-sizing: border-box;
-      min-width: 200px;
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 45px;
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
       }
       .section {
-      margin: 4rem auto;
+        margin: 4rem auto;
+      }
+      .theme-switcher {
+        float: right;
       }
     </style>
-    <link href="css/github.css" type="text/css" rel="stylesheet">
+    <link id="theme-stylesheet" href="css/github.css" type="text/css" rel="stylesheet">
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const $themeStylesheet = document.getElementById('theme-stylesheet');
+        document.querySelector('.theme-switcher').addEventListener('change', function (event) {
+          $themeStylesheet.setAttribute('href', 'css/' + event.target.value + '.css');
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="markdown-body markswatch-body">
       <h1>Markswatch</h1>
+      <select class="theme-switcher">
+        <option value="github">Github</option>
+        <option value="medium">Medium</option>
+      </select>
       <p>A collection of themes for Markdown.</p>
       <div class="section">
         <h2>Headers</h2>

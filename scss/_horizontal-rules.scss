@@ -1,0 +1,22 @@
+.markswatch-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  border-bottom-color: #eee;
+  box-sizing: content-box;
+  height: 0.25em;
+  margin: 24px 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.markswatch-body hr::before {
+  content: '';
+  display: table;
+}
+
+.markswatch-body hr::after {
+  clear: both;
+  content: '';
+  display: table;
+}

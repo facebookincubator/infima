@@ -1,0 +1,13 @@
+.markswatch-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markswatch-body img[align='right'] {
+  padding-left: 20px;
+}
+
+.markswatch-body img[align='left'] {
+  padding-right: 20px;
+}
