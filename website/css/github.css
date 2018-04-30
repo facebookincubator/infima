@@ -1,13 +1,28 @@
 .markswatch-body {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  line-height: 1.5;
   color: #24292e;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 16px;
   line-height: 1.5;
+  line-height: 1.5;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   word-wrap: break-word;
+}
+
+.markswatch-body::before {
+  content: '';
+  display: table;
+}
+
+.markswatch-body::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.markswatch-body * {
+  box-sizing: border-box;
 }
 
 .markswatch-body a {
@@ -23,28 +38,13 @@
   font-weight: bolder;
 }
 
-.markswatch-body h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 .markswatch-body img {
   border-style: none;
-}
-
-.markswatch-body hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
 }
 
 .markswatch-body [type='checkbox'] {
   box-sizing: border-box;
   padding: 0;
-}
-
-.markswatch-body * {
-  box-sizing: border-box;
 }
 
 .markswatch-body a {
@@ -60,97 +60,9 @@
   font-weight: 600;
 }
 
-.markswatch-body hr {
-  height: 0;
-  margin: 15px 0;
-  overflow: hidden;
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid #dfe2e5;
-}
-
-.markswatch-body hr::before {
-  display: table;
-  content: '';
-}
-
-.markswatch-body hr::after {
-  display: table;
-  clear: both;
-  content: '';
-}
-
-.markswatch-body table {
-  border-spacing: 0;
-  border-collapse: collapse;
-}
-
-.markswatch-body td,
-.markswatch-body th {
-  padding: 0;
-}
-
-.markswatch-body h1,
-.markswatch-body h2,
-.markswatch-body h3,
-.markswatch-body h4,
-.markswatch-body h5,
-.markswatch-body h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .markswatch-body p {
+  margin-bottom: 16px;
   margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.markswatch-body blockquote {
-  margin: 0;
-}
-
-.markswatch-body ul,
-.markswatch-body ol {
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.markswatch-body ol ol,
-.markswatch-body ul ol {
-  list-style-type: lower-roman;
-}
-
-.markswatch-body ul ul ol,
-.markswatch-body ul ol ol,
-.markswatch-body ol ul ol,
-.markswatch-body ol ol ol {
-  list-style-type: lower-alpha;
-}
-
-.markswatch-body code {
-  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
-    monospace;
-  font-size: 12px;
-}
-
-.markswatch-body pre {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
-    monospace;
-  font-size: 12px;
-}
-
-.markswatch-body::before {
-  display: table;
-  content: '';
-}
-
-.markswatch-body::after {
-  display: table;
-  clear: both;
-  content: '';
 }
 
 .markswatch-body > *:first-child {
@@ -166,63 +78,14 @@
   text-decoration: none;
 }
 
-.markswatch-body .anchor {
-  float: left;
-  padding-right: 4px;
-  margin-left: -20px;
-  line-height: 1;
-}
-
-.markswatch-body .anchor:focus {
-  outline: none;
-}
-
 .markswatch-body p,
-.markswatch-body blockquote,
-.markswatch-body ul,
-.markswatch-body ol,
-.markswatch-body dl,
 .markswatch-body table,
 .markswatch-body pre {
-  margin-top: 0;
   margin-bottom: 16px;
-}
-
-.markswatch-body hr {
-  height: 0.25em;
-  padding: 0;
-  margin: 24px 0;
-  background-color: #e1e4e8;
-  border: 0;
-}
-
-.markswatch-body blockquote {
-  padding: 0 1em;
-  color: #6a737d;
-  border-left: 0.25em solid #dfe2e5;
-}
-
-.markswatch-body blockquote > :first-child {
   margin-top: 0;
 }
 
-.markswatch-body blockquote > :last-child {
-  margin-bottom: 0;
-}
-
-.markswatch-body kbd {
-  display: inline-block;
-  padding: 3px 5px;
-  font-size: 11px;
-  line-height: 10px;
-  color: #444d56;
-  vertical-align: middle;
-  background-color: #fafbfc;
-  border: solid 1px #c6cbd1;
-  border-bottom-color: #959da5;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 #959da5;
-}
+/* Headers */
 
 .markswatch-body h1,
 .markswatch-body h2,
@@ -230,22 +93,22 @@
 .markswatch-body h4,
 .markswatch-body h5,
 .markswatch-body h6 {
-  margin-top: 24px;
-  margin-bottom: 16px;
   font-weight: 600;
   line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
 }
 
 .markswatch-body h1 {
-  padding-bottom: 0.3em;
-  font-size: 2em;
   border-bottom: 1px solid #eaecef;
+  font-size: 2em;
+  padding-bottom: 0.3em;
 }
 
 .markswatch-body h2 {
-  padding-bottom: 0.3em;
-  font-size: 1.5em;
   border-bottom: 1px solid #eaecef;
+  font-size: 1.5em;
+  padding-bottom: 0.3em;
 }
 
 .markswatch-body h3 {
@@ -261,8 +124,29 @@
 }
 
 .markswatch-body h6 {
-  font-size: 0.85em;
   color: #6a737d;
+  font-size: 0.85em;
+}
+
+/* Lists */
+
+.markswatch-body ul,
+.markswatch-body ol {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markswatch-body ol ol,
+.markswatch-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markswatch-body ul ul ol,
+.markswatch-body ul ol ol,
+.markswatch-body ol ul ol,
+.markswatch-body ol ol ol {
+  list-style-type: lower-alpha;
 }
 
 .markswatch-body ul,
@@ -274,8 +158,8 @@
 .markswatch-body ul ol,
 .markswatch-body ol ol,
 .markswatch-body ol ul {
-  margin-top: 0;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .markswatch-body li {
@@ -290,10 +174,30 @@
   margin-top: 0.25em;
 }
 
+/* Images */
+
+.markswatch-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markswatch-body img[align='right'] {
+  padding-left: 20px;
+}
+
+.markswatch-body img[align='left'] {
+  padding-right: 20px;
+}
+
+/* Tables */
+
 .markswatch-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
   display: block;
-  width: 100%;
   overflow: auto;
+  width: 100%;
 }
 
 .markswatch-body table th {
@@ -302,8 +206,8 @@
 
 .markswatch-body table th,
 .markswatch-body table td {
-  padding: 6px 13px;
   border: 1px solid #dfe2e5;
+  padding: 6px 13px;
 }
 
 .markswatch-body table tr {
@@ -315,78 +219,111 @@
   background-color: #f6f8fa;
 }
 
-.markswatch-body img {
-  max-width: 100%;
-  box-sizing: content-box;
-  background-color: #fff;
+/* Blockquotes */
+
+.markswatch-body blockquote {
+  border-left: 0.25em solid #dfe2e5;
+  color: #6a737d;
+  margin: 0;
+  padding: 0 1em;
 }
 
-.markswatch-body img[align='right'] {
-  padding-left: 20px;
+.markswatch-body blockquote > :first-child {
+  margin-top: 0;
 }
 
-.markswatch-body img[align='left'] {
-  padding-right: 20px;
+.markswatch-body blockquote > :last-child {
+  margin-bottom: 0;
 }
+
+/* Code */
 
 .markswatch-body code {
-  padding: 0.2em 0.4em;
-  margin: 0;
-  font-size: 85%;
   background-color: rgba(27, 31, 35, 0.05);
   border-radius: 3px;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
+    monospace;
+  font-size: 85%;
+  margin: 0;
+  padding: 0.2em 0.4em;
 }
 
 .markswatch-body pre {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
+    monospace;
+  font-size: 12px;
+  margin-bottom: 0;
+  margin-top: 0;
   word-wrap: normal;
 }
 
 .markswatch-body pre > code {
-  padding: 0;
-  margin: 0;
-  font-size: 100%;
-  word-break: normal;
-  white-space: pre;
   background: transparent;
   border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
 }
 
 .markswatch-body pre {
-  padding: 16px;
-  overflow: auto;
-  font-size: 85%;
-  line-height: 1.45;
   background-color: #f6f8fa;
   border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
 }
 
 .markswatch-body pre code {
-  display: inline;
-  max-width: auto;
-  padding: 0;
-  margin: 0;
-  overflow: visible;
-  line-height: inherit;
-  word-wrap: normal;
   background-color: transparent;
   border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
 }
 
 .markswatch-body kbd {
-  display: inline-block;
-  padding: 3px 5px;
-  font: 11px 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
-    monospace;
-  line-height: 10px;
-  color: #444d56;
-  vertical-align: middle;
   background-color: #fafbfc;
   border: solid 1px #d1d5da;
   border-bottom-color: #c6cbd1;
   border-radius: 3px;
   box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
+    monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
 }
 
+/* Horizontal Rules */
+
 .markswatch-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
   border-bottom-color: #eee;
+  box-sizing: content-box;
+  height: 0.25em;
+  margin: 24px 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.markswatch-body hr::before {
+  content: '';
+  display: table;
+}
+
+.markswatch-body hr::after {
+  clear: both;
+  content: '';
+  display: table;
 }
