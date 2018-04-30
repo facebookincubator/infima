@@ -1,0 +1,14 @@
+{
+  "name": "markswatch-website",
+  "version": "0.1.0",
+  "description": "Website for displaying Markswatch themes",
+  "main": "index.js",
+  "author": "Yangshun Tay",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-webserver": "^0.9.1"
+  }
+}
