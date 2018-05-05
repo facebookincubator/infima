@@ -1,19 +1,19 @@
 .markswatch-body {
-  color: $base-font-color;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: 1.5;
+  color: $font-color-base;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   word-wrap: break-word;
 }
 
-.markswatch-body::before {
+.markswatch-body:before {
   content: '';
   display: table;
 }
 
-.markswatch-body::after {
+.markswatch-body:after {
   clear: both;
   content: '';
   display: table;
@@ -23,21 +23,8 @@
   box-sizing: border-box;
 }
 
-.markswatch-body a {
-  background-color: transparent;
-}
-
-.markswatch-body a:active,
-.markswatch-body a:hover {
-  outline-width: 0;
-}
-
 .markswatch-body strong {
-  font-weight: bolder;
-}
-
-.markswatch-body img {
-  border-style: none;
+  font-weight: $font-weight-bold;
 }
 
 .markswatch-body [type='checkbox'] {
@@ -45,21 +32,30 @@
   padding: 0;
 }
 
+// Links
 .markswatch-body a {
-  color: #0366d6;
-  text-decoration: none;
+  color: $link-color;
+  text-decoration: $link-decoration;
 }
 
 .markswatch-body a:hover {
-  text-decoration: underline;
+  color: $link-hover-color;
+  text-decoration: $link-hover-decoration;
 }
 
-.markswatch-body strong {
-  font-weight: 600;
+.markswatch-body a:active,
+.markswatch-body a:hover {
+  outline-width: 0;
 }
 
+.markswatch-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+// Paragraphs
 .markswatch-body p {
-  margin-bottom: 16px;
+  margin-bottom: $paragraph-margin-bottom;
   margin-top: 0;
 }
 
@@ -69,17 +65,4 @@
 
 .markswatch-body > *:last-child {
   margin-bottom: 0 !important;
-}
-
-.markswatch-body a:not([href]) {
-  color: inherit;
-  text-decoration: none;
-}
-
-.markswatch-body p,
-.markswatch-body table,
-.markswatch-body blockquote,
-.markswatch-body pre {
-  margin-bottom: 16px;
-  margin-top: 0;
 }

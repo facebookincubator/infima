@@ -7,11 +7,11 @@
   -webkit-text-size-adjust: 100%;
   word-wrap: break-word; }
 
-.markswatch-body::before {
+.markswatch-body:before {
   content: '';
   display: table; }
 
-.markswatch-body::after {
+.markswatch-body:after {
   clear: both;
   content: '';
   display: table; }
@@ -19,18 +19,8 @@
 .markswatch-body * {
   box-sizing: border-box; }
 
-.markswatch-body a {
-  background-color: transparent; }
-
-.markswatch-body a:active,
-.markswatch-body a:hover {
-  outline-width: 0; }
-
 .markswatch-body strong {
-  font-weight: bolder; }
-
-.markswatch-body img {
-  border-style: none; }
+  font-weight: 600; }
 
 .markswatch-body [type='checkbox'] {
   box-sizing: border-box;
@@ -41,13 +31,19 @@
   text-decoration: none; }
 
 .markswatch-body a:hover {
+  color: #0366d6;
   text-decoration: underline; }
 
-.markswatch-body strong {
-  font-weight: 600; }
+.markswatch-body a:active,
+.markswatch-body a:hover {
+  outline-width: 0; }
+
+.markswatch-body a:not([href]) {
+  color: inherit;
+  text-decoration: none; }
 
 .markswatch-body p {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   margin-top: 0; }
 
 .markswatch-body > *:first-child {
@@ -56,70 +52,45 @@
 .markswatch-body > *:last-child {
   margin-bottom: 0 !important; }
 
-.markswatch-body a:not([href]) {
-  color: inherit;
-  text-decoration: none; }
-
-.markswatch-body p,
-.markswatch-body table,
-.markswatch-body blockquote,
-.markswatch-body pre {
-  margin-bottom: 16px;
-  margin-top: 0; }
-
 .markswatch-body h1,
 .markswatch-body h2,
 .markswatch-body h3,
 .markswatch-body h4,
 .markswatch-body h5,
 .markswatch-body h6 {
+  color: inherit;
   font-weight: 600;
   line-height: 1.25;
   margin-bottom: 16px;
   margin-top: 24px; }
 
 .markswatch-body h1 {
-  border-bottom: 1px solid #eaecef;
-  font-size: 2em;
-  padding-bottom: 0.3em; }
+  font-size: 32px; }
 
 .markswatch-body h2 {
-  border-bottom: 1px solid #eaecef;
-  font-size: 1.5em;
-  padding-bottom: 0.3em; }
+  font-size: 24px; }
 
 .markswatch-body h3 {
-  font-size: 1.25em; }
+  font-size: 20px; }
 
 .markswatch-body h4 {
-  font-size: 1em; }
+  font-size: 16px; }
 
 .markswatch-body h5 {
-  font-size: 0.875em; }
+  font-size: 14px; }
 
 .markswatch-body h6 {
-  color: #6a737d;
-  font-size: 0.85em; }
+  font-size: 13.6px; }
 
 .markswatch-body ul,
 .markswatch-body ol {
-  margin-bottom: 0;
+  margin-bottom: 16px;
   margin-top: 0;
-  padding-left: 0; }
+  padding-left: 2em; }
 
 .markswatch-body ol ol,
 .markswatch-body ul ol {
   list-style-type: lower-roman; }
-
-.markswatch-body ul ul ol,
-.markswatch-body ul ol ol,
-.markswatch-body ol ul ol,
-.markswatch-body ol ol ol {
-  list-style-type: lower-alpha; }
-
-.markswatch-body ul,
-.markswatch-body ol {
-  padding-left: 2em; }
 
 .markswatch-body ul ul,
 .markswatch-body ul ol,
@@ -127,6 +98,12 @@
 .markswatch-body ol ul {
   margin-bottom: 0;
   margin-top: 0; }
+
+.markswatch-body ul ul ol,
+.markswatch-body ul ol ol,
+.markswatch-body ol ul ol,
+.markswatch-body ol ol ol {
+  list-style-type: lower-alpha; }
 
 .markswatch-body li {
   word-wrap: break-all; }
@@ -139,6 +116,7 @@
 
 .markswatch-body img {
   background-color: #fff;
+  border-style: none;
   box-sizing: content-box;
   max-width: 100%; }
 
@@ -152,10 +130,14 @@
   border-collapse: collapse;
   border-spacing: 0;
   display: block;
+  margin-bottom: 16px;
+  margin-top: 0;
   overflow: auto;
   width: 100%; }
 
 .markswatch-body table th {
+  background-color: inherit;
+  color: inherit;
   font-weight: 600; }
 
 .markswatch-body table th,
@@ -164,15 +146,15 @@
   padding: 6px 13px; }
 
 .markswatch-body table tr {
-  background-color: #fff;
-  border-top: 1px solid #c6cbd1; }
+  background-color: transparent;
+  border-top: 1px solid #dfe2e5; }
 
 .markswatch-body table tr:nth-child(2n) {
   background-color: #f6f8fa; }
 
 .markswatch-body blockquote {
-  border-left: 0.25em solid #dfe2e5;
   color: #6a737d;
+  font-size: 16px;
   margin: 0;
   margin-bottom: 16px;
   padding: 0 1em; }
@@ -186,44 +168,37 @@
 .markswatch-body code {
   background-color: rgba(27, 31, 35, 0.05);
   border-radius: 3px;
-  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  color: inherit;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 85%;
   margin: 0;
   padding: 0.2em 0.4em; }
 
 .markswatch-body pre {
-  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-  font-size: 12px;
-  margin-bottom: 0;
-  margin-top: 0;
-  word-wrap: normal; }
-
-.markswatch-body pre > code {
-  background: transparent;
-  border: 0;
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  white-space: pre;
-  word-break: normal; }
-
-.markswatch-body pre {
   background-color: #f6f8fa;
   border-radius: 3px;
+  color: inherit;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 85%;
   line-height: 1.45;
+  margin-bottom: 16px;
+  margin-top: 0;
   overflow: auto;
-  padding: 16px; }
+  padding: 16px;
+  word-wrap: normal; }
 
 .markswatch-body pre code {
   background-color: transparent;
   border: 0;
   display: inline;
+  font-size: 100%;
   line-height: inherit;
   margin: 0;
   max-width: auto;
   overflow: visible;
   padding: 0;
+  white-space: pre;
+  word-break: normal;
   word-wrap: normal; }
 
 .markswatch-body kbd {
@@ -234,18 +209,17 @@
   box-shadow: inset 0 -1px 0 #c6cbd1;
   color: #444d56;
   display: inline-block;
-  font: 11px 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 11px;
   line-height: 10px;
   padding: 3px 5px;
   vertical-align: middle; }
 
 .markswatch-body hr {
-  background-color: #e1e4e8;
-  border: 0;
-  border-bottom: 1px solid #dfe2e5;
-  border-bottom-color: #eee;
+  border-color: #dfe2e5;
+  border-style: solid;
+  border-width: 1px;
   box-sizing: content-box;
-  height: 0.25em;
   margin: 24px 0;
   overflow: hidden;
   padding: 0; }
@@ -258,3 +232,21 @@
   clear: both;
   content: '';
   display: table; }
+
+.markswatch-body h1,
+.markswatch-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 0.3em; }
+
+.markswatch-body h6 {
+  color: #6a737d; }
+
+.markswatch-body blockquote {
+  border-left: 0.25em solid #dfe2e5; }
+
+.markswatch-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  border-bottom-color: #eee;
+  height: 0.25em; }

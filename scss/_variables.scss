@@ -1,9 +1,99 @@
-$base-font-color: #000 !default;
-$base-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
-  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-  'Segoe UI Symbol' !default;
-$base-font-size: 16px !default;
+// Themes
+$theme-color: #0366d6;
 
-$header-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
-  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-  'Segoe UI Symbol' !default;
+// Grid
+$vertical-space: 16px;
+$border-width: 1px !default;
+
+// Typography
+$font-color-base: #24292e !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  'Liberation Mono', 'Courier New', monospace !default;
+$font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  !default;
+
+$font-size-base: 16px !default;
+
+$font-weight-normal: 400 !default;
+$font-weight-bold: 600 !default;
+
+$font-weight-base: $font-weight-normal !default;
+
+$line-height-base: 1.5 !default;
+
+// Links
+$link-color: $theme-color !default;
+$link-decoration: none !default;
+$link-hover-color: $link-color !default;
+$link-hover-decoration: underline !default;
+
+// Paragraphs
+$paragraph-margin-bottom: 1rem !default;
+
+// Headings
+$headings-margin-top: 24px !default;
+$headings-margin-bottom: $vertical-space !default;
+$headings-font-family: inherit !default;
+$headings-font-weight: $font-weight-bold !default;
+$headings-line-height: 1.25 !default;
+
+$h1-font-size: $font-size-base * 2 !default;
+$h2-font-size: $font-size-base * 1.5 !default;
+$h3-font-size: $font-size-base * 1.25 !default;
+$h4-font-size: $font-size-base * 1 !default;
+$h5-font-size: $font-size-base * 0.875 !default;
+$h6-font-size: $font-size-base * 0.85 !default;
+
+$headings-color: inherit !default;
+
+// Lists
+$list-left-padding: 2em !default;
+$list-margin: 16px !default;
+$list-item-margin: 0.25em !default;
+$list-paragraph-margin: 16px !default;
+
+// Images
+$image-alignment-padding: 20px;
+
+// Tables
+$table-cell-padding: 6px 13px !default;
+$table-cell-padding-sm: 6px 13px !default;
+
+$table-bg: transparent !default;
+$table-stripe-bg: #f6f8fa !default;
+
+$table-border-width: $border-width !default;
+$table-border-color: #dfe2e5 !default;
+
+$table-head-bg: inherit !default;
+$table-head-color: inherit !default;
+$table-head-font-weight: $font-weight-bold !default;
+
+// Blockquotes
+$blockquote-color: #6a737d !default;
+$blockquote-font-size: $font-size-base !default;
+$blockquote-padding: 0 1em !default;
+
+// Code
+$code-bg: rgba(27, 31, 35, 0.05) !default;
+$code-border-radius: 3px !default;
+$code-color: inherit !default;
+$code-font-size: 85% !default;
+
+$pre-bg: #f6f8fa !default;
+$pre-color: inherit !default;
+$pre-line-height: 1.45 !default;
+$pre-padding: 16px !default;
+$pre-scrollable-max-height: 340px !default;
+
+$kbd-bg: #fafbfc !default;
+$kbd-color: #444d56 !default;
+$kbd-font-size: 11px !default;
+$kbd-padding-y: 3px !default;
+$kbd-padding-x: 5px !default;
+
+// Horizontal Rules
+$hr-border-color: #dfe2e5 !default;
+$hr-border-width: $border-width !default;
+$hr-vertical-margin: 24px !default;

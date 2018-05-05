@@ -1,25 +1,13 @@
 .markswatch-body ul,
 .markswatch-body ol {
-  margin-bottom: 0;
+  margin-bottom: $list-margin;
   margin-top: 0;
-  padding-left: 0;
+  padding-left: $list-left-padding;
 }
 
 .markswatch-body ol ol,
 .markswatch-body ul ol {
   list-style-type: lower-roman;
-}
-
-.markswatch-body ul ul ol,
-.markswatch-body ul ol ol,
-.markswatch-body ol ul ol,
-.markswatch-body ol ol ol {
-  list-style-type: lower-alpha;
-}
-
-.markswatch-body ul,
-.markswatch-body ol {
-  padding-left: 2em;
 }
 
 .markswatch-body ul ul,
@@ -30,14 +18,21 @@
   margin-top: 0;
 }
 
+.markswatch-body ul ul ol,
+.markswatch-body ul ol ol,
+.markswatch-body ol ul ol,
+.markswatch-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
 .markswatch-body li {
   word-wrap: break-all;
 }
 
 .markswatch-body li > p {
-  margin-top: 16px;
+  margin-top: $list-paragraph-margin;
 }
 
 .markswatch-body li + li {
-  margin-top: 0.25em;
+  margin-top: $list-item-margin;
 }

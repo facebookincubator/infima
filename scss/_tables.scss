@@ -2,25 +2,29 @@
   border-collapse: collapse;
   border-spacing: 0;
   display: block;
+  margin-bottom: $vertical-space;
+  margin-top: 0;
   overflow: auto;
   width: 100%;
 }
 
 .markswatch-body table th {
-  font-weight: 600;
+  background-color: $table-head-bg;
+  color: $table-head-color;
+  font-weight: $table-head-font-weight;
 }
 
 .markswatch-body table th,
 .markswatch-body table td {
-  border: 1px solid #dfe2e5;
-  padding: 6px 13px;
+  border: $table-border-width solid $table-border-color;
+  padding: $table-cell-padding;
 }
 
 .markswatch-body table tr {
-  background-color: #fff;
-  border-top: 1px solid #c6cbd1;
+  background-color: $table-bg;
+  border-top: $table-border-width solid $table-border-color;
 }
 
 .markswatch-body table tr:nth-child(2n) {
-  background-color: #f6f8fa;
+  background-color: $table-stripe-bg;
 }

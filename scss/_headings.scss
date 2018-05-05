@@ -1,0 +1,36 @@
+.markswatch-body h1,
+.markswatch-body h2,
+.markswatch-body h3,
+.markswatch-body h4,
+.markswatch-body h5,
+.markswatch-body h6 {
+  color: $headings-color;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  margin-bottom: $headings-margin-bottom;
+  margin-top: $headings-margin-top;
+}
+
+.markswatch-body h1 {
+  font-size: $h1-font-size;
+}
+
+.markswatch-body h2 {
+  font-size: $h2-font-size;
+}
+
+.markswatch-body h3 {
+  font-size: $h3-font-size;
+}
+
+.markswatch-body h4 {
+  font-size: $h4-font-size;
+}
+
+.markswatch-body h5 {
+  font-size: $h5-font-size;
+}
+
+.markswatch-body h6 {
+  font-size: $h6-font-size;
+}

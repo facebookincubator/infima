@@ -1,11 +1,9 @@
 .markswatch-body hr {
-  background-color: #e1e4e8;
-  border: 0;
-  border-bottom: 1px solid #dfe2e5;
-  border-bottom-color: #eee;
+  border-color: $hr-border-color;
+  border-style: solid;
+  border-width: $hr-border-width;
   box-sizing: content-box;
-  height: 0.25em;
-  margin: 24px 0;
+  margin: $hr-vertical-margin 0;
   overflow: hidden;
   padding: 0;
 }
