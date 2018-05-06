@@ -3,7 +3,7 @@
   font-size: $blockquote-font-size;
   margin: 0;
   margin-bottom: $vertical-space;
-  padding: $blockquote-padding;
+  padding: $blockquote-padding-y $blockquote-padding-x;
 }
 
 .markswatch-body blockquote > :first-child {

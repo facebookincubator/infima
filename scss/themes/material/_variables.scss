@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
+
+// Typography
+$font-color-base: #212121;
+$font-family-base: Roboto, sans-serif;
+$font-family-monospace: 'Roboto Mono', monospace;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Links
+$link-color: #039be5;
+$link-hover-decoration: none;
+
+// Headings
+$headings-font-weight: $font-weight-normal;
+
+// Tables
+$table-cell-padding: 0.75em 1em;
+
+$table-bg: #78909c;
+$table-stripe-bg: $table-bg;
+
+$table-head-bg: #78909c;
+$table-head-color: #fff;
+$table-head-font-weight: $font-weight-normal;
+
+$table-cell-color: #212121;
+
+// Blockquotes
+$blockquote-color: rgba(0, 0, 0, 0.54);
+
+// Code
+$code-bg: #f7f7f7;
+$code-border-radius: 0;
+$code-color: #37474f;
+
+$kbd-border-radius: 3px;
+$kbd-color: #555;
+$kbd-font-size: 85%;
+$kbd-line-height: 1.6;
+$kbd-padding-x: 0.29412em;
+$kbd-padding-y: 0;

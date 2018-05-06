@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700");
 .markswatch-body {
-  color: rgba(0, 0, 0, 0.84);
-  font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-  font-size: 20px;
+  color: #212121;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
   line-height: 1.5;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -20,19 +22,19 @@
   box-sizing: border-box; }
 
 .markswatch-body strong {
-  font-weight: 600; }
+  font-weight: 700; }
 
 .markswatch-body [type='checkbox'] {
   box-sizing: border-box;
   padding: 0; }
 
 .markswatch-body a {
-  color: #0366d6;
+  color: #039be5;
   text-decoration: none; }
 
 .markswatch-body a:hover {
-  color: #0366d6;
-  text-decoration: underline; }
+  color: #039be5;
+  text-decoration: none; }
 
 .markswatch-body a:active,
 .markswatch-body a:hover {
@@ -43,7 +45,7 @@
   text-decoration: none; }
 
 .markswatch-body p {
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
   margin-top: 0; }
 
 .markswatch-body > *:first-child {
@@ -59,32 +61,32 @@
 .markswatch-body h5,
 .markswatch-body h6 {
   color: inherit;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.25;
   margin-bottom: 16px;
-  margin-top: 24px; }
+  margin-top: 1.5em; }
 
 .markswatch-body h1 {
-  font-size: 40px; }
+  font-size: 32px; }
 
 .markswatch-body h2 {
-  font-size: 30px; }
+  font-size: 24px; }
 
 .markswatch-body h3 {
-  font-size: 25px; }
-
-.markswatch-body h4 {
   font-size: 20px; }
 
+.markswatch-body h4 {
+  font-size: 16px; }
+
 .markswatch-body h5 {
-  font-size: 17.5px; }
+  font-size: 14px; }
 
 .markswatch-body h6 {
-  font-size: 17px; }
+  font-size: 13.6px; }
 
 .markswatch-body ul,
 .markswatch-body ol {
-  margin-bottom: 16px;
+  margin-bottom: 1em;
   margin-top: 0;
   padding-left: 2em; }
 
@@ -109,7 +111,7 @@
   word-wrap: break-all; }
 
 .markswatch-body li > p {
-  margin-top: 16px; }
+  margin-top: 1em; }
 
 .markswatch-body li + li {
   margin-top: 0.25em; }
@@ -121,10 +123,10 @@
   max-width: 100%; }
 
 .markswatch-body img[align='right'] {
-  padding-left: 20px; }
+  padding-left: 1.25em; }
 
 .markswatch-body img[align='left'] {
-  padding-right: 20px; }
+  padding-right: 1.25em; }
 
 .markswatch-body table {
   border-collapse: collapse;
@@ -135,29 +137,32 @@
   overflow: auto;
   width: 100%; }
 
-.markswatch-body table th {
-  background-color: inherit;
-  color: inherit;
-  font-weight: 600; }
+.markswatch-body table tr {
+  background-color: #78909c;
+  border-top: 1px solid #dfe2e5; }
+
+.markswatch-body table tr:nth-child(2n) {
+  background-color: #78909c; }
 
 .markswatch-body table th,
 .markswatch-body table td {
   border: 1px solid #dfe2e5;
-  padding: 6px 13px; }
+  padding: 0.75em 1em; }
 
-.markswatch-body table tr {
-  background-color: transparent;
-  border-top: 1px solid #dfe2e5; }
+.markswatch-body table th {
+  background-color: #78909c;
+  color: #fff;
+  font-weight: 400; }
 
-.markswatch-body table tr:nth-child(2n) {
-  background-color: #f6f8fa; }
+.markswatch-body table td {
+  color: #212121; }
 
 .markswatch-body blockquote {
-  color: #6a737d;
-  font-size: 20px;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 16px;
   margin: 0;
   margin-bottom: 16px;
-  padding: 0 1em; }
+  padding: 0 0; }
 
 .markswatch-body blockquote > :first-child {
   margin-top: 0; }
@@ -166,25 +171,25 @@
   margin-bottom: 0; }
 
 .markswatch-body code {
-  background-color: rgba(27, 31, 35, 0.05);
-  border-radius: 3px;
-  color: inherit;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background-color: #f7f7f7;
+  border-radius: 0;
+  color: #37474f;
+  font-family: "Roboto Mono", monospace;
   font-size: 85%;
   margin: 0;
-  padding: 0.2em 0.4em; }
+  padding: 3.2px 6.4px; }
 
 .markswatch-body pre {
   background-color: #f6f8fa;
-  border-radius: 3px;
+  border-radius: 0;
   color: inherit;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 85%;
   line-height: 1.45;
   margin-bottom: 16px;
   margin-top: 0;
   overflow: auto;
-  padding: 16px;
+  padding: 1em;
   word-wrap: normal; }
 
 .markswatch-body pre code {
@@ -207,12 +212,12 @@
   border-bottom-color: #c6cbd1;
   border-radius: 3px;
   box-shadow: inset 0 -1px 0 #c6cbd1;
-  color: #444d56;
+  color: #555;
   display: inline-block;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 11px;
-  line-height: 10px;
-  padding: 3px 5px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 85%;
+  line-height: 1.6;
+  padding: 0 0.29412em;
   vertical-align: middle; }
 
 .markswatch-body hr {
@@ -220,7 +225,7 @@
   border-style: solid;
   border-width: 1px;
   box-sizing: content-box;
-  margin: 24px 0;
+  margin: 1.5em 0;
   overflow: hidden;
   padding: 0; }
 
@@ -232,3 +237,27 @@
   clear: both;
   content: '';
   display: table; }
+
+.markswatch-body table th {
+  border: none;
+  height: 3em; }
+
+.markswatch-body table tr:first-child,
+.markswatch-body table tr:first-child td {
+  border: none; }
+
+.markswatch-body table tbody tr:last-child td {
+  border-bottom: none; }
+
+.markswatch-body table td {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-left: none;
+  border-right: none; }
+
+.markswatch-body table th code,
+.markswatch-body table td code {
+  background-color: transparent; }
+
+.markswatch-body blockquote {
+  border-left: 0.25em solid rgba(0, 0, 0, 0.26);
+  padding-left: 0.75em; }

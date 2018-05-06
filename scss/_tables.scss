@@ -8,10 +8,13 @@
   width: 100%;
 }
 
-.markswatch-body table th {
-  background-color: $table-head-bg;
-  color: $table-head-color;
-  font-weight: $table-head-font-weight;
+.markswatch-body table tr {
+  background-color: $table-bg;
+  border-top: $table-border-width solid $table-border-color;
+}
+
+.markswatch-body table tr:nth-child(2n) {
+  background-color: $table-stripe-bg;
 }
 
 .markswatch-body table th,
@@ -20,11 +23,12 @@
   padding: $table-cell-padding;
 }
 
-.markswatch-body table tr {
-  background-color: $table-bg;
-  border-top: $table-border-width solid $table-border-color;
+.markswatch-body table th {
+  background-color: $table-head-bg;
+  color: $table-head-color;
+  font-weight: $table-head-font-weight;
 }
 
-.markswatch-body table tr:nth-child(2n) {
-  background-color: $table-stripe-bg;
+.markswatch-body table td {
+  color: $table-cell-color;
 }
