@@ -1,38 +1,39 @@
-.markswatch-body ul,
-.markswatch-body ol {
-  margin-bottom: $list-margin;
-  margin-top: 0;
-  padding-left: $list-left-padding;
-}
+.markswatch-body {
+  ul,
+  ol {
+    margin-bottom: $list-margin;
+    margin-top: 0;
+    padding-left: $list-left-padding;
+  }
 
-.markswatch-body ol ol,
-.markswatch-body ul ol {
-  list-style-type: lower-roman;
-}
+  ol ol,
+  ul ol {
+    list-style-type: lower-roman;
+  }
 
-.markswatch-body ul ul,
-.markswatch-body ul ol,
-.markswatch-body ol ol,
-.markswatch-body ol ul {
-  margin-bottom: 0;
-  margin-top: 0;
-}
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 
-.markswatch-body ul ul ol,
-.markswatch-body ul ol ol,
-.markswatch-body ol ul ol,
-.markswatch-body ol ol ol {
-  list-style-type: lower-alpha;
-}
+  ul ul ol,
+  ul ol ol,
+  ol ul ol,
+  ol ol ol {
+    list-style-type: lower-alpha;
+  }
 
-.markswatch-body li {
-  word-wrap: break-all;
-}
+  li {
+    word-wrap: break-all;
+    & > p {
+      margin-top: $list-paragraph-margin;
+    }
 
-.markswatch-body li > p {
-  margin-top: $list-paragraph-margin;
-}
-
-.markswatch-body li + li {
-  margin-top: $list-item-margin;
+    & + li {
+      margin-top: $list-item-margin;
+    }
+  }
 }

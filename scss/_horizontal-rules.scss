@@ -1,20 +1,22 @@
-.markswatch-body hr {
-  border-color: $hr-border-color;
-  border-style: solid;
-  border-width: $hr-border-width;
-  box-sizing: content-box;
-  margin: $hr-vertical-margin 0;
-  overflow: hidden;
-  padding: 0;
-}
+.markswatch-body {
+  hr {
+    border-color: $hr-border-color;
+    border-style: solid;
+    border-width: $hr-border-width;
+    box-sizing: content-box;
+    margin: $hr-vertical-margin 0;
+    overflow: hidden;
+    padding: 0;
 
-.markswatch-body hr::before {
-  content: '';
-  display: table;
-}
+    &:before {
+      content: '';
+      display: table;
+    }
 
-.markswatch-body hr::after {
-  clear: both;
-  content: '';
-  display: table;
+    &:after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+  }
 }

@@ -1,34 +1,36 @@
-.markswatch-body table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  display: block;
-  margin-bottom: $vertical-space;
-  margin-top: 0;
-  overflow: auto;
-  width: 100%;
-}
+.markswatch-body {
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    margin-bottom: $vertical-space;
+    margin-top: 0;
+    overflow: auto;
+    width: 100%;
 
-.markswatch-body table tr {
-  background-color: $table-bg;
-  border-top: $table-border-width solid $table-border-color;
-}
+    tr {
+      background-color: $table-bg;
+      border-top: $table-border-width solid $table-border-color;
+    }
 
-.markswatch-body table tr:nth-child(2n) {
-  background-color: $table-stripe-bg;
-}
+    tr:nth-child(2n) {
+      background-color: $table-stripe-bg;
+    }
 
-.markswatch-body table th,
-.markswatch-body table td {
-  border: $table-border-width solid $table-border-color;
-  padding: $table-cell-padding;
-}
+    th,
+    td {
+      border: $table-border-width solid $table-border-color;
+      padding: $table-cell-padding;
+    }
 
-.markswatch-body table th {
-  background-color: $table-head-bg;
-  color: $table-head-color;
-  font-weight: $table-head-font-weight;
-}
+    th {
+      background-color: $table-head-bg;
+      color: $table-head-color;
+      font-weight: $table-head-font-weight;
+    }
 
-.markswatch-body table td {
-  color: $table-cell-color;
+    td {
+      color: $table-cell-color;
+    }
+  }
 }
