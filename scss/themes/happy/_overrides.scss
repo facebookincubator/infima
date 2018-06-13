@@ -1,0 +1,41 @@
+// Typography
+.markswatch-body {
+  font-kerning: normal;
+  font-variant: proportional-nums diagonal-fractions ordinal;
+
+  @media (max-width: 767.98px) {
+    font-size: 18px; /* Bigger on mobile */
+  }
+  @media (min-width: 1440px) {
+    font-size: 18px; /* Big again on huge displays */
+  }
+
+  h4, h5, h6 {
+    font-variant-caps: small-caps;
+  }
+
+  p {
+    max-width: 35em;
+  }
+}
+
+// Tables
+.markswatch-body {
+  table {
+    font-variant-numeric: lining-nums tabular-nums;
+  }
+  thead {
+    border-bottom: 1px solid $table-border-color;
+  }
+  th {
+    text-align: left;
+  }
+  td {
+    text-align: "." center;
+  }
+}
+
+// Lists
+.markswatch-body ::marker {
+  color: #444;
+}
