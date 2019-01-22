@@ -16,8 +16,8 @@
   --line-height-base: 1.5;
 
   /* Grid */
-  --vertical-space: var(--font-size-base);
-  --border-width: 1px;
+  --vertical-spacing: 1rem;
+  --horizontal-spacing: 1rem;
 
   /* Links */
   --link-color: #007bff;
@@ -30,7 +30,7 @@
 
   /* Headings */
   --headings-margin-top: 1.5rem;
-  --headings-margin-bottom: var(--vertical-space);
+  --headings-margin-bottom: var(--vertical-spacing);
   --headings-font-family: inherit;
   --headings-font-weight: var(--font-weight-bold);
   --headings-line-height: 1.25;
@@ -59,7 +59,7 @@
   --table-bg: transparent;
   --table-stripe-bg: #f6f8fa;
 
-  --table-border-width: var(--border-width);
+  --table-border-width: 1px;
   --table-border-color: #dfe2e5;
 
   --table-head-bg: inherit;
@@ -99,6 +99,6 @@
 
   /* Horizontal Rules */
   --hr-border-color: #dfe2e5;
-  --hr-border-width: var(--border-width);
+  --hr-border-width: 1px;
   --hr-vertical-margin: 1.5rem;
 }

@@ -85,7 +85,7 @@ pre {
   font-family: var(--font-family-monospace);
   font-size: var(--code-font-size);
   line-height: var(--pre-line-height);
-  margin-bottom: var(--vertical-space);
+  margin-bottom: var(--vertical-spacing);
   margin-top: 0;
   overflow: auto;
   padding: var(--pre-padding);
@@ -122,13 +122,12 @@ kbd {
   vertical-align: middle;
 }
 
-
 /* Blockquotes */
 blockquote {
   color: var(--blockquote-color);
   font-size: var(--blockquote-font-size);
   margin: 0;
-  margin-bottom: var(--vertical-space);
+  margin-bottom: var(--vertical-spacing);
   padding: var(--blockquote-padding-y) var(--blockquote-padding-x);
 }
 

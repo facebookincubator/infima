@@ -11,8 +11,8 @@
   --font-weight-base: var(--font-weight-normal);
   --line-height-base: 1.5;
   /* Grid */
-  --vertical-space: var(--font-size-base);
-  --border-width: 1px;
+  --vertical-spacing: 1rem;
+  --horizontal-spacing: 1rem;
   /* Links */
   --link-color: #007bff;
   --link-decoration: none;
@@ -22,7 +22,7 @@
   --paragraph-margin-bottom: 1rem;
   /* Headings */
   --headings-margin-top: 1.5rem;
-  --headings-margin-bottom: var(--vertical-space);
+  --headings-margin-bottom: var(--vertical-spacing);
   --headings-font-family: inherit;
   --headings-font-weight: var(--font-weight-bold);
   --headings-line-height: 1.25;
@@ -44,7 +44,7 @@
   --table-cell-padding: 0.75rem;
   --table-bg: transparent;
   --table-stripe-bg: #f6f8fa;
-  --table-border-width: var(--border-width);
+  --table-border-width: 1px;
   --table-border-color: #dfe2e5;
   --table-head-bg: inherit;
   --table-head-color: inherit;
@@ -77,7 +77,7 @@
   --kbd-padding-y: 0.1875rem;
   /* Horizontal Rules */
   --hr-border-color: #dfe2e5;
-  --hr-border-width: var(--border-width);
+  --hr-border-width: 1px;
   --hr-vertical-margin: 1.5rem; }
 
 *,
@@ -110,10 +110,6 @@ body {
     margin-bottom: 0 !important; }
   body * {
     box-sizing: border-box; }
-
-[type='checkbox'] {
-  box-sizing: border-box;
-  padding: 0; }
 
 /* Headings */
 h1,
@@ -184,7 +180,7 @@ pre {
   font-family: var(--font-family-monospace);
   font-size: var(--code-font-size);
   line-height: var(--pre-line-height);
-  margin-bottom: var(--vertical-space);
+  margin-bottom: var(--vertical-spacing);
   margin-top: 0;
   overflow: auto;
   padding: var(--pre-padding);
@@ -222,7 +218,7 @@ blockquote {
   color: var(--blockquote-color);
   font-size: var(--blockquote-font-size);
   margin: 0;
-  margin-bottom: var(--vertical-space);
+  margin-bottom: var(--vertical-spacing);
   padding: var(--blockquote-padding-y) var(--blockquote-padding-x); }
 
 /* Lists */
@@ -273,6 +269,15 @@ hr {
     content: '';
     display: table; }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-left: calc(var(--horizontal-spacing) / 2);
+  padding-right: calc(var(--horizontal-spacing) / 2); }
+  .container.container-fluid {
+    max-width: inherit; }
+
 img {
   background-color: #fff;
   border-style: none;
@@ -289,7 +294,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   display: block;
-  margin-bottom: var(--vertical-space);
+  margin-bottom: var(--vertical-spacing);
   margin-top: 0;
   overflow: auto;
   width: 100%; }
@@ -310,5 +315,4 @@ table {
     color: var(--table-cell-color); }
 
 [type='checkbox'] {
-  box-sizing: border-box;
   padding: 0; }
