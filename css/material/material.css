@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700");
-.markswatch-body {
+body {
   color: #212121;
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -8,112 +8,112 @@
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   word-wrap: break-word; }
-  .markswatch-body:before {
+  body:before {
     content: '';
     display: table; }
-  .markswatch-body:after {
+  body:after {
     clear: both;
     content: '';
     display: table; }
-  .markswatch-body > *:first-child {
+  body > *:first-child {
     margin-top: 0 !important; }
-  .markswatch-body > *:last-child {
+  body > *:last-child {
     margin-bottom: 0 !important; }
-  .markswatch-body * {
+  body * {
     box-sizing: border-box; }
-  .markswatch-body strong {
+  body strong {
     font-weight: 700; }
-  .markswatch-body [type='checkbox'] {
+  body [type='checkbox'] {
     box-sizing: border-box;
     padding: 0; }
-  .markswatch-body a {
+  body a {
     color: #039be5;
     text-decoration: none; }
-    .markswatch-body a:hover {
+    body a:hover {
       color: #039be5;
       text-decoration: none; }
-    .markswatch-body a:active, .markswatch-body a:hover {
+    body a:active, body a:hover {
       outline-width: 0; }
-    .markswatch-body a:not([href]) {
+    body a:not([href]) {
       color: inherit;
       text-decoration: none; }
-  .markswatch-body p {
+  body p {
     margin-bottom: 1em;
     margin-top: 0; }
 
-.markswatch-body h1,
-.markswatch-body h2,
-.markswatch-body h3,
-.markswatch-body h4,
-.markswatch-body h5,
-.markswatch-body h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: inherit;
   font-weight: 400;
   line-height: 1.25;
   margin-bottom: 16px;
   margin-top: 1.5em; }
 
-.markswatch-body h1 {
+h1 {
   font-size: 32px; }
 
-.markswatch-body h2 {
+h2 {
   font-size: 24px; }
 
-.markswatch-body h3 {
+h3 {
   font-size: 20px; }
 
-.markswatch-body h4 {
+h4 {
   font-size: 16px; }
 
-.markswatch-body h5 {
+h5 {
   font-size: 14px; }
 
-.markswatch-body h6 {
+h6 {
   font-size: 13.6px; }
 
-.markswatch-body ul,
-.markswatch-body ol {
+ul,
+ol {
   margin-bottom: 1em;
   margin-top: 0;
   padding-left: 2em; }
 
-.markswatch-body ol ol,
-.markswatch-body ul ol {
+ol ol,
+ul ol {
   list-style-type: lower-roman; }
 
-.markswatch-body ul ul,
-.markswatch-body ul ol,
-.markswatch-body ol ol,
-.markswatch-body ol ul {
+ul ul,
+ul ol,
+ol ol,
+ol ul {
   margin-bottom: 0;
   margin-top: 0; }
 
-.markswatch-body ul ul ol,
-.markswatch-body ul ol ol,
-.markswatch-body ol ul ol,
-.markswatch-body ol ol ol {
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
   list-style-type: lower-alpha; }
 
-.markswatch-body li {
+li {
   word-wrap: break-all; }
-  .markswatch-body li > p {
+  li > p {
     margin-top: 1em; }
-  .markswatch-body li + li {
+  li + li {
     margin-top: 0.25em; }
 
-.markswatch-body img {
+img {
   background-color: #fff;
   border-style: none;
   box-sizing: content-box;
   max-width: 100%; }
 
-.markswatch-body img[align='right'] {
+img[align='right'] {
   padding-left: 1.25em; }
 
-.markswatch-body img[align='left'] {
+img[align='left'] {
   padding-right: 1.25em; }
 
-.markswatch-body table {
+table {
   border-collapse: collapse;
   border-spacing: 0;
   display: block;
@@ -121,36 +121,30 @@
   margin-top: 0;
   overflow: auto;
   width: 100%; }
-  .markswatch-body table tr {
+  table tr {
     background-color: #78909c;
     border-top: 1px solid #dfe2e5; }
-  .markswatch-body table tr:nth-child(2n) {
+  table tr:nth-child(2n) {
     background-color: #78909c; }
-  .markswatch-body table th,
-  .markswatch-body table td {
+  table th,
+  table td {
     border: 1px solid #dfe2e5;
     padding: 0.75em 1em; }
-  .markswatch-body table th {
+  table th {
     background-color: #78909c;
     color: #fff;
     font-weight: 400; }
-  .markswatch-body table td {
+  table td {
     color: #212121; }
 
-.markswatch-body blockquote {
+blockquote {
   color: rgba(0, 0, 0, 0.54);
   font-size: 16px;
   margin: 0;
   margin-bottom: 16px;
   padding: 0 0; }
 
-.markswatch-body > :first-child {
-  margin-top: 0; }
-
-.markswatch-body > :last-child {
-  margin-bottom: 0; }
-
-.markswatch-body code {
+code {
   background-color: #f7f7f7;
   border-radius: 0;
   color: #37474f;
@@ -159,7 +153,7 @@
   margin: 0;
   padding: 3.2px 6.4px; }
 
-.markswatch-body pre {
+pre {
   background-color: #f6f8fa;
   border-radius: 0;
   color: inherit;
@@ -171,7 +165,7 @@
   overflow: auto;
   padding: 1em;
   word-wrap: normal; }
-  .markswatch-body pre code {
+  pre code {
     background-color: transparent;
     border: 0;
     display: inline;
@@ -185,7 +179,7 @@
     word-break: normal;
     word-wrap: normal; }
 
-.markswatch-body kbd {
+kbd {
   background-color: #fafbfc;
   border: solid 1px #d1d5da;
   border-bottom-color: #c6cbd1;
@@ -199,7 +193,7 @@
   padding: 0 0.29412em;
   vertical-align: middle; }
 
-.markswatch-body hr {
+hr {
   border-color: #dfe2e5;
   border-style: solid;
   border-width: 1px;
@@ -207,34 +201,34 @@
   margin: 1.5em 0;
   overflow: hidden;
   padding: 0; }
-  .markswatch-body hr:before {
+  hr:before {
     content: '';
     display: table; }
-  .markswatch-body hr:after {
+  hr:after {
     clear: both;
     content: '';
     display: table; }
 
-.markswatch-body table th {
+table th {
   border: none;
   height: 3em; }
 
-.markswatch-body table tr:first-child,
-.markswatch-body table tr:first-child td {
+table tr:first-child,
+table tr:first-child td {
   border: none; }
 
-.markswatch-body table tbody tr:last-child td {
+table tbody tr:last-child td {
   border-bottom: none; }
 
-.markswatch-body table td {
+table td {
   background-color: rgba(255, 255, 255, 0.95);
   border-left: none;
   border-right: none; }
 
-.markswatch-body table th code,
-.markswatch-body table td code {
+table th code,
+table td code {
   background-color: transparent; }
 
-.markswatch-body blockquote {
+blockquote {
   border-left: 0.25em solid rgba(0, 0, 0, 0.26);
   padding-left: 0.75em; }

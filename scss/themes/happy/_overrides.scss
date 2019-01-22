@@ -1,5 +1,5 @@
 // Typography
-.markswatch-body {
+body {
   font-kerning: normal;
   font-variant: proportional-nums diagonal-fractions ordinal;
 
@@ -20,22 +20,20 @@
 }
 
 // Tables
-.markswatch-body {
-  table {
-    font-variant-numeric: lining-nums tabular-nums;
-  }
-  thead {
-    border-bottom: 1px solid $table-border-color;
-  }
-  th {
-    text-align: left;
-  }
-  td {
-    text-align: "." center;
-  }
+table {
+  font-variant-numeric: lining-nums tabular-nums;
+}
+thead {
+  border-bottom: 1px solid $table-border-color;
+}
+th {
+  text-align: left;
+}
+td {
+  text-align: "." center;
 }
 
 // Lists
-.markswatch-body ::marker {
+::marker {
   color: #444;
 }

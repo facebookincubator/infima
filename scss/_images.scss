@@ -1,16 +1,15 @@
-.markswatch-body {
-  img {
-    background-color: #fff;
-    border-style: none;
-    box-sizing: content-box;
-    max-width: 100%;
-  }
-
-  img[align='right'] {
-    padding-left: $image-alignment-padding;
-  }
-
-  img[align='left'] {
-    padding-right: $image-alignment-padding;
-  }
+img {
+  background-color: #fff;
+  border-style: none;
+  box-sizing: content-box;
+  max-width: 100%;
 }
+
+img[align='right'] {
+  padding-left: $image-alignment-padding;
+}
+
+img[align='left'] {
+  padding-right: $image-alignment-padding;
+}
+

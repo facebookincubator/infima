@@ -1,39 +1,37 @@
-.markswatch-body {
-  ul,
-  ol {
-    margin-bottom: $list-margin;
-    margin-top: 0;
-    padding-left: $list-left-padding;
+ul,
+ol {
+  margin-bottom: $list-margin;
+  margin-top: 0;
+  padding-left: $list-left-padding;
+}
+
+ol ol,
+ul ol {
+  list-style-type: lower-roman;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+li {
+  word-wrap: break-all;
+  & > p {
+    margin-top: $list-paragraph-margin;
   }
 
-  ol ol,
-  ul ol {
-    list-style-type: lower-roman;
-  }
-
-  ul ul,
-  ul ol,
-  ol ol,
-  ol ul {
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-
-  ul ul ol,
-  ul ol ol,
-  ol ul ol,
-  ol ol ol {
-    list-style-type: lower-alpha;
-  }
-
-  li {
-    word-wrap: break-all;
-    & > p {
-      margin-top: $list-paragraph-margin;
-    }
-
-    & + li {
-      margin-top: $list-item-margin;
-    }
+  & + li {
+    margin-top: $list-item-margin;
   }
 }

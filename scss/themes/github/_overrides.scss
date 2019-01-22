@@ -1,21 +1,21 @@
 // Headings
-.markswatch-body h1,
-.markswatch-body h2 {
+h1,
+h2 {
   border-bottom: 1px solid #eaecef;
   padding-bottom: 0.3em;
 }
 
-.markswatch-body h6 {
+h6 {
   color: #6a737d;
 }
 
 // Blockquotes
-.markswatch-body blockquote {
+blockquote {
   border-left: 0.25em solid $github-gray;
 }
 
 // Horizontal Rules
-.markswatch-body hr {
+hr {
   background-color: #e1e4e8;
   border: 0;
   border-bottom: 1px solid $github-gray;
