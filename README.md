@@ -19,6 +19,7 @@ Themes for Markdown
   - [ ] Footer
   - [ ] Grid
   - [ ] Card
+  - [ ] Avatar
   - [ ] Sidebar
   - [ ] Icons
   - [ ] Alerts

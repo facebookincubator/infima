@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
 
 :root {
-  // Typography
+  /* Typography */
   --font-color-base: #212121;
   --font-family-base: Roboto, sans-serif;
   --font-family-monospace: 'Roboto Mono', monospace;
@@ -10,14 +10,14 @@
   --font-weight-normal: 400;
   --font-weight-bold: 700;
 
-  // Links
+  /* Links */
   --link-color: #039be5;
   --link-hover-decoration: none;
 
-  // Headings
+  /* Headings */
   --headings-font-weight: var(--font-weight-normal);
 
-  // Tables
+  /* Tables */
   --table-cell-padding: 0.75rem 1rem;
 
   --table-bg: #78909c;
@@ -29,10 +29,10 @@
 
   --table-cell-color: #212121;
 
-  // Blockquotes
+  /* Blockquotes */
   --blockquote-color: rgba(0, 0, 0, 0.54);
 
-  // Code
+  /* Code */
   --code-bg: #f7f7f7;
   --code-border-radius: 0;
   --code-color: #37474f;

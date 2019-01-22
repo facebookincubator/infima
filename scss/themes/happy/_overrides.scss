@@ -1,4 +1,4 @@
-// Typography
+/* Typography */
 body {
   font-kerning: normal;
   font-variant: proportional-nums diagonal-fractions ordinal;
@@ -9,19 +9,19 @@ body {
   @media (min-width: 1440px) {
     font-size: 1.125rem; /* Big again on huge displays */
   }
-
-  h4,
-  h5,
-  h6 {
-    font-variant-caps: small-caps;
-  }
-
-  p {
-    max-width: 35rem;
-  }
 }
 
-// Tables
+h4,
+h5,
+h6 {
+  font-variant-caps: small-caps;
+}
+
+p {
+  max-width: 35rem;
+}
+
+/* Tables */
 table {
   font-variant-numeric: lining-nums tabular-nums;
 
@@ -30,7 +30,7 @@ table {
   }
 }
 
-// Lists
+/* Lists */
 ::marker {
   color: #444;
 }

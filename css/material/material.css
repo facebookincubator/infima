@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700");
 :root {
+  /* Typography */
   --font-color-base: #000;
   --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
   Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -11,13 +12,17 @@
   --font-weight-bold: 600;
   --font-weight-base: var(--font-weight-normal);
   --line-height-base: 1.5;
+  /* Grid */
   --vertical-space: var(--font-size-base);
   --border-width: 1px;
+  /* Links */
   --link-color: #007bff;
   --link-decoration: none;
   --link-hover-color: var(--link-color);
   --link-hover-decoration: underline;
+  /* Paragraphs */
   --paragraph-margin-bottom: 1rem;
+  /* Headings */
   --headings-margin-top: 1.5rem;
   --headings-margin-bottom: var(--vertical-space);
   --headings-font-family: inherit;
@@ -30,11 +35,14 @@
   --h5-font-size: 0.875rem;
   --h6-font-size: 0.85rem;
   --headings-color: inherit;
+  /* Lists */
   --list-left-padding: 2rem;
   --list-margin: 1rem;
   --list-item-margin: 0.25rem;
   --list-paragraph-margin: 1rem;
+  /* Images */
   --image-alignment-padding: 1.25rem;
+  /* Tables */
   --table-cell-padding: 0.75rem;
   --table-bg: transparent;
   --table-stripe-bg: #f6f8fa;
@@ -44,10 +52,12 @@
   --table-head-color: inherit;
   --table-head-font-weight: var(--font-weight-bold);
   --table-cell-color: inherit;
+  /* Blockquotes */
   --blockquote-color: #6a737d;
   --blockquote-font-size: var(--font-size-base);
   --blockquote-padding-x: 0;
   --blockquote-padding-y: 0;
+  /* Code */
   --code-bg: rgba(27, 31, 35, 0.05);
   --code-border-radius: calc(var(--font-size-base) * 0.1875);
   --code-color: inherit;
@@ -67,9 +77,19 @@
   --kbd-line-height: 0.625rem;
   --kbd-padding-x: 0.3125rem;
   --kbd-padding-y: 0.1875rem;
+  /* Horizontal Rules */
   --hr-border-color: #dfe2e5;
   --hr-border-width: var(--border-width);
   --hr-vertical-margin: 1.5rem; }
+
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
 
 body {
   color: var(--font-color-base);
@@ -92,26 +112,12 @@ body {
     margin-bottom: 0 !important; }
   body * {
     box-sizing: border-box; }
-  body strong {
-    font-weight: var(--font-weight-bold); }
-  body [type='checkbox'] {
-    box-sizing: border-box;
-    padding: 0; }
-  body a {
-    color: var(--link-color);
-    text-decoration: var(--link-decoration); }
-    body a:hover {
-      color: var(--link-hover-color);
-      text-decoration: var(--link-hover-decoration); }
-    body a:active, body a:hover {
-      outline-width: 0; }
-    body a:not([href]) {
-      color: inherit;
-      text-decoration: none; }
-  body p {
-    margin-bottom: var(--paragraph-margin-bottom);
-    margin-top: 0; }
 
+[type='checkbox'] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* Headings */
 h1,
 h2,
 h3,
@@ -142,79 +148,28 @@ h5 {
 h6 {
   font-size: var(--h6-font-size); }
 
-ul,
-ol {
-  margin-bottom: var(--list-margin);
-  margin-top: 0;
-  padding-left: var(--list-left-padding); }
+strong {
+  font-weight: var(--font-weight-bold); }
 
-ol ol,
-ul ol {
-  list-style-type: lower-roman; }
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: var(--link-decoration); }
+  a:hover {
+    color: var(--link-hover-color);
+    text-decoration: var(--link-hover-decoration); }
+  a:active, a:hover {
+    outline-width: 0; }
+  a:not([href]) {
+    color: inherit;
+    text-decoration: none; }
 
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-  margin-bottom: 0;
+/* Paragraphs */
+p {
+  margin-bottom: var(--paragraph-margin-bottom);
   margin-top: 0; }
 
-ul ul ol,
-ul ol ol,
-ol ul ol,
-ol ol ol {
-  list-style-type: lower-alpha; }
-
-li {
-  word-wrap: break-all; }
-  li > p {
-    margin-top: var(--list-paragraph-margin); }
-  li + li {
-    margin-top: var(--list-item-margin); }
-
-img {
-  background-color: #fff;
-  border-style: none;
-  box-sizing: content-box;
-  max-width: 100%; }
-
-img[align='right'] {
-  padding-left: var(--image-alignment-padding); }
-
-img[align='left'] {
-  padding-right: var(--image-alignment-padding); }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  display: block;
-  margin-bottom: var(--vertical-space);
-  margin-top: 0;
-  overflow: auto;
-  width: 100%; }
-  table tr {
-    background-color: var(--table-bg);
-    border-top: var(--table-border-width) solid var(--table-border-color); }
-  table tr:nth-child(2n) {
-    background-color: var(--table-stripe-bg); }
-  table th,
-  table td {
-    border: var(--table-border-width) solid var(--table-border-color);
-    padding: var(--table-cell-padding); }
-  table th {
-    background-color: var(--table-head-bg);
-    color: var(--table-head-color);
-    font-weight: var(--table-head-font-weight); }
-  table td {
-    color: var(--table-cell-color); }
-
-blockquote {
-  color: var(--blockquote-color);
-  font-size: var(--blockquote-font-size);
-  margin: 0;
-  margin-bottom: var(--vertical-space);
-  padding: var(--blockquote-padding-y) var(--blockquote-padding-x); }
-
+/* Code */
 code {
   background-color: var(--code-bg);
   border-radius: var(--code-border-radius);
@@ -264,6 +219,46 @@ kbd {
   padding: var(--kbd-padding-y) var(--kbd-padding-x);
   vertical-align: middle; }
 
+/* Blockquotes */
+blockquote {
+  color: var(--blockquote-color);
+  font-size: var(--blockquote-font-size);
+  margin: 0;
+  margin-bottom: var(--vertical-space);
+  padding: var(--blockquote-padding-y) var(--blockquote-padding-x); }
+
+/* Lists */
+ul,
+ol {
+  margin-bottom: var(--list-margin);
+  margin-top: 0;
+  padding-left: var(--list-left-padding); }
+
+ol ol,
+ul ol {
+  list-style-type: lower-roman; }
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+  margin-top: 0; }
+
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+  list-style-type: lower-alpha; }
+
+li {
+  word-wrap: break-all; }
+  li > p {
+    margin-top: var(--list-paragraph-margin); }
+  li + li {
+    margin-top: var(--list-item-margin); }
+
+/* Horizontal Rules */
 hr {
   border-color: var(--hr-border-color);
   border-style: solid;
@@ -280,15 +275,55 @@ hr {
     content: '';
     display: table; }
 
+img {
+  background-color: #fff;
+  border-style: none;
+  box-sizing: content-box;
+  max-width: 100%; }
+
+img[align='right'] {
+  padding-left: var(--image-alignment-padding); }
+
+img[align='left'] {
+  padding-right: var(--image-alignment-padding); }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: block;
+  margin-bottom: var(--vertical-space);
+  margin-top: 0;
+  overflow: auto;
+  width: 100%; }
+  table tr {
+    background-color: var(--table-bg);
+    border-top: var(--table-border-width) solid var(--table-border-color); }
+  table tr:nth-child(2n) {
+    background-color: var(--table-stripe-bg); }
+  table th,
+  table td {
+    border: var(--table-border-width) solid var(--table-border-color);
+    padding: var(--table-cell-padding); }
+  table th {
+    background-color: var(--table-head-bg);
+    color: var(--table-head-color);
+    font-weight: var(--table-head-font-weight); }
+  table td {
+    color: var(--table-cell-color); }
+
 :root {
+  /* Typography */
   --font-color-base: #212121;
   --font-family-base: Roboto, sans-serif;
   --font-family-monospace: 'Roboto Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
+  /* Links */
   --link-color: #039be5;
   --link-hover-decoration: none;
+  /* Headings */
   --headings-font-weight: var(--font-weight-normal);
+  /* Tables */
   --table-cell-padding: 0.75rem 1rem;
   --table-bg: #78909c;
   --table-stripe-bg: var(--table-bg);
@@ -296,7 +331,9 @@ hr {
   --table-head-color: #fff;
   --table-head-font-weight: var(--font-weight-normal);
   --table-cell-color: #212121;
+  /* Blockquotes */
   --blockquote-color: rgba(0, 0, 0, 0.54);
+  /* Code */
   --code-bg: #f7f7f7;
   --code-border-radius: 0;
   --code-color: #37474f;

@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--font-color-base);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  word-wrap: break-word;
+
+  &:before {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+
+  & > *:first-child {
+    margin-top: 0 !important;
+  }
+
+  & > *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+[type='checkbox'] {
+  box-sizing: border-box;
+  padding: 0;
+}

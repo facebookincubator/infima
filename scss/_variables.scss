@@ -1,5 +1,5 @@
 :root {
-  // Typography
+  /* Typography */
   --font-color-base: #000;
   --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
   Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -15,20 +15,20 @@
 
   --line-height-base: 1.5;
 
-  // Grid
+  /* Grid */
   --vertical-space: var(--font-size-base);
   --border-width: 1px;
 
-  // Links
+  /* Links */
   --link-color: #007bff;
   --link-decoration: none;
   --link-hover-color: var(--link-color);
   --link-hover-decoration: underline;
 
-  // Paragraphs
+  /* Paragraphs */
   --paragraph-margin-bottom: 1rem;
 
-  // Headings
+  /* Headings */
   --headings-margin-top: 1.5rem;
   --headings-margin-bottom: var(--vertical-space);
   --headings-font-family: inherit;
@@ -44,16 +44,16 @@
 
   --headings-color: inherit;
 
-  // Lists
+  /* Lists */
   --list-left-padding: 2rem;
   --list-margin: 1rem;
   --list-item-margin: 0.25rem;
   --list-paragraph-margin: 1rem;
 
-  // Images
+  /* Images */
   --image-alignment-padding: 1.25rem;
 
-  // Tables
+  /* Tables */
   --table-cell-padding: 0.75rem;
 
   --table-bg: transparent;
@@ -68,13 +68,13 @@
 
   --table-cell-color: inherit;
 
-  // Blockquotes
+  /* Blockquotes */
   --blockquote-color: #6a737d;
   --blockquote-font-size: var(--font-size-base);
   --blockquote-padding-x: 0;
   --blockquote-padding-y: 0;
 
-  // Code
+  /* Code */
   --code-bg: rgba(27, 31, 35, 0.05);
   --code-border-radius: calc(var(--font-size-base) * 0.1875);
   --code-color: inherit;
@@ -97,7 +97,7 @@
   --kbd-padding-x: 0.3125rem;
   --kbd-padding-y: 0.1875rem;
 
-  // Horizontal Rules
+  /* Horizontal Rules */
   --hr-border-color: #dfe2e5;
   --hr-border-width: var(--border-width);
   --hr-vertical-margin: 1.5rem;
