@@ -1,12 +1,12 @@
-html {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-}
-
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {

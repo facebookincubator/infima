@@ -82,14 +82,14 @@
   --hr-border-width: var(--border-width);
   --hr-vertical-margin: 1.5rem; }
 
-html {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent; }
-
 *,
 *:before,
 *:after {
   box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   color: var(--font-color-base);
@@ -311,6 +311,10 @@ table {
   table td {
     color: var(--table-cell-color); }
 
+[type='checkbox'] {
+  box-sizing: border-box;
+  padding: 0; }
+
 :root {
   /* Typography */
   --font-color-base: #212121;
@@ -344,6 +348,7 @@ table {
   --kbd-padding-x: 0.29412rem;
   --kbd-padding-y: 0; }
 
+/* Tables */
 table th {
   border: none;
   height: 3rem; }
@@ -364,6 +369,7 @@ table th code,
 table td code {
   background-color: transparent; }
 
+/* Blockquotes */
 blockquote {
   border-left: 0.25rem solid rgba(0, 0, 0, 0.26);
   padding-left: 0.75rem; }

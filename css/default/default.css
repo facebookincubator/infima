@@ -80,14 +80,14 @@
   --hr-border-width: var(--border-width);
   --hr-vertical-margin: 1.5rem; }
 
-html {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent; }
-
 *,
 *:before,
 *:after {
   box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   color: var(--font-color-base);
@@ -308,3 +308,7 @@ table {
     font-weight: var(--table-head-font-weight); }
   table td {
     color: var(--table-cell-color); }
+
+[type='checkbox'] {
+  box-sizing: border-box;
+  padding: 0; }
