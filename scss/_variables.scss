@@ -1,103 +1,104 @@
-// Typography
-$font-color-base: #000 !default;
-$font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
-  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-  !default;
-$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-  'Liberation Mono', 'Courier New', monospace !default;
+:root {
+  // Typography
+  --font-color-base: #000;
+  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
 
-$font-size-base: 16px !default;
+  --font-size-base: 16px;
 
-$font-weight-normal: 400 !default;
-$font-weight-bold: 600 !default;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
 
-$font-weight-base: $font-weight-normal !default;
+  --font-weight-base: var(--font-weight-normal);
 
-$line-height-base: 1.5 !default;
+  --line-height-base: 1.5;
 
-// Grid
-$vertical-space: $font-size-base;
-$border-width: 1px !default;
+  // Grid
+  --vertical-space: var(--font-size-base);
+  --border-width: 1px;
 
-// Links
-$link-color: #007bff !default;
-$link-decoration: none !default;
-$link-hover-color: $link-color !default;
-$link-hover-decoration: underline !default;
+  // Links
+  --link-color: #007bff;
+  --link-decoration: none;
+  --link-hover-color: var(--link-color);
+  --link-hover-decoration: underline;
 
-// Paragraphs
-$paragraph-margin-bottom: 1em !default;
+  // Paragraphs
+  --paragraph-margin-bottom: 1em;
 
-// Headings
-$headings-margin-top: 1.5em !default;
-$headings-margin-bottom: $vertical-space !default;
-$headings-font-family: inherit !default;
-$headings-font-weight: $font-weight-bold !default;
-$headings-line-height: 1.25 !default;
+  // Headings
+  --headings-margin-top: 1.5em;
+  --headings-margin-bottom: var(--vertical-space);
+  --headings-font-family: inherit;
+  --headings-font-weight: var(--font-weight-bold);
+  --headings-line-height: 1.25;
 
-$h1-font-size: $font-size-base * 2 !default;
-$h2-font-size: $font-size-base * 1.5 !default;
-$h3-font-size: $font-size-base * 1.25 !default;
-$h4-font-size: $font-size-base * 1 !default;
-$h5-font-size: $font-size-base * 0.875 !default;
-$h6-font-size: $font-size-base * 0.85 !default;
+  --h1-font-size: calc(var(--font-size-base) * 2);
+  --h2-font-size: calc(var(--font-size-base) * 1.5);
+  --h3-font-size: calc(var(--font-size-base) * 1.25);
+  --h4-font-size: calc(var(--font-size-base) * 1);
+  --h5-font-size: calc(var(--font-size-base) * 0.875);
+  --h6-font-size: calc(var(--font-size-base) * 0.85);
 
-$headings-color: inherit !default;
+  --headings-color: inherit;
 
-// Lists
-$list-left-padding: 2em !default;
-$list-margin: 1em !default;
-$list-item-margin: 0.25em !default;
-$list-paragraph-margin: 1em !default;
+  // Lists
+  --list-left-padding: 2em;
+  --list-margin: 1em;
+  --list-item-margin: 0.25em;
+  --list-paragraph-margin: 1em;
 
-// Images
-$image-alignment-padding: 1.25em;
+  // Images
+  --image-alignment-padding: 1.25em;
 
-// Tables
-$table-cell-padding: 0.75em !default;
+  // Tables
+  --table-cell-padding: 0.75em;
 
-$table-bg: transparent !default;
-$table-stripe-bg: #f6f8fa !default;
+  --table-bg: transparent;
+  --table-stripe-bg: #f6f8fa;
 
-$table-border-width: $border-width !default;
-$table-border-color: #dfe2e5 !default;
+  --table-border-width: var(--border-width);
+  --table-border-color: #dfe2e5;
 
-$table-head-bg: inherit !default;
-$table-head-color: inherit !default;
-$table-head-font-weight: $font-weight-bold !default;
+  --table-head-bg: inherit;
+  --table-head-color: inherit;
+  --table-head-font-weight: var(--font-weight-bold);
 
-$table-cell-color: inherit !default;
+  --table-cell-color: inherit;
 
-// Blockquotes
-$blockquote-color: #6a737d !default;
-$blockquote-font-size: $font-size-base !default;
-$blockquote-padding-x: 0 !default;
-$blockquote-padding-y: 0 !default;
+  // Blockquotes
+  --blockquote-color: #6a737d;
+  --blockquote-font-size: var(--font-size-base);
+  --blockquote-padding-x: 0;
+  --blockquote-padding-y: 0;
 
-// Code
-$code-bg: rgba(27, 31, 35, 0.05) !default;
-$code-border-radius: 0.1875 * $font-size-base !default;
-$code-color: inherit !default;
-$code-font-size: 85% !default;
-$code-padding-x: 0.4 * $font-size-base !default;
-$code-padding-y: 0.2 * $font-size-base !default;
+  // Code
+  --code-bg: rgba(27, 31, 35, 0.05);
+  --code-border-radius: calc(var(--font-size-base) * 0.1875);
+  --code-color: inherit;
+  --code-font-size: 85%;
+  --code-padding-x: calc(var(--font-size-base) * 0.4);
+  --code-padding-y: calc(var(--font-size-base) * 0.2);
 
-$pre-bg: #f6f8fa !default;
-$pre-border-radius: $code-border-radius !default;
-$pre-color: inherit !default;
-$pre-line-height: 1.45 !default;
-$pre-padding: 1em !default;
+  --pre-bg: #f6f8fa;
+  --pre-border-radius: var(--code-border-radius);
+  --pre-color: inherit;
+  --pre-line-height: 1.45;
+  --pre-padding: 1em;
 
-$kbd-bg: #fafbfc !default;
-$kbd-border-color: #d1d5da !default;
-$kbd-border-radius: $code-border-radius !default;
-$kbd-color: #444d56 !default;
-$kbd-font-size: 68.75% !default;
-$kbd-line-height: 0.625 * $font-size-base !default;
-$kbd-padding-x: 0.3125 * $font-size-base !default;
-$kbd-padding-y: 0.1875 * $font-size-base !default;
+  --kbd-bg: #fafbfc;
+  --kbd-border-color: #d1d5da;
+  --kbd-border-radius: var(--code-border-radius);
+  --kbd-color: #444d56;
+  --kbd-font-size: 68.75%;
+  --kbd-line-height: calc(var(--font-size-base) * 0.625);
+  --kbd-padding-x: calc(var(--font-size-base) * 0.3125);
+  --kbd-padding-y: calc(var(--font-size-base) * 0.1875);
 
-// Horizontal Rules
-$hr-border-color: #dfe2e5 !default;
-$hr-border-width: $border-width !default;
-$hr-vertical-margin: 1.5em !default;
+  // Horizontal Rules
+  --hr-border-color: #dfe2e5;
+  --hr-border-width: var(--border-width);
+  --hr-vertical-margin: 1.5em;
+}

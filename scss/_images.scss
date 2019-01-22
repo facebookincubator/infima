@@ -6,10 +6,10 @@ img {
 }
 
 img[align='right'] {
-  padding-left: $image-alignment-padding;
+  padding-left: var(--image-alignment-padding);
 }
 
 img[align='left'] {
-  padding-right: $image-alignment-padding;
+  padding-right: var(--image-alignment-padding);
 }
 

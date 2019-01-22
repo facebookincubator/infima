@@ -1,7 +1,7 @@
 blockquote {
-  color: $blockquote-color;
-  font-size: $blockquote-font-size;
+  color: var(--blockquote-color);
+  font-size: var(--blockquote-font-size);
   margin: 0;
-  margin-bottom: $vertical-space;
-  padding: $blockquote-padding-y $blockquote-padding-x;
+  margin-bottom: var(--vertical-space);
+  padding: var(--blockquote-padding-y) var(--blockquote-padding-x);
 }

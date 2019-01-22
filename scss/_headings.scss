@@ -4,33 +4,33 @@ h3,
 h4,
 h5,
 h6 {
-  color: $headings-color;
-  font-weight: $headings-font-weight;
-  line-height: $headings-line-height;
-  margin-bottom: $headings-margin-bottom;
-  margin-top: $headings-margin-top;
+  color: var(--headings-color);
+  font-weight: var(--headings-font-weight);
+  line-height: var(--headings-line-height);
+  margin-bottom: var(--headings-margin-bottom);
+  margin-top: var(--headings-margin-top);
 }
 
 h1 {
-  font-size: $h1-font-size;
+  font-size: var(--h1-font-size);
 }
 
 h2 {
-  font-size: $h2-font-size;
+  font-size: var(--h2-font-size);
 }
 
 h3 {
-  font-size: $h3-font-size;
+  font-size: var(--h3-font-size);
 }
 
 h4 {
-  font-size: $h4-font-size;
+  font-size: var(--h4-font-size);
 }
 
 h5 {
-  font-size: $h5-font-size;
+  font-size: var(--h5-font-size);
 }
 
 h6 {
-  font-size: $h6-font-size;
+  font-size: var(--h6-font-size);
 }

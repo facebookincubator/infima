@@ -1,9 +1,9 @@
 hr {
-  border-color: $hr-border-color;
+  border-color: var(--hr-border-color);
   border-style: solid;
-  border-width: $hr-border-width;
+  border-width: var(--hr-border-width);
   box-sizing: content-box;
-  margin: $hr-vertical-margin 0;
+  margin: var(--hr-vertical-margin) 0;
   overflow: hidden;
   padding: 0;
 

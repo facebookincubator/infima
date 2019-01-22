@@ -1,8 +1,8 @@
 ul,
 ol {
-  margin-bottom: $list-margin;
+  margin-bottom: var(--list-margin);
   margin-top: 0;
-  padding-left: $list-left-padding;
+  padding-left: var(--list-left-padding);
 }
 
 ol ol,
@@ -28,10 +28,10 @@ ol ol ol {
 li {
   word-wrap: break-all;
   & > p {
-    margin-top: $list-paragraph-margin;
+    margin-top: var(--list-paragraph-margin);
   }
 
   & + li {
-    margin-top: $list-item-margin;
+    margin-top: var(--list-item-margin);
   }
 }

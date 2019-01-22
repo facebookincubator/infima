@@ -2,33 +2,33 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   display: block;
-  margin-bottom: $vertical-space;
+  margin-bottom: var(--vertical-space);
   margin-top: 0;
   overflow: auto;
   width: 100%;
 
   tr {
-    background-color: $table-bg;
-    border-top: $table-border-width solid $table-border-color;
+    background-color: var(--table-bg);
+    border-top: var(--table-border-width) solid var(--table-border-color);
   }
 
   tr:nth-child(2n) {
-    background-color: $table-stripe-bg;
+    background-color: var(--table-stripe-bg);
   }
 
   th,
   td {
-    border: $table-border-width solid $table-border-color;
-    padding: $table-cell-padding;
+    border: var(--table-border-width) solid var(--table-border-color);
+    padding: var(--table-cell-padding);
   }
 
   th {
-    background-color: $table-head-bg;
-    color: $table-head-color;
-    font-weight: $table-head-font-weight;
+    background-color: var(--table-head-bg);
+    color: var(--table-head-color);
+    font-weight: var(--table-head-font-weight);
   }
 
   td {
-    color: $table-cell-color;
+    color: var(--table-cell-color);
   }
 }

@@ -11,14 +11,14 @@ h6 {
 
 // Blockquotes
 blockquote {
-  border-left: 0.25em solid $github-gray;
+  border-left: 0.25em solid var(--github-gray);
 }
 
 // Horizontal Rules
 hr {
   background-color: #e1e4e8;
   border: 0;
-  border-bottom: 1px solid $github-gray;
+  border-bottom: 1px solid var(--github-gray);
   border-bottom-color: #eee;
   height: 0.25em;
 }

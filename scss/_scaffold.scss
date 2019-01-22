@@ -1,8 +1,8 @@
 body {
-  color: $font-color-base;
-  font-family: $font-family-base;
-  font-size: $font-size-base;
-  line-height: $line-height-base;
+  color: var(--font-color-base);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   word-wrap: break-word;
@@ -31,7 +31,7 @@ body {
   }
 
   strong {
-    font-weight: $font-weight-bold;
+    font-weight: var(--font-weight-bold);
   }
 
   [type='checkbox'] {
@@ -41,11 +41,11 @@ body {
 
   // Links
   a {
-    color: $link-color;
-    text-decoration: $link-decoration;
+    color: var(--link-color);
+    text-decoration: var(--link-decoration);
     &:hover {
-      color: $link-hover-color;
-      text-decoration: $link-hover-decoration;
+      color: var(--link-hover-color);
+      text-decoration: var(--link-hover-decoration);
     }
 
     &:active,
@@ -61,7 +61,7 @@ body {
 
   // Paragraphs
   p {
-    margin-bottom: $paragraph-margin-bottom;
+    margin-bottom: var(--paragraph-margin-bottom);
     margin-top: 0;
   }
 }
