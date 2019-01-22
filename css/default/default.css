@@ -15,25 +15,25 @@
   --link-decoration: none;
   --link-hover-color: var(--link-color);
   --link-hover-decoration: underline;
-  --paragraph-margin-bottom: 1em;
-  --headings-margin-top: 1.5em;
+  --paragraph-margin-bottom: 1rem;
+  --headings-margin-top: 1.5rem;
   --headings-margin-bottom: var(--vertical-space);
   --headings-font-family: inherit;
   --headings-font-weight: var(--font-weight-bold);
   --headings-line-height: 1.25;
-  --h1-font-size: calc(var(--font-size-base) * 2);
-  --h2-font-size: calc(var(--font-size-base) * 1.5);
-  --h3-font-size: calc(var(--font-size-base) * 1.25);
-  --h4-font-size: calc(var(--font-size-base) * 1);
-  --h5-font-size: calc(var(--font-size-base) * 0.875);
-  --h6-font-size: calc(var(--font-size-base) * 0.85);
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --h4-font-size: 1rem;
+  --h5-font-size: 0.875rem;
+  --h6-font-size: 0.85rem;
   --headings-color: inherit;
-  --list-left-padding: 2em;
-  --list-margin: 1em;
-  --list-item-margin: 0.25em;
-  --list-paragraph-margin: 1em;
-  --image-alignment-padding: 1.25em;
-  --table-cell-padding: 0.75em;
+  --list-left-padding: 2rem;
+  --list-margin: 1rem;
+  --list-item-margin: 0.25rem;
+  --list-paragraph-margin: 1rem;
+  --image-alignment-padding: 1.25rem;
+  --table-cell-padding: 0.75rem;
   --table-bg: transparent;
   --table-stripe-bg: #f6f8fa;
   --table-border-width: var(--border-width);
@@ -56,18 +56,18 @@
   --pre-border-radius: var(--code-border-radius);
   --pre-color: inherit;
   --pre-line-height: 1.45;
-  --pre-padding: 1em;
+  --pre-padding: 1rem;
   --kbd-bg: #fafbfc;
   --kbd-border-color: #d1d5da;
   --kbd-border-radius: var(--code-border-radius);
   --kbd-color: #444d56;
   --kbd-font-size: 68.75%;
-  --kbd-line-height: calc(var(--font-size-base) * 0.625);
-  --kbd-padding-x: calc(var(--font-size-base) * 0.3125);
-  --kbd-padding-y: calc(var(--font-size-base) * 0.1875);
+  --kbd-line-height: 0.625rem;
+  --kbd-padding-x: 0.3125rem;
+  --kbd-padding-y: 0.1875rem;
   --hr-border-color: #dfe2e5;
   --hr-border-width: var(--border-width);
-  --hr-vertical-margin: 1.5em; }
+  --hr-vertical-margin: 1.5rem; }
 
 body {
   color: var(--font-color-base);

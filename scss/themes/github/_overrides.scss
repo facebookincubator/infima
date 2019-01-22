@@ -2,7 +2,7 @@
 h1,
 h2 {
   border-bottom: 1px solid #eaecef;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.3rem;
 }
 
 h6 {
@@ -11,7 +11,7 @@ h6 {
 
 // Blockquotes
 blockquote {
-  border-left: 0.25em solid var(--github-gray);
+  border-left: 0.25rem solid var(--github-gray);
 }
 
 // Horizontal Rules
@@ -20,5 +20,5 @@ hr {
   border: 0;
   border-bottom: 1px solid var(--github-gray);
   border-bottom-color: #eee;
-  height: 0.25em;
+  height: 0.25rem;
 }
