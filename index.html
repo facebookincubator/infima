@@ -16,6 +16,18 @@
       .theme-switcher {
         float: right;
       }
+
+      .grid-demo .rows {
+        margin-bottom: 16px;
+        margin-top: 16px;
+      }
+
+      .grid-demo [class*="col-"] .col-inner {
+        background-color: cornsilk;
+        border-radius: 4px;
+        padding: 16px;
+        text-align: center;
+      }
     </style>
     <link id="theme-stylesheet" href="css/default/default.css" type="text/css" rel="stylesheet">
     <script>
@@ -38,6 +50,46 @@
         <option value="material">Material</option>
       </select>
       <p>A collection of themes for Markdown.</p>
+      <div class="section grid-demo">
+        <h2>Grid</h2>
+        <div class="rows">
+          <div class="col col-6"><div class="col-inner">col-6</div></div>
+          <div class="col col-6"><div class="col-inner">col-6</div></div>
+        </div>
+        <div class="rows">
+          <div class="col col-4"><div class="col-inner">col-4</div></div>
+          <div class="col col-4"><div class="col-inner">col-4</div></div>
+          <div class="col col-4"><div class="col-inner">col-4</div></div>
+        </div>
+        <div class="rows">
+          <div class="col col-3"><div class="col-inner">col-3</div></div>
+          <div class="col col-3"><div class="col-inner">col-3</div></div>
+          <div class="col col-3"><div class="col-inner">col-3</div></div>
+          <div class="col col-3"><div class="col-inner">col-3</div></div>
+        </div>
+        <div class="rows">
+          <div class="col col-2"><div class="col-inner">col-2</div></div>
+          <div class="col col-2"><div class="col-inner">col-2</div></div>
+          <div class="col col-2"><div class="col-inner">col-2</div></div>
+          <div class="col col-2"><div class="col-inner">col-2</div></div>
+          <div class="col col-2"><div class="col-inner">col-2</div></div>
+          <div class="col col-2"><div class="col-inner">col-2</div></div>
+        </div>
+        <div class="rows">
+          <div class="col col-1"><div class="col-inner">col-1</div></div>
+          <div class="col col-1"><div class="col-inner">col-1</div></div>
+          <div class="col col-1"><div class="col-inner">col-1</div></div>
+          <div class="col col-1"><div class="col-inner">col-1</div></div>
+          <div class="col col-1"><div class="col-inner">col-1</div></div>
+          <div class="col col-1"><div class="col-inner">col-1</div></div>
+          <div class="col col-1"><div class="col-inner">col-1</div></div>
+          <div class="col col-1"><div class="col-inner">col-1</div></div>
+          <div class="col col-1"><div class="col-inner">col-1</div></div>
+          <div class="col col-1"><div class="col-inner">col-1</div></div>
+          <div class="col col-1"><div class="col-inner">col-1</div></div>
+          <div class="col col-1"><div class="col-inner">col-1</div></div>
+        </div>
+      </div>
       <div class="section">
         <h2>Headings</h2>
         <h1>Heading 1</h1>
