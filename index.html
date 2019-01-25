@@ -10,20 +10,20 @@
       }
 
       .section {
-        margin: 4rem auto;
+        margin: 6rem auto;
       }
 
       .theme-switcher {
         float: right;
       }
 
-      .grid-demo .rows {
+      .grid-demo .row {
         margin-bottom: 16px;
         margin-top: 16px;
       }
 
       .grid-demo [class*="col-"] .col-inner {
-        background-color: cornsilk;
+        background-color: #f6f9fb;
         border-radius: 4px;
         padding: 16px;
         text-align: center;
@@ -50,24 +50,25 @@
         <option value="material">Material</option>
       </select>
       <p>A collection of themes for Markdown.</p>
+      <hr/>
       <div class="section grid-demo">
-        <h2>Grid</h2>
-        <div class="rows">
+        <h1>Grid</h1>
+        <div class="row">
           <div class="col col-6"><div class="col-inner">col-6</div></div>
           <div class="col col-6"><div class="col-inner">col-6</div></div>
         </div>
-        <div class="rows">
+        <div class="row">
           <div class="col col-4"><div class="col-inner">col-4</div></div>
           <div class="col col-4"><div class="col-inner">col-4</div></div>
           <div class="col col-4"><div class="col-inner">col-4</div></div>
         </div>
-        <div class="rows">
+        <div class="row">
           <div class="col col-3"><div class="col-inner">col-3</div></div>
           <div class="col col-3"><div class="col-inner">col-3</div></div>
           <div class="col col-3"><div class="col-inner">col-3</div></div>
           <div class="col col-3"><div class="col-inner">col-3</div></div>
         </div>
-        <div class="rows">
+        <div class="row">
           <div class="col col-2"><div class="col-inner">col-2</div></div>
           <div class="col col-2"><div class="col-inner">col-2</div></div>
           <div class="col col-2"><div class="col-inner">col-2</div></div>
@@ -75,7 +76,7 @@
           <div class="col col-2"><div class="col-inner">col-2</div></div>
           <div class="col col-2"><div class="col-inner">col-2</div></div>
         </div>
-        <div class="rows">
+        <div class="row">
           <div class="col col-1"><div class="col-inner">col-1</div></div>
           <div class="col col-1"><div class="col-inner">col-1</div></div>
           <div class="col col-1"><div class="col-inner">col-1</div></div>
@@ -91,192 +92,207 @@
         </div>
       </div>
       <div class="section">
-        <h2>Headings</h2>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-      </div>
-      <div class="section">
-        <h2>Emphasis</h2>
-        <p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
-        <p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
-        <p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
-        <p>Strikethrough uses two tildes. <del>Scratch this.</del></p>
-      </div>
-      <div class="section">
-        <h2>Lists</h2>
-        <ol>
-          <li>First ordered list item</li>
-          <li>Second item</li>
-          <li>Third item</li>
-        </ol>
-        <ul>
-          <li>First unordered list item</li>
-          <li>Second item</li>
-          <li>Third item</li>
-        </ul>
-        <ol>
-          <li>
-            Lists in a list item:
-            <ul>
-              <li>
-                Indented four spaces.
-                <ul>
-                  <li>indented eight spaces.</li>
-                </ul>
-              </li>
-              <li>Four spaces again.</li>
-            </ul>
-          </li>
-          <li>
-            <p>Multiple paragraphs in a list items:
-              It's best to indent the paragraphs four spaces
-              You can get away with three, but it can get
-              confusing when you nest other things.
-              Stick to four.
-            </p>
-            <p>We indented the first line an extra space to align
-              it with these paragraphs. In real use, we might do
-              that to the entire list so that all items line up.
-            </p>
-            <p>This paragraph is still part of the list item, but it looks messy to humans. So it's a good idea to wrap your nested paragraphs manually, as we did with the first two.</p>
-          </li>
-          <li>
-            <p>Blockquotes in a list item:</p>
+        <h1>Typography</h1>
+        <div class="row">
+          <div class="col col-4">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+          </div>
+          <div class="col col-4">
+            <h2>Emphasis</h2>
+            <p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
+            <p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+            <p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
+            <p>Strikethrough uses two tildes. <del>Scratch this.</del></p>
+          </div>
+          <div class="col col-4">
+            <h2>Blockquotes</h2>
             <blockquote>
-              <p>Skip a line and
-                indent the &gt;'s four spaces.
+              <p>Blockquotes are very handy in email to emulate reply text.
+                This line is part of the same quote.
               </p>
             </blockquote>
-          </li>
-          <li>
-            <p>Preformatted text in a list item:</p>
-            <pre><code>Skip a line and indent eight spaces.
-That's four spaces for the list
-and four to trigger the code block.
-</code></pre>
-          </li>
-        </ol>
+            <p>Quote break.</p>
+            <blockquote>
+              <p>This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
+            </blockquote>
+          </div>
+        </div>
       </div>
       <div class="section">
-        <h2>Images</h2>
-        <img src="https://images.unsplash.com/photo-1523612192437-66de9804ac3c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=59310f54610ead00fcc3d07732d5d473&auto=format&fit=crop&w=1350&q=80" alt="Image alt text" title="Logo Title Text 1" style="max-width: 100%">
-        <p>Photo credits: <a href="https://unsplash.com/photos/sKn-Yy4BRtY">Ashim D'Silva</a></p>
+        <div class="row">
+          <div class="col col-7">
+            <h2>Lists</h2>
+            <ol>
+              <li>First ordered list item</li>
+              <li>Second item</li>
+              <li>Third item</li>
+            </ol>
+            <ul>
+              <li>First unordered list item</li>
+              <li>Second item</li>
+              <li>Third item</li>
+            </ul>
+            <ol>
+              <li>
+                Lists in a list item:
+                <ul>
+                  <li>
+                    Indented four spaces.
+                    <ul>
+                      <li>indented eight spaces.</li>
+                    </ul>
+                  </li>
+                  <li>Four spaces again.</li>
+                </ul>
+              </li>
+              <li>
+                <p>Multiple paragraphs in a list items:
+                  It's best to indent the paragraphs four spaces
+                  You can get away with three, but it can get
+                  confusing when you nest other things.
+                  Stick to four.
+                </p>
+                <p>We indented the first line an extra space to align
+                  it with these paragraphs. In real use, we might do
+                  that to the entire list so that all items line up.
+                </p>
+                <p>This paragraph is still part of the list item, but it looks messy to humans. So it's a good idea to wrap your nested paragraphs manually, as we did with the first two.</p>
+              </li>
+              <li>
+                <p>Blockquotes in a list item:</p>
+                <blockquote>
+                  <p>Skip a line and
+                    indent the &gt;'s four spaces.
+                  </p>
+                </blockquote>
+              </li>
+              <li>
+                <p>Preformatted text in a list item:</p>
+                <pre><code>Skip a line and indent eight spaces.
+    That's four spaces for the list
+    and four to trigger the code block.
+    </code></pre>
+              </li>
+            </ol>
+          </div>
+          <div class="col col-1"></div>
+          <div class="col col-4">
+            <h2>Tables</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Tables</th>
+                  <th align="center">Are</th>
+                  <th align="right">Cool</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>col 3 is</td>
+                  <td align="center">right-aligned</td>
+                  <td align="right">$1600</td>
+                </tr>
+                <tr>
+                  <td>col 2 is</td>
+                  <td align="center">centered</td>
+                  <td align="right">$12</td>
+                </tr>
+                <tr>
+                  <td>zebra stripes</td>
+                  <td align="center">are neat</td>
+                  <td align="right">$1</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <thead>
+                <tr>
+                  <th>Markdown</th>
+                  <th>Less</th>
+                  <th>Pretty</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><em>Still</em></td>
+                  <td><code>renders</code></td>
+                  <td><strong>nicely</strong></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
       <div class="section">
-        <h2>Tables</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Tables</th>
-              <th align="center">Are</th>
-              <th align="right">Cool</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>col 3 is</td>
-              <td align="center">right-aligned</td>
-              <td align="right">$1600</td>
-            </tr>
-            <tr>
-              <td>col 2 is</td>
-              <td align="center">centered</td>
-              <td align="right">$12</td>
-            </tr>
-            <tr>
-              <td>zebra stripes</td>
-              <td align="center">are neat</td>
-              <td align="right">$1</td>
-            </tr>
-          </tbody>
-        </table>
-        <table>
-          <thead>
-            <tr>
-              <th>Markdown</th>
-              <th>Less</th>
-              <th>Pretty</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><em>Still</em></td>
-              <td><code>renders</code></td>
-              <td><strong>nicely</strong></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="section">
-        <h2>Blockquotes</h2>
-        <blockquote>
-          <p>Blockquotes are very handy in email to emulate reply text.
-            This line is part of the same quote.
-          </p>
-        </blockquote>
-        <p>Quote break.</p>
-        <blockquote>
-          <p>This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
-        </blockquote>
-      </div>
-      <div class="section">
-        <h2>Inline HTML</h2>
-        <p>To reboot your computer, <a href="https://www.lmgtfy.com">search it up on Google</a> or press <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>del</kbd>.</p>
-      </div>
-      <div class="section">
-        <h2>Code and Syntax Highlighting</h2>
-        <p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
-        <pre lang="no-highlight"><code>function foo() {
+        <div class="row">
+          <div class="col col-5">
+            <h2>Inline HTML</h2>
+            <p>To reboot your computer, <a href="https://www.lmgtfy.com">search it up on Google</a> or press <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>del</kbd>.</p>
+            <h2>Horizontal Rules</h2>
+            <p>Three or more...</p>
+            <hr>
+            <p>Hyphens</p>
+            <hr>
+            <p>Asterisks</p>
+            <hr>
+            <p>Underscores</p>
+          </div>
+          <div class="col col-1"></div>
+          <div class="col col-6">
+            <h2>Code and Syntax Highlighting</h2>
+            <p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
+            <pre lang="no-highlight"><code>function foo() {
   console.log('foo!');
-}
-</code></pre>
-        <h3>You can use <code>code</code> in your headers.</h3>
-        <blockquote>As well as type <code>code</code> in your blockquotes.</blockquote>
-        <table>
-          <thead>
-            <tr>
-              <th>JavaScript</th>
-              <th>Reason</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <pre>const myFun = (x, y) =&gt; {
+}</code></pre>
+            <h3>You can use <code>code</code> in your headers.</h3>
+            <blockquote>As well as type <code>code</code> in your blockquotes.</blockquote>
+            <table>
+              <thead>
+                <tr>
+                  <th>JavaScript</th>
+                  <th>Reason</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <pre>const myFun = (x, y) =&gt; {
   const doubleX = x + x;
   const doubleY = y + y;
   return doubleX + doubleY
 };</pre>
-              </td>
-              <td>
+                  </td>
+                  <td>
                 <pre>let myFun = (x, y) =&gt; {
   let doubleX = x + x;
   let doubleY = y + y;
   doubleX + doubleY
 };</pre>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
       <div class="section">
-        <h2>Horizontal Rules</h2>
-        <p>Three or more...</p>
-        <hr>
-        <p>Hyphens</p>
-        <hr>
-        <p>Asterisks</p>
-        <hr>
-        <p>Underscores</p>
+        <h1>Media</h1>
+        <div class="row">
+          <div class="col col-3">
+            <h2>Images</h2>
+            <img src="https://images.unsplash.com/photo-1523612192437-66de9804ac3c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=59310f54610ead00fcc3d07732d5d473&auto=format&fit=crop&w=1350&q=80" alt="Image alt text" title="Logo Title Text 1" style="max-width: 100%">
+            <p>Photo credits: <a href="https://unsplash.com/photos/sKn-Yy4BRtY">Ashim D'Silva</a></p>
+          </div>
       </div>
     </div>
   </body>

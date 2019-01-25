@@ -1,7 +1,7 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  max-width: var(--container-width);
   padding-left: calc(var(--horizontal-spacing) / 2);
   padding-right: calc(var(--horizontal-spacing) / 2);
 
@@ -10,7 +10,7 @@
   }
 }
 
-.rows {
+.row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -28,23 +28,23 @@
     }
   }
 
-  &.rows-align-top {
+  &.row-align-top {
     align-items: flex-start;
   }
 
-  &.rows-align-bottom {
+  &.row-align-bottom {
     align-items: flex-end;
   }
 
-  &.rows-align-center {
+  &.row-align-center {
     align-items: center;
   }
 
-  &.rows-align-stretch {
+  &.row-align-stretch {
     align-items: stretch;
   }
 
-  &.rows-align-baseline {
+  &.row-align-baseline {
     align-items: baseline;
   }
 

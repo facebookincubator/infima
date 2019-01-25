@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700");
 :root {
+  /* Base */
   --background-color: transparent;
   /* Typography */
   --font-color-base: #000;
@@ -14,6 +15,7 @@
   --font-weight-base: var(--font-weight-normal);
   --line-height-base: 1.5;
   /* Grid */
+  --container-width: 1140px;
   --vertical-spacing: 1rem;
   --horizontal-spacing: 1rem;
   /* Links */
@@ -276,78 +278,78 @@ hr {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  max-width: var(--container-width);
   padding-left: calc(var(--horizontal-spacing) / 2);
   padding-right: calc(var(--horizontal-spacing) / 2); }
   .container.container-fluid {
     max-width: inherit; }
 
-.rows {
+.row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-left: calc(var(--horizontal-spacing) * -0.5);
   margin-right: calc(var(--horizontal-spacing) * -0.5); }
-  .rows.no-gutters {
+  .row.no-gutters {
     margin-left: 0;
     margin-right: 0; }
-    .rows.no-gutters > .col,
-    .rows.no-gutters > [class*="col-"] {
+    .row.no-gutters > .col,
+    .row.no-gutters > [class*="col-"] {
       padding-left: 0;
       padding-right: 0; }
-  .rows.rows-align-top {
+  .row.row-align-top {
     align-items: flex-start; }
-  .rows.rows-align-bottom {
+  .row.row-align-bottom {
     align-items: flex-end; }
-  .rows.rows-align-center {
+  .row.row-align-center {
     align-items: center; }
-  .rows.rows-align-stretch {
+  .row.row-align-stretch {
     align-items: stretch; }
-  .rows.rows-align-baseline {
+  .row.row-align-baseline {
     align-items: baseline; }
-  .rows [class*="col-"] {
+  .row [class*="col-"] {
     padding-left: calc(var(--horizontal-spacing) / 2);
     padding-right: calc(var(--horizontal-spacing) / 2); }
-  .rows .col {
+  .row .col {
     display: block;
     flex: 1 1 auto;
     margin-left: 0;
     max-width: 100%;
     width: 100%; }
-    .rows .col.col-1 {
+    .row .col.col-1 {
       flex: 0 0 8.3333%;
       max-width: 8.3333%; }
-    .rows .col.col-2 {
+    .row .col.col-2 {
       flex: 0 0 16.6666%;
       max-width: 16.6666%; }
-    .rows .col.col-3 {
+    .row .col.col-3 {
       flex: 0 0 25%;
       max-width: 25%; }
-    .rows .col.col-4 {
+    .row .col.col-4 {
       flex: 0 0 33.3333%;
       max-width: 33.3333%; }
-    .rows .col.col-5 {
+    .row .col.col-5 {
       flex: 0 0 41.6666%;
       max-width: 41.6666%; }
-    .rows .col.col-6 {
+    .row .col.col-6 {
       flex: 0 0 50%;
       max-width: 50%; }
-    .rows .col.col-7 {
+    .row .col.col-7 {
       flex: 0 0 58.3333%;
       max-width: 58.3333%; }
-    .rows .col.col-8 {
+    .row .col.col-8 {
       flex: 0 0 66.6666%;
       max-width: 66.6666%; }
-    .rows .col.col-9 {
+    .row .col.col-9 {
       flex: 0 0 75%;
       max-width: 75%; }
-    .rows .col.col-10 {
+    .row .col.col-10 {
       flex: 0 0 83.3333%;
       max-width: 83.3333%; }
-    .rows .col.col-11 {
+    .row .col.col-11 {
       flex: 0 0 91.6666%;
       max-width: 91.6666%; }
-    .rows .col.col-12 {
+    .row .col.col-12 {
       flex: 0 0 100%;
       max-width: 100%; }
 

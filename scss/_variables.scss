@@ -1,4 +1,5 @@
 :root {
+  /* Base */
   --background-color: transparent;
 
   /* Typography */
@@ -18,6 +19,7 @@
   --line-height-base: 1.5;
 
   /* Grid */
+  --container-width: 1140px;
   --vertical-spacing: 1rem;
   --horizontal-spacing: 1rem;
 
