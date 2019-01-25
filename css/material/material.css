@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700");
 :root {
+  --background-color: transparent;
   /* Typography */
   --font-color-base: #000;
   --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
@@ -88,6 +89,7 @@
   box-sizing: inherit; }
 
 html {
+  background-color: var(--background-color);
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; }
 
@@ -270,15 +272,6 @@ hr {
     clear: both;
     content: '';
     display: table; }
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
-  padding-left: calc(var(--horizontal-spacing) / 2);
-  padding-right: calc(var(--horizontal-spacing) / 2); }
-  .container.container-fluid {
-    max-width: inherit; }
 
 img {
   background-color: #fff;
