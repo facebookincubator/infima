@@ -6,17 +6,29 @@
   --global-radius: calc(var(--font-size-base) * 0.1875);
   /* Colors */
   --color-primary: #3578e5;
-  /* Blue 60 */
+  --color-primary-dark: #1754b6;
+  --color-primary-darker: #0f3572;
+  --color-primary-light: #79a5ee;
   --color-secondary: #606770;
-  /* Secondary */
+  --color-secondary-dark: #3d4147;
+  --color-secondary-darker: #191b1e;
+  --color-primary-light: #868d97;
   --color-success: #a3ce71;
-  /* Lime */
+  --color-success-dark: #7eb43e;
+  --color-success-darker: #567b2b;
+  --color-primary-light: #c8e2aa;
   --color-info: #6bcebb;
-  /* Teal */
+  --color-info-dark: #3bb29b;
+  --color-info-darker: #287869;
+  --color-primary-light: #a4e1d5;
   --color-warning: #fcd872;
-  /* Lemon */
+  --color-warning-dark: #fac327;
+  --color-warning-darker: #d19b04;
+  --color-primary-light: #feedbd;
   --color-danger: #f35369;
-  /* Cherry */
+  --color-danger-dark: #e9102e;
+  --color-danger-darker: #a20b20;
+  --color-primary-light: #f89ba7;
   --color-link: #385898;
   /* Blue Link */
   --color-white: #fff;
@@ -37,7 +49,8 @@
   --vertical-spacing: 1rem;
   --horizontal-spacing: 1rem;
   /* Buttons */
-  --button-border-radius: 1.15rem;
+  --button-border-radius: 0.5rem;
+  --button-border-width: 1px;
   --button-transition-duration: 0.15s;
   /* Links */
   --link-color: var(--color-link);
@@ -145,14 +158,16 @@ body {
   --color: var(--color-white);
   appearance: none;
   background-color: var(--background-color);
-  border: 1px solid var(--border-color);
+  border-color: var(--border-color);
+  border-style: solid;
+  border-width: var(--button-border-width);
   border-radius: var(--button-border-radius);
   box-sizing: border-box;
   color: var(--color);
   cursor: pointer;
   display: inline-block;
   font-size: 0.8rem;
-  height: 2.3rem;
+  height: calc(2.3rem + 2 * var(--button-border-width));
   line-height: 1.5;
   outline: 0;
   padding: 0.5rem 1.5rem;
@@ -166,25 +181,48 @@ body {
     outline: 0; }
   .btn:focus {
     outline: 0; }
-  .btn.btn.btn.btn-outline:hover {
-    --color: var(--color-white); }
   .btn.btn-outline {
     --background-color: transparent;
     --color: var(--button-color); }
     .btn.btn-outline:hover {
-      --background-color: var(--button-color); }
+      --background-color: var(--button-color);
+      --color: var(--color-white); }
   .btn.btn-primary {
     --button-color: var(--color-primary); }
+    .btn.btn-primary:hover:not(.btn-outline) {
+      --button-color: var(--color-primary-dark); }
   .btn.btn-secondary {
     --button-color: var(--color-secondary); }
+    .btn.btn-secondary:hover:not(.btn-outline) {
+      --button-color: var(--color-secondary-dark); }
   .btn.btn-success {
     --button-color: var(--color-success); }
+    .btn.btn-success:hover:not(.btn-outline) {
+      --button-color: var(--color-success-dark); }
   .btn.btn-info {
     --button-color: var(--color-info); }
+    .btn.btn-info:hover:not(.btn-outline) {
+      --button-color: var(--color-info-dark); }
   .btn.btn-warning {
     --button-color: var(--color-warning); }
+    .btn.btn-warning:hover:not(.btn-outline) {
+      --button-color: var(--color-warning-dark); }
   .btn.btn-danger {
     --button-color: var(--color-danger); }
+    .btn.btn-danger:hover:not(.btn-outline) {
+      --button-color: var(--color-danger-dark); }
+  .btn.btn.btn-primary:active {
+    --button-color: var(--color-primary-darker); }
+  .btn.btn.btn-secondary:active {
+    --button-color: var(--color-secondary-darker); }
+  .btn.btn.btn-success:active {
+    --button-color: var(--color-success-darker); }
+  .btn.btn.btn-info:active {
+    --button-color: var(--color-info-darker); }
+  .btn.btn.btn-warning:active {
+    --button-color: var(--color-warning-darker); }
+  .btn.btn.btn-danger:active {
+    --button-color: var(--color-danger-darker); }
 
 [type='checkbox'] {
   padding: 0; }

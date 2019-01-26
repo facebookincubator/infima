@@ -1,15 +1,45 @@
+$color-primary: #3578e5; // Blue 60
+$color-secondary: #606770; // Secondary
+$color-success: #a3ce71; // Lime
+$color-info: #6bcebb; // Teal
+$color-warning: #fcd872; // Lemon
+$color-danger: #f35369; // Cherry
+$color-link: #385898; // Blue Link
+$color-white: #fff; // White
+$dark-value: 15%;
+$darker-value: 30%;
+$light-value: 15%;
+
 :root {
   /* Base */
   --background-color: transparent;
   --global-radius: calc(var(--font-size-base) * 0.1875);
 
   /* Colors */
-  --color-primary: #3578e5; /* Blue 60 */
-  --color-secondary: #606770; /* Secondary */
-  --color-success: #a3ce71; /* Lime */
-  --color-info: #6bcebb; /* Teal */
-  --color-warning: #fcd872; /* Lemon */
-  --color-danger: #f35369; /* Cherry */
+  --color-primary: #{$color-primary};
+  --color-primary-dark: #{darken($color-primary, $dark-value)};
+  --color-primary-darker: #{darken($color-primary, $darker-value)};
+  --color-primary-light: #{lighten($color-primary, $light-value)};
+  --color-secondary: #{$color-secondary};
+  --color-secondary-dark: #{darken($color-secondary, $dark-value)};
+  --color-secondary-darker: #{darken($color-secondary, $darker-value)};
+  --color-primary-light: #{lighten($color-secondary, $light-value)};
+  --color-success: #{$color-success};
+  --color-success-dark: #{darken($color-success, $dark-value)};
+  --color-success-darker: #{darken($color-success, $darker-value)};
+  --color-primary-light: #{lighten($color-success, $light-value)};
+  --color-info: #{$color-info};
+  --color-info-dark: #{darken($color-info, $dark-value)};
+  --color-info-darker: #{darken($color-info, $darker-value)};
+  --color-primary-light: #{lighten($color-info, $light-value)};
+  --color-warning: #{$color-warning};
+  --color-warning-dark: #{darken($color-warning, $dark-value)};
+  --color-warning-darker: #{darken($color-warning, $darker-value)};
+  --color-primary-light: #{lighten($color-warning, $light-value)};
+  --color-danger: #{$color-danger};
+  --color-danger-dark: #{darken($color-danger, $dark-value)};
+  --color-danger-darker: #{darken($color-danger, $darker-value)};
+  --color-primary-light: #{lighten($color-danger, $light-value)};
   --color-link: #385898; /* Blue Link */
   --color-white: #fff; /* White */
 
@@ -31,7 +61,8 @@
   --horizontal-spacing: 1rem;
 
   /* Buttons */
-  --button-border-radius: 1.15rem;
+  --button-border-radius: 0.5rem;
+  --button-border-width: 1px;
   --button-transition-duration: 0.15s;
 
   /* Links */

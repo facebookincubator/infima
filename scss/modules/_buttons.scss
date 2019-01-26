@@ -6,14 +6,16 @@
 
   appearance: none;
   background-color: var(--background-color);
-  border: 1px solid var(--border-color);
+  border-color: var(--border-color);
+  border-style: solid;
+  border-width: var(--button-border-width);
   border-radius: var(--button-border-radius);
   box-sizing: border-box;
   color: var(--color);
   cursor: pointer;
   display: inline-block;
   font-size: 0.8rem;
-  height: 2.3rem;
+  height: calc(2.3rem + 2 * var(--button-border-width));
   line-height: 1.5;
   outline: 0;
   padding: 0.5rem 1.5rem;
@@ -35,23 +37,29 @@
     outline: 0;
   }
 
-  &.btn.btn.btn-outline:hover {
-    --color: var(--color-white);
-  }
-
   &.btn-outline {
     --background-color: transparent;
     --color: var(--button-color);
 
     &:hover {
       --background-color: var(--button-color);
+      --color: var(--color-white);
     }
   }
 
-  $colors: ('primary', 'secondary', 'success', 'info', 'warning', 'danger');
   @each $color in $colors {
     &.btn-#{$color} {
       --button-color: var(--color-#{$color});
+
+      &:hover:not(.btn-outline) {
+        --button-color: var(--color-#{$color}-dark);
+      }
+    }
+  }
+
+  @each $color in $colors {
+    &.btn.btn-#{$color}:active {
+      --button-color: var(--color-#{$color}-darker);
     }
   }
 }
