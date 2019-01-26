@@ -139,12 +139,16 @@ body {
     box-sizing: border-box; }
 
 .btn {
+  --button-color: transparent;
+  --background-color: var(--button-color);
+  --border-color: var(--button-color);
+  --color: var(--color-white);
   appearance: none;
-  background-color: transparent;
-  border: 1px solid transparent;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
   border-radius: var(--button-border-radius);
   box-sizing: border-box;
-  color: var(--color-white);
+  color: var(--color);
   cursor: pointer;
   display: inline-block;
   font-size: 0.8rem;
@@ -154,7 +158,7 @@ body {
   padding: 0.5rem 1.5rem;
   text-align: center;
   text-decoration: none;
-  transition: color var(--button-transition-duration) ease-in-out, background-color var(--button-transition-duration) ease-in-out, border-color var(--button-transition-duration) ease-in-out, box-shadow var(--button-transition-duration) ease-in-out;
+  transition: color var(--button-transition-duration) ease-in-out, background var(--button-transition-duration) ease-in-out, border-color var(--button-transition-duration) ease-in-out, box-shadow var(--button-transition-duration) ease-in-out;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap; }
@@ -163,55 +167,24 @@ body {
   .btn:focus {
     outline: 0; }
   .btn.btn.btn.btn-outline:hover {
-    color: var(--color-white); }
+    --color: var(--color-white); }
+  .btn.btn-outline {
+    --background-color: transparent;
+    --color: var(--button-color); }
+    .btn.btn-outline:hover {
+      --background-color: var(--button-color); }
   .btn.btn-primary {
-    background-color: var(--color-primary);
-    border-color: var(--color-primary); }
-    .btn.btn-primary.btn-outline {
-      background-color: transparent;
-      color: var(--color-primary); }
-      .btn.btn-primary.btn-outline:hover {
-        background-color: var(--color-primary); }
+    --button-color: var(--color-primary); }
   .btn.btn-secondary {
-    background-color: var(--color-secondary);
-    border-color: var(--color-secondary); }
-    .btn.btn-secondary.btn-outline {
-      background-color: transparent;
-      color: var(--color-secondary); }
-      .btn.btn-secondary.btn-outline:hover {
-        background-color: var(--color-secondary); }
+    --button-color: var(--color-secondary); }
   .btn.btn-success {
-    background-color: var(--color-success);
-    border-color: var(--color-success); }
-    .btn.btn-success.btn-outline {
-      background-color: transparent;
-      color: var(--color-success); }
-      .btn.btn-success.btn-outline:hover {
-        background-color: var(--color-success); }
+    --button-color: var(--color-success); }
   .btn.btn-info {
-    background-color: var(--color-info);
-    border-color: var(--color-info); }
-    .btn.btn-info.btn-outline {
-      background-color: transparent;
-      color: var(--color-info); }
-      .btn.btn-info.btn-outline:hover {
-        background-color: var(--color-info); }
+    --button-color: var(--color-info); }
   .btn.btn-warning {
-    background-color: var(--color-warning);
-    border-color: var(--color-warning); }
-    .btn.btn-warning.btn-outline {
-      background-color: transparent;
-      color: var(--color-warning); }
-      .btn.btn-warning.btn-outline:hover {
-        background-color: var(--color-warning); }
+    --button-color: var(--color-warning); }
   .btn.btn-danger {
-    background-color: var(--color-danger);
-    border-color: var(--color-danger); }
-    .btn.btn-danger.btn-outline {
-      background-color: transparent;
-      color: var(--color-danger); }
-      .btn.btn-danger.btn-outline:hover {
-        background-color: var(--color-danger); }
+    --button-color: var(--color-danger); }
 
 [type='checkbox'] {
   padding: 0; }

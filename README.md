@@ -14,10 +14,10 @@ Themes for Markdown
   - [x] Images
   - [x] Tables
 - Prefix
-  - [ ] Buttons
+  - [/] Buttons
   - [ ] Navbar
   - [ ] Footer
-  - [ ] Grid
+  - [x] Grid
   - [ ] Card
   - [ ] Avatar
   - [ ] Sidebar
