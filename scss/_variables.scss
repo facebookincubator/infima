@@ -1,6 +1,6 @@
 // Colors.
 $color-primary: #3578e5; // Blue 60
-$color-secondary: #606770; // Secondary
+$color-secondary: #CCD0D5; // Gray 20
 $color-success: #a3ce71; // Lime
 $color-info: #6bcebb; // Teal
 $color-warning: #fcd872; // Lemon
@@ -57,10 +57,11 @@ $grid-breakpoints: (
   --color-primary-light: #{lighten($color-danger, $light-value)};
   --color-link: #385898; /* Blue Link */
   --color-white: #fff; /* White */
+  --color-black: #000; /* Black */
 
   /* Typography */
   --font-color-base: #1c1e21;
-  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+  --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
   Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
