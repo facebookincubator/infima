@@ -6,7 +6,7 @@
     <title>Markswatch</title>
     <style>
       body {
-        padding: 45px;
+        padding: 45px 0;
       }
 
       .section {
@@ -17,14 +17,13 @@
         float: right;
       }
 
-      .grid-demo .row {
-        margin-bottom: 16px;
-        margin-top: 16px;
+      .grid-demo [class*="col-"] {
+        padding-bottom: 16px;
       }
 
       .grid-demo [class*="col-"] .col-inner {
         background-color: #f6f9fb;
-        border-radius: 4px;
+        border-radius: 8px;
         padding: 16px;
         text-align: center;
       }
@@ -58,6 +57,7 @@
       <hr/>
       <div class="section grid-demo">
         <h1>Grid</h1>
+        <h3>Twelve Column Grid</h3>
         <div class="row">
           <div class="col col-6"><div class="col-inner">col-6</div></div>
           <div class="col col-6"><div class="col-inner">col-6</div></div>
@@ -94,6 +94,22 @@
           <div class="col col-1"><div class="col-inner">col-1</div></div>
           <div class="col col-1"><div class="col-inner">col-1</div></div>
           <div class="col col-1"><div class="col-inner">col-1</div></div>
+        </div>
+
+        <h3>Column Offsets</h3>
+        <div class="row">
+          <div class="col col-1"><div class="col-inner">col-1</div></div>
+          <div class="col col-2 col-offset-1"><div class="col-inner">col-2 col-offset-1</div></div>
+          <div class="col col-3 col-offset-2"><div class="col-inner">col-3 col-offset-2</div></div>
+        </div>
+        <div class="row">
+          <div class="col col-2"><div class="col-inner">col-2</div></div>
+          <div class="col col-2 col-offset-2"><div class="col-inner">col-2 col-offset-2</div></div>
+          <div class="col col-4 col-offset-2"><div class="col-inner">col-4 col-offset-2</div></div>
+        </div>
+        <div class="row">
+          <div class="col col-3"><div class="col-inner">col-3</div></div>
+          <div class="col col-6 col-offset-3"><div class="col-inner">col-6 col-offset-3</div></div>
         </div>
       </div>
       <div class="section buttons-demo">

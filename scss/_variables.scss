@@ -1,3 +1,4 @@
+// Colors.
 $color-primary: #3578e5; // Blue 60
 $color-secondary: #606770; // Secondary
 $color-success: #a3ce71; // Lime
@@ -10,10 +11,24 @@ $dark-value: 15%;
 $darker-value: 30%;
 $light-value: 15%;
 
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+);
+
 :root {
   /* Base */
   --background-color: transparent;
   --global-radius: calc(var(--font-size-base) * 0.1875);
+  --media-breakpoint: 1024px;
 
   /* Colors */
   --color-primary: #{$color-primary};
