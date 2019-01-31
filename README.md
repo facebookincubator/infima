@@ -14,7 +14,7 @@ Themes for Markdown
   - [x] Images
   - [x] Tables
 - Prefix
-  - [/] Buttons
+  - [x] Buttons
   - [ ] Navbar
   - [ ] Footer
   - [x] Grid
@@ -23,7 +23,7 @@ Themes for Markdown
   - [ ] Sidebar
   - [ ] Icons
   - [ ] Alerts
-  - [ ] Colors
+  - [x] Colors
   - [ ] Tabs
   - [ ] Breadcrumbs
   - [ ] Pagination
