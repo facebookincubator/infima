@@ -7,29 +7,29 @@
   --media-breakpoint: 1024px;
   /* Colors */
   --color-primary: #3578e5;
-  --color-primary-dark: #1754b6;
-  --color-primary-darker: #0f3572;
-  --color-primary-light: #79a5ee;
+  --color-primary-dark: #1a5ecd;
+  --color-primary-darker: #15499f;
+  --color-primary-light: #6296eb;
   --color-secondary: #CCD0D5;
-  --color-secondary-dark: #a2a9b2;
-  --color-secondary-darker: #788390;
-  --color-primary-light: #f6f7f8;
+  --color-secondary-dark: #b0b6be;
+  --color-secondary-darker: #949ca7;
+  --color-primary-light: #e8eaec;
   --color-success: #a3ce71;
-  --color-success-dark: #7eb43e;
-  --color-success-darker: #567b2b;
-  --color-primary-light: #c8e2aa;
+  --color-success-dark: #8ac14b;
+  --color-success-darker: #70a138;
+  --color-primary-light: #bcdb97;
   --color-info: #6bcebb;
-  --color-info-dark: #3bb29b;
-  --color-info-darker: #287869;
-  --color-primary-light: #a4e1d5;
+  --color-info-dark: #45c1a9;
+  --color-info-darker: #349f8a;
+  --color-primary-light: #91dbcd;
   --color-warning: #fcd872;
-  --color-warning-dark: #fac327;
-  --color-warning-darker: #d19b04;
-  --color-primary-light: #feedbd;
+  --color-warning-dark: #fbca40;
+  --color-warning-darker: #fabc0e;
+  --color-primary-light: #fde6a4;
   --color-danger: #f35369;
-  --color-danger-dark: #e9102e;
-  --color-danger-darker: #a20b20;
-  --color-primary-light: #f89ba7;
+  --color-danger-dark: #f0233f;
+  --color-danger-darker: #d10f29;
+  --color-primary-light: #f68393;
   --color-link: #385898;
   /* Blue Link */
   --color-white: #fff;
@@ -162,12 +162,13 @@ body {
   --padding-horizontal: 1.5rem;
   --padding-vertical: 0.375rem;
   --size-multiplier: 1;
+  --border-radius: calc(var(--button-border-radius) * var(--size-multiplier));
   appearance: none;
   background-color: var(--background-color);
   border-color: var(--border-color);
   border-style: solid;
   border-width: var(--button-border-width);
-  border-radius: calc(var(--button-border-radius) * var(--size-multiplier));
+  border-radius: var(--border-radius);
   box-sizing: border-box;
   color: var(--color);
   cursor: pointer;
@@ -197,7 +198,7 @@ body {
     opacity: 0.65;
     pointer-events: none; }
   .btn.btn-sm {
-    --size-multiplier: 0.85; }
+    --size-multiplier: 0.65; }
   .btn.btn-lg {
     --size-multiplier: 1.5; }
   .btn.btn-block {
@@ -208,38 +209,47 @@ body {
     --button-color: var(--color-primary); }
     .btn.btn-primary:hover:not(.btn-outline) {
       --button-color: var(--color-primary-dark); }
-  .btn.btn.btn-primary:active {
+  .btn.btn.btn-primary:active, .btn.btn.btn-primary.btn-active {
     --button-color: var(--color-primary-darker); }
   .btn.btn-secondary {
     --button-color: var(--color-secondary); }
     .btn.btn-secondary:hover:not(.btn-outline) {
       --button-color: var(--color-secondary-dark); }
-  .btn.btn.btn-secondary:active {
+  .btn.btn.btn-secondary:active, .btn.btn.btn-secondary.btn-active {
     --button-color: var(--color-secondary-darker); }
   .btn.btn-success {
     --button-color: var(--color-success); }
     .btn.btn-success:hover:not(.btn-outline) {
       --button-color: var(--color-success-dark); }
-  .btn.btn.btn-success:active {
+  .btn.btn.btn-success:active, .btn.btn.btn-success.btn-active {
     --button-color: var(--color-success-darker); }
   .btn.btn-info {
     --button-color: var(--color-info); }
     .btn.btn-info:hover:not(.btn-outline) {
       --button-color: var(--color-info-dark); }
-  .btn.btn.btn-info:active {
+  .btn.btn.btn-info:active, .btn.btn.btn-info.btn-active {
     --button-color: var(--color-info-darker); }
   .btn.btn-warning {
     --button-color: var(--color-warning); }
     .btn.btn-warning:hover:not(.btn-outline) {
       --button-color: var(--color-warning-dark); }
-  .btn.btn.btn-warning:active {
+  .btn.btn.btn-warning:active, .btn.btn.btn-warning.btn-active {
     --button-color: var(--color-warning-darker); }
   .btn.btn-danger {
     --button-color: var(--color-danger); }
     .btn.btn-danger:hover:not(.btn-outline) {
       --button-color: var(--color-danger-dark); }
-  .btn.btn.btn-danger:active {
+  .btn.btn.btn-danger:active, .btn.btn.btn-danger.btn-active {
     --button-color: var(--color-danger-darker); }
+
+.btn-group {
+  display: inline-flex; }
+  .btn-group > .btn:not(:first-child) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0; }
+  .btn-group > .btn:not(:last-child) {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0; }
 
 [type='checkbox'] {
   padding: 0; }
