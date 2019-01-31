@@ -13,6 +13,14 @@
         margin: 6rem auto;
       }
 
+      .section .row:not(:first-child) {
+        margin-top: 1rem;
+      }
+
+      .section .row:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
       .theme-switcher {
         float: right;
       }
@@ -26,11 +34,6 @@
         border-radius: 8px;
         padding: 16px;
         text-align: center;
-      }
-
-      .buttons-demo .row {
-        margin-bottom: 16px;
-        margin-top: 16px;
       }
     </style>
     <link id="theme-stylesheet" href="css/default/default.css" type="text/css" rel="stylesheet">
@@ -112,7 +115,7 @@
           <div class="col col-6 col-offset-3"><div class="col-inner">col-6 col-offset-3</div></div>
         </div>
       </div>
-      <div class="section buttons-demo">
+      <div class="section">
         <h1>Buttons</h1>
         <div class="row">
           <div class="col col-7">
@@ -168,6 +171,49 @@
               <div class="col col-12">
                 <button class="btn btn-block btn-primary">Block Button</button>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h1>Alert</h1>
+        <div class="row">
+          <div class="col col-4">
+            <div class="alert alert-primary" role="alert">
+              This is a <strong>primary</strong> alert.
+              You should probably pay attention to it.
+            </div>
+          </div>
+          <div class="col col-4">
+            <div class="alert alert-secondary" role="alert">
+              This is a <strong>secondary</strong> alert.
+              It's not too important, you may ignore it.
+            </div>
+          </div>
+          <div class="col col-4">
+            <div class="alert alert-success" role="alert">
+              This is a <strong>success</strong> alert.
+              Something good must have happened!
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-4">
+            <div class="alert alert-info" role="alert">
+              This is an <strong>info</strong> alert.
+              For your information only.
+            </div>
+          </div>
+          <div class="col col-4">
+            <div class="alert alert-warning" role="alert">
+              This is a <strong>warning</strong> alert.
+              Be warned, you should pay attention!
+            </div>
+          </div>
+          <div class="col col-4">
+            <div class="alert alert-danger" role="alert">
+              This is a <strong>danger</strong> alert.
+              Something has gone wrong, please investigate!
             </div>
           </div>
         </div>

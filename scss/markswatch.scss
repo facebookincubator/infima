@@ -1,10 +1,13 @@
 @import 'variables';
 @import 'modules/colors';
 @import 'modules/base';
+// Modules
+@import 'modules/alerts';
 @import 'modules/buttons';
 @import 'modules/forms';
 @import 'modules/grid';
 @import 'modules/images';
 @import 'modules/typography';
 @import 'modules/tables';
+// Utilities
 @import 'modules/utilities/text';

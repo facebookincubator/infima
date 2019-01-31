@@ -22,7 +22,7 @@ Themes for Markdown
   - [ ] Avatar
   - [ ] Sidebar
   - [ ] Icons
-  - [ ] Alerts
+  - [/] Alerts
   - [x] Colors
   - [ ] Tabs
   - [ ] Breadcrumbs

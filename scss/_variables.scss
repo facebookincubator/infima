@@ -1,6 +1,6 @@
 // Colors.
 $color-primary: #3578e5; // Blue 60
-$color-secondary: #CCD0D5; // Gray 20
+$color-secondary: #ccd0d5; // Gray 20
 $color-success: #a3ce71; // Lime
 $color-info: #6bcebb; // Teal
 $color-warning: #fcd872; // Lemon
@@ -9,7 +9,8 @@ $color-link: #385898; // Blue Link
 $color-white: #fff; // White
 $dark-value: 10%;
 $darker-value: 20%;
-$light-value: 10%;
+$darkerer-value: 40%;
+$light-value: 15%;
 
 $grid-breakpoints: (
   // Extra small screen / phone
@@ -27,6 +28,7 @@ $grid-breakpoints: (
 :root {
   /* Base */
   --background-color: transparent;
+  --global-border-width: 1px;
   --global-radius: calc(var(--font-size-base) * 0.1875);
   --media-breakpoint: 1024px;
 
@@ -34,26 +36,32 @@ $grid-breakpoints: (
   --color-primary: #{$color-primary};
   --color-primary-dark: #{darken($color-primary, $dark-value)};
   --color-primary-darker: #{darken($color-primary, $darker-value)};
+  --color-primary-darkerer: #{darken($color-primary, $darkerer-value)};
   --color-primary-light: #{lighten($color-primary, $light-value)};
   --color-secondary: #{$color-secondary};
   --color-secondary-dark: #{darken($color-secondary, $dark-value)};
   --color-secondary-darker: #{darken($color-secondary, $darker-value)};
+  --color-secondary-darkerer: #{darken($color-secondary, $darkerer-value)};
   --color-primary-light: #{lighten($color-secondary, $light-value)};
   --color-success: #{$color-success};
   --color-success-dark: #{darken($color-success, $dark-value)};
   --color-success-darker: #{darken($color-success, $darker-value)};
+  --color-success-darkerer: #{darken($color-success, $darkerer-value)};
   --color-primary-light: #{lighten($color-success, $light-value)};
   --color-info: #{$color-info};
   --color-info-dark: #{darken($color-info, $dark-value)};
   --color-info-darker: #{darken($color-info, $darker-value)};
+  --color-info-darkerer: #{darken($color-info, $darkerer-value)};
   --color-primary-light: #{lighten($color-info, $light-value)};
   --color-warning: #{$color-warning};
   --color-warning-dark: #{darken($color-warning, $dark-value)};
   --color-warning-darker: #{darken($color-warning, $darker-value)};
+  --color-warning-darkerer: #{darken($color-warning, $darkerer-value)};
   --color-primary-light: #{lighten($color-warning, $light-value)};
   --color-danger: #{$color-danger};
   --color-danger-dark: #{darken($color-danger, $dark-value)};
   --color-danger-darker: #{darken($color-danger, $darker-value)};
+  --color-danger-darkerer: #{darken($color-danger, $darkerer-value)};
   --color-primary-light: #{lighten($color-danger, $light-value)};
   --color-link: #385898; /* Blue Link */
   --color-white: #fff; /* White */
@@ -78,7 +86,6 @@ $grid-breakpoints: (
 
   /* Buttons */
   --button-border-radius: 0.5rem;
-  --button-border-width: 1px;
   --button-transition-duration: 0.15s;
 
   /* Links */
