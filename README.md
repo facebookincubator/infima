@@ -13,19 +13,19 @@ Themes for Markdown
   - [x] Lists
   - [x] Images
   - [x] Tables
-- Prefix
+- Components
+  - [/] Alerts
+  - [ ] Avatar
+  - [/] Badges
+  - [ ] Breadcrumbs
   - [x] Buttons
-  - [ ] Navbar
+  - [ ] Card
+  - [x] Colors
   - [ ] Footer
   - [x] Grid
-  - [ ] Card
-  - [ ] Avatar
-  - [ ] Sidebar
   - [ ] Icons
-  - [/] Alerts
-  - [x] Colors
-  - [ ] Tabs
-  - [ ] Breadcrumbs
+  - [ ] Navbar
   - [ ] Pagination
   - [ ] Pills
-  - [ ] Badges
+  - [ ] Sidebar
+  - [ ] Tabs

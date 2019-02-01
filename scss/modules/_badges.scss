@@ -1,0 +1,29 @@
+.badge {
+    --badge-color: transparent;
+  
+    --background-color: var(--badge-color);
+    --border-color: var(--badge-color);
+    --border-radius: var(--global-radius);
+    --border-width: var(--global-border-width);
+    --color: var(--color-white);
+    --padding-horizontal: 0.5rem;
+    --padding-vertical: 0.25rem;
+  
+    background-color: var(--background-color);
+    border-color: var(--border-color);
+    border-style: solid;
+    border-width: var(--border-width);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    color: var(--color-white);
+    font-size: 0.7rem;
+    font-weight: var(--font-weight-bold);
+    padding: var(--padding-vertical) var(--padding-horizontal);
+  
+    @each $color in $colors {
+      &.badge-#{$color} {
+        --badge-color: var(--color-#{$color});
+      }
+    }
+  }
+  
