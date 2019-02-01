@@ -1,0 +1,67 @@
+.pills {
+  --color-active: var(--color-primary);
+  --pill-spacing: 0.0625rem;
+
+  padding-left: 0;
+
+  > .pill-item {
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: inline-block;
+    list-style-type: none;
+    padding: 0.25rem 1rem;
+    transition: all 0.2s ease-in-out;
+    
+    &.pill-active {
+      background:
+        linear-gradient(
+          to top,
+          rgba(255, 255, 255, 0.85),
+          rgba(255, 255, 255, 0.85),
+        )
+        var(--color-active);
+      color: var(--color-active);
+      font-weight: var(--font-weight-bold);
+    }
+
+    &:not(.pill-active):hover {
+      background-color: var(--color-secondary-lighter);
+    }
+
+    &:not(:first-child) {
+      margin-left: var(--pill-spacing);
+    }
+
+    &:not(:last-child) {
+      margin-right: var(--pill-spacing);
+    }
+  }
+
+  > .pill-item + .pill-item {
+    margin-top: 0;
+  }
+
+  &.pills-block {
+    display: flex;
+    justify-content: stretch;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+
+    > .pill-item {
+      flex-grow: 1;
+      text-align: center;
+
+      @media (max-width: 1024px) {
+        &:not(:first-child) {
+          margin-top: var(--pill-spacing);
+        }
+    
+        &:not(:last-child) {
+          margin-bottom: var(--pill-spacing);
+        }
+      }
+    }
+  }
+}

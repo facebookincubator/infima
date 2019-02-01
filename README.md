@@ -26,6 +26,6 @@ Themes for Markdown
   - [ ] Icons
   - [ ] Navbar
   - [ ] Pagination
-  - [ ] Pills
+  - [/] Pills
   - [ ] Sidebar
   - [ ] Tabs

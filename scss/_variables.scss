@@ -11,6 +11,7 @@ $dark-value: 10%;
 $darker-value: 20%;
 $darkerer-value: 40%;
 $light-value: 15%;
+$lighter-value: 30%;
 
 $grid-breakpoints: (
   // Extra small screen / phone
@@ -38,31 +39,37 @@ $grid-breakpoints: (
   --color-primary-darker: #{darken($color-primary, $darker-value)};
   --color-primary-darkerer: #{darken($color-primary, $darkerer-value)};
   --color-primary-light: #{lighten($color-primary, $light-value)};
+  --color-primary-lighter: #{lighten($color-primary, $light-value)};
   --color-secondary: #{$color-secondary};
   --color-secondary-dark: #{darken($color-secondary, $dark-value)};
   --color-secondary-darker: #{darken($color-secondary, $darker-value)};
   --color-secondary-darkerer: #{darken($color-secondary, $darkerer-value)};
-  --color-primary-light: #{lighten($color-secondary, $light-value)};
+  --color-secondary-light: #{lighten($color-secondary, $light-value)};
+  --color-secondary-lighter: #{lighten($color-secondary, $light-value)};
   --color-success: #{$color-success};
   --color-success-dark: #{darken($color-success, $dark-value)};
   --color-success-darker: #{darken($color-success, $darker-value)};
   --color-success-darkerer: #{darken($color-success, $darkerer-value)};
-  --color-primary-light: #{lighten($color-success, $light-value)};
+  --color-success-light: #{lighten($color-success, $light-value)};
+  --color-success-lighter: #{lighten($color-success, $light-value)};
   --color-info: #{$color-info};
   --color-info-dark: #{darken($color-info, $dark-value)};
   --color-info-darker: #{darken($color-info, $darker-value)};
   --color-info-darkerer: #{darken($color-info, $darkerer-value)};
-  --color-primary-light: #{lighten($color-info, $light-value)};
+  --color-prim--light: #{lighten($color-info, $light-value)};
+  --color-prim--lighter: #{lighten($color-info, $light-value)};
   --color-warning: #{$color-warning};
   --color-warning-dark: #{darken($color-warning, $dark-value)};
   --color-warning-darker: #{darken($color-warning, $darker-value)};
   --color-warning-darkerer: #{darken($color-warning, $darkerer-value)};
-  --color-primary-light: #{lighten($color-warning, $light-value)};
+  --color-warning-light: #{lighten($color-warning, $light-value)};
+  --color-warning-lighter: #{lighten($color-warning, $light-value)};
   --color-danger: #{$color-danger};
   --color-danger-dark: #{darken($color-danger, $dark-value)};
   --color-danger-darker: #{darken($color-danger, $darker-value)};
   --color-danger-darkerer: #{darken($color-danger, $darkerer-value)};
-  --color-primary-light: #{lighten($color-danger, $light-value)};
+  --color-danger-light: #{lighten($color-danger, $light-value)};
+  --color-danger-lighter: #{lighten($color-danger, $light-value)};
   --color-link: #385898; /* Blue Link */
   --color-white: #fff; /* White */
   --color-black: #000; /* Black */
