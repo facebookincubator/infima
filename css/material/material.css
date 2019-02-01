@@ -216,7 +216,7 @@ body {
   color: var(--color);
   cursor: pointer;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: calc(0.8rem * var(--size-multiplier));
   font-weight: var(--font-weight-bold);
   line-height: 1.5;
   outline: 0;
@@ -241,9 +241,9 @@ body {
     opacity: 0.65;
     pointer-events: none; }
   .btn.btn-sm {
-    --size-multiplier: 0.65; }
+    --size-multiplier: 0.8; }
   .btn.btn-lg {
-    --size-multiplier: 1.5; }
+    --size-multiplier: 1.35; }
   .btn.btn-block {
     width: 100%; }
   .btn.btn-secondary {
