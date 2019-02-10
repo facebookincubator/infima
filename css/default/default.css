@@ -473,14 +473,13 @@ img[align='left'] {
     cursor: pointer;
     display: inline-block;
     list-style-type: none;
-    padding: 0.25rem 1rem;
-    transition: all 0.2s ease-in-out; }
+    padding: 0.25rem 1rem; }
     .pills > .pill-item.pill-active {
       background: linear-gradient(to top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)) var(--color-active);
-      color: var(--color-active);
-      font-weight: var(--font-weight-bold); }
+      color: var(--color-active); }
     .pills > .pill-item:not(.pill-active):hover {
-      background-color: var(--color-secondary-lighter); }
+      background-color: var(--color-secondary-lighter);
+      transition: background 0.2s ease-in-out; }
     .pills > .pill-item:not(:first-child) {
       margin-left: var(--pill-spacing); }
     .pills > .pill-item:not(:last-child) {

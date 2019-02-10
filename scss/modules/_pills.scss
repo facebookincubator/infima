@@ -10,7 +10,6 @@
     display: inline-block;
     list-style-type: none;
     padding: 0.25rem 1rem;
-    transition: all 0.2s ease-in-out;
     
     &.pill-active {
       background:
@@ -21,11 +20,11 @@
         )
         var(--color-active);
       color: var(--color-active);
-      font-weight: var(--font-weight-bold);
     }
 
     &:not(.pill-active):hover {
       background-color: var(--color-secondary-lighter);
+      transition: background 0.2s ease-in-out;
     }
 
     &:not(:first-child) {

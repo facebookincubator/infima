@@ -39,15 +39,6 @@
       }
     </style>
     <link id="theme-stylesheet" href="css/default/default.css" type="text/css" rel="stylesheet">
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const $themeStylesheet = document.getElementById('theme-stylesheet');
-        document.querySelector('.theme-switcher').addEventListener('change', function (event) {
-          const theme = event.target.value;
-          $themeStylesheet.setAttribute('href', 'css/' + theme + '/' + theme + '.css');
-        });
-      });
-    </script>
   </head>
   <body>
     <div class="container">
@@ -470,5 +461,17 @@
           </div>
       </div>
     </div>
+    <script type="text/javascript" src="js/pills.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const $themeStylesheet = document.getElementById('theme-stylesheet');
+        document.querySelector('.theme-switcher').addEventListener('change', function (event) {
+          const theme = event.target.value;
+          $themeStylesheet.setAttribute('href', 'css/' + theme + '/' + theme + '.css');
+        });
+
+        pills(document.querySelectorAll('.pills'));
+      });
+    </script>
   </body>
 </html>
