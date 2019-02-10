@@ -461,6 +461,7 @@
           </div>
       </div>
     </div>
+    <script type="text/javascript" src="js/alerts.js"></script>
     <script type="text/javascript" src="js/pills.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
@@ -470,6 +471,7 @@
           $themeStylesheet.setAttribute('href', 'css/' + theme + '/' + theme + '.css');
         });
 
+        alert(document.querySelectorAll('.alert'));
         pills(document.querySelectorAll('.pills'));
       });
     </script>
