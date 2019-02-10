@@ -199,6 +199,10 @@ body {
   .alert.alert-danger {
     --alert-color: var(--color-danger);
     --color: var(--color-danger-darkerer); }
+  .alert .close {
+    --margin: -1rem;
+    margin-right: var(--margin);
+    margin-top: var(--margin); }
 
 .badge {
   --badge-color: transparent;
@@ -329,6 +333,24 @@ body {
   .btn-group > .btn:not(:last-child) {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0; }
+
+.close {
+  appearance: none;
+  background: none;
+  border: none;
+  color: var(--color-black);
+  cursor: pointer;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  opacity: 0.5;
+  outline: 0;
+  padding: 1rem; }
+  .close:hover {
+    opacity: 0.7; }
+  .close:focus {
+    opacity: 0.8; }
 
 [type='checkbox'] {
   padding: 0; }

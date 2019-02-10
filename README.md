@@ -14,9 +14,9 @@ Themes for Markdown
   - [x] Images
   - [x] Tables
 - Components
-  - [/] Alerts
+  - [x] Alerts
   - [ ] Avatar
-  - [/] Badges
+  - [x] Badges
   - [ ] Breadcrumbs
   - [x] Buttons
   - [ ] Card

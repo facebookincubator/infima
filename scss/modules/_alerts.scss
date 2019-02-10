@@ -24,4 +24,11 @@
       --color: var(--color-#{$color}-darkerer);
     }
   }
+
+  .close {
+    --margin: -1rem;
+    
+    margin-right: var(--margin);
+    margin-top: var(--margin);
+  }
 }
