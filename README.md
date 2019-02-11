@@ -28,4 +28,4 @@ Themes for Markdown
   - [ ] Pagination
   - [/] Pills
   - [ ] Sidebar
-  - [ ] Tabs
+  - [/] Tabs
