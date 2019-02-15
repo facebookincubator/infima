@@ -333,11 +333,12 @@ body {
     background-color: var(--color-danger-darker); }
 
 .btn-group {
+  --button-margin: 2px;
   display: inline-flex; }
   .btn-group > .btn:not(:first-child) {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-    margin-left: -1px; }
+    margin-left: var(--button-margin); }
   .btn-group > .btn:not(:last-child) {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0; }
