@@ -22,6 +22,7 @@ Themes for Markdown
   - [x] Button Groups
   - [ ] Card
   - [x] Colors
+  - [ ] Dropdown
   - [ ] Footer
   - [x] Grid
   - [ ] Icons
