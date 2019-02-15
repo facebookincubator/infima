@@ -19,6 +19,7 @@ Themes for Markdown
   - [x] Badges
   - [ ] Breadcrumbs
   - [x] Buttons
+  - [x] Button Groups
   - [ ] Card
   - [x] Colors
   - [ ] Footer

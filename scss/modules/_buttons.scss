@@ -50,6 +50,11 @@
 
     &:hover {
       --background-color: var(--button-color);
+    }
+
+    &:hover, 
+    &:active,
+    &.btn-active {
       --color: var(--color-white);
     }
   }
@@ -90,23 +95,9 @@
       &:active,
       &.btn-active {
         --button-color: var(--color-#{$color}-darker);
+
+        background-color: var(--color-#{$color}-darker);
       }
-    }
-  }
-}
-
-.btn-group {
-  display: inline-flex;
-
-  > .btn {
-    &:not(:first-child) {
-      border-bottom-left-radius: 0;
-      border-top-left-radius: 0;
-    }
-  
-    &:not(:last-child) {
-      border-bottom-right-radius: 0;
-      border-top-right-radius: 0;
     }
   }
 }

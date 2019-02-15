@@ -1,0 +1,29 @@
+.btn-group {
+  display: inline-flex;
+
+  > .btn {
+    &:not(:first-child) {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      margin-left: -1px; // Remove extra border for adjacent buttons.
+    }
+  
+    &:not(:last-child) {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+
+  > .btn-active {
+    z-index: 1; // Make the active button's border take precedence.
+  }
+
+  &.btn-group-block {
+    display: flex;
+    justify-content: stretch;
+    
+    > .btn {
+      flex-grow: 1;
+    }
+  }
+}

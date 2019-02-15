@@ -8,39 +8,39 @@
   --media-breakpoint: 1024px;
   /* Colors */
   --color-primary: #3578e5;
-  --color-primary-dark: #1a5ecd;
-  --color-primary-darker: #15499f;
-  --color-primary-darkerer: #092045;
+  --color-primary-dark: #1e69e2;
+  --color-primary-darker: #1a5ecd;
+  --color-primary-darkerer: #0f3572;
   --color-primary-light: #79a5ee;
   --color-primary-lighter: #79a5ee;
   --color-secondary: #ccd0d5;
-  --color-secondary-dark: #b0b6be;
-  --color-secondary-darker: #949ca7;
-  --color-secondary-darkerer: #606975;
+  --color-secondary-dark: #bec3c9;
+  --color-secondary-darker: #b0b6be;
+  --color-secondary-darkerer: #788390;
   --color-secondary-light: #f6f7f8;
   --color-secondary-lighter: #f6f7f8;
-  --color-success: #8ac14b;
-  --color-success-dark: #70a138;
-  --color-success-darker: #567b2b;
-  --color-success-darkerer: #213010;
-  --color-success-light: #afd584;
-  --color-success-lighter: #afd584;
-  --color-info: #45c1a9;
-  --color-info-dark: #359e8a;
-  --color-info-darker: #287869;
-  --color-info-darkerer: #0f2c26;
-  --color-prim--light: #7ed4c4;
-  --color-prim--lighter: #7ed4c4;
-  --color-warning: #fbca40;
-  --color-warning-dark: #fabc0e;
-  --color-warning-darker: #d19b04;
-  --color-warning-darkerer: #6d5102;
-  --color-warning-light: #fddf8b;
-  --color-warning-lighter: #fddf8b;
+  --color-success: #00a400;
+  --color-success-dark: #008b00;
+  --color-success-darker: #007100;
+  --color-success-darkerer: #000b00;
+  --color-success-light: #00f100;
+  --color-success-lighter: #00f100;
+  --color-info: #6bcebb;
+  --color-info-dark: #58c8b2;
+  --color-info-darker: #45c1a9;
+  --color-info-darkerer: #287869;
+  --color-prim--light: #a4e1d5;
+  --color-prim--lighter: #a4e1d5;
+  --color-warning: #ffba00;
+  --color-warning-dark: #e6a700;
+  --color-warning-darker: #cc9500;
+  --color-warning-darkerer: #664a00;
+  --color-warning-light: #ffcf4d;
+  --color-warning-lighter: #ffcf4d;
   --color-danger: #f0233f;
-  --color-danger-dark: #d20e29;
-  --color-danger-darker: #a20b20;
-  --color-danger-darkerer: #42050d;
+  --color-danger-dark: #ea102e;
+  --color-danger-darker: #d20e29;
+  --color-danger-darkerer: #720816;
   --color-danger-light: #f56b7e;
   --color-danger-lighter: #f56b7e;
   --color-link: #385898;
@@ -277,7 +277,8 @@ body {
     --background-color: transparent;
     --color: var(--button-color); }
     .btn.btn-outline:hover {
-      --background-color: var(--button-color);
+      --background-color: var(--button-color); }
+    .btn.btn-outline:hover, .btn.btn-outline:active, .btn.btn-outline.btn-active {
       --color: var(--color-white); }
   .btn.disabled, .btn:disabled, .btn[disabled] {
     opacity: 0.65;
@@ -295,46 +296,60 @@ body {
     .btn.btn-primary:hover:not(.btn-outline) {
       --button-color: var(--color-primary-dark); }
   .btn.btn.btn-primary:active, .btn.btn.btn-primary.btn-active {
-    --button-color: var(--color-primary-darker); }
+    --button-color: var(--color-primary-darker);
+    background-color: var(--color-primary-darker); }
   .btn.btn-secondary {
     --button-color: var(--color-secondary); }
     .btn.btn-secondary:hover:not(.btn-outline) {
       --button-color: var(--color-secondary-dark); }
   .btn.btn.btn-secondary:active, .btn.btn.btn-secondary.btn-active {
-    --button-color: var(--color-secondary-darker); }
+    --button-color: var(--color-secondary-darker);
+    background-color: var(--color-secondary-darker); }
   .btn.btn-success {
     --button-color: var(--color-success); }
     .btn.btn-success:hover:not(.btn-outline) {
       --button-color: var(--color-success-dark); }
   .btn.btn.btn-success:active, .btn.btn.btn-success.btn-active {
-    --button-color: var(--color-success-darker); }
+    --button-color: var(--color-success-darker);
+    background-color: var(--color-success-darker); }
   .btn.btn-info {
     --button-color: var(--color-info); }
     .btn.btn-info:hover:not(.btn-outline) {
       --button-color: var(--color-info-dark); }
   .btn.btn.btn-info:active, .btn.btn.btn-info.btn-active {
-    --button-color: var(--color-info-darker); }
+    --button-color: var(--color-info-darker);
+    background-color: var(--color-info-darker); }
   .btn.btn-warning {
     --button-color: var(--color-warning); }
     .btn.btn-warning:hover:not(.btn-outline) {
       --button-color: var(--color-warning-dark); }
   .btn.btn.btn-warning:active, .btn.btn.btn-warning.btn-active {
-    --button-color: var(--color-warning-darker); }
+    --button-color: var(--color-warning-darker);
+    background-color: var(--color-warning-darker); }
   .btn.btn-danger {
     --button-color: var(--color-danger); }
     .btn.btn-danger:hover:not(.btn-outline) {
       --button-color: var(--color-danger-dark); }
   .btn.btn.btn-danger:active, .btn.btn.btn-danger.btn-active {
-    --button-color: var(--color-danger-darker); }
+    --button-color: var(--color-danger-darker);
+    background-color: var(--color-danger-darker); }
 
 .btn-group {
   display: inline-flex; }
   .btn-group > .btn:not(:first-child) {
     border-bottom-left-radius: 0;
-    border-top-left-radius: 0; }
+    border-top-left-radius: 0;
+    margin-left: -1px; }
   .btn-group > .btn:not(:last-child) {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0; }
+  .btn-group > .btn-active {
+    z-index: 1; }
+  .btn-group.btn-group-block {
+    display: flex;
+    justify-content: stretch; }
+    .btn-group.btn-group-block > .btn {
+      flex-grow: 1; }
 
 .close {
   appearance: none;

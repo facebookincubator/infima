@@ -142,6 +142,16 @@
                 <button class="btn btn-outline btn-danger">Danger</button>
               </div>
             </div>
+            <div class="row">
+              <div class="col col-12">
+                <button class="btn btn-outline btn-active btn-primary">Primary</button>
+                <button class="btn btn-outline btn-active btn-secondary">Secondary</button>
+                <button class="btn btn-outline btn-active btn-success">Success</button>
+                <button class="btn btn-outline btn-active btn-info">Info</button>
+                <button class="btn btn-outline btn-active btn-warning">Warning</button>
+                <button class="btn btn-outline btn-active btn-danger">Danger</button>
+              </div>
+            </div>
           </div>
           <div class="col col-5">
             <div class="row">
@@ -153,25 +163,52 @@
             </div>
             <div class="row">
               <div class="col col-12">
-                <div class="btn-group">
-                  <button class="btn btn-primary btn-active">Active</button>
-                  <button class="btn btn-primary">Button</button>
-                  <button class="btn btn-primary">Button</button>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col col-12">
-                <div class="btn-group">
-                  <button class="btn btn-outline btn-secondary btn-active">Active</button>
-                  <button class="btn btn-outline btn-secondary">Button</button>
-                  <button class="btn btn-outline btn-secondary">Button</button>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col col-12">
                 <button class="btn btn-block btn-primary">Block Button</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-12">
+                <div class="btn-group">
+                  <button class="btn btn-primary btn-active">Alpha</button>
+                  <button class="btn btn-primary">Beta</button>
+                  <button class="btn btn-primary">Gamma</button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-12">
+                <div class="btn-group">
+                  <button class="btn btn-outline btn-secondary btn-active">Alpha</button>
+                  <button class="btn btn-outline btn-secondary">Beta</button>
+                  <button class="btn btn-outline btn-secondary">Gamma</button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-12">
+                <div class="btn-group">
+                  <button class="btn btn-sm btn-outline btn-success btn-active">Alpha</button>
+                  <button class="btn btn-sm btn-outline btn-success">Beta</button>
+                  <button class="btn btn-sm btn-outline btn-success">Gamma</button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-12">
+                <div class="btn-group btn-group-block">
+                  <button class="btn btn-outline btn-info">Alpha</button>
+                  <button class="btn btn-outline btn-info btn-active">Beta</button>
+                  <button class="btn btn-outline btn-info">Gamma</button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-12">
+                <div class="btn-group btn-group-block">
+                  <button class="btn btn-sm btn-outline btn-warning">Alpha</button>
+                  <button class="btn btn-sm btn-outline btn-warning btn-active">Beta</button>
+                  <button class="btn btn-sm btn-outline btn-warning">Gamma</button>
+                </div>
               </div>
             </div>
           </div>
@@ -495,6 +532,7 @@
     </div>
     <script type="text/javascript" src="js/radio-behavior.js"></script>
     <script type="text/javascript" src="js/alerts.js"></script>
+    <script type="text/javascript" src="js/button-groups.js"></script>
     <script type="text/javascript" src="js/pills.js"></script>
     <script type="text/javascript" src="js/tabs.js"></script>
     <script>
@@ -506,6 +544,7 @@
         });
 
         alert(document.querySelectorAll('.alert'));
+        buttonGroups(document.querySelectorAll('.btn-group'));
         pills(document.querySelectorAll('.pills'));
         tabs(document.querySelectorAll('.tabs'));
       });
