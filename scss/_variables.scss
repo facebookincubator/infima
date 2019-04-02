@@ -15,15 +15,15 @@ $lighter-value: 30%;
 
 $grid-breakpoints: (
   // Extra small screen / phone
-  xs: 0,
+    xs: 0,
   // Small screen / phone
-  sm: 576px,
+    sm: 576px,
   // Medium screen / tablet
-  md: 768px,
+    md: 768px,
   // Large screen / desktop
-  lg: 992px,
+    lg: 992px,
   // Extra large screen / wide desktop
-  xl: 1200px
+    xl: 1200px
 );
 
 :root {
@@ -76,8 +76,9 @@ $grid-breakpoints: (
 
   /* Typography */
   --font-color-base: #1c1e21;
-  --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
-  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
   --font-size-base: 16px;
@@ -90,6 +91,10 @@ $grid-breakpoints: (
   --container-width: 1140px;
   --vertical-spacing: 1rem;
   --horizontal-spacing: 1rem;
+
+  /* Navbar */
+  --navbar-height: 3.75rem;
+  --navbar-background: var(--color-primary);
 
   /* Buttons */
   --button-border-radius: 0.5rem;

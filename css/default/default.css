@@ -49,8 +49,9 @@
   /* Black */
   /* Typography */
   --font-color-base: #1c1e21;
-  --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
-  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
   --font-size-base: 16px;
@@ -62,6 +63,9 @@
   --container-width: 1140px;
   --vertical-spacing: 1rem;
   --horizontal-spacing: 1rem;
+  /* Navbar */
+  --navbar-height: 3.75rem;
+  --navbar-background: var(--color-primary);
   /* Buttons */
   --button-border-radius: 0.5rem;
   --button-transition-duration: 0.15s;
@@ -479,6 +483,53 @@ img[align='right'] {
 
 img[align='left'] {
   padding-right: var(--image-alignment-padding); }
+
+.navbar {
+  --item-padding-horizontal: 1rem;
+  --item-padding-vertical: 0.25rem;
+  --link-color: var(--color-white);
+  --padding-horizontal: 1rem;
+  --padding-vertical: 0.5rem;
+  background-color: var(--navbar-background);
+  width: 100%;
+  z-index: 100; }
+  .navbar.navbar-fixed {
+    position: fixed; }
+  .navbar .navbar-inner {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    height: var(--navbar-height);
+    justify-content: space-between;
+    padding: var(--padding-vertical) var(--padding-horizontal); }
+  .navbar .navbar-brand {
+    color: var(--link-color);
+    font-weight: bold;
+    margin-right: 1rem;
+    text-decoration: none; }
+  .navbar .navbar-items {
+    align-items: center;
+    display: flex;
+    flex: 1 0 0;
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0; }
+    .navbar .navbar-items > .navbar-item {
+      display: inline-block;
+      margin-top: 0; }
+      .navbar .navbar-items > .navbar-item .navbar-link {
+        color: var(--link-color);
+        display: block;
+        padding: var(--item-padding-vertical) var(--item-padding-horizontal);
+        text-decoration: none; }
+        .navbar .navbar-items > .navbar-item .navbar-link:hover {
+          color: var(--color-primary-darkerer); }
+  .navbar .navbar-center {
+    flex: 0 0 auto; }
+    .navbar .navbar-center .navbar-brand {
+      margin: 0; }
+  .navbar .navbar-right {
+    justify-content: flex-end; }
 
 .pagination {
   --border-radius: calc(var(--button-border-radius) * var(--size-multiplier));
