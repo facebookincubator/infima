@@ -69,8 +69,8 @@
   /* Navbar */
   --navbar-height: 3.75rem;
   --navbar-background-color: var(--color-primary);
-  --navbar-link-color: var(--color-white);
-  --navbar-link-hover-color: var(--color-primary-darkerer);
+  --navbar-link-color: rgba(0, 0, 0, 0.55);
+  --navbar-link-hover-color: var(--color-white);
   --navbar-link-active-color: var(--link-color);
   --navbar-dropdown-background-color: var(--color-white);
   --navbar-dropdown-link-color: var(--color-secondary-darkerer);
@@ -563,6 +563,14 @@ img[align='left'] {
       margin: 0; }
   .navbar .navbar-right {
     justify-content: flex-end; }
+  .navbar.navbar-dark {
+    --navbar-background-color: #303846;
+    --link-color: var(--color-secondary);
+    --link-hover-color: var(--color-secondary-light); }
+  .navbar.navbar-light {
+    --navbar-background-color: #eff0f1;
+    --link-color: var(--color-secondary-darkerer);
+    --link-hover-color: var(--color-black); }
 
 .pagination {
   --border-radius: calc(var(--button-border-radius) * var(--size-multiplier));

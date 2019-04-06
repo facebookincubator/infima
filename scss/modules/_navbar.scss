@@ -100,4 +100,16 @@
   .navbar-right {
     justify-content: flex-end;
   }
+
+  &.navbar-dark {
+    --navbar-background-color: #303846;
+    --link-color: var(--color-secondary);
+    --link-hover-color: var(--color-secondary-light);
+  }
+
+  &.navbar-light {
+    --navbar-background-color: #eff0f1;
+    --link-color: var(--color-secondary-darkerer);
+    --link-hover-color: var(--color-black);
+  }
 }
