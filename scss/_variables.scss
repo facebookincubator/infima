@@ -27,12 +27,6 @@ $grid-breakpoints: (
 );
 
 :root {
-  /* Base */
-  --background-color: transparent;
-  --global-border-width: 1px;
-  --global-radius: calc(var(--font-size-base) * 0.1875);
-  --media-breakpoint: 1024px;
-
   /* Colors */
   --color-primary: #{$color-primary};
   --color-primary-dark: #{darken($color-primary, $dark-value)};
@@ -56,8 +50,8 @@ $grid-breakpoints: (
   --color-info-dark: #{darken($color-info, $dark-value)};
   --color-info-darker: #{darken($color-info, $darker-value)};
   --color-info-darkerer: #{darken($color-info, $darkerer-value)};
-  --color-prim--light: #{lighten($color-info, $light-value)};
-  --color-prim--lighter: #{lighten($color-info, $light-value)};
+  --color-info-light: #{lighten($color-info, $light-value)};
+  --color-info-lighter: #{lighten($color-info, $light-value)};
   --color-warning: #{$color-warning};
   --color-warning-dark: #{darken($color-warning, $dark-value)};
   --color-warning-darker: #{darken($color-warning, $darker-value)};
@@ -73,6 +67,13 @@ $grid-breakpoints: (
   --color-link: #385898; /* Blue Link */
   --color-white: #fff; /* White */
   --color-black: #000; /* Black */
+
+  /* Base */
+  --background-color: transparent;
+  --global-border-width: 1px;
+  --global-radius: 0.25rem;
+  --media-breakpoint: 1024px;
+  --global-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
 
   /* Typography */
   --font-color-base: #1c1e21;
@@ -94,7 +95,13 @@ $grid-breakpoints: (
 
   /* Navbar */
   --navbar-height: 3.75rem;
-  --navbar-background: var(--color-primary);
+  --navbar-background-color: var(--color-primary);
+  --navbar-link-color: var(--color-white);
+  --navbar-link-hover-color: var(--color-primary-darkerer);
+  --navbar-link-active-color: var(--link-color);
+  --navbar-dropdown-background-color: var(--color-white);
+  --navbar-dropdown-link-color: var(--color-secondary-darkerer);
+  --navbar-dropdown-hover-background-color: var(--color-secondary-light);
 
   /* Buttons */
   --button-border-radius: 0.5rem;

@@ -26,8 +26,8 @@ Themes for Markdown
   - [ ] Footer
   - [x] Grid
   - [ ] Icons
-  - [ ] Navbar
-  - [/] Pagination
+  - [/] Navbar
+  - [x] Pagination
   - [x] Pills
   - [ ] Sidebar
   - [x] Tabs
