@@ -907,6 +907,57 @@ hr {
 .text-danger {
   color: var(--color-danger); }
 
+.text-center {
+  text-align: "center"; }
+
+.text-left {
+  text-align: "left"; }
+
+.text-justify {
+  text-align: "justify"; }
+
+.text-right {
+  text-align: "right"; }
+
+.text-capitalize {
+  text-transform: transform; }
+
+.text-lowercase {
+  text-transform: transform; }
+
+.text-uppercase {
+  text-transform: transform; }
+
+.text-bold {
+  font-weight: weight; }
+
+.text-bolder {
+  font-weight: weight; }
+
+.text-normal {
+  font-weight: weight; }
+
+.text-light {
+  font-weight: weight; }
+
+.text-lighter {
+  font-weight: weight; }
+
+.text-italic {
+  font-style: italic; }
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.text-break {
+  word-break: break-word !important;
+  overflow-wrap: break-word !important; }
+
+.text-no-decoration, .text-no-decoration:hover {
+  text-decoration: none; }
+
 :root {
   /* Theme-specific */
   --github-gray: #dfe2e5;

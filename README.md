@@ -21,13 +21,16 @@ A UI framework for content-centric websites.
   - [x] Buttons
   - [x] Button Groups
   - [ ] Card
-  - [x] Colors
   - [ ] Dropdown
   - [ ] Footer
   - [x] Grid
-  - [ ] Icons
   - [/] Navbar
   - [x] Pagination
   - [x] Pills
   - [ ] Sidebar
   - [x] Tabs
+- Utilities
+  - [x] Colors
+  - [x] Icons
+  - [ ] Spacing
+  - [x] Text
