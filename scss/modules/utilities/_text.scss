@@ -4,21 +4,21 @@
   }
 }
 
-@each $align in ('center', 'left', 'justify', 'right') {
+@each $align in (center, left, justify, right) {
   .text-#{$align} {
     text-align: $align;
   }
 }
 
-@each $transform in ('capitalize', 'lowercase', 'uppercase') {
+@each $transform in (capitalize, lowercase, uppercase) {
   .text-#{$transform} {
-    text-transform: transform;
+    text-transform: $transform;
   }
 }
 
-@each $weight in ('bold', 'bolder', 'normal', 'light', 'lighter') {
+@each $weight in (bold, bolder, normal, light, lighter) {
   .text-#{$weight} {
-    font-weight: weight;
+    font-weight: $weight;
   }
 }
 
