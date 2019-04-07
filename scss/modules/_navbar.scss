@@ -116,7 +116,7 @@
   }
 
   &.navbar-light {
-    --navbar-background-color: #eff0f1;
+    --navbar-background-color: var(--color-secondary-lighter);
     --link-color: var(--color-secondary-darkerer);
     --link-hover-color: var(--color-black);
     --search-input-background-color: rgba(0, 0, 0, 0.05);

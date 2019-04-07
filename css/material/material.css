@@ -77,6 +77,8 @@
   --navbar-dropdown-hover-background-color: var(--color-secondary-light);
   /* Footer */
   --footer-background-color: var(--color-secondary-lighter);
+  --footer-link-color: var(--color-secondary-darkerer);
+  --footer-link-hover-color: var(--color-black);
   /* Buttons */
   --button-border-radius: 0.5rem;
   --button-transition-duration: 0.15s;
@@ -383,6 +385,22 @@ body {
     opacity: 0.7; }
   .close:focus {
     opacity: 0.8; }
+
+.footer {
+  --link-color: var(--footer-link-color);
+  --link-hover-color: var(--footer-link-hover-color);
+  --padding-horizontal: calc(var(--horizontal-spacing) * 3);
+  --padding-vertical: calc(var(--vertical-spacing) * 2);
+  --text-color: inherit;
+  background-color: var(--footer-background-color);
+  color: var(--text-color);
+  padding: var(--padding-vertical) var(--padding-horizontal);
+  width: 100%; }
+  .footer.footer-dark {
+    --footer-background-color: #303846;
+    --link-color: var(--color-secondary);
+    --link-hover-color: var(--color-secondary-light);
+    --text-color: var(--link-color); }
 
 [type='checkbox'] {
   padding: 0; }

@@ -103,6 +103,11 @@ $grid-breakpoints: (
   --navbar-dropdown-link-color: var(--color-secondary-darkerer);
   --navbar-dropdown-hover-background-color: var(--color-secondary-light);
 
+  /* Footer */
+  --footer-background-color: var(--color-secondary-lighter);
+  --footer-link-color: var(--color-secondary-darkerer);
+  --footer-link-hover-color: var(--color-black);
+
   /* Buttons */
   --button-border-radius: 0.5rem;
   --button-transition-duration: 0.15s;
