@@ -500,6 +500,9 @@ img[align='left'] {
   --link-hover-color: var(--navbar-link-hover-color);
   --padding-horizontal: var(--horizontal-spacing);
   --padding-vertical: calc(var(--vertical-spacing) * 0.5);
+  --search-input-background-color: rgba(0, 0, 0, 0.25);
+  --search-input-color: var(--color-secondary);
+  --search-input-placeholder-color: rgba(255, 255, 255, 0.5);
   background-color: var(--navbar-background-color);
   height: var(--navbar-height);
   padding: var(--padding-vertical) var(--padding-horizontal);
@@ -523,10 +526,7 @@ img[align='left'] {
   .navbar .navbar-items {
     align-items: center;
     display: flex;
-    flex: 1 0 0;
-    list-style-type: none;
-    margin-bottom: 0;
-    padding-left: 0; }
+    flex: 1 0 0; }
     .navbar .navbar-items > .navbar-item {
       display: inline-block;
       margin-top: 0;
@@ -546,8 +546,8 @@ img[align='left'] {
     border-radius: var(--global-radius);
     box-shadow: var(--global-shadow);
     display: none;
-    list-style-type: none;
     min-width: 10rem;
+    list-style: none;
     padding: 0.5rem;
     position: absolute;
     z-index: 20; }
@@ -575,7 +575,32 @@ img[align='left'] {
   .navbar.navbar-light {
     --navbar-background-color: #eff0f1;
     --link-color: var(--color-secondary-darkerer);
-    --link-hover-color: var(--color-black); }
+    --link-hover-color: var(--color-black);
+    --search-input-background-color: rgba(0, 0, 0, 0.05);
+    --search-input-color: var(--color-secondary-darkerer);
+    --search-input-placeholder-color: var(--color-secondary-darkerer); }
+  .navbar .navbar-search {
+    padding-left: var(--padding-horizontal); }
+    .navbar .navbar-search input {
+      background-image: url("data:image/svg+uml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382a4.15609,4.15609,0,0,1,6.02945,10.20327zm9.69195,4.2199l10.8989,9.59979a5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,0.89749.89749,0,0,0-0.00087-1.29909z' fill='#000'/></svg>");
+      background-repeat: no-repeat;
+      background-size: 1rem 1rem;
+      background-position-y: center;
+      background-position-x: 0.25rem;
+      background-color: var(--search-input-background-color);
+      border-radius: 2rem;
+      border-width: 0;
+      cursor: text;
+      color: var(--search-input-color);
+      display: inline-block;
+      font-size: 0.9rem;
+      line-height: 2rem;
+      outline: none;
+      padding: 0 0.5rem 0 2rem;
+      transition: all 0.2s ease;
+      width: 12.5rem; }
+      .navbar .navbar-search input::placeholder {
+        color: var(--search-input-placeholder-color); }
 
 .pagination {
   --border-radius: calc(var(--button-border-radius) * var(--size-multiplier));
