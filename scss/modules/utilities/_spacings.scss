@@ -8,9 +8,6 @@ $spacing: (
 );
 
 $sides: (
-  all: (
-    margin,
-  ),
   vert: (
     bottom,
     top,
@@ -35,10 +32,14 @@ $sides: (
 
 @each $type in (margin, padding) {
   @each $size, $value in $spacing {
+    .#{$type}-#{$size} {
+      #{$type}: $value;
+    }
+
     @each $side, $properties in $sides {
       .#{$type}-#{$side}-#{$size} {
         @each $property in $properties {
-          #{$property}: $value;
+          #{$type}-#{$property}: $value;
         }
       }
     }

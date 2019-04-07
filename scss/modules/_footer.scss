@@ -1,9 +1,11 @@
 .footer {
   --link-color: var(--footer-link-color);
   --link-hover-color: var(--footer-link-hover-color);
-  --padding-horizontal: calc(var(--horizontal-spacing) * 3);
+  --link-horizontal-spacing: 0.5rem;
+  --padding-horizontal: calc(var(--horizontal-spacing) * 2);
   --padding-vertical: calc(var(--vertical-spacing) * 2);
   --text-color: inherit;
+  --title-color: inherit;
 
   background-color: var(--footer-background-color);
   color: var(--text-color);
@@ -15,5 +17,34 @@
     --link-color: var(--color-secondary);
     --link-hover-color: var(--color-secondary-light);
     --text-color: var(--link-color);
+    --title-color: var(--color-white);
+  }
+
+  .footer-links {
+    margin-bottom: 1rem;
+  }
+
+  .footer-text {
+    color: var(--link-color);
+  }
+
+  .footer-logo {
+    margin-top: 1rem;
+    max-width: 10rem;
+  }
+
+  .footer-title {
+    color: var(--title-color);
+  }
+
+  .footer-items {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .footer-link-separator {
+    margin-left: var(--link-horizontal-spacing);
+    margin-right: var(--link-horizontal-spacing);
   }
 }

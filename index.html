@@ -9,33 +9,33 @@
         padding: 90px 0;
       }
 
-      .section {
+      .main .section {
         margin: 6rem auto;
       }
 
-      .section .row:not(:first-child) {
+      .main .section > .row:not(:first-child) {
         margin-top: 1rem;
       }
 
-      .section .row:not(:last-child) {
+      .main .section > .row:not(:last-child) {
         margin-bottom: 1rem;
       }
 
-      .theme-switcher {
-        float: right;
-      }
-
       @media (max-width: 1024px) {
-        .section > .row [class*="col-"]:not(:last-child) {
+        .main .section > .row [class*="col-"]:not(:last-child) {
           padding-bottom: 16px;
         }
       }
 
-      .grid-demo [class*="col-"] .col-inner {
+      .main .grid-demo [class*="col-"] .col-inner {
         background-color: #f6f9fb;
         border-radius: 8px;
         padding: 16px;
         text-align: center;
+      }
+
+      .theme-switcher {
+        float: right;
       }
     </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -394,7 +394,80 @@
           <div class="row">
             <div class="col col-12">
               <footer class="footer">
-                <div>
+                <div class="footer-links">
+                  <a class="footer-link-item" href="#">Documentation</a>
+                  <span class="footer-link-separator">&middot;</span>
+                  <a class="footer-link-item" href="#">GitHub</a>
+                  <span class="footer-link-separator">&middot;</span>
+                  <a class="footer-link-item" href="#">Blog</a>
+                  <span class="footer-link-separator">&middot;</span>
+                  <a class="footer-link-item" href="#">Contribute</a>
+                </div>
+                <div class="footer-text">
+                  Copyright © 2019 Facebook, Inc.
+                </div>
+              </footer>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-12">
+              <footer class="footer">
+                <div class="row footer-links">
+                  <div class="col col-3">
+                    <h4 class="footer-title">Docs</h4>
+                    <ul class="footer-items">
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">Getting Started</a>
+                      </li>
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">API</a>
+                      </li>
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">FAQ</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col col-3">
+                    <h4 class="footer-title">Community</h4>
+                    <ul class="footer-items">
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">Users</a>
+                      </li>
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">Contribute</a>
+                      </li>
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">Stack Overflow</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col col-3">
+                    <h4 class="footer-title">Social</h4>
+                    <ul class="footer-items">
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">GitHub</a>
+                      </li>
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">Facebook</a>
+                      </li>
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">Twitter</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col col-3">
+                    <h4 class="footer-title">More</h4>
+                    <ul class="footer-items">
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">Tutorial</a>
+                      </li>
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">Blog</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-text text-center">
                   Copyright © 2019 Facebook, Inc.
                 </div>
               </footer>
@@ -403,7 +476,84 @@
           <div class="row">
             <div class="col col-12">
               <footer class="footer footer-dark">
+                <div class="footer-links">
+                  <a class="footer-link-item" href="#">Documentation</a>
+                  <span class="footer-link-separator">&middot;</span>
+                  <a class="footer-link-item" href="#">GitHub</a>
+                  <span class="footer-link-separator">&middot;</span>
+                  <a class="footer-link-item" href="#">Blog</a>
+                  <span class="footer-link-separator">&middot;</span>
+                  <a class="footer-link-item" href="#">Contribute</a>
+                </div>
+                <div class="footer-text">
+                  Copyright © 2019 Facebook, Inc.
+                </div>
+              </footer>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-12">
+              <footer class="footer footer-dark">
+                <div class="row footer-links">
+                  <div class="col col-3">
+                    <h4 class="footer-title">Docs</h4>
+                    <ul class="footer-items">
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">Getting Started</a>
+                      </li>
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">API</a>
+                      </li>
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">FAQ</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col col-3">
+                    <h4 class="footer-title">Community</h4>
+                    <ul class="footer-items">
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">Users</a>
+                      </li>
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">Contribute</a>
+                      </li>
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">Stack Overflow</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col col-3">
+                    <h4 class="footer-title">Social</h4>
+                    <ul class="footer-items">
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">GitHub</a>
+                      </li>
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">Facebook</a>
+                      </li>
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">Twitter</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col col-3">
+                    <h4 class="footer-title">More</h4>
+                    <ul class="footer-items">
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">Tutorial</a>
+                      </li>
+                      <li class="footer-item">
+                        <a class="footer-link-item" href="#">Blog</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
                 <div class="text-center">
+                  <div class="margin-bottom-sm">
+                    <img class="footer-logo" alt="Facebook Open Source Logo"
+                      src="https://docusaurus.io/img/oss_logo.png" />
+                  </div>
                   Copyright © 2019 Facebook, Inc.
                 </div>
               </footer>
@@ -414,7 +564,7 @@
           <h1>Buttons</h1>
           <div class="row">
             <div class="col col-7">
-              <div class="row">
+              <div class="row margin-bottom-sm">
                 <div class="col col-12">
                   <button class="btn btn-primary">Primary</button>
                   <button class="btn btn-secondary">Secondary</button>
@@ -424,7 +574,7 @@
                   <button class="btn btn-danger">Danger</button>
                 </div>
               </div>
-              <div class="row">
+              <div class="row margin-bottom-sm">
                 <div class="col col-12">
                   <button class="btn disabled btn-primary">Primary</button>
                   <button class="btn disabled btn-secondary">Secondary</button>
@@ -434,7 +584,7 @@
                   <button class="btn disabled btn-danger">Danger</button>
                 </div>
               </div>
-              <div class="row">
+              <div class="row margin-bottom-sm">
                 <div class="col col-12">
                   <button class="btn btn-outline btn-primary">Primary</button>
                   <button class="btn btn-outline btn-secondary">Secondary</button>
@@ -444,7 +594,7 @@
                   <button class="btn btn-outline btn-danger">Danger</button>
                 </div>
               </div>
-              <div class="row">
+              <div class="row margin-bottom-sm">
                 <div class="col col-12">
                   <button class="btn btn-outline btn-active btn-primary">Primary</button>
                   <button class="btn btn-outline btn-active btn-secondary">Secondary</button>
@@ -456,19 +606,19 @@
               </div>
             </div>
             <div class="col col-5">
-              <div class="row">
+              <div class="row margin-bottom-sm">
                 <div class="col col-12">
                   <button class="btn btn-sm btn-primary">Small Button</button>
                   <button class="btn btn-primary">Default Button</button>
                   <button class="btn btn-lg btn-primary">Large Button</button>
                 </div>
               </div>
-              <div class="row">
+              <div class="row margin-bottom-sm">
                 <div class="col col-12">
                   <button class="btn btn-block btn-primary">Block Button</button>
                 </div>
               </div>
-              <div class="row">
+              <div class="row margin-bottom-sm">
                 <div class="col col-12">
                   <div class="btn-group">
                     <button class="btn btn-primary btn-active">Alpha</button>
@@ -477,7 +627,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="row margin-bottom-sm">
                 <div class="col col-12">
                   <div class="btn-group">
                     <button class="btn btn-secondary btn-active">Alpha</button>
@@ -486,7 +636,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="row margin-bottom-sm">
                 <div class="col col-12">
                   <div class="btn-group">
                     <button class="btn btn-sm btn-success">Alpha</button>
@@ -495,7 +645,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="row margin-bottom-sm">
                 <div class="col col-12">
                   <div class="btn-group">
                     <button class="btn btn-lg btn-outline btn-info">Alpha</button>
@@ -504,7 +654,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="row margin-bottom-sm">
                 <div class="col col-12">
                   <div class="btn-group btn-group-block">
                     <button class="btn btn-warning">Alpha</button>
@@ -513,7 +663,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="row margin-bottom-sm">
                 <div class="col col-12">
                   <div class="btn-group btn-group-block">
                     <button class="btn btn-sm btn-outline btn-danger">Alpha</button>
@@ -919,7 +1069,65 @@
     </div>
     <footer class="footer footer-dark">
       <div class="container">
-        <div>
+        <div class="row footer-links">
+          <div class="col col-3">
+            <h4 class="footer-title">Docs</h4>
+            <ul class="footer-items">
+              <li class="footer-item">
+                <a class="footer-link-item" href="#">Getting Started</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link-item" href="#">API</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link-item" href="#">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col col-3">
+            <h4 class="footer-title">Community</h4>
+            <ul class="footer-items">
+              <li class="footer-item">
+                <a class="footer-link-item" href="#">Users</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link-item" href="#">Contribute</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link-item" href="#">Stack Overflow</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col col-3">
+            <h4 class="footer-title">Social</h4>
+            <ul class="footer-items">
+              <li class="footer-item">
+                <a class="footer-link-item" href="#">GitHub</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link-item" href="#">Facebook</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link-item" href="#">Twitter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col col-3">
+            <h4 class="footer-title">More</h4>
+            <ul class="footer-items">
+              <li class="footer-item">
+                <a class="footer-link-item" href="#">Tutorial</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link-item" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center">
+          <div class="margin-bottom-sm">
+            <img class="footer-logo" alt="Facebook Open Source Logo" src="https://docusaurus.io/img/oss_logo.png" />
+          </div>
           Copyright © 2019 Facebook, Inc.
         </div>
       </div>
