@@ -32,5 +32,7 @@ A UI framework for content-centric websites.
 - Utilities
   - [x] Colors
   - [x] Icons
-  - [ ] Spacing
+  - [ ] Margin
+  - [ ] Padding
+  - [ ] Spinner
   - [x] Text

@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'modules/colors';
 @import 'modules/base';
+
 // Modules
 @import 'modules/alerts';
 @import 'modules/badges';
@@ -16,5 +17,7 @@
 @import 'modules/tables';
 @import 'modules/tabs';
 @import 'modules/typography';
+
 // Utilities
+@import 'modules/utilities/spacings';
 @import 'modules/utilities/text';
