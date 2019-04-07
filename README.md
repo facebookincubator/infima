@@ -1,6 +1,6 @@
-# markswatch
+# Infima
 
-Themes for Markdown
+A UI framework for content-centric websites.
 
 ## Checklist
 

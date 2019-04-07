@@ -1,7 +1,7 @@
 {
-  "name": "markswatch-website",
+  "name": "infima",
   "version": "0.1.0",
-  "description": "Website for displaying Markswatch themes",
+  "description": "A UI framework for content-centric websites.",
   "main": "index.js",
   "author": "Yangshun Tay",
   "license": "MIT",
