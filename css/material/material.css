@@ -503,6 +503,7 @@ img[align='left'] {
   --search-input-background-color: rgba(0, 0, 0, 0.25);
   --search-input-color: var(--color-secondary);
   --search-input-placeholder-color: rgba(255, 255, 255, 0.5);
+  --search-input-icon: url('data:image/svg+xml;utf8,<svg alt="Search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" fill="rgba(255,255,255,0.5)" /></svg>');
   background-color: var(--navbar-background-color);
   height: var(--navbar-height);
   padding: var(--padding-vertical) var(--padding-horizontal);
@@ -578,15 +579,16 @@ img[align='left'] {
     --link-hover-color: var(--color-black);
     --search-input-background-color: rgba(0, 0, 0, 0.05);
     --search-input-color: var(--color-secondary-darkerer);
-    --search-input-placeholder-color: var(--color-secondary-darkerer); }
+    --search-input-placeholder-color: var(--color-secondary-darkerer);
+    --search-input-icon: url('data:image/svg+xml;utf8,<svg alt="Search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" fill="rgba(0,0,0,0.5)" /></svg>'); }
   .navbar .navbar-search {
     padding-left: var(--padding-horizontal); }
     .navbar .navbar-search input {
-      background-image: url("data:image/svg+uml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382a4.15609,4.15609,0,0,1,6.02945,10.20327zm9.69195,4.2199l10.8989,9.59979a5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,0.89749.89749,0,0,0-0.00087-1.29909z' fill='#000'/></svg>");
+      background-image: var(--search-input-icon);
       background-repeat: no-repeat;
       background-size: 1rem 1rem;
       background-position-y: center;
-      background-position-x: 0.25rem;
+      background-position-x: 0.75rem;
       background-color: var(--search-input-background-color);
       border-radius: 2rem;
       border-width: 0;
@@ -596,7 +598,7 @@ img[align='left'] {
       font-size: 0.9rem;
       line-height: 2rem;
       outline: none;
-      padding: 0 0.5rem 0 2rem;
+      padding: 0 0.5rem 0 2.25rem;
       transition: all 0.2s ease;
       width: 12.5rem; }
       .navbar .navbar-search input::placeholder {
