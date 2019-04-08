@@ -1,0 +1,79 @@
+.menu {
+  --color-active: var(--color-primary);
+
+  overflow-x: hidden;
+
+  .menu-item {
+    cursor: pointer;
+    display: flex;
+    line-height: 20px;
+    justify-content: space-between;
+    text-decoration: none;
+    margin: 0;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .menu-group-title {
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: 0.5em;
+  }
+
+  .menu-list {
+    margin: 0;
+    list-style-type: none;
+    padding-left: 0;
+    transition: height 200ms cubic-bezier(0.08, 0.52, 0.52, 1);
+
+    .menu-list {
+      margin-left: 0.75rem;
+    }
+  }
+
+  .menu-list-item {
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+
+    &.menu-list-item-collapsed {
+      .menu-list {
+        height: 0;
+        overflow: hidden;
+      }
+
+      .chevron {
+        transform: rotateX(180deg);
+      }
+    }
+  }
+
+  .menu-link {
+    border-radius: 0.25rem;
+    color: #717171;
+    font-size: 0.875em;
+  }
+
+  .menu-link:hover {
+    background-color: var(--color-secondary-lighter);
+    color: #717171;
+  }
+
+  .menu-link-active,
+  .menu-link-active:hover {
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0.85),
+        rgba(255, 255, 255, 0.85)
+      )
+      var(--color-active);
+    color: var(--color-active);
+  }
+
+  .chevron {
+    background-image: url('data:image/svg+xml;utf8,<svg alt="Arrow" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
+    background-size: 2rem 2rem;
+    background-position: center;
+    display: inline-block;
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+}

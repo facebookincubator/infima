@@ -27,7 +27,7 @@ A UI framework for content-centric websites.
   - [/] Navbar
   - [x] Pagination
   - [x] Pills
-  - [ ] Sidebar
+  - [/] Sidebar
   - [x] Tabs
 - Utilities
   - [x] Colors

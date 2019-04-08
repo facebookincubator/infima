@@ -1,1238 +1,1436 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>Infima</title>
-    <style>
-      .main {
-        padding: 90px 0;
-      }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+  <title>Infima</title>
+  <style>
+    .main {
+      padding: 90px 0;
+    }
 
-      .main .section {
-        margin: 6rem auto;
-      }
+    .main .section {
+      margin: 6rem auto;
+    }
 
-      .main .section > .row:not(:first-child) {
-        margin-top: 1rem;
-      }
+    .main .section>.row:not(:first-child) {
+      margin-top: 1rem;
+    }
 
-      .main .section > .row:not(:last-child) {
-        margin-bottom: 1rem;
-      }
+    .main .section>.row:not(:last-child) {
+      margin-bottom: 1rem;
+    }
 
-      @media (max-width: 1024px) {
-        .main .section > .row [class*="col-"]:not(:last-child) {
-          padding-bottom: 16px;
-        }
+    @media (max-width: 1024px) {
+      .main .section>.row [class*="col-"]:not(:last-child) {
+        padding-bottom: 16px;
       }
+    }
 
-      .main .grid-demo [class*="col-"] .col-inner {
-        background-color: #f6f9fb;
-        border-radius: 8px;
-        padding: 16px;
-        text-align: center;
-      }
+    .main .grid-demo [class*="col-"] .col-inner {
+      background-color: #f6f9fb;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
 
-      .theme-switcher {
-        float: right;
-      }
-    </style>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link id="theme-stylesheet" href="css/default/default.css" type="text/css" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar navbar-dark navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-inner">
-          <div class="navbar-items">
-            <div class="navbar-item">
-              <a class="navbar-brand">Infima</a>
-            </div>
-            <div class="navbar-item">
-              <a class="navbar-link" href="#">Docs</a>
-            </div>
-            <div class="navbar-item">
-              <a class="navbar-link" href="#">Tutorial</a>
-            </div>
-            <div class="navbar-item">
-              <a class="navbar-link" href="#">
-                v2.0&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
-              </a>
-              <ul class="navbar-dropdown">
-                <li>
-                  <a class="navbar-dropdown-link" href="#">v1.8.0</a>
-                </li>
-                <li>
-                  <a class="navbar-dropdown-link" href="#">v1.7.0</a>
-                </li>
-                <li>
-                  <a class="navbar-dropdown-link" href="#">v1.6.0</a>
-                </li>
-                <li>
-                  <a class="navbar-dropdown-link" href="#">All Versions</a>
-                </li>
-              </ul>
-            </div>
+    .theme-switcher {
+      float: right;
+    }
+  </style>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link id="theme-stylesheet" href="css/default/default.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-dark navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-inner">
+        <div class="navbar-items">
+          <div class="navbar-item">
+            <a class="navbar-brand">Infima</a>
           </div>
-          <div class="navbar-items navbar-right">
-            <div class="navbar-item">
-              <a class="navbar-link" href="#">
-                <i class="fas fa-language fa-2x"></i>
-              </a>
-              <ul class="navbar-dropdown navbar-dropdown-right">
-                <li>
-                  <a class="navbar-dropdown-link" href="#">简体中文</a>
-                </li>
-                <li>
-                  <a class="navbar-dropdown-link" href="#">日本語</a>
-                </li>
-                <li>
-                  <a class="navbar-dropdown-link" href="#">Français</a>
-                </li>
-                <li>
-                  <a class="navbar-dropdown-link" href="#">Español</a>
-                </li>
-              </ul>
+          <div class="navbar-item">
+            <a class="navbar-link" href="#">Docs</a>
+          </div>
+          <div class="navbar-item">
+            <a class="navbar-link" href="#">Tutorial</a>
+          </div>
+          <div class="navbar-item">
+            <a class="navbar-link" href="#">
+              v2.0&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
+            </a>
+            <ul class="navbar-dropdown">
+              <li>
+                <a class="navbar-dropdown-link" href="#">v1.8.0</a>
+              </li>
+              <li>
+                <a class="navbar-dropdown-link" href="#">v1.7.0</a>
+              </li>
+              <li>
+                <a class="navbar-dropdown-link" href="#">v1.6.0</a>
+              </li>
+              <li>
+                <a class="navbar-dropdown-link" href="#">All Versions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-items navbar-right">
+          <div class="navbar-item">
+            <a class="navbar-link" href="#">
+              <i class="fas fa-language fa-2x"></i>
+            </a>
+            <ul class="navbar-dropdown navbar-dropdown-right">
+              <li>
+                <a class="navbar-dropdown-link" href="#">简体中文</a>
+              </li>
+              <li>
+                <a class="navbar-dropdown-link" href="#">日本語</a>
+              </li>
+              <li>
+                <a class="navbar-dropdown-link" href="#">Français</a>
+              </li>
+              <li>
+                <a class="navbar-dropdown-link" href="#">Español</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-item">
+            <a class="navbar-link" href="#">
+              <i class="fab fa-github fa-lg"></i>
+            </a>
+          </div>
+          <form>
+            <div class="navbar-search">
+              <input placeholder="Search" />
             </div>
-            <div class="navbar-item">
-              <a class="navbar-link" href="#">
-                <i class="fab fa-github fa-lg"></i>
-              </a>
-            </div>
-            <form>
-              <div class="navbar-search">
-                <input placeholder="Search" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="main">
+    <div class="container">
+      <h1>Infima</h1>
+      <select class="theme-switcher">
+        <option value="default">Default</option>
+        <option value="github">GitHub</option>
+        <option value="happy">Happy</option>
+        <option value="material">Material</option>
+      </select>
+      <p>A UI framework for content-centric websites.</p>
+      <hr />
+      <div class="section">
+        <h1>Navbars</h1>
+        <div class="row">
+          <div class="col col-12">
+            <nav class="navbar">
+              <div class="navbar-inner">
+                <div class="navbar-items">
+                  <a class="navbar-brand">Infima</a>
+                  <div class="navbar-item">
+                    <a class="navbar-link" href="#">Docs</a>
+                  </div>
+                  <div class="navbar-item">
+                    <a class="navbar-link" href="#">Tutorial</a>
+                  </div>
+                  <div class="navbar-item">
+                    <a class="navbar-link" href="#">
+                      v2.0&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="navbar-dropdown">
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">v1.8.0</a>
+                      </li>
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">v1.7.0</a>
+                      </li>
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">v1.6.0</a>
+                      </li>
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">All Versions</a>
+                      </li>
+                    </ul>
+                    </li>
+                  </div>
+                  <div class="navbar-items navbar-right">
+                    <div class="navbar-item">
+                      <a class="navbar-link" href="#">
+                        <i class="fas fa-language fa-2x"></i>
+                      </a>
+                      <ul class="navbar-dropdown navbar-dropdown-right">
+                        <li>
+                          <a class="navbar-dropdown-link" href="#">简体中文</a>
+                        </li>
+                        <li>
+                          <a class="navbar-dropdown-link" href="#">日本語</a>
+                        </li>
+                        <li>
+                          <a class="navbar-dropdown-link" href="#">Français</a>
+                        </li>
+                        <li>
+                          <a class="navbar-dropdown-link" href="#">Español</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="navbar-item">
+                      <a class="navbar-link" href="#">
+                        <i class="fab fa-github fa-lg"></i>
+                      </a>
+                    </div>
+                    <form>
+                      <div class="navbar-search">
+                        <input placeholder="Search" />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-12">
+            <nav class="navbar navbar-dark">
+              <div class="navbar-inner">
+                <div class="navbar-items">
+                  <div class="navbar-item">
+                    <a class="navbar-link" href="#">Docs</a>
+                  </div>
+                  <div class="navbar-item">
+                    <a class="navbar-link" href="#">Tutorial</a>
+                  </div>
+                  <div class="navbar-item">
+                    <a class="navbar-link" href="#">
+                      v2.0&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="navbar-dropdown">
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">v1.8.0</a>
+                      </li>
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">v1.7.0</a>
+                      </li>
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">v1.6.0</a>
+                      </li>
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">All Versions</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navbar-items navbar-center">
+                  <a class="navbar-brand">Infima</a>
+                </div>
+                <div class="navbar-items navbar-right">
+                  <div class="navbar-item">
+                    <a class="navbar-link" href="#">
+                      <i class="fas fa-language fa-2x"></i>
+                    </a>
+                    <ul class="navbar-dropdown navbar-dropdown-right">
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">简体中文</a>
+                      </li>
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">日本語</a>
+                      </li>
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">Français</a>
+                      </li>
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">Español</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="navbar-item">
+                    <a class="navbar-link" href="#">
+                      <i class="fab fa-github fa-lg"></i>
+                    </a>
+                  </div>
+                  <form>
+                    <div class="navbar-search">
+                      <input placeholder="Search" />
+                    </div>
+                  </form>
+                </div>
               </div>
-            </form>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-12">
+            <nav class="navbar navbar-light">
+              <div class="navbar-inner">
+                <div class="navbar-items">
+                  <div class="navbar-item">
+                    <a class="navbar-link" href="#">v1.0.0</a>
+                  </div>
+                  <div class="navbar-item">
+                    <a class="navbar-link" href="#">Docs</a>
+                  </div>
+                  <div class="navbar-item">
+                    <a class="navbar-link" href="#">Tutorial</a>
+                  </div>
+                  <div class="navbar-item">
+                    <a class="navbar-link" href="#">
+                      v2.0&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="navbar-dropdown">
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">v1.8.0</a>
+                      </li>
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">v1.7.0</a>
+                      </li>
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">v1.6.0</a>
+                      </li>
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">All Versions</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navbar-items navbar-center">
+                  <a class="navbar-brand">Infima</a>
+                </div>
+                <div class="navbar-items navbar-right">
+                  <div class="navbar-item">
+                    <a class="navbar-link" href="#">
+                      <i class="fas fa-language fa-2x"></i>
+                    </a>
+                    <ul class="navbar-dropdown navbar-dropdown-right">
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">简体中文</a>
+                      </li>
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">日本語</a>
+                      </li>
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">Français</a>
+                      </li>
+                      <li>
+                        <a class="navbar-dropdown-link" href="#">Español</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="navbar-item">
+                    <a class="navbar-link" href="#">
+                      <i class="fab fa-github fa-lg"></i>
+                    </a>
+                  </div>
+                  <form>
+                    <div class="navbar-search">
+                      <input placeholder="Search" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
-    </nav>
-    <div class="main">
-      <div class="container">
-        <h1>Infima</h1>
-        <select class="theme-switcher">
-          <option value="default">Default</option>
-          <option value="github">GitHub</option>
-          <option value="happy">Happy</option>
-          <option value="material">Material</option>
-        </select>
-        <p>A UI framework for content-centric websites.</p>
-        <hr/>
-        <div class="section">
-          <h1>Navbars</h1>
-          <div class="row">
-            <div class="col col-12">
-              <nav class="navbar">
-                <div class="navbar-inner">
-                  <div class="navbar-items">
-                    <a class="navbar-brand">Infima</a>
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">Docs</a>
-                    </div>
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">Tutorial</a>
-                    </div>
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">
-                        v2.0&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
-                      </a>
-                      <ul class="navbar-dropdown">
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">v1.8.0</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">v1.7.0</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">v1.6.0</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">All Versions</a>
-                        </li>
-                      </ul>
+      <div class="section grid-demo">
+        <h1>Grid</h1>
+        <h3>Twelve Column Grid</h3>
+        <div class="row">
+          <div class="col col-6">
+            <div class="col-inner">col-6</div>
+          </div>
+          <div class="col col-6">
+            <div class="col-inner">col-6</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-4">
+            <div class="col-inner">col-4</div>
+          </div>
+          <div class="col col-4">
+            <div class="col-inner">col-4</div>
+          </div>
+          <div class="col col-4">
+            <div class="col-inner">col-4</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-3">
+            <div class="col-inner">col-3</div>
+          </div>
+          <div class="col col-3">
+            <div class="col-inner">col-3</div>
+          </div>
+          <div class="col col-3">
+            <div class="col-inner">col-3</div>
+          </div>
+          <div class="col col-3">
+            <div class="col-inner">col-3</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-2">
+            <div class="col-inner">col-2</div>
+          </div>
+          <div class="col col-2">
+            <div class="col-inner">col-2</div>
+          </div>
+          <div class="col col-2">
+            <div class="col-inner">col-2</div>
+          </div>
+          <div class="col col-2">
+            <div class="col-inner">col-2</div>
+          </div>
+          <div class="col col-2">
+            <div class="col-inner">col-2</div>
+          </div>
+          <div class="col col-2">
+            <div class="col-inner">col-2</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-1">
+            <div class="col-inner">col-1</div>
+          </div>
+          <div class="col col-1">
+            <div class="col-inner">col-1</div>
+          </div>
+          <div class="col col-1">
+            <div class="col-inner">col-1</div>
+          </div>
+          <div class="col col-1">
+            <div class="col-inner">col-1</div>
+          </div>
+          <div class="col col-1">
+            <div class="col-inner">col-1</div>
+          </div>
+          <div class="col col-1">
+            <div class="col-inner">col-1</div>
+          </div>
+          <div class="col col-1">
+            <div class="col-inner">col-1</div>
+          </div>
+          <div class="col col-1">
+            <div class="col-inner">col-1</div>
+          </div>
+          <div class="col col-1">
+            <div class="col-inner">col-1</div>
+          </div>
+          <div class="col col-1">
+            <div class="col-inner">col-1</div>
+          </div>
+          <div class="col col-1">
+            <div class="col-inner">col-1</div>
+          </div>
+          <div class="col col-1">
+            <div class="col-inner">col-1</div>
+          </div>
+        </div>
+        <h3>Column Offsets</h3>
+        <div class="row">
+          <div class="col col-1">
+            <div class="col-inner">col-1</div>
+          </div>
+          <div class="col col-2 col-offset-1">
+            <div class="col-inner">col-2 col-offset-1</div>
+          </div>
+          <div class="col col-3 col-offset-2">
+            <div class="col-inner">col-3 col-offset-2</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-2">
+            <div class="col-inner">col-2</div>
+          </div>
+          <div class="col col-2 col-offset-2">
+            <div class="col-inner">col-2 col-offset-2</div>
+          </div>
+          <div class="col col-4 col-offset-2">
+            <div class="col-inner">col-4 col-offset-2</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-3">
+            <div class="col-inner">col-3</div>
+          </div>
+          <div class="col col-6 col-offset-3">
+            <div class="col-inner">col-6 col-offset-3</div>
+          </div>
+        </div>
+      </div>
+      <div class="section grid-demo">
+        <h1>Footer</h1>
+        <div class="row">
+          <div class="col col-12">
+            <footer class="footer">
+              <div class="footer-links">
+                <a class="footer-link-item" href="#">Documentation</a>
+                <span class="footer-link-separator">&middot;</span>
+                <a class="footer-link-item" href="#">GitHub</a>
+                <span class="footer-link-separator">&middot;</span>
+                <a class="footer-link-item" href="#">Blog</a>
+                <span class="footer-link-separator">&middot;</span>
+                <a class="footer-link-item" href="#">Contribute</a>
+              </div>
+              <div class="footer-text">
+                Copyright © 2019 Facebook, Inc.
+              </div>
+            </footer>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-12">
+            <footer class="footer">
+              <div class="row footer-links">
+                <div class="col col-3">
+                  <h4 class="footer-title">Docs</h4>
+                  <ul class="footer-items">
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">Getting Started</a>
                     </li>
-                  </div>
-                  <div class="navbar-items navbar-right">
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">
-                        <i class="fas fa-language fa-2x"></i>
-                      </a>
-                      <ul class="navbar-dropdown navbar-dropdown-right">
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">简体中文</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">日本語</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">Français</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">Español</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">
-                        <i class="fab fa-github fa-lg"></i>
-                      </a>
-                    </div>
-                    <form>
-                      <div class="navbar-search">
-                        <input placeholder="Search" />
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-12">
-              <nav class="navbar navbar-dark">
-                <div class="navbar-inner">
-                  <div class="navbar-items">
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">Docs</a>
-                    </div>
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">Tutorial</a>
-                    </div>
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">
-                        v2.0&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
-                      </a>
-                      <ul class="navbar-dropdown">
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">v1.8.0</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">v1.7.0</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">v1.6.0</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">All Versions</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="navbar-items navbar-center">
-                    <a class="navbar-brand">Infima</a>
-                  </div>
-                  <div class="navbar-items navbar-right">
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">
-                        <i class="fas fa-language fa-2x"></i>
-                      </a>
-                      <ul class="navbar-dropdown navbar-dropdown-right">
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">简体中文</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">日本語</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">Français</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">Español</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">
-                        <i class="fab fa-github fa-lg"></i>
-                      </a>
-                    </div>
-                    <form>
-                      <div class="navbar-search">
-                        <input placeholder="Search" />
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-12">
-              <nav class="navbar navbar-light">
-                <div class="navbar-inner">
-                  <div class="navbar-items">
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">v1.0.0</a>
-                    </div>
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">Docs</a>
-                    </div>
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">Tutorial</a>
-                    </div>
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">
-                        v2.0&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
-                      </a>
-                      <ul class="navbar-dropdown">
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">v1.8.0</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">v1.7.0</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">v1.6.0</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">All Versions</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="navbar-items navbar-center">
-                    <a class="navbar-brand">Infima</a>
-                  </div>
-                  <div class="navbar-items navbar-right">
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">
-                        <i class="fas fa-language fa-2x"></i>
-                      </a>
-                      <ul class="navbar-dropdown navbar-dropdown-right">
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">简体中文</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">日本語</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">Français</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">Español</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">
-                        <i class="fab fa-github fa-lg"></i>
-                      </a>
-                    </div>
-                    <form>
-                      <div class="navbar-search">
-                        <input placeholder="Search" />
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-        <div class="section grid-demo">
-          <h1>Grid</h1>
-          <h3>Twelve Column Grid</h3>
-          <div class="row">
-            <div class="col col-6"><div class="col-inner">col-6</div></div>
-            <div class="col col-6"><div class="col-inner">col-6</div></div>
-          </div>
-          <div class="row">
-            <div class="col col-4"><div class="col-inner">col-4</div></div>
-            <div class="col col-4"><div class="col-inner">col-4</div></div>
-            <div class="col col-4"><div class="col-inner">col-4</div></div>
-          </div>
-          <div class="row">
-            <div class="col col-3"><div class="col-inner">col-3</div></div>
-            <div class="col col-3"><div class="col-inner">col-3</div></div>
-            <div class="col col-3"><div class="col-inner">col-3</div></div>
-            <div class="col col-3"><div class="col-inner">col-3</div></div>
-          </div>
-          <div class="row">
-            <div class="col col-2"><div class="col-inner">col-2</div></div>
-            <div class="col col-2"><div class="col-inner">col-2</div></div>
-            <div class="col col-2"><div class="col-inner">col-2</div></div>
-            <div class="col col-2"><div class="col-inner">col-2</div></div>
-            <div class="col col-2"><div class="col-inner">col-2</div></div>
-            <div class="col col-2"><div class="col-inner">col-2</div></div>
-          </div>
-          <div class="row">
-            <div class="col col-1"><div class="col-inner">col-1</div></div>
-            <div class="col col-1"><div class="col-inner">col-1</div></div>
-            <div class="col col-1"><div class="col-inner">col-1</div></div>
-            <div class="col col-1"><div class="col-inner">col-1</div></div>
-            <div class="col col-1"><div class="col-inner">col-1</div></div>
-            <div class="col col-1"><div class="col-inner">col-1</div></div>
-            <div class="col col-1"><div class="col-inner">col-1</div></div>
-            <div class="col col-1"><div class="col-inner">col-1</div></div>
-            <div class="col col-1"><div class="col-inner">col-1</div></div>
-            <div class="col col-1"><div class="col-inner">col-1</div></div>
-            <div class="col col-1"><div class="col-inner">col-1</div></div>
-            <div class="col col-1"><div class="col-inner">col-1</div></div>
-          </div>
-
-          <h3>Column Offsets</h3>
-          <div class="row">
-            <div class="col col-1"><div class="col-inner">col-1</div></div>
-            <div class="col col-2 col-offset-1"><div class="col-inner">col-2 col-offset-1</div></div>
-            <div class="col col-3 col-offset-2"><div class="col-inner">col-3 col-offset-2</div></div>
-          </div>
-          <div class="row">
-            <div class="col col-2"><div class="col-inner">col-2</div></div>
-            <div class="col col-2 col-offset-2"><div class="col-inner">col-2 col-offset-2</div></div>
-            <div class="col col-4 col-offset-2"><div class="col-inner">col-4 col-offset-2</div></div>
-          </div>
-          <div class="row">
-            <div class="col col-3"><div class="col-inner">col-3</div></div>
-            <div class="col col-6 col-offset-3"><div class="col-inner">col-6 col-offset-3</div></div>
-          </div>
-        </div>
-        <div class="section grid-demo">
-          <h1>Footer</h1>
-          <div class="row">
-            <div class="col col-12">
-              <footer class="footer">
-                <div class="footer-links">
-                  <a class="footer-link-item" href="#">Documentation</a>
-                  <span class="footer-link-separator">&middot;</span>
-                  <a class="footer-link-item" href="#">GitHub</a>
-                  <span class="footer-link-separator">&middot;</span>
-                  <a class="footer-link-item" href="#">Blog</a>
-                  <span class="footer-link-separator">&middot;</span>
-                  <a class="footer-link-item" href="#">Contribute</a>
-                </div>
-                <div class="footer-text">
-                  Copyright © 2019 Facebook, Inc.
-                </div>
-              </footer>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-12">
-              <footer class="footer">
-                <div class="row footer-links">
-                  <div class="col col-3">
-                    <h4 class="footer-title">Docs</h4>
-                    <ul class="footer-items">
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">Getting Started</a>
-                      </li>
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">API</a>
-                      </li>
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">FAQ</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col col-3">
-                    <h4 class="footer-title">Community</h4>
-                    <ul class="footer-items">
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">Users</a>
-                      </li>
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">Contribute</a>
-                      </li>
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">Stack Overflow</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col col-3">
-                    <h4 class="footer-title">Social</h4>
-                    <ul class="footer-items">
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">GitHub</a>
-                      </li>
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">Facebook</a>
-                      </li>
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">Twitter</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col col-3">
-                    <h4 class="footer-title">More</h4>
-                    <ul class="footer-items">
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">Tutorial</a>
-                      </li>
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">Blog</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="footer-text text-center">
-                  Copyright © 2019 Facebook, Inc.
-                </div>
-              </footer>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-12">
-              <footer class="footer footer-dark">
-                <div class="footer-links">
-                  <a class="footer-link-item" href="#">Documentation</a>
-                  <span class="footer-link-separator">&middot;</span>
-                  <a class="footer-link-item" href="#">GitHub</a>
-                  <span class="footer-link-separator">&middot;</span>
-                  <a class="footer-link-item" href="#">Blog</a>
-                  <span class="footer-link-separator">&middot;</span>
-                  <a class="footer-link-item" href="#">Contribute</a>
-                </div>
-                <div class="footer-text">
-                  Copyright © 2019 Facebook, Inc.
-                </div>
-              </footer>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-12">
-              <footer class="footer footer-dark">
-                <div class="row footer-links">
-                  <div class="col col-3">
-                    <h4 class="footer-title">Docs</h4>
-                    <ul class="footer-items">
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">Getting Started</a>
-                      </li>
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">API</a>
-                      </li>
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">FAQ</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col col-3">
-                    <h4 class="footer-title">Community</h4>
-                    <ul class="footer-items">
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">Users</a>
-                      </li>
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">Contribute</a>
-                      </li>
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">Stack Overflow</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col col-3">
-                    <h4 class="footer-title">Social</h4>
-                    <ul class="footer-items">
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">GitHub</a>
-                      </li>
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">Facebook</a>
-                      </li>
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">Twitter</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col col-3">
-                    <h4 class="footer-title">More</h4>
-                    <ul class="footer-items">
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">Tutorial</a>
-                      </li>
-                      <li class="footer-item">
-                        <a class="footer-link-item" href="#">Blog</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="text-center">
-                  <div class="margin-bottom-sm">
-                    <img class="footer-logo" alt="Facebook Open Source Logo"
-                      src="https://docusaurus.io/img/oss_logo.png" />
-                  </div>
-                  Copyright © 2019 Facebook, Inc.
-                </div>
-              </footer>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <h1>Buttons</h1>
-          <div class="row">
-            <div class="col col-7">
-              <div class="row margin-bottom-sm">
-                <div class="col col-12">
-                  <button class="btn btn-primary">Primary</button>
-                  <button class="btn btn-secondary">Secondary</button>
-                  <button class="btn btn-success">Success</button>
-                  <button class="btn btn-info">Info</button>
-                  <button class="btn btn-warning">Warning</button>
-                  <button class="btn btn-danger">Danger</button>
-                </div>
-              </div>
-              <div class="row margin-bottom-sm">
-                <div class="col col-12">
-                  <button class="btn disabled btn-primary">Primary</button>
-                  <button class="btn disabled btn-secondary">Secondary</button>
-                  <button class="btn disabled btn-success">Success</button>
-                  <button class="btn disabled btn-info">Info</button>
-                  <button class="btn disabled btn-warning">Warning</button>
-                  <button class="btn disabled btn-danger">Danger</button>
-                </div>
-              </div>
-              <div class="row margin-bottom-sm">
-                <div class="col col-12">
-                  <button class="btn btn-outline btn-primary">Primary</button>
-                  <button class="btn btn-outline btn-secondary">Secondary</button>
-                  <button class="btn btn-outline btn-success">Success</button>
-                  <button class="btn btn-outline btn-info">Info</button>
-                  <button class="btn btn-outline btn-warning">Warning</button>
-                  <button class="btn btn-outline btn-danger">Danger</button>
-                </div>
-              </div>
-              <div class="row margin-bottom-sm">
-                <div class="col col-12">
-                  <button class="btn btn-outline btn-active btn-primary">Primary</button>
-                  <button class="btn btn-outline btn-active btn-secondary">Secondary</button>
-                  <button class="btn btn-outline btn-active btn-success">Success</button>
-                  <button class="btn btn-outline btn-active btn-info">Info</button>
-                  <button class="btn btn-outline btn-active btn-warning">Warning</button>
-                  <button class="btn btn-outline btn-active btn-danger">Danger</button>
-                </div>
-              </div>
-            </div>
-            <div class="col col-5">
-              <div class="row margin-bottom-sm">
-                <div class="col col-12">
-                  <button class="btn btn-sm btn-primary">Small Button</button>
-                  <button class="btn btn-primary">Default Button</button>
-                  <button class="btn btn-lg btn-primary">Large Button</button>
-                </div>
-              </div>
-              <div class="row margin-bottom-sm">
-                <div class="col col-12">
-                  <button class="btn btn-block btn-primary">Block Button</button>
-                </div>
-              </div>
-              <div class="row margin-bottom-sm">
-                <div class="col col-12">
-                  <div class="btn-group">
-                    <button class="btn btn-primary btn-active">Alpha</button>
-                    <button class="btn btn-primary">Beta</button>
-                    <button class="btn btn-primary">Gamma</button>
-                  </div>
-                </div>
-              </div>
-              <div class="row margin-bottom-sm">
-                <div class="col col-12">
-                  <div class="btn-group">
-                    <button class="btn btn-secondary btn-active">Alpha</button>
-                    <button class="btn btn-secondary">Beta</button>
-                    <button class="btn btn-secondary">Gamma</button>
-                  </div>
-                </div>
-              </div>
-              <div class="row margin-bottom-sm">
-                <div class="col col-12">
-                  <div class="btn-group">
-                    <button class="btn btn-sm btn-success">Alpha</button>
-                    <button class="btn btn-sm btn-success btn-active">Beta</button>
-                    <button class="btn btn-sm btn-success">Gamma</button>
-                  </div>
-                </div>
-              </div>
-              <div class="row margin-bottom-sm">
-                <div class="col col-12">
-                  <div class="btn-group">
-                    <button class="btn btn-lg btn-outline btn-info">Alpha</button>
-                    <button class="btn btn-lg btn-outline btn-info btn-active">Beta</button>
-                    <button class="btn btn-lg btn-outline btn-info">Gamma</button>
-                  </div>
-                </div>
-              </div>
-              <div class="row margin-bottom-sm">
-                <div class="col col-12">
-                  <div class="btn-group btn-group-block">
-                    <button class="btn btn-warning">Alpha</button>
-                    <button class="btn btn-warning">Beta</button>
-                    <button class="btn btn-warning btn-active">Gamma</button>
-                  </div>
-                </div>
-              </div>
-              <div class="row margin-bottom-sm">
-                <div class="col col-12">
-                  <div class="btn-group btn-group-block">
-                    <button class="btn btn-sm btn-outline btn-danger">Alpha</button>
-                    <button class="btn btn-sm btn-outline btn-danger">Beta</button>
-                    <button class="btn btn-sm btn-outline btn-danger btn-active">Gamma</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <h1>Alerts</h1>
-          <div class="row">
-            <div class="col col-4">
-              <div class="alert alert-primary" role="alert">
-                <button class="close">&times;</button>
-                This is a <strong>primary</strong> alert.
-                You should probably pay attention to it.
-              </div>
-            </div>
-            <div class="col col-4">
-              <div class="alert alert-secondary" role="alert">
-                <button class="close">&times;</button>
-                This is a <strong>secondary</strong> alert.
-                It's not too important, you may ignore it.
-              </div>
-            </div>
-            <div class="col col-4">
-              <div class="alert alert-success" role="alert">
-                <button class="close">&times;</button>
-                This is a <strong>success</strong> alert.
-                Something good must have happened!
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-4">
-              <div class="alert alert-info" role="alert">
-                <button class="close">&times;</button>
-                This is an <strong>info</strong> alert.
-                For your information only.
-              </div>
-            </div>
-            <div class="col col-4">
-              <div class="alert alert-warning" role="alert">
-                <button class="close">&times;</button>
-                This is a <strong>warning</strong> alert.
-                Be warned, you should pay attention!
-              </div>
-            </div>
-            <div class="col col-4">
-              <div class="alert alert-danger" role="alert">
-                <button class="close">&times;</button>
-                This is a <strong>danger</strong> alert.
-                Something has gone wrong, please investigate!
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <h1>Badges</h1>
-          <div class="row">
-            <div class="col col-12">
-              <span class="badge badge-primary">Primary</span>
-              <span class="badge badge-secondary">Secondary</span>
-              <span class="badge badge-success">Success</span>
-              <span class="badge badge-info">Info</span>
-              <span class="badge badge-warning">Warning</span>
-              <span class="badge badge-danger">Danger</span>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <h1>Pills</h1>
-          <h3>Standard Pills</h3>
-          <div class="row">
-            <div class="col col-12">
-              <ul class="pills">
-                <li class="pill-item pill-active">Alpha</li>
-                <li class="pill-item">Beta</li>
-                <li class="pill-item">Gamma</li>
-                <li class="pill-item">Zeta</li>
-              </ul>
-            </div>
-          </div>
-          <h3>Full-width Pills</h3>
-          <div class="row">
-            <div class="col col-12">
-              <ul class="pills pills-block">
-                <li class="pill-item pill-active">Alpha</li>
-                <li class="pill-item">Beta</li>
-                <li class="pill-item">Gamma</li>
-                <li class="pill-item">Zeta</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <h1>Tabs</h1>
-          <h3>Standard Tabs</h3>
-          <div class="row">
-            <div class="col col-12">
-              <ul class="tabs">
-                <li class="tab-item tab-active">Alpha</li>
-                <li class="tab-item">Beta</li>
-                <li class="tab-item">Gamma</li>
-                <li class="tab-item">Zeta</li>
-              </ul>
-            </div>
-          </div>
-          <h3>Full-width Tabs</h3>
-          <div class="row">
-            <div class="col col-12">
-              <ul class="tabs tabs-block">
-                <li class="tab-item tab-active">Alpha</li>
-                <li class="tab-item">Beta</li>
-                <li class="tab-item">Gamma</li>
-                <li class="tab-item">Zeta</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <h1>Pagination</h1>
-          <div class="row">
-            <div class="col col-4">
-              <ul class="pagination">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#">&laquo;</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">1</a>
-                </li>
-                <li class="page-item page-active">
-                  <a class="page-link" href="#">2</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">3</a>
-                </li>
-                <li class="page-item">
-                  <span>...</span>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">&raquo;</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col col-3">
-              <ul class="pagination pagination-sm">
-                <li class="page-item">
-                  <a class="page-link" href="#">&laquo;</a>
-                </li>
-                <li class="page-item">
-                  <span>...</span>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">5</a>
-                </li>
-                <li class="page-item page-active">
-                  <a class="page-link" href="#">6</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">7</a>
-                </li>
-                <li class="page-item">
-                  <span>...</span>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">&raquo;</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col col-5">
-              <ul class="pagination pagination-lg">
-                <li class="page-item">
-                  <a class="page-link" href="#">&laquo;</a>
-                </li>
-                <li class="page-item">
-                  <span>...</span>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">7</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">8</a>
-                </li>
-                <li class="page-item page-active">
-                  <a class="page-link" href="#">9</a>
-                </li>
-                <li class="page-item disabled">
-                  <a class="page-link" href="#">&raquo;</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <h1>Avatar</h1>
-          <h3>Horizontal Avatars</h3>
-          <div class="row">
-            <div class="col col-3">
-              <div class="avatar">
-                <img class="avatar-profile" src="https://avatars1.githubusercontent.com/u/810438?s=460">
-                <div class="avatar-intro">
-                  <h4 class="avatar-name">Dan Abramov</h4>
-                  <small class="avatar-subtitle">Working on @reactjs. Co-author of Redux and Create React App.</small>
-                </div>
-              </div>
-            </div>
-            <div class="col col-3">
-              <div class="avatar">
-                <img class="avatar-profile" src="https://avatars2.githubusercontent.com/u/197597?s=460">
-                <div class="avatar-intro">
-                  <h4 class="avatar-name">Christopher Chedeau</h4>
-                  <small class="avatar-subtitle">Frenchy Front End Engineer</small>
-                </div>
-              </div>
-            </div>
-            <div class="col col-3">
-              <div class="avatar">
-                <img class="avatar-profile" src="https://avatars1.githubusercontent.com/u/977348?s=460&v=4">
-                <div class="avatar-intro">
-                  <h4 class="avatar-name">Jordan Walke</h4>
-                  <small class="avatar-subtitle">Maker of things: ReactJS. Working on: <a href="https://twitter.com/reasonml">@reasonml</a>. At: Facebook Engineering.</small>
-                </div>
-              </div>
-            </div>
-            <div class="col col-3">
-              <div class="avatar">
-                <img class="avatar-profile" src="https://avatars3.githubusercontent.com/u/13352?s=400&v=4">
-                <div class="avatar-intro">
-                  <h4 class="avatar-name">Christoph Pojer</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h3>Vertical Avatars</h3>
-          <div class="row">
-            <div class="col col-3">
-              <div class="avatar avatar-vertical">
-                <img class="avatar-profile" src="https://avatars1.githubusercontent.com/u/165856?s=460&v=4">
-                <div class="avatar-intro">
-                  <h4 class="avatar-name">Hector Ramos</h4>
-                  <small class="avatar-subtitle">React Native @facebook</small>
-                </div>
-              </div>
-            </div>
-            <div class="col col-3">
-              <div class="avatar avatar-vertical">
-                <img class="avatar-profile" src="https://avatars0.githubusercontent.com/u/3757713?s=460&v=4">
-                <div class="avatar-intro">
-                  <h4 class="avatar-name">Joel Marcey</h4>
-                  <small class="avatar-subtitle">Developer Advocate at Facebook, co-creator of Docusaurus</small>
-                </div>
-              </div>
-            </div>
-            <div class="col col-3">
-              <div class="avatar avatar-vertical">
-                <img class="avatar-profile" src="https://avatars1.githubusercontent.com/u/1315101?s=460&v=4">
-                <div class="avatar-intro">
-                  <h4 class="avatar-name">Yangshun Tay</h4>
-                  <small class="avatar-subtitle">Creator of Infima</small>
-                </div>
-              </div>
-            </div>
-            <div class="col col-3">
-              <div class="avatar avatar-vertical">
-                <img class="avatar-profile" src="https://avatars1.githubusercontent.com/u/17883920?s=460&v=4">
-                <div class="avatar-intro">
-                  <h4 class="avatar-name">Endilie Yacob Sucipto</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <h1>Typography</h1>
-          <div class="row">
-            <div class="col col-4">
-              <h1>Heading 1</h1>
-              <h2>Heading 2</h2>
-              <h3>Heading 3</h3>
-              <h4>Heading 4</h4>
-              <h5>Heading 5</h5>
-              <h6>Heading 6</h6>
-            </div>
-            <div class="col col-4">
-              <h2>Emphasis</h2>
-              <p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
-              <p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
-              <p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
-              <p>Strikethrough uses two tildes. <del>Scratch this.</del></p>
-              <p class="text-primary">This is primary text.</p>
-              <p class="text-secondary">This is secondary text.</p>
-              <p class="text-success">This is success text.</p>
-              <p class="text-info">This is info text.</p>
-              <p class="text-warning">This is warning text.</p>
-              <p class="text-danger">This is danger text.</p>
-            </div>
-            <div class="col col-4">
-              <h2>Blockquotes</h2>
-              <blockquote>
-                <p>Blockquotes are very handy in email to emulate reply text.
-                  This line is part of the same quote.
-                </p>
-              </blockquote>
-              <p>Quote break.</p>
-              <blockquote>
-                <p>This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="row">
-            <div class="col col-7">
-              <h2>Lists</h2>
-              <ol>
-                <li>First ordered list item</li>
-                <li>Second item</li>
-                <li>Third item</li>
-              </ol>
-              <ul>
-                <li>First unordered list item</li>
-                <li>Second item</li>
-                <li>Third item</li>
-              </ul>
-              <ol>
-                <li>
-                  Lists in a list item:
-                  <ul>
-                    <li>
-                      Indented four spaces.
-                      <ul>
-                        <li>indented eight spaces.</li>
-                      </ul>
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">API</a>
                     </li>
-                    <li>Four spaces again.</li>
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">FAQ</a>
+                    </li>
                   </ul>
-                </li>
-                <li>
-                  <p>Multiple paragraphs in a list items:
-                    It's best to indent the paragraphs four spaces
-                    You can get away with three, but it can get
-                    confusing when you nest other things.
-                    Stick to four.
+                </div>
+                <div class="col col-3">
+                  <h4 class="footer-title">Community</h4>
+                  <ul class="footer-items">
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">Users</a>
+                    </li>
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">Contribute</a>
+                    </li>
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">Stack Overflow</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col col-3">
+                  <h4 class="footer-title">Social</h4>
+                  <ul class="footer-items">
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">GitHub</a>
+                    </li>
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">Facebook</a>
+                    </li>
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">Twitter</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col col-3">
+                  <h4 class="footer-title">More</h4>
+                  <ul class="footer-items">
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">Tutorial</a>
+                    </li>
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-text text-center">
+                Copyright © 2019 Facebook, Inc.
+              </div>
+            </footer>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-12">
+            <footer class="footer footer-dark">
+              <div class="footer-links">
+                <a class="footer-link-item" href="#">Documentation</a>
+                <span class="footer-link-separator">&middot;</span>
+                <a class="footer-link-item" href="#">GitHub</a>
+                <span class="footer-link-separator">&middot;</span>
+                <a class="footer-link-item" href="#">Blog</a>
+                <span class="footer-link-separator">&middot;</span>
+                <a class="footer-link-item" href="#">Contribute</a>
+              </div>
+              <div class="footer-text">
+                Copyright © 2019 Facebook, Inc.
+              </div>
+            </footer>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-12">
+            <footer class="footer footer-dark">
+              <div class="row footer-links">
+                <div class="col col-3">
+                  <h4 class="footer-title">Docs</h4>
+                  <ul class="footer-items">
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">Getting Started</a>
+                    </li>
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">API</a>
+                    </li>
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col col-3">
+                  <h4 class="footer-title">Community</h4>
+                  <ul class="footer-items">
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">Users</a>
+                    </li>
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">Contribute</a>
+                    </li>
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">Stack Overflow</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col col-3">
+                  <h4 class="footer-title">Social</h4>
+                  <ul class="footer-items">
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">GitHub</a>
+                    </li>
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">Facebook</a>
+                    </li>
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">Twitter</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col col-3">
+                  <h4 class="footer-title">More</h4>
+                  <ul class="footer-items">
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">Tutorial</a>
+                    </li>
+                    <li class="footer-item">
+                      <a class="footer-link-item" href="#">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="text-center">
+                <div class="margin-bottom-sm">
+                  <img class="footer-logo" alt="Facebook Open Source Logo"
+                    src="https://docusaurus.io/img/oss_logo.png" />
+                </div>
+                Copyright © 2019 Facebook, Inc.
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h1>Menu</h1>
+        <div class="row">
+          <div class="col col-3">
+            <div class="menu">
+              <div class="menu-list-item">
+                <h3 class="menu-item menu-group-title">
+                  Getting Started
+                  <span class="chevron"></span>
+                </h3>
+                <ul class="menu-list">
+                  <li class="menu-list-item">
+                    <a class="menu-link menu-item" href="#">Installation
+                    </a>
+                  </li>
+                  <li class="menu-list-item">
+                    <a class="menu-link menu-item" href="#">Site
+                      Preparation
+                      <span class="chevron"></span>
+                    </a>
+                    <ul class="menu-list">
+                      <li class="menu-list-item">
+                        <a class="menu-link menu-item" href="#">Installation</a>
+                      </li>
+                      <li class="menu-list-item">
+                        <a class="menu-link menu-item" href="#">Site
+                          Preparation</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-list-item menu-list-item-collapsed">
+                    <a class="menu-link menu-item" href="#">
+                      Creating your site
+                      <span class="chevron"></span>
+                    </a>
+                    <ul class="menu-list">
+                      <li class="menu-list-item">
+                        <a class="menu-link menu-item" href="#">Installation</a>
+                      </li>
+                      <li class="menu-list-item">
+                        <a class="menu-link menu-item" href="#">Site
+                          Preparation
+                          <span class="chevron"></span>
+                        </a>
+                        <ul class="menu-list">
+                          <li class="menu-list-item">
+                            <a class="menu-link menu-item" href="#">Installation</a>
+                          </li>
+                          <li class="menu-list-item">
+                            <a class="menu-link menu-item" href="#">Site
+                              Preparation</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-list-item">
+                    <a class="menu-link menu-item" href="#">Publishing your site</a>
+                  </li>
+                  <li class="menu-list-item">
+                    <a class="menu-link menu-item" href="#">Docker</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu-list-item">
+                <h3 class="menu-item menu-group-title">
+                  Guides
+                  <span class="chevron"></span>
+                </h3>
+                <ul class="menu-list">
+                  <li class="menu-list-item">
+                    <a class="menu-link menu-item" href="#">Adding a Blog</a>
+                  </li>
+                  <li class="menu-list-item">
+                    <a class="menu-link menu-item menu-link-active" href="#">Custom Pages</a>
+                  </li>
+                  <li class="menu-list-item">
+                    <a class="menu-link menu-item" href="#">Enabling
+                      Search</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col col-8 col-offset-1">
+            <h2>Lorem Ipsum</h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna
+            aliqua. Quis ipsum suspendisse ultrices gravida. Fringilla phasellus faucibus scelerisque eleifend donec
+            pretium. Ut
+            lectus arcu bibendum at. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Lacus
+            laoreet non
+            curabitur gravida. Neque viverra justo nec ultrices dui sapien eget mi. Et pharetra pharetra massa massa
+            ultricies mi.
+            Nulla aliquet enim tortor at. Euismod nisi porta lorem mollis aliquam. Morbi tincidunt ornare massa eget.
+            Dictumst
+            vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Sem fringilla ut morbi tincidunt augue
+            interdum
+            velit euismod in. Volutpat maecenas volutpat blandit aliquam etiam erat. Fames ac turpis egestas maecenas.
+            Odio ut sem
+            nulla pharetra diam sit. Gravida rutrum quisque non tellus orci ac auctor.
+            <h3>At Elementum</h3>
+            At elementum eu facilisis sed odio morbi quis. Metus vulputate eu scelerisque felis. Vitae semper quis
+            lectus nulla at
+            volutpat diam ut venenatis. Pellentesque diam volutpat commodo sed egestas egestas fringilla. Cursus in hac
+            habitasse
+            platea dictumst quisque sagittis purus. Odio ut enim blandit volutpat maecenas volutpat blandit. Praesent
+            tristique
+            magna sit amet purus gravida quis blandit. Non curabitur gravida arcu ac tortor dignissim convallis aenean
+            et. Vulputate
+            dignissim suspendisse in est. Condimentum lacinia quis vel eros donec. Leo urna molestie at elementum eu
+            facilisis. Cras
+            semper auctor neque vitae tempus quam pellentesque nec nam. Viverra suspendisse potenti nullam ac tortor.
+            Magna eget est
+            lorem ipsum dolor sit amet consectetur. Maecenas accumsan lacus vel facilisis. Cursus turpis massa tincidunt
+            dui ut.
+            Tempus quam pellentesque nec nam aliquam sem et tortor.
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h1>Buttons</h1>
+        <div class="row">
+          <div class="col col-7">
+            <div class="row margin-bottom-sm">
+              <div class="col col-12">
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-success">Success</button>
+                <button class="btn btn-info">Info</button>
+                <button class="btn btn-warning">Warning</button>
+                <button class="btn btn-danger">Danger</button>
+              </div>
+            </div>
+            <div class="row margin-bottom-sm">
+              <div class="col col-12">
+                <button class="btn disabled btn-primary">Primary</button>
+                <button class="btn disabled btn-secondary">Secondary</button>
+                <button class="btn disabled btn-success">Success</button>
+                <button class="btn disabled btn-info">Info</button>
+                <button class="btn disabled btn-warning">Warning</button>
+                <button class="btn disabled btn-danger">Danger</button>
+              </div>
+            </div>
+            <div class="row margin-bottom-sm">
+              <div class="col col-12">
+                <button class="btn btn-outline btn-primary">Primary</button>
+                <button class="btn btn-outline btn-secondary">Secondary</button>
+                <button class="btn btn-outline btn-success">Success</button>
+                <button class="btn btn-outline btn-info">Info</button>
+                <button class="btn btn-outline btn-warning">Warning</button>
+                <button class="btn btn-outline btn-danger">Danger</button>
+              </div>
+            </div>
+            <div class="row margin-bottom-sm">
+              <div class="col col-12">
+                <button class="btn btn-outline btn-active btn-primary">Primary</button>
+                <button class="btn btn-outline btn-active btn-secondary">Secondary</button>
+                <button class="btn btn-outline btn-active btn-success">Success</button>
+                <button class="btn btn-outline btn-active btn-info">Info</button>
+                <button class="btn btn-outline btn-active btn-warning">Warning</button>
+                <button class="btn btn-outline btn-active btn-danger">Danger</button>
+              </div>
+            </div>
+          </div>
+          <div class="col col-5">
+            <div class="row margin-bottom-sm">
+              <div class="col col-12">
+                <button class="btn btn-sm btn-primary">Small Button</button>
+                <button class="btn btn-primary">Default Button</button>
+                <button class="btn btn-lg btn-primary">Large Button</button>
+              </div>
+            </div>
+            <div class="row margin-bottom-sm">
+              <div class="col col-12">
+                <button class="btn btn-block btn-primary">Block Button</button>
+              </div>
+            </div>
+            <div class="row margin-bottom-sm">
+              <div class="col col-12">
+                <div class="btn-group">
+                  <button class="btn btn-primary btn-active">Alpha</button>
+                  <button class="btn btn-primary">Beta</button>
+                  <button class="btn btn-primary">Gamma</button>
+                </div>
+              </div>
+            </div>
+            <div class="row margin-bottom-sm">
+              <div class="col col-12">
+                <div class="btn-group">
+                  <button class="btn btn-secondary btn-active">Alpha</button>
+                  <button class="btn btn-secondary">Beta</button>
+                  <button class="btn btn-secondary">Gamma</button>
+                </div>
+              </div>
+            </div>
+            <div class="row margin-bottom-sm">
+              <div class="col col-12">
+                <div class="btn-group">
+                  <button class="btn btn-sm btn-success">Alpha</button>
+                  <button class="btn btn-sm btn-success btn-active">Beta</button>
+                  <button class="btn btn-sm btn-success">Gamma</button>
+                </div>
+              </div>
+            </div>
+            <div class="row margin-bottom-sm">
+              <div class="col col-12">
+                <div class="btn-group">
+                  <button class="btn btn-lg btn-outline btn-info">Alpha</button>
+                  <button class="btn btn-lg btn-outline btn-info btn-active">Beta</button>
+                  <button class="btn btn-lg btn-outline btn-info">Gamma</button>
+                </div>
+              </div>
+            </div>
+            <div class="row margin-bottom-sm">
+              <div class="col col-12">
+                <div class="btn-group btn-group-block">
+                  <button class="btn btn-warning">Alpha</button>
+                  <button class="btn btn-warning">Beta</button>
+                  <button class="btn btn-warning btn-active">Gamma</button>
+                </div>
+              </div>
+            </div>
+            <div class="row margin-bottom-sm">
+              <div class="col col-12">
+                <div class="btn-group btn-group-block">
+                  <button class="btn btn-sm btn-outline btn-danger">Alpha</button>
+                  <button class="btn btn-sm btn-outline btn-danger">Beta</button>
+                  <button class="btn btn-sm btn-outline btn-danger btn-active">Gamma</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h1>Alerts</h1>
+        <div class="row">
+          <div class="col col-4">
+            <div class="alert alert-primary" role="alert">
+              <button class="close">&times;</button>
+              This is a <strong>primary</strong> alert.
+              You should probably pay attention to it.
+            </div>
+          </div>
+          <div class="col col-4">
+            <div class="alert alert-secondary" role="alert">
+              <button class="close">&times;</button>
+              This is a <strong>secondary</strong> alert.
+              It's not too important, you may ignore it.
+            </div>
+          </div>
+          <div class="col col-4">
+            <div class="alert alert-success" role="alert">
+              <button class="close">&times;</button>
+              This is a <strong>success</strong> alert.
+              Something good must have happened!
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-4">
+            <div class="alert alert-info" role="alert">
+              <button class="close">&times;</button>
+              This is an <strong>info</strong> alert.
+              For your information only.
+            </div>
+          </div>
+          <div class="col col-4">
+            <div class="alert alert-warning" role="alert">
+              <button class="close">&times;</button>
+              This is a <strong>warning</strong> alert.
+              Be warned, you should pay attention!
+            </div>
+          </div>
+          <div class="col col-4">
+            <div class="alert alert-danger" role="alert">
+              <button class="close">&times;</button>
+              This is a <strong>danger</strong> alert.
+              Something has gone wrong, please investigate!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h1>Badges</h1>
+        <div class="row">
+          <div class="col col-12">
+            <span class="badge badge-primary">Primary</span>
+            <span class="badge badge-secondary">Secondary</span>
+            <span class="badge badge-success">Success</span>
+            <span class="badge badge-info">Info</span>
+            <span class="badge badge-warning">Warning</span>
+            <span class="badge badge-danger">Danger</span>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h1>Pills</h1>
+        <h3>Standard Pills</h3>
+        <div class="row">
+          <div class="col col-12">
+            <ul class="pills">
+              <li class="pill-item pill-active">Alpha</li>
+              <li class="pill-item">Beta</li>
+              <li class="pill-item">Gamma</li>
+              <li class="pill-item">Zeta</li>
+            </ul>
+          </div>
+        </div>
+        <h3>Full-width Pills</h3>
+        <div class="row">
+          <div class="col col-12">
+            <ul class="pills pills-block">
+              <li class="pill-item pill-active">Alpha</li>
+              <li class="pill-item">Beta</li>
+              <li class="pill-item">Gamma</li>
+              <li class="pill-item">Zeta</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h1>Tabs</h1>
+        <h3>Standard Tabs</h3>
+        <div class="row">
+          <div class="col col-12">
+            <ul class="tabs">
+              <li class="tab-item tab-active">Alpha</li>
+              <li class="tab-item">Beta</li>
+              <li class="tab-item">Gamma</li>
+              <li class="tab-item">Zeta</li>
+            </ul>
+          </div>
+        </div>
+        <h3>Full-width Tabs</h3>
+        <div class="row">
+          <div class="col col-12">
+            <ul class="tabs tabs-block">
+              <li class="tab-item tab-active">Alpha</li>
+              <li class="tab-item">Beta</li>
+              <li class="tab-item">Gamma</li>
+              <li class="tab-item">Zeta</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h1>Pagination</h1>
+        <div class="row">
+          <div class="col col-4">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#">&laquo;</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item page-active">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <span>...</span>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">&raquo;</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col col-3">
+            <ul class="pagination pagination-sm">
+              <li class="page-item">
+                <a class="page-link" href="#">&laquo;</a>
+              </li>
+              <li class="page-item">
+                <span>...</span>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">5</a>
+              </li>
+              <li class="page-item page-active">
+                <a class="page-link" href="#">6</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">7</a>
+              </li>
+              <li class="page-item">
+                <span>...</span>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">&raquo;</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col col-5">
+            <ul class="pagination pagination-lg">
+              <li class="page-item">
+                <a class="page-link" href="#">&laquo;</a>
+              </li>
+              <li class="page-item">
+                <span>...</span>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">7</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">8</a>
+              </li>
+              <li class="page-item page-active">
+                <a class="page-link" href="#">9</a>
+              </li>
+              <li class="page-item disabled">
+                <a class="page-link" href="#">&raquo;</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h1>Avatar</h1>
+        <h3>Horizontal Avatars</h3>
+        <div class="row">
+          <div class="col col-3">
+            <div class="avatar">
+              <img class="avatar-profile" src="https://avatars1.githubusercontent.com/u/810438?s=460">
+              <div class="avatar-intro">
+                <h4 class="avatar-name">Dan Abramov</h4>
+                <small class="avatar-subtitle">Working on @reactjs. Co-author of Redux and Create React App.</small>
+              </div>
+            </div>
+          </div>
+          <div class="col col-3">
+            <div class="avatar">
+              <img class="avatar-profile" src="https://avatars2.githubusercontent.com/u/197597?s=460">
+              <div class="avatar-intro">
+                <h4 class="avatar-name">Christopher Chedeau</h4>
+                <small class="avatar-subtitle">Frenchy Front End Engineer</small>
+              </div>
+            </div>
+          </div>
+          <div class="col col-3">
+            <div class="avatar">
+              <img class="avatar-profile" src="https://avatars1.githubusercontent.com/u/977348?s=460&v=4">
+              <div class="avatar-intro">
+                <h4 class="avatar-name">Jordan Walke</h4>
+                <small class="avatar-subtitle">Maker of things: ReactJS. Working on: <a
+                    href="https://twitter.com/reasonml">@reasonml</a>. At: Facebook Engineering.</small>
+              </div>
+            </div>
+          </div>
+          <div class="col col-3">
+            <div class="avatar">
+              <img class="avatar-profile" src="https://avatars3.githubusercontent.com/u/13352?s=400&v=4">
+              <div class="avatar-intro">
+                <h4 class="avatar-name">Christoph Pojer</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3>Vertical Avatars</h3>
+        <div class="row">
+          <div class="col col-3">
+            <div class="avatar avatar-vertical">
+              <img class="avatar-profile" src="https://avatars1.githubusercontent.com/u/165856?s=460&v=4">
+              <div class="avatar-intro">
+                <h4 class="avatar-name">Hector Ramos</h4>
+                <small class="avatar-subtitle">React Native @facebook</small>
+              </div>
+            </div>
+          </div>
+          <div class="col col-3">
+            <div class="avatar avatar-vertical">
+              <img class="avatar-profile" src="https://avatars0.githubusercontent.com/u/3757713?s=460&v=4">
+              <div class="avatar-intro">
+                <h4 class="avatar-name">Joel Marcey</h4>
+                <small class="avatar-subtitle">Developer Advocate at Facebook, co-creator of Docusaurus</small>
+              </div>
+            </div>
+          </div>
+          <div class="col col-3">
+            <div class="avatar avatar-vertical">
+              <img class="avatar-profile" src="https://avatars1.githubusercontent.com/u/1315101?s=460&v=4">
+              <div class="avatar-intro">
+                <h4 class="avatar-name">Yangshun Tay</h4>
+                <small class="avatar-subtitle">Creator of Infima</small>
+              </div>
+            </div>
+          </div>
+          <div class="col col-3">
+            <div class="avatar avatar-vertical">
+              <img class="avatar-profile" src="https://avatars1.githubusercontent.com/u/17883920?s=460&v=4">
+              <div class="avatar-intro">
+                <h4 class="avatar-name">Endilie Yacob Sucipto</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h1>Typography</h1>
+        <div class="row">
+          <div class="col col-4">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+          </div>
+          <div class="col col-4">
+            <h2>Emphasis</h2>
+            <p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
+            <p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+            <p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
+            <p>Strikethrough uses two tildes. <del>Scratch this.</del></p>
+            <p class="text-primary">This is primary text.</p>
+            <p class="text-secondary">This is secondary text.</p>
+            <p class="text-success">This is success text.</p>
+            <p class="text-info">This is info text.</p>
+            <p class="text-warning">This is warning text.</p>
+            <p class="text-danger">This is danger text.</p>
+          </div>
+          <div class="col col-4">
+            <h2>Blockquotes</h2>
+            <blockquote>
+              <p>Blockquotes are very handy in email to emulate reply text.
+                This line is part of the same quote.
+              </p>
+            </blockquote>
+            <p>Quote break.</p>
+            <blockquote>
+              <p>This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to
+                make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em>
+                <strong>Markdown</strong> into a blockquote.</p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <div class="col col-7">
+            <h2>Lists</h2>
+            <ol>
+              <li>First ordered list item</li>
+              <li>Second item</li>
+              <li>Third item</li>
+            </ol>
+            <ul>
+              <li>First unordered list item</li>
+              <li>Second item</li>
+              <li>Third item</li>
+            </ul>
+            <ol>
+              <li>
+                Lists in a list item:
+                <ul>
+                  <li>
+                    Indented four spaces.
+                    <ul>
+                      <li>indented eight spaces.</li>
+                    </ul>
+                  </li>
+                  <li>Four spaces again.</li>
+                </ul>
+              </li>
+              <li>
+                <p>Multiple paragraphs in a list items:
+                  It's best to indent the paragraphs four spaces
+                  You can get away with three, but it can get
+                  confusing when you nest other things.
+                  Stick to four.
+                </p>
+                <p>We indented the first line an extra space to align
+                  it with these paragraphs. In real use, we might do
+                  that to the entire list so that all items line up.
+                </p>
+                <p>This paragraph is still part of the list item, but it looks messy to humans. So it's a good idea to
+                  wrap your nested paragraphs manually, as we did with the first two.</p>
+              </li>
+              <li>
+                <p>Blockquotes in a list item:</p>
+                <blockquote>
+                  <p>Skip a line and
+                    indent the &gt;'s four spaces.
                   </p>
-                  <p>We indented the first line an extra space to align
-                    it with these paragraphs. In real use, we might do
-                    that to the entire list so that all items line up.
-                  </p>
-                  <p>This paragraph is still part of the list item, but it looks messy to humans. So it's a good idea to wrap your nested paragraphs manually, as we did with the first two.</p>
-                </li>
-                <li>
-                  <p>Blockquotes in a list item:</p>
-                  <blockquote>
-                    <p>Skip a line and
-                      indent the &gt;'s four spaces.
-                    </p>
-                  </blockquote>
-                </li>
-                <li>
-                  <p>Preformatted text in a list item:</p>
-                  <pre><code>Skip a line and indent eight spaces.
+                </blockquote>
+              </li>
+              <li>
+                <p>Preformatted text in a list item:</p>
+                <pre><code>Skip a line and indent eight spaces.
       That's four spaces for the list
       and four to trigger the code block.
       </code></pre>
-                </li>
-              </ol>
-            </div>
-            <div class="col col-4 col-offset-1">
-              <h2>Tables</h2>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Tables</th>
-                    <th align="center">Are</th>
-                    <th align="right">Cool</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>col 3 is</td>
-                    <td align="center">right-aligned</td>
-                    <td align="right">$1600</td>
-                  </tr>
-                  <tr>
-                    <td>col 2 is</td>
-                    <td align="center">centered</td>
-                    <td align="right">$12</td>
-                  </tr>
-                  <tr>
-                    <td>zebra stripes</td>
-                    <td align="center">are neat</td>
-                    <td align="right">$1</td>
-                  </tr>
-                </tbody>
-              </table>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Markdown</th>
-                    <th>Less</th>
-                    <th>Pretty</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><em>Still</em></td>
-                    <td><code>renders</code></td>
-                    <td><strong>nicely</strong></td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+              </li>
+            </ol>
+          </div>
+          <div class="col col-4 col-offset-1">
+            <h2>Tables</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Tables</th>
+                  <th align="center">Are</th>
+                  <th align="right">Cool</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>col 3 is</td>
+                  <td align="center">right-aligned</td>
+                  <td align="right">$1600</td>
+                </tr>
+                <tr>
+                  <td>col 2 is</td>
+                  <td align="center">centered</td>
+                  <td align="right">$12</td>
+                </tr>
+                <tr>
+                  <td>zebra stripes</td>
+                  <td align="center">are neat</td>
+                  <td align="right">$1</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <thead>
+                <tr>
+                  <th>Markdown</th>
+                  <th>Less</th>
+                  <th>Pretty</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><em>Still</em></td>
+                  <td><code>renders</code></td>
+                  <td><strong>nicely</strong></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="section">
-          <div class="row">
-            <div class="col col-5">
-              <h2>Inline HTML</h2>
-              <p>To reboot your computer, <a href="https://www.lmgtfy.com">search it up on Google</a> or press <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>del</kbd>.</p>
-              <h2>Horizontal Rules</h2>
-              <p>Three or more...</p>
-              <hr>
-              <p>Hyphens</p>
-              <hr>
-              <p>Asterisks</p>
-              <hr>
-              <p>Underscores</p>
-            </div>
-            <div class="col col-6 col-offset-1">
-              <h2>Code and Syntax Highlighting</h2>
-              <p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
-              <pre lang="no-highlight"><code>function foo() {
+      </div>
+      <div class="section">
+        <div class="row">
+          <div class="col col-5">
+            <h2>Inline HTML</h2>
+            <p>To reboot your computer, <a href="https://www.lmgtfy.com">search it up on Google</a> or press
+              <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>del</kbd>.</p>
+            <h2>Horizontal Rules</h2>
+            <p>Three or more...</p>
+            <hr>
+            <p>Hyphens</p>
+            <hr>
+            <p>Asterisks</p>
+            <hr>
+            <p>Underscores</p>
+          </div>
+          <div class="col col-6 col-offset-1">
+            <h2>Code and Syntax Highlighting</h2>
+            <p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
+            <pre lang="no-highlight"><code>function foo() {
     console.log('foo!');
   }</code></pre>
-              <h3>You can use <code>code</code> in your headers.</h3>
-              <blockquote>As well as type <code>code</code> in your blockquotes.</blockquote>
-              <table>
-                <thead>
-                  <tr>
-                    <th>JavaScript</th>
-                    <th>Reason</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <pre>const myFun = (x, y) =&gt; {
+            <h3>You can use <code>code</code> in your headers.</h3>
+            <blockquote>As well as type <code>code</code> in your blockquotes.</blockquote>
+            <table>
+              <thead>
+                <tr>
+                  <th>JavaScript</th>
+                  <th>Reason</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <pre>const myFun = (x, y) =&gt; {
     const doubleX = x + x;
     const doubleY = y + y;
     return doubleX + doubleY
   };</pre>
-                    </td>
-                    <td>
-                  <pre>let myFun = (x, y) =&gt; {
+                  </td>
+                  <td>
+                    <pre>let myFun = (x, y) =&gt; {
     let doubleX = x + x;
     let doubleY = y + y;
     doubleX + doubleY
   };</pre>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="section">
-          <h1>Media</h1>
-          <div class="row">
-            <div class="col col-6">
-              <h2>Images</h2>
-              <img src="https://images.unsplash.com/photo-1523612192437-66de9804ac3c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=59310f54610ead00fcc3d07732d5d473&auto=format&fit=crop&w=1350&q=80" alt="Image alt text" title="Logo Title Text 1" style="max-width: 100%">
-              <p>Photo credits: <a href="https://unsplash.com/photos/sKn-Yy4BRtY">Ashim D'Silva</a></p>
-            </div>
+      </div>
+      <div class="section">
+        <h1>Media</h1>
+        <div class="row">
+          <div class="col col-6">
+            <h2>Images</h2>
+            <img
+              src="https://images.unsplash.com/photo-1523612192437-66de9804ac3c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=59310f54610ead00fcc3d07732d5d473&auto=format&fit=crop&w=1350&q=80"
+              alt="Image alt text" title="Logo Title Text 1" style="max-width: 100%">
+            <p>Photo credits: <a href="https://unsplash.com/photos/sKn-Yy4BRtY">Ashim D'Silva</a></p>
           </div>
         </div>
       </div>
     </div>
-    <footer class="footer footer-dark">
-      <div class="container">
-        <div class="row footer-links">
-          <div class="col col-3">
-            <h4 class="footer-title">Docs</h4>
-            <ul class="footer-items">
-              <li class="footer-item">
-                <a class="footer-link-item" href="#">Getting Started</a>
-              </li>
-              <li class="footer-item">
-                <a class="footer-link-item" href="#">API</a>
-              </li>
-              <li class="footer-item">
-                <a class="footer-link-item" href="#">FAQ</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col col-3">
-            <h4 class="footer-title">Community</h4>
-            <ul class="footer-items">
-              <li class="footer-item">
-                <a class="footer-link-item" href="#">Users</a>
-              </li>
-              <li class="footer-item">
-                <a class="footer-link-item" href="#">Contribute</a>
-              </li>
-              <li class="footer-item">
-                <a class="footer-link-item" href="#">Stack Overflow</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col col-3">
-            <h4 class="footer-title">Social</h4>
-            <ul class="footer-items">
-              <li class="footer-item">
-                <a class="footer-link-item" href="#">GitHub</a>
-              </li>
-              <li class="footer-item">
-                <a class="footer-link-item" href="#">Facebook</a>
-              </li>
-              <li class="footer-item">
-                <a class="footer-link-item" href="#">Twitter</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col col-3">
-            <h4 class="footer-title">More</h4>
-            <ul class="footer-items">
-              <li class="footer-item">
-                <a class="footer-link-item" href="#">Tutorial</a>
-              </li>
-              <li class="footer-item">
-                <a class="footer-link-item" href="#">Blog</a>
-              </li>
-            </ul>
-          </div>
+  </div>
+  <footer class="footer footer-dark">
+    <div class="container">
+      <div class="row footer-links">
+        <div class="col col-3">
+          <h4 class="footer-title">Docs</h4>
+          <ul class="footer-items">
+            <li class="footer-item">
+              <a class="footer-link-item" href="#">Getting Started</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link-item" href="#">API</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link-item" href="#">FAQ</a>
+            </li>
+          </ul>
         </div>
-        <div class="text-center">
-          <div class="margin-bottom-sm">
-            <img class="footer-logo" alt="Facebook Open Source Logo" src="https://docusaurus.io/img/oss_logo.png" />
-          </div>
-          Copyright © 2019 Facebook, Inc.
+        <div class="col col-3">
+          <h4 class="footer-title">Community</h4>
+          <ul class="footer-items">
+            <li class="footer-item">
+              <a class="footer-link-item" href="#">Users</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link-item" href="#">Contribute</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link-item" href="#">Stack Overflow</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col col-3">
+          <h4 class="footer-title">Social</h4>
+          <ul class="footer-items">
+            <li class="footer-item">
+              <a class="footer-link-item" href="#">GitHub</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link-item" href="#">Facebook</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link-item" href="#">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col col-3">
+          <h4 class="footer-title">More</h4>
+          <ul class="footer-items">
+            <li class="footer-item">
+              <a class="footer-link-item" href="#">Tutorial</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link-item" href="#">Blog</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-    <script type="text/javascript" src="js/radio-behavior.js"></script>
-    <script type="text/javascript" src="js/alerts.js"></script>
-    <script type="text/javascript" src="js/button-groups.js"></script>
-    <script type="text/javascript" src="js/pills.js"></script>
-    <script type="text/javascript" src="js/tabs.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const $themeStylesheet = document.getElementById('theme-stylesheet');
-        document.querySelector('.theme-switcher').addEventListener('change', function (event) {
-          const theme = event.target.value;
-          $themeStylesheet.setAttribute('href', 'css/' + theme + '/' + theme + '.css');
-        });
-
-        alert(document.querySelectorAll('.alert'));
-        buttonGroups(document.querySelectorAll('.btn-group'));
-        pills(document.querySelectorAll('.pills'));
-        tabs(document.querySelectorAll('.tabs'));
+      <div class="text-center">
+        <div class="margin-bottom-sm">
+          <img class="footer-logo" alt="Facebook Open Source Logo" src="https://docusaurus.io/img/oss_logo.png" />
+        </div>
+        Copyright © 2019 Facebook, Inc.
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/radio-behavior.js"></script>
+  <script type="text/javascript" src="js/alerts.js"></script>
+  <script type="text/javascript" src="js/button-groups.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript" src="js/pills.js"></script>
+  <script type="text/javascript" src="js/tabs.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const $themeStylesheet = document.getElementById('theme-stylesheet');
+      document.querySelector('.theme-switcher').addEventListener('change', function (event) {
+        const theme = event.target.value;
+        $themeStylesheet.setAttribute('href', 'css/' + theme + '/' + theme + '.css');
       });
-    </script>
-  </body>
+
+      alert(document.querySelectorAll('.alert'));
+      buttonGroups(document.querySelectorAll('.btn-group'));
+      pills(document.querySelectorAll('.pills'));
+      menu(document.querySelectorAll('.menu'));
+      tabs(document.querySelectorAll('.tabs'));
+    });
+  </script>
+</body>
 </html>
