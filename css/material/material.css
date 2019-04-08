@@ -222,6 +222,33 @@ body {
     margin-right: var(--margin);
     margin-top: var(--margin); }
 
+.avatar {
+  --intro-left-margin: 1rem;
+  --intro-alignment: inherit;
+  --profile-bottom-margin: 0;
+  display: flex; }
+  .avatar.avatar-vertical {
+    --intro-left-margin: 0;
+    --intro-alignment: center;
+    --profile-bottom-margin: 0.5rem;
+    flex-direction: column;
+    align-items: center; }
+  .avatar .avatar-profile {
+    border-radius: 50%;
+    height: 3rem;
+    margin-bottom: var(--profile-bottom-margin);
+    width: 3rem; }
+  .avatar .avatar-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: var(--intro-left-margin);
+    text-align: var(--intro-alignment); }
+  .avatar .avatar-name {
+    margin: 0; }
+  .avatar .avatar-subtitle {
+    margin-top: 0.25rem; }
+
 .badge {
   --badge-color: transparent;
   --background-color: var(--badge-color);
@@ -745,6 +772,7 @@ table {
 .tabs {
   --color-active: var(--color-primary);
   --tab-spacing: 0.0625rem;
+  margin-bottom: 0;
   padding-left: 0; }
   .tabs > .tab-item {
     border-bottom: 4px solid transparent;

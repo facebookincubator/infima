@@ -2,6 +2,7 @@
   --color-active: var(--color-primary);
   --tab-spacing: 0.0625rem;
 
+  margin-bottom: 0;
   padding-left: 0;
 
   > .tab-item {
@@ -10,7 +11,7 @@
     display: inline-block;
     list-style-type: none;
     padding: 0.5rem 1.5rem;
-    
+
     &.tab-active {
       color: var(--color-black);
       border-bottom-color: var(--color-active);
@@ -37,7 +38,7 @@
         &:not(:first-child) {
           margin-top: var(--tab-spacing);
         }
-    
+
         &:not(:last-child) {
           margin-bottom: var(--tab-spacing);
         }

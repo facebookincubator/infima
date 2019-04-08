@@ -15,14 +15,14 @@ A UI framework for content-centric websites.
   - [x] Tables
 - Components
   - [x] Alerts
-  - [ ] Avatar
+  - [x] Avatar
   - [x] Badges
   - [ ] Breadcrumbs
   - [x] Buttons
   - [x] Button Groups
   - [ ] Card
   - [ ] Dropdown
-  - [ ] Footer
+  - [x] Footer
   - [x] Grid
   - [/] Navbar
   - [x] Pagination
@@ -32,7 +32,7 @@ A UI framework for content-centric websites.
 - Utilities
   - [x] Colors
   - [x] Icons
-  - [ ] Margin
-  - [ ] Padding
+  - [x] Margin
+  - [x] Padding
   - [ ] Spinner
   - [x] Text
