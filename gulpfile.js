@@ -6,7 +6,7 @@ const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const webserver = require('gulp-webserver');
 
-gulp.task('sass', function() {
+function sassTask() {
   return gulp
     .src('./scss/themes/**/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -14,19 +14,17 @@ gulp.task('sass', function() {
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
     .pipe(gulp.dest('./css'));
-});
+}
 
-gulp.task('sass:watch', function() {
-  gulp.watch('./scss/**/*.scss', ['sass']);
-});
-
-gulp.task('serve', function() {
-  gulp.src('./').pipe(
+function serveTask(cb) {
+  return gulp.src('./').pipe(
     webserver({
       livereload: true,
       open: true,
     }),
   );
-});
+}
 
-gulp.task('default', ['sass', 'sass:watch', 'serve']);
+gulp.watch(['./scss/**/*.scss'], {}, sassTask);
+
+exports.default = gulp.series(sassTask, serveTask);

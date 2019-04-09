@@ -22,7 +22,7 @@
     margin-right: 0;
 
     > .col,
-    > [class*="col-"] {
+    > [class*='col-'] {
       padding-left: 0;
       padding-right: 0;
     }
@@ -48,7 +48,7 @@
     align-items: baseline;
   }
 
-  [class*="col-"] {
+  [class*='col-'] {
     padding-left: calc(var(--horizontal-spacing) / 2);
     padding-right: calc(var(--horizontal-spacing) / 2);
   }
@@ -61,13 +61,13 @@
     max-width: 100%;
     width: 100%;
 
-    &[class*="col-"] {
+    &[class*='col-'] {
       flex: 0 0 var(--width);
       max-width: var(--width);
     }
 
     @media (max-width: 1024px) {
-      &.col[class*="col-"] {
+      &.col[class*='col-'] {
         --width: 100%;
         margin-left: 0;
       }
@@ -75,12 +75,13 @@
 
     @for $column from 1 through $columns {
       $percentage: $column/$columns * 100;
+
       &.col-#{$column} {
         --width: #{$percentage}%;
       }
 
       &.col-offset-#{$column} {
-        margin-left: $percentage#{%};
+        margin-left: $percentage#{'%'};
       }
     }
   }
