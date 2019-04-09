@@ -224,8 +224,11 @@ body {
   --intro-left-margin: 1rem;
   --intro-alignment: inherit;
   --profile-bottom-margin: 0;
+  --avatar-profile-size-sm: 2rem;
+  --avatar-profile-size-md: 3rem;
+  --avatar-profile-size-lg: 4rem;
+  --avatar-profile-size-xl: 6rem;
   display: flex;
-  /* TODO: Implement various sizes */
   /* TODO: Allow for wrapping within anchor */ }
   .avatar.avatar-vertical {
     --intro-left-margin: 0;
@@ -235,9 +238,18 @@ body {
     align-items: center; }
   .avatar .avatar-profile {
     border-radius: 50%;
-    height: 3rem;
+    height: var(--avatar-profile-size-md);
     margin-bottom: var(--profile-bottom-margin);
-    width: 3rem; }
+    width: var(--avatar-profile-size-md); }
+    .avatar .avatar-profile.avatar-profile-sm {
+      height: var(--avatar-profile-size-sm);
+      width: var(--avatar-profile-size-sm); }
+    .avatar .avatar-profile.avatar-profile-lg {
+      height: var(--avatar-profile-size-lg);
+      width: var(--avatar-profile-size-lg); }
+    .avatar .avatar-profile.avatar-profile-xl {
+      height: var(--avatar-profile-size-xl);
+      width: var(--avatar-profile-size-xl); }
   .avatar .avatar-intro {
     display: flex;
     flex-direction: column;
