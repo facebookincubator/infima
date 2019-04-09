@@ -38,7 +38,7 @@
   --color-danger-darkerer: #720816;
   --color-danger-light: #f56b7e;
   --color-danger-lighter: #f56b7e;
-  --color-link: #385898;
+  --color-link: var(--color-primary);
   /* Blue Link */
   --color-white: #fff;
   /* White */
@@ -226,7 +226,9 @@ body {
   --intro-left-margin: 1rem;
   --intro-alignment: inherit;
   --profile-bottom-margin: 0;
-  display: flex; }
+  display: flex;
+  /* TODO: Implement various sizes */
+  /* TODO: Allow for wrapping within anchor */ }
   .avatar.avatar-vertical {
     --intro-left-margin: 0;
     --intro-alignment: center;
@@ -282,6 +284,7 @@ body {
     --badge-color: var(--color-danger); }
 
 .btn {
+  /* TODO: Allow links to be styled as buttons */
   --button-color: transparent;
   --background-color: var(--button-color);
   --border-color: var(--button-color);
@@ -604,6 +607,7 @@ img[align='left'] {
     width: 1.25rem; }
 
 .navbar {
+  /* TODO: Add navbar-link-active */
   --item-padding-horizontal: 1rem;
   --item-padding-vertical: 0.25rem;
   --link-color: var(--navbar-link-color);

@@ -1,4 +1,5 @@
 .btn {
+  /* TODO: Allow links to be styled as buttons */
   --button-color: transparent;
 
   --background-color: var(--button-color);
@@ -52,7 +53,7 @@
       --background-color: var(--button-color);
     }
 
-    &:hover, 
+    &:hover,
     &:active,
     &.btn-active {
       --color: var(--color-white);

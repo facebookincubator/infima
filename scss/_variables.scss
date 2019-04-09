@@ -64,7 +64,7 @@ $grid-breakpoints: (
   --color-danger-darkerer: #{darken($color-danger, $darkerer-value)};
   --color-danger-light: #{lighten($color-danger, $light-value)};
   --color-danger-lighter: #{lighten($color-danger, $light-value)};
-  --color-link: #385898; /* Blue Link */
+  --color-link: var(--color-primary); /* Blue Link */
   --color-white: #fff; /* White */
   --color-black: #000; /* Black */
 
