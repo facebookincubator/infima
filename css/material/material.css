@@ -562,14 +562,6 @@ img[align='left'] {
 .menu {
   --color-active: var(--color-primary);
   overflow-x: hidden; }
-  .menu .menu-item {
-    cursor: pointer;
-    display: flex;
-    line-height: 20px;
-    justify-content: space-between;
-    text-decoration: none;
-    margin: 0;
-    padding: 0.5rem 0.75rem; }
   .menu .menu-list {
     margin: 0;
     list-style-type: none;
@@ -588,7 +580,14 @@ img[align='left'] {
   .menu .menu-link {
     border-radius: 0.25rem;
     color: #717171;
-    font-size: 0.875em; }
+    cursor: pointer;
+    display: flex;
+    font-size: 0.875em;
+    line-height: 20px;
+    justify-content: space-between;
+    text-decoration: none;
+    margin: 0;
+    padding: 0.5rem 0.75rem; }
   .menu .menu-link:hover {
     background-color: var(--color-secondary-lighter);
     color: #717171; }
