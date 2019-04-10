@@ -4,6 +4,7 @@
   max-width: var(--container-width);
   padding-left: calc(var(--horizontal-spacing) / 2);
   padding-right: calc(var(--horizontal-spacing) / 2);
+  width: 100%;
 
   &.container-fluid {
     max-width: inherit;

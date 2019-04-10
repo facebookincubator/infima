@@ -473,7 +473,8 @@ body {
   margin-right: auto;
   max-width: var(--container-width);
   padding-left: calc(var(--horizontal-spacing) / 2);
-  padding-right: calc(var(--horizontal-spacing) / 2); }
+  padding-right: calc(var(--horizontal-spacing) / 2);
+  width: 100%; }
   .container.container-fluid {
     max-width: inherit; }
 
@@ -661,6 +662,7 @@ img[align='left'] {
   --search-input-placeholder-color: rgba(255, 255, 255, 0.5);
   --search-input-icon: url('data:image/svg+xml;utf8,<svg alt="Search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" fill="rgba(255,255,255,0.5)" /></svg>');
   background-color: var(--navbar-background-color);
+  display: flex;
   height: var(--navbar-height);
   padding: var(--padding-vertical) var(--padding-horizontal);
   width: 100%;
@@ -674,7 +676,8 @@ img[align='left'] {
     align-items: stretch;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+    width: 100%; }
   .navbar .navbar-brand {
     color: var(--link-color);
     font-weight: bold;
