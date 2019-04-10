@@ -82,4 +82,41 @@
       }
     }
   }
+
+  &.menu-responsive {
+    .menu-button {
+      display: none;
+      position: fixed;
+      bottom: 2rem;
+      right: 1rem;
+
+      @media (max-width: 1024px) {
+        display: inherit;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .menu-list {
+        display: none;
+        opacity: 0;
+      }
+    }
+  }
+
+  &.menu-show {
+    background: var(--color-white);
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+
+    .menu-list {
+      display: inherit;
+      opacity: 100;
+      transition: opacity 300ms linear;
+    }
+  }
 }

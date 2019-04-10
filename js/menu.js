@@ -1,10 +1,6 @@
 function menu($elements) {
   $elements.forEach($menu => {
     $menu.addEventListener('click', e => {
-      $menu
-        .querySelectorAll('.menu-list-item')
-        .forEach($elItem => $elItem.classList.remove('menu-list-item-active'));
-
       $listItem = e.target;
       while ($listItem) {
         if ($listItem.classList.contains('menu-list-item')) {
@@ -13,6 +9,7 @@ function menu($elements) {
         $listItem = $listItem.parentNode;
       }
 
+      // Not clicking on a list item.
       if (!$listItem) {
         return;
       }
@@ -27,6 +24,10 @@ function menu($elements) {
         return;
       }
 
+      $menu
+        .querySelectorAll('.menu-list-item')
+        .forEach($elItem => $elItem.classList.remove('menu-list-item-active'));
+
       // Traverse parents and add active class.
       while ($listItem) {
         if ($listItem.classList.contains('menu')) {
@@ -39,6 +40,11 @@ function menu($elements) {
 
         $listItem = $listItem.parentNode;
       }
+    });
+
+    $button = $menu.querySelector('.menu-button');
+    $button.addEventListener('click', e => {
+      $menu.classList.toggle('menu-show');
     });
   });
 }

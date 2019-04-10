@@ -620,6 +620,31 @@ img[align='left'] {
     color: var(--color-active); }
   .menu .menu-list-item-active > .menu-link:not(.menu-link-sublist), .menu .menu-list-item-active > .menu-link:not(.menu-link-sublist):hover {
     background: linear-gradient(to top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)) var(--color-active); }
+  .menu.menu-responsive .menu-button {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem; }
+    @media (max-width: 1024px) {
+      .menu.menu-responsive .menu-button {
+        display: inherit; } }
+  @media (max-width: 1024px) {
+    .menu.menu-responsive .menu-list {
+      display: none;
+      opacity: 0; } }
+  .menu.menu-show {
+    background: var(--color-white);
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100; }
+    .menu.menu-show .menu-list {
+      display: inherit;
+      opacity: 100;
+      transition: opacity 300ms linear; }
 
 .navbar {
   /* TODO: Add navbar-link-active */
