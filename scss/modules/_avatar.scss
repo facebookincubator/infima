@@ -1,48 +1,52 @@
 .avatar {
   --intro-left-margin: 1rem;
   --intro-alignment: inherit;
-  --profile-bottom-margin: 0;
-  --avatar-profile-size-sm: 2rem;
-  --avatar-profile-size-md: 3rem;
-  --avatar-profile-size-lg: 4rem;
-  --avatar-profile-size-xl: 6rem;
+  --photo-bottom-margin: 0;
+  --photo-size-sm: 2rem;
+  --photo-size-md: 3rem;
+  --photo-size-lg: 4rem;
+  --photo-size-xl: 6rem;
 
   display: flex;
 
   &.avatar-vertical {
     --intro-left-margin: 0;
     --intro-alignment: center;
-    --profile-bottom-margin: 0.5rem;
+    --photo-bottom-margin: 0.5rem;
 
     flex-direction: column;
     align-items: center;
   }
 
-  /* TODO: Allow for wrapping within anchor */
-  .avatar-profile {
+  .avatar-photo-link {
+    display: block;
+  }
+
+  .avatar-photo {
     border-radius: 50%;
-    height: var(--avatar-profile-size-md);
-    margin-bottom: var(--profile-bottom-margin);
-    width: var(--avatar-profile-size-md);
+    height: var(--photo-size-md);
+    margin-bottom: var(--photo-bottom-margin);
+    width: var(--photo-size-md);
 
-    &.avatar-profile-sm {
-      height: var(--avatar-profile-size-sm);
-      width: var(--avatar-profile-size-sm);
+    &.avatar-photo-sm {
+      height: var(--photo-size-sm);
+      width: var(--photo-size-sm);
     }
 
-    &.avatar-profile-lg {
-      height: var(--avatar-profile-size-lg);
-      width: var(--avatar-profile-size-lg);
+    &.avatar-photo-lg {
+      height: var(--photo-size-lg);
+      width: var(--photo-size-lg);
     }
 
-    &.avatar-profile-xl {
-      height: var(--avatar-profile-size-xl);
-      width: var(--avatar-profile-size-xl);
+    &.avatar-photo-xl {
+      height: var(--photo-size-xl);
+      width: var(--photo-size-xl);
     }
   }
 
   .avatar-intro {
     display: flex;
+    flex: 1 1;
     flex-direction: column;
     justify-content: center;
     margin-left: var(--intro-left-margin);
