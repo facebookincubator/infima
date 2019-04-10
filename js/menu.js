@@ -1,18 +1,44 @@
 function menu($elements) {
   $elements.forEach($menu => {
     $menu.addEventListener('click', e => {
-      if (e.target && e.target.classList.contains('menu-link')) {
-        if (e.target.parentNode.classList.contains('menu-list-item')) {
-          e.target.parentNode.classList.toggle('menu-list-item-collapsed');
+      $menu
+        .querySelectorAll('.menu-list-item')
+        .forEach($elItem => $elItem.classList.remove('menu-list-item-active'));
+
+      $listItem = e.target;
+      while ($listItem) {
+        if ($listItem.classList.contains('menu-list-item')) {
+          break;
         }
+        $listItem = $listItem.parentNode;
       }
 
-      $menu
-        .querySelectorAll('.menu-link')
-        .forEach($elItem => $elItem.classList.remove('menu-link-active'));
-      event.target.classList.add('menu-link-active');
+      if (!$listItem) {
+        return;
+      }
 
       e.preventDefault();
+      if ($listItem.classList.contains('menu-list-item')) {
+        $listItem.classList.toggle('menu-list-item-collapsed');
+      }
+
+      // Don't add any active class if non-leaf item selected.
+      if ($listItem.querySelector('.menu-list')) {
+        return;
+      }
+
+      // Traverse parents and add active class.
+      while ($listItem) {
+        if ($listItem.classList.contains('menu')) {
+          break;
+        }
+
+        if ($listItem.classList.contains('menu-list-item')) {
+          $listItem.classList.add('menu-list-item-active');
+        }
+
+        $listItem = $listItem.parentNode;
+      }
     });
   });
 }

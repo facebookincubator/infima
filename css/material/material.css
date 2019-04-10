@@ -584,13 +584,15 @@ img[align='left'] {
     transition: height 200ms cubic-bezier(0.08, 0.52, 0.52, 1); }
     .menu .menu-list .menu-list {
       margin-left: 0.75rem; }
+  .menu > .menu-list > .menu-list-item > .menu-link {
+    font-weight: bold; }
   .menu .menu-list-item {
     margin-bottom: 0.25rem;
     margin-top: 0.25rem; }
     .menu .menu-list-item.menu-list-item-collapsed .menu-list {
       height: 0;
       overflow: hidden; }
-    .menu .menu-list-item.menu-list-item-collapsed .chevron {
+    .menu .menu-list-item.menu-list-item-collapsed .menu-link-sublist:after {
       transform: rotateX(180deg); }
   .menu .menu-link {
     border-radius: 0.25rem;
@@ -603,20 +605,21 @@ img[align='left'] {
     text-decoration: none;
     margin: 0;
     padding: 0.5rem 0.75rem; }
+    .menu .menu-link.menu-link-sublist:after {
+      background-image: url('data:image/svg+xml;utf8,<svg alt="Arrow" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
+      background-size: 2rem 2rem;
+      background-position: center;
+      content: ' ';
+      display: inline-block;
+      height: 1.25rem;
+      width: 1.25rem; }
   .menu .menu-link:hover {
     background-color: var(--color-secondary-lighter);
     color: #717171; }
-  .menu .menu-link-active,
-  .menu .menu-link-active:hover {
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)) var(--color-active);
+  .menu .menu-list-item-active > .menu-link, .menu .menu-list-item-active > .menu-link:hover {
     color: var(--color-active); }
-  .menu .chevron {
-    background-image: url('data:image/svg+xml;utf8,<svg alt="Arrow" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
-    background-size: 2rem 2rem;
-    background-position: center;
-    display: inline-block;
-    height: 1.25rem;
-    width: 1.25rem; }
+  .menu .menu-list-item-active > .menu-link:not(.menu-link-sublist), .menu .menu-list-item-active > .menu-link:not(.menu-link-sublist):hover {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)) var(--color-active); }
 
 .navbar {
   /* TODO: Add navbar-link-active */
