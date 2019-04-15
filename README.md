@@ -2,6 +2,18 @@
 
 A UI framework for content-centric websites.
 
+## MVP TODOs
+
+- High
+  - [ ] Finish all components in checklist
+  - [ ] Complete TODOs in code
+  - [ ] Audit global CSS variables list and scope the component-specific ones into component base class
+  - [ ] Audit z-index list (nav, dropdown, tooltips, etc).
+- Medium
+  - [ ] Create dark theme
+- Low
+  - [ ] Use postcss to compile the CSS variables away for IE11 compatibility
+
 ## Checklist
 
 - Global
@@ -15,20 +27,26 @@ A UI framework for content-centric websites.
   - [x] Tables
 - Components
   - [x] Alerts
-  - [x] Avatar
+  - [x] Avatars
   - [x] Badges
   - [ ] Breadcrumbs
   - [x] Buttons
   - [x] Button Groups
-  - [ ] Card
-  - [ ] Dropdown
+  - [ ] Cards
+  - [ ] Dropdowns
   - [x] Footer
-  - [x] Grid
-  - [ ] Hero
-  - [/] Navbar
+  - [ ] Grid
+    - [x] Basic grid
+    - [ ] Equal-width columns
+    - [ ] Variable width
+    - [ ] Responsive grid
+  - [ ] Hero/Jumbotron
+  - [ ] Navbar
+    - [x] Desktop
+    - [ ] Mobile
   - [x] Pagination
   - [x] Pills
-  - [/] Sidebar
+  - [x] Sidebar
   - [x] Tabs
   - [ ] Tooltip
 - Utilities
@@ -37,5 +55,9 @@ A UI framework for content-centric websites.
   - [x] Margin
   - [x] Padding
   - [ ] Responsive utilities
-  - [ ] Spinner
+  - [ ] Spinners
   - [x] Text
+- Future
+  - [ ] Forms
+  - [ ] Modal
+  - [ ] Announcement banner
