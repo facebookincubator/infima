@@ -24,15 +24,18 @@ A UI framework for content-centric websites.
   - [ ] Dropdown
   - [x] Footer
   - [x] Grid
+  - [ ] Hero
   - [/] Navbar
   - [x] Pagination
   - [x] Pills
   - [/] Sidebar
   - [x] Tabs
+  - [ ] Tooltip
 - Utilities
   - [x] Colors
   - [x] Icons
   - [x] Margin
   - [x] Padding
+  - [ ] Responsive utilities
   - [ ] Spinner
   - [x] Text
