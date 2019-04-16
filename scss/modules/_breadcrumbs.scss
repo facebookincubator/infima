@@ -65,7 +65,7 @@
 
     &:not(.breadcrumb-active):hover {
       .breadcrumb-link {
-        background-color: var(--color-secondary-lighter);
+        background-color: var(--color-black-alpha-05);
         transition: background 0.2s ease-in-out;
       }
     }

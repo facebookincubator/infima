@@ -1,6 +1,6 @@
 // Colors.
 $color-primary: #3578e5; // Blue 60
-$color-secondary: #ccd0d5; // Gray 20
+$color-secondary: #ebedf0; // Secondary
 $color-success: #00a400; // Green 55
 $color-info: #6bcebb; // Teal
 $color-warning: #ffba00; // Yellow 20
@@ -15,15 +15,15 @@ $lighter-value: 30%;
 
 $grid-breakpoints: (
   // Extra small screen / phone
-    xs: 0,
+  xs: 0,
   // Small screen / phone
-    sm: 576px,
+  sm: 576px,
   // Medium screen / tablet
-    md: 768px,
+  md: 768px,
   // Large screen / desktop
-    lg: 992px,
+  lg: 992px,
   // Extra large screen / wide desktop
-    xl: 1200px
+  xl: 1200px,
 );
 
 :root {
@@ -67,6 +67,15 @@ $grid-breakpoints: (
   --color-link: var(--color-primary); /* Blue Link */
   --color-white: #fff; /* White */
   --color-black: #000; /* Black */
+  --color-black-alpha-05: rgba(0, 0, 0, 0.05);
+  --color-black-alpha-10: rgba(0, 0, 0, 0.1);
+  --color-black-alpha-15: rgba(0, 0, 0, 0.15);
+  --color-black-alpha-20: rgba(0, 0, 0, 0.2);
+  --color-black-alpha-30: rgba(0, 0, 0, 0.3);
+  --color-black-alpha-40: rgba(0, 0, 0, 0.4);
+  --color-black-alpha-50: rgba(0, 0, 0, 0.5);
+  --color-black-alpha-60: rgba(0, 0, 0, 0.6);
+  --color-black-alpha-80: rgba(0, 0, 0, 0.8);
 
   /* Base */
   --background-color: transparent;
@@ -96,13 +105,6 @@ $grid-breakpoints: (
 
   /* Navbar */
   --navbar-height: 3.75rem;
-  --navbar-background-color: var(--color-primary);
-  --navbar-link-color: rgba(0, 0, 0, 0.55);
-  --navbar-link-hover-color: var(--color-white);
-  --navbar-link-active-color: var(--link-color);
-  --navbar-dropdown-background-color: var(--color-white);
-  --navbar-dropdown-link-color: var(--color-secondary-darkerer);
-  --navbar-dropdown-hover-background-color: var(--color-secondary-light);
 
   /* Footer */
   --footer-background-color: var(--color-secondary-lighter);
@@ -110,7 +112,7 @@ $grid-breakpoints: (
   --footer-link-hover-color: var(--color-black);
 
   /* Buttons */
-  --button-border-radius: 0.5rem;
+  --button-border-radius: 0.375rem;
   --button-transition-duration: 0.15s;
 
   /* Links */

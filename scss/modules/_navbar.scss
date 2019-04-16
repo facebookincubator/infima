@@ -1,13 +1,20 @@
 .navbar {
-  /* TODO: Add navbar-link-active */
-  --shadow: 0 1px 2px 0 var(--color-secondary-light);
+  --navbar-background-color: var(--color-primary);
+  --navbar-link-color: rgba(0, 0, 0, 0.55);
+  --navbar-link-hover-color: var(--color-white);
+  --navbar-link-active-color: var(--link-color);
+  --navbar-dropdown-background-color: var(--color-white);
+  --navbar-dropdown-link-color: var(--font-color-base);
+  --navbar-dropdown-hover-background-color: var(--color-black-alpha-05);
+  // TODO: Add navbar-link-active
+  --shadow: 0 1px 2px 0 var(--color-black-alpha-05);
   --item-padding-horizontal: 1rem;
   --item-padding-vertical: 0.25rem;
   --link-color: var(--navbar-link-color);
   --link-hover-color: var(--navbar-link-hover-color);
   --padding-horizontal: var(--horizontal-spacing);
   --padding-vertical: calc(var(--vertical-spacing) * 0.5);
-  --search-input-background-color: rgba(0, 0, 0, 0.25);
+  --search-input-background-color: var(--color-black-alpha-20);
   --search-input-color: var(--color-secondary);
   --search-input-placeholder-color: rgba(255, 255, 255, 0.5);
   --search-input-icon: url('data:image/svg+xml;utf8,<svg alt="Search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" fill="rgba(255,255,255,0.5)" /></svg>');
@@ -19,7 +26,7 @@
   height: var(--navbar-height);
   padding: var(--padding-vertical) var(--padding-horizontal);
   width: 100%;
-  z-index: 100;
+  z-index: 100; // TODO: Extract out.
 
   &.navbar-fixed-top {
     position: fixed;
@@ -118,7 +125,7 @@
   &.navbar-dark {
     --navbar-background-color: #303846;
     --link-color: var(--color-secondary);
-    --link-hover-color: var(--color-secondary-light);
+    --link-hover-color: var(--color-secondary);
   }
 
   &.navbar-light {

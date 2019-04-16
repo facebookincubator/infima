@@ -1,4 +1,8 @@
 .footer {
+  --footer-background-color: var(--color-black-alpha-05);
+  --footer-link-color: var(--color-black-alpha-50);
+  --footer-link-hover-color: var(--color-primary);
+
   --link-color: var(--footer-link-color);
   --link-hover-color: var(--footer-link-hover-color);
   --link-horizontal-spacing: 0.5rem;
@@ -25,7 +29,7 @@
   }
 
   .footer-text {
-    color: var(--link-color);
+    color: var(--text-color);
   }
 
   .footer-logo {
