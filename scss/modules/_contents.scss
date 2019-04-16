@@ -1,0 +1,36 @@
+.contents {
+  --contents-border-color: var(--color-secondary);
+  --padding-vertical: 0.5rem;
+
+  font-size: 0.9rem;
+  padding-bottom: var(--padding-vertical);
+  padding-top: var(--padding-vertical);
+
+  &,
+  ul {
+    list-style-type: none;
+    padding-left: var(--global-spacing);
+  }
+
+  li {
+    margin: 0.5rem;
+  }
+
+  &.contents-left-border {
+    border-left-color: var(--contents-border-color);
+    border-left-style: solid;
+    border-left-width: 1px;
+  }
+
+  .contents-link {
+    color: var(--color-secondary-darkerer);
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &.contents-link-active {
+      color: var(--color-primary);
+    }
+  }
+}

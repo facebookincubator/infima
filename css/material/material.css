@@ -485,6 +485,29 @@ body {
     .card .card-footer > :last-child {
       margin-bottom: 0; }
 
+.contents {
+  --contents-border-color: var(--color-secondary);
+  --padding-vertical: 0.5rem;
+  font-size: 0.9rem;
+  padding-bottom: var(--padding-vertical);
+  padding-top: var(--padding-vertical); }
+  .contents,
+  .contents ul {
+    list-style-type: none;
+    padding-left: var(--global-spacing); }
+  .contents li {
+    margin: 0.5rem; }
+  .contents.contents-left-border {
+    border-left-color: var(--contents-border-color);
+    border-left-style: solid;
+    border-left-width: 1px; }
+  .contents .contents-link {
+    color: var(--color-secondary-darkerer); }
+    .contents .contents-link:hover {
+      text-decoration: none; }
+    .contents .contents-link.contents-link-active {
+      color: var(--color-primary); }
+
 .close {
   appearance: none;
   background: none;

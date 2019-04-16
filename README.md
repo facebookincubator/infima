@@ -8,8 +8,10 @@ A UI framework for content-centric websites.
   - [ ] Finish all components in checklist
   - [ ] Complete TODOs in code
   - [ ] Audit global CSS variables list and scope the component-specific ones into component base class
-  - [ ] Audit z-index list (nav, dropdown, tooltips, etc).
-  - [ ] Define box-shadow for various elevations.
+  - [ ] Audit z-index list (nav, dropdown, tooltips, etc)
+  - [ ] Define box-shadow for various elevations
+  - [ ] Define fast and slow transition speeds
+  - [ ] Define shades of gray
 - Medium
   - [ ] Create dark theme
 - Low
@@ -34,6 +36,9 @@ A UI framework for content-centric websites.
   - [x] Buttons
   - [x] Button Groups
   - [x] Cards
+  - [ ] Contents
+    - [x] Desktop
+    - [ ] Mobile
   - [ ] Dropdowns
   - [x] Footer
   - [ ] Grid
@@ -48,6 +53,8 @@ A UI framework for content-centric websites.
   - [x] Pagination
   - [x] Pills
   - [x] Sidebar
+    - [x] Desktop
+    - [x] Mobile
   - [x] Tabs
 - Utilities
   - [x] Colors
