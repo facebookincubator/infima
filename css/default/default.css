@@ -564,6 +564,11 @@ body {
   .footer .footer-link-separator {
     margin-left: var(--link-horizontal-spacing);
     margin-right: var(--link-horizontal-spacing); }
+  @media (max-width: 1024px) {
+    .footer {
+      --padding-horizontal: var(--horizontal-spacing); }
+      .footer .footer-col {
+        margin-bottom: calc(var(--vertical-spacing) * 2); } }
 
 [type='checkbox'] {
   padding: 0; }
@@ -674,7 +679,7 @@ body {
   display: flex;
   padding: 4rem 2rem; }
   .hero.hero-light {
-    --hero-background-color: var(--color-secondary);
+    --hero-background-color: var(--color-white);
     --hero-text-color: var(--color-primary); }
   .hero.hero-dark {
     --hero-background-color: #303846;

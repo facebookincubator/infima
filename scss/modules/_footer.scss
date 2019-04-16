@@ -51,4 +51,12 @@
     margin-left: var(--link-horizontal-spacing);
     margin-right: var(--link-horizontal-spacing);
   }
+
+  @media (max-width: 1024px) {
+    --padding-horizontal: var(--horizontal-spacing);
+
+    .footer-col {
+      margin-bottom: calc(var(--vertical-spacing) * 2);
+    }
+  }
 }
