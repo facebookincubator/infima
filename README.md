@@ -43,10 +43,10 @@ A UI framework for content-centric websites.
   - [x] Footer
   - [ ] Grid
     - [x] Basic grid
-    - [ ] Equal-width columns
-    - [ ] Variable width
+    - [x] Equal-width columns
+    - [x] Variable width
     - [ ] Responsive grid
-  - [ ] Hero/Jumbotron
+  - [x] Hero/Jumbotron
   - [ ] Navbar
     - [x] Desktop
     - [ ] Mobile
