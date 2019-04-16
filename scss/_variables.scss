@@ -72,8 +72,8 @@ $grid-breakpoints: (
   --background-color: transparent;
   --global-border-width: 1px;
   --global-radius: 0.25rem;
-  --media-breakpoint: 1024px;
   --global-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+  --media-breakpoint: 1024px;
 
   /* Typography */
   --font-color-base: #1c1e21;
@@ -90,8 +90,9 @@ $grid-breakpoints: (
 
   /* Grid */
   --container-width: 1140px;
-  --vertical-spacing: 1rem;
-  --horizontal-spacing: 1rem;
+  --global-spacing: 1rem;
+  --vertical-spacing: var(--global-spacing);
+  --horizontal-spacing: var(--global-spacing);
 
   /* Navbar */
   --navbar-height: 3.75rem;
@@ -122,7 +123,7 @@ $grid-breakpoints: (
   --paragraph-margin-bottom: 1rem;
 
   /* Headings */
-  --headings-margin-top: 1.5rem;
+  --headings-margin-top: 0;
   --headings-margin-bottom: var(--vertical-spacing);
   --headings-font-family: inherit;
   --headings-font-weight: var(--font-weight-bold);

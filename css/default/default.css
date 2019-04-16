@@ -46,8 +46,8 @@
   --background-color: transparent;
   --global-border-width: 1px;
   --global-radius: 0.25rem;
-  --media-breakpoint: 1024px;
   --global-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+  --media-breakpoint: 1024px;
   /* Typography */
   --font-color-base: #1c1e21;
   --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -62,8 +62,9 @@
   --line-height-base: 1.5;
   /* Grid */
   --container-width: 1140px;
-  --vertical-spacing: 1rem;
-  --horizontal-spacing: 1rem;
+  --global-spacing: 1rem;
+  --vertical-spacing: var(--global-spacing);
+  --horizontal-spacing: var(--global-spacing);
   /* Navbar */
   --navbar-height: 3.75rem;
   --navbar-background-color: var(--color-primary);
@@ -88,7 +89,7 @@
   /* Paragraphs */
   --paragraph-margin-bottom: 1rem;
   /* Headings */
-  --headings-margin-top: 1.5rem;
+  --headings-margin-top: 0;
   --headings-margin-bottom: var(--vertical-spacing);
   --headings-font-family: inherit;
   --headings-font-weight: var(--font-weight-bold);
@@ -455,6 +456,32 @@ body {
     justify-content: stretch; }
     .btn-group.btn-group-block > .btn {
       flex-grow: 1; }
+
+.card {
+  --background-color: var(--fds-white);
+  --card-border-radius: calc(var(--global-radius) * 2);
+  --card-horizontal-spacing: var(--global-spacing);
+  --card-vertical-spacing: var(--global-spacing);
+  background-color: var(--background-color);
+  border-radius: var(--card-border-radius);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden; }
+  .card .card-image {
+    padding-top: var(--card-vertical-spacing); }
+    .card .card-image:first-child {
+      padding-top: 0; }
+  .card .card-header,
+  .card .card-body,
+  .card .card-footer {
+    padding: var(--card-vertical-spacing) var(--card-horizontal-spacing); }
+    .card .card-header:not(:last-child),
+    .card .card-body:not(:last-child),
+    .card .card-footer:not(:last-child) {
+      padding-bottom: 0; }
+    .card .card-header > :last-child,
+    .card .card-body > :last-child,
+    .card .card-footer > :last-child {
+      margin-bottom: 0; }
 
 .close {
   appearance: none;

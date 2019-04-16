@@ -1,0 +1,33 @@
+.card {
+  --background-color: var(--fds-white);
+  --card-border-radius: calc(var(--global-radius) * 2);
+  --card-horizontal-spacing: var(--global-spacing);
+  --card-vertical-spacing: var(--global-spacing);
+
+  background-color: var(--background-color);
+  border-radius: var(--card-border-radius);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden; // Because of border-radius.
+
+  .card-image {
+    padding-top: var(--card-vertical-spacing);
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  .card-header,
+  .card-body,
+  .card-footer {
+    padding: var(--card-vertical-spacing) var(--card-horizontal-spacing);
+
+    &:not(:last-child) {
+      padding-bottom: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+}

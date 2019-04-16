@@ -9,6 +9,7 @@ A UI framework for content-centric websites.
   - [ ] Complete TODOs in code
   - [ ] Audit global CSS variables list and scope the component-specific ones into component base class
   - [ ] Audit z-index list (nav, dropdown, tooltips, etc).
+  - [ ] Define box-shadow for various elevations.
 - Medium
   - [ ] Create dark theme
 - Low
@@ -32,7 +33,7 @@ A UI framework for content-centric websites.
   - [x] Breadcrumbs
   - [x] Buttons
   - [x] Button Groups
-  - [ ] Cards
+  - [x] Cards
   - [ ] Dropdowns
   - [x] Footer
   - [ ] Grid
