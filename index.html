@@ -8,8 +8,8 @@
     />
     <title>Infima</title>
     <style>
-      .main {
-        padding: 90px 0;
+      body {
+        padding-top: 60px;
       }
 
       .main .section {
@@ -122,22 +122,19 @@
         </div>
       </div>
     </nav>
+    <div class="hero">
+      <div class="container">
+        <h1 class="hero-title">Infima</h1>
+        <p class="hero-subtitle">A UI framework for content-centric websites.</p>
+      </div>
+    </div>
     <div class="main">
       <div class="container">
-        <h1>Infima</h1>
-        <select class="theme-switcher">
-          <option value="default">Default</option>
-          <option value="github">GitHub</option>
-          <option value="happy">Happy</option>
-          <option value="material">Material</option>
-        </select>
-        <p>A UI framework for content-centric websites.</p>
-        <hr />
         <div class="section">
           <h1>Navbars</h1>
           <div class="row">
             <div class="col col-12">
-              <nav class="navbar navbar-light">
+              <nav class="navbar">
                 <div class="navbar-inner">
                   <div class="navbar-items">
                     <a class="navbar-brand">Infima</a>
@@ -170,6 +167,49 @@
                     </div>
                   </div>
                   <div class="navbar-items navbar-right">
+                    <form>
+                      <div class="navbar-search">
+                        <input placeholder="Search" />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-12">
+              <nav class="navbar navbar-light">
+                <div class="navbar-inner">
+                  <div class="navbar-items">
+                    <a class="navbar-brand">Infima</a>
+                    <div class="navbar-item">
+                      <a class="navbar-link" href="#">
+                        v2.0&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
+                      </a>
+                      <ul class="navbar-dropdown">
+                        <li>
+                          <a class="navbar-dropdown-link" href="#">v1.8.0</a>
+                        </li>
+                        <li>
+                          <a class="navbar-dropdown-link" href="#">v1.7.0</a>
+                        </li>
+                        <li>
+                          <a class="navbar-dropdown-link" href="#">v1.6.0</a>
+                        </li>
+                        <li>
+                          <a class="navbar-dropdown-link" href="#">All Versions</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="navbar-items navbar-right">
+                    <div class="navbar-item">
+                      <a class="navbar-link" href="#">Docs</a>
+                    </div>
+                    <div class="navbar-item">
+                      <a class="navbar-link" href="#">Tutorial</a>
+                    </div>
                     <form>
                       <div class="navbar-search">
                         <input placeholder="Search" />
@@ -185,51 +225,6 @@
               <nav class="navbar navbar-dark">
                 <div class="navbar-inner">
                   <div class="navbar-items">
-                    <a class="navbar-brand">Infima</a>
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">
-                        v2.0&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
-                      </a>
-                      <ul class="navbar-dropdown">
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">v1.8.0</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">v1.7.0</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#">v1.6.0</a>
-                        </li>
-                        <li>
-                          <a class="navbar-dropdown-link" href="#"
-                            >All Versions</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="navbar-items navbar-right">
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">Docs</a>
-                    </div>
-                    <div class="navbar-item">
-                      <a class="navbar-link" href="#">Tutorial</a>
-                    </div>
-                    <form>
-                      <div class="navbar-search">
-                        <input placeholder="Search" />
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-12">
-              <nav class="navbar">
-                <div class="navbar-inner">
-                  <div class="navbar-items">
                     <div class="navbar-item">
                       <a class="navbar-link" href="#">Docs</a>
                     </div>
@@ -251,9 +246,7 @@
                           <a class="navbar-dropdown-link" href="#">v1.6.0</a>
                         </li>
                         <li>
-                          <a class="navbar-dropdown-link" href="#"
-                            >All Versions</a
-                          >
+                          <a class="navbar-dropdown-link" href="#">All Versions</a>
                         </li>
                       </ul>
                     </div>
@@ -297,133 +290,55 @@
             </div>
           </div>
         </div>
-        <div class="section grid-demo">
-          <h1>Grid</h1>
-          <h3>Twelve Column Grid</h3>
+        <div class="section">
+          <h1>Hero</h1>
           <div class="row">
-            <div class="col col-6">
-              <div class="col-inner">col-6</div>
-            </div>
-            <div class="col col-6">
-              <div class="col-inner">col-6</div>
+            <div class="col col-12">
+              <div class="hero">
+                <div class="hero-body">
+                  <div class="container">
+                    <h1 class="hero-title">Hero Title</h1>
+                    <p class="hero-subtitle">Not all heroes wear capes</p>
+                    <div>
+                      <button class="btn btn-secondary btn-outline btn-lg">Get Started</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="row">
-            <div class="col col-4">
-              <div class="col-inner">col-4</div>
-            </div>
-            <div class="col col-4">
-              <div class="col-inner">col-4</div>
-            </div>
-            <div class="col col-4">
-              <div class="col-inner">col-4</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-3">
-              <div class="col-inner">col-3</div>
-            </div>
-            <div class="col col-3">
-              <div class="col-inner">col-3</div>
-            </div>
-            <div class="col col-3">
-              <div class="col-inner">col-3</div>
-            </div>
-            <div class="col col-3">
-              <div class="col-inner">col-3</div>
+            <div class="col col-12">
+              <div class="hero hero-light">
+                <div class="hero-body">
+                  <div class="container">
+                    <h1 class="hero-title">Hero Title</h1>
+                    <p class="hero-subtitle">Not all heroes wear capes</p>
+                    <div>
+                      <button class="btn btn-primary btn-outline btn-lg">Get Started</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="row">
-            <div class="col col-2">
-              <div class="col-inner">col-2</div>
-            </div>
-            <div class="col col-2">
-              <div class="col-inner">col-2</div>
-            </div>
-            <div class="col col-2">
-              <div class="col-inner">col-2</div>
-            </div>
-            <div class="col col-2">
-              <div class="col-inner">col-2</div>
-            </div>
-            <div class="col col-2">
-              <div class="col-inner">col-2</div>
-            </div>
-            <div class="col col-2">
-              <div class="col-inner">col-2</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-1">
-              <div class="col-inner">col-1</div>
-            </div>
-            <div class="col col-1">
-              <div class="col-inner">col-1</div>
-            </div>
-            <div class="col col-1">
-              <div class="col-inner">col-1</div>
-            </div>
-            <div class="col col-1">
-              <div class="col-inner">col-1</div>
-            </div>
-            <div class="col col-1">
-              <div class="col-inner">col-1</div>
-            </div>
-            <div class="col col-1">
-              <div class="col-inner">col-1</div>
-            </div>
-            <div class="col col-1">
-              <div class="col-inner">col-1</div>
-            </div>
-            <div class="col col-1">
-              <div class="col-inner">col-1</div>
-            </div>
-            <div class="col col-1">
-              <div class="col-inner">col-1</div>
-            </div>
-            <div class="col col-1">
-              <div class="col-inner">col-1</div>
-            </div>
-            <div class="col col-1">
-              <div class="col-inner">col-1</div>
-            </div>
-            <div class="col col-1">
-              <div class="col-inner">col-1</div>
-            </div>
-          </div>
-          <h3>Column Offsets</h3>
-          <div class="row">
-            <div class="col col-1">
-              <div class="col-inner">col-1</div>
-            </div>
-            <div class="col col-2 col-offset-1">
-              <div class="col-inner">col-2 col-offset-1</div>
-            </div>
-            <div class="col col-3 col-offset-2">
-              <div class="col-inner">col-3 col-offset-2</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-2">
-              <div class="col-inner">col-2</div>
-            </div>
-            <div class="col col-2 col-offset-2">
-              <div class="col-inner">col-2 col-offset-2</div>
-            </div>
-            <div class="col col-4 col-offset-2">
-              <div class="col-inner">col-4 col-offset-2</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-3">
-              <div class="col-inner">col-3</div>
-            </div>
-            <div class="col col-6 col-offset-3">
-              <div class="col-inner">col-6 col-offset-3</div>
+            <div class="col col-12">
+              <div class="hero hero-dark" style="height: 25rem">
+                <div class="hero-body">
+                  <div class="container">
+                    <h1 class="hero-title">Hero Title</h1>
+                    <p class="hero-subtitle">Not all heroes wear capes</p>
+                    <div>
+                      <button class="btn btn-primary btn-lg">Get Started</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="section grid-demo">
+        <div class="section">
           <h1>Footer</h1>
           <div class="row">
             <div class="col col-12">
@@ -714,6 +629,132 @@
                 </li>
                 <li><a class="contents-link" href="#">Updating Infima</a></li>
               </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section grid-demo">
+          <h1>Grid</h1>
+          <h3>Twelve Column Grid</h3>
+          <div class="row">
+            <div class="col col-6">
+              <div class="col-inner">col-6</div>
+            </div>
+            <div class="col col-6">
+              <div class="col-inner">col-6</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-4">
+              <div class="col-inner">col-4</div>
+            </div>
+            <div class="col col-4">
+              <div class="col-inner">col-4</div>
+            </div>
+            <div class="col col-4">
+              <div class="col-inner">col-4</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-3">
+              <div class="col-inner">col-3</div>
+            </div>
+            <div class="col col-3">
+              <div class="col-inner">col-3</div>
+            </div>
+            <div class="col col-3">
+              <div class="col-inner">col-3</div>
+            </div>
+            <div class="col col-3">
+              <div class="col-inner">col-3</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-2">
+              <div class="col-inner">col-2</div>
+            </div>
+            <div class="col col-2">
+              <div class="col-inner">col-2</div>
+            </div>
+            <div class="col col-2">
+              <div class="col-inner">col-2</div>
+            </div>
+            <div class="col col-2">
+              <div class="col-inner">col-2</div>
+            </div>
+            <div class="col col-2">
+              <div class="col-inner">col-2</div>
+            </div>
+            <div class="col col-2">
+              <div class="col-inner">col-2</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-1">
+              <div class="col-inner">col-1</div>
+            </div>
+            <div class="col col-1">
+              <div class="col-inner">col-1</div>
+            </div>
+            <div class="col col-1">
+              <div class="col-inner">col-1</div>
+            </div>
+            <div class="col col-1">
+              <div class="col-inner">col-1</div>
+            </div>
+            <div class="col col-1">
+              <div class="col-inner">col-1</div>
+            </div>
+            <div class="col col-1">
+              <div class="col-inner">col-1</div>
+            </div>
+            <div class="col col-1">
+              <div class="col-inner">col-1</div>
+            </div>
+            <div class="col col-1">
+              <div class="col-inner">col-1</div>
+            </div>
+            <div class="col col-1">
+              <div class="col-inner">col-1</div>
+            </div>
+            <div class="col col-1">
+              <div class="col-inner">col-1</div>
+            </div>
+            <div class="col col-1">
+              <div class="col-inner">col-1</div>
+            </div>
+            <div class="col col-1">
+              <div class="col-inner">col-1</div>
+            </div>
+          </div>
+          <h3>Column Offsets</h3>
+          <div class="row">
+            <div class="col col-1">
+              <div class="col-inner">col-1</div>
+            </div>
+            <div class="col col-2 col-offset-1">
+              <div class="col-inner">col-2 col-offset-1</div>
+            </div>
+            <div class="col col-3 col-offset-2">
+              <div class="col-inner">col-3 col-offset-2</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-2">
+              <div class="col-inner">col-2</div>
+            </div>
+            <div class="col col-2 col-offset-2">
+              <div class="col-inner">col-2 col-offset-2</div>
+            </div>
+            <div class="col col-4 col-offset-2">
+              <div class="col-inner">col-4 col-offset-2</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-3">
+              <div class="col-inner">col-3</div>
+            </div>
+            <div class="col col-6 col-offset-3">
+              <div class="col-inner">col-6 col-offset-3</div>
             </div>
           </div>
         </div>
@@ -1642,17 +1683,6 @@ let myFun = (x, y) =&gt; {
     <script type="text/javascript" src="js/tabs.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        const $themeStylesheet = document.getElementById('theme-stylesheet');
-        document
-          .querySelector('.theme-switcher')
-          .addEventListener('change', function(event) {
-            const theme = event.target.value;
-            $themeStylesheet.setAttribute(
-              'href',
-              'css/' + theme + '/' + theme + '.css',
-            );
-          });
-
         alert(document.querySelectorAll('.alert'));
         buttonGroups(document.querySelectorAll('.btn-group'));
         pills(document.querySelectorAll('.pills'));

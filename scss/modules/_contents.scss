@@ -25,12 +25,10 @@
   .contents-link {
     color: var(--color-secondary-darkerer);
 
-    &:hover {
-      text-decoration: none;
-    }
-
+    &:hover,
     &.contents-link-active {
       color: var(--color-primary);
+      text-decoration: none;
     }
   }
 }

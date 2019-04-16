@@ -1,0 +1,33 @@
+.hero {
+  --hero-background-color: var(--color-primary);
+  --hero-text-color: var(--color-white);
+
+  align-items: center;
+  background-color: var(--hero-background-color);
+  color: var(--hero-text-color);
+  display: flex;
+  padding: 4rem 2rem;
+
+  &.hero-light {
+    --hero-background-color: var(--color-secondary-lighter);
+    --hero-text-color: var(--color-primary);
+  }
+
+  &.hero-dark {
+    --hero-background-color: #303846;
+    --hero-text-color: var(--color-white);
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 1024px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
