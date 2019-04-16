@@ -13,27 +13,27 @@ Navbars.
           <div class="navbar-items">
             <a class="navbar-brand">Infima</a>
             <div class="navbar-item">
-              <a class="navbar-link" href="#">Docs</a>
+              <a class="navbar-link" href="#url">Docs</a>
             </div>
             <div class="navbar-item">
-              <a class="navbar-link" href="#">Tutorial</a>
+              <a class="navbar-link" href="#url">Tutorial</a>
             </div>
             <div class="navbar-item">
-              <a class="navbar-link" href="#">
+              <a class="navbar-link" href="#url">
                 v2.0&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
               </a>
               <ul class="navbar-dropdown">
                 <li>
-                  <a class="navbar-dropdown-link" href="#">v1.8.0</a>
+                  <a class="navbar-dropdown-link" href="#url">v1.8.0</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown-link" href="#">v1.7.0</a>
+                  <a class="navbar-dropdown-link" href="#url">v1.7.0</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown-link" href="#">v1.6.0</a>
+                  <a class="navbar-dropdown-link" href="#url">v1.6.0</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown-link" href="#">All Versions</a>
+                  <a class="navbar-dropdown-link" href="#url">All Versions</a>
                 </li>
               </ul>
             </div>
@@ -56,31 +56,31 @@ Navbars.
           <div class="navbar-items">
             <a class="navbar-brand">Infima</a>
             <div class="navbar-item">
-              <a class="navbar-link" href="#">
+              <a class="navbar-link" href="#url">
                 v2.0&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
               </a>
               <ul class="navbar-dropdown">
                 <li>
-                  <a class="navbar-dropdown-link" href="#">v1.8.0</a>
+                  <a class="navbar-dropdown-link" href="#url">v1.8.0</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown-link" href="#">v1.7.0</a>
+                  <a class="navbar-dropdown-link" href="#url">v1.7.0</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown-link" href="#">v1.6.0</a>
+                  <a class="navbar-dropdown-link" href="#url">v1.6.0</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown-link" href="#">All Versions</a>
+                  <a class="navbar-dropdown-link" href="#url">All Versions</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="navbar-items navbar-right">
             <div class="navbar-item">
-              <a class="navbar-link" href="#">Docs</a>
+              <a class="navbar-link" href="#url">Docs</a>
             </div>
             <div class="navbar-item">
-              <a class="navbar-link" href="#">Tutorial</a>
+              <a class="navbar-link" href="#url">Tutorial</a>
             </div>
             <form>
               <div class="navbar-search">
@@ -98,27 +98,27 @@ Navbars.
         <div class="navbar-inner">
           <div class="navbar-items">
             <div class="navbar-item">
-              <a class="navbar-link" href="#">Docs</a>
+              <a class="navbar-link" href="#url">Docs</a>
             </div>
             <div class="navbar-item">
-              <a class="navbar-link" href="#">Tutorial</a>
+              <a class="navbar-link" href="#url">Tutorial</a>
             </div>
             <div class="navbar-item">
-              <a class="navbar-link" href="#">
+              <a class="navbar-link" href="#url">
                 v2.0&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
               </a>
               <ul class="navbar-dropdown">
                 <li>
-                  <a class="navbar-dropdown-link" href="#">v1.8.0</a>
+                  <a class="navbar-dropdown-link" href="#url">v1.8.0</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown-link" href="#">v1.7.0</a>
+                  <a class="navbar-dropdown-link" href="#url">v1.7.0</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown-link" href="#">v1.6.0</a>
+                  <a class="navbar-dropdown-link" href="#url">v1.6.0</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown-link" href="#">All Versions</a>
+                  <a class="navbar-dropdown-link" href="#url">All Versions</a>
                 </li>
               </ul>
             </div>
@@ -128,26 +128,26 @@ Navbars.
           </div>
           <div class="navbar-items navbar-right">
             <div class="navbar-item">
-              <a class="navbar-link" href="#">
+              <a class="navbar-link" href="#url">
                 <i class="fas fa-language fa-2x"></i>
               </a>
               <ul class="navbar-dropdown navbar-dropdown-right">
                 <li>
-                  <a class="navbar-dropdown-link" href="#">简体中文</a>
+                  <a class="navbar-dropdown-link" href="#url">简体中文</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown-link" href="#">日本語</a>
+                  <a class="navbar-dropdown-link" href="#url">日本語</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown-link" href="#">Français</a>
+                  <a class="navbar-dropdown-link" href="#url">Français</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown-link" href="#">Español</a>
+                  <a class="navbar-dropdown-link" href="#url">Español</a>
                 </li>
               </ul>
             </div>
             <div class="navbar-item">
-              <a class="navbar-link" href="#">
+              <a class="navbar-link" href="#url">
                 <i class="fab fa-github fa-lg"></i>
               </a>
             </div>
