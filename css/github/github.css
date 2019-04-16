@@ -566,8 +566,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: var(--container-width);
-  padding-left: calc(var(--horizontal-spacing) / 2);
-  padding-right: calc(var(--horizontal-spacing) / 2);
+  padding-left: var(--horizontal-spacing);
+  padding-right: var(--horizontal-spacing);
   width: 100%; }
   .container.container-fluid {
     max-width: inherit; }
