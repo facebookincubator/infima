@@ -29,7 +29,7 @@ A UI framework for content-centric websites.
   - [x] Alerts
   - [x] Avatars
   - [x] Badges
-  - [ ] Breadcrumbs
+  - [x] Breadcrumbs
   - [x] Buttons
   - [x] Button Groups
   - [ ] Cards
@@ -48,7 +48,6 @@ A UI framework for content-centric websites.
   - [x] Pills
   - [x] Sidebar
   - [x] Tabs
-  - [ ] Tooltip
 - Utilities
   - [x] Colors
   - [x] Icons
@@ -58,6 +57,7 @@ A UI framework for content-centric websites.
   - [ ] Spinners
   - [x] Text
 - Future
+  - [ ] Banner (for announcement purposes)
   - [ ] Forms
   - [ ] Modal
-  - [ ] Announcement banner
+  - [ ] Tooltip

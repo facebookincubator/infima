@@ -295,6 +295,52 @@ body {
   .badge.badge-danger {
     --badge-color: var(--color-danger); }
 
+.breadcrumbs {
+  --border-radius: 1.5rem;
+  --breadcrumb-spacing: 0.0625rem;
+  --color-active: var(--color-primary);
+  --padding-horizontal: 1rem;
+  --padding-vertical: 0.5rem;
+  --size-multiplier: 1;
+  --separator: url('data:image/svg+xml;utf8,<svg alt="Chevron Right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><g><g><polygon points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>');
+  --separator-size: 0.5rem;
+  --separator-size-multiplier: 1.25;
+  margin-bottom: 0;
+  padding-left: 0; }
+  .breadcrumbs > .breadcrumb-item {
+    display: inline-block;
+    list-style-type: none; }
+    .breadcrumbs > .breadcrumb-item:not(:first-child) {
+      margin-left: var(--breadcrumb-spacing); }
+    .breadcrumbs > .breadcrumb-item:not(:last-child) {
+      margin-right: var(--breadcrumb-spacing); }
+      .breadcrumbs > .breadcrumb-item:not(:last-child):after {
+        background-image: var(--separator);
+        background-position: center;
+        content: ' ';
+        display: inline-block;
+        height: calc( var(--separator-size) * var(--size-multiplier) * var(--separator-size-multiplier));
+        margin: 0 0.5rem;
+        opacity: 0.5;
+        width: calc( var(--separator-size) * var(--size-multiplier) * var(--separator-size-multiplier)); }
+    .breadcrumbs > .breadcrumb-item .breadcrumb-link {
+      border-radius: var(--border-radius);
+      color: var(--font-color-base);
+      display: inline-block;
+      font-size: calc(1rem * var(--size-multiplier));
+      padding: calc(var(--padding-vertical) * var(--size-multiplier)) calc(var(--padding-horizontal) * var(--size-multiplier));
+      text-decoration: none; }
+    .breadcrumbs > .breadcrumb-item.breadcrumb-active .breadcrumb-link {
+      background: linear-gradient(to top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)) var(--color-active);
+      color: var(--color-active); }
+    .breadcrumbs > .breadcrumb-item:not(.breadcrumb-active):hover .breadcrumb-link {
+      background-color: var(--color-secondary-lighter);
+      transition: background 0.2s ease-in-out; }
+  .breadcrumbs.breadcrumbs-sm {
+    --size-multiplier: 0.8; }
+  .breadcrumbs.breadcrumbs-lg {
+    --size-multiplier: 1.2; }
+
 .btn {
   /* TODO: Allow links to be styled as buttons */
   --button-color: transparent;
