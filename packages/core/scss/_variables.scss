@@ -15,15 +15,15 @@ $lighter-value: 30%;
 
 $grid-breakpoints: (
   // Extra small screen / phone
-  xs: 0,
+    xs: 0,
   // Small screen / phone
-  sm: 576px,
+    sm: 576px,
   // Medium screen / tablet
-  md: 768px,
+    md: 768px,
   // Large screen / desktop
-  lg: 992px,
+    lg: 992px,
   // Extra large screen / wide desktop
-  xl: 1200px,
+    xl: 1200px
 );
 
 :root {
@@ -64,7 +64,7 @@ $grid-breakpoints: (
   --color-danger-darkerer: #{darken($color-danger, $darkerer-value)};
   --color-danger-light: #{lighten($color-danger, $light-value)};
   --color-danger-lighter: #{lighten($color-danger, $light-value)};
-  --color-link: var(--color-primary); /* Blue Link */
+  --color-link: var(--color-primary);
   --color-white: #fff; /* White */
   --color-black: #000; /* Black */
   --color-black-alpha-05: rgba(0, 0, 0, 0.05);
