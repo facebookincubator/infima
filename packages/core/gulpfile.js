@@ -35,6 +35,7 @@ function processStyles() {
               stage: 1,
               features: {
                 'color-mod-function': { unresolved: 'warn' },
+                'custom-properties': false,
               },
             }),
           ],
