@@ -90,12 +90,12 @@
       bottom: 2rem;
       right: 1rem;
 
-      @media (max-width: 1024px) {
+      @media (max-width: map-get($grid-breakpoints, lg)) {
         display: inherit;
       }
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: map-get($grid-breakpoints, lg)) {
       .menu-list {
         display: none;
         opacity: 0;

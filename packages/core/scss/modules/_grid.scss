@@ -50,6 +50,9 @@
 
   .col {
     $columns: 12;
+
+    --col-width: 100%;
+
     display: block;
     flex: 1 0;
     margin-left: 0;
@@ -59,16 +62,16 @@
     width: 100%;
 
     &[class*='col-'] {
-      flex: 0 0 var(--width);
-      max-width: var(--width);
+      flex: 0 0 var(--col-width);
+      max-width: var(--col-width);
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: #{map-get($grid-breakpoints, lg)}) {
       // Increase specificity.
       &.col.col {
-        --width: 100%;
+        --col-width: 100%;
 
-        flex-basis: var(--width);
+        flex-basis: var(--col-width);
         margin-left: 0;
       }
     }
@@ -77,7 +80,7 @@
       $percentage: $column/$columns * 100;
 
       &.col-#{$column} {
-        --width: #{$percentage}%;
+        --col-width: #{$percentage}%;
       }
 
       &.col-offset-#{$column} {
