@@ -9,12 +9,12 @@
   padding-top: var(--contents-padding-vertical);
 
   &,
-  ul {
+  & ul {
     list-style-type: none;
     padding-left: var(--contents-padding-left);
   }
 
-  li {
+  & li {
     margin: var(--contents-padding-vertical);
   }
 
@@ -24,8 +24,8 @@
     border-left-width: 1px;
   }
 
-  .contents-link {
-    color: var(--color-secondary-darkerer);
+  & .contents-link {
+    color: var(--color-secondary-darkest);
 
     &:hover,
     &.contents-link-active {

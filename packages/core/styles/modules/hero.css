@@ -18,15 +18,15 @@
     --hero-text-color: var(--color-white);
   }
 
-  .hero-title {
+  & .hero-title {
     font-size: 3rem;
   }
 
-  .hero-subtitle {
+  & .hero-subtitle {
     font-size: 1.5rem;
   }
 
-  @media (max-width: map-get($grid-breakpoints, lg)) {
+  @media (--narrow-window) {
     padding-left: 0;
     padding-right: 0;
   }

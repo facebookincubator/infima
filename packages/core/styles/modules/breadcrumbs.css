@@ -12,7 +12,7 @@
   margin-bottom: 0;
   padding-left: 0;
 
-  > .breadcrumb-item {
+  & > .breadcrumb-item {
     display: inline-block;
     list-style-type: none;
 
@@ -41,7 +41,7 @@
       }
     }
 
-    .breadcrumb-link {
+    & .breadcrumb-link {
       border-radius: var(--border-radius);
       color: var(--font-color-base);
       display: inline-block;
@@ -52,7 +52,7 @@
     }
 
     &.breadcrumb-active {
-      .breadcrumb-link {
+      & .breadcrumb-link {
         background: linear-gradient(
             to top,
             rgba(255, 255, 255, 0.85),
@@ -64,7 +64,7 @@
     }
 
     &:not(.breadcrumb-active):hover {
-      .breadcrumb-link {
+      & .breadcrumb-link {
         background-color: var(--color-black-alpha-05);
         transition: background 0.2s ease-in-out;
       }

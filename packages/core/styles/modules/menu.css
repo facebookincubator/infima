@@ -3,38 +3,39 @@
 
   overflow-x: hidden;
 
-  .menu-list {
+  & .menu-list {
     margin: 0;
     list-style-type: none;
     padding-left: 0;
     transition: height 200ms cubic-bezier(0.08, 0.52, 0.52, 1);
 
-    .menu-list {
+    // Non-top level menus
+    & .menu-list {
       margin-left: 0.75rem;
     }
   }
 
-  > .menu-list > .menu-list-item > .menu-link {
+  & > .menu-list > .menu-list-item > .menu-link {
     font-weight: bold;
   }
 
-  .menu-list-item {
+  & .menu-list-item {
     margin-bottom: 0.25rem;
     margin-top: 0.25rem;
 
     &.menu-list-item-collapsed {
-      .menu-list {
+      & .menu-list {
         height: 0;
         overflow: hidden;
       }
 
-      .menu-link-sublist:after {
+      & .menu-link-sublist:after {
         transform: rotateX(180deg);
       }
     }
   }
 
-  .menu-link {
+  & .menu-link {
     border-radius: 0.25rem;
     color: #717171;
     cursor: pointer;
@@ -57,20 +58,20 @@
     }
   }
 
-  .menu-link:hover {
+  & .menu-link:hover {
     background-color: var(--color-black-alpha-05);
     color: #717171;
   }
 
-  .menu-list-item-active {
-    > .menu-link {
+  & .menu-list-item-active {
+    & > .menu-link {
       &,
       &:hover {
         color: var(--menu-color-active);
       }
     }
 
-    > .menu-link:not(.menu-link-sublist) {
+    & > .menu-link:not(.menu-link-sublist) {
       &,
       &:hover {
         background: linear-gradient(
@@ -84,19 +85,19 @@
   }
 
   &.menu-responsive {
-    .menu-button {
+    & .menu-button {
       display: none;
       position: fixed;
       bottom: 2rem;
       right: 1rem;
 
-      @media (max-width: map-get($grid-breakpoints, lg)) {
+      @media (--narrow-window) {
         display: inherit;
       }
     }
 
-    @media (max-width: map-get($grid-breakpoints, lg)) {
-      .menu-list {
+    @media (--narrow-window) {
+      & .menu-list {
         display: none;
         opacity: 0;
       }
@@ -113,7 +114,7 @@
     top: 0;
     z-index: 100;
 
-    .menu-list {
+    & .menu-list {
       display: inherit;
       opacity: 100;
       transition: opacity 300ms linear;

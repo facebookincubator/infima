@@ -91,7 +91,7 @@ pre {
   padding: var(--pre-padding);
   word-wrap: normal;
 
-  code {
+  & code {
     background-color: transparent;
     border: 0;
     display: inline;

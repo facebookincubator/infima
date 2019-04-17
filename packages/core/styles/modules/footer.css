@@ -21,38 +21,38 @@
     --footer-title-color: var(--color-white);
   }
 
-  .footer-links {
+  & .footer-links {
     margin-bottom: 1rem;
   }
 
-  .footer-link-item {
+  & .footer-link-item {
     color: var(--footer-link-color);
   }
 
-  .footer-logo {
+  & .footer-logo {
     margin-top: 1rem;
     max-width: 10rem;
   }
 
-  .footer-title {
+  & .footer-title {
     color: var(--footer-title-color);
   }
 
-  .footer-items {
+  & .footer-items {
     list-style-type: none;
     margin-bottom: 0;
     padding-left: 0;
   }
 
-  .footer-link-separator {
+  & .footer-link-separator {
     margin-left: var(--footer-link-horizontal-spacing);
     margin-right: var(--footer-link-horizontal-spacing);
   }
 
-  @media (max-width: map-get($grid-breakpoints, lg)) {
+  @media (--narrow-window) {
     --footer-padding-horizontal: var(--horizontal-spacing);
 
-    .footer-col {
+    & .footer-col {
       margin-bottom: calc(var(--vertical-spacing) * 2);
     }
   }

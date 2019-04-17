@@ -7,28 +7,28 @@ table {
   overflow: auto;
   width: 100%;
 
-  tr {
+  & tr {
     background-color: var(--table-bg);
     border-top: var(--table-border-width) solid var(--table-border-color);
   }
 
-  tr:nth-child(2n) {
+  & tr:nth-child(2n) {
     background-color: var(--table-stripe-bg);
   }
 
-  th,
-  td {
+  & th,
+  & td {
     border: var(--table-border-width) solid var(--table-border-color);
     padding: var(--table-cell-padding);
   }
 
-  th {
+  & th {
     background-color: var(--table-head-bg);
     color: var(--table-head-color);
     font-weight: var(--table-head-font-weight);
   }
 
-  td {
+  & td {
     color: var(--table-cell-color);
   }
 }

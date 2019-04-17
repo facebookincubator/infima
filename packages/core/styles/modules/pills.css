@@ -4,7 +4,7 @@
 
   padding-left: 0;
 
-  > .pill-item {
+  & > .pill-item {
     border-radius: 0.5rem;
     cursor: pointer;
     display: inline-block;
@@ -35,7 +35,7 @@
     }
   }
 
-  > .pill-item + .pill-item {
+  & > .pill-item + .pill-item {
     margin-top: 0;
   }
 
@@ -43,15 +43,15 @@
     display: flex;
     justify-content: stretch;
 
-    @media (max-width: map-get($grid-breakpoints, lg)) {
+    @media (--narrow-window) {
       flex-direction: column;
     }
 
-    > .pill-item {
+    & > .pill-item {
       flex-grow: 1;
       text-align: center;
 
-      @media (max-width: map-get($grid-breakpoints, lg)) {
+      @media (--narrow-window) {
         &:not(:first-child) {
           margin-top: var(--pills-spacing);
         }

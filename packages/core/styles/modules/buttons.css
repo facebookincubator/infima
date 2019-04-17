@@ -86,23 +86,24 @@
   &.btn-secondary {
     color: var(--color-black);
   }
+}
 
-  @each $color in $colors {
-    &.btn-#{$color} {
-      --button-theme-color: var(--color-#{$color});
+@each $color in (primary, secondary, success, info, warning, danger) {
+  .btn.btn-$(color) {
+    --button-theme-color: var(--color-$(color));
 
-      &:hover:not(.btn-outline) {
-        --button-theme-color: var(--color-#{$color}-dark);
-      }
+    &:hover:not(.btn-outline) {
+      --button-theme-color: var(--color-$(color)-dark);
     }
+  }
 
-    &.btn.btn-#{$color} {
-      &:active,
-      &.btn-active {
-        --button-theme-color: var(--color-#{$color}-darker);
+  // Increase specificity.
+  .btn.btn.btn-$(color) {
+    &:active,
+    &.btn-active {
+      --button-theme-color: var(--color-$(color)-darker);
 
-        background-color: var(--color-#{$color}-darker);
-      }
+      background-color: var(--color-$(color)-darker);
     }
   }
 }

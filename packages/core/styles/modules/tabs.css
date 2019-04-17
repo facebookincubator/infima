@@ -5,7 +5,7 @@
   margin-bottom: 0;
   padding-left: 0;
 
-  > .tab-item {
+  & > .tab-item {
     border-bottom: 4px solid transparent;
     cursor: pointer;
     display: inline-block;
@@ -26,15 +26,15 @@
     display: flex;
     justify-content: stretch;
 
-    @media (max-width: map-get($grid-breakpoints, lg)) {
+    @media (--narrow-window) {
       flex-direction: column;
     }
 
-    > .tab-item {
+    & > .tab-item {
       flex-grow: 1;
       text-align: center;
 
-      @media (max-width: map-get($grid-breakpoints, lg)) {
+      @media (--narrow-window) {
         &:not(:first-child) {
           margin-top: var(--tabs-spacing);
         }

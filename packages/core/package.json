@@ -15,7 +15,14 @@
     "gulp-sass": "^4.0.1",
     "gulp-webserver": "^0.9.1",
     "natives": "^1.1.6",
-    "postcss-css-variables": "^0.12.0"
+    "postcss-css-variables": "^0.12.0",
+    "postcss-each": "^0.10.0",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-for": "^2.1.1",
+    "postcss-preset-env": "^6.6.0",
+    "postcss-scss": "^2.0.0",
+    "postcss-strip-inline-comments": "^0.1.5",
+    "precss": "^4.0.0"
   },
   "scripts": {
     "start": "gulp",

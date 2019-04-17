@@ -22,7 +22,7 @@
     margin-left: 0;
     margin-right: 0;
 
-    > .col {
+    & > .col {
       padding-left: 0;
       padding-right: 0;
     }
@@ -48,9 +48,7 @@
     align-items: baseline;
   }
 
-  .col {
-    $columns: 12;
-
+  & .col {
     --col-width: 100%;
 
     display: block;
@@ -66,25 +64,22 @@
       max-width: var(--col-width);
     }
 
-    @media (max-width: #{map-get($grid-breakpoints, lg)}) {
+    @media (--narrow-window) {
       // Increase specificity.
       &.col.col {
         --col-width: 100%;
-
         flex-basis: var(--col-width);
         margin-left: 0;
       }
     }
 
-    @for $column from 1 through $columns {
-      $percentage: $column/$columns * 100;
-
-      &.col-#{$column} {
-        --col-width: #{$percentage}%;
+    @for $column from 1 to 12 {
+      &.col-$(column) {
+        --col-width: calc($(column)/12 * 100%);
       }
 
-      &.col-offset-#{$column} {
-        margin-left: $percentage#{'%'};
+      &.col-offset-$(column) {
+        margin-left: calc($(column)/12 * 100%);
       }
     }
   }

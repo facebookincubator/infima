@@ -1,25 +1,52 @@
 'use strict';
 
 const autoprefixer = require('autoprefixer');
-const cssVariables = require('postcss-css-variables');
 const cssnano = require('cssnano');
 const del = require('del');
 const gulp = require('gulp');
 const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
-const sass = require('gulp-sass');
+const postcssCssVariables = require('postcss-css-variables');
+const postcssEach = require('postcss-each');
+const postcssEasyImport = require('postcss-easy-import');
+const postcssFor = require('postcss-for');
+const postcssPresetEnv = require('postcss-preset-env');
+const postcssStripInlineComments = require('postcss-strip-inline-comments');
+const scss = require('postcss-scss');
 const webserver = require('gulp-webserver');
 
-function sassTask() {
+function processStyles() {
   return (
     gulp
-      .src('./scss/themes/**/*.scss')
-      .pipe(sass().on('error', sass.logError))
-      .pipe(postcss([autoprefixer()]))
+      .src('./styles/themes/**/*.css', {
+        ignore: [
+          '**/_*', // Exclude files starting with '_'.
+          '**/_*/**', // Exclude entire directories starting with '_'.
+        ],
+      })
+      .pipe(
+        postcss(
+          [
+            postcssEasyImport({ prefix: '_' }),
+            postcssStripInlineComments,
+            postcssEach,
+            postcssFor,
+            postcssPresetEnv({
+              stage: 1,
+              features: {
+                'color-mod-function': { unresolved: 'warn' },
+              },
+            }),
+          ],
+          {
+            syntax: scss, // Needed for parser to be able to parse double-slash comments.
+          },
+        ),
+      )
       .pipe(gulp.dest('./dist'))
       // Compile CSS variables to its values for IE11 support.
       .pipe(rename({ suffix: '.compat' }))
-      .pipe(postcss([cssVariables()]))
+      .pipe(postcss([postcssCssVariables()]))
       .pipe(gulp.dest('./dist'))
   );
 }
@@ -54,13 +81,16 @@ function clean() {
 }
 
 const copyFiles = gulp.parallel(copyStyles, copyScripts);
-const compileAndCopy = gulp.series(sassTask, copyFiles);
+const compileAndCopy = gulp.series(processStyles, copyFiles);
 
 function watch(cb) {
-  gulp.watch(['./scss/**/*.scss'], compileAndCopy);
+  gulp.watch(['./styles/**/*.css'], compileAndCopy);
   cb();
 }
 
 exports.clean = clean;
-exports.build = gulp.series(clean, gulp.series(sassTask, minify, copyFiles));
+exports.build = gulp.series(
+  clean,
+  gulp.series(processStyles, minify, copyFiles),
+);
 exports.default = gulp.series(clean, watch, compileAndCopy, serve);

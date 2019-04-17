@@ -18,9 +18,9 @@
   font-weight: var(--font-weight-bold);
   padding: var(--badge-padding-vertical) var(--badge-padding-horizontal);
 
-  @each $color in $colors {
-    &.badge-#{$color} {
-      --badge-background-color: var(--color-#{$color});
+  @each $color in (primary, secondary, success, info, warning, danger) {
+    &.badge-$(color) {
+      --badge-background-color: var(--color-$(color));
     }
   }
 

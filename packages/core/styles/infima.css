@@ -1,6 +1,6 @@
-@import 'variables';
-@import 'modules/colors';
-@import 'modules/base';
+// Common
+@import 'common/variables';
+@import 'common/base';
 
 // Modules
 @import 'modules/alerts';
@@ -26,5 +26,5 @@
 @import 'modules/typography';
 
 // Utilities
-@import 'modules/utilities/spacings';
-@import 'modules/utilities/text';
+@import 'utilities/spacings';
+@import 'utilities/text';

@@ -17,14 +17,18 @@
   color: var(--alert-color);
   padding: var(--alert-padding-vertical) var(--alert-padding-horizontal);
 
-  @each $color in $colors {
-    &.alert-#{$color} {
-      --alert-color: var(--color-#{$color}-darkerer);
-      --alert-background-color: var(--color-#{$color});
+  @each $color in (primary, secondary, success, info, warning, danger) {
+    &.alert-$(color) {
+      --alert-color: var(--color-white);
+      --alert-background-color: var(--color-$(color));
     }
   }
 
-  .close {
+  &.alert-secondary {
+    color: var(--color-black);
+  }
+
+  & .close {
     margin-right: var(--alert-close-offset);
     margin-top: var(--alert-close-offset);
   }

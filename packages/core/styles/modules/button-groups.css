@@ -3,7 +3,7 @@
 
   display: inline-flex;
 
-  > .btn {
+  & > .btn {
     &:not(:first-child) {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
@@ -16,7 +16,7 @@
     }
   }
 
-  > .btn-active {
+  & > .btn-active {
     z-index: 1; // Make the active button's border take precedence.
   }
 
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: stretch;
 
-    > .btn {
+    & > .btn {
       flex-grow: 1;
     }
   }
