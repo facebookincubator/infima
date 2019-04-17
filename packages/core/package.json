@@ -21,8 +21,7 @@
     "postcss-for": "^2.1.1",
     "postcss-preset-env": "^6.6.0",
     "postcss-scss": "^2.0.0",
-    "postcss-strip-inline-comments": "^0.1.5",
-    "precss": "^4.0.0"
+    "postcss-strip-inline-comments": "^0.1.5"
   },
   "scripts": {
     "start": "gulp",
