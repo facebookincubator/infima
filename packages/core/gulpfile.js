@@ -39,4 +39,5 @@ const compileAndCopy = gulp.series(sassTask, copyFilesTask);
 
 gulp.watch(['./scss/**/*.scss'], {}, compileAndCopy);
 
+exports.build = compileAndCopy;
 exports.default = gulp.series(compileAndCopy, serveTask);

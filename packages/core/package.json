@@ -14,6 +14,7 @@
     "natives": "^1.1.6"
   },
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "build": "gulp build"
   }
 }
