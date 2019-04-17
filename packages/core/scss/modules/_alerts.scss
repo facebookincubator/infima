@@ -1,34 +1,31 @@
 .alert {
-  --alert-color: transparent;
+  --alert-background-color: inherit; // Set a default which will be overridden later.
+  --alert-border-color: var(--alert-background-color);
+  --alert-border-radius: var(--global-radius);
+  --alert-border-width: var(--global-border-width);
+  --alert-close-offset: -1rem;
+  --alert-color: var(--color-white);
+  --alert-padding-horizontal: var(--horizontal-spacing);
+  --alert-padding-vertical: var(--vertical-spacing);
 
-  --background-color: var(--alert-color);
-  --border-color: var(--alert-color);
-  --border-radius: var(--global-radius);
-  --border-width: var(--global-border-width);
-  --color: var(--color-white);
-  --padding-horizontal: 1rem;
-  --padding-vertical: 1rem;
-
-  background-color: var(--background-color);
-  border-color: var(--border-color);
+  background-color: var(--alert-background-color);
+  border-color: var(--alert-border-color);
   border-style: solid;
-  border-width: var(--border-width);
-  border-radius: var(--border-radius);
+  border-width: var(--alert-border-width);
+  border-radius: var(--alert-border-radius);
   box-sizing: border-box;
-  color: var(--color);
-  padding: var(--padding-vertical) var(--padding-horizontal);
+  color: var(--alert-color);
+  padding: var(--alert-padding-vertical) var(--alert-padding-horizontal);
 
   @each $color in $colors {
     &.alert-#{$color} {
-      --alert-color: var(--color-#{$color});
-      --color: var(--color-#{$color}-darkerer);
+      --alert-color: var(--color-#{$color}-darkerer);
+      --alert-background-color: var(--color-#{$color});
     }
   }
 
   .close {
-    --margin: -1rem;
-    
-    margin-right: var(--margin);
-    margin-top: var(--margin);
+    margin-right: var(--alert-close-offset);
+    margin-top: var(--alert-close-offset);
   }
 }
