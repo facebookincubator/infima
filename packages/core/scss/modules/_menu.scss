@@ -1,5 +1,5 @@
 .menu {
-  --color-active: var(--color-primary);
+  --menu-color-active: var(--color-primary);
 
   overflow-x: hidden;
 
@@ -66,7 +66,7 @@
     > .menu-link {
       &,
       &:hover {
-        color: var(--color-active);
+        color: var(--menu-color-active);
       }
     }
 
@@ -78,7 +78,7 @@
             rgba(255, 255, 255, 0.85),
             rgba(255, 255, 255, 0.85)
           )
-          var(--color-active);
+          var(--menu-color-active);
       }
     }
   }

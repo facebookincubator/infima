@@ -1,10 +1,10 @@
 .card {
-  --background-color: var(--fds-white);
+  --card-background-color: var(--fds-white);
   --card-border-radius: calc(var(--global-radius) * 2);
   --card-horizontal-spacing: var(--global-spacing);
   --card-vertical-spacing: var(--global-spacing);
 
-  background-color: var(--background-color);
+  background-color: var(--card-background-color);
   border-radius: var(--card-border-radius);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   overflow: hidden; // Because of border-radius.

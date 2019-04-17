@@ -1,5 +1,5 @@
 .btn-group {
-  --button-margin: 2px;
+  --button-group-margin: 2px;
 
   display: inline-flex;
 
@@ -7,7 +7,7 @@
     &:not(:first-child) {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
-      margin-left: var(--button-margin);
+      margin-left: var(--button-group-margin);
     }
 
     &:not(:last-child) {

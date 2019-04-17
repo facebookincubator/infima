@@ -1,32 +1,35 @@
 .btn {
-  /* TODO: Allow links to be styled as buttons */
-  --button-color: transparent;
+  // TODO: Allow links to be styled as buttons.
+  --button-theme-color: transparent;
 
-  --background-color: var(--button-color);
-  --border-color: var(--button-color);
-  --border-width: var(--global-border-width);
-  --color: var(--color-white);
-  --padding-horizontal: 1.5rem;
-  --padding-vertical: 0.375rem;
-  --size-multiplier: 1;
-  --border-radius: calc(var(--button-border-radius) * var(--size-multiplier));
+  --button-background-color: var(--button-theme-color);
+  --button-border-color: var(--button-theme-color);
+  --button-border-width: var(--global-border-width);
+  --button-color: var(--color-white);
+  --button-padding-horizontal: 1.5rem;
+  --button-padding-vertical: 0.375rem;
+  --button-size-multiplier: 1;
+  --button-transition-duration: 0.15s;
+  --button-border-radius: calc(
+    var(--global-radius) * var(--button-size-multiplier)
+  );
 
   appearance: none;
-  background-color: var(--background-color);
-  border-color: var(--border-color);
+  background-color: var(--button-background-color);
+  border-color: var(--button-border-color);
   border-style: solid;
-  border-width: var(--border-width);
-  border-radius: var(--border-radius);
+  border-width: var(--button-border-width);
+  border-radius: var(--button-border-radius);
   box-sizing: border-box;
-  color: var(--color);
+  color: var(--button-color);
   cursor: pointer;
   display: inline-block;
-  font-size: calc(0.8rem * var(--size-multiplier));
+  font-size: calc(0.8rem * var(--button-size-multiplier));
   font-weight: var(--font-weight-bold);
   line-height: 1.5;
   outline: 0;
-  padding: calc(var(--padding-vertical) * var(--size-multiplier))
-    calc(var(--padding-horizontal) * var(--size-multiplier));
+  padding: calc(var(--button-padding-vertical) * var(--button-size-multiplier))
+    calc(var(--button-padding-horizontal) * var(--button-size-multiplier));
   text-align: center;
   text-decoration: none;
   transition: color var(--button-transition-duration) ease-in-out,
@@ -46,17 +49,17 @@
   }
 
   &.btn-outline {
-    --background-color: transparent;
-    --color: var(--button-color);
+    --button-background-color: transparent;
+    --button-color: var(--button-theme-color);
 
     &:hover {
-      --background-color: var(--button-color);
+      --button-background-color: var(--button-theme-color);
     }
 
     &:hover,
     &:active,
     &.btn-active {
-      --color: var(--color-white);
+      --button-color: var(--color-white);
     }
   }
 
@@ -68,11 +71,11 @@
   }
 
   &.btn-sm {
-    --size-multiplier: 0.8;
+    --button-size-multiplier: 0.8;
   }
 
   &.btn-lg {
-    --size-multiplier: 1.35;
+    --button-size-multiplier: 1.35;
   }
 
   &.btn-block {
@@ -85,17 +88,17 @@
 
   @each $color in $colors {
     &.btn-#{$color} {
-      --button-color: var(--color-#{$color});
+      --button-theme-color: var(--color-#{$color});
 
       &:hover:not(.btn-outline) {
-        --button-color: var(--color-#{$color}-dark);
+        --button-theme-color: var(--color-#{$color}-dark);
       }
     }
 
     &.btn.btn-#{$color} {
       &:active,
       &.btn-active {
-        --button-color: var(--color-#{$color}-darker);
+        --button-theme-color: var(--color-#{$color}-darker);
 
         background-color: var(--color-#{$color}-darker);
       }

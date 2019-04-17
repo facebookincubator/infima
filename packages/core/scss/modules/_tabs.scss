@@ -1,6 +1,6 @@
 .tabs {
-  --color-active: var(--color-primary);
-  --tab-spacing: 0.0625rem;
+  --tabs-color-active: var(--color-primary);
+  --tabs-spacing: 0.0625rem;
 
   margin-bottom: 0;
   padding-left: 0;
@@ -14,7 +14,7 @@
 
     &.tab-active {
       color: var(--color-black);
-      border-bottom-color: var(--color-active);
+      border-bottom-color: var(--tabs-color-active);
     }
 
     &:not(.tab-active):hover {
@@ -36,11 +36,11 @@
 
       @media (max-width: 1024px) {
         &:not(:first-child) {
-          margin-top: var(--tab-spacing);
+          margin-top: var(--tabs-spacing);
         }
 
         &:not(:last-child) {
-          margin-bottom: var(--tab-spacing);
+          margin-bottom: var(--tabs-spacing);
         }
       }
     }

@@ -27,7 +27,7 @@ $grid-breakpoints: (
 );
 
 :root {
-  /* Colors */
+  // Colors.
   --color-primary: #{$color-primary};
   --color-primary-dark: #{darken($color-primary, $dark-value)};
   --color-primary-darker: #{darken($color-primary, $darker-value)};
@@ -65,8 +65,8 @@ $grid-breakpoints: (
   --color-danger-light: #{lighten($color-danger, $light-value)};
   --color-danger-lighter: #{lighten($color-danger, $light-value)};
   --color-link: var(--color-primary);
-  --color-white: #fff; /* White */
-  --color-black: #000; /* Black */
+  --color-white: #fff;
+  --color-black: #000;
   --color-black-alpha-05: rgba(0, 0, 0, 0.05);
   --color-black-alpha-10: rgba(0, 0, 0, 0.1);
   --color-black-alpha-15: rgba(0, 0, 0, 0.15);
@@ -77,14 +77,14 @@ $grid-breakpoints: (
   --color-black-alpha-60: rgba(0, 0, 0, 0.6);
   --color-black-alpha-80: rgba(0, 0, 0, 0.8);
 
-  /* Base */
+  // Base.
   --background-color: transparent;
   --global-border-width: 1px;
   --global-radius: 0.25rem;
   --global-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
   --media-breakpoint: 1024px;
 
-  /* Typography */
+  // Typography.
   --font-color-base: #1c1e21;
   --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
@@ -97,29 +97,25 @@ $grid-breakpoints: (
   --font-weight-base: var(--font-weight-normal);
   --line-height-base: 1.5;
 
-  /* Grid */
+  // Grid.
   --container-width: 1140px;
   --global-spacing: 1rem;
   --vertical-spacing: var(--global-spacing);
   --horizontal-spacing: var(--global-spacing);
 
-  /* Navbar */
+  // Navbar.
   --navbar-height: 3.75rem;
 
-  /* Buttons */
-  --button-border-radius: 0.375rem;
-  --button-transition-duration: 0.15s;
-
-  /* Links */
+  // Links.
   --link-color: var(--color-link);
   --link-decoration: none;
   --link-hover-color: var(--link-color);
   --link-hover-decoration: underline;
 
-  /* Paragraphs */
+  // Paragraphs.
   --paragraph-margin-bottom: 1rem;
 
-  /* Headings */
+  // Headings.
   --headings-margin-top: 0;
   --headings-margin-bottom: var(--vertical-spacing);
   --headings-font-family: inherit;
@@ -135,16 +131,16 @@ $grid-breakpoints: (
 
   --headings-color: inherit;
 
-  /* Lists */
+  // Lists.
   --list-left-padding: 2rem;
   --list-margin: 1rem;
   --list-item-margin: 0.25rem;
   --list-paragraph-margin: 1rem;
 
-  /* Images */
+  // Images.
   --image-alignment-padding: 1.25rem;
 
-  /* Tables */
+  // Tables.
   --table-cell-padding: 0.75rem;
 
   --table-bg: transparent;
@@ -159,13 +155,13 @@ $grid-breakpoints: (
 
   --table-cell-color: inherit;
 
-  /* Blockquotes */
+  // Blockquotes.
   --blockquote-color: #6a737d;
   --blockquote-font-size: var(--font-size-base);
   --blockquote-padding-x: 0;
   --blockquote-padding-y: 0;
 
-  /* Code */
+  // Code.
   --code-bg: rgba(27, 31, 35, 0.05);
   --code-border-radius: var(--global-radius);
   --code-color: inherit;
@@ -188,7 +184,7 @@ $grid-breakpoints: (
   --kbd-padding-x: 0.3125rem;
   --kbd-padding-y: 0.1875rem;
 
-  /* Horizontal Rules */
+  // Horizontal Rules.
   --hr-border-color: #dfe2e5;
   --hr-border-width: 1px;
   --hr-vertical-margin: 1.5rem;

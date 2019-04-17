@@ -1,6 +1,6 @@
 .pills {
-  --color-active: var(--color-primary);
-  --pill-spacing: 0.0625rem;
+  --pills-color-active: var(--color-primary);
+  --pills-spacing: 0.0625rem;
 
   padding-left: 0;
 
@@ -17,8 +17,8 @@
           rgba(255, 255, 255, 0.85),
           rgba(255, 255, 255, 0.85)
         )
-        var(--color-active);
-      color: var(--color-active);
+        var(--pills-color-active);
+      color: var(--pills-color-active);
     }
 
     &:not(.pill-active):hover {
@@ -27,11 +27,11 @@
     }
 
     &:not(:first-child) {
-      margin-left: var(--pill-spacing);
+      margin-left: var(--pills-spacing);
     }
 
     &:not(:last-child) {
-      margin-right: var(--pill-spacing);
+      margin-right: var(--pills-spacing);
     }
   }
 
@@ -53,11 +53,11 @@
 
       @media (max-width: 1024px) {
         &:not(:first-child) {
-          margin-top: var(--pill-spacing);
+          margin-top: var(--pills-spacing);
         }
 
         &:not(:last-child) {
-          margin-bottom: var(--pill-spacing);
+          margin-bottom: var(--pills-spacing);
         }
       }
     }

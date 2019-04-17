@@ -1,32 +1,30 @@
 .badge {
-    --badge-color: transparent;
+  --badge-background-color: inherit; // Set a default which will be overridden later.
+  --badge-border-color: var(--badge-background-color);
+  --badge-border-radius: var(--global-radius);
+  --badge-border-width: var(--global-border-width);
+  --badge-color: var(--color-white);
+  --badge-padding-horizontal: calc(var(--horizontal-spacing) * 0.5);
+  --badge-padding-vertical: calc(var(--vertical-spacing) * 0.25);
 
-    --background-color: var(--badge-color);
-    --border-color: var(--badge-color);
-    --border-radius: var(--global-radius);
-    --border-width: var(--global-border-width);
-    --color: var(--color-white);
-    --padding-horizontal: 0.5rem;
-    --padding-vertical: 0.25rem;
+  background-color: var(--badge-background-color);
+  border-color: var(--badge-border-color);
+  border-style: solid;
+  border-width: var(--badge-border-width);
+  border-radius: var(--badge-border-radius);
+  box-sizing: border-box;
+  color: var(--badge-color);
+  font-size: 0.7rem;
+  font-weight: var(--font-weight-bold);
+  padding: var(--badge-padding-vertical) var(--badge-padding-horizontal);
 
-    background-color: var(--background-color);
-    border-color: var(--border-color);
-    border-style: solid;
-    border-width: var(--border-width);
-    border-radius: var(--border-radius);
-    box-sizing: border-box;
-    color: var(--color-white);
-    font-size: 0.7rem;
-    font-weight: var(--font-weight-bold);
-    padding: var(--padding-vertical) var(--padding-horizontal);
-
-    @each $color in $colors {
-      &.badge-#{$color} {
-        --badge-color: var(--color-#{$color});
-      }
-    }
-
-    &.badge-secondary {
-      color: var(--color-black);
+  @each $color in $colors {
+    &.badge-#{$color} {
+      --badge-background-color: var(--color-#{$color});
     }
   }
+
+  &.badge-secondary {
+    color: var(--color-black);
+  }
+}

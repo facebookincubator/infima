@@ -1,18 +1,18 @@
 .avatar {
-  --intro-left-margin: 1rem;
-  --intro-alignment: inherit;
-  --photo-bottom-margin: 0;
-  --photo-size-sm: 2rem;
-  --photo-size-md: 3rem;
-  --photo-size-lg: 4rem;
-  --photo-size-xl: 6rem;
+  --avatar-intro-left-margin: 1rem;
+  --avatar-intro-alignment: inherit;
+  --avatar-photo-bottom-margin: 0;
+  --avatar-photo-size-sm: 2rem;
+  --avatar-photo-size-md: 3rem;
+  --avatar-photo-size-lg: 4rem;
+  --avatar-photo-size-xl: 6rem;
 
   display: flex;
 
   &.avatar-vertical {
-    --intro-left-margin: 0;
-    --intro-alignment: center;
-    --photo-bottom-margin: 0.5rem;
+    --avatar-intro-left-margin: 0;
+    --avatar-intro-alignment: center;
+    --avatar-photo-bottom-margin: 0.5rem;
 
     flex-direction: column;
     align-items: center;
@@ -24,23 +24,23 @@
 
   .avatar-photo {
     border-radius: 50%;
-    height: var(--photo-size-md);
-    margin-bottom: var(--photo-bottom-margin);
-    width: var(--photo-size-md);
+    height: var(--avatar-photo-size-md);
+    margin-bottom: var(--avatar-photo-bottom-margin);
+    width: var(--avatar-photo-size-md);
 
     &.avatar-photo-sm {
-      height: var(--photo-size-sm);
-      width: var(--photo-size-sm);
+      height: var(--avatar-photo-size-sm);
+      width: var(--avatar-photo-size-sm);
     }
 
     &.avatar-photo-lg {
-      height: var(--photo-size-lg);
-      width: var(--photo-size-lg);
+      height: var(--avatar-photo-size-lg);
+      width: var(--avatar-photo-size-lg);
     }
 
     &.avatar-photo-xl {
-      height: var(--photo-size-xl);
-      width: var(--photo-size-xl);
+      height: var(--avatar-photo-size-xl);
+      width: var(--avatar-photo-size-xl);
     }
   }
 
@@ -49,8 +49,8 @@
     flex: 1 1;
     flex-direction: column;
     justify-content: center;
-    margin-left: var(--intro-left-margin);
-    text-align: var(--intro-alignment);
+    margin-left: var(--avatar-intro-left-margin);
+    text-align: var(--avatar-intro-alignment);
   }
 
   .avatar-name {

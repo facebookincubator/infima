@@ -1,35 +1,33 @@
 .navbar {
+  // TODO: Add navbar-link-active
   --navbar-background-color: var(--color-primary);
-  --navbar-link-color: rgba(0, 0, 0, 0.55);
-  --navbar-link-hover-color: var(--color-white);
-  --navbar-link-active-color: var(--link-color);
   --navbar-dropdown-background-color: var(--color-white);
   --navbar-dropdown-link-color: var(--font-color-base);
   --navbar-dropdown-hover-background-color: var(--color-black-alpha-05);
-  // TODO: Add navbar-link-active
-  --shadow: 0 1px 2px 0 var(--color-black-alpha-05);
-  --item-padding-horizontal: 1rem;
-  --item-padding-vertical: 0.25rem;
-  --link-color: var(--navbar-link-color);
-  --link-hover-color: var(--navbar-link-hover-color);
-  --padding-horizontal: var(--horizontal-spacing);
-  --padding-vertical: calc(var(--vertical-spacing) * 0.5);
-  --search-input-background-color: var(--color-black-alpha-20);
-  --search-input-color: var(--color-secondary);
-  --search-input-placeholder-color: rgba(255, 255, 255, 0.5);
-  --search-input-icon: url('data:image/svg+xml;utf8,<svg alt="Search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" fill="rgba(255,255,255,0.5)" /></svg>');
+  --navbar-item-padding-horizontal: 1rem;
+  --navbar-item-padding-vertical: 0.25rem;
+  --navbar-link-color: rgba(0, 0, 0, 0.55);
+  --navbar-link-hover-color: var(--color-white);
+  --navbar-link-active-color: var(--link-color);
+  --navbar-padding-horizontal: var(--horizontal-spacing);
+  --navbar-padding-vertical: calc(var(--vertical-spacing) * 0.5);
+  --navbar-shadow: 0 1px 2px 0 var(--color-black-alpha-05);
+  --navbar-search-input-background-color: var(--color-black-alpha-20);
+  --navbar-search-input-color: var(--color-secondary);
+  --navbar-search-input-placeholder-color: rgba(255, 255, 255, 0.5);
+  --navbar-search-input-icon: url('data:image/svg+xml;utf8,<svg alt="Search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" fill="rgba(255,255,255,0.5)" /></svg>');
 
   background-color: var(--navbar-background-color);
-  box-shadow: var(--shadow);
+  box-shadow: var(--navbar-shadow);
   box-sizing: border-box;
   height: var(--navbar-height);
-  padding: var(--padding-vertical) var(--padding-horizontal);
+  padding: var(--navbar-padding-vertical) var(--navbar-padding-horizontal);
   width: 100%;
   z-index: 100; // TODO: Extract out.
 
   &,
   > .container,
-  > .container-fluid, {
+  > .container-fluid {
     display: flex;
   }
 
@@ -49,7 +47,7 @@
   }
 
   .navbar-brand {
-    color: var(--link-color);
+    color: var(--navbar-link-color);
     font-weight: bold;
     margin-right: 1rem;
     text-decoration: none;
@@ -66,14 +64,15 @@
       position: relative;
 
       .navbar-link {
-        color: var(--link-color);
+        color: var(--navbar-link-color);
         cursor: pointer;
         display: block;
-        padding: var(--item-padding-vertical) var(--item-padding-horizontal);
+        padding: var(--navbar-item-padding-vertical)
+          var(--navbar-item-padding-horizontal);
         text-decoration: none;
 
         &:hover {
-          color: var(--link-hover-color);
+          color: var(--navbar-link-hover-color);
         }
       }
 
@@ -129,34 +128,34 @@
 
   &.navbar-dark {
     --navbar-background-color: #303846;
-    --link-color: var(--color-secondary);
-    --link-hover-color: var(--color-secondary);
+    --navbar-link-color: var(--color-secondary);
+    --navbar-link-hover-color: var(--color-secondary);
   }
 
   &.navbar-light {
     --navbar-background-color: var(--color-white);
-    --link-color: var(--color-primary);
-    --link-hover-color: var(--color-primary-darker);
-    --search-input-background-color: rgba(0, 0, 0, 0.05);
-    --search-input-color: var(--color-secondary-darkerer);
-    --search-input-placeholder-color: var(--color-secondary-darkerer);
-    --search-input-icon: url('data:image/svg+xml;utf8,<svg alt="Search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" fill="rgba(0,0,0,0.5)" /></svg>');
+    --navbar-link-color: var(--color-primary);
+    --navbar-link-hover-color: var(--color-primary-darker);
+    --navbar-search-input-background-color: rgba(0, 0, 0, 0.05);
+    --navbar-search-input-color: var(--color-secondary-darkerer);
+    --navbar-search-input-placeholder-color: var(--color-secondary-darkerer);
+    --navbar-search-input-icon: url('data:image/svg+xml;utf8,<svg alt="Search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" fill="rgba(0,0,0,0.5)" /></svg>');
   }
 
   .navbar-search {
-    padding-left: var(--padding-horizontal);
+    padding-left: var(--navbar-padding-horizontal);
 
     input {
-      background-image: var(--search-input-icon);
+      background-image: var(--navbar-search-input-icon);
       background-repeat: no-repeat;
       background-size: 1rem 1rem;
       background-position-y: center;
       background-position-x: 0.75rem;
-      background-color: var(--search-input-background-color);
+      background-color: var(--navbar-search-input-background-color);
       border-radius: 2rem;
       border-width: 0;
       cursor: text;
-      color: var(--search-input-color);
+      color: var(--navbar-search-input-color);
       display: inline-block;
       font-size: 0.9rem;
       line-height: 2rem;
@@ -166,7 +165,7 @@
       width: 12.5rem;
 
       &::placeholder {
-        color: var(--search-input-placeholder-color);
+        color: var(--navbar-search-input-placeholder-color);
       }
     }
   }
