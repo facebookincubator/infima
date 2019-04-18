@@ -93,7 +93,15 @@
     shade(var(--darkest-value))
   );
   --color-info-light: color-mod(var(--color-info), tint(var(--light-value)));
-  --color-info-lighter: color-mod(var(--color-info), tint(var(--light-value)));
+  --color-info-lighter: color-mod(
+    var(--color-info),
+    tint(var(--lighter-value))
+  );
+  --color-info-lightest: color-mod(
+    var(--color-info),
+    tint(var(--lightest-value))
+  );
+
   --color-warning: #ffba00;
   --color-warning-dark: color-mod(
     var(--color-warning),
