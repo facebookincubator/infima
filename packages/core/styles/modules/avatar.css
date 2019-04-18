@@ -53,11 +53,22 @@
   }
 
   &.avatar-vertical {
-    --avatar-intro-left-margin: 0;
     --avatar-intro-alignment: center;
+    --avatar-intro-left-margin: 0;
     --avatar-photo-bottom-margin: 0.5rem;
 
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+
+    // @compat
+    & .avatar-intro {
+      margin-left: var(--avatar-intro-left-margin); // @compat
+      text-align: var(--avatar-intro-alignment); // @compat
+    }
+
+    // @compat
+    & .avatar-photo {
+      margin-bottom: var(--avatar-photo-bottom-margin); // @compat
+    }
   }
 }

@@ -1,13 +1,14 @@
+// TODO: Compat
 .breadcrumbs {
-  --border-radius: 1.5rem;
+  --breadcrumb-border-radius: 1.5rem;
   --breadcrumb-spacing: 0.0625rem;
-  --color-active: var(--color-primary);
-  --padding-horizontal: 1rem;
-  --padding-vertical: 0.5rem;
-  --size-multiplier: 1;
-  --separator: url('data:image/svg+xml;utf8,<svg alt="Chevron Right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><g><g><polygon points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>');
-  --separator-size: 0.5rem;
-  --separator-size-multiplier: 1.25;
+  --breadcrumb-color-active: var(--color-primary);
+  --breadcrumb-padding-horizontal: 1rem;
+  --breadcrumb-padding-vertical: 0.5rem;
+  --breadcrumb-size-multiplier: 1;
+  --breadcrumb-separator: url('data:image/svg+xml;utf8,<svg alt="Chevron Right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><g><g><polygon points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>');
+  --breadcrumb-separator-size: 0.5rem;
+  --breadcrumb-separator-size-multiplier: 1.25;
 
   margin-bottom: 0;
   padding-left: 0;
@@ -24,30 +25,35 @@
       margin-right: var(--breadcrumb-spacing);
 
       &:after {
-        background-image: var(--separator);
+        background-image: var(--breadcrumb-separator);
         background-position: center;
         content: ' ';
         display: inline-block;
         height: calc(
-          var(--separator-size) * var(--size-multiplier) *
-            var(--separator-size-multiplier)
+          var(--breadcrumb-separator-size) * var(--breadcrumb-size-multiplier) *
+            var(--breadcrumb-separator-size-multiplier)
         );
         margin: 0 0.5rem;
         opacity: 0.5;
         width: calc(
-          var(--separator-size) * var(--size-multiplier) *
-            var(--separator-size-multiplier)
+          var(--breadcrumb-separator-size) * var(--breadcrumb-size-multiplier) *
+            var(--breadcrumb-separator-size-multiplier)
         );
       }
     }
 
     & .breadcrumb-link {
-      border-radius: var(--border-radius);
+      border-radius: var(--breadcrumb-border-radius);
       color: var(--font-color-base);
       display: inline-block;
-      font-size: calc(1rem * var(--size-multiplier));
-      padding: calc(var(--padding-vertical) * var(--size-multiplier))
-        calc(var(--padding-horizontal) * var(--size-multiplier));
+      font-size: calc(1rem * var(--breadcrumb-size-multiplier));
+      padding: calc(
+          var(--breadcrumb-padding-vertical) * var(--breadcrumb-size-multiplier)
+        )
+        calc(
+          var(--breadcrumb-padding-horizontal) *
+            var(--breadcrumb-size-multiplier)
+        );
       text-decoration: none;
     }
 
@@ -58,8 +64,8 @@
             rgba(255, 255, 255, 0.85),
             rgba(255, 255, 255, 0.85)
           )
-          var(--color-active);
-        color: var(--color-active);
+          var(--breadcrumb-color-active);
+        color: var(--breadcrumb-color-active);
       }
     }
 
@@ -72,10 +78,10 @@
   }
 
   &.breadcrumbs-sm {
-    --size-multiplier: 0.8;
+    --breadcrumb-size-multiplier: 0.8;
   }
 
   &.breadcrumbs-lg {
-    --size-multiplier: 1.2;
+    --breadcrumb-size-multiplier: 1.2;
   }
 }

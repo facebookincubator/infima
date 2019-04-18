@@ -11,11 +11,17 @@
   &.hero-light {
     --hero-background-color: var(--color-white);
     --hero-text-color: var(--color-primary);
+
+    background-color: var(--hero-background-color); // @compat
+    color: var(--hero-text-color); // @compat
   }
 
   &.hero-dark {
     --hero-background-color: #303846;
     --hero-text-color: var(--color-white);
+
+    background-color: var(--hero-background-color); // @compat
+    color: var(--hero-text-color); // @compat
   }
 
   & .hero-title {

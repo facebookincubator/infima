@@ -1,4 +1,4 @@
-/* Headings */
+// Headings
 h1,
 h2,
 h3,
@@ -12,35 +12,17 @@ h6 {
   margin-top: var(--headings-margin-top);
 }
 
-h1 {
-  font-size: var(--h1-font-size);
-}
-
-h2 {
-  font-size: var(--h2-font-size);
-}
-
-h3 {
-  font-size: var(--h3-font-size);
-}
-
-h4 {
-  font-size: var(--h4-font-size);
-}
-
-h5 {
-  font-size: var(--h5-font-size);
-}
-
-h6 {
-  font-size: var(--h6-font-size);
+@for $size from 1 to 6 {
+  h$(size) {
+    font-size: var(--h$(size)-font-size);
+  }
 }
 
 strong {
   font-weight: var(--font-weight-bold);
 }
 
-/* Links */
+// Links
 a {
   color: var(--link-color);
   text-decoration: var(--link-decoration);
@@ -61,13 +43,13 @@ a {
   }
 }
 
-/* Paragraphs */
+// Paragraphs
 p {
   margin-bottom: var(--paragraph-margin-bottom);
   margin-top: 0;
 }
 
-/* Code */
+// Code
 code {
   background-color: var(--code-bg);
   border-radius: var(--code-border-radius);
@@ -122,7 +104,7 @@ kbd {
   vertical-align: middle;
 }
 
-/* Blockquotes */
+// Blockquotes
 blockquote {
   color: var(--blockquote-color);
   font-size: var(--blockquote-font-size);
@@ -131,7 +113,7 @@ blockquote {
   padding: var(--blockquote-padding-y) var(--blockquote-padding-x);
 }
 
-/* Lists */
+// Lists
 ul,
 ol {
   margin-bottom: var(--list-margin);
@@ -170,7 +152,7 @@ li {
   }
 }
 
-/* Horizontal Rules */
+// Horizontal Rules
 hr {
   border-color: var(--hr-border-color);
   border-style: solid;

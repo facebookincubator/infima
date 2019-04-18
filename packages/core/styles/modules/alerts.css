@@ -21,6 +21,10 @@
     &.alert-$(color) {
       --alert-color: var(--color-white);
       --alert-background-color: var(--color-$(color));
+
+      color: var(--alert-color); // @compat
+      background-color: var(--alert-background-color); // @compat
+      border-color: var(--alert-background-color); // @compat
     }
   }
 

@@ -70,16 +70,21 @@
         --col-width: 100%;
         flex-basis: var(--col-width);
         margin-left: 0;
+
+        max-width: var(--col-width); // @compat
       }
     }
 
     @for $column from 1 to 12 {
       &.col-$(column) {
-        --col-width: calc($(column)/12 * 100%);
+        --col-width: calc($(column) / 12 * 100%);
+
+        flex: 0 0 var(--col-width); // @compat
+        max-width: var(--col-width); // @compat
       }
 
       &.col-offset-$(column) {
-        margin-left: calc($(column)/12 * 100%);
+        margin-left: calc($(column) / 12 * 100%);
       }
     }
   }

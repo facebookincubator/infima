@@ -57,31 +57,31 @@
     align-items: center;
     display: flex;
     flex: 1 0 0;
+  }
 
-    & > .navbar-item {
-      display: inline-block;
-      margin-top: 0;
-      position: relative;
+  & .navbar-item {
+    display: inline-block;
+    margin-top: 0;
+    position: relative;
 
-      & .navbar-link {
-        color: var(--navbar-link-color);
-        cursor: pointer;
+    &:hover,
+    &:focus {
+      & .navbar-dropdown {
         display: block;
-        padding: var(--navbar-item-padding-vertical)
-          var(--navbar-item-padding-horizontal);
-        text-decoration: none;
-
-        &:hover {
-          color: var(--navbar-link-hover-color);
-        }
       }
+    }
+  }
 
-      &:hover,
-      &:focus {
-        & .navbar-dropdown {
-          display: block;
-        }
-      }
+  & .navbar-link {
+    color: var(--navbar-link-color);
+    cursor: pointer;
+    display: block;
+    padding: var(--navbar-item-padding-vertical)
+      var(--navbar-item-padding-horizontal);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--navbar-link-hover-color);
     }
   }
 
@@ -128,8 +128,25 @@
 
   &.navbar-dark {
     --navbar-background-color: #303846;
-    --navbar-link-color: var(--color-secondary);
+    --navbar-link-color: var(--color-white);
     --navbar-link-hover-color: var(--color-secondary);
+
+    background-color: var(--navbar-background-color); // @compat
+
+    // @compat
+    & .navbar-brand {
+      color: var(--navbar-link-color); // @compat
+    }
+
+    // @compat
+    & .navbar-link {
+      color: var(--navbar-link-color); // @compat
+
+      // @compat
+      &:hover {
+        color: var(--navbar-link-hover-color); // @compat
+      }
+    }
   }
 
   &.navbar-light {
@@ -140,18 +157,52 @@
     --navbar-search-input-color: var(--color-secondary-darkest);
     --navbar-search-input-placeholder-color: var(--color-secondary-darkest);
     --navbar-search-input-icon: url('data:image/svg+xml;utf8,<svg alt="Search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" fill="rgba(0,0,0,0.5)" /></svg>');
+
+    background-color: var(--navbar-background-color); // @compat
+
+    // @compat
+    & .navbar-brand {
+      color: var(--navbar-link-color); // @compat
+    }
+
+    // @compat
+    & .navbar-link {
+      color: var(--navbar-link-color); // @compat
+
+      // @compat
+      &:hover {
+        color: var(--navbar-link-hover-color); // @compat
+      }
+    }
+
+    // @compat
+    & .navbar-search {
+      // @compat
+      & input {
+        background-color: var(
+          --navbar-search-input-background-color
+        ); // @compat
+        background-image: var(--navbar-search-input-icon); // @compat
+        color: var(--navbar-search-input-color); // @compat
+
+        // @compat
+        &::placeholder {
+          color: var(--navbar-search-input-placeholder-color); // @compat
+        }
+      }
+    }
   }
 
   & .navbar-search {
     padding-left: var(--navbar-padding-horizontal);
 
     & input {
+      background-color: var(--navbar-search-input-background-color);
       background-image: var(--navbar-search-input-icon);
+      background-position-x: 0.75rem;
+      background-position-y: center;
       background-repeat: no-repeat;
       background-size: 1rem 1rem;
-      background-position-y: center;
-      background-position-x: 0.75rem;
-      background-color: var(--navbar-search-input-background-color);
       border-radius: 2rem;
       border-width: 0;
       cursor: text;
