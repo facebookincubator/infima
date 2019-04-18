@@ -62,7 +62,7 @@ A UI framework for content-centric websites.
   - [x] Margin
   - [x] Padding
   - [ ] Responsive utilities
-  - [ ] Shadows
+  - [x] Shadow
   - [ ] Spinners
   - [x] Text
 - Future

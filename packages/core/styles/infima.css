@@ -27,5 +27,6 @@
 @import 'modules/typography';
 
 // Utilities
+@import 'utilities/shadow';
 @import 'utilities/spacings';
 @import 'utilities/text';
