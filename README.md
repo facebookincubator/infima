@@ -39,7 +39,7 @@ A UI framework for content-centric websites.
   - [ ] Contents
     - [x] Desktop
     - [ ] Mobile
-  - [ ] Dropdowns
+  - [x] Dropdowns
   - [x] Footer
   - [ ] Grid
     - [x] Basic grid
