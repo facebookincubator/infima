@@ -23,7 +23,7 @@
   & .dropdown-menu {
     background-color: var(--dropdown-background-color);
     border-radius: var(--global-radius);
-    box-shadow: var(--global-shadow);
+    box-shadow: var(--global-shadow-md);
     display: none;
     min-width: 10rem;
     list-style: none;

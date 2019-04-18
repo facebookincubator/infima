@@ -9,7 +9,7 @@ A UI framework for content-centric websites.
   - [ ] Complete TODOs in code
   - [ ] Audit global CSS variables list and scope the component-specific ones into component base class
   - [ ] Audit z-index list (nav, dropdown, tooltips, etc)
-  - [ ] Define box-shadow for various elevations
+  - [x] Define box-shadow for various elevations
   - [ ] Define fast and slow transition speeds
   - [ ] Define shades of gray
 - Medium
@@ -62,6 +62,7 @@ A UI framework for content-centric websites.
   - [x] Margin
   - [x] Padding
   - [ ] Responsive utilities
+  - [ ] Shadows
   - [ ] Spinners
   - [x] Text
 - Future

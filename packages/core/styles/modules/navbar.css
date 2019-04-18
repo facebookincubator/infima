@@ -8,7 +8,7 @@
   --navbar-link-active-color: var(--link-color);
   --navbar-padding-horizontal: var(--horizontal-spacing);
   --navbar-padding-vertical: calc(var(--vertical-spacing) * 0.5);
-  --navbar-shadow: 0 1px 2px 0 var(--color-black-alpha-05);
+  --navbar-shadow: var(--global-shadow-lw);
   --navbar-search-input-background-color: var(--color-black-alpha-20);
   --navbar-search-input-color: var(--color-secondary);
   --navbar-search-input-placeholder-color: rgba(255, 255, 255, 0.5);

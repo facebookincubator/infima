@@ -168,7 +168,10 @@
   --background-color: transparent;
   --global-border-width: 1px;
   --global-radius: 0.25rem;
-  --global-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+  --global-shadow-lw: 0 1px 2px 0 var(--color-black-alpha-10);
+  --global-shadow-md: 0 5px 40px var(--color-black-alpha-20);
+  --global-shadow-tl: 0 12px 28px 0 var(--color-black-alpha-20),
+    0 2px 4px 0 var(--color-black-alpha-10);
 
   // Typography.
   --font-color-base: #1c1e21;

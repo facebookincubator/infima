@@ -35,8 +35,7 @@
   text-decoration: none;
   transition: color var(--button-transition-duration) ease-in-out,
     background var(--button-transition-duration) ease-in-out,
-    border-color var(--button-transition-duration) ease-in-out,
-    box-shadow var(--button-transition-duration) ease-in-out;
+    border-color var(--button-transition-duration) ease-in-out;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
