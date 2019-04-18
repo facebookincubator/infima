@@ -1,8 +1,8 @@
 :root {
   // Colors.
-  --dark-value: 15%;
-  --darker-value: 20%;
-  --darkest-value: 40%;
+  --dark-value: 10%;
+  --darker-value: 15%;
+  --darkest-value: 30%;
   --light-value: 15%;
   --lighter-value: 30%;
   --lightest-value: 50%;
@@ -85,7 +85,7 @@
     tint(var(--lightest-value))
   );
 
-  --color-info: #6bcebb;
+  --color-info: #54c7ec;
   --color-info-dark: color-mod(var(--color-info), shade(var(--dark-value)));
   --color-info-darker: color-mod(var(--color-info), shade(var(--darker-value)));
   --color-info-darkest: color-mod(
@@ -128,7 +128,7 @@
     tint(var(--lightest-value))
   );
 
-  --color-danger: #f0233f;
+  --color-danger: #fa383e;
   --color-danger-dark: color-mod(var(--color-danger), shade(var(--dark-value)));
   --color-danger-darker: color-mod(
     var(--color-danger),

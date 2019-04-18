@@ -68,4 +68,4 @@ A UI framework for content-centric websites.
   - [ ] Banner (for announcement purposes)
   - [ ] Forms
   - [ ] Modal
-  - [ ] Tooltip
+  - [ ] Tooltips
