@@ -1,4 +1,4 @@
-.pagination {
+:root {
   --pagination-border-radius: calc(
     var(--global-radius) * var(--pagination-size-multiplier)
   );
@@ -8,7 +8,9 @@
   --pagination-padding-horizontal: calc(var(--horizontal-spacing) * 1);
   --pagination-padding-vertical: calc(var(--vertical-spacing) * 0.25);
   --pagination-size-multiplier: 1;
+}
 
+.pagination {
   font-size: var(--pagination-font-size);
   padding-left: 0;
 

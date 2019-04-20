@@ -1,8 +1,10 @@
-.contents {
+:root {
   --contents-border-color: var(--color-secondary);
   --contents-padding-left: var(--horizontal-spacing);
   --contents-padding-vertical: calc(var(--vertical-spacing) * 0.5);
+}
 
+.contents {
   font-size: 0.9rem;
   margin-bottom: 0;
   padding-bottom: var(--contents-padding-vertical);

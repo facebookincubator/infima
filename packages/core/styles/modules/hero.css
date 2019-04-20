@@ -1,7 +1,9 @@
-.hero {
+:root {
   --hero-background-color: var(--color-primary);
   --hero-text-color: var(--color-white);
+}
 
+.hero {
   align-items: center;
   background-color: var(--hero-background-color);
   color: var(--hero-text-color);

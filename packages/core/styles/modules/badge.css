@@ -1,4 +1,4 @@
-.badge {
+:root {
   --badge-background-color: inherit; // Set a default which will be overridden later.
   --badge-border-color: var(--badge-background-color);
   --badge-border-radius: var(--global-radius);
@@ -6,7 +6,9 @@
   --badge-color: var(--color-white);
   --badge-padding-horizontal: calc(var(--horizontal-spacing) * 0.5);
   --badge-padding-vertical: calc(var(--vertical-spacing) * 0.25);
+}
 
+.badge {
   background-color: var(--badge-background-color);
   border-color: var(--badge-border-color);
   border-style: solid;

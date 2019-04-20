@@ -7,7 +7,7 @@ A UI framework for content-centric websites.
 - High
   - [ ] Finish all components in checklist
   - [ ] Complete TODOs in code
-  - [ ] Audit global CSS variables list and scope the component-specific ones into component base class
+  - [x] Audit global CSS variables list and scope the component-specific ones into component file's root
   - [ ] Audit z-index list (nav, dropdown, tooltips, etc)
   - [x] Define box-shadow for various elevations
   - [ ] Define fast and slow transition speeds

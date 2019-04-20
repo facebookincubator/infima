@@ -1,6 +1,8 @@
-.button-group {
+:root {
   --button-group-margin: 2px;
+}
 
+.button-group {
   display: inline-flex;
 
   & > .button {

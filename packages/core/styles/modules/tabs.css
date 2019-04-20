@@ -1,7 +1,9 @@
-.tabs {
+:root {
   --tabs-color-active: var(--color-primary);
   --tabs-spacing: 0.0625rem;
+}
 
+.tabs {
   margin-bottom: 0;
   padding-left: 0;
 

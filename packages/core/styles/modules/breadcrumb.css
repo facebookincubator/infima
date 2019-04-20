@@ -1,5 +1,5 @@
 // TODO: Compat
-.breadcrumbs {
+:root {
   --breadcrumb-border-radius: 1.5rem;
   --breadcrumb-spacing: 0.0625rem;
   --breadcrumb-color-active: var(--color-primary);
@@ -9,7 +9,9 @@
   --breadcrumb-separator: url('data:image/svg+xml;utf8,<svg alt="Chevron Right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><g><g><polygon points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>');
   --breadcrumb-separator-size: 0.5rem;
   --breadcrumb-separator-size-multiplier: 1.25;
+}
 
+.breadcrumbs {
   margin-bottom: 0;
   padding-left: 0;
 

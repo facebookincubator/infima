@@ -1,7 +1,9 @@
-.pills {
+:root {
   --pills-color-active: var(--color-primary);
   --pills-spacing: 0.0625rem;
+}
 
+.pills {
   padding-left: 0;
 
   & > .pill-item {

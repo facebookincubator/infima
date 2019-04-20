@@ -1,8 +1,10 @@
-.dropdown {
+:root {
   --dropdown-background-color: var(--color-white);
   --dropdown-link-color: var(--font-color-base);
   --dropdown-hover-background-color: var(--color-black-alpha-05);
+}
 
+.dropdown {
   display: inline-flex;
   position: relative;
   vertical-align: top;

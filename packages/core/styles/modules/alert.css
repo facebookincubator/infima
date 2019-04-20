@@ -1,4 +1,4 @@
-.alert {
+:root {
   --alert-background-color: inherit; // Set a default which will be overridden later.
   --alert-border-color: var(--alert-background-color);
   --alert-border-radius: var(--global-radius);
@@ -7,7 +7,9 @@
   --alert-color: var(--color-white);
   --alert-padding-horizontal: var(--horizontal-spacing);
   --alert-padding-vertical: var(--vertical-spacing);
+}
 
+.alert {
   background-color: var(--alert-background-color);
   border-color: var(--alert-border-color);
   border-style: solid;

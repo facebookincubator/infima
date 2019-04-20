@@ -1,10 +1,7 @@
 // TODO: Compat
-.button {
-  // TODO: Allow links to be styled as buttons.
-  --button-theme-color: transparent;
-
-  --button-background-color: var(--button-theme-color);
-  --button-border-color: var(--button-theme-color);
+:root {
+  --button-background-color: inherit;
+  --button-border-color: var(--button-background-color);
   --button-border-width: var(--global-border-width);
   --button-color: var(--color-white);
   --button-padding-horizontal: 1.5rem;
@@ -14,7 +11,10 @@
   --button-border-radius: calc(
     var(--global-radius) * var(--button-size-multiplier)
   );
+}
 
+.button {
+  // TODO: Allow links to be styled as buttons.
   appearance: none;
   background-color: var(--button-background-color);
   border-color: var(--button-border-color);
@@ -50,10 +50,10 @@
 
   &.button--outline {
     --button-background-color: transparent;
-    --button-color: var(--button-theme-color);
+    --button-color: var(--button-border-color);
 
     &:hover {
-      --button-background-color: var(--button-theme-color);
+      --button-background-color: var(--button-border-color);
     }
 
     &:hover,
@@ -90,10 +90,15 @@
 
 @each $color in (primary, secondary, success, info, warning, danger) {
   .button.button--$(color) {
-    --button-theme-color: var(--color-$(color));
+    --button-border-color: var(--color-$(color));
 
-    &:hover:not(.button--outline) {
-      --button-theme-color: var(--color-$(color)-dark);
+    &:not(.button--outline) {
+      --button-background-color: var(--color-$(color));
+
+      &:hover {
+        --button-background-color: var(--color-$(color)-dark);
+        --button-border-color: var(--color-$(color)-dark);
+      }
     }
   }
 
@@ -101,9 +106,15 @@
   .button.button.button--$(color) {
     &:active,
     &.button--active {
-      --button-theme-color: var(--color-$(color)-darker);
+      --button-border-color: var(--color-$(color)-darker);
+      --button-background-color: var(--color-$(color)-darker);
 
-      background-color: var(--color-$(color)-darker);
+      background-color: var(
+        --color-$(color)-darker
+      ); // Has to be explicitly defined because .button--outline has quite high specificity.
+      border-color: var(
+        --color-$(color)-darker
+      ); // Has to be explicitly defined because .button--outline has quite high specificity.
     }
   }
 }

@@ -1,4 +1,4 @@
-.avatar {
+:root {
   --avatar-intro-left-margin: 1rem;
   --avatar-intro-alignment: inherit;
   --avatar-photo-bottom-margin: 0;
@@ -6,7 +6,9 @@
   --avatar-photo-size-md: 3rem;
   --avatar-photo-size-lg: 4rem;
   --avatar-photo-size-xl: 6rem;
+}
 
+.avatar {
   display: flex;
 
   & .avatar__photo-link {

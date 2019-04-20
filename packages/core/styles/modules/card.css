@@ -1,9 +1,11 @@
-.card {
+:root {
   --card-background-color: var(--color-white);
   --card-border-radius: calc(var(--global-radius) * 2);
   --card-horizontal-spacing: var(--global-spacing);
   --card-vertical-spacing: var(--global-spacing);
+}
 
+.card {
   background-color: var(--card-background-color);
   border-radius: var(--card-border-radius);
   box-shadow: var(--global-shadow-lw);

@@ -1,4 +1,4 @@
-.footer {
+:root {
   --footer-background-color: var(--color-black-alpha-05);
   --footer-color: inherit;
   --footer-link-color: var(--color-black-alpha-50);
@@ -7,7 +7,9 @@
   --footer-padding-horizontal: calc(var(--horizontal-spacing) * 2);
   --footer-padding-vertical: calc(var(--vertical-spacing) * 2);
   --footer-title-color: inherit;
+}
 
+.footer {
   background-color: var(--footer-background-color);
   color: var(--footer-color);
   padding: var(--footer-padding-vertical) var(--footer-padding-horizontal);
