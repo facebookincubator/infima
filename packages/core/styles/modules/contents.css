@@ -1,5 +1,5 @@
 :root {
-  --contents-border-color: var(--color-secondary);
+  --contents-border-color: var(--color-emphasis-alpha-50);
   --contents-padding-left: var(--horizontal-spacing);
   --contents-padding-vertical: calc(var(--vertical-spacing) * 0.5);
 }
@@ -21,13 +21,13 @@
   }
 
   &.contents__left-border {
-    border-left-color: var(--contents-border-color);
+    border-left-color: var(--color-emphasis-alpha-30);
     border-left-style: solid;
     border-left-width: 1px;
   }
 
   & .contents__link {
-    color: var(--color-secondary-darkest);
+    color: var(--color-emphasis-alpha-50);
 
     &:hover,
     &.contents__link--active {

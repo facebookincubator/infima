@@ -3,7 +3,7 @@
   --button-background-color: inherit;
   --button-border-color: var(--button-background-color);
   --button-border-width: var(--global-border-width);
-  --button-color: var(--color-white);
+  --button-color: var(--font-color-base-inverse);
   --button-padding-horizontal: 1.5rem;
   --button-padding-vertical: 0.375rem;
   --button-size-multiplier: 1;
@@ -62,7 +62,7 @@
     &:hover,
     &:active,
     &.button--active {
-      --button-color: var(--color-white);
+      --button-color: var(--font-color-base-inverse);
     }
   }
 
@@ -87,7 +87,11 @@
   }
 
   &.button--secondary {
-    color: var(--color-black);
+    color: #1f2227;
+
+    &.button--outline:not(.button--active):not(:hover) {
+      color: var(--font-color-base);
+    }
   }
 }
 

@@ -4,6 +4,7 @@
   );
   --pagination-color-active: var(--color-primary);
   --pagination-font-size: 1rem;
+  --pagination-item-active-background: var(--color-emphasis-alpha-05);
   --pagination-page-spacing: 0.0625rem;
   --pagination-padding-horizontal: calc(var(--horizontal-spacing) * 1);
   --pagination-padding-vertical: calc(var(--vertical-spacing) * 0.25);
@@ -41,19 +42,14 @@
 
     &.page-item--active {
       & .page-link {
-        background: linear-gradient(
-            to top,
-            rgba(255, 255, 255, 0.85),
-            rgba(255, 255, 255, 0.85)
-          )
-          var(--pagination-color-active);
+        background: var(--pagination-item-active-background);
         color: var(--pagination-color-active);
       }
     }
 
     &:not(.page-item--active):hover {
       & .page-link {
-        background-color: var(--color-black-alpha-05);
+        background: var(--pagination-item-active-background);
         transition: background var(--transition-fast)
           cubic-bezier(0.08, 0.52, 0.52, 1);
       }

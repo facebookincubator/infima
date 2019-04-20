@@ -1,7 +1,7 @@
 :root {
-  --dropdown-background-color: var(--color-white);
+  --dropdown-background-color: var(--background-surface-color);
   --dropdown-link-color: var(--font-color-base);
-  --dropdown-hover-background-color: var(--color-black-alpha-05);
+  --dropdown-hover-background-color: var(--color-emphasis-alpha-05);
 }
 
 .dropdown {

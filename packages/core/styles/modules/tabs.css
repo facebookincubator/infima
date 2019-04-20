@@ -15,12 +15,11 @@
     padding: 0.5rem 1.5rem;
 
     &.tab-item--active {
-      color: var(--color-black);
       border-bottom-color: var(--tabs-color-active);
     }
 
     &:not(.tab-item--active):hover {
-      border-bottom-color: var(--color-black-alpha-10);
+      border-bottom-color: var(--color-emphasis-alpha-10);
     }
   }
 

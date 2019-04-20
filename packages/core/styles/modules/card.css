@@ -1,5 +1,5 @@
 :root {
-  --card-background-color: var(--color-white);
+  --card-background-color: var(--background-surface-color);
   --card-border-radius: calc(var(--global-radius) * 2);
   --card-horizontal-spacing: var(--global-spacing);
   --card-vertical-spacing: var(--global-spacing);

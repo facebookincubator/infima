@@ -1,5 +1,6 @@
 :root {
   --pills-color-active: var(--color-primary);
+  --pills-color-background-active: var(--color-emphasis-alpha-05);
   --pills-spacing: 0.0625rem;
 }
 
@@ -14,17 +15,12 @@
     padding: 0.25rem 1rem;
 
     &.pill-item--active {
-      background: linear-gradient(
-          to top,
-          rgba(255, 255, 255, 0.85),
-          rgba(255, 255, 255, 0.85)
-        )
-        var(--pills-color-active);
+      background: var(--pills-color-background-active);
       color: var(--pills-color-active);
     }
 
     &:not(.pill-item--active):hover {
-      background-color: var(--color-black-alpha-05);
+      background-color: var(--pills-color-background-active);
       transition: background var(--transition-fast)
         cubic-bezier(0.08, 0.52, 0.52, 1);
     }

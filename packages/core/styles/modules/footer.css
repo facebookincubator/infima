@@ -1,5 +1,5 @@
 :root {
-  --footer-background-color: var(--color-black-alpha-05);
+  --footer-background-color: var(--color-emphasis-alpha-05);
   --footer-color: inherit;
   --footer-link-color: var(--color-black-alpha-50);
   --footer-link-hover-color: var(--color-primary);

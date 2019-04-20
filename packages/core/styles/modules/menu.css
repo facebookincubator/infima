@@ -1,6 +1,9 @@
-.menu {
+:root {
   --menu-color-active: var(--color-primary);
+  --menu-color-background-active: var(--color-emphasis-alpha-05);
+}
 
+.menu {
   overflow-x: hidden;
 
   & .menu__list {
@@ -37,7 +40,7 @@
 
   & .menu__link {
     border-radius: 0.25rem;
-    color: #717171;
+    color: var(--color-emphasis-alpha-60);
     cursor: pointer;
     display: flex;
     font-size: 0.875em;
@@ -59,8 +62,8 @@
   }
 
   & .menu__link:hover {
-    background-color: var(--color-black-alpha-05);
-    color: #717171;
+    background: var(--menu-color-background-active);
+    color: var(--color-emphasis-alpha-80);
   }
 
   & .menu__list-item--active {
@@ -74,12 +77,7 @@
     & > .menu__link:not(.menu__link--sublist) {
       &,
       &:hover {
-        background: linear-gradient(
-            to top,
-            rgba(255, 255, 255, 0.85),
-            rgba(255, 255, 255, 0.85)
-          )
-          var(--menu-color-active);
+        background: var(--menu-color-background-active);
       }
     }
   }
@@ -105,7 +103,7 @@
   }
 
   &.menu--show {
-    background: var(--color-white);
+    background: var(--background-color);
     bottom: 0;
     left: 0;
     padding: 1rem;

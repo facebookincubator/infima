@@ -3,6 +3,7 @@
   --breadcrumb-border-radius: 1.5rem;
   --breadcrumb-spacing: 0.0625rem;
   --breadcrumb-color-active: var(--color-primary);
+  --breadcrumb-item-background-active: var(--color-emphasis-alpha-05);
   --breadcrumb-padding-horizontal: 1rem;
   --breadcrumb-padding-vertical: 0.5rem;
   --breadcrumb-size-multiplier: 1;
@@ -61,19 +62,14 @@
 
     &.breadcrumb__item--active {
       & .breadcrumb__link {
-        background: linear-gradient(
-            to top,
-            rgba(255, 255, 255, 0.85),
-            rgba(255, 255, 255, 0.85)
-          )
-          var(--breadcrumb-color-active);
+        background: var(--breadcrumb-item-background-active);
         color: var(--breadcrumb-color-active);
       }
     }
 
     &:not(.breadcrumb__item--active):hover {
       & .breadcrumb__link {
-        background-color: var(--color-black-alpha-05);
+        background: var(--breadcrumb-item-background-active);
         transition: background var(--transition-fast)
           cubic-bezier(0.08, 0.52, 0.52, 1);
       }
