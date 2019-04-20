@@ -1,6 +1,6 @@
 :root {
-  --hero-background-color: var(--color-primary);
-  --hero-text-color: var(--color-white);
+  --hero-background-color: var(--background-surface-color);
+  --hero-text-color: var(--color-primary);
 }
 
 .hero {
@@ -10,9 +10,9 @@
   display: flex;
   padding: 4rem 2rem;
 
-  &.hero--light {
-    --hero-background-color: var(--color-white);
-    --hero-text-color: var(--color-primary);
+  &.hero--primary {
+    --hero-background-color: var(--color-primary);
+    --hero-text-color: var(--font-color-base-inverse);
 
     background-color: var(--hero-background-color); // @compat
     color: var(--hero-text-color); // @compat
