@@ -1,9 +1,9 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: var(--container-width);
-  padding-left: var(--spacing-horizontal);
-  padding-right: var(--spacing-horizontal);
+  max-width: var(--ifm-container-width);
+  padding-left: var(--ifm-spacing-horizontal);
+  padding-right: var(--ifm-spacing-horizontal);
   width: 100%;
 
   &.container--fluid {
@@ -15,8 +15,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: calc(var(--spacing-horizontal) * -0.5);
-  margin-right: calc(var(--spacing-horizontal) * -0.5);
+  margin-left: calc(var(--ifm-spacing-horizontal) * -0.5);
+  margin-right: calc(var(--ifm-spacing-horizontal) * -0.5);
 
   &.row--no-gutters {
     margin-left: 0;
@@ -49,38 +49,38 @@
   }
 
   & .col {
-    --col-width: 100%;
+    --ifm-col-width: 100%;
 
     display: block;
     flex: 1 0;
     margin-left: 0;
     max-width: 100%;
-    padding-left: calc(var(--spacing-horizontal) / 2);
-    padding-right: calc(var(--spacing-horizontal) / 2);
+    padding-left: calc(var(--ifm-spacing-horizontal) / 2);
+    padding-right: calc(var(--ifm-spacing-horizontal) / 2);
     width: 100%;
 
     &[class*='col--'] {
-      flex: 0 0 var(--col-width);
-      max-width: var(--col-width);
+      flex: 0 0 var(--ifm-col-width);
+      max-width: var(--ifm-col-width);
     }
 
-    @media (--narrow-window) {
+    @media (--ifm-narrow-window) {
       // Increase specificity.
       &.col.col {
-        --col-width: 100%;
-        flex-basis: var(--col-width);
+        --ifm-col-width: 100%;
+        flex-basis: var(--ifm-col-width);
         margin-left: 0;
 
-        max-width: var(--col-width); // @compat
+        max-width: var(--ifm-col-width); // @compat
       }
     }
 
     @for $column from 1 to 12 {
       &.col--$(column) {
-        --col-width: calc($(column) / 12 * 100%);
+        --ifm-col-width: calc($(column) / 12 * 100%);
 
-        flex: 0 0 var(--col-width); // @compat
-        max-width: var(--col-width); // @compat
+        flex: 0 0 var(--ifm-col-width); // @compat
+        max-width: var(--ifm-col-width); // @compat
       }
 
       &.col--offset-$(column) {

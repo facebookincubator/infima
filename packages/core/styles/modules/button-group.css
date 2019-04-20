@@ -1,5 +1,5 @@
 :root {
-  --button-group-margin: 2px;
+  --ifm-button-group-margin: 2px;
 }
 
 .button-group {
@@ -9,7 +9,7 @@
     &:not(:first-child) {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
-      margin-left: var(--button-group-margin);
+      margin-left: var(--ifm-button-group-margin);
     }
 
     &:not(:last-child) {

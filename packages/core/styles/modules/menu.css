@@ -1,6 +1,6 @@
 :root {
-  --menu-color-active: var(--color-primary);
-  --menu-color-background-active: var(--color-emphasis-alpha-05);
+  --ifm-menu-color-active: var(--ifm-color-primary);
+  --ifm-menu-color-background-active: var(--ifm-color-emphasis-alpha-05);
 }
 
 .menu {
@@ -10,7 +10,8 @@
     margin: 0;
     list-style-type: none;
     padding-left: 0;
-    transition: height var(--transition-fast) cubic-bezier(0.08, 0.52, 0.52, 1);
+    transition: height var(--ifm-transition-fast)
+      cubic-bezier(0.08, 0.52, 0.52, 1);
 
     // Non-top level menus
     & .menu__list {
@@ -40,7 +41,7 @@
 
   & .menu__link {
     border-radius: 0.25rem;
-    color: var(--color-emphasis-alpha-60);
+    color: var(--ifm-color-emphasis-alpha-60);
     cursor: pointer;
     display: flex;
     font-size: 0.875em;
@@ -62,22 +63,22 @@
   }
 
   & .menu__link:hover {
-    background: var(--menu-color-background-active);
-    color: var(--color-emphasis-alpha-80);
+    background: var(--ifm-menu-color-background-active);
+    color: var(--ifm-color-emphasis-alpha-80);
   }
 
   & .menu__list-item--active {
     & > .menu__link {
       &,
       &:hover {
-        color: var(--menu-color-active);
+        color: var(--ifm-menu-color-active);
       }
     }
 
     & > .menu__link:not(.menu__link--sublist) {
       &,
       &:hover {
-        background: var(--menu-color-background-active);
+        background: var(--ifm-menu-color-background-active);
       }
     }
   }
@@ -89,12 +90,12 @@
       bottom: 2rem;
       right: 1rem;
 
-      @media (--narrow-window) {
+      @media (--ifm-narrow-window) {
         display: inherit;
       }
     }
 
-    @media (--narrow-window) {
+    @media (--ifm-narrow-window) {
       & .menu__list {
         display: none;
         opacity: 0;
@@ -103,7 +104,7 @@
   }
 
   &.menu--show {
-    background: var(--background-color);
+    background: var(--ifm-background-color);
     bottom: 0;
     left: 0;
     padding: 1rem;
@@ -115,7 +116,7 @@
     & .menu__list {
       display: inherit;
       opacity: 100;
-      transition: opacity var(--transition-fast) linear;
+      transition: opacity var(--ifm-transition-fast) linear;
     }
   }
 }

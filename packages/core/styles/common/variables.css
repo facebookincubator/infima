@@ -1,320 +1,334 @@
 :root {
   // Colors.
-  --dark-value: 10%;
-  --darker-value: 15%;
-  --darkest-value: 30%;
-  --light-value: 15%;
-  --lighter-value: 30%;
-  --lightest-value: 50%;
+  --ifm-dark-value: 10%;
+  --ifm-darker-value: 15%;
+  --ifm-darkest-value: 30%;
+  --ifm-light-value: 15%;
+  --ifm-lighter-value: 30%;
+  --ifm-lightest-value: 50%;
 
   // Colors.
-  --color-primary: #3578e5;
-  --color-primary-dark: color-mod(
-    var(--color-primary) shade(var(--dark-value))
+  --ifm-color-primary: #3578e5;
+  --ifm-color-primary-dark: color-mod(
+    var(--ifm-color-primary) shade(var(--ifm-dark-value))
   );
-  --color-primary-darker: color-mod(
-    var(--color-primary),
-    shade(var(--darker-value))
+  --ifm-color-primary-darker: color-mod(
+    var(--ifm-color-primary),
+    shade(var(--ifm-darker-value))
   );
-  --color-primary-darkest: color-mod(
-    var(--color-primary),
-    shade(var(--darkest-value))
+  --ifm-color-primary-darkest: color-mod(
+    var(--ifm-color-primary),
+    shade(var(--ifm-darkest-value))
   );
-  --color-primary-light: color-mod(
-    var(--color-primary),
-    tint(var(--light-value))
+  --ifm-color-primary-light: color-mod(
+    var(--ifm-color-primary),
+    tint(var(--ifm-light-value))
   );
-  --color-primary-lighter: color-mod(
-    var(--color-primary),
-    tint(var(--lighter-value))
+  --ifm-color-primary-lighter: color-mod(
+    var(--ifm-color-primary),
+    tint(var(--ifm-lighter-value))
   );
-  --color-primary-lightest: color-mod(
-    var(--color-primary),
-    tint(var(--lightest-value))
-  );
-
-  --color-secondary: #ebedf0;
-  --color-secondary-dark: color-mod(
-    var(--color-secondary),
-    shade(var(--dark-value))
-  );
-  --color-secondary-darker: color-mod(
-    var(--color-secondary),
-    shade(var(--darker-value))
-  );
-  --color-secondary-darkest: color-mod(
-    var(--color-secondary),
-    shade(var(--darkest-value))
-  );
-  --color-secondary-light: color-mod(
-    var(--color-secondary),
-    tint(var(--light-value))
-  );
-  --color-secondary-lighter: color-mod(
-    var(--color-secondary),
-    tint(var(--lighter-value))
-  );
-  --color-secondary-lightest: color-mod(
-    var(--color-secondary),
-    tint(var(--lightest-value))
+  --ifm-color-primary-lightest: color-mod(
+    var(--ifm-color-primary),
+    tint(var(--ifm-lightest-value))
   );
 
-  --color-success: #00a400;
-  --color-success-dark: color-mod(
-    var(--color-success),
-    shade(var(--dark-value))
+  --ifm-color-secondary: #ebedf0;
+  --ifm-color-secondary-dark: color-mod(
+    var(--ifm-color-secondary),
+    shade(var(--ifm-dark-value))
   );
-  --color-success-darker: color-mod(
-    var(--color-success),
-    shade(var(--darker-value))
+  --ifm-color-secondary-darker: color-mod(
+    var(--ifm-color-secondary),
+    shade(var(--ifm-darker-value))
   );
-  --color-success-darkest: color-mod(
-    var(--color-success),
-    shade(var(--darkest-value))
+  --ifm-color-secondary-darkest: color-mod(
+    var(--ifm-color-secondary),
+    shade(var(--ifm-darkest-value))
   );
-  --color-success-light: color-mod(
-    var(--color-success),
-    tint(var(--light-value))
+  --ifm-color-secondary-light: color-mod(
+    var(--ifm-color-secondary),
+    tint(var(--ifm-light-value))
   );
-  --color-success-lighter: color-mod(
-    var(--color-success),
-    tint(var(--lighter-value))
+  --ifm-color-secondary-lighter: color-mod(
+    var(--ifm-color-secondary),
+    tint(var(--ifm-lighter-value))
   );
-  --color-success-lightest: color-mod(
-    var(--color-success),
-    tint(var(--lightest-value))
-  );
-
-  --color-info: #54c7ec;
-  --color-info-dark: color-mod(var(--color-info), shade(var(--dark-value)));
-  --color-info-darker: color-mod(var(--color-info), shade(var(--darker-value)));
-  --color-info-darkest: color-mod(
-    var(--color-info),
-    shade(var(--darkest-value))
-  );
-  --color-info-light: color-mod(var(--color-info), tint(var(--light-value)));
-  --color-info-lighter: color-mod(
-    var(--color-info),
-    tint(var(--lighter-value))
-  );
-  --color-info-lightest: color-mod(
-    var(--color-info),
-    tint(var(--lightest-value))
+  --ifm-color-secondary-lightest: color-mod(
+    var(--ifm-color-secondary),
+    tint(var(--ifm-lightest-value))
   );
 
-  --color-warning: #ffba00;
-  --color-warning-dark: color-mod(
-    var(--color-warning),
-    shade(var(--dark-value))
+  --ifm-color-success: #00a400;
+  --ifm-color-success-dark: color-mod(
+    var(--ifm-color-success),
+    shade(var(--ifm-dark-value))
   );
-  --color-warning-darker: color-mod(
-    var(--color-warning),
-    shade(var(--darker-value))
+  --ifm-color-success-darker: color-mod(
+    var(--ifm-color-success),
+    shade(var(--ifm-darker-value))
   );
-  --color-warning-darkest: color-mod(
-    var(--color-warning),
-    shade(var(--darkest-value))
+  --ifm-color-success-darkest: color-mod(
+    var(--ifm-color-success),
+    shade(var(--ifm-darkest-value))
   );
-  --color-warning-light: color-mod(
-    var(--color-warning),
-    tint(var(--light-value))
+  --ifm-color-success-light: color-mod(
+    var(--ifm-color-success),
+    tint(var(--ifm-light-value))
   );
-  --color-warning-lighter: color-mod(
-    var(--color-warning),
-    tint(var(--lighter-value))
+  --ifm-color-success-lighter: color-mod(
+    var(--ifm-color-success),
+    tint(var(--ifm-lighter-value))
   );
-  --color-warning-lightest: color-mod(
-    var(--color-warning),
-    tint(var(--lightest-value))
-  );
-
-  --color-danger: #fa383e;
-  --color-danger-dark: color-mod(var(--color-danger), shade(var(--dark-value)));
-  --color-danger-darker: color-mod(
-    var(--color-danger),
-    shade(var(--darker-value))
-  );
-  --color-danger-darkest: color-mod(
-    var(--color-danger),
-    shade(var(--darkest-value))
-  );
-  --color-danger-light: color-mod(
-    var(--color-danger),
-    tint(var(--light-value))
-  );
-  --color-danger-lighter: color-mod(
-    var(--color-danger),
-    tint(var(--lighter-value))
-  );
-  --color-danger-lightest: color-mod(
-    var(--color-danger),
-    tint(var(--lightest-value))
+  --ifm-color-success-lightest: color-mod(
+    var(--ifm-color-success),
+    tint(var(--ifm-lightest-value))
   );
 
-  --color-white: #fff;
-  --color-white-alpha-05: rgba(255, 255, 255, 0.05);
-  --color-white-alpha-10: rgba(255, 255, 255, 0.1);
-  --color-white-alpha-15: rgba(255, 255, 255, 0.15);
-  --color-white-alpha-20: rgba(255, 255, 255, 0.2);
-  --color-white-alpha-30: rgba(255, 255, 255, 0.3);
-  --color-white-alpha-40: rgba(255, 255, 255, 0.4);
-  --color-white-alpha-50: rgba(255, 255, 255, 0.5);
-  --color-white-alpha-60: rgba(255, 255, 255, 0.6);
-  --color-white-alpha-80: rgba(255, 255, 255, 0.8);
+  --ifm-color-info: #54c7ec;
+  --ifm-color-info-dark: color-mod(
+    var(--ifm-color-info),
+    shade(var(--ifm-dark-value))
+  );
+  --ifm-color-info-darker: color-mod(
+    var(--ifm-color-info),
+    shade(var(--ifm-darker-value))
+  );
+  --ifm-color-info-darkest: color-mod(
+    var(--ifm-color-info),
+    shade(var(--ifm-darkest-value))
+  );
+  --ifm-color-info-light: color-mod(
+    var(--ifm-color-info),
+    tint(var(--ifm-light-value))
+  );
+  --ifm-color-info-lighter: color-mod(
+    var(--ifm-color-info),
+    tint(var(--ifm-lighter-value))
+  );
+  --ifm-color-info-lightest: color-mod(
+    var(--ifm-color-info),
+    tint(var(--ifm-lightest-value))
+  );
 
-  --color-black: #000;
-  --color-black-alpha-05: rgba(0, 0, 0, 0.05);
-  --color-black-alpha-10: rgba(0, 0, 0, 0.1);
-  --color-black-alpha-15: rgba(0, 0, 0, 0.15);
-  --color-black-alpha-20: rgba(0, 0, 0, 0.2);
-  --color-black-alpha-30: rgba(0, 0, 0, 0.3);
-  --color-black-alpha-40: rgba(0, 0, 0, 0.4);
-  --color-black-alpha-50: rgba(0, 0, 0, 0.5);
-  --color-black-alpha-60: rgba(0, 0, 0, 0.6);
-  --color-black-alpha-80: rgba(0, 0, 0, 0.8);
+  --ifm-color-warning: #ffba00;
+  --ifm-color-warning-dark: color-mod(
+    var(--ifm-color-warning),
+    shade(var(--ifm-dark-value))
+  );
+  --ifm-color-warning-darker: color-mod(
+    var(--ifm-color-warning),
+    shade(var(--ifm-darker-value))
+  );
+  --ifm-color-warning-darkest: color-mod(
+    var(--ifm-color-warning),
+    shade(var(--ifm-darkest-value))
+  );
+  --ifm-color-warning-light: color-mod(
+    var(--ifm-color-warning),
+    tint(var(--ifm-light-value))
+  );
+  --ifm-color-warning-lighter: color-mod(
+    var(--ifm-color-warning),
+    tint(var(--ifm-lighter-value))
+  );
+  --ifm-color-warning-lightest: color-mod(
+    var(--ifm-color-warning),
+    tint(var(--ifm-lightest-value))
+  );
+
+  --ifm-color-danger: #fa383e;
+  --ifm-color-danger-dark: color-mod(
+    var(--ifm-color-danger),
+    shade(var(--ifm-dark-value))
+  );
+  --ifm-color-danger-darker: color-mod(
+    var(--ifm-color-danger),
+    shade(var(--ifm-darker-value))
+  );
+  --ifm-color-danger-darkest: color-mod(
+    var(--ifm-color-danger),
+    shade(var(--ifm-darkest-value))
+  );
+  --ifm-color-danger-light: color-mod(
+    var(--ifm-color-danger),
+    tint(var(--ifm-light-value))
+  );
+  --ifm-color-danger-lighter: color-mod(
+    var(--ifm-color-danger),
+    tint(var(--ifm-lighter-value))
+  );
+  --ifm-color-danger-lightest: color-mod(
+    var(--ifm-color-danger),
+    tint(var(--ifm-lightest-value))
+  );
+
+  --ifm-color-white: #fff;
+  --ifm-color-white-alpha-05: rgba(255, 255, 255, 0.05);
+  --ifm-color-white-alpha-10: rgba(255, 255, 255, 0.1);
+  --ifm-color-white-alpha-15: rgba(255, 255, 255, 0.15);
+  --ifm-color-white-alpha-20: rgba(255, 255, 255, 0.2);
+  --ifm-color-white-alpha-30: rgba(255, 255, 255, 0.3);
+  --ifm-color-white-alpha-40: rgba(255, 255, 255, 0.4);
+  --ifm-color-white-alpha-50: rgba(255, 255, 255, 0.5);
+  --ifm-color-white-alpha-60: rgba(255, 255, 255, 0.6);
+  --ifm-color-white-alpha-80: rgba(255, 255, 255, 0.8);
+
+  --ifm-color-black: #000;
+  --ifm-color-black-alpha-05: rgba(0, 0, 0, 0.05);
+  --ifm-color-black-alpha-10: rgba(0, 0, 0, 0.1);
+  --ifm-color-black-alpha-15: rgba(0, 0, 0, 0.15);
+  --ifm-color-black-alpha-20: rgba(0, 0, 0, 0.2);
+  --ifm-color-black-alpha-30: rgba(0, 0, 0, 0.3);
+  --ifm-color-black-alpha-40: rgba(0, 0, 0, 0.4);
+  --ifm-color-black-alpha-50: rgba(0, 0, 0, 0.5);
+  --ifm-color-black-alpha-60: rgba(0, 0, 0, 0.6);
+  --ifm-color-black-alpha-80: rgba(0, 0, 0, 0.8);
 
   // Base.
-  --color-link: var(--color-primary);
-  --color-content: #1f2227;
-  --color-content-inverse: var(--color-white);
+  --ifm-color-link: var(--ifm-color-primary);
+  --ifm-color-content: #1f2227;
+  --ifm-color-content-inverse: var(--ifm-color-white);
 
-  --color-emphasis: var(--color-black);
-  --color-emphasis-alpha-05: var(--color-black-alpha-05);
-  --color-emphasis-alpha-10: var(--color-black-alpha-10);
-  --color-emphasis-alpha-15: var(--color-black-alpha-15);
-  --color-emphasis-alpha-20: var(--color-black-alpha-20);
-  --color-emphasis-alpha-30: var(--color-black-alpha-30);
-  --color-emphasis-alpha-40: var(--color-black-alpha-40);
-  --color-emphasis-alpha-50: var(--color-black-alpha-50);
-  --color-emphasis-alpha-60: var(--color-black-alpha-60);
-  --color-emphasis-alpha-80: var(--color-black-alpha-80);
+  --ifm-color-emphasis: var(--ifm-color-black);
+  --ifm-color-emphasis-alpha-05: var(--ifm-color-black-alpha-05);
+  --ifm-color-emphasis-alpha-10: var(--ifm-color-black-alpha-10);
+  --ifm-color-emphasis-alpha-15: var(--ifm-color-black-alpha-15);
+  --ifm-color-emphasis-alpha-20: var(--ifm-color-black-alpha-20);
+  --ifm-color-emphasis-alpha-30: var(--ifm-color-black-alpha-30);
+  --ifm-color-emphasis-alpha-40: var(--ifm-color-black-alpha-40);
+  --ifm-color-emphasis-alpha-50: var(--ifm-color-black-alpha-50);
+  --ifm-color-emphasis-alpha-60: var(--ifm-color-black-alpha-60);
+  --ifm-color-emphasis-alpha-80: var(--ifm-color-black-alpha-80);
 
-  --color-emphasis-inverse: var(--color-white);
-  --color-emphasis-inverse-alpha-05: var(--color-white-alpha-05);
-  --color-emphasis-inverse-alpha-10: var(--color-white-alpha-10);
-  --color-emphasis-inverse-alpha-15: var(--color-white-alpha-15);
-  --color-emphasis-inverse-alpha-20: var(--color-white-alpha-20);
-  --color-emphasis-inverse-alpha-30: var(--color-white-alpha-30);
-  --color-emphasis-inverse-alpha-40: var(--color-white-alpha-40);
-  --color-emphasis-inverse-alpha-50: var(--color-white-alpha-50);
-  --color-emphasis-inverse-alpha-60: var(--color-white-alpha-60);
-  --color-emphasis-inverse-alpha-80: var(--color-white-alpha-80);
+  --ifm-color-emphasis-inverse: var(--ifm-color-white);
+  --ifm-color-emphasis-inverse-alpha-05: var(--ifm-color-white-alpha-05);
+  --ifm-color-emphasis-inverse-alpha-10: var(--ifm-color-white-alpha-10);
+  --ifm-color-emphasis-inverse-alpha-15: var(--ifm-color-white-alpha-15);
+  --ifm-color-emphasis-inverse-alpha-20: var(--ifm-color-white-alpha-20);
+  --ifm-color-emphasis-inverse-alpha-30: var(--ifm-color-white-alpha-30);
+  --ifm-color-emphasis-inverse-alpha-40: var(--ifm-color-white-alpha-40);
+  --ifm-color-emphasis-inverse-alpha-50: var(--ifm-color-white-alpha-50);
+  --ifm-color-emphasis-inverse-alpha-60: var(--ifm-color-white-alpha-60);
+  --ifm-color-emphasis-inverse-alpha-80: var(--ifm-color-white-alpha-80);
 
-  --background-color: transparent; // Body's background.
-  --background-surface-color: var(--color-content-inverse);
-  --global-border-width: 1px;
-  --global-radius: 0.25rem;
-  --global-shadow-lw: 0 1px 2px 0 var(--color-black-alpha-10);
-  --global-shadow-md: 0 5px 40px var(--color-black-alpha-20);
-  --global-shadow-tl: 0 12px 28px 0 var(--color-black-alpha-20),
-    0 2px 4px 0 var(--color-black-alpha-10);
+  --ifm-background-color: transparent; // Body's background.
+  --ifm-background-surface-color: var(--ifm-color-content-inverse);
+  --ifm-global-border-width: 1px;
+  --ifm-global-radius: 0.25rem;
 
   // Typography.
-  --font-base-color: var(--color-content);
-  --font-base-color-inverse: var(--color-content-inverse);
-  --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  --ifm-font-base-color: var(--ifm-color-content);
+  --ifm-font-base-color-inverse: var(--ifm-color-content-inverse);
+  --ifm-font-family-base: system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+  --ifm-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
-  --font-size-base: 16px;
-  --font-weight-normal: 400;
-  --font-weight-bold: 600;
-  --font-weight-base: var(--font-weight-normal);
-  --line-height-base: 1.5;
+  --ifm-font-size-base: 15px;
+  --ifm-font-weight-normal: 400;
+  --ifm-font-weight-bold: 600;
+  --ifm-font-weight-base: var(--ifm-font-weight-normal);
+  --ifm-line-height-base: 1.5;
 
   // Grid.
-  --container-width: 1140px;
-  --global-spacing: 1rem;
-  --spacing-vertical: var(--global-spacing);
-  --spacing-horizontal: var(--global-spacing);
+  --ifm-container-width: 1140px;
+  --ifm-global-spacing: 1rem;
+  --ifm-spacing-vertical: var(--ifm-global-spacing);
+  --ifm-spacing-horizontal: var(--ifm-global-spacing);
 
   // Transitions.
-  --transition-fast: 200ms;
-  --transition-slow: 200ms;
+  --ifm-transition-fast: 200ms;
+  --ifm-transition-slow: 200ms;
 
   // Links.
-  --link-color: var(--color-link);
-  --link-decoration: none;
-  --link-hover-color: var(--link-color);
-  --link-hover-decoration: underline;
+  --ifm-link-color: var(--ifm-color-link);
+  --ifm-link-decoration: none;
+  --ifm-link-hover-color: var(--ifm-link-color);
+  --ifm-link-hover-decoration: underline;
+
+  // Shadows.
+  --ifm-global-shadow-lw: 0 1px 2px 0 var(--ifm-color-black-alpha-10);
+  --ifm-global-shadow-md: 0 5px 40px var(--ifm-color-black-alpha-20);
+  --ifm-global-shadow-tl: 0 12px 28px 0 var(--ifm-color-black-alpha-20),
+    0 2px 4px 0 var(--ifm-color-black-alpha-10);
 
   // Paragraphs.
-  --paragraph-margin-bottom: 1rem;
+  --ifm-paragraph-margin-bottom: 1rem;
 
   // Headings.
-  --headings-margin-top: 0;
-  --headings-margin-bottom: var(--spacing-vertical);
-  --headings-font-family: inherit;
-  --headings-font-weight: var(--font-weight-bold);
-  --headings-line-height: 1.25;
+  --ifm-headings-margin-top: 0;
+  --ifm-headings-margin-bottom: var(--ifm-spacing-vertical);
+  --ifm-headings-font-family: inherit;
+  --ifm-headings-font-weight: var(--ifm-font-weight-bold);
+  --ifm-headings-line-height: 1.25;
 
-  --h1-font-size: 2rem;
-  --h2-font-size: 1.5rem;
-  --h3-font-size: 1.25rem;
-  --h4-font-size: 1rem;
-  --h5-font-size: 0.875rem;
-  --h6-font-size: 0.85rem;
+  --ifm-h1-font-size: 2rem;
+  --ifm-h2-font-size: 1.5rem;
+  --ifm-h3-font-size: 1.25rem;
+  --ifm-h4-font-size: 1rem;
+  --ifm-h5-font-size: 0.875rem;
+  --ifm-h6-font-size: 0.85rem;
 
-  --headings-color: inherit;
+  --ifm-headings-color: inherit;
 
   // Lists.
-  --list-left-padding: 2rem;
-  --list-margin: 1rem;
-  --list-item-margin: 0.25rem;
-  --list-paragraph-margin: 1rem;
+  --ifm-list-left-padding: 2rem;
+  --ifm-list-margin: 1rem;
+  --ifm-list-item-margin: 0.25rem;
+  --ifm-list-paragraph-margin: 1rem;
 
   // Images.
-  --image-alignment-padding: 1.25rem;
+  --ifm-image-alignment-padding: 1.25rem;
 
   // Tables.
-  --table-cell-padding: 0.75rem;
+  --ifm-table-cell-padding: 0.75rem;
 
-  --table-background: transparent;
-  --table-stripe-background: var(--color-emphasis-alpha-05);
+  --ifm-table-background: transparent;
+  --ifm-table-stripe-background: var(--ifm-color-emphasis-alpha-05);
 
-  --table-border-width: 1px;
-  --table-border-color: var(--color-emphasis-alpha-20);
+  --ifm-table-border-width: 1px;
+  --ifm-table-border-color: var(--ifm-color-emphasis-alpha-20);
 
-  --table-head-background: inherit;
-  --table-head-color: inherit;
-  --table-head-font-weight: var(--font-weight-bold);
+  --ifm-table-head-background: inherit;
+  --ifm-table-head-color: inherit;
+  --ifm-table-head-font-weight: var(--ifm-font-weight-bold);
 
-  --table-cell-color: inherit;
+  --ifm-table-cell-color: inherit;
 
   // Blockquotes.
-  --blockquote-color: #6a737d;
-  --blockquote-font-size: var(--font-size-base);
-  --blockquote-padding-horizontal: 0;
-  --blockquote-padding-vertical: 0;
+  --ifm-blockquote-color: #6a737d;
+  --ifm-blockquote-font-size: var(--ifm-font-size-base);
+  --ifm-blockquote-padding-horizontal: 0;
+  --ifm-blockquote-padding-vertical: 0;
 
   // Code.
-  --code-background: var(--color-emphasis-alpha-05);
-  --code-border-radius: var(--global-radius);
-  --code-color: var(--color-emphasis-alpha-80);
-  --code-font-size: 85%;
-  --code-padding-horizontal: 0.4rem;
-  --code-padding-vertical: 0.2rem;
+  --ifm-code-background: var(--ifm-color-emphasis-alpha-05);
+  --ifm-code-border-radius: var(--ifm-global-radius);
+  --ifm-code-color: var(--ifm-color-emphasis-alpha-80);
+  --ifm-code-font-size: 85%;
+  --ifm-code-padding-horizontal: 0.4rem;
+  --ifm-code-padding-vertical: 0.2rem;
 
-  --pre-background: var(--color-emphasis-alpha-05);
-  --pre-border-radius: var(--code-border-radius);
-  --pre-color: inherit;
-  --pre-line-height: 1.45;
-  --pre-padding: 1rem;
+  --ifm-pre-background: var(--ifm-color-emphasis-alpha-05);
+  --ifm-pre-border-radius: var(--ifm-code-border-radius);
+  --ifm-pre-color: inherit;
+  --ifm-pre-line-height: 1.45;
+  --ifm-pre-padding: 1rem;
 
-  --kbd-background: #fafbfc;
-  --kbd-border-color: #d1d5da;
-  --kbd-border-radius: var(--code-border-radius);
-  --kbd-color: #444d56;
-  --kbd-font-size: 68.75%;
-  --kbd-line-height: 0.625rem;
-  --kbd-padding-horizontal: 0.3125rem;
-  --kbd-padding-vertical: 0.1875rem;
+  --ifm-kbd-background: #fafbfc;
+  --ifm-kbd-border-color: #d1d5da;
+  --ifm-kbd-border-radius: var(--ifm-code-border-radius);
+  --ifm-kbd-color: #444d56;
+  --ifm-kbd-font-size: 68.75%;
+  --ifm-kbd-line-height: 0.625rem;
+  --ifm-kbd-padding-horizontal: 0.3125rem;
+  --ifm-kbd-padding-vertical: 0.1875rem;
 
   // Horizontal Rules.
-  --hr-border-color: var(--color-emphasis-alpha-10);
-  --hr-border-width: 1px;
-  --hr-margin-vertical: 1.5rem;
+  --ifm-hr-border-color: var(--ifm-color-emphasis-alpha-10);
+  --ifm-hr-border-width: 1px;
+  --ifm-hr-margin-vertical: 1.5rem;
 }
 
 @custom-media --narrow-window (max-width: 996px);

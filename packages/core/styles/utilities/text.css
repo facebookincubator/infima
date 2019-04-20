@@ -1,6 +1,6 @@
 @each $color in (primary, secondary, success, info, warning, danger) {
   .text--$(color) {
-    color: var(--color-$(color));
+    color: var(--ifm-color-$(color));
   }
 }
 

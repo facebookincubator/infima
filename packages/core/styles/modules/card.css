@@ -1,18 +1,18 @@
 :root {
-  --card-background-color: var(--background-surface-color);
-  --card-border-radius: calc(var(--global-radius) * 2);
-  --card-horizontal-spacing: var(--global-spacing);
-  --card-vertical-spacing: var(--global-spacing);
+  --ifm-card-background-color: var(--ifm-background-surface-color);
+  --ifm-card-border-radius: calc(var(--ifm-global-radius) * 2);
+  --ifm-card-horizontal-spacing: var(--ifm-global-spacing);
+  --ifm-card-vertical-spacing: var(--ifm-global-spacing);
 }
 
 .card {
-  background-color: var(--card-background-color);
-  border-radius: var(--card-border-radius);
-  box-shadow: var(--global-shadow-lw);
+  background-color: var(--ifm-card-background-color);
+  border-radius: var(--ifm-card-border-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
   overflow: hidden; // Because of border-radius.
 
   & .card__image {
-    padding-top: var(--card-vertical-spacing);
+    padding-top: var(--ifm-card-vertical-spacing);
 
     &:first-child {
       padding-top: 0;
@@ -22,7 +22,7 @@
   & .card__header,
   & .card__body,
   & .card__footer {
-    padding: var(--card-vertical-spacing) var(--card-horizontal-spacing);
+    padding: var(--ifm-card-vertical-spacing) var(--ifm-card-horizontal-spacing);
 
     &:not(:last-child) {
       padding-bottom: 0;

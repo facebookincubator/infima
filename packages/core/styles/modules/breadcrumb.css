@@ -1,15 +1,15 @@
 // TODO: Compat
 :root {
-  --breadcrumb-border-radius: 1.5rem;
-  --breadcrumb-spacing: 0.0625rem;
-  --breadcrumb-color-active: var(--color-primary);
-  --breadcrumb-item-background-active: var(--color-emphasis-alpha-05);
-  --breadcrumb-padding-horizontal: 1rem;
-  --breadcrumb-padding-vertical: 0.5rem;
-  --breadcrumb-size-multiplier: 1;
-  --breadcrumb-separator: url('data:image/svg+xml;utf8,<svg alt="Chevron Right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><g><g><polygon points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>');
-  --breadcrumb-separator-size: 0.5rem;
-  --breadcrumb-separator-size-multiplier: 1.25;
+  --ifm-breadcrumb-border-radius: 1.5rem;
+  --ifm-breadcrumb-spacing: 0.0625rem;
+  --ifm-breadcrumb-color-active: var(--color-primary);
+  --ifm-breadcrumb-item-background-active: var(--color-emphasis-alpha-05);
+  --ifm-breadcrumb-padding-horizontal: 1rem;
+  --ifm-breadcrumb-padding-vertical: 0.5rem;
+  --ifm-breadcrumb-size-multiplier: 1;
+  --ifm-breadcrumb-separator: url('data:image/svg+xml;utf8,<svg alt="Chevron Right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><g><g><polygon points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>');
+  --ifm-breadcrumb-separator-size: 0.5rem;
+  --ifm-breadcrumb-separator-size-multiplier: 1.25;
 }
 
 .breadcrumbs {
@@ -77,10 +77,10 @@
   }
 
   &.breadcrumbs--sm {
-    --breadcrumb-size-multiplier: 0.8;
+    --ifm-breadcrumb-size-multiplier: 0.8;
   }
 
   &.breadcrumbs--lg {
-    --breadcrumb-size-multiplier: 1.2;
+    --ifm-breadcrumb-size-multiplier: 1.2;
   }
 }

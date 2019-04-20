@@ -1,6 +1,6 @@
 :root {
-  --tabs-color-active: var(--color-primary);
-  --tabs-spacing: 0.0625rem;
+  --ifm-tabs-color-active: var(--ifm-color-primary);
+  --ifm-tabs-spacing: 0.0625rem;
 }
 
 .tabs {
@@ -15,11 +15,11 @@
     padding: 0.5rem 1.5rem;
 
     &.tab-item--active {
-      border-bottom-color: var(--tabs-color-active);
+      border-bottom-color: var(--ifm-tabs-color-active);
     }
 
     &:not(.tab-item--active):hover {
-      border-bottom-color: var(--color-emphasis-alpha-10);
+      border-bottom-color: var(--ifm-color-emphasis-alpha-10);
     }
   }
 
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: stretch;
 
-    @media (--narrow-window) {
+    @media (--ifm-narrow-window) {
       flex-direction: column;
     }
 
@@ -35,13 +35,13 @@
       flex-grow: 1;
       text-align: center;
 
-      @media (--narrow-window) {
+      @media (--ifm-narrow-window) {
         &:not(:first-child) {
-          margin-top: var(--tabs-spacing);
+          margin-top: var(--ifm-tabs-spacing);
         }
 
         &:not(:last-child) {
-          margin-bottom: var(--tabs-spacing);
+          margin-bottom: var(--ifm-tabs-spacing);
         }
       }
     }

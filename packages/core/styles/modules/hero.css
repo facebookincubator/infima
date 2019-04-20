@@ -1,29 +1,29 @@
 :root {
-  --hero-background-color: var(--background-surface-color);
-  --hero-text-color: var(--color-emphasis-alpha-80);
+  --ifm-hero-background-color: var(--ifm-background-surface-color);
+  --ifm-hero-text-color: var(--ifm-color-emphasis-alpha-80);
 }
 
 .hero {
   align-items: center;
-  background-color: var(--hero-background-color);
-  color: var(--hero-text-color);
+  background-color: var(--ifm-hero-background-color);
+  color: var(--ifm-hero-text-color);
   display: flex;
   padding: 4rem 2rem;
 
   &.hero--primary {
-    --hero-background-color: var(--color-primary);
-    --hero-text-color: var(--font-base-color-inverse);
+    --ifm-hero-background-color: var(--ifm-color-primary);
+    --ifm-hero-text-color: var(--ifm-font-base-color-inverse);
 
-    background-color: var(--hero-background-color); // @compat
-    color: var(--hero-text-color); // @compat
+    background-color: var(--ifm-hero-background-color); // @compat
+    color: var(--ifm-hero-text-color); // @compat
   }
 
   &.hero--dark {
-    --hero-background-color: #303846;
-    --hero-text-color: var(--color-white);
+    --ifm-hero-background-color: #303846;
+    --ifm-hero-text-color: var(--ifm-color-white);
 
-    background-color: var(--hero-background-color); // @compat
-    color: var(--hero-text-color); // @compat
+    background-color: var(--ifm-hero-background-color); // @compat
+    color: var(--ifm-hero-text-color); // @compat
   }
 
   & .hero__title {
@@ -34,7 +34,7 @@
     font-size: 1.5rem;
   }
 
-  @media (--narrow-window) {
+  @media (--ifm-narrow-window) {
     padding-left: 0;
     padding-right: 0;
   }

@@ -1,11 +1,11 @@
 :root {
-  --avatar-intro-left-margin: 1rem;
-  --avatar-intro-alignment: inherit;
-  --avatar-photo-bottom-margin: 0;
-  --avatar-photo-size-sm: 2rem;
-  --avatar-photo-size-md: 3rem;
-  --avatar-photo-size-lg: 4rem;
-  --avatar-photo-size-xl: 6rem;
+  --ifm-avatar-intro-left-margin: 1rem;
+  --ifm-avatar-intro-alignment: inherit;
+  --ifm-avatar-photo-bottom-margin: 0;
+  --ifm-avatar-photo-size-sm: 2rem;
+  --ifm-avatar-photo-size-md: 3rem;
+  --ifm-avatar-photo-size-lg: 4rem;
+  --ifm-avatar-photo-size-xl: 6rem;
 }
 
 .avatar {
@@ -17,23 +17,23 @@
 
   & .avatar__photo {
     border-radius: 50%;
-    height: var(--avatar-photo-size-md);
-    margin-bottom: var(--avatar-photo-bottom-margin);
-    width: var(--avatar-photo-size-md);
+    height: var(--ifm-avatar-photo-size-md);
+    margin-bottom: var(--ifm-avatar-photo-bottom-margin);
+    width: var(--ifm-avatar-photo-size-md);
 
     &.avatar__photo--sm {
-      height: var(--avatar-photo-size-sm);
-      width: var(--avatar-photo-size-sm);
+      height: var(--ifm-avatar-photo-size-sm);
+      width: var(--ifm-avatar-photo-size-sm);
     }
 
     &.avatar__photo--lg {
-      height: var(--avatar-photo-size-lg);
-      width: var(--avatar-photo-size-lg);
+      height: var(--ifm-avatar-photo-size-lg);
+      width: var(--ifm-avatar-photo-size-lg);
     }
 
     &.avatar__photo--xl {
-      height: var(--avatar-photo-size-xl);
-      width: var(--avatar-photo-size-xl);
+      height: var(--ifm-avatar-photo-size-xl);
+      width: var(--ifm-avatar-photo-size-xl);
     }
   }
 
@@ -42,8 +42,8 @@
     flex: 1 1;
     flex-direction: column;
     justify-content: center;
-    margin-left: var(--avatar-intro-left-margin);
-    text-align: var(--avatar-intro-alignment);
+    margin-left: var(--ifm-avatar-intro-left-margin);
+    text-align: var(--ifm-avatar-intro-alignment);
   }
 
   & .avatar__name {
@@ -55,22 +55,22 @@
   }
 
   &.avatar--vertical {
-    --avatar-intro-alignment: center;
-    --avatar-intro-left-margin: 0;
-    --avatar-photo-bottom-margin: 0.5rem;
+    --ifm-avatar-intro-alignment: center;
+    --ifm-avatar-intro-left-margin: 0;
+    --ifm-avatar-photo-bottom-margin: 0.5rem;
 
     align-items: center;
     flex-direction: column;
 
     // @compat
     & .avatar__intro {
-      margin-left: var(--avatar-intro-left-margin); // @compat
-      text-align: var(--avatar-intro-alignment); // @compat
+      margin-left: var(--ifm-avatar-intro-left-margin); // @compat
+      text-align: var(--ifm-avatar-intro-alignment); // @compat
     }
 
     // @compat
     & .avatar__photo {
-      margin-bottom: var(--avatar-photo-bottom-margin); // @compat
+      margin-bottom: var(--ifm-avatar-photo-bottom-margin); // @compat
     }
   }
 }

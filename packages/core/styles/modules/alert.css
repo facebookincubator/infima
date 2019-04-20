@@ -1,40 +1,40 @@
 :root {
-  --alert-background-color: inherit; // Set a default which will be overridden later.
-  --alert-border-color: var(--alert-background-color);
-  --alert-border-radius: var(--global-radius);
-  --alert-border-width: var(--global-border-width);
-  --alert-close-offset: -1rem;
-  --alert-color: var(--font-base-color-inverse);
-  --alert-padding-horizontal: var(--spacing-horizontal);
-  --alert-padding-vertical: var(--spacing-vertical);
+  --ifm-alert-background-color: inherit; // Set a default which will be overridden later.
+  --ifm-alert-border-color: var(--ifm-alert-background-color);
+  --ifm-alert-border-radius: var(--ifm-global-radius);
+  --ifm-alert-border-width: var(--ifm-global-border-width);
+  --ifm-alert-close-offset: -1rem;
+  --ifm-alert-color: var(--ifm-font-base-color-inverse);
+  --ifm-alert-padding-horizontal: var(--ifm-spacing-horizontal);
+  --ifm-alert-padding-vertical: var(--ifm-spacing-vertical);
 }
 
 .alert {
-  background-color: var(--alert-background-color);
-  border-color: var(--alert-border-color);
+  background-color: var(--ifm-alert-background-color);
+  border-color: var(--ifm-alert-border-color);
   border-style: solid;
-  border-width: var(--alert-border-width);
-  border-radius: var(--alert-border-radius);
+  border-width: var(--ifm-alert-border-width);
+  border-radius: var(--ifm-alert-border-radius);
   box-sizing: border-box;
-  color: var(--alert-color);
-  padding: var(--alert-padding-vertical) var(--alert-padding-horizontal);
+  color: var(--ifm-alert-color);
+  padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
 
   @each $color in (primary, secondary, success, info, warning, danger) {
     &.alert--$(color) {
-      --alert-background-color: var(--color-$(color));
+      --ifm-alert-background-color: var(--ifm-color-$(color));
 
-      color: var(--alert-color); // @compat
-      background-color: var(--alert-background-color); // @compat
-      border-color: var(--alert-background-color); // @compat
+      color: var(--ifm-alert-color); // @compat
+      background-color: var(--ifm-alert-background-color); // @compat
+      border-color: var(--ifm-alert-background-color); // @compat
     }
   }
 
   &.alert--secondary {
-    color: var(--color-content);
+    color: var(--ifm-color-content);
   }
 
   & .close {
-    margin-right: var(--alert-close-offset);
-    margin-top: var(--alert-close-offset);
+    margin-right: var(--ifm-alert-close-offset);
+    margin-top: var(--ifm-alert-close-offset);
   }
 }

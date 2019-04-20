@@ -2,11 +2,11 @@
   appearance: none;
   background: none;
   border: none;
-  color: var(--color-black);
+  color: var(--ifm-color-black);
   cursor: pointer;
   float: right;
   font-size: 1.5rem;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--ifm-font-weight-bold);
   line-height: 1;
   opacity: 0.5;
   outline: 0;

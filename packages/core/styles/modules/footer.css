@@ -1,37 +1,38 @@
 :root {
-  --footer-background-color: var(--color-emphasis-alpha-05);
-  --footer-color: inherit;
-  --footer-link-color: var(--color-emphasis-alpha-60);
-  --footer-link-hover-color: var(--color-primary);
-  --footer-link-horizontal-spacing: 0.5rem;
-  --footer-padding-horizontal: calc(var(--spacing-horizontal) * 2);
-  --footer-padding-vertical: calc(var(--spacing-vertical) * 2);
-  --footer-title-color: inherit;
+  --ifm-footer-background-color: var(--ifm-color-emphasis-alpha-05);
+  --ifm-footer-color: inherit;
+  --ifm-footer-link-color: var(--ifm-color-emphasis-alpha-60);
+  --ifm-footer-link-hover-color: var(--ifm-color-primary);
+  --ifm-footer-link-horizontal-spacing: 0.5rem;
+  --ifm-footer-padding-horizontal: calc(var(--ifm-spacing-horizontal) * 2);
+  --ifm-footer-padding-vertical: calc(var(--ifm-spacing-vertical) * 2);
+  --ifm-footer-title-color: inherit;
 }
 
 .footer {
-  background-color: var(--footer-background-color);
-  color: var(--footer-color);
-  padding: var(--footer-padding-vertical) var(--footer-padding-horizontal);
+  background-color: var(--ifm-footer-background-color);
+  color: var(--ifm-footer-color);
+  padding: var(--ifm-footer-padding-vertical)
+    var(--ifm-footer-padding-horizontal);
   width: 100%;
 
   &.footer--dark {
-    --footer-background-color: #303846;
-    --footer-color: var(--footer-link-color);
-    --footer-link-color: var(--color-secondary);
-    --footer-title-color: var(--color-white);
+    --ifm-footer-background-color: #303846;
+    --ifm-footer-color: var(--ifm-footer-link-color);
+    --ifm-footer-link-color: var(--ifm-color-secondary);
+    --ifm-footer-title-color: var(--ifm-color-white);
 
-    background-color: var(--footer-background-color); // @compat
-    color: var(--footer-color); // @compat
+    background-color: var(--ifm-footer-background-color); // @compat
+    color: var(--ifm-footer-color); // @compat
 
     // @compat
     & .footer__link-item {
-      color: var(--footer-link-color); // @compat
+      color: var(--ifm-footer-link-color); // @compat
     }
 
     // @compat
     & .footer__title {
-      color: var(--footer-title-color); // @compat
+      color: var(--ifm-footer-title-color); // @compat
     }
   }
 
@@ -40,16 +41,16 @@
   }
 
   & .footer__link-item {
-    color: var(--footer-link-color);
+    color: var(--ifm-footer-link-color);
 
     &:hover {
-      color: var(--footer-link-hover-color);
+      color: var(--ifm-footer-link-hover-color);
     }
   }
 
   & .footer__link-separator {
-    margin-left: var(--footer-link-horizontal-spacing);
-    margin-right: var(--footer-link-horizontal-spacing);
+    margin-left: var(--ifm-footer-link-horizontal-spacing);
+    margin-right: var(--ifm-footer-link-horizontal-spacing);
   }
 
   & .footer__logo {
@@ -58,7 +59,7 @@
   }
 
   & .footer__title {
-    color: var(--footer-title-color);
+    color: var(--ifm-footer-title-color);
   }
 
   & .footer__items {
@@ -68,12 +69,13 @@
   }
 
   @media (--narrow-window) {
-    --footer-padding-horizontal: var(--spacing-horizontal);
+    --ifm-footer-padding-horizontal: var(--ifm-spacing-horizontal);
 
-    padding: var(--footer-padding-vertical) var(--footer-padding-horizontal); // @compat
+    padding: var(--ifm-footer-padding-vertical)
+      var(--ifm-footer-padding-horizontal); // @compat
 
     & .footer__col {
-      margin-bottom: calc(var(--spacing-vertical) * 2);
+      margin-bottom: calc(var(--ifm-spacing-vertical) * 2);
     }
   }
 }
