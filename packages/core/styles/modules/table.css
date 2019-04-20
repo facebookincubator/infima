@@ -2,18 +2,18 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   display: block;
-  margin-bottom: var(--vertical-spacing);
+  margin-bottom: var(--spacing-vertical);
   margin-top: 0;
   overflow: auto;
   width: 100%;
 
   & tr {
-    background-color: var(--table-bg);
+    background-color: var(--table-background);
     border-top: var(--table-border-width) solid var(--table-border-color);
   }
 
   & tr:nth-child(2n) {
-    background-color: var(--table-stripe-bg);
+    background-color: var(--table-stripe-background);
   }
 
   & th,
@@ -23,7 +23,7 @@ table {
   }
 
   & th {
-    background-color: var(--table-head-bg);
+    background-color: var(--table-head-background);
     color: var(--table-head-color);
     font-weight: var(--table-head-font-weight);
   }

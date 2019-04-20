@@ -1,6 +1,6 @@
 :root {
   --dropdown-background-color: var(--background-surface-color);
-  --dropdown-link-color: var(--font-color-base);
+  --dropdown-link-color: var(--font-base-color);
   --dropdown-hover-background-color: var(--color-emphasis-alpha-05);
 }
 

@@ -24,6 +24,6 @@
   --background-color: #1f2227;
   --background-surface-color: #33363b;
 
-  --font-color-base: var(--color-content-inverse);
-  --font-color-base-inverse: var(--color-content);
+  --font-base-color: var(--color-content-inverse);
+  --font-base-color-inverse: var(--color-content);
 }

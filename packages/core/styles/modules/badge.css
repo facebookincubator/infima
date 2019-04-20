@@ -4,8 +4,8 @@
   --badge-border-radius: var(--global-radius);
   --badge-border-width: var(--global-border-width);
   --badge-color: var(--color-white);
-  --badge-padding-horizontal: calc(var(--horizontal-spacing) * 0.5);
-  --badge-padding-vertical: calc(var(--vertical-spacing) * 0.25);
+  --badge-padding-horizontal: calc(var(--spacing-horizontal) * 0.5);
+  --badge-padding-vertical: calc(var(--spacing-vertical) * 0.25);
 }
 
 .badge {

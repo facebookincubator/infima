@@ -4,9 +4,9 @@
   --alert-border-radius: var(--global-radius);
   --alert-border-width: var(--global-border-width);
   --alert-close-offset: -1rem;
-  --alert-color: var(--font-color-base-inverse);
-  --alert-padding-horizontal: var(--horizontal-spacing);
-  --alert-padding-vertical: var(--vertical-spacing);
+  --alert-color: var(--font-base-color-inverse);
+  --alert-padding-horizontal: var(--spacing-horizontal);
+  --alert-padding-vertical: var(--spacing-vertical);
 }
 
 .alert {

@@ -51,23 +51,23 @@ p {
 
 // Code
 code {
-  background-color: var(--code-bg);
+  background-color: var(--code-background);
   border-radius: var(--code-border-radius);
   color: var(--code-color);
   font-family: var(--font-family-monospace);
   font-size: var(--code-font-size);
   margin: 0;
-  padding: var(--code-padding-y) var(--code-padding-x);
+  padding: var(--code-padding-vertical) var(--code-padding-horizontal);
 }
 
 pre {
-  background-color: var(--pre-bg);
+  background-color: var(--pre-background);
   border-radius: var(--pre-border-radius);
   color: var(--pre-color);
   font-family: var(--font-family-monospace);
   font-size: var(--code-font-size);
   line-height: var(--pre-line-height);
-  margin-bottom: var(--vertical-spacing);
+  margin-bottom: var(--spacing-vertical);
   margin-top: 0;
   overflow: auto;
   padding: var(--pre-padding);
@@ -90,7 +90,7 @@ pre {
 }
 
 kbd {
-  background-color: var(--kbd-bg);
+  background-color: var(--kbd-background);
   border: solid 1px var(--kbd-border-color);
   border-bottom-color: #c6cbd1;
   border-radius: var(--kbd-border-radius);
@@ -100,7 +100,7 @@ kbd {
   font-family: var(--font-family-monospace);
   font-size: var(--kbd-font-size);
   line-height: var(--kbd-line-height);
-  padding: var(--kbd-padding-y) var(--kbd-padding-x);
+  padding: var(--kbd-padding-vertical) var(--kbd-padding-horizontal);
   vertical-align: middle;
 }
 
@@ -109,8 +109,9 @@ blockquote {
   color: var(--blockquote-color);
   font-size: var(--blockquote-font-size);
   margin: 0;
-  margin-bottom: var(--vertical-spacing);
-  padding: var(--blockquote-padding-y) var(--blockquote-padding-x);
+  margin-bottom: var(--spacing-vertical);
+  padding: var(--blockquote-padding-vertical)
+    var(--blockquote-padding-horizontal);
 }
 
 // Lists
@@ -158,7 +159,7 @@ hr {
   border-style: solid;
   border-width: var(--hr-border-width);
   box-sizing: content-box;
-  margin: var(--hr-vertical-margin) 0;
+  margin: var(--hr-margin-vertical) 0;
   overflow: hidden;
   padding: 0;
 

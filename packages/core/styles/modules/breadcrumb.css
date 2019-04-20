@@ -47,7 +47,7 @@
 
     & .breadcrumb__link {
       border-radius: var(--breadcrumb-border-radius);
-      color: var(--font-color-base);
+      color: var(--font-base-color);
       display: inline-block;
       font-size: calc(1rem * var(--breadcrumb-size-multiplier));
       padding: calc(

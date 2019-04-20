@@ -210,8 +210,8 @@
     0 2px 4px 0 var(--color-black-alpha-10);
 
   // Typography.
-  --font-color-base: var(--color-content);
-  --font-color-base-inverse: var(--color-content-inverse);
+  --font-base-color: var(--color-content);
+  --font-base-color-inverse: var(--color-content-inverse);
   --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
@@ -226,8 +226,8 @@
   // Grid.
   --container-width: 1140px;
   --global-spacing: 1rem;
-  --vertical-spacing: var(--global-spacing);
-  --horizontal-spacing: var(--global-spacing);
+  --spacing-vertical: var(--global-spacing);
+  --spacing-horizontal: var(--global-spacing);
 
   // Transitions.
   --transition-fast: 200ms;
@@ -244,7 +244,7 @@
 
   // Headings.
   --headings-margin-top: 0;
-  --headings-margin-bottom: var(--vertical-spacing);
+  --headings-margin-bottom: var(--spacing-vertical);
   --headings-font-family: inherit;
   --headings-font-weight: var(--font-weight-bold);
   --headings-line-height: 1.25;
@@ -270,13 +270,13 @@
   // Tables.
   --table-cell-padding: 0.75rem;
 
-  --table-bg: transparent;
-  --table-stripe-bg: var(--color-emphasis-alpha-05);
+  --table-background: transparent;
+  --table-stripe-background: var(--color-emphasis-alpha-05);
 
   --table-border-width: 1px;
   --table-border-color: var(--color-emphasis-alpha-20);
 
-  --table-head-bg: inherit;
+  --table-head-background: inherit;
   --table-head-color: inherit;
   --table-head-font-weight: var(--font-weight-bold);
 
@@ -285,36 +285,36 @@
   // Blockquotes.
   --blockquote-color: #6a737d;
   --blockquote-font-size: var(--font-size-base);
-  --blockquote-padding-x: 0;
-  --blockquote-padding-y: 0;
+  --blockquote-padding-horizontal: 0;
+  --blockquote-padding-vertical: 0;
 
   // Code.
-  --code-bg: var(--color-emphasis-alpha-05);
+  --code-background: var(--color-emphasis-alpha-05);
   --code-border-radius: var(--global-radius);
   --code-color: var(--color-emphasis-alpha-80);
   --code-font-size: 85%;
-  --code-padding-x: calc(var(--font-size-base) * 0.4);
-  --code-padding-y: calc(var(--font-size-base) * 0.2);
+  --code-padding-horizontal: 0.4rem;
+  --code-padding-vertical: 0.2rem;
 
-  --pre-bg: var(--color-emphasis-alpha-05);
+  --pre-background: var(--color-emphasis-alpha-05);
   --pre-border-radius: var(--code-border-radius);
   --pre-color: inherit;
   --pre-line-height: 1.45;
   --pre-padding: 1rem;
 
-  --kbd-bg: #fafbfc;
+  --kbd-background: #fafbfc;
   --kbd-border-color: #d1d5da;
   --kbd-border-radius: var(--code-border-radius);
   --kbd-color: #444d56;
   --kbd-font-size: 68.75%;
   --kbd-line-height: 0.625rem;
-  --kbd-padding-x: 0.3125rem;
-  --kbd-padding-y: 0.1875rem;
+  --kbd-padding-horizontal: 0.3125rem;
+  --kbd-padding-vertical: 0.1875rem;
 
   // Horizontal Rules.
   --hr-border-color: var(--color-emphasis-alpha-10);
   --hr-border-width: 1px;
-  --hr-vertical-margin: 1.5rem;
+  --hr-margin-vertical: 1.5rem;
 }
 
 @custom-media --narrow-window (max-width: 996px);

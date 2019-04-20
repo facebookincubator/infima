@@ -1,7 +1,7 @@
 :root {
   --contents-border-color: var(--color-emphasis-alpha-50);
-  --contents-padding-left: var(--horizontal-spacing);
-  --contents-padding-vertical: calc(var(--vertical-spacing) * 0.5);
+  --contents-padding-left: var(--spacing-horizontal);
+  --contents-padding-vertical: calc(var(--spacing-vertical) * 0.5);
 }
 
 .contents {

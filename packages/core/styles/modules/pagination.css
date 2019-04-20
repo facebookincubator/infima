@@ -6,8 +6,8 @@
   --pagination-font-size: 1rem;
   --pagination-item-active-background: var(--color-emphasis-alpha-05);
   --pagination-page-spacing: 0.0625rem;
-  --pagination-padding-horizontal: calc(var(--horizontal-spacing) * 1);
-  --pagination-padding-vertical: calc(var(--vertical-spacing) * 0.25);
+  --pagination-padding-horizontal: calc(var(--spacing-horizontal) * 1);
+  --pagination-padding-vertical: calc(var(--spacing-vertical) * 0.25);
   --pagination-size-multiplier: 1;
 }
 
@@ -33,7 +33,7 @@
 
     & .page-link {
       border-radius: var(--pagination-border-radius);
-      color: var(--font-color-base);
+      color: var(--font-base-color);
       display: inline-block;
       padding: var(--pagination-padding-vertical)
         var(--pagination-padding-horizontal);

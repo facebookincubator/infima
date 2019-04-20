@@ -12,7 +12,7 @@
 
   &.hero--primary {
     --hero-background-color: var(--color-primary);
-    --hero-text-color: var(--font-color-base-inverse);
+    --hero-text-color: var(--font-base-color-inverse);
 
     background-color: var(--hero-background-color); // @compat
     color: var(--hero-text-color); // @compat

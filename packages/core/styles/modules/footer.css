@@ -4,8 +4,8 @@
   --footer-link-color: var(--color-emphasis-alpha-60);
   --footer-link-hover-color: var(--color-primary);
   --footer-link-horizontal-spacing: 0.5rem;
-  --footer-padding-horizontal: calc(var(--horizontal-spacing) * 2);
-  --footer-padding-vertical: calc(var(--vertical-spacing) * 2);
+  --footer-padding-horizontal: calc(var(--spacing-horizontal) * 2);
+  --footer-padding-vertical: calc(var(--spacing-vertical) * 2);
   --footer-title-color: inherit;
 }
 
@@ -68,12 +68,12 @@
   }
 
   @media (--narrow-window) {
-    --footer-padding-horizontal: var(--horizontal-spacing);
+    --footer-padding-horizontal: var(--spacing-horizontal);
 
     padding: var(--footer-padding-vertical) var(--footer-padding-horizontal); // @compat
 
     & .footer__col {
-      margin-bottom: calc(var(--vertical-spacing) * 2);
+      margin-bottom: calc(var(--spacing-vertical) * 2);
     }
   }
 }

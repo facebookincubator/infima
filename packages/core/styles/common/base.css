@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  color: var(--font-color-base);
+  color: var(--font-base-color);
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);

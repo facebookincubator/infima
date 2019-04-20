@@ -3,11 +3,11 @@
   --navbar-height: 3.75rem;
   --navbar-item-padding-horizontal: 1rem;
   --navbar-item-padding-vertical: 0.25rem;
-  --navbar-link-color: var(--font-color-base);
+  --navbar-link-color: var(--font-base-color);
   --navbar-link-hover-color: var(--color-primary);
   --navbar-link-active-color: var(--link-color);
-  --navbar-padding-horizontal: var(--horizontal-spacing);
-  --navbar-padding-vertical: calc(var(--vertical-spacing) * 0.5);
+  --navbar-padding-horizontal: var(--spacing-horizontal);
+  --navbar-padding-vertical: calc(var(--spacing-vertical) * 0.5);
   --navbar-shadow: var(--global-shadow-lw);
   --navbar-search-input-background-color: var(--color-emphasis-alpha-10);
   --navbar-search-input-color: var(--color-emphasis-alpha-80);
