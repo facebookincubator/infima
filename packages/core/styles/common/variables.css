@@ -192,8 +192,9 @@
   --vertical-spacing: var(--global-spacing);
   --horizontal-spacing: var(--global-spacing);
 
-  // Navbar.
-  --navbar-height: 3.75rem;
+  // Transitions.
+  --transition-fast: 200ms;
+  --transition-slow: 200ms;
 
   // Links.
   --link-color: var(--color-link);

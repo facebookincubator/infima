@@ -10,7 +10,7 @@ A UI framework for content-centric websites.
   - [x] Audit global CSS variables list and scope the component-specific ones into component file's root
   - [ ] Audit z-index list (nav, dropdown, tooltips, etc)
   - [x] Define box-shadow for various elevations
-  - [ ] Define fast and slow transition speeds
+  - [x] Define fast and slow transition speeds
   - [ ] Define shades of gray
 - Medium
   - [ ] Create dark theme

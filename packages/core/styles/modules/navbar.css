@@ -1,5 +1,6 @@
 :root {
   --navbar-background-color: var(--color-primary);
+  --navbar-height: 3.75rem;
   --navbar-item-padding-horizontal: 1rem;
   --navbar-item-padding-vertical: 0.25rem;
   --navbar-link-color: rgba(0, 0, 0, 0.55);
@@ -184,7 +185,7 @@
       line-height: 2rem;
       outline: none;
       padding: 0 0.5rem 0 2.25rem;
-      transition: all 0.2s ease;
+      transition: all var(--transition-fast) ease;
       width: 12.5rem;
 
       &::placeholder {

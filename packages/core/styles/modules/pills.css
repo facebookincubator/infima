@@ -25,7 +25,8 @@
 
     &:not(.pill-item--active):hover {
       background-color: var(--color-black-alpha-05);
-      transition: background 200ms cubic-bezier(0.08, 0.52, 0.52, 1);
+      transition: background var(--transition-fast)
+        cubic-bezier(0.08, 0.52, 0.52, 1);
     }
 
     &:not(:first-child) {

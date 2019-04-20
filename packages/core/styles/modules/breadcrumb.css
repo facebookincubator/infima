@@ -74,7 +74,8 @@
     &:not(.breadcrumb__item--active):hover {
       & .breadcrumb__link {
         background-color: var(--color-black-alpha-05);
-        transition: background 0.2s ease-in-out;
+        transition: background var(--transition-fast)
+          cubic-bezier(0.08, 0.52, 0.52, 1);
       }
     }
   }

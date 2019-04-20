@@ -7,7 +7,7 @@
   --button-padding-horizontal: 1.5rem;
   --button-padding-vertical: 0.375rem;
   --button-size-multiplier: 1;
-  --button-transition-duration: 0.15s;
+  --button-transition-duration: var(--transition-fast);
   --button-border-radius: calc(
     var(--global-radius) * var(--button-size-multiplier)
   );
@@ -33,9 +33,12 @@
     calc(var(--button-padding-horizontal) * var(--button-size-multiplier));
   text-align: center;
   text-decoration: none;
-  transition: color var(--button-transition-duration) ease-in-out,
-    background var(--button-transition-duration) ease-in-out,
-    border-color var(--button-transition-duration) ease-in-out;
+  transition: color var(--button-transition-duration)
+      cubic-bezier(0.08, 0.52, 0.52, 1),
+    background var(--button-transition-duration)
+      cubic-bezier(0.08, 0.52, 0.52, 1),
+    border-color var(--button-transition-duration)
+      cubic-bezier(0.08, 0.52, 0.52, 1);
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
