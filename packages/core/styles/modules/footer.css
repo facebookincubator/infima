@@ -1,7 +1,7 @@
 :root {
   --footer-background-color: var(--color-emphasis-alpha-05);
   --footer-color: inherit;
-  --footer-link-color: var(--color-black-alpha-50);
+  --footer-link-color: var(--color-emphasis-alpha-60);
   --footer-link-hover-color: var(--color-primary);
   --footer-link-horizontal-spacing: 0.5rem;
   --footer-padding-horizontal: calc(var(--horizontal-spacing) * 2);

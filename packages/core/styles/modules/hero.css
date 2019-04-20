@@ -1,6 +1,6 @@
 :root {
   --hero-background-color: var(--background-surface-color);
-  --hero-text-color: var(--color-primary);
+  --hero-text-color: var(--color-emphasis-alpha-80);
 }
 
 .hero {

@@ -1,0 +1,29 @@
+:root {
+  --color-emphasis: var(--color-white);
+  --color-emphasis-alpha-05: var(--color-white-alpha-05);
+  --color-emphasis-alpha-10: var(--color-white-alpha-10);
+  --color-emphasis-alpha-15: var(--color-white-alpha-15);
+  --color-emphasis-alpha-20: var(--color-white-alpha-20);
+  --color-emphasis-alpha-30: var(--color-white-alpha-30);
+  --color-emphasis-alpha-40: var(--color-white-alpha-40);
+  --color-emphasis-alpha-50: var(--color-white-alpha-50);
+  --color-emphasis-alpha-60: var(--color-white-alpha-60);
+  --color-emphasis-alpha-80: var(--color-white-alpha-80);
+
+  --color-emphasis-inverse: var(--color-black);
+  --color-emphasis-inverse-alpha-05: var(--color-black-alpha-05);
+  --color-emphasis-inverse-alpha-10: var(--color-black-alpha-10);
+  --color-emphasis-inverse-alpha-15: var(--color-black-alpha-15);
+  --color-emphasis-inverse-alpha-20: var(--color-black-alpha-20);
+  --color-emphasis-inverse-alpha-30: var(--color-black-alpha-30);
+  --color-emphasis-inverse-alpha-40: var(--color-black-alpha-40);
+  --color-emphasis-inverse-alpha-50: var(--color-black-alpha-50);
+  --color-emphasis-inverse-alpha-60: var(--color-black-alpha-60);
+  --color-emphasis-inverse-alpha-80: var(--color-black-alpha-80);
+
+  --background-color: #1f2227;
+  --background-surface-color: #33363b;
+
+  --font-color-base: var(--color-content-inverse);
+  --font-color-base-inverse: var(--color-content);
+}

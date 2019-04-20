@@ -127,19 +127,19 @@
       </div>
     </div>
   </nav>
-  <div class="hero text--center">
+  <div class="hero hero--primary text--center">
     <div class="container">
       <h1 class="hero__title">Infima</h1>
       <p class="hero__subtitle">
         A UI framework for content-centric websites.
       </p>
       <div>
-        <button class="button button--secondary button--outline button--lg">
+        <a class="button button--secondary button--outline button--lg" href="/">
           Light Mode
-        </button>
-        <button class="button button--secondary button--lg">
+        </a>
+        <a class="button button--secondary button--lg" href="/?dark=true">
           Dark Mode
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -1749,8 +1749,8 @@
               Inline <code>code</code> has <code>back-ticks around</code> it.
             </p>
             <pre lang="no-highlight"><code>function foo() {
-    console.log('foo!');
-  }</code></pre>
+  console.log('foo!');
+}</code></pre>
             <h3>You can use <code>code</code> in your headers.</h3>
             <blockquote>
               As well as type <code>code</code> in your blockquotes.
@@ -1767,18 +1767,18 @@
                   <td>
                     <pre>
 const myFun = (x, y) =&gt; {
-    const doubleX = x + x;
-    const doubleY = y + y;
-    return doubleX + doubleY
-  };</pre>
+  const doubleX = x + x;
+  const doubleY = y + y;
+  return doubleX + doubleY
+};</pre>
                   </td>
                   <td>
                     <pre>
 let myFun = (x, y) =&gt; {
-    let doubleX = x + x;
-    let doubleY = y + y;
-    doubleX + doubleY
-  };</pre>
+  let doubleX = x + x;
+  let doubleY = y + y;
+  doubleX + doubleY
+};</pre>
                   </td>
                 </tr>
               </tbody>
@@ -1816,7 +1816,7 @@ let myFun = (x, y) =&gt; {
         </div>
       </div>
     </div>
-    <footer class="footer footer--dark">
+    <footer class="footer">
       <div class="container">
         <div class="row footer__links">
           <div class="col footer__col">
@@ -1875,7 +1875,7 @@ let myFun = (x, y) =&gt; {
         </div>
         <div class="text--center">
           <div class="margin-bottom--sm">
-            <img class="footer__logo" alt="Facebook Open Source Logo" src="img/fb-oss-light.png" />
+            <img class="footer__logo" alt="Facebook Open Source Logo" src="img/fb-oss-dark.png" />
           </div>
           Copyright © 2019 Facebook, Inc.
         </div>
