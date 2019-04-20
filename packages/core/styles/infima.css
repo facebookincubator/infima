@@ -2,31 +2,33 @@
 @import 'common/variables';
 @import 'common/base';
 
+// Layout
+@import 'layout/grid';
+@import 'layout/spacing';
+
 // Modules
-@import 'modules/alerts';
+@import 'modules/alert';
 @import 'modules/avatar';
-@import 'modules/badges';
-@import 'modules/breadcrumbs';
-@import 'modules/buttons';
-@import 'modules/button-groups';
-@import 'modules/cards';
+@import 'modules/badge';
+@import 'modules/breadcrumb';
+@import 'modules/button';
+@import 'modules/button-group';
+@import 'modules/card';
 @import 'modules/contents';
 @import 'modules/close';
 @import 'modules/dropdown';
 @import 'modules/footer';
 @import 'modules/forms';
-@import 'modules/grid';
 @import 'modules/hero';
-@import 'modules/images';
+@import 'modules/image';
 @import 'modules/menu';
 @import 'modules/navbar';
 @import 'modules/pagination';
 @import 'modules/pills';
-@import 'modules/tables';
+@import 'modules/table';
 @import 'modules/tabs';
 @import 'modules/typography';
 
 // Utilities
 @import 'utilities/shadow';
-@import 'utilities/spacings';
 @import 'utilities/text';

@@ -58,6 +58,7 @@ A UI framework for content-centric websites.
   - [x] Tabs
 - Utilities
   - [x] Colors
+  - [ ] Font Weights
   - [x] Icons
   - [x] Margin
   - [x] Padding
