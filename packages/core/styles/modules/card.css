@@ -9,7 +9,7 @@
   box-shadow: var(--global-shadow-lw);
   overflow: hidden; // Because of border-radius.
 
-  & .card-image {
+  & .card__image {
     padding-top: var(--card-vertical-spacing);
 
     &:first-child {
@@ -17,9 +17,9 @@
     }
   }
 
-  & .card-header,
-  & .card-body,
-  & .card-footer {
+  & .card__header,
+  & .card__body,
+  & .card__footer {
     padding: var(--card-vertical-spacing) var(--card-horizontal-spacing);
 
     &:not(:last-child) {

@@ -19,7 +19,7 @@
   padding: var(--badge-padding-vertical) var(--badge-padding-horizontal);
 
   @each $color in (primary, secondary, success, info, warning, danger) {
-    &.badge-$(color) {
+    &.badge--$(color) {
       --badge-background-color: var(--color-$(color));
 
       background-color: var(--badge-background-color); // @compat
@@ -27,7 +27,7 @@
     }
   }
 
-  &.badge-secondary {
+  &.badge--secondary {
     color: var(--color-black);
   }
 }

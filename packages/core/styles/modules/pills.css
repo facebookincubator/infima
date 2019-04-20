@@ -11,7 +11,7 @@
     list-style-type: none;
     padding: 0.25rem 1rem;
 
-    &.pill-active {
+    &.pill-item--active {
       background: linear-gradient(
           to top,
           rgba(255, 255, 255, 0.85),
@@ -21,7 +21,7 @@
       color: var(--pills-color-active);
     }
 
-    &:not(.pill-active):hover {
+    &:not(.pill-item--active):hover {
       background-color: var(--color-black-alpha-05);
       transition: background 200ms cubic-bezier(0.08, 0.52, 0.52, 1);
     }
@@ -39,7 +39,7 @@
     margin-top: 0;
   }
 
-  &.pills-block {
+  &.pills--block {
     display: flex;
     justify-content: stretch;
 

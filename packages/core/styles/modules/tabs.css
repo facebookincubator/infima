@@ -12,12 +12,12 @@
     list-style-type: none;
     padding: 0.5rem 1.5rem;
 
-    &.tab-active {
+    &.tab-item--active {
       color: var(--color-black);
       border-bottom-color: var(--tabs-color-active);
     }
 
-    &:not(.tab-active):hover {
+    &:not(.tab-item--active):hover {
       border-bottom-color: var(--color-black-alpha-10);
     }
   }

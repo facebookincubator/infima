@@ -1,1 +1,1 @@
-const buttonGroups = makeRadioBehavior('click', 'btn', 'btn-active');
+const buttonGroups = makeRadioBehavior('click', 'button', 'button--active');

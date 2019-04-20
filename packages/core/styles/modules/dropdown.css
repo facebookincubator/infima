@@ -7,20 +7,20 @@
   position: relative;
   vertical-align: top;
 
-  &.dropdown-hoverable:hover,
-  &.dropdown-show {
-    & .dropdown-menu {
+  &.dropdown--hoverable:hover,
+  &.dropdown--show {
+    & .dropdown__menu {
       display: block;
     }
   }
 
-  &.dropdown-right {
-    & .dropdown-menu {
+  &.dropdown--right {
+    & .dropdown__menu {
       right: 0;
     }
   }
 
-  & .dropdown-menu {
+  & .dropdown__menu {
     background-color: var(--dropdown-background-color);
     border-radius: var(--global-radius);
     box-shadow: var(--global-shadow-md);
@@ -32,7 +32,7 @@
     top: 100%;
     z-index: 20;
 
-    & .dropdown-link {
+    & .dropdown__link {
       border-radius: 0.375rem;
       color: var(--dropdown-link-color);
       display: block;

@@ -1,9 +1,9 @@
-.btn-group {
+.button-group {
   --button-group-margin: 2px;
 
   display: inline-flex;
 
-  & > .btn {
+  & > .button {
     &:not(:first-child) {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
@@ -16,15 +16,15 @@
     }
   }
 
-  & > .btn-active {
+  & > .button--active {
     z-index: 1; // Make the active button's border take precedence.
   }
 
-  &.btn-group-block {
+  &.button-group--block {
     display: flex;
     justify-content: stretch;
 
-    & > .btn {
+    & > .button {
       flex-grow: 1;
     }
   }

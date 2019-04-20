@@ -1,9 +1,9 @@
-.shadow-lw {
+.shadow--lw {
   box-shadow: var(--global-shadow-lw) !important;
 }
-.shadow-md {
+.shadow--md {
   box-shadow: var(--global-shadow-md) !important;
 }
-.shadow-tl {
+.shadow--tl {
   box-shadow: var(--global-shadow-tl) !important;
 }

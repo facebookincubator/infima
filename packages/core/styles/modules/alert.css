@@ -18,7 +18,7 @@
   padding: var(--alert-padding-vertical) var(--alert-padding-horizontal);
 
   @each $color in (primary, secondary, success, info, warning, danger) {
-    &.alert-$(color) {
+    &.alert--$(color) {
       --alert-color: var(--color-white);
       --alert-background-color: var(--color-$(color));
 
@@ -28,7 +28,7 @@
     }
   }
 
-  &.alert-secondary {
+  &.alert--secondary {
     color: var(--color-black);
   }
 

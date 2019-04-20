@@ -3,7 +3,7 @@ function menu($elements) {
     $menu.addEventListener('click', e => {
       $listItem = e.target;
       while ($listItem) {
-        if ($listItem.classList.contains('menu-list-item')) {
+        if ($listItem.classList.contains('menu__list-item')) {
           break;
         }
         $listItem = $listItem.parentNode;
@@ -15,18 +15,20 @@ function menu($elements) {
       }
 
       e.preventDefault();
-      if ($listItem.classList.contains('menu-list-item')) {
-        $listItem.classList.toggle('menu-list-item-collapsed');
+      if ($listItem.classList.contains('menu__list-item')) {
+        $listItem.classList.toggle('menu__list-item--collapsed');
       }
 
       // Don't add any active class if non-leaf item selected.
-      if ($listItem.querySelector('.menu-list')) {
+      if ($listItem.querySelector('.menu__list')) {
         return;
       }
 
       $menu
-        .querySelectorAll('.menu-list-item')
-        .forEach($elItem => $elItem.classList.remove('menu-list-item-active'));
+        .querySelectorAll('.menu__list-item')
+        .forEach($elItem =>
+          $elItem.classList.remove('menu__list-item--active'),
+        );
 
       // Traverse parents and add active class.
       while ($listItem) {
@@ -34,17 +36,17 @@ function menu($elements) {
           break;
         }
 
-        if ($listItem.classList.contains('menu-list-item')) {
-          $listItem.classList.add('menu-list-item-active');
+        if ($listItem.classList.contains('menu__list-item')) {
+          $listItem.classList.add('menu__list-item--active');
         }
 
         $listItem = $listItem.parentNode;
       }
     });
 
-    $button = $menu.querySelector('.menu-button');
+    $button = $menu.querySelector('.menu__button');
     $button.addEventListener('click', e => {
-      $menu.classList.toggle('menu-show');
+      $menu.classList.toggle('menu--show');
     });
   });
 }

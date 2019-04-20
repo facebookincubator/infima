@@ -1,5 +1,5 @@
 // TODO: Compat
-.btn {
+.button {
   // TODO: Allow links to be styled as buttons.
   --button-theme-color: transparent;
 
@@ -48,7 +48,7 @@
     outline: 0;
   }
 
-  &.btn-outline {
+  &.button--outline {
     --button-background-color: transparent;
     --button-color: var(--button-theme-color);
 
@@ -58,7 +58,7 @@
 
     &:hover,
     &:active,
-    &.btn-active {
+    &.button--active {
       --button-color: var(--color-white);
     }
   }
@@ -70,37 +70,37 @@
     pointer-events: none;
   }
 
-  &.btn-sm {
+  &.button--sm {
     --button-size-multiplier: 0.8;
   }
 
-  &.btn-lg {
+  &.button--lg {
     --button-size-multiplier: 1.35;
   }
 
-  &.btn-block {
+  &.button--block {
     display: block;
     width: 100%;
   }
 
-  &.btn-secondary {
+  &.button--secondary {
     color: var(--color-black);
   }
 }
 
 @each $color in (primary, secondary, success, info, warning, danger) {
-  .btn.btn-$(color) {
+  .button.button--$(color) {
     --button-theme-color: var(--color-$(color));
 
-    &:hover:not(.btn-outline) {
+    &:hover:not(.button--outline) {
       --button-theme-color: var(--color-$(color)-dark);
     }
   }
 
   // Increase specificity.
-  .btn.btn.btn-$(color) {
+  .button.button.button--$(color) {
     &:active,
-    &.btn-active {
+    &.button--active {
       --button-theme-color: var(--color-$(color)-darker);
 
       background-color: var(--color-$(color)-darker);

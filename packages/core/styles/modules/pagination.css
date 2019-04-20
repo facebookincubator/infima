@@ -37,7 +37,7 @@
       text-decoration: none;
     }
 
-    &.page-active {
+    &.page-item--active {
       & .page-link {
         background: linear-gradient(
             to top,
@@ -49,7 +49,7 @@
       }
     }
 
-    &:not(.page-active):hover {
+    &:not(.page-item--active):hover {
       & .page-link {
         background-color: var(--color-black-alpha-05);
         transition: background 0.2s ease-in-out;
@@ -64,7 +64,7 @@
     }
   }
 
-  &.pagination-sm {
+  &.pagination--sm {
     --pagination-font-size: 0.8rem;
     --pagination-padding-horizontal: 0.8rem;
     --pagination-padding-vertical: 0.2rem;
@@ -80,7 +80,7 @@
     }
   }
 
-  &.pagination-lg {
+  &.pagination--lg {
     --pagination-font-size: 1.2rem;
     --pagination-padding-horizontal: 1.2rem;
     --pagination-padding-vertical: 0.3rem;

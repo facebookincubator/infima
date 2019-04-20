@@ -18,17 +18,17 @@
     margin: var(--contents-padding-vertical);
   }
 
-  &.contents-left-border {
+  &.contents__left-border {
     border-left-color: var(--contents-border-color);
     border-left-style: solid;
     border-left-width: 1px;
   }
 
-  & .contents-link {
+  & .contents__link {
     color: var(--color-secondary-darkest);
 
     &:hover,
-    &.contents-link-active {
+    &.contents__link--active {
       color: var(--color-primary);
       text-decoration: none;
     }

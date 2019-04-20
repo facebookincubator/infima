@@ -28,14 +28,14 @@
     display: flex;
   }
 
-  &.navbar-fixed-top {
+  &.navbar--fixed-top {
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
   }
 
-  & .navbar-inner {
+  & .navbar__inner {
     align-items: stretch;
     display: flex;
     flex-wrap: wrap;
@@ -43,26 +43,46 @@
     width: 100%;
   }
 
-  & .navbar-brand {
+  & .navbar__brand {
+    align-items: center;
     color: var(--navbar-link-color);
+    display: flex;
     font-weight: bold;
+    height: 2rem;
     margin-right: 1rem;
     text-decoration: none;
   }
 
-  & .navbar-items {
+  & .navbar__logo {
+    height: 100%;
+    margin-right: 0.5rem;
+  }
+
+  & .navbar__items {
     align-items: center;
     display: flex;
     flex: 1 0 0;
+
+    &.navbar__items--center {
+      flex: 0 0 auto;
+
+      & .navbar__brand {
+        margin: 0;
+      }
+    }
+
+    &.navbar__items--right {
+      justify-content: flex-end;
+    }
   }
 
-  & .navbar-item {
+  & .navbar__item {
     display: inline-block;
     margin-top: 0;
     position: relative;
   }
 
-  & .navbar-link {
+  & .navbar__link {
     color: var(--navbar-link-color);
     cursor: pointer;
     display: block;
@@ -75,19 +95,7 @@
     }
   }
 
-  & .navbar-center {
-    flex: 0 0 auto;
-
-    & .navbar-brand {
-      margin: 0;
-    }
-  }
-
-  & .navbar-right {
-    justify-content: flex-end;
-  }
-
-  &.navbar-dark {
+  &.navbar--dark {
     --navbar-background-color: #303846;
     --navbar-link-color: var(--color-white);
     --navbar-link-hover-color: var(--color-secondary);
@@ -95,12 +103,12 @@
     background-color: var(--navbar-background-color); // @compat
 
     // @compat
-    & .navbar-brand {
+    & .navbar__brand {
       color: var(--navbar-link-color); // @compat
     }
 
     // @compat
-    & .navbar-link {
+    & .navbar__link {
       color: var(--navbar-link-color); // @compat
 
       // @compat
@@ -110,7 +118,7 @@
     }
   }
 
-  &.navbar-light {
+  &.navbar--light {
     --navbar-background-color: var(--color-white);
     --navbar-link-color: var(--color-primary);
     --navbar-link-hover-color: var(--color-primary-darker);
@@ -122,12 +130,12 @@
     background-color: var(--navbar-background-color); // @compat
 
     // @compat
-    & .navbar-brand {
+    & .navbar__brand {
       color: var(--navbar-link-color); // @compat
     }
 
     // @compat
-    & .navbar-link {
+    & .navbar__link {
       color: var(--navbar-link-color); // @compat
 
       // @compat
@@ -137,7 +145,7 @@
     }
 
     // @compat
-    & .navbar-search {
+    & .navbar__search {
       // @compat
       & input {
         background-color: var(
@@ -154,7 +162,7 @@
     }
   }
 
-  & .navbar-search {
+  & .navbar__search {
     padding-left: var(--navbar-padding-horizontal);
 
     & input {

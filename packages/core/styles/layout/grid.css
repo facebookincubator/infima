@@ -6,7 +6,7 @@
   padding-right: var(--horizontal-spacing);
   width: 100%;
 
-  &.container-fluid {
+  &.container--fluid {
     max-width: inherit;
   }
 }
@@ -18,7 +18,7 @@
   margin-left: calc(var(--horizontal-spacing) * -0.5);
   margin-right: calc(var(--horizontal-spacing) * -0.5);
 
-  &.no-gutters {
+  &.row--no-gutters {
     margin-left: 0;
     margin-right: 0;
 
@@ -28,23 +28,23 @@
     }
   }
 
-  &.row-align-top {
+  &.row--align-top {
     align-items: flex-start;
   }
 
-  &.row-align-bottom {
+  &.row--align-bottom {
     align-items: flex-end;
   }
 
-  &.row-align-center {
+  &.row--align-center {
     align-items: center;
   }
 
-  &.row-align-stretch {
+  &.row--align-stretch {
     align-items: stretch;
   }
 
-  &.row-align-baseline {
+  &.row--align-baseline {
     align-items: baseline;
   }
 
@@ -64,7 +64,7 @@
       max-width: var(--col-width);
     }
 
-    @media (--narrow-window) {
+    @media (--narrow--window) {
       // Increase specificity.
       &.col.col {
         --col-width: 100%;
@@ -76,14 +76,14 @@
     }
 
     @for $column from 1 to 12 {
-      &.col-$(column) {
+      &.col--$(column) {
         --col-width: calc($(column) / 12 * 100%);
 
         flex: 0 0 var(--col-width); // @compat
         max-width: var(--col-width); // @compat
       }
 
-      &.col-offset-$(column) {
+      &.col--offset-$(column) {
         margin-left: calc($(column) / 12 * 100%);
       }
     }
