@@ -48,14 +48,19 @@
       float: right;
     }
   </style>
+  <script type="text/javascript">
+    if (/dark=true/.test(window.location.search)) {
+      document.write('<link id="theme-stylesheet" href="css/default-dark/default-dark.css" type="text/css" rel="stylesheet" />');
+    } else {
+      document.write('<link id="theme-stylesheet" href="css/default/default.css" type="text/css" rel="stylesheet" />');
+    }
+  </script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <!-- <link id="theme-stylesheet" href="css/default/default.css" type="text/css" rel="stylesheet" /> -->
-  <link id="theme-stylesheet" href="css/default-dark/default-dark.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
-  <nav class="navbar navbar--light navbar--fixed-top">
+  <nav class="navbar navbar--fixed-top">
     <div class="container">
       <div class="navbar__inner">
         <div class="navbar__items">
@@ -122,7 +127,7 @@
       </div>
     </div>
   </nav>
-  <div class="hero">
+  <div class="hero text--center">
     <div class="container">
       <h1 class="hero__title">Infima</h1>
       <p class="hero__subtitle">
@@ -179,7 +184,7 @@
         </div>
         <div class="row">
           <div class="col">
-            <nav class="navbar navbar--light">
+            <nav class="navbar navbar--dark">
               <div class="navbar__inner">
                 <div class="navbar__items">
                   <a class="navbar__brand">
@@ -225,7 +230,7 @@
         </div>
         <div class="row">
           <div class="col">
-            <nav class="navbar navbar--dark">
+            <nav class="navbar navbar--primary">
               <div class="navbar__inner">
                 <div class="navbar__items">
                   <div class="navbar__item">
