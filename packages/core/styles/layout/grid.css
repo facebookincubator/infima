@@ -59,12 +59,12 @@
     padding-right: calc(var(--horizontal-spacing) / 2);
     width: 100%;
 
-    &[class*='col-'] {
+    &[class*='col--'] {
       flex: 0 0 var(--col-width);
       max-width: var(--col-width);
     }
 
-    @media (--narrow--window) {
+    @media (--narrow-window) {
       // Increase specificity.
       &.col.col {
         --col-width: 100%;
