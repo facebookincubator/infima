@@ -3,23 +3,23 @@
     (0, 0.25rem, 0.5rem, 1rem, 2rem, 5rem)
   {
     .$(type)--$(size) {
-      $(type): $(value);
+      $(type): $(value) !important;
     }
 
     @each $side in (top, left, bottom, right) {
       .$(type)-$(side)--$(size) {
-        $(type)-$(side): $(value);
+        $(type)-$(side): $(value) !important;
       }
     }
 
     .$(type)-vert--$(size) {
-      $(type)-bottom: $(value);
-      $(type)-top: $(value);
+      $(type)-bottom: $(value) !important;
+      $(type)-top: $(value) !important;
     }
 
     .$(type)-horiz--$(size) {
-      $(type)-left: $(value);
-      $(type)-right: $(value);
+      $(type)-left: $(value) !important;
+      $(type)-right: $(value) !important;
     }
   }
 }
