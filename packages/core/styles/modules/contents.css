@@ -1,11 +1,12 @@
 :root {
-  --ifm-contents-border-color: var(--ifm-color-emphasis-alpha-50);
-  --ifm-contents-padding-left: var(--ifm-spacing-horizontal);
-  --ifm-contents-padding-vertical: calc(var(--ifm-spacing-vertical) * 0.5);
+  --ifm-contents-border-color: var(--ifm-color-emphasis-alpha-10);
+  --ifm-contents-link-color: var(--ifm-color-emphasis-alpha-30);
+  --ifm-contents-padding-left: 0.5rem;
+  --ifm-contents-padding-vertical: 0.5rem;
 }
 
 .contents {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-bottom: 0;
   padding-bottom: var(--ifm-contents-padding-vertical);
   padding-top: var(--ifm-contents-padding-vertical);
@@ -21,13 +22,13 @@
   }
 
   &.contents__left-border {
-    border-left-color: var(--ifm-color-emphasis-alpha-30);
+    border-left-color: var(--ifm-contents-border-color);
     border-left-style: solid;
     border-left-width: 1px;
   }
 
   & .contents__link {
-    color: var(--ifm-color-emphasis-alpha-50);
+    color: var(--ifm-contents-link-color);
 
     &:hover,
     &.contents__link--active {
