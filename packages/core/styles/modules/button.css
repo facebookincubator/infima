@@ -15,7 +15,6 @@
 }
 
 .button {
-  // TODO: Allow links to be styled as buttons.
   appearance: none;
   background-color: var(--ifm-button-background-color);
   border-color: var(--ifm-button-border-color);
@@ -49,7 +48,9 @@
   white-space: nowrap;
 
   &:hover {
+    color: var(--ifm-button-color); // Override for button links.
     outline: 0;
+    text-decoration: none;
   }
 
   &:focus {
