@@ -72,6 +72,21 @@
     }
   }
 
+  &.button--link {
+    --ifm-button-background-color: transparent;
+    --ifm-button-border-color: transparent;
+
+    color: var(--ifm-link-color);
+    text-decoration: var(--ifm-link-decoration);
+
+    &:hover,
+    &:active,
+    &.button--active {
+      color: var(--ifm-link-hover-color);
+      text-decoration: var(--ifm-link-hover-decoration);
+    }
+  }
+
   &.disabled,
   &:disabled,
   &[disabled] {
