@@ -6,6 +6,14 @@
 @import 'layout/grid';
 @import 'layout/spacing';
 
+// Content
+@import 'content/code';
+@import 'content/heading';
+@import 'content/image';
+@import 'content/list';
+@import 'content/table';
+@import 'content/typography';
+
 // Modules
 @import 'modules/alert';
 @import 'modules/avatar';
@@ -20,14 +28,11 @@
 @import 'modules/footer';
 @import 'modules/forms';
 @import 'modules/hero';
-@import 'modules/image';
 @import 'modules/menu';
 @import 'modules/navbar';
 @import 'modules/pagination';
 @import 'modules/pills';
-@import 'modules/table';
 @import 'modules/tabs';
-@import 'modules/typography';
 
 // Utilities
 @import 'utilities/shadow';

@@ -186,7 +186,6 @@
   --ifm-color-black-alpha-80: rgba(0, 0, 0, 0.8);
 
   // Base.
-  --ifm-color-link: var(--ifm-color-primary);
   --ifm-color-content: #1f2227;
   --ifm-color-content-inverse: var(--ifm-color-white);
 
@@ -226,13 +225,16 @@
   --ifm-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
   --ifm-font-size-base: 15px;
+
+  --ifm-font-weight-light: 300;
   --ifm-font-weight-normal: 400;
-  --ifm-font-weight-bold: 600;
+  --ifm-font-weight-semibold: 500;
+  --ifm-font-weight-bold: 700;
+
   --ifm-font-weight-base: var(--ifm-font-weight-normal);
   --ifm-line-height-base: 1.5;
 
-  // Grid.
-  --ifm-container-width: 1140px;
+  // Spacing.
   --ifm-global-spacing: 1rem;
   --ifm-spacing-vertical: var(--ifm-global-spacing);
   --ifm-spacing-horizontal: var(--ifm-global-spacing);
@@ -241,94 +243,11 @@
   --ifm-transition-fast: 200ms;
   --ifm-transition-slow: 200ms;
 
-  // Links.
-  --ifm-link-color: var(--ifm-color-link);
-  --ifm-link-decoration: none;
-  --ifm-link-hover-color: var(--ifm-link-color);
-  --ifm-link-hover-decoration: underline;
-
   // Shadows.
   --ifm-global-shadow-lw: 0 1px 2px 0 var(--ifm-color-black-alpha-10);
   --ifm-global-shadow-md: 0 5px 40px var(--ifm-color-black-alpha-20);
   --ifm-global-shadow-tl: 0 12px 28px 0 var(--ifm-color-black-alpha-20),
     0 2px 4px 0 var(--ifm-color-black-alpha-10);
-
-  // Paragraphs.
-  --ifm-paragraph-margin-bottom: 1rem;
-
-  // Headings.
-  --ifm-headings-margin-top: 0;
-  --ifm-headings-margin-bottom: var(--ifm-spacing-vertical);
-  --ifm-headings-font-family: inherit;
-  --ifm-headings-font-weight: var(--ifm-font-weight-bold);
-  --ifm-headings-line-height: 1.25;
-
-  --ifm-h1-font-size: 2rem;
-  --ifm-h2-font-size: 1.5rem;
-  --ifm-h3-font-size: 1.25rem;
-  --ifm-h4-font-size: 1rem;
-  --ifm-h5-font-size: 0.875rem;
-  --ifm-h6-font-size: 0.85rem;
-
-  --ifm-headings-color: inherit;
-
-  // Lists.
-  --ifm-list-left-padding: 2rem;
-  --ifm-list-margin: 1rem;
-  --ifm-list-item-margin: 0.25rem;
-  --ifm-list-paragraph-margin: 1rem;
-
-  // Images.
-  --ifm-image-alignment-padding: 1.25rem;
-
-  // Tables.
-  --ifm-table-cell-padding: 0.75rem;
-
-  --ifm-table-background: transparent;
-  --ifm-table-stripe-background: var(--ifm-color-emphasis-alpha-05);
-
-  --ifm-table-border-width: 1px;
-  --ifm-table-border-color: var(--ifm-color-emphasis-alpha-20);
-
-  --ifm-table-head-background: inherit;
-  --ifm-table-head-color: inherit;
-  --ifm-table-head-font-weight: var(--ifm-font-weight-bold);
-
-  --ifm-table-cell-color: inherit;
-
-  // Blockquotes.
-  --ifm-blockquote-color: #6a737d;
-  --ifm-blockquote-font-size: var(--ifm-font-size-base);
-  --ifm-blockquote-padding-horizontal: 0;
-  --ifm-blockquote-padding-vertical: 0;
-
-  // Code.
-  --ifm-code-background: var(--ifm-color-emphasis-alpha-05);
-  --ifm-code-border-radius: var(--ifm-global-radius);
-  --ifm-code-color: var(--ifm-color-emphasis-alpha-80);
-  --ifm-code-font-size: 85%;
-  --ifm-code-padding-horizontal: 0.4rem;
-  --ifm-code-padding-vertical: 0.2rem;
-
-  --ifm-pre-background: var(--ifm-color-emphasis-alpha-05);
-  --ifm-pre-border-radius: var(--ifm-code-border-radius);
-  --ifm-pre-color: inherit;
-  --ifm-pre-line-height: 1.45;
-  --ifm-pre-padding: 1rem;
-
-  --ifm-kbd-background: #fafbfc;
-  --ifm-kbd-border-color: #d1d5da;
-  --ifm-kbd-border-radius: var(--ifm-code-border-radius);
-  --ifm-kbd-color: #444d56;
-  --ifm-kbd-font-size: 68.75%;
-  --ifm-kbd-line-height: 0.625rem;
-  --ifm-kbd-padding-horizontal: 0.3125rem;
-  --ifm-kbd-padding-vertical: 0.1875rem;
-
-  // Horizontal Rules.
-  --ifm-hr-border-color: var(--ifm-color-emphasis-alpha-10);
-  --ifm-hr-border-width: 1px;
-  --ifm-hr-margin-vertical: 1.5rem;
 }
 
 @custom-media --narrow-window (max-width: 996px);

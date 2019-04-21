@@ -44,7 +44,6 @@
     color: var(--ifm-color-emphasis-alpha-60);
     cursor: pointer;
     display: flex;
-    font-size: 0.875em;
     line-height: 20px;
     justify-content: space-between;
     text-decoration: none;

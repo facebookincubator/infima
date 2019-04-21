@@ -11,9 +11,8 @@ A UI framework for content-centric websites.
   - [ ] Audit z-index list (nav, dropdown, tooltips, etc)
   - [x] Define box-shadow for various elevations
   - [x] Define fast and slow transition speeds
-  - [ ] Define shades of gray
 - Medium
-  - [ ] Create dark theme
+  - [x] Create dark theme
 - Low
   - [ ] Use postcss to compile the CSS variables away for IE11 compatibility
 
@@ -58,7 +57,7 @@ A UI framework for content-centric websites.
   - [x] Tabs
 - Utilities
   - [x] Colors
-  - [ ] Font Weights
+  - [x] Font Weights
   - [x] Icons
   - [x] Margin
   - [x] Padding

@@ -1,3 +1,19 @@
+:root {
+  --ifm-table-cell-padding: 0.75rem;
+
+  --ifm-table-background: transparent;
+  --ifm-table-stripe-background: var(--ifm-color-emphasis-alpha-05);
+
+  --ifm-table-border-width: 1px;
+  --ifm-table-border-color: var(--ifm-color-emphasis-alpha-20);
+
+  --ifm-table-head-background: inherit;
+  --ifm-table-head-color: inherit;
+  --ifm-table-head-font-weight: var(--ifm-font-weight-bold);
+
+  --ifm-table-cell-color: inherit;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;

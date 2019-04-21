@@ -1,3 +1,7 @@
+:root {
+  --ifm-image-alignment-padding: 1.25rem;
+}
+
 img {
   border-style: none;
   box-sizing: content-box;

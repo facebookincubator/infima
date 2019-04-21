@@ -1,3 +1,7 @@
+:root {
+  --ifm-container-width: 1140px;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;

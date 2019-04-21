@@ -2,8 +2,8 @@
 :root {
   --ifm-breadcrumb-border-radius: 1.5rem;
   --ifm-breadcrumb-spacing: 0.0625rem;
-  --ifm-breadcrumb-color-active: var(--color-primary);
-  --ifm-breadcrumb-item-background-active: var(--color-emphasis-alpha-05);
+  --ifm-breadcrumb-color-active: var(--ifm-color-primary);
+  --ifm-breadcrumb-item-background-active: var(--ifm-color-emphasis-alpha-05);
   --ifm-breadcrumb-padding-horizontal: 1rem;
   --ifm-breadcrumb-padding-vertical: 0.5rem;
   --ifm-breadcrumb-size-multiplier: 1;
@@ -21,56 +21,59 @@
     list-style-type: none;
 
     &:not(:first-child) {
-      margin-left: var(--breadcrumb-spacing);
+      margin-left: var(--ifm-breadcrumb-spacing);
     }
 
     &:not(:last-child) {
-      margin-right: var(--breadcrumb-spacing);
+      margin-right: var(--ifm-breadcrumb-spacing);
 
       &:after {
-        background-image: var(--breadcrumb-separator);
+        background-image: var(--ifm-breadcrumb-separator);
         background-position: center;
         content: ' ';
         display: inline-block;
         height: calc(
-          var(--breadcrumb-separator-size) * var(--breadcrumb-size-multiplier) *
-            var(--breadcrumb-separator-size-multiplier)
+          var(--ifm-breadcrumb-separator-size) *
+            var(--ifm-breadcrumb-size-multiplier) *
+            var(--ifm-breadcrumb-separator-size-multiplier)
         );
         margin: 0 0.5rem;
         opacity: 0.5;
         width: calc(
-          var(--breadcrumb-separator-size) * var(--breadcrumb-size-multiplier) *
-            var(--breadcrumb-separator-size-multiplier)
+          var(--ifm-breadcrumb-separator-size) *
+            var(--ifm-breadcrumb-size-multiplier) *
+            var(--ifm-breadcrumb-separator-size-multiplier)
         );
       }
     }
 
     & .breadcrumb__link {
-      border-radius: var(--breadcrumb-border-radius);
-      color: var(--font-base-color);
+      border-radius: var(--ifm-breadcrumb-border-radius);
+      color: var(--ifm-font-base-color);
       display: inline-block;
-      font-size: calc(1rem * var(--breadcrumb-size-multiplier));
+      font-size: calc(1rem * var(--ifm-breadcrumb-size-multiplier));
       padding: calc(
-          var(--breadcrumb-padding-vertical) * var(--breadcrumb-size-multiplier)
+          var(--ifm-breadcrumb-padding-vertical) *
+            var(--ifm-breadcrumb-size-multiplier)
         )
         calc(
-          var(--breadcrumb-padding-horizontal) *
-            var(--breadcrumb-size-multiplier)
+          var(--ifm-breadcrumb-padding-horizontal) *
+            var(--ifm-breadcrumb-size-multiplier)
         );
       text-decoration: none;
     }
 
     &.breadcrumb__item--active {
       & .breadcrumb__link {
-        background: var(--breadcrumb-item-background-active);
-        color: var(--breadcrumb-color-active);
+        background: var(--ifm-breadcrumb-item-background-active);
+        color: var(--ifm-breadcrumb-color-active);
       }
     }
 
     &:not(.breadcrumb__item--active):hover {
       & .breadcrumb__link {
-        background: var(--breadcrumb-item-background-active);
-        transition: background var(--transition-fast)
+        background: var(--ifm-breadcrumb-item-background-active);
+        transition: background var(--ifm-transition-fast)
           cubic-bezier(0.08, 0.52, 0.52, 1);
       }
     }
