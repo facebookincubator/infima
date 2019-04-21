@@ -16,7 +16,7 @@
   }
 }
 
-@each $weight in (light, normal, bold, bolder) {
+@each $weight in (light, normal, semibold, bold) {
   .text--$(weight) {
     font-weight: var(--ifm-font-weight-$(weight));
   }
