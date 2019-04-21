@@ -19,8 +19,8 @@
     }
   }
 
-  & > .menu__list > .menu__list-item > .menu-link {
-    font-weight: bold;
+  & > .menu__list > .menu__list-item > .menu__link {
+    font-weight: var(--ifm-font-weight-semibold);
   }
 
   & .menu__list-item {
