@@ -50,11 +50,10 @@
   </style>
   <script type="text/javascript">
     if (/dark=true/.test(window.location.search)) {
-      document.write('<link id="theme-stylesheet" href="css/default-dark/default-dark.css" type="text/css" rel="stylesheet" />');
-    } else {
-      document.write('<link id="theme-stylesheet" href="css/default/default.css" type="text/css" rel="stylesheet" />');
+      document.querySelector('html').setAttribute('data-theme', 'dark');
     }
   </script>
+  <link id="theme-stylesheet" href="css/default/default.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 </head>
@@ -134,12 +133,9 @@
         A UI framework for content-centric websites.
       </p>
       <div>
-        <a class="button button--secondary button--outline button--lg" href="/">
-          Light Mode
-        </a>
-        <a class="button button--secondary button--lg" href="/?dark=true">
-          Dark Mode
-        </a>
+        <button class="button button--secondary button--outline button--lg" id="mode-toggle">
+          Toggle Mode (or press X)
+        </button>
       </div>
     </div>
   </div>
@@ -1922,14 +1918,29 @@ let myFun = (x, y) =&gt; {
     <script type="text/javascript" src="js/pills.js"></script>
     <script type="text/javascript" src="js/tabs.js"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        alert(document.querySelectorAll('.alert'));
-        buttonGroups(document.querySelectorAll('.button-group'));
-        dropdowns(document.querySelectorAll('.dropdown'));
-        pills(document.querySelectorAll('.pills'));
-        menu(document.querySelectorAll('.menu'));
-        tabs(document.querySelectorAll('.tabs'));
-      });
+      (() => {
+        document.addEventListener('DOMContentLoaded', function () {
+          alert(document.querySelectorAll('.alert'));
+          buttonGroups(document.querySelectorAll('.button-group'));
+          dropdowns(document.querySelectorAll('.dropdown'));
+          pills(document.querySelectorAll('.pills'));
+          menu(document.querySelectorAll('.menu'));
+          tabs(document.querySelectorAll('.tabs'));
+        });
+        function toggleMode() {
+          const isDarkTheme = document.querySelector('html').getAttribute('data-theme') === 'dark';
+          document.querySelector('html').setAttribute('data-theme', isDarkTheme ? '' : 'dark');
+          history.pushState({}, null, isDarkTheme ? '/' : '/?dark=true');
+        }
+        document.getElementById('mode-toggle').addEventListener('click', toggleMode);
+        window.addEventListener('keydown', function(event) {
+          const X_KEYCODE = 88;
+          console.log(event);
+          if (event.key === 'x' || event.keyCode === X_KEYCODE) {
+            toggleMode();
+          }
+        });
+      })();
     </script>
   </body>
 </html>

@@ -1,0 +1,29 @@
+html[data-theme='dark'] {
+  --ifm-color-emphasis: var(--ifm-color-white);
+  --ifm-color-emphasis-alpha-05: var(--ifm-color-white-alpha-05);
+  --ifm-color-emphasis-alpha-10: var(--ifm-color-white-alpha-10);
+  --ifm-color-emphasis-alpha-15: var(--ifm-color-white-alpha-15);
+  --ifm-color-emphasis-alpha-20: var(--ifm-color-white-alpha-20);
+  --ifm-color-emphasis-alpha-30: var(--ifm-color-white-alpha-30);
+  --ifm-color-emphasis-alpha-40: var(--ifm-color-white-alpha-40);
+  --ifm-color-emphasis-alpha-50: var(--ifm-color-white-alpha-50);
+  --ifm-color-emphasis-alpha-60: var(--ifm-color-white-alpha-60);
+  --ifm-color-emphasis-alpha-80: var(--ifm-color-white-alpha-80);
+
+  --ifm-color-emphasis-inverse: var(--ifm-color-black);
+  --ifm-color-emphasis-inverse-alpha-05: var(--ifm-color-black-alpha-05);
+  --ifm-color-emphasis-inverse-alpha-10: var(--ifm-color-black-alpha-10);
+  --ifm-color-emphasis-inverse-alpha-15: var(--ifm-color-black-alpha-15);
+  --ifm-color-emphasis-inverse-alpha-20: var(--ifm-color-black-alpha-20);
+  --ifm-color-emphasis-inverse-alpha-30: var(--ifm-color-black-alpha-30);
+  --ifm-color-emphasis-inverse-alpha-40: var(--ifm-color-black-alpha-40);
+  --ifm-color-emphasis-inverse-alpha-50: var(--ifm-color-black-alpha-50);
+  --ifm-color-emphasis-inverse-alpha-60: var(--ifm-color-black-alpha-60);
+  --ifm-color-emphasis-inverse-alpha-80: var(--ifm-color-black-alpha-80);
+
+  --ifm-background-color: #1f2227;
+  --ifm-background-surface-color: #33363b;
+
+  --ifm-font-base-color: var(--ifm-color-content-inverse);
+  --ifm-font-base-color-inverse: var(--ifm-color-content);
+}
