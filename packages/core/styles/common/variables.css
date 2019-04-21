@@ -250,4 +250,4 @@
     0 2px 4px 0 var(--ifm-color-black-alpha-10);
 }
 
-@custom-media --narrow-window (max-width: 996px);
+@custom-media --ifm-narrow-window (max-width: 996px);

@@ -68,7 +68,7 @@
     padding-left: 0;
   }
 
-  @media (--narrow-window) {
+  @media (--ifm-narrow-window) {
     --ifm-footer-padding-horizontal: var(--ifm-spacing-horizontal);
 
     padding: var(--ifm-footer-padding-vertical)
