@@ -10,6 +10,7 @@
 @import 'content/code';
 @import 'content/heading';
 @import 'content/image';
+@import 'content/markdown';
 @import 'content/list';
 @import 'content/table';
 @import 'content/typography';
