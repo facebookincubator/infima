@@ -248,6 +248,11 @@
   --ifm-global-shadow-md: 0 5px 40px var(--ifm-color-black-alpha-20);
   --ifm-global-shadow-tl: 0 12px 28px 0 var(--ifm-color-black-alpha-20),
     0 2px 4px 0 var(--ifm-color-black-alpha-10);
+
+  // Z-index.
+  --ifm-z-index-dropdown: 100;
+  --ifm-z-index-fixed: 200;
+  --ifm-z-index-overlay: 400;
 }
 
 @custom-media --ifm-narrow-window (max-width: 996px);

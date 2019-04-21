@@ -32,7 +32,7 @@
     padding: 0.5rem;
     position: absolute;
     top: 100%;
-    z-index: 20;
+    z-index: var(--ifm-z-index-dropdown);
 
     & .dropdown__link {
       border-radius: 0.375rem;

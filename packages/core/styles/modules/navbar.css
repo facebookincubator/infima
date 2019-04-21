@@ -28,7 +28,6 @@
   padding: var(--ifm-navbar-padding-vertical)
     var(--ifm-navbar-padding-horizontal);
   width: 100%;
-  z-index: 100; // TODO: Extract out.
 
   &,
   & > .container,
@@ -41,6 +40,7 @@
     left: 0;
     right: 0;
     top: 0;
+    z-index: var(--ifm-z-index-fixed);
   }
 
   & .navbar__inner {
