@@ -36,13 +36,13 @@
     }
   }
 
-  & .pagination-nav__item--label {
+  & .pagination-nav__link--label {
     margin-bottom: 0;
     margin-top: 0;
     word-break: break-word;
   }
 
-  & .pagination-nav__item--sublabel {
+  & .pagination-nav__link--sublabel {
     color: var(--ifm-color-emphasis-alpha-60);
     font-weight: var(--ifm-font-weight-semibold);
     margin-bottom: 0.25rem;
