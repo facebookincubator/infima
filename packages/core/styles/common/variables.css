@@ -214,7 +214,7 @@
   --ifm-background-color: transparent; // Body's background.
   --ifm-background-surface-color: var(--ifm-color-content-inverse);
   --ifm-global-border-width: 1px;
-  --ifm-global-radius: 0.25rem;
+  --ifm-global-radius: 0.4rem;
 
   // Typography.
   --ifm-font-base-color: var(--ifm-color-content);

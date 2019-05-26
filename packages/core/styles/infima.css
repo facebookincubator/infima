@@ -32,6 +32,7 @@
 @import 'modules/menu';
 @import 'modules/navbar';
 @import 'modules/pagination';
+@import 'modules/pagination-nav';
 @import 'modules/pills';
 @import 'modules/tabs';
 

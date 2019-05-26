@@ -1,0 +1,40 @@
+:root {
+  --ifm-pagination-nav-border-radius: var(--ifm-global-radius);
+  --ifm-pagination-nav-color-hover: var(--ifm-color-primary);
+}
+
+.pagination-nav {
+  display: flex;
+
+  & .pagination-nav-item {
+    border-color: var(--ifm-color-emphasis-alpha-30);
+    border-radius: var(--ifm-pagination-nav-border-radius);
+    border-style: solid;
+    border-width: 1px;
+    flex-basis: 50%;
+    flex-grow: 1;
+    padding: var(--ifm-global-spacing);
+    text-decoration: none;
+
+    &:hover {
+      border-color: var(--ifm-pagination-nav-color-hover);
+    }
+  }
+
+  & .pagination-nav-item-next {
+    margin-left: var(--ifm-spacing-horizontal);
+    text-align: right;
+  }
+
+  & .pagination-nav-item-label {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    word-break: break-word;
+  }
+
+  & .pagination-nav-item-sublabel {
+    color: var(--ifm-color-emphasis-alpha-60);
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+}

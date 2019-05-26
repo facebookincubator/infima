@@ -50,6 +50,7 @@ A UI framework for content-centric websites.
     - [x] Desktop
     - [ ] Mobile
   - [x] Pagination
+  - [x] Pagination Nav
   - [x] Pills
   - [x] Sidebar
     - [x] Desktop
