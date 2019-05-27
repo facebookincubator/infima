@@ -16,7 +16,8 @@
   --ifm-navbar-search-input-placeholder-color: var(
     --ifm-color-emphasis-alpha-40
   );
-  --ifm-navbar-search-input-icon: url('data:image/svg+xml;utf8,<svg alt="Search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" fill="rgba(0,0,0,0.5)" /></svg>');
+  --ifm-navbar-search-input-icon: url('data:image/svg+xml;utf8,<svg fill="currentColor" alt="Search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" /></svg>');
+  --ifm-navbar-sidebar-width: 15rem;
 }
 
 .navbar {
@@ -24,15 +25,19 @@
   background-color: var(--ifm-navbar-background-color);
   box-shadow: var(--ifm-navbar-shadow);
   box-sizing: border-box;
+  display: flex;
   height: var(--ifm-navbar-height);
   padding: var(--ifm-navbar-padding-vertical)
     var(--ifm-navbar-padding-horizontal);
   width: 100%;
 
-  &,
   & > .container,
   & > .container-fluid {
     display: flex;
+
+    @media (--ifm-narrow-window) {
+      padding: 0;
+    }
   }
 
   &.navbar--fixed-top {
@@ -59,6 +64,16 @@
     height: 2rem;
     margin-right: 1rem;
     text-decoration: none;
+  }
+
+  & .navbar__toggle {
+    cursor: pointer;
+    display: none;
+    margin-right: 0.5rem;
+
+    @media (--ifm-narrow-window) {
+      display: inherit;
+    }
   }
 
   & .navbar__logo {
@@ -88,6 +103,10 @@
     display: inline-block;
     margin-top: 0;
     position: relative;
+
+    @media (--ifm-narrow-window) {
+      display: none;
+    }
   }
 
   & .navbar__link {
@@ -115,7 +134,6 @@
     --ifm-navbar-search-input-placeholder-color: var(
       --ifm-color-white-alpha-50
     );
-    --ifm-navbar-search-input-icon: url('data:image/svg+xml;utf8,<svg alt="Search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" fill="rgba(255,255,255,0.5)" /></svg>');
 
     background-color: var(--ifm-navbar-background-color); // @compat
 
@@ -161,7 +179,6 @@
     );
     --ifm-navbar-search-input-color: var(--ifm-color-white-alpha-80);
     --ifm-navbar-search-input-placeholder-color: rgba(255, 255, 255, 0.5);
-    --ifm-navbar-search-input-icon: url('data:image/svg+xml;utf8,<svg alt="Search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" fill="rgba(255,255,255,0.5)" /></svg>');
 
     background-color: var(--ifm-navbar-background-color); // @compat
 
@@ -223,6 +240,48 @@
       &::placeholder {
         color: var(--ifm-navbar-search-input-placeholder-color);
       }
+
+      @media (--ifm-narrow-window) {
+        width: 9rem;
+      }
     }
+  }
+
+  & .navbar__sidebar {
+    background-color: var(--ifm-navbar-background-color);
+    bottom: 0;
+    box-shadow: var(--ifm-global-shadow-md);
+    display: none;
+    left: 0;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform var(--ifm-transition-fast) ease;
+    width: var(--ifm-navbar-sidebar-width);
+
+    @media (--ifm-narrow-window) {
+      display: block;
+    }
+  }
+
+  &.navbar--reveal-sidebar {
+    & .navbar__sidebar {
+      transform: translateX(0);
+    }
+
+    & .navbar__sidebar__backdrop {
+      display: block;
+    }
+  }
+
+  & .navbar__sidebar__backdrop {
+    background-color: var(--ifm-color-black-alpha-60);
+    bottom: 0;
+    display: none;
+    left: 0;
+    right: 0;
+    position: fixed;
+    top: 0;
   }
 }

@@ -74,9 +74,17 @@
       <div class="container">
         <div class="navbar__inner">
           <div class="navbar__items">
-            <div class="navbar__item">
-              <a class="navbar__brand">Infima</a>
+            <div class="navbar__toggle" role="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22">
+                </path>
+              </svg>
             </div>
+            <a class="navbar__brand">
+              <img class="navbar__logo" src="https://cdn-images-1.medium.com/max/2600/1*3G8kafhYWne77HFHZm_Tfw.png" />
+              Infima
+            </a>
             <div class="navbar__item">
               <a class="navbar__link" href="#url">Docs</a>
             </div>
@@ -137,6 +145,13 @@
             </form>
           </div>
         </div>
+      </div>
+      <div role="presentation" class="navbar__sidebar__backdrop"></div>
+      <div class="navbar__sidebar navbar__sidebar--open">
+        <a class="navbar__sidebar__close" href="#">Close</a>
+        <h3>Docs</h3>
+        <h3>Tutorial</h3>
+        <h3>v2.0</h3>
       </div>
     </nav>
     <div class="hero hero--primary text--center">
@@ -2281,6 +2296,7 @@ let myFun = (x, y) =&gt; {
     <script type="text/javascript" src="js/button-groups.js"></script>
     <script type="text/javascript" src="js/dropdowns.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
     <script type="text/javascript" src="js/pills.js"></script>
     <script type="text/javascript" src="js/tabs.js"></script>
     <script>
@@ -2291,6 +2307,7 @@ let myFun = (x, y) =&gt; {
           dropdowns(document.querySelectorAll('.dropdown'));
           pills(document.querySelectorAll('.pills'));
           menu(document.querySelectorAll('.menu'));
+          navbar(document.querySelectorAll('.navbar'));
           tabs(document.querySelectorAll('.tabs'));
         });
         function toggleMode() {
@@ -2307,7 +2324,6 @@ let myFun = (x, y) =&gt; {
           .addEventListener('click', toggleMode);
         window.addEventListener('keydown', function(event) {
           const X_KEYCODE = 88;
-          console.log(event);
           if (event.key === 'x' || event.keyCode === X_KEYCODE) {
             toggleMode();
           }
