@@ -68,7 +68,6 @@
       crossorigin="anonymous"
     />
   </head>
-
   <body>
     <nav class="navbar navbar--fixed-top">
       <div class="container">
@@ -147,11 +146,34 @@
         </div>
       </div>
       <div role="presentation" class="navbar__sidebar__backdrop"></div>
-      <div class="navbar__sidebar navbar__sidebar--open">
-        <a class="navbar__sidebar__close" href="#">Close</a>
-        <h3>Docs</h3>
-        <h3>Tutorial</h3>
-        <h3>v2.0</h3>
+      <div class="navbar__sidebar">
+        <div class="navbar__sidebar__brand">
+          <a class="navbar__brand navbar__sidebar__close" href="#" role="button">
+            <img class="navbar__logo" src="https://cdn-images-1.medium.com/max/2600/1*3G8kafhYWne77HFHZm_Tfw.png" />
+            Infima
+          </a>
+        </div>
+        <div class="navbar__sidebar__items">
+          <div class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__link" href="#url">
+                  Docs
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#url">
+                  Tutorial
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#url">
+                  Versions
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
     <div class="hero hero--primary text--center">
@@ -223,10 +245,6 @@
                 <div class="navbar__inner">
                   <div class="navbar__items">
                     <a class="navbar__brand">
-                      <img
-                        class="navbar__logo"
-                        src="https://cdn-images-1.medium.com/max/2600/1*3G8kafhYWne77HFHZm_Tfw.png"
-                      />
                       Infima
                     </a>
                     <div class="navbar__item dropdown dropdown--hoverable">

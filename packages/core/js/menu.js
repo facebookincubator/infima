@@ -1,7 +1,7 @@
 function menu($elements) {
   $elements.forEach($menu => {
-    $menu.addEventListener('click', e => {
-      $listItem = e.target;
+    $menu.addEventListener('click', event => {
+      $listItem = event.target;
       while ($listItem) {
         if ($listItem.classList.contains('menu__list-item')) {
           break;
@@ -14,7 +14,7 @@ function menu($elements) {
         return;
       }
 
-      e.preventDefault();
+      event.preventDefault();
       if ($listItem.classList.contains('menu__list-item')) {
         $listItem.classList.toggle('menu__list-item--collapsed');
       }
@@ -45,8 +45,10 @@ function menu($elements) {
     });
 
     $button = $menu.querySelector('.menu__button');
-    $button.addEventListener('click', e => {
-      $menu.classList.toggle('menu--show');
-    });
+    if ($button) {
+      $button.addEventListener('click', e => {
+        $menu.classList.toggle('menu--show');
+      });
+    }
   });
 }

@@ -253,7 +253,6 @@
     box-shadow: var(--ifm-global-shadow-md);
     display: none;
     left: 0;
-    padding: 1rem;
     position: fixed;
     top: 0;
     transform: translateX(-100%);
@@ -265,7 +264,7 @@
     }
   }
 
-  &.navbar--reveal-sidebar {
+  &.navbar--sidebar-show {
     & .navbar__sidebar {
       transform: translateX(0);
     }
@@ -283,5 +282,18 @@
     right: 0;
     position: fixed;
     top: 0;
+  }
+
+  & .navbar__sidebar__brand {
+    align-items: center;
+    box-shadow: var(--ifm-navbar-shadow);
+    display: flex;
+    height: var(--ifm-navbar-height);
+    padding: var(--ifm-navbar-padding-vertical)
+      var(--ifm-navbar-padding-horizontal);
+  }
+
+  & .navbar__sidebar__items {
+    padding: 0.5rem;
   }
 }

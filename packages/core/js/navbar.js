@@ -9,14 +9,14 @@ function navbar($elements) {
     if ($toggle == null || $sidebarClose == null) {
       return;
     }
-    console.log($toggle, $sidebarClose);
+
     $toggle.addEventListener('click', e => {
-      $navbar.classList.add('navbar--reveal-sidebar');
+      $navbar.classList.add('navbar--sidebar-show');
     });
 
     [$backdrop, $sidebarClose].forEach($el =>
       $el.addEventListener('click', e => {
-        $navbar.classList.remove('navbar--reveal-sidebar');
+        $navbar.classList.remove('navbar--sidebar-show');
       }),
     );
   });
