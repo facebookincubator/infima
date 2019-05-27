@@ -1,8 +1,12 @@
 function menu($elements) {
   $elements.forEach($menu => {
     $menu.addEventListener('click', event => {
-      $listItem = event.target;
+      let $listItem = event.target;
       while ($listItem) {
+        if ($listItem.classList.contains('menu')) {
+          return;
+        }
+
         if ($listItem.classList.contains('menu__list-item')) {
           break;
         }
@@ -25,19 +29,20 @@ function menu($elements) {
       }
 
       $menu
-        .querySelectorAll('.menu__list-item')
-        .forEach($elItem =>
-          $elItem.classList.remove('menu__list-item--active'),
-        );
+        .querySelectorAll('.menu__link')
+        .forEach($elItem => $elItem.classList.remove('menu__link--active'));
 
       // Traverse parents and add active class.
       while ($listItem) {
         if ($listItem.classList.contains('menu')) {
-          break;
+          return;
         }
 
         if ($listItem.classList.contains('menu__list-item')) {
-          $listItem.classList.add('menu__list-item--active');
+          const $link = $listItem.querySelector('.menu__link');
+          if ($link) {
+            $link.classList.add('menu__link--active');
+          }
         }
 
         $listItem = $listItem.parentNode;
