@@ -117,7 +117,8 @@
       var(--ifm-navbar-item-padding-horizontal);
     text-decoration: none;
 
-    &:hover {
+    &:hover,
+    &.navbar__link--active {
       color: var(--ifm-navbar-link-hover-color);
     }
 
