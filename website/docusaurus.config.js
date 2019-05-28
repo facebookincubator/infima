@@ -12,28 +12,18 @@ module.exports = {
   projectName: 'infima',
   baseUrl: '/',
   url: 'https://infima-dev.netlify.com',
-  headerLinks: [
-    { doc: 'navbar', label: 'Docs' },
-    {
-      href: 'https://github.com/facebook/docusaurus',
-      label: 'GitHub',
-    },
-  ],
   headerIcon: '',
   favicon: '',
-  plugins: [
-    {
-      name: '@docusaurus/plugin-content-docs',
-      options: {
-        path: './docs',
-        sidebarPath: require.resolve('./sidebars.json'),
+  themeConfig: {},
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        docs: {
+          path: 'docs',
+          sidebarPath: require.resolve('./sidebars.json'),
+        },
       },
-    },
-    {
-      name: '@docusaurus/plugin-content-pages',
-    },
-    {
-      name: '@docusaurus/plugin-sitemap',
-    },
+    ],
   ],
 };

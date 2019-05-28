@@ -107,6 +107,10 @@
     &.dropdown {
       padding: 0;
     }
+
+    @media (--ifm-narrow-window) {
+      display: none;
+    }
   }
 
   & .navbar__link {
@@ -120,10 +124,6 @@
     &:hover,
     &.navbar__link--active {
       color: var(--ifm-navbar-link-hover-color);
-    }
-
-    @media (--ifm-narrow-window) {
-      display: none;
     }
   }
 
