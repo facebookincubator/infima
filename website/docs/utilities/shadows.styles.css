@@ -1,0 +1,6 @@
+.shadows-demo .item {
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}

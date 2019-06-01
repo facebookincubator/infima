@@ -46,9 +46,9 @@ A UI framework for content-centric websites.
     - [x] Variable width
     - [ ] Responsive grid
   - [x] Hero/Jumbotron
-  - [ ] Navbar
+  - [x] Navbar
     - [x] Desktop
-    - [-] Mobile
+    - [x] Mobile
   - [x] Pagination
   - [x] Pagination Nav
   - [x] Pills

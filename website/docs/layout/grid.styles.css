@@ -1,0 +1,14 @@
+.grid-demo [class^='col'] .col-inner {
+  background-color: var(--ifm-color-black-alpha-05);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.grid-demo .row:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.grid-demo > .row:not(:last-child) {
+  margin-bottom: 1rem;
+}

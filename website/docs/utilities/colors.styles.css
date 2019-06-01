@@ -1,0 +1,9 @@
+.color {
+  border-radius: 8px;
+  display: inline-block;
+  height: 3rem;
+  margin-right: 0.5rem;
+  padding: 16px;
+  text-align: center;
+  width: 3rem;
+}
