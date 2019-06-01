@@ -1,6 +1,7 @@
-.grid-demo [class^='col'] .col-inner {
-  background-color: var(--ifm-color-black-alpha-05);
-  border-radius: 8px;
+.grid-demo [class^='col'] .col-demo {
+  background-color: var(--ifm-color-emphasis-alpha-05);
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
   padding: 16px;
   text-align: center;
 }

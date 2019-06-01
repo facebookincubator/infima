@@ -7,6 +7,7 @@ module.exports = {
       'components/avatar',
       'components/badge',
       'components/breadcrumbs',
+      'components/button',
       'components/card',
       'components/dropdown',
       'components/footer',

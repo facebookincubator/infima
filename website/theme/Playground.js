@@ -20,7 +20,10 @@ function Playground(props) {
 
   return (
     <div>
-      <div dangerouslySetInnerHTML={{ __html: htmlString }} />
+      <div
+        {...props.componentContainerProps}
+        dangerouslySetInnerHTML={{ __html: htmlString }}
+      />
       <br />
       <pre>{htmlString}</pre>
     </div>

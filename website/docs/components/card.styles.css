@@ -1,0 +1,12 @@
+.card-demo-container {
+  align-items: center;
+  background-color: var(--ifm-color-black-alpha-05);
+  border-radius: var(--ifm-global-radius);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.card-demo {
+  max-width: 320px;
+}
