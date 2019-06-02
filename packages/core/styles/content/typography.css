@@ -6,7 +6,7 @@
   --ifm-link-hover-decoration: underline;
 
   // Paragraphs.
-  --ifm-paragraph-margin-bottom: 1rem;
+  --ifm-paragraph-margin-bottom: var(--ifm-leading);
 
   // Blockquotes.
   --ifm-blockquote-color: #6a737d;
@@ -47,8 +47,8 @@ a {
 
 // Paragraphs
 p {
-  margin-bottom: var(--ifm-paragraph-margin-bottom);
   margin-top: 0;
+  margin-bottom: var(--ifm-paragraph-margin-bottom);
 }
 
 // Blockquotes
