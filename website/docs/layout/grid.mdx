@@ -11,7 +11,7 @@ import './grid.styles.css';
 ## Twelve Column Layout
 
 <Playground>
-  <div>
+  <div class="container">
     <div class="row">
       <div class="col col--6">
         <div class="col-demo">col--6</div>
@@ -109,7 +109,7 @@ import './grid.styles.css';
 ## Equal-width
 
 <Playground>
-  <div>
+  <div class="container">
     <div class="row">
       <div class="col">
         <div class="col-demo">col</div>
@@ -135,7 +135,7 @@ import './grid.styles.css';
 ## Column Offsets
 
 <Playground>
-  <div>
+  <div class="container">
     <div class="row">
       <div class="col col--1">
         <div class="col-demo">col--1</div>
@@ -164,6 +164,43 @@ import './grid.styles.css';
       </div>
       <div class="col col--6 col--offset-3">
         <div class="col-demo">col--6 col--offset-3</div>
+      </div>
+    </div>
+  </div>
+</Playground>
+
+## No Gutters
+
+<Playground>
+  <div class="container">
+    <div class="row row--no-gutters">
+      <div class="col">
+        <div class="col-demo">col</div>
+      </div>
+      <div class="col">
+        <div class="col-demo">col</div>
+      </div>
+    </div>
+    <div class="row row--no-gutters">
+      <div class="col">
+        <div class="col-demo">col</div>
+      </div>
+      <div class="col">
+        <div class="col-demo">col</div>
+      </div>
+      <div class="col">
+        <div class="col-demo">col</div>
+      </div>
+    </div>
+    <div class="row row--no-gutters">
+      <div class="col col--3">
+        <div class="col-demo">col--3</div>
+      </div>
+      <div class="col col--4">
+        <div class="col-demo">col--4</div>
+      </div>
+      <div class="col col--5">
+        <div class="col-demo">col--5</div>
       </div>
     </div>
   </div>

@@ -19,8 +19,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: calc(var(--ifm-spacing-horizontal) * -0.5);
-  margin-right: calc(var(--ifm-spacing-horizontal) * -0.5);
+  margin-left: calc(var(--ifm-spacing-horizontal) * -1);
+  margin-right: calc(var(--ifm-spacing-horizontal) * -1);
 
   &.row--no-gutters {
     margin-left: 0;
@@ -59,8 +59,8 @@
     flex: 1 0;
     margin-left: 0;
     max-width: 100%;
-    padding-left: calc(var(--ifm-spacing-horizontal) / 2);
-    padding-right: calc(var(--ifm-spacing-horizontal) / 2);
+    padding-left: var(--ifm-spacing-horizontal);
+    padding-right: var(--ifm-spacing-horizontal);
     width: 100%;
 
     &[class*='col--'] {
