@@ -69,7 +69,7 @@
   }
 
   @media (--ifm-narrow-window) {
-    --ifm-footer-padding-horizontal: var(--ifm-spacing-horizontal);
+    --ifm-footer-padding-horizontal: 0;
 
     padding: var(--ifm-footer-padding-vertical)
       var(--ifm-footer-padding-horizontal); // @compat
