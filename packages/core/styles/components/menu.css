@@ -80,6 +80,7 @@
       display: none;
       position: fixed;
       right: 1rem;
+      z-index: var(--ifm-z-index-fixed);
 
       @media (--ifm-narrow-window) {
         display: inherit;
@@ -95,9 +96,11 @@
   }
 
   &.menu--show {
+    -ms-scroll-chaining: none;
     background: var(--ifm-background-surface-color);
     bottom: 0;
     left: 0;
+    overscroll-behavior: contain;
     padding: 1rem;
     position: fixed;
     right: 0;
