@@ -159,7 +159,7 @@
     // @compat
     & .navbar__search {
       // @compat
-      & input {
+      & .navbar__search-input {
         background-color: var(
           --ifm-navbar-search-input-background-color
         ); // @compat
@@ -204,7 +204,7 @@
     // @compat
     & .navbar__search {
       // @compat
-      & input {
+      & .navbar__search-input {
         background-color: var(
           --ifm-navbar-search-input-background-color
         ); // @compat
@@ -222,7 +222,8 @@
   & .navbar__search {
     padding-left: var(--ifm-navbar-padding-horizontal);
 
-    & input {
+    & .navbar__search-input {
+      appearance: none; // Algolia will add type="search" to the input in Safari and Safari's styling will override the styling here.
       background-color: var(--ifm-navbar-search-input-background-color);
       background-image: var(--ifm-navbar-search-input-icon);
       background-position-x: 0.75rem;
@@ -251,7 +252,7 @@
     }
   }
 
-  & .navbar__sidebar {
+  & .navbar-sidebar {
     background-color: var(--ifm-navbar-background-color);
     bottom: 0;
     box-shadow: var(--ifm-global-shadow-md);
@@ -268,17 +269,17 @@
     }
   }
 
-  &.navbar--sidebar-show {
-    & .navbar__sidebar {
+  &.navbar-sidebar--show {
+    & .navbar-sidebar {
       transform: translateX(0);
     }
 
-    & .navbar__sidebar__backdrop {
+    & .navbar-sidebar__backdrop {
       display: block;
     }
   }
 
-  & .navbar__sidebar__backdrop {
+  & .navbar-sidebar__backdrop {
     background-color: var(--ifm-color-black-alpha-60);
     bottom: 0;
     display: none;
@@ -288,7 +289,7 @@
     top: 0;
   }
 
-  & .navbar__sidebar__brand {
+  & .navbar-sidebar__brand {
     align-items: center;
     box-shadow: var(--ifm-navbar-shadow);
     display: flex;
@@ -297,7 +298,7 @@
       var(--ifm-navbar-padding-horizontal);
   }
 
-  & .navbar__sidebar__items {
+  & .navbar-sidebar__items {
     padding: 0.5rem;
   }
 }
