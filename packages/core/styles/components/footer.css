@@ -42,6 +42,7 @@
 
   & .footer__link-item {
     color: var(--ifm-footer-link-color);
+    line-height: 2;
 
     &:hover {
       color: var(--ifm-footer-link-hover-color);
@@ -62,6 +63,10 @@
     color: var(--ifm-footer-title-color);
   }
 
+  & .footer__item {
+    margin-top: 0;
+  }
+
   & .footer__items {
     list-style-type: none;
     margin-bottom: 0;
@@ -74,8 +79,16 @@
     padding: var(--ifm-footer-padding-vertical)
       var(--ifm-footer-padding-horizontal); // @compat
 
+    & .footer__link-separator {
+      display: none;
+    }
+
     & .footer__col {
-      margin-bottom: calc(var(--ifm-spacing-vertical) * 2);
+      margin-bottom: calc(var(--ifm-spacing-vertical) * 3);
+    }
+
+    & .footer__link-item {
+      display: block;
     }
   }
 }
