@@ -5,6 +5,7 @@
 }
 
 .pills {
+  font-weight: var(--ifm-font-weight-bold);
   padding-left: 0;
 
   & > .pill-item {

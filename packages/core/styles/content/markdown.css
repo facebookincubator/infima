@@ -67,7 +67,20 @@
   }
 
   // Consistent spacing between content paragraphs.
-  & > pre, & > ul, & > p {
+  & > pre,
+  & > ul,
+  & > p {
     margin-bottom: var(--ifm-leading);
+  }
+
+  & li {
+    word-wrap: break-all;
+    & > p {
+      margin-top: var(--ifm-list-paragraph-margin);
+    }
+
+    & + li {
+      margin-top: var(--ifm-list-item-margin);
+    }
   }
 }

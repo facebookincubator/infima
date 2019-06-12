@@ -188,6 +188,7 @@
   // Base.
   --ifm-color-content: #1f2227;
   --ifm-color-content-inverse: var(--ifm-color-white);
+  --ifm-color-secondary: #a8abaf;
 
   --ifm-color-emphasis: var(--ifm-color-black);
   --ifm-color-emphasis-alpha-05: var(--ifm-color-black-alpha-05);
@@ -219,6 +220,7 @@
   // Typography.
   --ifm-font-base-color: var(--ifm-color-content);
   --ifm-font-base-color-inverse: var(--ifm-color-content-inverse);
+  --ifm-font-secondary-color: var(--ifm-color-secondary);
   --ifm-font-family-base: system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol';
