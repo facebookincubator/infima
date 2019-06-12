@@ -1,11 +1,13 @@
 :root {
   --ifm-dropdown-background-color: var(--ifm-background-surface-color);
+  --ifm-dropdown-font-weight: var(--ifm-font-weight-semibold);
   --ifm-dropdown-link-color: var(--ifm-font-base-color);
   --ifm-dropdown-hover-background-color: var(--ifm-color-emphasis-alpha-05);
 }
 
 .dropdown {
   display: inline-flex;
+  font-weight: var(--ifm-dropdown-font-weight);
   position: relative;
   vertical-align: top;
 
