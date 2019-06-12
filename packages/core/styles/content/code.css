@@ -1,12 +1,12 @@
 :root {
-  --ifm-code-background: var(--ifm-color-emphasis-alpha-05);
+  --ifm-code-background: var(--ifm-color-emphasis-100);
   --ifm-code-border-radius: var(--ifm-global-radius);
-  --ifm-code-color: var(--ifm-color-emphasis-alpha-80);
+  --ifm-code-color: var(--ifm-color-emphasis-900);
   --ifm-code-font-size: 85%;
   --ifm-code-padding-horizontal: 0.4rem;
   --ifm-code-padding-vertical: 0.2rem;
 
-  --ifm-pre-background: var(--ifm-color-emphasis-alpha-05);
+  --ifm-pre-background: var(--ifm-color-emphasis-100);
   --ifm-pre-border-radius: var(--ifm-code-border-radius);
   --ifm-pre-color: inherit;
   --ifm-pre-line-height: 1.45;

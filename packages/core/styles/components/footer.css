@@ -1,7 +1,7 @@
 :root {
-  --ifm-footer-background-color: var(--ifm-color-emphasis-alpha-05);
+  --ifm-footer-background-color: var(--ifm-color-emphasis-100);
   --ifm-footer-color: inherit;
-  --ifm-footer-link-color: var(--ifm-color-emphasis-alpha-60);
+  --ifm-footer-link-color: var(--ifm-color-emphasis-700);
   --ifm-footer-link-hover-color: var(--ifm-color-primary);
   --ifm-footer-link-horizontal-spacing: 0.5rem;
   --ifm-footer-padding-horizontal: calc(var(--ifm-spacing-horizontal) * 2);

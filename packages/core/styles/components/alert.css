@@ -29,7 +29,7 @@
   }
 
   &.alert--secondary {
-    color: var(--ifm-color-content);
+    color: var(--ifm-color-gray-900);
   }
 
   & .close {

@@ -3,7 +3,7 @@
   --ifm-breadcrumb-border-radius: 1.5rem;
   --ifm-breadcrumb-spacing: 0.0625rem;
   --ifm-breadcrumb-color-active: var(--ifm-color-primary);
-  --ifm-breadcrumb-item-background-active: var(--ifm-color-emphasis-alpha-05);
+  --ifm-breadcrumb-item-background-active: var(--ifm-hover-overlay);
   --ifm-breadcrumb-padding-horizontal: 1rem;
   --ifm-breadcrumb-padding-vertical: 0.5rem;
   --ifm-breadcrumb-size-multiplier: 1;

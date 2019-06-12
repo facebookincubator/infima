@@ -1,6 +1,6 @@
 :root {
   --ifm-pills-color-active: var(--ifm-color-primary);
-  --ifm-pills-color-background-active: var(--ifm-color-emphasis-alpha-05);
+  --ifm-pills-color-background-active: var(--ifm-hover-overlay);
   --ifm-pills-spacing: 0.0625rem;
 }
 

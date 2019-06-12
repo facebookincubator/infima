@@ -2,10 +2,10 @@
   --ifm-table-cell-padding: 0.75rem;
 
   --ifm-table-background: transparent;
-  --ifm-table-stripe-background: var(--ifm-color-emphasis-alpha-05);
+  --ifm-table-stripe-background: var(--ifm-color-emphasis-100);
 
   --ifm-table-border-width: 1px;
-  --ifm-table-border-color: var(--ifm-color-emphasis-alpha-20);
+  --ifm-table-border-color: var(--ifm-color-emphasis-300);
 
   --ifm-table-head-background: inherit;
   --ifm-table-head-color: inherit;

@@ -22,7 +22,7 @@
   }
 
   & .pagination-nav__link {
-    border-color: var(--ifm-color-emphasis-alpha-30);
+    border-color: var(--ifm-color-emphasis-300);
     border-radius: var(--ifm-pagination-nav-border-radius);
     border-style: solid;
     border-width: 1px;
@@ -43,7 +43,7 @@
   }
 
   & .pagination-nav__link--sublabel {
-    color: var(--ifm-color-emphasis-alpha-60);
+    color: var(--ifm-color-content-secondary);
     font-weight: var(--ifm-font-weight-semibold);
     margin-bottom: 0.25rem;
   }

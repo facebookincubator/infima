@@ -164,58 +164,44 @@
   );
 
   --ifm-color-white: #fff;
-  --ifm-color-white-alpha-05: rgba(255, 255, 255, 0.05);
-  --ifm-color-white-alpha-10: rgba(255, 255, 255, 0.1);
-  --ifm-color-white-alpha-15: rgba(255, 255, 255, 0.15);
-  --ifm-color-white-alpha-20: rgba(255, 255, 255, 0.2);
-  --ifm-color-white-alpha-30: rgba(255, 255, 255, 0.3);
-  --ifm-color-white-alpha-40: rgba(255, 255, 255, 0.4);
-  --ifm-color-white-alpha-50: rgba(255, 255, 255, 0.5);
-  --ifm-color-white-alpha-60: rgba(255, 255, 255, 0.6);
-  --ifm-color-white-alpha-80: rgba(255, 255, 255, 0.8);
-
   --ifm-color-black: #000;
-  --ifm-color-black-alpha-05: rgba(0, 0, 0, 0.05);
-  --ifm-color-black-alpha-10: rgba(0, 0, 0, 0.1);
-  --ifm-color-black-alpha-15: rgba(0, 0, 0, 0.15);
-  --ifm-color-black-alpha-20: rgba(0, 0, 0, 0.2);
-  --ifm-color-black-alpha-30: rgba(0, 0, 0, 0.3);
-  --ifm-color-black-alpha-40: rgba(0, 0, 0, 0.4);
-  --ifm-color-black-alpha-50: rgba(0, 0, 0, 0.5);
-  --ifm-color-black-alpha-60: rgba(0, 0, 0, 0.6);
-  --ifm-color-black-alpha-80: rgba(0, 0, 0, 0.8);
+
+  --ifm-color-gray-0: var(--ifm-color-white);
+  --ifm-color-gray-100: #f5f6f7;
+  --ifm-color-gray-200: #ebedf0;
+  --ifm-color-gray-300: #dadde1;
+  --ifm-color-gray-400: #ccd0d5;
+  --ifm-color-gray-500: #bec3c9;
+  --ifm-color-gray-600: #8d949e;
+  --ifm-color-gray-700: #606770;
+  --ifm-color-gray-800: #444950;
+  --ifm-color-gray-900: #1c1e21;
+  --ifm-color-gray-1000: var(--ifm-color-black);
+
+  --ifm-color-emphasis-0: var(--ifm-color-gray-0);
+  --ifm-color-emphasis-100: var(--ifm-color-gray-100);
+  --ifm-color-emphasis-200: var(--ifm-color-gray-200);
+  --ifm-color-emphasis-300: var(--ifm-color-gray-300);
+  --ifm-color-emphasis-400: var(--ifm-color-gray-400);
+  --ifm-color-emphasis-500: var(--ifm-color-gray-500);
+  --ifm-color-emphasis-600: var(--ifm-color-gray-600);
+  --ifm-color-emphasis-700: var(--ifm-color-gray-700);
+  --ifm-color-emphasis-800: var(--ifm-color-gray-800);
+  --ifm-color-emphasis-900: var(--ifm-color-gray-900);
+  --ifm-color-emphasis-900: var(--ifm-color-gray-900);
+  --ifm-color-emphasis-1000: var(--ifm-color-gray-1000);
 
   // Base.
-  --ifm-color-content: #1f2227;
-  --ifm-color-content-inverse: var(--ifm-color-white);
-  --ifm-color-content-secondary: #a8abaf;
-
-  --ifm-color-emphasis: var(--ifm-color-black);
-  --ifm-color-emphasis-alpha-05: var(--ifm-color-black-alpha-05);
-  --ifm-color-emphasis-alpha-10: var(--ifm-color-black-alpha-10);
-  --ifm-color-emphasis-alpha-15: var(--ifm-color-black-alpha-15);
-  --ifm-color-emphasis-alpha-20: var(--ifm-color-black-alpha-20);
-  --ifm-color-emphasis-alpha-30: var(--ifm-color-black-alpha-30);
-  --ifm-color-emphasis-alpha-40: var(--ifm-color-black-alpha-40);
-  --ifm-color-emphasis-alpha-50: var(--ifm-color-black-alpha-50);
-  --ifm-color-emphasis-alpha-60: var(--ifm-color-black-alpha-60);
-  --ifm-color-emphasis-alpha-80: var(--ifm-color-black-alpha-80);
-
-  --ifm-color-emphasis-inverse: var(--ifm-color-white);
-  --ifm-color-emphasis-inverse-alpha-05: var(--ifm-color-white-alpha-05);
-  --ifm-color-emphasis-inverse-alpha-10: var(--ifm-color-white-alpha-10);
-  --ifm-color-emphasis-inverse-alpha-15: var(--ifm-color-white-alpha-15);
-  --ifm-color-emphasis-inverse-alpha-20: var(--ifm-color-white-alpha-20);
-  --ifm-color-emphasis-inverse-alpha-30: var(--ifm-color-white-alpha-30);
-  --ifm-color-emphasis-inverse-alpha-40: var(--ifm-color-white-alpha-40);
-  --ifm-color-emphasis-inverse-alpha-50: var(--ifm-color-white-alpha-50);
-  --ifm-color-emphasis-inverse-alpha-60: var(--ifm-color-white-alpha-60);
-  --ifm-color-emphasis-inverse-alpha-80: var(--ifm-color-white-alpha-80);
+  --ifm-color-content: var(--ifm-color-emphasis-900);
+  --ifm-color-content-inverse: var(--ifm-color-emphasis-0);
+  --ifm-color-content-secondary: #606770;
 
   --ifm-background-color: transparent; // Body's background.
   --ifm-background-surface-color: var(--ifm-color-content-inverse);
   --ifm-global-border-width: 1px;
   --ifm-global-radius: 0.4rem;
+
+  --ifm-hover-overlay: rgba(0, 0, 0, 0.05);
 
   // Typography.
   --ifm-font-base-color: var(--ifm-color-content);
@@ -246,10 +232,10 @@
   --ifm-transition-slow: 400ms;
 
   // Shadows.
-  --ifm-global-shadow-lw: 0 1px 2px 0 var(--ifm-color-black-alpha-10);
-  --ifm-global-shadow-md: 0 5px 40px var(--ifm-color-black-alpha-20);
-  --ifm-global-shadow-tl: 0 12px 28px 0 var(--ifm-color-black-alpha-20),
-    0 2px 4px 0 var(--ifm-color-black-alpha-10);
+  --ifm-global-shadow-lw: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  --ifm-global-shadow-md: 0 5px 40px rgba(0, 0, 0, 0.2);
+  --ifm-global-shadow-tl: 0 12px 28px 0 rgba(0, 0, 0, 0.2),
+    0 2px 4px 0 rgba(0, 0, 0, 0.1);
 
   // Z-index.
   --ifm-z-index-dropdown: 100;

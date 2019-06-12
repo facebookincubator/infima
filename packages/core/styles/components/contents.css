@@ -1,6 +1,6 @@
 :root {
-  --ifm-contents-border-color: var(--ifm-color-emphasis-alpha-10);
-  --ifm-contents-link-color: var(--ifm-color-emphasis-alpha-30);
+  --ifm-contents-border-color: var(--ifm-color-emphasis-300);
+  --ifm-contents-link-color: var(--ifm-color-content-secondary);
   --ifm-contents-padding-left: 0.5rem;
   --ifm-contents-padding-vertical: 0.5rem;
 }

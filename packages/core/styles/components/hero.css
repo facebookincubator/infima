@@ -1,6 +1,6 @@
 :root {
   --ifm-hero-background-color: var(--ifm-background-surface-color);
-  --ifm-hero-text-color: var(--ifm-color-emphasis-alpha-80);
+  --ifm-hero-text-color: var(--ifm-color-emphasis-800);
 }
 
 .hero {
