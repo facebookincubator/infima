@@ -21,8 +21,8 @@ html[data-theme='dark'] {
   --ifm-color-emphasis-inverse-alpha-60: var(--ifm-color-black-alpha-60);
   --ifm-color-emphasis-inverse-alpha-80: var(--ifm-color-black-alpha-80);
 
-  --ifm-background-color: #1f2227;
-  --ifm-background-surface-color: #33363b;
+  --ifm-background-color: #121212;
+  --ifm-background-surface-color: #1e2125;
 
   --ifm-font-base-color: var(--ifm-color-content-inverse);
   --ifm-font-base-color-inverse: var(--ifm-color-content);
