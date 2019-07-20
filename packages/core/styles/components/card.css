@@ -10,6 +10,8 @@
   border-radius: var(--ifm-card-border-radius);
   box-shadow: var(--ifm-global-shadow-lw);
   overflow: hidden; // Because of border-radius.
+  display: flex;
+  flex-direction: column;
 
   & .card__image {
     padding-top: var(--ifm-card-vertical-spacing);
@@ -31,5 +33,9 @@
     & > :last-child {
       margin-bottom: 0;
     }
+  }
+  
+  & .card__footer {
+    margin-top: auto; // pushes the footer to the end of the card
   }
 }
