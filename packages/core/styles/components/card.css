@@ -36,6 +36,6 @@
   }
   
   & .card__footer {
-    margin-top: auto; // pushes the footer to the end of the card
+    margin-top: auto; // Pushes the footer to the bottom of the card.
   }
 }
