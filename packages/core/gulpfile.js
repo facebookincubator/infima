@@ -1,21 +1,17 @@
 'use strict';
 
-const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const del = require('del');
 const gulp = require('gulp');
 const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
-const postcssCssVariables = require('postcss-css-variables');
-const postcssEach = require('postcss-each');
-const postcssEasyImport = require('postcss-easy-import');
-const postcssFor = require('postcss-for');
-const postcssPresetEnv = require('postcss-preset-env');
-const postcssStripInlineComments = require('postcss-strip-inline-comments');
-const scss = require('postcss-scss');
+const postcssPresetInfima = require('postcss-preset-infima');
 const webserver = require('gulp-webserver');
 
 function transformStyles() {
+  const modernPreset = postcssPresetInfima();
+  const compatPreset = postcssPresetInfima({ compat: true });
+
   return (
     gulp
       .src('./styles/themes/**/*.css', {
@@ -24,30 +20,11 @@ function transformStyles() {
           '**/_*/**', // Exclude entire directories starting with '_'.
         ],
       })
-      .pipe(
-        postcss(
-          [
-            postcssEasyImport({ prefix: '_' }),
-            postcssStripInlineComments,
-            postcssEach,
-            postcssFor,
-            postcssPresetEnv({
-              stage: 1,
-              features: {
-                'color-mod-function': { unresolved: 'warn' },
-                'custom-properties': false,
-              },
-            }),
-          ],
-          {
-            syntax: scss, // Needed for parser to be able to parse double-slash comments.
-          },
-        ),
-      )
+      .pipe(postcss(modernPreset.plugins, { syntax: modernPreset.syntax }))
       .pipe(gulp.dest('./dist/css'))
       // Compile CSS variables to its values for IE11 support.
       .pipe(rename({ suffix: '.compat' }))
-      .pipe(postcss([postcssCssVariables()]))
+      .pipe(postcss(compatPreset.plugins, { syntax: compatPreset.syntax }))
       .pipe(gulp.dest('./dist/css'))
   );
 }
