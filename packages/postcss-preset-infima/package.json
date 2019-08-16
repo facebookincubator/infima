@@ -19,6 +19,9 @@
     "postcss-scss": "^2.0.0",
     "postcss-strip-inline-comments": "^0.1.5"
   },
+  "peerDependencies": {
+    "infima": "^0.2.0-alpha.2"
+  },
   "engines": {
     "node": ">=8"
   },
