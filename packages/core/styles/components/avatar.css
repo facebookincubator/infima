@@ -16,6 +16,7 @@
   }
 
   & .avatar__photo {
+    overflow: hidden;
     border-radius: 50%;
     height: var(--ifm-avatar-photo-size-md);
     margin-bottom: var(--ifm-avatar-photo-bottom-margin);
