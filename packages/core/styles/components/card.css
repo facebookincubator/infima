@@ -13,6 +13,10 @@
   display: flex;
   flex-direction: column;
 
+  &.card--full-height {
+    height: 100%;
+  }
+
   & .card__image {
     padding-top: var(--ifm-card-vertical-spacing);
 
@@ -34,7 +38,7 @@
       margin-bottom: 0;
     }
   }
-  
+
   & .card__footer {
     margin-top: auto; // Pushes the footer to the bottom of the card.
   }

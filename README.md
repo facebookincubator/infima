@@ -15,7 +15,7 @@ A UI framework for content-centric websites.
   - [x] Define fast and slow transition speeds
   - Cards
     - [x] Make card flex and content expands to fill up the space (see Docusaurus showcase)
-    - [ ] Add full-height mode for cards
+    - [x] Add full-height mode for cards
   - Avatars
     - [x] Docusaurus index page border radius
     - [ ] Avatar title no left margin when no thumbnail
