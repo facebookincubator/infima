@@ -5,12 +5,21 @@ A UI framework for content-centric websites.
 ## MVP TODOs
 
 - High
+  - [ ] Add CSS reset
   - [ ] Finish all components in checklist
   - [ ] Complete TODOs in code
+  - [ ] Button text overflow
   - [x] Audit global CSS variables list and scope the component-specific ones into component file's root
   - [x] Audit z-index list (nav, dropdown, tooltips, etc)
   - [x] Define box-shadow for various elevations
   - [x] Define fast and slow transition speeds
+  - Cards
+    - [x] Make card flex and content expands to fill up the space (see Docusaurus showcase)
+    - [ ] Add full-height mode for cards
+  - Avatars
+    - [x] Docusaurus index page border radius
+    - [ ] Avatar title no left margin when no thumbnail
+  - [ ] Navbar brand title (add `white-space: nowrap`)
 - Medium
   - [x] Create dark theme
 - Low
