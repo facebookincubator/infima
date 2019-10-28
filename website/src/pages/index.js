@@ -1,6 +1,13 @@
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
 import React, { useContext } from 'react';
 import Link from '@docusaurus/Link';
-import withBaseUrl from '@docusaurus/withBaseUrl';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 import Layout from '@theme/Layout';
 
@@ -16,7 +23,7 @@ function Home() {
           <div>
             <Link
               class="button button--secondary button--outline button--lg"
-              to={withBaseUrl('docs/getting-started/introduction')}
+              to={useBaseUrl('docs/getting-started/introduction')}
             >
               Get Started
             </Link>

@@ -10,8 +10,8 @@
     "deploy": "docusaurus deploy"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.18",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.18",
+    "@docusaurus/core": "^2.0.0-alpha.31",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.31",
     "classnames": "^2.2.6",
     "prettier": "^1.17.1",
     "react": "^16.8.4",
