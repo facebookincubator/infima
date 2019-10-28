@@ -8,10 +8,10 @@
 module.exports = {
   title: 'Infima',
   tagline: 'UI framework for content-driven websites 🔥',
-  organizationName: 'yangshun',
+  organizationName: 'facebookincubator',
   projectName: 'infima',
-  baseUrl: '/',
-  url: 'https://infima-dev.netlify.com',
+  baseUrl: '/infima/',
+  url: 'https://facebookincubator.github.io',
   favicon: '',
   themeConfig: {
     navbar: {
