@@ -5,192 +5,192 @@
   "origins": {
     "1": [
       0,
-      2,
+      33,
       47,
       48,
       1
     ],
     "common": [
       1,
-      4,
+      2,
       5,
       6,
       7,
-      8,
       9,
-      10,
-      11,
-      12,
-      13,
       14,
       15,
-      16,
       17,
-      18,
-      19,
       20,
-      21,
-      22,
       23,
+      27,
+      30,
+      31,
+      32,
+      34,
+      35,
+      39,
+      40,
+      41,
+      43,
       47,
       0
     ],
-    "@site/src/pages/index.js": [
-      1,
-      2
-    ],
-    "@theme/DocItem": [
-      3
-    ],
-    "@site/docs/components/alert.mdx": [
-      0,
-      4
-    ],
-    "@site/docs/components/avatar.mdx": [
-      0,
-      5
-    ],
-    "@site/docs/components/badge.mdx": [
-      0,
-      6
-    ],
-    "@site/docs/components/breadcrumbs.mdx": [
-      0,
-      7
-    ],
     "@site/docs/components/button.mdx": [
       0,
-      8
+      2
     ],
-    "@site/docs/components/card.mdx": [
-      0,
-      9
+    "@docusaurus-plugin-content-docs/infima-docs-components-badge-5e3.json": [
+      3
     ],
-    "@site/docs/components/dropdown.mdx": [
-      0,
-      10
-    ],
-    "@site/docs/components/footer.mdx": [
-      0,
-      11
-    ],
-    "@site/docs/components/hero.mdx": [
-      0,
-      12
-    ],
-    "@site/docs/components/navbar.mdx": [
-      0,
-      13
-    ],
-    "@site/docs/components/pagination.mdx": [
-      0,
-      14
-    ],
-    "@site/docs/components/pagination-nav.mdx": [
-      0,
-      15
-    ],
-    "@site/docs/components/pills.mdx": [
-      0,
-      16
+    "@theme/DocItem": [
+      4
     ],
     "@site/docs/components/tabs.mdx": [
       0,
-      17
-    ],
-    "@site/docs/getting-started/introduction.md": [
-      0,
-      18
+      5
     ],
     "@site/docs/layout/grid.mdx": [
       0,
-      19
-    ],
-    "@site/docs/layout/spacing.mdx": [
-      0,
-      20
+      6
     ],
     "@site/docs/TEMPLATE.md": [
       0,
-      21
+      7
+    ],
+    "@docusaurus-plugin-content-docs/infima-docs-utilities-colors-be8.json": [
+      8
+    ],
+    "@site/docs/components/badge.mdx": [
+      0,
+      9
+    ],
+    "@docusaurus-plugin-content-docs/infima-docs-components-alert-0b8.json": [
+      10
+    ],
+    "@docusaurus-plugin-content-docs/infima-docs-components-avatar-fc8.json": [
+      11
+    ],
+    "@docusaurus-plugin-content-docs/infima-docs-components-footer-94c.json": [
+      12
+    ],
+    "@docusaurus-plugin-content-docs/infima-docs-components-pagination-nav-d81.json": [
+      13
+    ],
+    "@site/docs/layout/spacing.mdx": [
+      0,
+      14
+    ],
+    "@site/docs/components/hero.mdx": [
+      0,
+      15
+    ],
+    "@docusaurus-plugin-content-docs/infima-docs-components-navbar-216.json": [
+      16
     ],
     "@site/docs/utilities/colors.mdx": [
       0,
+      17
+    ],
+    "@docusaurus-plugin-content-docs/infima-docs-components-tabs-899.json": [
+      18
+    ],
+    "@docusaurus-plugin-content-docs/infima-docs-layout-spacing-481.json": [
+      19
+    ],
+    "@site/docs/components/dropdown.mdx": [
+      0,
+      20
+    ],
+    "@docusaurus-plugin-content-docs/infima-docs-components-hero-40c.json": [
+      21
+    ],
+    "@docusaurus-plugin-content-docs/infima-docs-components-pills-485.json": [
       22
     ],
-    "@site/docs/utilities/shadows.mdx": [
+    "@site/docs/components/pagination.mdx": [
       0,
       23
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-396.json": [
+    "@docusaurus-plugin-content-docs/infima-docs-utilities-shadows-078.json": [
       24
     ],
-    "main": [
-      46,
+    "@docusaurus-plugin-content-docs/infima-docs-getting-started-introduction-230.json": [
       25
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-components-alert-0b8.json": [
+    "@docusaurus-plugin-content-docs/infima-docs-layout-grid-0b1.json": [
       26
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-components-avatar-fc8.json": [
+    "@site/docs/getting-started/introduction.md": [
+      0,
       27
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-components-badge-5e3.json": [
+    "@docusaurus-plugin-content-docs/infima-docs-components-card-26e.json": [
       28
     ],
     "@docusaurus-plugin-content-docs/infima-docs-components-breadcrumbs-3c4.json": [
       29
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-components-button-46b.json": [
+    "@site/docs/components/breadcrumbs.mdx": [
+      0,
       30
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-components-card-26e.json": [
+    "@site/docs/components/avatar.mdx": [
+      0,
       31
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-components-dropdown-a5c.json": [
+    "@site/docs/components/card.mdx": [
+      0,
       32
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-components-footer-94c.json": [
+    "@site/src/pages/index.js": [
+      1,
       33
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-components-hero-40c.json": [
+    "@site/docs/components/alert.mdx": [
+      0,
       34
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-components-navbar-216.json": [
+    "@site/docs/components/navbar.mdx": [
+      0,
       35
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-components-pagination-nav-d81.json": [
+    "@docusaurus-plugin-content-docs/infima-docs-template-771.json": [
       36
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-components-pagination-264.json": [
+    "@docusaurus-plugin-content-docs/infima-docs-route-27f.json": [
       37
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-components-pills-485.json": [
+    "@docusaurus-plugin-content-docs/infima-docs-components-button-46b.json": [
       38
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-components-tabs-899.json": [
+    "@site/docs/components/pills.mdx": [
+      0,
       39
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-getting-started-introduction-230.json": [
+    "@site/docs/components/footer.mdx": [
+      0,
       40
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-layout-grid-0b1.json": [
+    "@site/docs/components/pagination-nav.mdx": [
+      0,
       41
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-layout-spacing-481.json": [
+    "@docusaurus-plugin-content-docs/infima-docs-components-dropdown-a5c.json": [
       42
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-template-771.json": [
+    "@site/docs/utilities/shadows.mdx": [
+      0,
       43
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-utilities-colors-be8.json": [
+    "@docusaurus-plugin-content-docs/infima-docs-components-pagination-264.json": [
       44
     ],
-    "@docusaurus-plugin-content-docs/infima-docs-utilities-shadows-078.json": [
+    "main": [
+      46,
       45
     ],
     "runtime~main": [
-      25,
+      45,
       46
     ],
     "@theme/DocPage": [
@@ -207,497 +207,504 @@
     "0": {
       "js": [
         {
-          "file": "common.12dbe917eab164818a88.js",
-          "hash": "0257247aa3c5dcf0f306",
-          "publicPath": "/infima/common.12dbe917eab164818a88.js"
+          "file": "common.aa1c6d6d.js",
+          "hash": "363cca9f2911ae791d1c",
+          "publicPath": "/infima/common.aa1c6d6d.js"
         }
       ]
     },
     "1": {
       "css": [
         {
-          "file": "1.beb5263729d2db16c046.css",
-          "hash": "33ba89f5d7d89c8d701d",
-          "publicPath": "/infima/1.beb5263729d2db16c046.css"
+          "file": "1.ee9bd68e.css",
+          "hash": "e0c0724997a35b459151",
+          "publicPath": "/infima/1.ee9bd68e.css"
         }
       ],
       "js": [
         {
-          "file": "1.c7232e83a17ea523ed68.js",
-          "hash": "33ba89f5d7d89c8d701d",
-          "publicPath": "/infima/1.c7232e83a17ea523ed68.js"
+          "file": "1.3b6e4567.js",
+          "hash": "e0c0724997a35b459151",
+          "publicPath": "/infima/1.3b6e4567.js"
         }
       ]
     },
     "2": {
       "js": [
         {
-          "file": "component---site-src-pages-index-jsc-4-f-f99.1253cad227e8bd8fb547.js",
-          "hash": "12dab70e83faf98fc51e",
-          "publicPath": "/infima/component---site-src-pages-index-jsc-4-f-f99.1253cad227e8bd8fb547.js"
+          "file": "0743e332.7942f9d7.js",
+          "hash": "6134dc41f9d4c4481a64",
+          "publicPath": "/infima/0743e332.7942f9d7.js"
         }
       ]
     },
     "3": {
-      "css": [
-        {
-          "file": "component---theme-doc-item-178-a40.de2648345892298aff25.css",
-          "hash": "5930771ee77d4bfdda0b",
-          "publicPath": "/infima/component---theme-doc-item-178-a40.de2648345892298aff25.css"
-        }
-      ],
       "js": [
         {
-          "file": "component---theme-doc-item-178-a40.b79aa2dacecdc01ee735.js",
-          "hash": "5930771ee77d4bfdda0b",
-          "publicPath": "/infima/component---theme-doc-item-178-a40.b79aa2dacecdc01ee735.js"
+          "file": "0bf3b757.8e486ef8.js",
+          "hash": "20d73e8c29a55a2d40c1",
+          "publicPath": "/infima/0bf3b757.8e486ef8.js"
         }
       ]
     },
     "4": {
+      "css": [
+        {
+          "file": "17896441.5eb77786.css",
+          "hash": "2fd59444c213e6e6b996",
+          "publicPath": "/infima/17896441.5eb77786.css"
+        }
+      ],
       "js": [
         {
-          "file": "content---infima-docs-components-alertca-0-498.6d6dab3df3881edc8bb5.js",
-          "hash": "353122df009d136f4eb8",
-          "publicPath": "/infima/content---infima-docs-components-alertca-0-498.6d6dab3df3881edc8bb5.js"
+          "file": "17896441.4a7c444c.js",
+          "hash": "2fd59444c213e6e6b996",
+          "publicPath": "/infima/17896441.4a7c444c.js"
         }
       ]
     },
     "5": {
       "js": [
         {
-          "file": "content---infima-docs-components-avatarb-6-c-216.34448fe9d4bea7e68595.js",
-          "hash": "68bd81fa27a432f6cc6a",
-          "publicPath": "/infima/content---infima-docs-components-avatarb-6-c-216.34448fe9d4bea7e68595.js"
+          "file": "1a63ac3d.6e4432f3.js",
+          "hash": "28e99138039f8d7f62b2",
+          "publicPath": "/infima/1a63ac3d.6e4432f3.js"
         }
       ]
     },
     "6": {
+      "css": [
+        {
+          "file": "1b4ca1e5.00330429.css",
+          "hash": "523ad3c7a7ee82e6e850",
+          "publicPath": "/infima/1b4ca1e5.00330429.css"
+        }
+      ],
       "js": [
         {
-          "file": "content---infima-docs-components-badge-320-d62.2babe3ccc32a05116977.js",
-          "hash": "f646b7e69290cd99431b",
-          "publicPath": "/infima/content---infima-docs-components-badge-320-d62.2babe3ccc32a05116977.js"
+          "file": "1b4ca1e5.1bedc940.js",
+          "hash": "523ad3c7a7ee82e6e850",
+          "publicPath": "/infima/1b4ca1e5.1bedc940.js"
         }
       ]
     },
     "7": {
       "js": [
         {
-          "file": "content---infima-docs-components-breadcrumbsaca-582.50a606441128fbaa0f5b.js",
-          "hash": "26d164784b315cb01843",
-          "publicPath": "/infima/content---infima-docs-components-breadcrumbsaca-582.50a606441128fbaa0f5b.js"
+          "file": "20c4fb6d.230f3f1f.js",
+          "hash": "22745cc089a01aa8499f",
+          "publicPath": "/infima/20c4fb6d.230f3f1f.js"
         }
       ]
     },
     "8": {
       "js": [
         {
-          "file": "content---infima-docs-components-button-074-afa.c30ee4913e7209188d29.js",
-          "hash": "369c3800292b855b59f9",
-          "publicPath": "/infima/content---infima-docs-components-button-074-afa.c30ee4913e7209188d29.js"
+          "file": "31b55e2b.36fbd49e.js",
+          "hash": "3abfd5759d7d37db82cf",
+          "publicPath": "/infima/31b55e2b.36fbd49e.js"
         }
       ]
     },
     "9": {
-      "css": [
-        {
-          "file": "content---infima-docs-components-cardc-20-4b6.d1d92b6f6d3a6db6cd99.css",
-          "hash": "708843062912c6314748",
-          "publicPath": "/infima/content---infima-docs-components-cardc-20-4b6.d1d92b6f6d3a6db6cd99.css"
-        }
-      ],
       "js": [
         {
-          "file": "content---infima-docs-components-cardc-20-4b6.98b1308a6fae4b371cc7.js",
-          "hash": "708843062912c6314748",
-          "publicPath": "/infima/content---infima-docs-components-cardc-20-4b6.98b1308a6fae4b371cc7.js"
+          "file": "3207f380.52afc78d.js",
+          "hash": "56ae910026d0a3f7c645",
+          "publicPath": "/infima/3207f380.52afc78d.js"
         }
       ]
     },
     "10": {
       "js": [
         {
-          "file": "content---infima-docs-components-dropdown-8-b-2-da8.14c1c00198cf0adb348c.js",
-          "hash": "7900cb4afee6442b5e40",
-          "publicPath": "/infima/content---infima-docs-components-dropdown-8-b-2-da8.14c1c00198cf0adb348c.js"
+          "file": "33b5d111.ff719e02.js",
+          "hash": "16114384f59c91a1b9d2",
+          "publicPath": "/infima/33b5d111.ff719e02.js"
         }
       ]
     },
     "11": {
       "js": [
         {
-          "file": "content---infima-docs-components-footerecc-41f.8785cc27e8c79f88965e.js",
-          "hash": "663847f7ad0944acf4c9",
-          "publicPath": "/infima/content---infima-docs-components-footerecc-41f.8785cc27e8c79f88965e.js"
+          "file": "49b077e7.bd73475e.js",
+          "hash": "53586f7ca8489f0b20c3",
+          "publicPath": "/infima/49b077e7.bd73475e.js"
         }
       ]
     },
     "12": {
       "js": [
         {
-          "file": "content---infima-docs-components-hero-6-cf-12d.01f3f26d02e72f412ca7.js",
-          "hash": "7c6a8410b9d004904e4b",
-          "publicPath": "/infima/content---infima-docs-components-hero-6-cf-12d.01f3f26d02e72f412ca7.js"
+          "file": "57eab904.da039d91.js",
+          "hash": "c7cb546d5be1d82f9dba",
+          "publicPath": "/infima/57eab904.da039d91.js"
         }
       ]
     },
     "13": {
       "js": [
         {
-          "file": "content---infima-docs-components-navbard-4-b-0bd.f410daf5de3e8120d3d4.js",
-          "hash": "9f7f4fc1c5c0875641a1",
-          "publicPath": "/infima/content---infima-docs-components-navbard-4-b-0bd.f410daf5de3e8120d3d4.js"
+          "file": "64984d5a.6bb3a723.js",
+          "hash": "7111a3abe8401d2b5f56",
+          "publicPath": "/infima/64984d5a.6bb3a723.js"
         }
       ]
     },
     "14": {
       "js": [
         {
-          "file": "content---infima-docs-components-pagination-8-fe-ace.3a51810cae074b2f6546.js",
-          "hash": "d44d795fd52f3992603d",
-          "publicPath": "/infima/content---infima-docs-components-pagination-8-fe-ace.3a51810cae074b2f6546.js"
+          "file": "6827edda.c50e5e57.js",
+          "hash": "960d0e77d88e6cefcf48",
+          "publicPath": "/infima/6827edda.c50e5e57.js"
         }
       ]
     },
     "15": {
       "js": [
         {
-          "file": "content---infima-docs-components-pagination-naveec-c22.47d2197e91d3475429f2.js",
-          "hash": "84c445e4cc556aafc6d2",
-          "publicPath": "/infima/content---infima-docs-components-pagination-naveec-c22.47d2197e91d3475429f2.js"
+          "file": "6cf059b2.1fb4c2fe.js",
+          "hash": "7d1b0807689f2e9b02db",
+          "publicPath": "/infima/6cf059b2.1fb4c2fe.js"
         }
       ]
     },
     "16": {
       "js": [
         {
-          "file": "content---infima-docs-components-pillse-94-9e9.88aa3107c7ce00f9cf7f.js",
-          "hash": "31a42960a7ec43c92fdd",
-          "publicPath": "/infima/content---infima-docs-components-pillse-94-9e9.88aa3107c7ce00f9cf7f.js"
+          "file": "77e5ab0d.af43e9e9.js",
+          "hash": "c2c430e39dc1c3ffc751",
+          "publicPath": "/infima/77e5ab0d.af43e9e9.js"
         }
       ]
     },
     "17": {
+      "css": [
+        {
+          "file": "80280246.818c0c79.css",
+          "hash": "a7cab5a7c0f343b5c080",
+          "publicPath": "/infima/80280246.818c0c79.css"
+        }
+      ],
       "js": [
         {
-          "file": "content---infima-docs-components-tabs-1-a-6-e53.3f5bfdb1c2bc7e8ccf82.js",
-          "hash": "39090c26e3343f4738c2",
-          "publicPath": "/infima/content---infima-docs-components-tabs-1-a-6-e53.3f5bfdb1c2bc7e8ccf82.js"
+          "file": "80280246.a192dd82.js",
+          "hash": "a7cab5a7c0f343b5c080",
+          "publicPath": "/infima/80280246.a192dd82.js"
         }
       ]
     },
     "18": {
       "js": [
         {
-          "file": "content---infima-docs-getting-started-introduction-9-ff-a2e.c06e7579c9b786e456fe.js",
-          "hash": "a20a38b2b963ce6d40dc",
-          "publicPath": "/infima/content---infima-docs-getting-started-introduction-9-ff-a2e.c06e7579c9b786e456fe.js"
+          "file": "80e5803d.fbd1cc29.js",
+          "hash": "f55c53e6cd0a1918f768",
+          "publicPath": "/infima/80e5803d.fbd1cc29.js"
         }
       ]
     },
     "19": {
-      "css": [
-        {
-          "file": "content---infima-docs-layout-grid-1-b-4-aea.00330429408b391c61dc.css",
-          "hash": "c148d3bb932b2b471fb5",
-          "publicPath": "/infima/content---infima-docs-layout-grid-1-b-4-aea.00330429408b391c61dc.css"
-        }
-      ],
       "js": [
         {
-          "file": "content---infima-docs-layout-grid-1-b-4-aea.c1daf23c84d0c8b10232.js",
-          "hash": "c148d3bb932b2b471fb5",
-          "publicPath": "/infima/content---infima-docs-layout-grid-1-b-4-aea.c1daf23c84d0c8b10232.js"
+          "file": "82cdab96.c66494ad.js",
+          "hash": "6978e5a5bcdb582f8ff9",
+          "publicPath": "/infima/82cdab96.c66494ad.js"
         }
       ]
     },
     "20": {
       "js": [
         {
-          "file": "content---infima-docs-layout-spacing-682-09d.83edf52ec84281e8f681.js",
-          "hash": "99ac4bd33f874404fc19",
-          "publicPath": "/infima/content---infima-docs-layout-spacing-682-09d.83edf52ec84281e8f681.js"
+          "file": "8b2fdf92.1abf516e.js",
+          "hash": "a8d1845b52991e8888da",
+          "publicPath": "/infima/8b2fdf92.1abf516e.js"
         }
       ]
     },
     "21": {
       "js": [
         {
-          "file": "content---infima-docs-template-20-c-f42.d3769384e4a2acb86706.js",
-          "hash": "e8d3e2afdefc2388fb58",
-          "publicPath": "/infima/content---infima-docs-template-20-c-f42.d3769384e4a2acb86706.js"
+          "file": "8c810460.c2ae5af8.js",
+          "hash": "a2acc8eaa2ad9f385642",
+          "publicPath": "/infima/8c810460.c2ae5af8.js"
         }
       ]
     },
     "22": {
-      "css": [
-        {
-          "file": "content---infima-docs-utilities-colors-802-dd4.818c0c79f4bb00d83709.css",
-          "hash": "1a71e2fbdbb3ae687b0c",
-          "publicPath": "/infima/content---infima-docs-utilities-colors-802-dd4.818c0c79f4bb00d83709.css"
-        }
-      ],
       "js": [
         {
-          "file": "content---infima-docs-utilities-colors-802-dd4.97867c37e0ec1d6b0876.js",
-          "hash": "1a71e2fbdbb3ae687b0c",
-          "publicPath": "/infima/content---infima-docs-utilities-colors-802-dd4.97867c37e0ec1d6b0876.js"
+          "file": "8f9ff06a.46308fbf.js",
+          "hash": "23ffa12453332b9c464a",
+          "publicPath": "/infima/8f9ff06a.46308fbf.js"
         }
       ]
     },
     "23": {
-      "css": [
-        {
-          "file": "content---infima-docs-utilities-shadowsf-93-418.836e98a5ef54271d8b9b.css",
-          "hash": "757ea0be122c14493fa7",
-          "publicPath": "/infima/content---infima-docs-utilities-shadowsf-93-418.836e98a5ef54271d8b9b.css"
-        }
-      ],
       "js": [
         {
-          "file": "content---infima-docs-utilities-shadowsf-93-418.c2e5c990c65bddf27859.js",
-          "hash": "757ea0be122c14493fa7",
-          "publicPath": "/infima/content---infima-docs-utilities-shadowsf-93-418.c2e5c990c65bddf27859.js"
+          "file": "8fee352f.f68d9034.js",
+          "hash": "be358f898c9696a38a40",
+          "publicPath": "/infima/8fee352f.f68d9034.js"
         }
       ]
     },
     "24": {
       "js": [
         {
-          "file": "docsMetadata---infima-docs-9-a-8-60b.624265f35972016e8e91.js",
-          "hash": "778da96be981f8ea711e",
-          "publicPath": "/infima/docsMetadata---infima-docs-9-a-8-60b.624265f35972016e8e91.js"
+          "file": "970d280a.c377a3f2.js",
+          "hash": "9181eaf964cda3fa68fd",
+          "publicPath": "/infima/970d280a.c377a3f2.js"
         }
       ]
     },
     "25": {
-      "css": [
-        {
-          "file": "main.0e9d06af81c484811cb7.css",
-          "hash": "2b971c4acae480a3c690",
-          "publicPath": "/infima/main.0e9d06af81c484811cb7.css"
-        }
-      ],
       "js": [
         {
-          "file": "main.2ad4335b363bf5070f49.js",
-          "hash": "2b971c4acae480a3c690",
-          "publicPath": "/infima/main.2ad4335b363bf5070f49.js"
+          "file": "9c829007.26027c37.js",
+          "hash": "f044dde5853438318e97",
+          "publicPath": "/infima/9c829007.26027c37.js"
         }
       ]
     },
     "26": {
       "js": [
         {
-          "file": "metadata---infima-docs-components-alert-33-b-974.aceeb5d8bcf129cbea66.js",
-          "hash": "11893499c2204f1e71b5",
-          "publicPath": "/infima/metadata---infima-docs-components-alert-33-b-974.aceeb5d8bcf129cbea66.js"
+          "file": "9d06d453.6bff629d.js",
+          "hash": "85a1d38a0f81aa3729fc",
+          "publicPath": "/infima/9d06d453.6bff629d.js"
         }
       ]
     },
     "27": {
       "js": [
         {
-          "file": "metadata---infima-docs-components-avatar-49-b-209.8b5fcce835f738332913.js",
-          "hash": "0367e7a92864329b6bf8",
-          "publicPath": "/infima/metadata---infima-docs-components-avatar-49-b-209.8b5fcce835f738332913.js"
+          "file": "9ff4038f.685c2da4.js",
+          "hash": "3b835d859d248ee364d7",
+          "publicPath": "/infima/9ff4038f.685c2da4.js"
         }
       ]
     },
     "28": {
       "js": [
         {
-          "file": "metadata---infima-docs-components-badge-0-bf-0ac.d0b1623c70cc5ccf84f8.js",
-          "hash": "5bca0ac23101579bea13",
-          "publicPath": "/infima/metadata---infima-docs-components-badge-0-bf-0ac.d0b1623c70cc5ccf84f8.js"
+          "file": "a6bb94db.4607bcaf.js",
+          "hash": "706132f8763794721864",
+          "publicPath": "/infima/a6bb94db.4607bcaf.js"
         }
       ]
     },
     "29": {
       "js": [
         {
-          "file": "metadata---infima-docs-components-breadcrumbsac-1-edb.1943d0716519c3d91dd1.js",
-          "hash": "241674f6b0f9c9fd0396",
-          "publicPath": "/infima/metadata---infima-docs-components-breadcrumbsac-1-edb.1943d0716519c3d91dd1.js"
+          "file": "ac17a74f.2705ae4d.js",
+          "hash": "f915927cd3d76ceb4a3c",
+          "publicPath": "/infima/ac17a74f.2705ae4d.js"
         }
       ]
     },
     "30": {
       "js": [
         {
-          "file": "metadata---infima-docs-components-buttone-90-d5b.6e70e06768aa820aa4b8.js",
-          "hash": "c81fc0a97cd2f0ceaf4e",
-          "publicPath": "/infima/metadata---infima-docs-components-buttone-90-d5b.6e70e06768aa820aa4b8.js"
+          "file": "aca3791a.14d109ca.js",
+          "hash": "696e2d28f64576b50bcd",
+          "publicPath": "/infima/aca3791a.14d109ca.js"
         }
       ]
     },
     "31": {
       "js": [
         {
-          "file": "metadata---infima-docs-components-carda-6-b-81a.7f7e92864bf2e337e167.js",
-          "hash": "41a0cba72e947eea3305",
-          "publicPath": "/infima/metadata---infima-docs-components-carda-6-b-81a.7f7e92864bf2e337e167.js"
+          "file": "b6cc6644.fb5d55e3.js",
+          "hash": "97d8ce402b70416f0393",
+          "publicPath": "/infima/b6cc6644.fb5d55e3.js"
         }
       ]
     },
     "32": {
+      "css": [
+        {
+          "file": "c20fed52.d1d92b6f.css",
+          "hash": "ec9b2e9ed43f09f80120",
+          "publicPath": "/infima/c20fed52.d1d92b6f.css"
+        }
+      ],
       "js": [
         {
-          "file": "metadata---infima-docs-components-dropdownf-35-dfd.23dee24eb8c6c22b5b22.js",
-          "hash": "db613df0087ad27549c0",
-          "publicPath": "/infima/metadata---infima-docs-components-dropdownf-35-dfd.23dee24eb8c6c22b5b22.js"
+          "file": "c20fed52.aa761e08.js",
+          "hash": "ec9b2e9ed43f09f80120",
+          "publicPath": "/infima/c20fed52.aa761e08.js"
         }
       ]
     },
     "33": {
+      "css": [
+        {
+          "file": "c4f5d8e4.05ec2cf2.css",
+          "hash": "0fa898eb8b0c478a9852",
+          "publicPath": "/infima/c4f5d8e4.05ec2cf2.css"
+        }
+      ],
       "js": [
         {
-          "file": "metadata---infima-docs-components-footer-57-e-9ad.2a9db246886814003f6e.js",
-          "hash": "c4147a3580d9edddb28e",
-          "publicPath": "/infima/metadata---infima-docs-components-footer-57-e-9ad.2a9db246886814003f6e.js"
+          "file": "c4f5d8e4.183ad71b.js",
+          "hash": "0fa898eb8b0c478a9852",
+          "publicPath": "/infima/c4f5d8e4.183ad71b.js"
         }
       ]
     },
     "34": {
       "js": [
         {
-          "file": "metadata---infima-docs-components-hero-8-c-8-161.0921cf5df348be09d585.js",
-          "hash": "31a9e27ff0846a533744",
-          "publicPath": "/infima/metadata---infima-docs-components-hero-8-c-8-161.0921cf5df348be09d585.js"
+          "file": "ca0842e3.789023b3.js",
+          "hash": "0dc233eb5f6536e9d97f",
+          "publicPath": "/infima/ca0842e3.789023b3.js"
         }
       ]
     },
     "35": {
       "js": [
         {
-          "file": "metadata---infima-docs-components-navbar-77-e-81d.af0562f1d7ea80e332fe.js",
-          "hash": "e665a908b9f527e1409d",
-          "publicPath": "/infima/metadata---infima-docs-components-navbar-77-e-81d.af0562f1d7ea80e332fe.js"
+          "file": "d4bd98f1.f3a145d5.js",
+          "hash": "abc92bd639393195316b",
+          "publicPath": "/infima/d4bd98f1.f3a145d5.js"
         }
       ]
     },
     "36": {
       "js": [
         {
-          "file": "metadata---infima-docs-components-pagination-nav-649-984.37d57c9d77b0a36581f7.js",
-          "hash": "daebad351411a280da59",
-          "publicPath": "/infima/metadata---infima-docs-components-pagination-nav-649-984.37d57c9d77b0a36581f7.js"
+          "file": "d4f8d2c3.a5e4fb39.js",
+          "hash": "5c734d24b8b248202752",
+          "publicPath": "/infima/d4f8d2c3.a5e4fb39.js"
         }
       ]
     },
     "37": {
       "js": [
         {
-          "file": "metadata---infima-docs-components-paginationfa-5-cc9.f932bb2130965e7209bb.js",
-          "hash": "39aeb29779e0005f62ad",
-          "publicPath": "/infima/metadata---infima-docs-components-paginationfa-5-cc9.f932bb2130965e7209bb.js"
+          "file": "dbda5af8.097acde8.js",
+          "hash": "a8e2735c2b7159aaa1f1",
+          "publicPath": "/infima/dbda5af8.097acde8.js"
         }
       ]
     },
     "38": {
       "js": [
         {
-          "file": "metadata---infima-docs-components-pills-8-f-9-302.7d31d485796702e908b3.js",
-          "hash": "4c4406dadd47a895389f",
-          "publicPath": "/infima/metadata---infima-docs-components-pills-8-f-9-302.7d31d485796702e908b3.js"
+          "file": "e909fcb9.5c3f0660.js",
+          "hash": "268b4a8ba54c9868f48a",
+          "publicPath": "/infima/e909fcb9.5c3f0660.js"
         }
       ]
     },
     "39": {
       "js": [
         {
-          "file": "metadata---infima-docs-components-tabs-80-e-7eb.0017b043549fd6bba230.js",
-          "hash": "5bdb6b0ab61bf434f801",
-          "publicPath": "/infima/metadata---infima-docs-components-tabs-80-e-7eb.0017b043549fd6bba230.js"
+          "file": "e94b991e.700c5d2c.js",
+          "hash": "37523ae75a6dcd03d658",
+          "publicPath": "/infima/e94b991e.700c5d2c.js"
         }
       ]
     },
     "40": {
       "js": [
         {
-          "file": "metadata---infima-docs-getting-started-introduction-9-c-8-3c8.b38862229146b54c4464.js",
-          "hash": "d79bb1a3fca9e5abd62c",
-          "publicPath": "/infima/metadata---infima-docs-getting-started-introduction-9-c-8-3c8.b38862229146b54c4464.js"
+          "file": "eccd8df0.eed20926.js",
+          "hash": "aff1f78414bda892df7f",
+          "publicPath": "/infima/eccd8df0.eed20926.js"
         }
       ]
     },
     "41": {
       "js": [
         {
-          "file": "metadata---infima-docs-layout-grid-9-d-0-d2f.6f41ef18705fd8b2d674.js",
-          "hash": "5b9e5e6fbd6aabab309c",
-          "publicPath": "/infima/metadata---infima-docs-layout-grid-9-d-0-d2f.6f41ef18705fd8b2d674.js"
+          "file": "eec754e4.db3e8e1a.js",
+          "hash": "194ea97f78abb762b8e3",
+          "publicPath": "/infima/eec754e4.db3e8e1a.js"
         }
       ]
     },
     "42": {
       "js": [
         {
-          "file": "metadata---infima-docs-layout-spacing-82-c-035.aa98d837cddcfa2ed801.js",
-          "hash": "4fc6559427feb80d6a01",
-          "publicPath": "/infima/metadata---infima-docs-layout-spacing-82-c-035.aa98d837cddcfa2ed801.js"
+          "file": "f35bde10.f57c55da.js",
+          "hash": "2f399265ee7841f192c7",
+          "publicPath": "/infima/f35bde10.f57c55da.js"
         }
       ]
     },
     "43": {
+      "css": [
+        {
+          "file": "f934a4a6.836e98a5.css",
+          "hash": "f0282a00af8dcd1b85e9",
+          "publicPath": "/infima/f934a4a6.836e98a5.css"
+        }
+      ],
       "js": [
         {
-          "file": "metadata---infima-docs-templated-4-f-1fb.25fb4314c1fea8befd51.js",
-          "hash": "681a73d7be0811545043",
-          "publicPath": "/infima/metadata---infima-docs-templated-4-f-1fb.25fb4314c1fea8befd51.js"
+          "file": "f934a4a6.8e5e05fa.js",
+          "hash": "f0282a00af8dcd1b85e9",
+          "publicPath": "/infima/f934a4a6.8e5e05fa.js"
         }
       ]
     },
     "44": {
       "js": [
         {
-          "file": "metadata---infima-docs-utilities-colors-31-b-d0b.35b63fc7438995075c63.js",
-          "hash": "948fed37c04188b2cb09",
-          "publicPath": "/infima/metadata---infima-docs-utilities-colors-31-b-d0b.35b63fc7438995075c63.js"
+          "file": "fa5464a7.c25dd4a3.js",
+          "hash": "6d96634c1e30c8383a5b",
+          "publicPath": "/infima/fa5464a7.c25dd4a3.js"
         }
       ]
     },
     "45": {
+      "css": [
+        {
+          "file": "main.0e9d06af.css",
+          "hash": "293d785da1c24222ab0e",
+          "publicPath": "/infima/main.0e9d06af.css"
+        }
+      ],
       "js": [
         {
-          "file": "metadata---infima-docs-utilities-shadows-970-f0c.95667920614a75fe9814.js",
-          "hash": "8ba02d7d8786a569b034",
-          "publicPath": "/infima/metadata---infima-docs-utilities-shadows-970-f0c.95667920614a75fe9814.js"
+          "file": "main.58d7ed36.js",
+          "hash": "293d785da1c24222ab0e",
+          "publicPath": "/infima/main.58d7ed36.js"
         }
       ]
     },
     "46": {
       "js": [
         {
-          "file": "runtime~main.21deb51f5d1668806fc3.js",
-          "hash": "10f87ed34a46868b0095",
-          "publicPath": "/infima/runtime~main.21deb51f5d1668806fc3.js"
+          "file": "runtime~main.e9fe4042.js",
+          "hash": "926f18728cb14b996f1f",
+          "publicPath": "/infima/runtime~main.e9fe4042.js"
         }
       ]
     },
     "47": {
       "css": [
         {
-          "file": "47.94b26c16198655a527d5.css",
-          "hash": "349af39694b8c67458c3",
-          "publicPath": "/infima/47.94b26c16198655a527d5.css"
+          "file": "47.8b09a8d0.css",
+          "hash": "5fd97c3bb1c642fb6120",
+          "publicPath": "/infima/47.8b09a8d0.css"
         }
       ],
       "js": [
         {
-          "file": "47.4a6f1257db9478c41430.js",
-          "hash": "349af39694b8c67458c3",
-          "publicPath": "/infima/47.4a6f1257db9478c41430.js"
+          "file": "47.eeb34bf9.js",
+          "hash": "5fd97c3bb1c642fb6120",
+          "publicPath": "/infima/47.eeb34bf9.js"
         }
       ]
     },
     "48": {
       "js": [
         {
-          "file": "48.1141edb381dced1950b0.js",
-          "hash": "22c3d912fb656e6ddb4c",
-          "publicPath": "/infima/48.1141edb381dced1950b0.js"
+          "file": "48.c98d1679.js",
+          "hash": "1c08beb5b925f2ff8095",
+          "publicPath": "/infima/48.c98d1679.js"
         }
       ]
     }
