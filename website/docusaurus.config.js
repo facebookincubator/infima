@@ -7,7 +7,7 @@
 
 module.exports = {
   title: 'Infima',
-  tagline: 'UI framework for content-driven websites 🔥',
+  tagline: 'A modern styling framework for content-driven websites 🔥',
   organizationName: 'facebookincubator',
   projectName: 'infima',
   baseUrl: '/infima/',
@@ -16,6 +16,10 @@ module.exports = {
   themeConfig: {
     navbar: {
       title: 'Infima',
+      logo: {
+        alt: 'Infima Logo',
+        src: 'img/logo.png',
+      },
       links: [
         {
           to: 'docs/getting-started/introduction',

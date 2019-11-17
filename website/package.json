@@ -10,12 +10,12 @@
     "deploy": "docusaurus deploy"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.31",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.31",
+    "@docusaurus/core": "^2.0.0-alpha.35",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.35",
     "classnames": "^2.2.6",
     "prettier": "^1.17.1",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-element-to-jsx-string": "^14.0.2"
   }
 }
