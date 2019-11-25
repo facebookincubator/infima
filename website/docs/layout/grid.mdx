@@ -1,6 +1,7 @@
 ---
 id: grid
 title: Grid
+hide_table_of_contents: true
 ---
 
 import Playground from '@theme/Playground';
@@ -10,200 +11,297 @@ import './grid.styles.css';
 
 ## Twelve Column Layout
 
-<Playground>
-  <div class="container">
-    <div class="row">
-      <div class="col col--6">
-        <div class="col-demo">col--6</div>
-      </div>
-      <div class="col col--6">
-        <div class="col-demo">col--6</div>
-      </div>
+<div class="row">
+  <div class="col col--6">
+    <div class="col-demo">6</div>
+  </div>
+  <div class="col col--6">
+    <div class="col-demo">6</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col col--4">
+    <div class="col-demo">4</div>
+  </div>
+  <div class="col col--4">
+    <div class="col-demo">4</div>
+  </div>
+  <div class="col col--4">
+    <div class="col-demo">4</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col col--3">
+    <div class="col-demo">3</div>
+  </div>
+  <div class="col col--3">
+    <div class="col-demo">3</div>
+  </div>
+  <div class="col col--3">
+    <div class="col-demo">3</div>
+  </div>
+  <div class="col col--3">
+    <div class="col-demo">3</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col col--2">
+    <div class="col-demo">2</div>
+  </div>
+  <div class="col col--2">
+    <div class="col-demo">2</div>
+  </div>
+  <div class="col col--2">
+    <div class="col-demo">2</div>
+  </div>
+  <div class="col col--2">
+    <div class="col-demo">2</div>
+  </div>
+  <div class="col col--2">
+    <div class="col-demo">2</div>
+  </div>
+  <div class="col col--2">
+    <div class="col-demo">2</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col col--1">
+    <div class="col-demo">1</div>
+  </div>
+  <div class="col col--1">
+    <div class="col-demo">1</div>
+  </div>
+  <div class="col col--1">
+    <div class="col-demo">1</div>
+  </div>
+  <div class="col col--1">
+    <div class="col-demo">1</div>
+  </div>
+  <div class="col col--1">
+    <div class="col-demo">1</div>
+  </div>
+  <div class="col col--1">
+    <div class="col-demo">1</div>
+  </div>
+  <div class="col col--1">
+    <div class="col-demo">1</div>
+  </div>
+  <div class="col col--1">
+    <div class="col-demo">1</div>
+  </div>
+  <div class="col col--1">
+    <div class="col-demo">1</div>
+  </div>
+  <div class="col col--1">
+    <div class="col-demo">1</div>
+  </div>
+  <div class="col col--1">
+    <div class="col-demo">1</div>
+  </div>
+  <div class="col col--1">
+    <div class="col-demo">1</div>
+  </div>
+</div>
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col col--6">6</div>
+    <div class="col col--6">6</div>
+  </div>
+  <div class="row">
+    <div class="col col--4">4</div>
     </div>
-    <div class="row">
-      <div class="col col--4">
-        <div class="col-demo">col--4</div>
-      </div>
-      <div class="col col--4">
-        <div class="col-demo">col--4</div>
-      </div>
-      <div class="col col--4">
-        <div class="col-demo">col--4</div>
-      </div>
+    <div class="col col--4">4</div>
     </div>
-    <div class="row">
-      <div class="col col--3">
-        <div class="col-demo">col--3</div>
-      </div>
-      <div class="col col--3">
-        <div class="col-demo">col--3</div>
-      </div>
-      <div class="col col--3">
-        <div class="col-demo">col--3</div>
-      </div>
-      <div class="col col--3">
-        <div class="col-demo">col--3</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col col--2">
-        <div class="col-demo">col--2</div>
-      </div>
-      <div class="col col--2">
-        <div class="col-demo">col--2</div>
-      </div>
-      <div class="col col--2">
-        <div class="col-demo">col--2</div>
-      </div>
-      <div class="col col--2">
-        <div class="col-demo">col--2</div>
-      </div>
-      <div class="col col--2">
-        <div class="col-demo">col--2</div>
-      </div>
-      <div class="col col--2">
-        <div class="col-demo">col--2</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col col--1">
-        <div class="col-demo">col--1</div>
-      </div>
-      <div class="col col--1">
-        <div class="col-demo">col--1</div>
-      </div>
-      <div class="col col--1">
-        <div class="col-demo">col--1</div>
-      </div>
-      <div class="col col--1">
-        <div class="col-demo">col--1</div>
-      </div>
-      <div class="col col--1">
-        <div class="col-demo">col--1</div>
-      </div>
-      <div class="col col--1">
-        <div class="col-demo">col--1</div>
-      </div>
-      <div class="col col--1">
-        <div class="col-demo">col--1</div>
-      </div>
-      <div class="col col--1">
-        <div class="col-demo">col--1</div>
-      </div>
-      <div class="col col--1">
-        <div class="col-demo">col--1</div>
-      </div>
-      <div class="col col--1">
-        <div class="col-demo">col--1</div>
-      </div>
-      <div class="col col--1">
-        <div class="col-demo">col--1</div>
-      </div>
-      <div class="col col--1">
-        <div class="col-demo">col--1</div>
-      </div>
+    <div class="col col--4">4</div>
     </div>
   </div>
-</Playground>
+  <div class="row">
+    <div class="col col--3">3</div>
+    </div>
+    <div class="col col--3">3</div>
+    </div>
+    <div class="col col--3">3</div>
+    </div>
+    <div class="col col--3">3</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col--2">2</div>
+    </div>
+    <div class="col col--2">2</div>
+    </div>
+    <div class="col col--2">2</div>
+    </div>
+    <div class="col col--2">2</div>
+    </div>
+    <div class="col col--2">2</div>
+    </div>
+    <div class="col col--2">2</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col--1">1</div>
+    <div class="col col--1">1</div>
+    <div class="col col--1">1</div>
+    <div class="col col--1">1</div>
+    <div class="col col--1">1</div>
+    <div class="col col--1">1</div>
+    <div class="col col--1">1</div>
+    <div class="col col--1">1</div>
+    <div class="col col--1">1</div>
+    <div class="col col--1">1</div>
+    <div class="col col--1">1</div>
+    <div class="col col--1">1</div>
+  </div>
+</div>
+```
 
 ## Equal-width
 
-<Playground>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="col-demo">col</div>
-      </div>
-      <div class="col">
-        <div class="col-demo">col</div>
-      </div>
+<div class="row">
+  <div class="col">
+    <div class="col-demo">col</div>
+  </div>
+  <div class="col">
+    <div class="col-demo">col</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="col-demo">col</div>
+  </div>
+  <div class="col">
+    <div class="col-demo">col</div>
+  </div>
+  <div class="col">
+    <div class="col-demo">col</div>
+  </div>
+</div>
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col">col</div>
+    <div class="col">col</div>
+  </div>
+  <div class="row">
+    <div class="col">
+      col
     </div>
-    <div class="row">
-      <div class="col">
-        <div class="col-demo">col</div>
-      </div>
-      <div class="col">
-        <div class="col-demo">col</div>
-      </div>
-      <div class="col">
-        <div class="col-demo">col</div>
-      </div>
+    <div class="col">
+      col
+    </div>
+    <div class="col">
+      col
     </div>
   </div>
-</Playground>
+</div>
+```
 
 ## Column Offsets
 
-<Playground>
-  <div class="container">
-    <div class="row">
-      <div class="col col--1">
-        <div class="col-demo">col--1</div>
-      </div>
-      <div class="col col--2 col--offset-1">
-        <div class="col-demo">col--2 col--offset-1</div>
-      </div>
-      <div class="col col--3 col--offset-2">
-        <div class="col-demo">col--3 col--offset-2</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col col--2">
-        <div class="col-demo">col--2</div>
-      </div>
-      <div class="col col--2 col--offset-2">
-        <div class="col-demo">col--2 col--offset-2</div>
-      </div>
-      <div class="col col--4 col--offset-2">
-        <div class="col-demo">col--4 col--offset-2</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col col--3">
-        <div class="col-demo">col--3</div>
-      </div>
-      <div class="col col--6 col--offset-3">
-        <div class="col-demo">col--6 col--offset-3</div>
-      </div>
-    </div>
+<div class="row">
+  <div class="col col--1">
+    <div class="col-demo">col--1</div>
   </div>
-</Playground>
+  <div class="col col--2 col--offset-1">
+    <div class="col-demo">col--2 col--offset-1</div>
+  </div>
+  <div class="col col--3 col--offset-2">
+    <div class="col-demo">col--3 col--offset-2</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col col--2">
+    <div class="col-demo">col--2</div>
+  </div>
+  <div class="col col--2 col--offset-2">
+    <div class="col-demo">col--2 col--offset-2</div>
+  </div>
+  <div class="col col--4 col--offset-2">
+    <div class="col-demo">col--4 col--offset-2</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col col--3">
+    <div class="col-demo">col--3</div>
+  </div>
+  <div class="col col--6 col--offset-3">
+    <div class="col-demo">col--6 col--offset-3</div>
+  </div>
+</div>
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col col--1">col--1</div>
+    <div class="col col--2 col--offset-1">col--2 col--offset-1</div>
+    <div class="col col--3 col--offset-2">col--3 col--offset-2</div>
+  </div>
+  <div class="row">
+    <div class="col col--2">col--2</div>
+    <div class="col col--2 col--offset-2">col--2 col--offset-2</div>
+    <div class="col col--4 col--offset-2">col--4 col--offset-2</div>
+  </div>
+  <div class="row">
+    <div class="col col--3">col--3</div>
+    <div class="col col--6 col--offset-3">col--6 col--offset-3</div>
+  </div>
+</div>
+```
 
 ## No Gutters
 
-<Playground>
-  <div class="container">
-    <div class="row row--no-gutters">
-      <div class="col">
-        <div class="col-demo">col</div>
-      </div>
-      <div class="col">
-        <div class="col-demo">col</div>
-      </div>
-    </div>
-    <div class="row row--no-gutters">
-      <div class="col">
-        <div class="col-demo">col</div>
-      </div>
-      <div class="col">
-        <div class="col-demo">col</div>
-      </div>
-      <div class="col">
-        <div class="col-demo">col</div>
-      </div>
-    </div>
-    <div class="row row--no-gutters">
-      <div class="col col--3">
-        <div class="col-demo">col--3</div>
-      </div>
-      <div class="col col--4">
-        <div class="col-demo">col--4</div>
-      </div>
-      <div class="col col--5">
-        <div class="col-demo">col--5</div>
-      </div>
-    </div>
+<div class="row row--no-gutters">
+  <div class="col">
+    <div class="col-demo">col</div>
   </div>
-</Playground>
+  <div class="col">
+    <div class="col-demo">col</div>
+  </div>
+</div>
+<div class="row row--no-gutters">
+  <div class="col">
+    <div class="col-demo">col</div>
+  </div>
+  <div class="col">
+    <div class="col-demo">col</div>
+  </div>
+  <div class="col">
+    <div class="col-demo">col</div>
+  </div>
+</div>
+<div class="row row--no-gutters">
+  <div class="col col--3">
+    <div class="col-demo">col--3</div>
+  </div>
+  <div class="col col--4">
+    <div class="col-demo">col--4</div>
+  </div>
+  <div class="col col--5">
+    <div class="col-demo">col--5</div>
+  </div>
+</div>
+
+```html
+<div class="container">
+  <div class="row row--no-gutters">
+    <div class="col">col</div>
+    <div class="col">col</div>
+  </div>
+  <div class="row row--no-gutters">
+    <div class="col">col</div>
+    <div class="col">col</div>
+    <div class="col">col</div>
+  </div>
+  <div class="row row--no-gutters">
+    <div class="col col--3">col--3</div>
+    <div class="col col--4">col--4</div>
+    <div class="col col--5">col--5</div>
+  </div>
+</div>
+```
 
 </div>
