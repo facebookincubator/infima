@@ -221,7 +221,6 @@
       line-height: 2rem;
       outline: none;
       padding: 0 0.5rem 0 2.25rem;
-      transition: all var(--ifm-transition-fast) ease;
       width: 12.5rem;
 
       &::placeholder {
