@@ -31,7 +31,8 @@
     color: var(--ifm-contents-link-color);
 
     &:hover,
-    &.contents__link--active {
+    &.contents__link--active,
+    &.contents__link--active code {
       color: var(--ifm-color-primary);
       text-decoration: none;
     }
