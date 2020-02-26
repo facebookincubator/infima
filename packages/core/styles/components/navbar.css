@@ -61,6 +61,11 @@
     margin-right: 1rem;
     text-decoration: none;
   }
+  
+  & .navbar__title {
+    flex-shrink: 0;
+    max-width: 100%;
+  }
 
   & .navbar__toggle {
     cursor: pointer;
