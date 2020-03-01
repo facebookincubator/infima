@@ -22,7 +22,7 @@
   box-shadow: var(--ifm-navbar-shadow);
   box-sizing: border-box;
   display: flex;
-  height: var(--ifm-navbar-height);
+  min-height: var(--ifm-navbar-height);
   padding: var(--ifm-navbar-padding-vertical)
     var(--ifm-navbar-padding-horizontal);
   width: 100%;
@@ -37,9 +37,7 @@
   }
 
   &.navbar--fixed-top {
-    position: fixed;
-    left: 0;
-    right: 0;
+    position: sticky;
     top: 0;
     z-index: var(--ifm-z-index-fixed);
   }
