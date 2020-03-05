@@ -22,7 +22,7 @@
   box-shadow: var(--ifm-navbar-shadow);
   box-sizing: border-box;
   display: flex;
-  min-height: var(--ifm-navbar-height);
+  height: var(--ifm-navbar-height);
   padding: var(--ifm-navbar-padding-vertical)
     var(--ifm-navbar-padding-horizontal);
   width: 100%;
