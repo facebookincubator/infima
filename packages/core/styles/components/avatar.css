@@ -1,5 +1,5 @@
 :root {
-  --ifm-avatar-intro-left-margin: 1rem;
+  --ifm-avatar-intro-right-margin: 1rem;
   --ifm-avatar-intro-alignment: inherit;
   --ifm-avatar-photo-bottom-margin: 0;
   --ifm-avatar-photo-size-sm: 2rem;
@@ -20,6 +20,7 @@
     border-radius: 50%;
     height: var(--ifm-avatar-photo-size-md);
     margin-bottom: var(--ifm-avatar-photo-bottom-margin);
+    margin-right: var(--ifm-avatar-intro-right-margin);
     width: var(--ifm-avatar-photo-size-md);
 
     &.avatar__photo--sm {
@@ -43,7 +44,6 @@
     flex: 1 1;
     flex-direction: column;
     justify-content: center;
-    margin-left: var(--ifm-avatar-intro-left-margin);
     text-align: var(--ifm-avatar-intro-alignment);
   }
 
@@ -56,8 +56,8 @@
   }
 
   &.avatar--vertical {
+    --ifm-avatar-intro-right-margin: 0;
     --ifm-avatar-intro-alignment: center;
-    --ifm-avatar-intro-left-margin: 0;
     --ifm-avatar-photo-bottom-margin: 0.5rem;
 
     align-items: center;
@@ -65,13 +65,13 @@
 
     // @compat
     & .avatar__intro {
-      margin-left: var(--ifm-avatar-intro-left-margin); // @compat
       text-align: var(--ifm-avatar-intro-alignment); // @compat
     }
 
     // @compat
     & .avatar__photo {
       margin-bottom: var(--ifm-avatar-photo-bottom-margin); // @compat
+      margin-right: var(--ifm-avatar-intro-right-margin); // @compat
     }
   }
 }
