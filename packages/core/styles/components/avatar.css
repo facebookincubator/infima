@@ -1,7 +1,6 @@
 :root {
-  --ifm-avatar-intro-left-margin: 1rem;
+  --ifm-avatar-intro-margin: 1rem;
   --ifm-avatar-intro-alignment: inherit;
-  --ifm-avatar-photo-bottom-margin: 0;
   --ifm-avatar-photo-size-sm: 2rem;
   --ifm-avatar-photo-size-md: 3rem;
   --ifm-avatar-photo-size-lg: 4rem;
@@ -19,7 +18,6 @@
     overflow: hidden;
     border-radius: 50%;
     height: var(--ifm-avatar-photo-size-md);
-    margin-bottom: var(--ifm-avatar-photo-bottom-margin);
     width: var(--ifm-avatar-photo-size-md);
 
     &.avatar__photo--sm {
@@ -36,9 +34,9 @@
       height: var(--ifm-avatar-photo-size-xl);
       width: var(--ifm-avatar-photo-size-xl);
     }
-    
+
     & + .avatar__intro {
-      margin-left: var(--ifm-avatar-intro-left-margin);
+      margin-left: var(--ifm-avatar-intro-margin);
     }
   }
 
@@ -60,21 +58,16 @@
 
   &.avatar--vertical {
     --ifm-avatar-intro-alignment: center;
-    --ifm-avatar-intro-left-margin: 0;
-    --ifm-avatar-photo-bottom-margin: 0.5rem;
+    --ifm-avatar-intro-margin: 0.5rem;
 
     align-items: center;
     flex-direction: column;
 
     // @compat
     & .avatar__intro {
+      margin-left: 0; /* Reset the margin added in the horizontal layout. */
+      margin-top: var(--ifm-avatar-intro-margin); // @compat
       text-align: var(--ifm-avatar-intro-alignment); // @compat
-    }
-
-    // @compat
-    & .avatar__photo {
-      margin-bottom: var(--ifm-avatar-photo-bottom-margin); // @compat
-      margin-right: var(--ifm-avatar-intro-right-margin); // @compat
     }
   }
 }
