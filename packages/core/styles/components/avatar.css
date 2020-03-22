@@ -1,5 +1,5 @@
 :root {
-  --ifm-avatar-intro-right-margin: 1rem;
+  --ifm-avatar-intro-left-margin: 1rem;
   --ifm-avatar-intro-alignment: inherit;
   --ifm-avatar-photo-bottom-margin: 0;
   --ifm-avatar-photo-size-sm: 2rem;
@@ -20,7 +20,6 @@
     border-radius: 50%;
     height: var(--ifm-avatar-photo-size-md);
     margin-bottom: var(--ifm-avatar-photo-bottom-margin);
-    margin-right: var(--ifm-avatar-intro-right-margin);
     width: var(--ifm-avatar-photo-size-md);
 
     &.avatar__photo--sm {
@@ -36,6 +35,10 @@
     &.avatar__photo--xl {
       height: var(--ifm-avatar-photo-size-xl);
       width: var(--ifm-avatar-photo-size-xl);
+    }
+    
+    & + .avatar__intro {
+      margin-left: var(--ifm-avatar-intro-left-margin);
     }
   }
 
@@ -56,8 +59,8 @@
   }
 
   &.avatar--vertical {
-    --ifm-avatar-intro-right-margin: 0;
     --ifm-avatar-intro-alignment: center;
+    --ifm-avatar-intro-left-margin: 0;
     --ifm-avatar-photo-bottom-margin: 0.5rem;
 
     align-items: center;
