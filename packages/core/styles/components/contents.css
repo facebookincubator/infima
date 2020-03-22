@@ -31,6 +31,7 @@
     color: var(--ifm-contents-link-color);
 
     &:hover,
+    &:hover code,
     &.contents__link--active,
     &.contents__link--active code {
       color: var(--ifm-color-primary);
