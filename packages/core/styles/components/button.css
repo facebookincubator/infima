@@ -25,7 +25,7 @@
   color: var(--ifm-button-color);
   cursor: pointer;
   display: inline-block;
-  font-size: calc(0.8rem * var(--ifm-button-size-multiplier));
+  font-size: calc(0.875rem * var(--ifm-button-size-multiplier));
   font-weight: var(--ifm-button-font-weight);
   line-height: 1.5;
   outline: 0;
