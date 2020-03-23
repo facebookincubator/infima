@@ -60,7 +60,7 @@
     text-decoration: none;
   }
   
-  & .navbar__title {
+  &__title {
     flex-shrink: 0;
     max-width: 100%;
   }
@@ -88,7 +88,7 @@
     &--center {
       flex: 0 0 auto;
 
-      & ^^&__brand {
+      ^^&__brand {
         margin: 0;
       }
     }
@@ -127,7 +127,7 @@
     }
   }
 
-  &.navbar--dark {
+  &--dark {
     --ifm-navbar-background-color: #303846;
     --ifm-navbar-link-color: var(--ifm-color-white);
     --ifm-navbar-link-hover-color: var(--ifm-color-primary);
@@ -170,7 +170,7 @@
     }
   }
 
-  &.navbar--primary {
+  &--primary {
     --ifm-navbar-background-color: var(--ifm-color-primary);
     --ifm-navbar-link-hover-color: var(--ifm-color-white);
     --ifm-navbar-search-input-background-color: rgba(255, 255, 255, 0.1);

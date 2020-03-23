@@ -12,7 +12,7 @@
   margin-bottom: 0;
   padding-left: 0;
 
-  & > .tab-item {
+  &__item {
     box-sizing: content-box;
     border-bottom: 3px solid transparent;
     border-radius: var(--ifm-global-radius);
@@ -21,7 +21,7 @@
     list-style-type: none;
     padding: var(--ifm-tabs-padding-vertical) var(--ifm-tabs-padding-horizontal);
 
-    &.tab-item--active {
+    &--active {
       border-bottom-color: var(--ifm-tabs-color-active);
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
@@ -33,7 +33,7 @@
     }
   }
 
-  &.tabs--block {
+  &--block {
     display: flex;
     justify-content: stretch;
 
@@ -41,7 +41,7 @@
       flex-direction: column;
     }
 
-    & > .tab-item {
+    ^&__item {
       flex-grow: 1;
       text-align: center;
 

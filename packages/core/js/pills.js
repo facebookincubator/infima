@@ -1,1 +1,1 @@
-const pills = makeRadioBehavior('click', 'pill-item', 'pill-item--active');
+const pills = makeRadioBehavior('click', 'pills__item', 'pills__item--active');

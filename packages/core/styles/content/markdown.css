@@ -73,7 +73,7 @@
     margin-bottom: var(--ifm-leading);
   }
 
-  & li {
+  li {
     word-wrap: break-all;
     & > p {
       margin-top: var(--ifm-list-paragraph-margin);

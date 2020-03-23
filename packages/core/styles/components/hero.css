@@ -10,7 +10,7 @@
   display: flex;
   padding: 4rem 2rem;
 
-  &.hero--primary {
+  &--primary {
     --ifm-hero-background-color: var(--ifm-color-primary);
     --ifm-hero-text-color: var(--ifm-font-base-color-inverse);
 
@@ -18,7 +18,7 @@
     color: var(--ifm-hero-text-color); // @compat
   }
 
-  &.hero--dark {
+  &--dark {
     --ifm-hero-background-color: #303846;
     --ifm-hero-text-color: var(--ifm-color-white);
 
@@ -26,11 +26,11 @@
     color: var(--ifm-hero-text-color); // @compat
   }
 
-  & .hero__title {
+  &__title {  
     font-size: 3rem;
   }
 
-  & .hero__subtitle {
+  &__subtitle {
     font-size: 1.5rem;
   }
 

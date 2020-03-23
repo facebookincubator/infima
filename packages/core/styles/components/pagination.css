@@ -14,8 +14,36 @@
 .pagination {
   font-size: var(--ifm-pagination-font-size);
   padding-left: 0;
+  
+  &--sm {
+    --ifm-pagination-font-size: 0.8rem;
+    --ifm-pagination-padding-horizontal: 0.8rem;
+    --ifm-pagination-padding-vertical: 0.2rem;
 
-  & > .page-item {
+    font-size: var(--ifm-pagination-font-size); // @compat
+
+    // @compat
+    ^&__link {
+      padding: var(--ifm-pagination-padding-vertical)
+        var(--ifm-pagination-padding-horizontal); // @compat
+    }
+  }
+
+  &--lg {
+    --ifm-pagination-font-size: 1.2rem;
+    --ifm-pagination-padding-horizontal: 1.2rem;
+    --ifm-pagination-padding-vertical: 0.3rem;
+
+    font-size: var(--ifm-pagination-font-size); // @compat
+
+    // @compat
+    ^&__link {
+      padding: var(--ifm-pagination-padding-vertical)
+        var(--ifm-pagination-padding-horizontal); // @compat
+    }
+  }
+
+  &__item {
     display: inline-block;
     list-style-type: none;
 
@@ -31,67 +59,37 @@
       padding: var(--ifm-pagination-padding-vertical);
     }
 
-    & .page-link {
-      border-radius: var(--ifm-pagination-border-radius);
-      color: var(--ifm-font-base-color);
-      display: inline-block;
-      padding: var(--ifm-pagination-padding-vertical)
-        var(--ifm-pagination-padding-horizontal);
-      text-decoration: none;
-    }
-
-    &.page-item--active {
-      & .page-link {
+    &--active {
+      & .pagination__link {
         background: var(--ifm-pagination-item-active-background);
         color: var(--ifm-pagination-color-active);
       }
     }
 
-    &:not(.page-item--active):hover {
-      & .page-link {
+    &:not(&--active):hover {
+      & .pagination__link {
         background: var(--ifm-pagination-item-active-background);
         transition: background var(--ifm-transition-fast)
           cubic-bezier(0.08, 0.52, 0.52, 1);
       }
     }
 
-    &.disabled,
-    &:disabled,
+    &--disabled,
     &[disabled] {
       opacity: 0.25;
       pointer-events: none;
     }
   }
-
-  &.pagination--sm {
-    --ifm-pagination-font-size: 0.8rem;
-    --ifm-pagination-padding-horizontal: 0.8rem;
-    --ifm-pagination-padding-vertical: 0.2rem;
-
-    font-size: var(--ifm-pagination-font-size); // @compat
-    // @compat
-    & > .page-item {
-      // @compat
-      & .page-link {
-        padding: var(--ifm-pagination-padding-vertical)
-          var(--ifm-pagination-padding-horizontal); // @compat
-      }
-    }
-  }
-
-  &.pagination--lg {
-    --ifm-pagination-font-size: 1.2rem;
-    --ifm-pagination-padding-horizontal: 1.2rem;
-    --ifm-pagination-padding-vertical: 0.3rem;
-
-    font-size: var(--ifm-pagination-font-size); // @compat
-    // @compat
-    & > .page-item {
-      // @compat
-      & .page-link {
-        padding: var(--ifm-pagination-padding-vertical)
-          var(--ifm-pagination-padding-horizontal); // @compat
-      }
+  
+  &__link {
+    border-radius: var(--ifm-pagination-border-radius);
+    color: var(--ifm-font-base-color);
+    display: inline-block;
+    padding: var(--ifm-pagination-padding-vertical)
+      var(--ifm-pagination-padding-horizontal);
+    
+    &:hover {
+      text-decoration: none;
     }
   }
 }
