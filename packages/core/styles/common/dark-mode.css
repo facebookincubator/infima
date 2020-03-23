@@ -1,4 +1,5 @@
 html[data-theme='dark'] {
+  --ifm-color-emphasis-0: var(--ifm-color-gray-1000);
   --ifm-color-emphasis-100: var(--ifm-color-gray-900);
   --ifm-color-emphasis-200: var(--ifm-color-gray-800);
   --ifm-color-emphasis-300: var(--ifm-color-gray-700);
@@ -8,6 +9,7 @@ html[data-theme='dark'] {
   --ifm-color-emphasis-700: var(--ifm-color-gray-300);
   --ifm-color-emphasis-800: var(--ifm-color-gray-200);
   --ifm-color-emphasis-900: var(--ifm-color-gray-100);
+  --ifm-color-emphasis-1000: var(--ifm-color-gray-0);
 
   --ifm-background-color: #121212;
   --ifm-background-surface-color: #1e2125;
