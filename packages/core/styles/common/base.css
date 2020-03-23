@@ -6,6 +6,7 @@ html {
   background-color: var(--ifm-background-color);
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {

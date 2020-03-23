@@ -28,8 +28,19 @@
     }
   }
 
+  & a {
+    color: var(--ifm-alert-color);
+    text-decoration: underline;
+  }
+
   &.alert--secondary {
-    color: var(--ifm-color-gray-900);
+    --ifm-alert-color: --ifm-color-gray-900;
+    color: var(--ifm-color-gray-900); // @compat
+
+    // @compat
+    & a {
+      color: var(--ifm-color-gray-900);
+    }
   }
 
   & .close {

@@ -188,7 +188,6 @@
   --ifm-color-emphasis-700: var(--ifm-color-gray-700);
   --ifm-color-emphasis-800: var(--ifm-color-gray-800);
   --ifm-color-emphasis-900: var(--ifm-color-gray-900);
-  --ifm-color-emphasis-900: var(--ifm-color-gray-900);
   --ifm-color-emphasis-1000: var(--ifm-color-gray-1000);
 
   // Base.
@@ -217,7 +216,7 @@
   --ifm-font-weight-light: 300;
   --ifm-font-weight-normal: 400;
   --ifm-font-weight-semibold: 500;
-  --ifm-font-weight-bold: 600;
+  --ifm-font-weight-bold: 700;
 
   --ifm-font-weight-base: var(--ifm-font-weight-normal);
   --ifm-line-height-base: 1.5;

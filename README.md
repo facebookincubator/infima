@@ -18,8 +18,8 @@ A UI framework for content-centric websites.
     - [x] Add full-height mode for cards
   - Avatars
     - [x] Docusaurus index page border radius
-    - [ ] Avatar title no left margin when no thumbnail
-  - [ ] Navbar brand title (add `white-space: nowrap`)
+    - [x] Avatar title no left margin when no thumbnail
+  - [x] Navbar brand title (add `white-space: nowrap`)
 - Medium
   - [x] Create dark theme
 - Low
