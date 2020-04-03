@@ -7,7 +7,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "eject": "docusaurus eject",
-    "deploy": "docusaurus deploy"
+    "deploy": "GIT_USER=facebookincubator USE_SSH=true docusaurus deploy"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.50",
