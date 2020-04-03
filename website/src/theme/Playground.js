@@ -9,6 +9,7 @@ import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import prettier from 'prettier/standalone';
 import babelParser from 'prettier/parser-babylon';
+import CodeBlock from '@theme/CodeBlock';
 
 function Playground(props) {
   const htmlString = prettier
@@ -25,7 +26,7 @@ function Playground(props) {
         dangerouslySetInnerHTML={{ __html: htmlString }}
       />
       <br />
-      <pre>{htmlString}</pre>
+      <CodeBlock className="html">{htmlString}</CodeBlock>
     </div>
   );
 }
