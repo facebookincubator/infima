@@ -7,6 +7,8 @@
 }
 
 .tabs {
+  display: flex;
+  overflow-x: auto;
   color: var(--ifm-tabs-color);
   font-weight: var(--ifm-font-weight-bold);
   margin-bottom: 0;
@@ -17,9 +19,10 @@
     border-bottom: 3px solid transparent;
     border-radius: var(--ifm-global-radius);
     cursor: pointer;
-    display: inline-block;
+    display: inline-flex;
     list-style-type: none;
     padding: var(--ifm-tabs-padding-vertical) var(--ifm-tabs-padding-horizontal);
+    margin: 0;
 
     &.tab-item--active {
       border-bottom-color: var(--ifm-tabs-color-active);
@@ -34,7 +37,6 @@
   }
 
   &.tabs--block {
-    display: flex;
     justify-content: stretch;
 
     @media (--ifm-narrow-window) {
@@ -43,7 +45,7 @@
 
     & > .tab-item {
       flex-grow: 1;
-      text-align: center;
+      justify-content: center;
 
       @media (--ifm-narrow-window) {
         &:not(:first-child) {
