@@ -43,6 +43,10 @@ a {
     color: inherit;
     text-decoration: none;
   }
+  
+  & code {
+    color: inherit;
+  }
 }
 
 // Paragraphs
