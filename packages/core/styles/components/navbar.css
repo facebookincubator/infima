@@ -83,7 +83,7 @@
   & .navbar__items {
     align-items: center;
     display: flex;
-    flex: 1 0 0;
+    flex: 1 1 auto;
 
     &.navbar__items--center {
       flex: 0 0 auto;
