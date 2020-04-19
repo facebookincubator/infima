@@ -40,7 +40,7 @@
       }
 
       & .menu__link--sublist:after {
-        transform: rotateX(180deg);
+        transform: rotateZ(90deg);
       }
     }
   }
@@ -65,6 +65,8 @@
       display: inline-block;
       height: 1.25rem;
       width: 1.25rem;
+      transition: transform var(--ifm-transition-fast) linear;
+      transform: rotate(180deg);
     }
 
     &:hover {
