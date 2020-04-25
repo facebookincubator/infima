@@ -105,6 +105,10 @@
 
     &.dropdown {
       padding: 0;
+      
+      & .navbar__link {
+        pointer-events: none;
+      }
     }
 
     @media (--ifm-narrow-window) {
