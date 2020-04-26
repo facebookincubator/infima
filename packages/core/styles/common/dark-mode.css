@@ -11,8 +11,8 @@ html[data-theme='dark'] {
   --ifm-color-emphasis-900: var(--ifm-color-gray-100);
   --ifm-color-emphasis-1000: var(--ifm-color-gray-0);
 
-  --ifm-background-color: #121212;
-  --ifm-background-surface-color: #1e2125;
+  --ifm-background-color: #18191a;
+  --ifm-background-surface-color: #242526;
 
   --ifm-hover-overlay: rgba(255, 255, 255, 0.05);
 
