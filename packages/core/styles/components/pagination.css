@@ -33,7 +33,7 @@
 
     & .page-link {
       border-radius: var(--ifm-pagination-border-radius);
-      color: var(--ifm-font-base-color);
+      color: var(--ifm-font-color-base);
       display: inline-block;
       padding: var(--ifm-pagination-padding-vertical)
         var(--ifm-pagination-padding-horizontal);

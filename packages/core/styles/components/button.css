@@ -3,7 +3,7 @@
   --ifm-button-background-color: inherit;
   --ifm-button-border-color: var(--ifm-button-background-color);
   --ifm-button-border-width: var(--ifm-global-border-width);
-  --ifm-button-color: var(--ifm-font-base-color-inverse);
+  --ifm-button-color: var(--ifm-font-color-base-inverse);
   --ifm-button-font-weight: var(--ifm-font-weight-bold);
   --ifm-button-padding-horizontal: 1.5rem;
   --ifm-button-padding-vertical: 0.375rem;
@@ -68,7 +68,7 @@
     &:hover,
     &:active,
     &.button--active {
-      --ifm-button-color: var(--ifm-font-base-color-inverse);
+      --ifm-button-color: var(--ifm-font-color-base-inverse);
     }
   }
 
@@ -111,7 +111,7 @@
     color: var(--ifm-color-gray-900);
 
     &.button--outline:not(.button--active):not(:hover) {
-      color: var(--ifm-font-base-color);
+      color: var(--ifm-font-color-base);
     }
   }
 }

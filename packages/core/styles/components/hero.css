@@ -12,7 +12,7 @@
 
   &.hero--primary {
     --ifm-hero-background-color: var(--ifm-color-primary);
-    --ifm-hero-text-color: var(--ifm-font-base-color-inverse);
+    --ifm-hero-text-color: var(--ifm-font-color-base-inverse);
 
     background-color: var(--ifm-hero-background-color); // @compat
     color: var(--ifm-hero-text-color); // @compat

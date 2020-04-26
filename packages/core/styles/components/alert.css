@@ -3,7 +3,7 @@
   --ifm-alert-border-color: var(--ifm-alert-background-color);
   --ifm-alert-border-radius: var(--ifm-global-radius);
   --ifm-alert-border-width: var(--ifm-global-border-width);
-  --ifm-alert-color: var(--ifm-font-base-color-inverse);
+  --ifm-alert-color: var(--ifm-font-color-base-inverse);
   --ifm-alert-padding-horizontal: var(--ifm-spacing-horizontal);
   --ifm-alert-padding-vertical: var(--ifm-spacing-vertical);
 }

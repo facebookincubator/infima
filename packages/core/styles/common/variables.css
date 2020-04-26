@@ -203,9 +203,9 @@
   --ifm-hover-overlay: rgba(0, 0, 0, 0.05);
 
   // Typography.
-  --ifm-font-base-color: var(--ifm-color-content);
-  --ifm-font-base-color-inverse: var(--ifm-color-content-inverse);
-  --ifm-font-secondary-color: var(--ifm-color-content-secondary);
+  --ifm-font-color-base: var(--ifm-color-content);
+  --ifm-font-color-base-inverse: var(--ifm-color-content-inverse);
+  --ifm-font-color-secondary: var(--ifm-color-content-secondary);
   --ifm-font-family-base: system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol';

@@ -5,7 +5,7 @@
 html {
   background-color: var(--ifm-background-color);
   box-sizing: border-box;
-  color: var(--ifm-font-base-color);
+  color: var(--ifm-font-color-base);
   line-height: var(--ifm-line-height-base);
   font-family: var(--ifm-font-family-base);
   font-size: var(--ifm-font-size-base);

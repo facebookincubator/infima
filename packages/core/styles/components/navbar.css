@@ -3,7 +3,7 @@
   --ifm-navbar-height: 3.75rem;
   --ifm-navbar-item-padding-horizontal: 1rem;
   --ifm-navbar-item-padding-vertical: 0.25rem;
-  --ifm-navbar-link-color: var(--ifm-font-base-color);
+  --ifm-navbar-link-color: var(--ifm-font-color-base);
   --ifm-navbar-link-hover-color: var(--ifm-color-primary);
   --ifm-navbar-link-active-color: var(--ifm-link-color);
   --ifm-navbar-padding-horizontal: var(--ifm-spacing-horizontal);
@@ -59,7 +59,7 @@
     margin-right: 1rem;
     text-decoration: none;
   }
-  
+
   & .navbar__title {
     flex-shrink: 0;
     max-width: 100%;
@@ -105,7 +105,7 @@
 
     &.dropdown {
       padding: 0;
-      
+
       & .navbar__link {
         pointer-events: none;
       }
