@@ -50,4 +50,20 @@
       }
     }
   }
+
+  & .navbar__link:after {
+    border-color: currentColor transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4.6px 0 4.6px;
+    content: '';
+    display: inline-block;
+    height: 0;
+    margin-left: 3px;
+    vertical-align: middle;
+    width: 0;
+  }
+
+  &.dropdown--nocaret .navbar__link:after {
+    content: none;
+  }
 }
