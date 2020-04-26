@@ -1,22 +1,18 @@
 :root {
   // Leading is the distance between two baselines
   // TODO: add appropriate mobile leading
-  --ifm-leading-desktop: 1.5;
+  --ifm-leading-desktop: 1.25;
   --ifm-leading: calc(var(--ifm-leading-desktop) * 1rem);
 }
 
 .markdown {
-  --ifm-h1-line-height: 2;
-  --ifm-h2-line-height: 1.5;
-  --ifm-heading-line-height: 1;
+  --ifm-h1-vertical-rhythm-top: 3;
+  --ifm-h2-vertical-rhythm-top: 2;
+  --ifm-h3-vertical-rhythm-top: 1.5;
+  --ifm-heading-vertical-rhythm-top: 1.25;
 
-  --ifm-h1-vertical-rhythm-top: 4;
-  --ifm-h2-vertical-rhythm-top: 2.5;
-  --ifm-h3-vertical-rhythm-top: 2;
-  --ifm-heading-vertical-rhythm-top: 1.5;
-
-  --ifm-h1-vertical-rhythm-bottom: 1;
-  --ifm-heading-vertical-rhythm-bottom: 0.5;
+  --ifm-h1-vertical-rhythm-bottom: 1.25;
+  --ifm-heading-vertical-rhythm-bottom: 1;
 
   &:before {
     content: '';
@@ -38,23 +34,32 @@
   }
 
   & > h1 {
+    --ifm-h1-font-size: 3rem;
+
     margin-bottom: calc(
       var(--ifm-h1-vertical-rhythm-bottom) * var(--ifm-leading)
     );
     margin-top: calc(var(--ifm-h1-vertical-rhythm-top) * var(--ifm-leading));
   }
+
   & > h2 {
+    --ifm-h2-font-size: 2rem;
+
     margin-bottom: calc(
       var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading)
     );
     margin-top: calc(var(--ifm-h2-vertical-rhythm-top) * var(--ifm-leading));
   }
+
   & > h3 {
+    --ifm-h3-font-size: 1.5rem;
+
     margin-bottom: calc(
       var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading)
     );
     margin-top: calc(var(--ifm-h3-vertical-rhythm-top) * var(--ifm-leading));
   }
+
   & > h4,
   & > h5,
   & > h6 {
@@ -75,6 +80,7 @@
 
   & li {
     word-wrap: break-all;
+
     & > p {
       margin-top: var(--ifm-list-paragraph-margin);
     }

@@ -22,10 +22,6 @@
     // Non-top level menus
     & .menu__list {
       margin-left: var(--ifm-menu-link-padding-horizontal);
-
-      & .menu__link {
-        font-size: 0.9rem;
-      }
     }
   }
 

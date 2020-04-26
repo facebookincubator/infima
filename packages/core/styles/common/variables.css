@@ -219,7 +219,7 @@
   --ifm-font-weight-bold: 700;
 
   --ifm-font-weight-base: var(--ifm-font-weight-normal);
-  --ifm-line-height-base: 1.5;
+  --ifm-line-height-base: 1.75;
 
   // Spacing.
   --ifm-global-spacing: 1rem;
