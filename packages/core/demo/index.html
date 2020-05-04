@@ -90,7 +90,7 @@
             <a class="navbar__brand">
               <img
                 class="navbar__logo"
-                src="https://cdn-images-1.medium.com/max/2600/1*3G8kafhYWne77HFHZm_Tfw.png"
+                src="https://facebookincubator.github.io/infima/img/logo.png"
               />
               <span class="navbar__title">Infima</span>
             </a>
@@ -98,7 +98,7 @@
             <a class="navbar__item navbar__link" href="#url">Tutorial</a>
             <div class="navbar__item dropdown dropdown--hoverable">
               <a class="navbar__link" href="#url">
-                v2.0&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
+                v2.0
               </a>
               <ul class="dropdown__menu">
                 <li>
@@ -118,7 +118,7 @@
           </div>
           <div class="navbar__items navbar__items--right">
             <div
-              class="navbar__item dropdown dropdown--hoverable dropdown--right"
+              class="navbar__item dropdown dropdown--hoverable dropdown--right dropdown--nocaret"
             >
               <a class="navbar__link" href="#url">
                 <i class="fas fa-language fa-2x"></i>
@@ -155,7 +155,7 @@
           <a class="navbar__brand navbar-sidebar__close" href="#" role="button">
             <img
               class="navbar__logo"
-              src="https://cdn-images-1.medium.com/max/2600/1*3G8kafhYWne77HFHZm_Tfw.png"
+              src="https://facebookincubator.github.io/infima/img/logo.png"
             />
             Infima
           </a>
@@ -174,9 +174,31 @@
                 </a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__link" href="#url">
-                  Versions
+                <a class="menu__link menu__link--sublist" href="#url">
+                  v2.0
                 </a>
+                <ul class="menu__list">
+                  <li class="menu__list-item">
+                    <a class="menu__link" href="#url">
+                      v1.8.0
+                    </a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a class="menu__link" href="#url">
+                      v1.7.0
+                    </a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a class="menu__link" href="#url">
+                      v1.6.0
+                    </a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a class="menu__link" href="#url">
+                      All Versions
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -215,11 +237,11 @@
                     >
                     <div class="navbar__item dropdown dropdown--hoverable">
                       <a class="navbar__link" href="#url">
-                        v2.0&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
+                        v2.0
                       </a>
                       <ul class="dropdown__menu">
                         <li>
-                          <a class="dropdown__link" href="#url">v1.8.0</a>
+                          <a class="dropdown__link dropdown__link--active" href="#url">v1.8.0</a>
                         </li>
                         <li>
                           <a class="dropdown__link" href="#url">v1.7.0</a>
@@ -257,7 +279,7 @@
                     </a>
                     <div class="navbar__item dropdown dropdown--hoverable">
                       <a class="navbar__item navbar__link" href="#url">
-                        v2.0&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
+                        v2.0
                       </a>
                       <ul class="dropdown__menu">
                         <li>
@@ -304,7 +326,7 @@
                     >
                     <div class="navbar__item dropdown dropdown--hoverable">
                       <a class="navbar__link" href="#url">
-                        v2.0&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
+                        v2.0
                       </a>
                       <ul class="dropdown__menu">
                         <li>
@@ -327,7 +349,7 @@
                   </div>
                   <div class="navbar__items navbar__items--right">
                     <div
-                      class="navbar__item dropdown dropdown--hoverable dropdown--right"
+                      class="navbar__item dropdown dropdown--hoverable dropdown--right dropdown--nocaret"
                     >
                       <a class="navbar__link" href="#url">
                         <i class="fas fa-language fa-2x"></i>
@@ -1457,7 +1479,7 @@ const myFun = (x, y) =&gt; {
                 <div class="col">
                   <div class="dropdown dropdown--hoverable">
                     <button class="button button--primary">
-                      Hover Me&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
+                      Hover Me
                     </button>
                     <ul class="dropdown__menu">
                       <li>
@@ -1482,7 +1504,7 @@ const myFun = (x, y) =&gt; {
                       class="button button--secondary"
                       data-toggle="dropdown"
                     >
-                      Click Me&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
+                      Click Me
                     </button>
                     <ul class="dropdown__menu">
                       <li>
@@ -1507,7 +1529,7 @@ const myFun = (x, y) =&gt; {
                       class="button button--success"
                       data-toggle="dropdown"
                     >
-                      Long Children&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
+                      Long Children
                     </button>
                     <ul class="dropdown__menu">
                       <li>
@@ -2393,6 +2415,7 @@ const myFun = (x, y) =&gt; {
               <blockquote>
                 As well as type <code>code</code> in your blockquotes.
               </blockquote>
+              <p><a href="#">And you can use <code>code</code> inside links</a></p>
               <table>
                 <thead>
                   <tr>

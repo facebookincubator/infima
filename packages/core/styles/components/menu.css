@@ -22,10 +22,6 @@
     // Non-top level menus
     ^&__list {
       margin-left: var(--ifm-menu-link-padding-horizontal);
-
-      ^^&__link {
-        font-size: 0.9rem;
-      }
     }
   }
 
@@ -40,7 +36,7 @@
       }
 
       ^^&__link--sublist:after {
-        transform: rotateX(180deg);
+        transform: rotateZ(90deg);
       }
     }
   }
@@ -68,6 +64,8 @@
       display: inline-block;
       height: 1.25rem;
       width: 1.25rem;
+      transition: transform var(--ifm-transition-fast) linear;
+      transform: rotate(180deg);
     }
 
     &:hover {

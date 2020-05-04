@@ -1,6 +1,6 @@
 {
   "name": "postcss-preset-infima",
-  "version": "0.2.0-alpha.5",
+  "version": "0.2.0-alpha.9",
   "description": "Postcss preset for Infima",
   "main": "index.js",
   "author": "Yangshun Tay",
@@ -22,7 +22,7 @@
     "postcss-strip-inline-comments": "^0.1.5"
   },
   "peerDependencies": {
-    "infima": "^0.2.0-alpha.5"
+    "infima": "^0.2.0-alpha.9"
   },
   "engines": {
     "node": ">=8"

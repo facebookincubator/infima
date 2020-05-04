@@ -2,7 +2,7 @@
   --ifm-code-background: var(--ifm-color-emphasis-100);
   --ifm-code-border-radius: var(--ifm-global-radius);
   --ifm-code-color: var(--ifm-color-emphasis-900);
-  --ifm-code-font-size: 85%;
+  --ifm-code-font-size: 90%;
   --ifm-code-padding-horizontal: 0.4rem;
   --ifm-code-padding-vertical: 0.2rem;
 
@@ -50,4 +50,8 @@ pre {
     word-break: normal;
     word-wrap: normal;
   }
+}
+
+a code {
+  color: inherit;
 }
