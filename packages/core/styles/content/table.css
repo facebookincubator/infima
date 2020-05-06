@@ -23,29 +23,29 @@ table {
   overflow: auto;
   width: 100%;
 
-  & tr {
+  tr {
     background-color: var(--ifm-table-background);
     border-top: var(--ifm-table-border-width) solid
       var(--ifm-table-border-color);
   }
 
-  & tr:nth-child(2n) {
+  tr:nth-child(2n) {
     background-color: var(--ifm-table-stripe-background);
   }
 
-  & th,
-  & td {
+  th,
+  td {
     border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
     padding: var(--ifm-table-cell-padding);
   }
 
-  & th {
+  th {
     background-color: var(--ifm-table-head-background);
     color: var(--ifm-table-head-color);
     font-weight: var(--ifm-table-head-font-weight);
   }
 
-  & td {
+  td {
     color: var(--ifm-table-cell-color);
   }
 }

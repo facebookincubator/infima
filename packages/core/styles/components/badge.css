@@ -24,7 +24,7 @@
   vertical-align: baseline;
 
   @each $color in (primary, secondary, success, info, warning, danger) {
-    &.badge--$(color) {
+    &--$(color) {
       --ifm-badge-background-color: var(--ifm-color-$(color));
 
       background-color: var(--ifm-badge-background-color); // @compat
@@ -32,7 +32,7 @@
     }
   }
 
-  &.badge--secondary {
+  &--secondary {
     color: var(--ifm-color-black);
   }
 }

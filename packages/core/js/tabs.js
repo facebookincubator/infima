@@ -1,1 +1,1 @@
-const tabs = makeRadioBehavior('click', 'tab-item', 'tab-item--active');
+const tabs = makeRadioBehavior('click', 'tabs__item', 'tabs__item--active');

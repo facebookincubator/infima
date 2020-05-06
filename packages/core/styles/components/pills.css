@@ -8,19 +8,19 @@
   font-weight: var(--ifm-font-weight-bold);
   padding-left: 0;
 
-  & > .pill-item {
+  &__item {
     border-radius: 0.5rem;
     cursor: pointer;
     display: inline-block;
     list-style-type: none;
     padding: 0.25rem 1rem;
 
-    &.pill-item--active {
+    &--active {
       background: var(--ifm-pills-color-background-active);
       color: var(--ifm-pills-color-active);
     }
 
-    &:not(.pill-item--active):hover {
+    &:not(&--active):hover {
       background-color: var(--ifm-pills-color-background-active);
       transition: background var(--ifm-transition-fast)
         cubic-bezier(0.08, 0.52, 0.52, 1);
@@ -33,13 +33,13 @@
     &:not(:last-child) {
       margin-right: var(--ifm-pills-spacing);
     }
+    
+    & + & {
+      margin-top: 0;
+    }
   }
 
-  & > .pill-item + .pill-item {
-    margin-top: 0;
-  }
-
-  &.pills--block {
+  &--block {
     display: flex;
     justify-content: stretch;
 
@@ -47,7 +47,7 @@
       flex-direction: column;
     }
 
-    & > .pill-item {
+    ^&__item {
       flex-grow: 1;
       text-align: center;
 

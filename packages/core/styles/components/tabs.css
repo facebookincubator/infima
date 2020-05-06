@@ -14,7 +14,7 @@
   margin-bottom: 0;
   padding-left: 0;
 
-  & > .tab-item {
+  &__item {
     box-sizing: content-box;
     border-bottom: 3px solid transparent;
     border-radius: var(--ifm-global-radius);
@@ -24,7 +24,7 @@
     padding: var(--ifm-tabs-padding-vertical) var(--ifm-tabs-padding-horizontal);
     margin: 0;
 
-    &.tab-item--active {
+    &--active {
       border-bottom-color: var(--ifm-tabs-color-active);
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
@@ -36,14 +36,14 @@
     }
   }
 
-  &.tabs--block {
+  &--block {
     justify-content: stretch;
 
     @media (--ifm-narrow-window) {
       flex-direction: column;
     }
 
-    & > .tab-item {
+    ^&__item {
       flex-grow: 1;
       justify-content: center;
 

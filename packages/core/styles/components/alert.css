@@ -19,7 +19,7 @@
   padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
 
   @each $color in (primary, secondary, success, info, warning, danger) {
-    &.alert--$(color) {
+    &--$(color) {
       --ifm-alert-background-color: var(--ifm-color-$(color));
 
       color: var(--ifm-alert-color); // @compat
@@ -28,22 +28,22 @@
     }
   }
 
-  & a {
+  a {
     color: var(--ifm-alert-color);
     text-decoration: underline;
   }
 
-  &.alert--secondary {
+  &--secondary {
     --ifm-alert-color: --ifm-color-gray-900;
     color: var(--ifm-color-gray-900); // @compat
 
     // @compat
-    & a {
+    a {
       color: var(--ifm-color-gray-900);
     }
   }
 
-  & .close {
+  .close {
     margin-right: calc(var(--ifm-alert-padding-horizontal) * -1);
     margin-top: calc(var(--ifm-alert-padding-vertical) * -1);
   }

@@ -10,7 +10,7 @@
   padding-right: var(--ifm-spacing-horizontal);
   width: 100%;
 
-  &.container--fluid {
+  &--fluid {
     max-width: inherit;
   }
 }
@@ -22,7 +22,7 @@
   margin-left: calc(var(--ifm-spacing-horizontal) * -1);
   margin-right: calc(var(--ifm-spacing-horizontal) * -1);
 
-  &.row--no-gutters {
+  &--no-gutters {
     margin-left: 0;
     margin-right: 0;
 
@@ -32,23 +32,23 @@
     }
   }
 
-  &.row--align-top {
+  &--align-top {
     align-items: flex-start;
   }
 
-  &.row--align-bottom {
+  &--align-bottom {
     align-items: flex-end;
   }
 
-  &.row--align-center {
+  &--align-center {
     align-items: center;
   }
 
-  &.row--align-stretch {
+  &--align-stretch {
     align-items: stretch;
   }
 
-  &.row--align-baseline {
+  &--align-baseline {
     align-items: baseline;
   }
 

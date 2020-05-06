@@ -12,7 +12,7 @@
   font-weight: var(--ifm-font-weight-semibold);
   overflow-x: hidden;
 
-  & .menu__list {
+  &__list {
     margin: 0;
     list-style-type: none;
     padding-left: 0;
@@ -20,40 +20,43 @@
       cubic-bezier(0.08, 0.52, 0.52, 1);
 
     // Non-top level menus
-    & .menu__list {
+    ^&__list {
       margin-left: var(--ifm-menu-link-padding-horizontal);
     }
   }
 
-  & .menu__list-item {
+  &__list-item {
     margin-bottom: 0.25rem;
     margin-top: 0.25rem;
 
-    &.menu__list-item--collapsed {
-      & .menu__list {
+    &--collapsed {
+      ^^&__list {
         height: 0;
         overflow: hidden;
       }
 
-      & .menu__link--sublist:after {
+      ^^&__link--sublist:after {
         transform: rotateZ(90deg);
       }
     }
   }
 
-  & .menu__link {
+  &__link {
     border-radius: 0.25rem;
     color: var(--ifm-menu-color);
     cursor: pointer;
     display: flex;
     line-height: 20px;
     justify-content: space-between;
-    text-decoration: none;
     margin: 0;
     padding: var(--ifm-menu-link-padding-vertical)
       var(--ifm-menu-link-padding-horizontal);
+      
+    &:hover {
+      text-decoration: none;
+    }
 
-    &.menu__link--sublist:after {
+    &--sublist:after {
       background-image: var(--ifm-menu-link-sublist-icon);
       background-size: 2rem 2rem;
       background-position: center;
@@ -69,17 +72,17 @@
       background: var(--ifm-menu-color-background-hover);
     }
 
-    &.menu__link--active:not(.menu__link--sublist) {
+    &--active:not(&--sublist) {
       background: var(--ifm-menu-color-background-active);
     }
 
-    &.menu__link--active {
+    &--active {
       color: var(--ifm-menu-color-active);
     }
   }
 
-  &.menu--responsive {
-    & .menu__button {
+  &--responsive {
+    ^&__button {
       bottom: 2rem;
       display: none;
       position: fixed;
@@ -92,14 +95,14 @@
     }
 
     @media (--ifm-narrow-window) {
-      & .menu__list {
+      ^&__list {
         display: none;
         opacity: 0;
       }
     }
   }
 
-  &.menu--show {
+  &--show {
     -ms-scroll-chaining: none;
     background: var(--ifm-background-surface-color);
     bottom: 0;
@@ -111,7 +114,7 @@
     top: 0;
     z-index: var(--ifm-z-index-overlay);
 
-    & .menu__list {
+    ^&__list {
       display: inherit;
       opacity: 100;
       transition: opacity var(--ifm-transition-fast) linear;

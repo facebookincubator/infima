@@ -57,7 +57,7 @@
     outline: 0;
   }
 
-  &.button--outline {
+  &--outline {
     --ifm-button-background-color: transparent;
     --ifm-button-color: var(--ifm-button-border-color);
 
@@ -67,12 +67,12 @@
 
     &:hover,
     &:active,
-    &.button--active {
+    &^&--active {
       --ifm-button-color: var(--ifm-font-color-base-inverse);
     }
   }
 
-  &.button--link {
+  &--link {
     --ifm-button-background-color: transparent;
     --ifm-button-border-color: transparent;
 
@@ -81,7 +81,7 @@
 
     &:hover,
     &:active,
-    &.button--active {
+    ^&--active {
       color: var(--ifm-link-hover-color);
       text-decoration: var(--ifm-link-hover-decoration);
     }
@@ -94,30 +94,30 @@
     pointer-events: none;
   }
 
-  &.button--sm {
+  &--sm {
     --ifm-button-size-multiplier: 0.8;
   }
 
-  &.button--lg {
+  &--lg {
     --ifm-button-size-multiplier: 1.35;
   }
 
-  &.button--block {
+  &--block {
     display: block;
     width: 100%;
   }
 
-  &.button--secondary {
+  &&--secondary {
     color: var(--ifm-color-gray-900);
 
-    &.button--outline:not(.button--active):not(:hover) {
+    ^&--outline:not(.button--active):not(:hover) {
       color: var(--ifm-font-color-base);
     }
   }
 }
 
 @each $color in (primary, secondary, success, info, warning, danger) {
-  .button.button--$(color) {
+  .button--$(color) {
     --ifm-button-border-color: var(--ifm-color-$(color));
 
     &:not(.button--outline) {
@@ -131,7 +131,7 @@
   }
 
   // Increase specificity.
-  .button.button.button--$(color) {
+  .button--$(color) {
     &:active,
     &.button--active {
       --ifm-button-border-color: var(--ifm-color-$(color)-darker);
