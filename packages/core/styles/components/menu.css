@@ -70,14 +70,19 @@
 
     &:hover {
       background: var(--ifm-menu-color-background-hover);
-    }
-
-    &--active:not(&--sublist) {
-      background: var(--ifm-menu-color-background-active);
+      color: var(--ifm-menu-color);
     }
 
     &--active {
       color: var(--ifm-menu-color-active);
+      
+      &:hover {
+        color: var(--ifm-menu-color-active);
+      }
+      
+      &:not(^&--sublist) {
+        background: var(--ifm-menu-color-background-active);
+      }
     }
   }
 

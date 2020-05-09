@@ -81,7 +81,7 @@
 
     &:hover,
     &:active,
-    ^&--active {
+    &.^&--active {
       color: var(--ifm-link-hover-color);
       text-decoration: var(--ifm-link-hover-decoration);
     }

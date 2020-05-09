@@ -50,9 +50,15 @@
     white-space: nowrap;
 
     &:hover,
-    &.dropdown__link--active {
+    &--active {
       background-color: var(--ifm-dropdown-hover-background-color);
       text-decoration: none;
+      color: var(--ifm-dropdown-link-color);
+    }
+    
+    &--active,
+    &--active:hover {
+      --ifm-dropdown-link-color: var(--ifm-link-color);
     }
   }
   

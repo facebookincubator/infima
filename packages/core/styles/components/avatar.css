@@ -64,7 +64,7 @@
     flex-direction: column;
 
     // @compat
-    &__intro {
+    ^&__intro {
       margin-left: 0; /* Reset the margin added in the horizontal layout. */
       margin-top: var(--ifm-avatar-intro-margin); // @compat
       text-align: var(--ifm-avatar-intro-alignment); // @compat
