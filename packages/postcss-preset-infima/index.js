@@ -17,27 +17,22 @@ const postcssNested = require('postcss-nested');
 const postcssNestedAncestors = require('postcss-nested-ancestors');
 const scss = require('postcss-scss');
 
-module.exports = options => {
-  const isCompatMode = options && options.compat;
-
-  return {
-    plugins: [
-      autoprefixer(),
-      postcssEasyImport({ prefix: '_' }),
-      postcssStripInlineComments,
-      postcssEach,
-      postcssFor,
-      postcssNestedAncestors,
-      postcssNested,
-      postcssPresetEnv({
-        stage: 1,
-        features: {
-          'color-mod-function': { unresolved: 'warn' },
-          'custom-properties': false,
-        },
-      }),
-      isCompatMode && require('postcss-css-variables'),
-    ].filter(Boolean),
-    syntax: scss,
-  };
-};
+module.exports = (options) => ({
+  plugins: [
+    autoprefixer(),
+    postcssEasyImport({ prefix: '_' }),
+    postcssStripInlineComments,
+    postcssEach,
+    postcssFor,
+    postcssNestedAncestors,
+    postcssNested,
+    postcssPresetEnv({
+      stage: 1,
+      features: {
+        'color-mod-function': { unresolved: 'warn' },
+        'custom-properties': false,
+      },
+    }),
+  ].filter(Boolean),
+  syntax: scss,
+});

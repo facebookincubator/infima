@@ -10,23 +10,16 @@ const webserver = require('gulp-webserver');
 
 function transformStyles() {
   const modernPreset = postcssPresetInfima();
-  const compatPreset = postcssPresetInfima({ compat: true });
 
-  return (
-    gulp
-      .src('./styles/themes/**/*.css', {
-        ignore: [
-          '**/_*', // Exclude files starting with '_'.
-          '**/_*/**', // Exclude entire directories starting with '_'.
-        ],
-      })
-      .pipe(postcss(modernPreset.plugins, { syntax: modernPreset.syntax }))
-      .pipe(gulp.dest('./dist/css'))
-      // Compile CSS variables to its values for IE11 support.
-      .pipe(rename({ suffix: '.compat' }))
-      .pipe(postcss(compatPreset.plugins, { syntax: compatPreset.syntax }))
-      .pipe(gulp.dest('./dist/css'))
-  );
+  return gulp
+    .src('./styles/themes/**/*.css', {
+      ignore: [
+        '**/_*', // Exclude files starting with '_'.
+        '**/_*/**', // Exclude entire directories starting with '_'.
+      ],
+    })
+    .pipe(postcss(modernPreset.plugins, { syntax: modernPreset.syntax }))
+    .pipe(gulp.dest('./dist/css'));
 }
 
 function transformScripts() {

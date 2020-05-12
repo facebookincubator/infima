@@ -1,4 +1,3 @@
-// TODO: Compat
 :root {
   --ifm-button-background-color: inherit;
   --ifm-button-border-color: var(--ifm-button-background-color);
@@ -110,7 +109,7 @@
   &&--secondary {
     color: var(--ifm-color-gray-900);
 
-    ^&--outline:not(.button--active):not(:hover) {
+    &.button--outline:not(.button--active):not(:hover) {
       color: var(--ifm-font-color-base);
     }
   }

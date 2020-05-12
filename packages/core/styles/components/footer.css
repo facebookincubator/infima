@@ -21,19 +21,6 @@
     --ifm-footer-color: var(--ifm-footer-link-color);
     --ifm-footer-link-color: var(--ifm-color-secondary);
     --ifm-footer-title-color: var(--ifm-color-white);
-
-    background-color: var(--ifm-footer-background-color); // @compat
-    color: var(--ifm-footer-color); // @compat
-
-    // @compat
-    ^&__link-item {
-      color: var(--ifm-footer-link-color); // @compat
-    }
-
-    // @compat
-    ^&__title {
-      color: var(--ifm-footer-title-color); // @compat
-    }
   }
 
   &__links {
@@ -75,9 +62,6 @@
 
   @media (--ifm-narrow-window) {
     --ifm-footer-padding-horizontal: 0;
-
-    padding: var(--ifm-footer-padding-vertical)
-      var(--ifm-footer-padding-horizontal); // @compat
 
     &__link-separator {
       display: none;

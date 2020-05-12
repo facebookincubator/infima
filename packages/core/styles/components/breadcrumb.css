@@ -1,4 +1,3 @@
-// TODO: Compat
 :root {
   --ifm-breadcrumb-border-radius: 1.5rem;
   --ifm-breadcrumb-spacing: 0.0625rem;
@@ -46,7 +45,7 @@
         );
       }
     }
-    
+
     &--active {
       & .breadcrumbs__link {
         background: var(--ifm-breadcrumb-item-background-active);
@@ -62,7 +61,7 @@
       }
     }
   }
-  
+
   &__link {
     border-radius: var(--ifm-breadcrumb-border-radius);
     color: var(--ifm-font-color-base);
@@ -76,7 +75,7 @@
         var(--ifm-breadcrumb-padding-horizontal) *
           var(--ifm-breadcrumb-size-multiplier)
       );
-    
+
     &:hover {
       text-decoration: none;
     }

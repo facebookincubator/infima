@@ -14,33 +14,17 @@
 .pagination {
   font-size: var(--ifm-pagination-font-size);
   padding-left: 0;
-  
+
   &--sm {
     --ifm-pagination-font-size: 0.8rem;
     --ifm-pagination-padding-horizontal: 0.8rem;
     --ifm-pagination-padding-vertical: 0.2rem;
-
-    font-size: var(--ifm-pagination-font-size); // @compat
-
-    // @compat
-    ^&__link {
-      padding: var(--ifm-pagination-padding-vertical)
-        var(--ifm-pagination-padding-horizontal); // @compat
-    }
   }
 
   &--lg {
     --ifm-pagination-font-size: 1.2rem;
     --ifm-pagination-padding-horizontal: 1.2rem;
     --ifm-pagination-padding-vertical: 0.3rem;
-
-    font-size: var(--ifm-pagination-font-size); // @compat
-
-    // @compat
-    ^&__link {
-      padding: var(--ifm-pagination-padding-vertical)
-        var(--ifm-pagination-padding-horizontal); // @compat
-    }
   }
 
   &__item {
@@ -80,14 +64,14 @@
       pointer-events: none;
     }
   }
-  
+
   &__link {
     border-radius: var(--ifm-pagination-border-radius);
     color: var(--ifm-font-color-base);
     display: inline-block;
     padding: var(--ifm-pagination-padding-vertical)
       var(--ifm-pagination-padding-horizontal);
-    
+
     &:hover {
       text-decoration: none;
     }

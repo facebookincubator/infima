@@ -1,6 +1,6 @@
 :root {
   --ifm-alert-background-color: inherit; // Set a default which will be overridden later.
-  --ifm-alert-border-color: var(--ifm-alert-background-color);
+  --ifm-alert-border-color: inherit; // Set a default which will be overridden later.
   --ifm-alert-border-radius: var(--ifm-global-radius);
   --ifm-alert-border-width: var(--ifm-global-border-width);
   --ifm-alert-color: var(--ifm-font-color-base-inverse);
@@ -21,10 +21,7 @@
   @each $color in (primary, secondary, success, info, warning, danger) {
     &--$(color) {
       --ifm-alert-background-color: var(--ifm-color-$(color));
-
-      color: var(--ifm-alert-color); // @compat
-      background-color: var(--ifm-alert-background-color); // @compat
-      border-color: var(--ifm-alert-background-color); // @compat
+      --ifm-alert-border-color: var(--ifm-color-$(color));
     }
   }
 
@@ -34,13 +31,7 @@
   }
 
   &--secondary {
-    --ifm-alert-color: --ifm-color-gray-900;
-    color: var(--ifm-color-gray-900); // @compat
-
-    // @compat
-    a {
-      color: var(--ifm-color-gray-900);
-    }
+    --ifm-alert-color: var(--ifm-color-gray-900);
   }
 
   .close {

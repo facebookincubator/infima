@@ -57,13 +57,13 @@
     font-weight: bold;
     height: 2rem;
     margin-right: 1rem;
-    
+
     &:hover {
       text-decoration: none;
       color: inherit;
     }
   }
-  
+
   &__title {
     flex-shrink: 0;
     max-width: 100%;
@@ -135,6 +135,10 @@
     }
   }
 
+  ^&__brand {
+    color: var(--ifm-navbar-link-color); // @compat
+  }
+
   &--dark {
     --ifm-navbar-background-color: #303846;
     --ifm-navbar-link-color: var(--ifm-color-white);
@@ -142,40 +146,6 @@
     --ifm-navbar-search-input-background-color: rgba(255, 255, 255, 0.1);
     --ifm-navbar-search-input-color: var(--ifm-color-white);
     --ifm-navbar-search-input-placeholder-color: rgba(255, 255, 255, 0.5);
-
-    background-color: var(--ifm-navbar-background-color); // @compat
-
-    // @compat
-    ^&__brand {
-      color: var(--ifm-navbar-link-color); // @compat
-    }
-
-    // @compat
-    ^&__link {
-      color: var(--ifm-navbar-link-color); // @compat
-
-      // @compat
-      &:hover {
-        color: var(--ifm-navbar-link-hover-color); // @compat
-      }
-    }
-
-    // @compat
-    ^&__search {
-      // @compat
-      &-input {
-        background-color: var(
-          --ifm-navbar-search-input-background-color
-        ); // @compat
-        background-image: var(--ifm-navbar-search-input-icon); // @compat
-        color: var(--ifm-navbar-search-input-color); // @compat
-
-        // @compat
-        &::placeholder {
-          color: var(--ifm-navbar-search-input-placeholder-color); // @compat
-        }
-      }
-    }
   }
 
   &--primary {
@@ -184,33 +154,6 @@
     --ifm-navbar-search-input-background-color: rgba(255, 255, 255, 0.1);
     --ifm-navbar-search-input-color: var(--ifm-color-emphasis-500);
     --ifm-navbar-search-input-placeholder-color: rgba(255, 255, 255, 0.5);
-
-    background-color: var(--ifm-navbar-background-color); // @compat
-
-    // @compat
-    ^&__link {
-      // @compat
-      &:hover {
-        color: var(--ifm-navbar-link-hover-color); // @compat
-      }
-    }
-
-    // @compat
-    ^&__search {
-      // @compat
-      &-input {
-        background-color: var(
-          --ifm-navbar-search-input-background-color
-        ); // @compat
-        background-image: var(--ifm-navbar-search-input-icon); // @compat
-        color: var(--ifm-navbar-search-input-color); // @compat
-
-        // @compat
-        &::placeholder {
-          color: var(--ifm-navbar-search-input-placeholder-color); // @compat
-        }
-      }
-    }
   }
 
   &__search {
@@ -257,7 +200,7 @@
     transition: transform var(--ifm-transition-fast) ease;
     width: var(--ifm-navbar-sidebar-width);
     overflow: auto;
-    
+
     &--show {
       ^& {
         transform: translateX(0);
@@ -271,7 +214,7 @@
     @media (--ifm-narrow-window) {
       display: block;
     }
-    
+
     &__backdrop {
       background-color: rgba(0, 0, 0, 0.6);
       bottom: 0;

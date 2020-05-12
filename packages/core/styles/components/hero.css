@@ -13,20 +13,14 @@
   &--primary {
     --ifm-hero-background-color: var(--ifm-color-primary);
     --ifm-hero-text-color: var(--ifm-font-color-base-inverse);
-
-    background-color: var(--ifm-hero-background-color); // @compat
-    color: var(--ifm-hero-text-color); // @compat
   }
 
   &--dark {
     --ifm-hero-background-color: #303846;
     --ifm-hero-text-color: var(--ifm-color-white);
-
-    background-color: var(--ifm-hero-background-color); // @compat
-    color: var(--ifm-hero-text-color); // @compat
   }
 
-  &__title {  
+  &__title {
     font-size: 3rem;
   }
 

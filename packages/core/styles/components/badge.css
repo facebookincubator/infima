@@ -1,6 +1,6 @@
 :root {
   --ifm-badge-background-color: inherit; // Set a default which will be overridden later.
-  --ifm-badge-border-color: var(--ifm-badge-background-color);
+  --ifm-badge-border-color: inherit; // Set a default which will be overridden later.
   --ifm-badge-border-radius: var(--ifm-global-radius);
   --ifm-badge-border-width: var(--ifm-global-border-width);
   --ifm-badge-color: var(--ifm-color-white);
@@ -26,9 +26,7 @@
   @each $color in (primary, secondary, success, info, warning, danger) {
     &--$(color) {
       --ifm-badge-background-color: var(--ifm-color-$(color));
-
-      background-color: var(--ifm-badge-background-color); // @compat
-      border-color: var(--ifm-badge-background-color); // @compat
+      --ifm-badge-border-color: var(--ifm-badge-background-color);
     }
   }
 
