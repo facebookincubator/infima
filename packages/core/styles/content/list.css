@@ -1,6 +1,6 @@
 :root {
   --ifm-list-left-padding: 2rem;
-  --ifm-list-margin: var(--ifm-leading);
+  --ifm-list-margin: 1rem;
   --ifm-list-item-margin: 0.25rem;
   --ifm-list-paragraph-margin: 1rem;
 }
