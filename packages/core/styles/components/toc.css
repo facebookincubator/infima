@@ -5,7 +5,7 @@
   --ifm-toc-padding-vertical: 0.5rem;
 }
 
-.toc {
+.table-of-contents {
   font-size: 0.8rem;
   margin-bottom: 0;
   padding-bottom: var(--ifm-toc-padding-vertical);
