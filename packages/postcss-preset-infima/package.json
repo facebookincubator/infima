@@ -22,7 +22,7 @@
     "postcss-strip-inline-comments": "^0.1.5"
   },
   "peerDependencies": {
-    "infima": "^0.2.0-alpha.10"
+    "infima": "^0.2.0-alpha.11"
   },
   "engines": {
     "node": ">=8"
