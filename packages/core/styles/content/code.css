@@ -1,5 +1,5 @@
 :root {
-  --ifm-code-background: var(--ifm-color-emphasis-100);
+  --ifm-code-background: var(--ifm-color-emphasis-200);
   --ifm-code-border-radius: var(--ifm-global-radius);
   --ifm-code-color: var(--ifm-color-emphasis-900);
   --ifm-code-font-size: 90%;
