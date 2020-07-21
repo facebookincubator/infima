@@ -110,7 +110,7 @@
     &.dropdown {
       padding: 0;
 
-      ^^&__link {
+      ^^&__link:not([href]) {
         pointer-events: none;
       }
     }
