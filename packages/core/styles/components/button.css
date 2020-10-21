@@ -36,12 +36,9 @@
     );
   text-align: center;
   text-decoration: none;
-  transition: color var(--ifm-button-transition-duration)
-      cubic-bezier(0.08, 0.52, 0.52, 1),
-    background var(--ifm-button-transition-duration)
-      cubic-bezier(0.08, 0.52, 0.52, 1),
-    border-color var(--ifm-button-transition-duration)
-      cubic-bezier(0.08, 0.52, 0.52, 1);
+  transition-property: color, background, border-color;
+  transition-duration: var(--ifm-button-transition-duration);
+  transition-timing-function: var(--ifm-transition-timing-default);
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
