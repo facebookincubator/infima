@@ -46,8 +46,7 @@ a {
 
 // Paragraphs
 p {
-  margin-top: 0;
-  margin-bottom: var(--ifm-paragraph-margin-bottom);
+  margin: 0 0 var(--ifm-paragraph-margin-bottom);
 }
 
 // Blockquotes
@@ -55,8 +54,7 @@ blockquote {
   border-left: 6px solid var(--ifm-color-emphasis-300);
   color: var(--ifm-blockquote-color);
   font-size: var(--ifm-blockquote-font-size);
-  margin: 0;
-  margin-bottom: var(--ifm-spacing-vertical);
+  margin: 0 0 var(--ifm-spacing-vertical);
   padding: var(--ifm-blockquote-padding-vertical)
     var(--ifm-blockquote-padding-horizontal);
 

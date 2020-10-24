@@ -23,7 +23,7 @@
     &:not(&--active):hover {
       background-color: var(--ifm-pills-color-background-active);
       transition: background var(--ifm-transition-fast)
-        cubic-bezier(0.08, 0.52, 0.52, 1);
+        var(--ifm-transition-timing-default);
     }
 
     &:not(:first-child) {

@@ -14,7 +14,6 @@
   color: var(--ifm-footer-color);
   padding: var(--ifm-footer-padding-vertical)
     var(--ifm-footer-padding-horizontal);
-  width: 100%;
 
   &--dark {
     --ifm-footer-background-color: #303846;

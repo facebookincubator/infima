@@ -20,7 +20,6 @@
   // TODO: Add navbar-link-active
   background-color: var(--ifm-navbar-background-color);
   box-shadow: var(--ifm-navbar-shadow);
-  box-sizing: border-box;
   display: flex;
   height: var(--ifm-navbar-height);
   padding: var(--ifm-navbar-padding-vertical)
