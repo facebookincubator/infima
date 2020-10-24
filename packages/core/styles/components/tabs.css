@@ -20,7 +20,6 @@
     border-radius: var(--ifm-global-radius);
     cursor: pointer;
     display: inline-flex;
-    list-style-type: none;
     padding: var(--ifm-tabs-padding-vertical) var(--ifm-tabs-padding-horizontal);
     margin: 0;
 

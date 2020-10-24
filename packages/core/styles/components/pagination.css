@@ -29,7 +29,6 @@
 
   &__item {
     display: inline-block;
-    list-style-type: none;
 
     &:not(:first-child) {
       margin-left: var(--ifm-pagination-page-spacing);
