@@ -6,6 +6,10 @@
 .pagination-nav {
   display: flex;
 
+  @media print {
+    display: none;
+  }
+
   &__item {
     display: flex;
     flex-basis: 50%;

@@ -15,6 +15,10 @@
   padding: var(--ifm-footer-padding-vertical)
     var(--ifm-footer-padding-horizontal);
 
+  @media print {
+    display: none;
+  }
+
   &--dark {
     --ifm-footer-background-color: #303846;
     --ifm-footer-color: var(--ifm-footer-link-color);

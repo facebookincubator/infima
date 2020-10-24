@@ -11,7 +11,11 @@
 .menu {
   font-weight: var(--ifm-font-weight-semibold);
   overflow-x: hidden;
-
+  
+  @media print {
+    display: none;
+  }
+  
   &__list {
     margin: 0;
     list-style-type: none;
