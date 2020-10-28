@@ -26,7 +26,6 @@
   font-size: calc(0.875rem * var(--ifm-button-size-multiplier));
   font-weight: var(--ifm-button-font-weight);
   line-height: 1.5;
-  outline: 0;
   padding: calc(
       var(--ifm-button-padding-vertical) * var(--ifm-button-size-multiplier)
     )
