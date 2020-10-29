@@ -56,8 +56,6 @@
     &:not(.breadcrumbs__item--active):hover {
       & .breadcrumbs__link {
         background: var(--ifm-breadcrumb-item-background-active);
-        transition: background var(--ifm-transition-fast)
-          var(--ifm-transition-timing-default);
       }
     }
   }
@@ -75,6 +73,7 @@
         var(--ifm-breadcrumb-padding-horizontal) *
           var(--ifm-breadcrumb-size-multiplier)
       );
+    @mixin transition background color;
 
     &:hover {
       text-decoration: none;

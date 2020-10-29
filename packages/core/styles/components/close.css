@@ -11,6 +11,7 @@
   opacity: 0.5;
   outline: 0;
   padding: 1rem;
+  @mixin transition opacity;
 
   &:hover {
     opacity: 0.7;

@@ -35,9 +35,7 @@
     );
   text-align: center;
   text-decoration: none;
-  transition-property: color, background, border-color;
-  transition-duration: var(--ifm-button-transition-duration);
-  transition-timing-function: var(--ifm-transition-timing-default);
+  @mixin transition color background border-color, var(--ifm-button-transition-duration), var(--ifm-transition-timing-default);
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;

@@ -29,6 +29,7 @@
     display: block;
     flex-grow: 1;
     padding: var(--ifm-global-spacing);
+    @mixin transition border-color;
     
     &:hover {
       border-color: var(--ifm-pagination-nav-color-hover);

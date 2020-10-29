@@ -196,7 +196,7 @@
     position: fixed;
     top: 0;
     transform: translateX(-100%);
-    transition: transform var(--ifm-transition-fast) ease;
+    @mixin transition transform, var(--ifm-transition-fast), ease;
     width: var(--ifm-navbar-sidebar-width);
     overflow: auto;
 

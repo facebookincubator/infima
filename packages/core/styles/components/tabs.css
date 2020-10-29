@@ -22,6 +22,7 @@
     display: inline-flex;
     padding: var(--ifm-tabs-padding-vertical) var(--ifm-tabs-padding-horizontal);
     margin: 0;
+    @mixin transition background-color;
 
     &--active {
       border-bottom-color: var(--ifm-tabs-color-active);

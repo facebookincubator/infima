@@ -15,6 +15,7 @@
     "postcss-each": "^0.10.0",
     "postcss-easy-import": "^3.0.0",
     "postcss-for": "^2.1.1",
+    "postcss-mixins": "^6.2.3",
     "postcss-nested": "^4.2.1",
     "postcss-nested-ancestors": "^2.0.0",
     "postcss-preset-env": "^6.6.0",
