@@ -14,7 +14,9 @@
   &--hoverable:hover,
   &--show {
     ^&__menu {
-      display: block;
+      opacity: 1;
+      transform: scale(1);
+      visibility: visible;
     }
   }
 
@@ -32,13 +34,16 @@
     background-color: var(--ifm-dropdown-background-color);
     border-radius: var(--ifm-global-radius);
     box-shadow: var(--ifm-global-shadow-md);
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(.8);
     min-width: 10rem;
     list-style: none;
     padding: 0.5rem;
     position: absolute;
     top: 100%;
     z-index: var(--ifm-z-index-dropdown);
+    @mixin transition opacity transform visibility, , cubic-bezier(.24,.22,.015,1.56);
   }
   
   &__link {
