@@ -11,7 +11,11 @@
 .menu {
   font-weight: var(--ifm-font-weight-semibold);
   overflow-x: hidden;
-
+  
+  @media print {
+    display: none;
+  }
+  
   &__list {
     margin: 0;
     list-style-type: none;
@@ -48,6 +52,7 @@
     margin: 0;
     padding: var(--ifm-menu-link-padding-vertical)
       var(--ifm-menu-link-padding-horizontal);
+    @mixin transition color background;
       
     &:hover {
       text-decoration: none;
@@ -59,13 +64,14 @@
       display: inline-block;
       height: 1.25rem;
       width: 1.25rem;
-      transition: transform var(--ifm-transition-fast) linear;
+      @mixin transition transform, var(--ifm-transition-fast), linear;
       transform: rotate(180deg);
     }
 
     &:hover {
       background: var(--ifm-menu-color-background-hover);
       color: var(--ifm-menu-color);
+      @mixin transition color background;
     }
 
     &--active {
@@ -117,7 +123,7 @@
     ^&__list {
       display: inherit;
       opacity: 100;
-      transition: opacity var(--ifm-transition-fast) linear;
+      @mixin transition opacity, var(--ifm-transition-fast), linear;
     }
   }
 }

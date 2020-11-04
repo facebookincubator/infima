@@ -6,6 +6,10 @@
 .pagination-nav {
   display: flex;
 
+  @media print {
+    display: none;
+  }
+
   &__item {
     display: flex;
     flex: 1 50%;
@@ -26,6 +30,7 @@
     flex-grow: 1;
     padding: var(--ifm-global-spacing);
     line-height: var(--ifm-heading-line-height);
+    @mixin transition border-color;
     
     &:hover {
       border-color: var(--ifm-pagination-nav-color-hover);

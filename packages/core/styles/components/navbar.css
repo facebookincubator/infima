@@ -25,6 +25,10 @@
   padding: var(--ifm-navbar-padding-vertical)
     var(--ifm-navbar-padding-horizontal);
   width: 100%;
+  
+  @media print {
+    display: none;
+  }
 
   & > .container,
   & > .container-fluid {
@@ -168,7 +172,6 @@
       display: inline-block;
       font-size: 0.9rem;
       line-height: 2rem;
-      outline: none;
       padding: 0 0.5rem 0 2.25rem;
       width: 12.5rem;
 
@@ -191,7 +194,7 @@
     position: fixed;
     top: 0;
     transform: translateX(-100%);
-    transition: transform var(--ifm-transition-fast) ease;
+    @mixin transition transform, var(--ifm-transition-fast), ease;
     width: var(--ifm-navbar-sidebar-width);
     overflow: auto;
 

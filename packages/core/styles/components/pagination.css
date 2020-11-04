@@ -52,8 +52,6 @@
     &:not(&--active):hover {
       & .pagination__link {
         background: var(--ifm-pagination-item-active-background);
-        transition: background var(--ifm-transition-fast)
-          var(--ifm-transition-timing-default);
       }
     }
 
@@ -70,6 +68,7 @@
     display: inline-block;
     padding: var(--ifm-pagination-padding-vertical)
       var(--ifm-pagination-padding-horizontal);
+    @mixin transition background;
 
     &:hover {
       text-decoration: none;

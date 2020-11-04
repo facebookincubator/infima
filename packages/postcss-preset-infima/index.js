@@ -15,6 +15,7 @@ const postcssPresetEnv = require('postcss-preset-env');
 const postcssStripInlineComments = require('postcss-strip-inline-comments');
 const postcssNested = require('postcss-nested');
 const postcssNestedAncestors = require('postcss-nested-ancestors');
+const postcssMixins = require('postcss-mixins');
 const scss = require('postcss-scss');
 
 module.exports = (options) => ({
@@ -32,6 +33,26 @@ module.exports = (options) => ({
         'color-mod-function': { unresolved: 'warn' },
         'custom-properties': false,
       },
+    }),
+    postcssMixins({
+      mixins: {
+        transition: (mixin, properties, duration, timing) => {
+          duration = duration || 'var(--ifm-transition-fast)';
+          timing = timing || 'var(--ifm-transition-timing-default)';
+
+          if (properties.includes(' ')) {
+            return {
+              'transition-property': properties.replace(/\s/g, ', '),
+              'transition-duration': duration,
+              'transition-timing-function': timing,
+            }
+          } else {
+            return {
+              transition: [properties, duration, timing].join(' ')
+            }
+          }
+        }
+      }
     }),
   ].filter(Boolean),
   syntax: scss,
