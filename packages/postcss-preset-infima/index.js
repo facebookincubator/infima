@@ -16,6 +16,7 @@ const postcssStripInlineComments = require('postcss-strip-inline-comments');
 const postcssNested = require('postcss-nested');
 const postcssNestedAncestors = require('postcss-nested-ancestors');
 const postcssMixins = require('postcss-mixins');
+const postcssCombineDuplicatedSelectors = require('postcss-combine-duplicated-selectors');
 const scss = require('postcss-scss');
 
 module.exports = (options) => ({
@@ -54,6 +55,7 @@ module.exports = (options) => ({
         }
       }
     }),
+    postcssCombineDuplicatedSelectors,
   ].filter(Boolean),
   syntax: scss,
 });
