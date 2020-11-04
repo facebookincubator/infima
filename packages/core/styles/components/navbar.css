@@ -25,6 +25,10 @@
   padding: var(--ifm-navbar-padding-vertical)
     var(--ifm-navbar-padding-horizontal);
   width: 100%;
+  
+  @media print {
+    display: none;
+  }
 
   & > .container,
   & > .container-fluid {

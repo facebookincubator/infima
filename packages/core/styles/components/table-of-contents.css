@@ -11,6 +11,10 @@
   padding-bottom: var(--ifm-toc-padding-vertical);
   padding-top: var(--ifm-toc-padding-vertical);
 
+  @media print {
+    display: none;
+  }
+
   &,
   ul {
     list-style-type: none;
