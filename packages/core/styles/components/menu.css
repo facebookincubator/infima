@@ -28,8 +28,7 @@
   }
 
   &__list-item {
-    margin-bottom: 0.25rem;
-    margin-top: 0.25rem;
+    margin: 0.25rem 0;
 
     &--collapsed {
       ^^&__list {
@@ -60,9 +59,7 @@
     }
 
     &--sublist:after {
-      background-image: var(--ifm-menu-link-sublist-icon);
-      background-size: 2rem 2rem;
-      background-position: center;
+      background: var(--ifm-menu-link-sublist-icon) 50% / 2rem 2rem;
       content: ' ';
       display: inline-block;
       height: 1.25rem;

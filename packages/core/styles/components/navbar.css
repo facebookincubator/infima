@@ -164,14 +164,9 @@
 
     &-input {
       appearance: none; // Algolia will add type="search" to the input in Safari and Safari's styling will override the styling here.
-      background-color: var(--ifm-navbar-search-input-background-color);
-      background-image: var(--ifm-navbar-search-input-icon);
-      background-position-x: 0.75rem;
-      background-position-y: center;
-      background-repeat: no-repeat;
-      background-size: 1rem 1rem;
+      background: var(--ifm-navbar-search-input-background-color) var(--ifm-navbar-search-input-icon) no-repeat 0.75rem center / 1rem 1rem;
       border-radius: 2rem;
-      border-width: 0;
+      border: none;
       cursor: text;
       color: var(--ifm-navbar-search-input-color);
       display: inline-block;

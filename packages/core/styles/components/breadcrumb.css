@@ -17,7 +17,6 @@
 
   &__item {
     display: inline-block;
-    list-style-type: none;
 
     &:not(:first-child) {
       margin-left: var(--ifm-breadcrumb-spacing);
@@ -27,8 +26,7 @@
       margin-right: var(--ifm-breadcrumb-spacing);
 
       &:after {
-        background-image: var(--ifm-breadcrumb-separator);
-        background-position: center;
+        background: var(--ifm-breadcrumb-separator) center;
         content: ' ';
         display: inline-block;
         height: calc(

@@ -40,8 +40,7 @@
   }
 
   &__link-separator {
-    margin-left: var(--ifm-footer-link-horizontal-spacing);
-    margin-right: var(--ifm-footer-link-horizontal-spacing);
+    margin: 0 var(--ifm-footer-link-horizontal-spacing);
   }
 
   &__logo {

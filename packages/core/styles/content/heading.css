@@ -23,8 +23,7 @@ h6 {
   color: var(--ifm-heading-color);
   font-weight: var(--ifm-heading-font-weight);
   line-height: var(--ifm-heading-line-height);
-  margin-bottom: var(--ifm-heading-margin-bottom);
-  margin-top: var(--ifm-heading-margin-top);
+  margin: var(--ifm-heading-margin-top) 0 var(--ifm-heading-margin-bottom) 0;
 }
 
 @for $size from 1 to 6 {
