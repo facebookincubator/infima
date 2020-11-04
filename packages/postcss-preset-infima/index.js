@@ -17,6 +17,7 @@ const postcssNested = require('postcss-nested');
 const postcssNestedAncestors = require('postcss-nested-ancestors');
 const postcssMixins = require('postcss-mixins');
 const postcssCombineDuplicatedSelectors = require('postcss-combine-duplicated-selectors');
+const postcssSortMediaQueries = require('postcss-sort-media-queries');
 const scss = require('postcss-scss');
 
 module.exports = (options) => ({
@@ -55,6 +56,7 @@ module.exports = (options) => ({
         }
       }
     }),
+    postcssSortMediaQueries,
     postcssCombineDuplicatedSelectors,
   ].filter(Boolean),
   syntax: scss,
