@@ -11,6 +11,7 @@
   ],
   "dependencies": {
     "autoprefixer": "^9.5.1",
+    "postcss-combine-duplicated-selectors": "^9.1.0",
     "postcss-css-variables": "^0.12.0",
     "postcss-each": "^0.10.0",
     "postcss-easy-import": "^3.0.0",
