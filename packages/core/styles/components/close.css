@@ -9,7 +9,6 @@
   font-weight: var(--ifm-font-weight-bold);
   line-height: 1;
   opacity: 0.5;
-  outline: 0;
   padding: 1rem;
 
   &:hover {
