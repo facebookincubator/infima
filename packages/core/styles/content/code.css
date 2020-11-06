@@ -19,7 +19,6 @@ code {
   color: var(--ifm-code-color);
   font-family: var(--ifm-font-family-monospace);
   font-size: var(--ifm-code-font-size);
-  margin: 0;
   padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
 }
 

@@ -138,10 +138,6 @@
     }
   }
 
-  ^&__brand {
-    color: var(--ifm-navbar-link-color); // @compat
-  }
-
   &--dark {
     --ifm-navbar-background-color: #303846;
     --ifm-navbar-link-color: var(--ifm-color-white);
