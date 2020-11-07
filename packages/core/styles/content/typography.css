@@ -35,11 +35,6 @@ a {
     text-decoration: var(--ifm-link-hover-decoration);
   }
 
-  &:active,
-  &:hover {
-    outline-width: 0;
-  }
-
   &:not([href]) {
     text-decoration: none;
   }
