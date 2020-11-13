@@ -64,12 +64,14 @@
     --ifm-button-border-color: transparent;
 
     color: var(--ifm-link-color);
+    /* autoprefixer: ignore next */
     text-decoration: var(--ifm-link-decoration);
 
     &:hover,
     &:active,
     &^&--active {
       color: var(--ifm-link-hover-color);
+      /* autoprefixer: ignore next */
       text-decoration: var(--ifm-link-hover-decoration);
     }
   }
