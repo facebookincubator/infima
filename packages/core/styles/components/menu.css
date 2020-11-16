@@ -49,7 +49,6 @@
     display: flex;
     line-height: 20px;
     justify-content: space-between;
-    margin: 0;
     padding: var(--ifm-menu-link-padding-vertical)
       var(--ifm-menu-link-padding-horizontal);
     @mixin transition color background;

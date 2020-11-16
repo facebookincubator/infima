@@ -71,7 +71,6 @@ hr {
   box-sizing: content-box;
   margin: var(--ifm-hr-margin-vertical) 0;
   overflow: hidden;
-  padding: 0;
 
   &:before {
     content: '';
