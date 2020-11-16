@@ -41,7 +41,6 @@
   &__label {
     font-size: var(--ifm-h4-font-size);
     font-weight: var(--ifm-heading-font-weight);
-    margin: 0;
     word-break: break-word;
   }
   
