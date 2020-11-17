@@ -22,7 +22,6 @@ const scss = require('postcss-scss');
 
 module.exports = (options) => ({
   plugins: [
-    autoprefixer(),
     postcssEasyImport({ prefix: '_' }),
     postcssStripInlineComments,
     postcssEach,

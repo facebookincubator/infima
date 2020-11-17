@@ -27,11 +27,13 @@ strong {
 // Links
 a {
   color: var(--ifm-link-color);
+  /* autoprefixer: ignore next */
   text-decoration: var(--ifm-link-decoration);
   @mixin transition color;
 
   &:hover {
     color: var(--ifm-link-hover-color);
+    /* autoprefixer: ignore next */
     text-decoration: var(--ifm-link-hover-decoration);
   }
 
@@ -71,7 +73,6 @@ hr {
   box-sizing: content-box;
   margin: var(--ifm-hr-margin-vertical) 0;
   overflow: hidden;
-  padding: 0;
 
   &:before {
     content: '';
