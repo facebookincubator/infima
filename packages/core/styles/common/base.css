@@ -17,10 +17,3 @@ body {
   margin: 0;
   word-wrap: break-word;
 }
-
-/* Remove all transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    transition: none !important
-  }
-}
