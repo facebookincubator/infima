@@ -1,8 +1,8 @@
 # Infima
 
-A UI framework for content-centric websites.
+A CSS framework for content-centric websites.
 
-## MVP TODOs
+## TODOs
 
 - High
   - [ ] Add CSS reset
@@ -80,3 +80,7 @@ A UI framework for content-centric websites.
   - [ ] Forms
   - [ ] Modal
   - [ ] Tooltips
+
+### License
+
+Infima is [MIT licensed](./LICENSE).
