@@ -1,0 +1,14 @@
+{
+  "name": "infima",
+  "description": "A UI framework for content-centric websites.",
+  "repository": "git@github.com:facebookincubator/infima.git",
+  "author": "Yangshun Tay",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true,
+  "scripts": {
+    "start": "cd packages/core && npm start"
+  }
+}

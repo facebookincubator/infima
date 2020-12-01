@@ -1,0 +1,77 @@
+---
+id: pagination-nav
+title: Pagination Nav
+---
+
+import Playground from '@theme/Playground';
+
+## Standard
+
+<Playground>
+  <nav class="pagination-nav">
+    <div class="pagination-nav__item">
+      <a class="pagination-nav__link" href="#url">
+        <div class="pagination-nav__sublabel">Previous</div>
+        <div class="pagination-nav__label">&laquo; Installation</div>
+      </a>
+    </div>
+    <div class="pagination-nav__item pagination-nav__item--next">
+      <a class="pagination-nav__link" href="#url">
+        <div class="pagination-nav__sublabel">Next</div>
+        <div class="pagination-nav__label">Getting Started &raquo;</div>
+      </a>
+    </div>
+  </nav>
+</Playground>
+
+Extremely long titles wrap on to the next line.
+
+<Playground>
+  <nav class="pagination-nav">
+    <div class="pagination-nav__item">
+      <a class="pagination-nav__link" href="#url">
+        <div class="pagination-nav__sublabel">Previous</div>
+        <div class="pagination-nav__label">
+          &laquo; Some Extremely Long Long Long Long Title
+        </div>
+      </a>
+    </div>
+    <div class="pagination-nav__item pagination-nav__item--next">
+      <a class="pagination-nav__link" href="#url">
+        <div class="pagination-nav__sublabel">Next</div>
+        <div class="pagination-nav__label">
+          AnotherExtremelyLongTitleWithoutBreaksProbablyAComponent &raquo;
+        </div>
+      </a>
+    </div>
+  </nav>
+</Playground>
+
+## Only Previous
+
+<Playground>
+  <nav class="pagination-nav">
+    <div class="pagination-nav__item">
+      <a class="pagination-nav__link" href="#url">
+        <div class="pagination-nav__sublabel">Previous</div>
+        <div class="pagination-nav__label">&laquo; Installation</div>
+      </a>
+    </div>
+  </nav>
+</Playground>
+
+## Only Next
+
+<Playground>
+  <nav class="pagination-nav">
+    <div class="pagination-nav__item"> </div>
+    <div class="pagination-nav__item pagination-nav__item--next">
+      <a class="pagination-nav__link" href="#url">
+        <div class="pagination-nav__sublabel">Next</div>
+        <div class="pagination-nav__label">
+          AnotherExtremelyLongTitleWithoutBreaksProbablyAComponent &raquo;
+        </div>
+      </a>
+    </div>
+  </nav>
+</Playground>

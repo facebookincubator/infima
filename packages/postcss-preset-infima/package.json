@@ -1,0 +1,36 @@
+{
+  "name": "postcss-preset-infima",
+  "version": "0.2.0-alpha.18",
+  "description": "Postcss preset for Infima",
+  "main": "index.js",
+  "author": "Yangshun Tay",
+  "license": "MIT",
+  "keywords": [
+    "infima",
+    "postcss"
+  ],
+  "dependencies": {
+    "autoprefixer": "^9.5.1",
+    "postcss-combine-duplicated-selectors": "^9.1.0",
+    "postcss-css-variables": "^0.12.0",
+    "postcss-each": "^0.10.0",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-for": "^2.1.1",
+    "postcss-mixins": "^6.2.3",
+    "postcss-nested": "^4.2.1",
+    "postcss-nested-ancestors": "^2.0.0",
+    "postcss-preset-env": "^6.6.0",
+    "postcss-scss": "^2.0.0",
+    "postcss-sort-media-queries": "^1.7.26",
+    "postcss-strip-inline-comments": "^0.1.5"
+  },
+  "peerDependencies": {
+    "infima": "^0.2.0-alpha.18"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "files": [
+    "index.js"
+  ]
+}
