@@ -12,7 +12,7 @@ module.exports = {
   projectName: 'infima',
   baseUrl: '/infima/',
   url: 'https://facebookincubator.github.io',
-  favicon: '',
+  favicon: 'img/logo.png',
   themeConfig: {
     navbar: {
       title: 'Infima',
@@ -20,7 +20,7 @@ module.exports = {
         alt: 'Infima Logo',
         src: 'img/logo.png',
       },
-      links: [
+      items: [
         {
           to: 'docs/getting-started/introduction',
           label: 'Docs',
