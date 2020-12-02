@@ -9,6 +9,8 @@
   ],
   "private": true,
   "scripts": {
-    "start": "cd packages/core && npm start"
+    "start": "cd packages/core && npm start",
+    "website": "yarn workspace infima-website start",
+    "website:build": "yarn workspace infima-website build"
   }
 }
