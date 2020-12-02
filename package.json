@@ -5,12 +5,13 @@
   "author": "Yangshun Tay",
   "license": "MIT",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "website"
   ],
   "private": true,
   "scripts": {
     "start": "cd packages/core && npm start",
-    "website": "yarn workspace infima-website start",
+    "website:start": "yarn workspace infima-website start",
     "website:build": "yarn workspace infima-website build",
     "website:deploy": "yarn workspace infima-website deploy"
   }
