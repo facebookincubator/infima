@@ -8,8 +8,8 @@
 :root {
   --ifm-toc-border-color: var(--ifm-color-emphasis-300);
   --ifm-toc-link-color: var(--ifm-color-content-secondary);
-  --ifm-toc-padding-left: 0.5rem;
   --ifm-toc-padding-vertical: 0.5rem;
+  --ifm-toc-padding-horizontal: 0.5rem;
 }
 
 .table-of-contents {
@@ -24,11 +24,11 @@
   &,
   ul {
     list-style-type: none;
-    padding-left: var(--ifm-toc-padding-left);
+    padding-left: var(--ifm-toc-padding-horizontal);
   }
 
   li {
-    margin: var(--ifm-toc-padding-vertical);
+    margin: var(--ifm-toc-padding-vertical) var(--ifm-toc-padding-horizontal);
   }
 
   &__left-border {
