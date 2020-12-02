@@ -54,7 +54,7 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/infima',
+              href: 'https://github.com/facebookincubator/infima',
             },
           ],
         },
