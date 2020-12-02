@@ -7,7 +7,6 @@
 
 'use strict';
 
-const autoprefixer = require('autoprefixer');
 const postcssEach = require('postcss-each');
 const postcssEasyImport = require('postcss-easy-import');
 const postcssFor = require('postcss-for');
@@ -31,7 +30,7 @@ module.exports = (options) => ({
     postcssPresetEnv({
       stage: 1,
       features: {
-        'color-mod-function': { unresolved: 'warn' },
+        'color-mod-function': { unresolved: 'ignore' },
         'custom-properties': false,
       },
     }),

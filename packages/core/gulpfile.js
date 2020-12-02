@@ -14,12 +14,12 @@ const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
 const postcssPresetInfima = require('postcss-preset-infima');
 const webserver = require('gulp-webserver');
+const vinylPaths = require('vinyl-paths');
 
 function transformStyles() {
   const modernPreset = postcssPresetInfima();
-
   return gulp
-    .src('./styles/themes/**/*.css', {
+    .src('./themes/**/*.css', {
       ignore: [
         '**/_*', // Exclude files starting with '_'.
         '**/_*/**', // Exclude entire directories starting with '_'.
@@ -27,6 +27,19 @@ function transformStyles() {
     })
     .pipe(postcss(modernPreset.plugins, { syntax: modernPreset.syntax }))
     .pipe(gulp.dest('./dist/css'));
+}
+
+function convertStylesToCSSFiles() {
+  return gulp
+    .src('./styles/**/*.scss')
+    .pipe(rename({ extname: '.css' }))
+    .pipe(gulp.dest('./styles'));
+}
+
+function removeTemporaryCSSFiles() {
+  return gulp
+    .src('./styles/**/*.css')
+    .pipe(vinylPaths(del));
 }
 
 function transformScripts() {
@@ -73,17 +86,25 @@ function clean() {
 const transformAssets = gulp.parallel(transformStyles, transformScripts);
 const copyAssetsToDemo = gulp.parallel(copyStylesToDemo, copyScriptsToDemo);
 const minifyAssets = gulp.parallel(minifyStyles, minifyScripts);
-const transformAndCopy = gulp.series(transformAssets, copyAssetsToDemo);
-const tranformMinifyAndCopy = gulp.series(
+const transformAndCopy = gulp.series(
+  convertStylesToCSSFiles,
+  transformAssets,
+  copyAssetsToDemo,
+  removeTemporaryCSSFiles
+);
+const transformMinifyAndCopy = gulp.series(
+  convertStylesToCSSFiles,
   transformAssets,
   minifyAssets,
   copyAssetsToDemo,
+  removeTemporaryCSSFiles
 );
+
 
 function watch(cb) {
   gulp.watch(
-    ['./styles/**/*.css'],
-    gulp.series(transformStyles, copyStylesToDemo),
+    ['./styles/**/*.{css,scss}'],
+    gulp.series(convertStylesToCSSFiles, transformStyles, copyStylesToDemo, removeTemporaryCSSFiles),
   );
   gulp.watch(
     ['./js/**/*.js'],
@@ -93,5 +114,5 @@ function watch(cb) {
 }
 
 exports.clean = clean;
-exports.build = gulp.series(clean, tranformMinifyAndCopy);
+exports.build = gulp.series(clean, transformMinifyAndCopy);
 exports.default = gulp.series(clean, watch, transformAndCopy, serve);
