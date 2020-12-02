@@ -68,16 +68,12 @@ function clean() {
 const transformAssets = gulp.parallel(transformStyles, transformScripts);
 const copyAssetsToDemo = gulp.parallel(copyStylesToDemo, copyScriptsToDemo);
 const minifyAssets = gulp.parallel(minifyStyles, minifyScripts);
-const transformAndCopy = gulp.series(
-  transformAssets,
-  copyAssetsToDemo,
-);
+const transformAndCopy = gulp.series(transformAssets, copyAssetsToDemo);
 const transformMinifyAndCopy = gulp.series(
   transformAssets,
   minifyAssets,
   copyAssetsToDemo,
 );
-
 
 function watch(cb) {
   gulp.watch(
