@@ -13,6 +13,11 @@
     "web",
     "dark mode"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facebookincubator/infima.git",
+    "directory": "packages/core"
+  },
   "devDependencies": {
     "cssnano": "^4.1.10",
     "del": "^4.1.0",
