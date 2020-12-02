@@ -103,7 +103,7 @@ const transformMinifyAndCopy = gulp.series(
 
 function watch(cb) {
   gulp.watch(
-    ['./styles/**/*.{css,scss}'],
+    ['./styles/**/*.scss'],
     gulp.series(convertStylesToCSSFiles, transformStyles, copyStylesToDemo, removeTemporaryCSSFiles),
   );
   gulp.watch(
