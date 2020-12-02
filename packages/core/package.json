@@ -30,8 +30,7 @@
     "gulp-sass": "^4.0.1",
     "gulp-webserver": "^0.9.1",
     "natives": "^1.1.6",
-    "postcss-preset-infima": "^0.2.0-alpha.18",
-    "vinyl-paths": "^3.0.1"
+    "postcss-preset-infima": "^0.2.0-alpha.18"
   },
   "scripts": {
     "start": "gulp",

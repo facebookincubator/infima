@@ -14,32 +14,14 @@ const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
 const postcssPresetInfima = require('postcss-preset-infima');
 const webserver = require('gulp-webserver');
-const vinylPaths = require('vinyl-paths');
 
 function transformStyles() {
   const modernPreset = postcssPresetInfima();
   return gulp
-    .src('./themes/**/*.css', {
-      ignore: [
-        '**/_*', // Exclude files starting with '_'.
-        '**/_*/**', // Exclude entire directories starting with '_'.
-      ],
-    })
+    .src('./styles/themes/**/*.scss')
     .pipe(postcss(modernPreset.plugins, { syntax: modernPreset.syntax }))
-    .pipe(gulp.dest('./dist/css'));
-}
-
-function convertStylesToCSSFiles() {
-  return gulp
-    .src('./styles/**/*.scss')
     .pipe(rename({ extname: '.css' }))
-    .pipe(gulp.dest('./styles'));
-}
-
-function removeTemporaryCSSFiles() {
-  return gulp
-    .src('./styles/**/*.css')
-    .pipe(vinylPaths(del));
+    .pipe(gulp.dest('./dist/css'));
 }
 
 function transformScripts() {
@@ -87,24 +69,20 @@ const transformAssets = gulp.parallel(transformStyles, transformScripts);
 const copyAssetsToDemo = gulp.parallel(copyStylesToDemo, copyScriptsToDemo);
 const minifyAssets = gulp.parallel(minifyStyles, minifyScripts);
 const transformAndCopy = gulp.series(
-  convertStylesToCSSFiles,
   transformAssets,
   copyAssetsToDemo,
-  removeTemporaryCSSFiles
 );
 const transformMinifyAndCopy = gulp.series(
-  convertStylesToCSSFiles,
   transformAssets,
   minifyAssets,
   copyAssetsToDemo,
-  removeTemporaryCSSFiles
 );
 
 
 function watch(cb) {
   gulp.watch(
     ['./styles/**/*.scss'],
-    gulp.series(convertStylesToCSSFiles, transformStyles, copyStylesToDemo, removeTemporaryCSSFiles),
+    gulp.series(transformStyles, copyStylesToDemo),
   );
   gulp.watch(
     ['./js/**/*.js'],

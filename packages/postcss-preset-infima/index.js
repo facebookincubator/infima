@@ -8,7 +8,7 @@
 'use strict';
 
 const postcssEach = require('postcss-each');
-const postcssEasyImport = require('postcss-easy-import');
+const postcssImport = require('postcss-import');
 const postcssFor = require('postcss-for');
 const postcssPresetEnv = require('postcss-preset-env');
 const postcssStripInlineComments = require('postcss-strip-inline-comments');
@@ -21,7 +21,7 @@ const scss = require('postcss-scss');
 
 module.exports = (options) => ({
   plugins: [
-    postcssEasyImport({ prefix: '_' }),
+    postcssImport,
     postcssStripInlineComments,
     postcssEach,
     postcssFor,
