@@ -61,4 +61,5 @@ typings/
 .next
 
 # idea intellij
+.idea
 *.iml
