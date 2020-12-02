@@ -18,6 +18,9 @@
     "url": "https://github.com/facebookincubator/infima.git",
     "directory": "packages/core"
   },
+  "bugs": {
+    "url": "https://github.com/facebookincubator/infima/issues"
+  },
   "devDependencies": {
     "cssnano": "^4.1.10",
     "del": "^4.1.0",

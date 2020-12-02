@@ -14,6 +14,9 @@
     "url": "https://github.com/facebookincubator/infima.git",
     "directory": "packages/postcss-preset-infima"
   },
+  "bugs": {
+    "url": "https://github.com/facebookincubator/infima/issues"
+  },
   "dependencies": {
     "autoprefixer": "^9.5.1",
     "postcss-combine-duplicated-selectors": "^9.1.0",
