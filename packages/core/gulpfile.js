@@ -12,6 +12,7 @@ const del = require('del');
 const gulp = require('gulp');
 const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
+const rtlcss = require('gulp-rtlcss');
 const postcssPresetInfima = require('postcss-preset-infima');
 const webserver = require('gulp-webserver');
 
@@ -26,6 +27,14 @@ function transformStyles() {
       ],
     })
     .pipe(postcss(modernPreset.plugins, { syntax: modernPreset.syntax }))
+    .pipe(gulp.dest('./dist/css'));
+}
+
+function createRtlStyles() {
+  return gulp
+    .src('./dist/css/**/*.css')
+    .pipe(rtlcss())
+    .pipe(rename({suffix: '-rtl'}))
     .pipe(gulp.dest('./dist/css'));
 }
 
@@ -70,7 +79,7 @@ function clean() {
   return del(['./dist/**/*', './demo/css/**', './demo/js/**']);
 }
 
-const transformAssets = gulp.parallel(transformStyles, transformScripts);
+const transformAssets = gulp.parallel(gulp.series(transformStyles, createRtlStyles), transformScripts);
 const copyAssetsToDemo = gulp.parallel(copyStylesToDemo, copyScriptsToDemo);
 const minifyAssets = gulp.parallel(minifyStyles, minifyScripts);
 const transformAndCopy = gulp.series(transformAssets, copyAssetsToDemo);
