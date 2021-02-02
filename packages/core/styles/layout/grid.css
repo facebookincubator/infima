@@ -18,6 +18,12 @@
   &--fluid {
     max-width: inherit;
   }
+  
+  @media (min-width: 1440px) {
+    & {
+      --ifm-container-width: 1320px;
+    }
+  }
 }
 
 .row {
