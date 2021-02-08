@@ -26,6 +26,7 @@
     "gulp": "^4.0.0",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.2.2",
+    "gulp-rtlcss": "^1.4.1",
     "gulp-sass": "^4.0.1",
     "gulp-webserver": "^0.9.1",
     "natives": "^1.1.6",
