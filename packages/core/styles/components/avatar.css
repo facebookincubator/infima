@@ -22,9 +22,9 @@
   }
 
   &__photo {
-    overflow: hidden;
     border-radius: 50%;
     height: var(--ifm-avatar-photo-size-md);
+    overflow: hidden;
     width: var(--ifm-avatar-photo-size-md);
 
     &--sm {
@@ -71,7 +71,7 @@
     flex-direction: column;
 
     ^&__intro {
-      margin-left: 0; // Reset the margin added in the horizontal layout.
+      margin-left: 0; /* Reset the margin added in the horizontal layout. */
     }
   }
 }

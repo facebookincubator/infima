@@ -6,8 +6,8 @@
  */
 
 :root {
-  --ifm-badge-background-color: inherit; // Set a default which will be overridden later.
-  --ifm-badge-border-color: inherit; // Set a default which will be overridden later.
+  --ifm-badge-background-color: inherit; /* Set a default which will be overridden later. */
+  --ifm-badge-border-color: inherit; /* Set a default which will be overridden later. */
   --ifm-badge-border-radius: var(--ifm-global-radius);
   --ifm-badge-border-width: var(--ifm-global-border-width);
   --ifm-badge-color: var(--ifm-color-white);

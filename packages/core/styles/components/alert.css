@@ -6,8 +6,8 @@
  */
 
 :root {
-  --ifm-alert-background-color: inherit; // Set a default which will be overridden later.
-  --ifm-alert-border-color: inherit; // Set a default which will be overridden later.
+  --ifm-alert-background-color: inherit; /* Set a default which will be overridden later. */
+  --ifm-alert-border-color: inherit; /* Set a default which will be overridden later. */
   --ifm-alert-border-radius: var(--ifm-global-radius);
   --ifm-alert-border-width: var(--ifm-global-border-width);
   --ifm-alert-color: var(--ifm-font-color-base-inverse);
@@ -18,9 +18,9 @@
 .alert {
   background-color: var(--ifm-alert-background-color);
   border-color: var(--ifm-alert-border-color);
+  border-radius: var(--ifm-alert-border-radius);
   border-style: solid;
   border-width: var(--ifm-alert-border-width);
-  border-radius: var(--ifm-alert-border-radius);
   color: var(--ifm-alert-color);
   padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
 

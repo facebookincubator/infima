@@ -25,7 +25,7 @@
     }
     
     &--active {
-      z-index: 1; // Make the active button's border take precedence.
+      z-index: 1; /* Make the active button's border take precedence. */
     }
   }
 

@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    "stylelint-order",
+    "stylelint-declaration-block-no-ignored-properties"
+  ],
+  "rules": {
+    "order/properties-alphabetical-order": true,
+    "plugin/declaration-block-no-ignored-properties": true
+  },
+  "ignoreFiles": ["**/variables.css"]
+}

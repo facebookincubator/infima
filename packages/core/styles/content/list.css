@@ -12,7 +12,7 @@
   --ifm-list-paragraph-margin: 1rem;
 }
 
-// Lists
+/* Lists */
 ul,
 ol {
   margin: 0 0 var(--ifm-list-margin);

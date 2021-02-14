@@ -6,22 +6,22 @@
  */
 
 :root {
-  // Links.
+  /* Links. */
   --ifm-link-color: var(--ifm-color-primary);
   --ifm-link-decoration: none;
   --ifm-link-hover-color: var(--ifm-link-color);
   --ifm-link-hover-decoration: underline;
 
-  // Paragraphs.
+  /* Paragraphs. */
   --ifm-paragraph-margin-bottom: var(--ifm-leading);
 
-  // Blockquotes.
+  /* Blockquotes. */
   --ifm-blockquote-color: #6a737d;
   --ifm-blockquote-font-size: var(--ifm-font-size-base);
   --ifm-blockquote-padding-horizontal: 1rem;
   --ifm-blockquote-padding-vertical: 1rem;
 
-  // Horizontal Rules.
+  /* Horizontal Rules. */
   --ifm-hr-border-color: var(--ifm-color-emphasis-500);
   --ifm-hr-border-width: 1px;
   --ifm-hr-margin-vertical: 1.5rem;
@@ -31,7 +31,7 @@ strong {
   font-weight: var(--ifm-font-weight-bold);
 }
 
-// Links
+/* Links */
 a {
   color: var(--ifm-link-color);
   /* autoprefixer: ignore next */
@@ -49,12 +49,12 @@ a {
   }
 }
 
-// Paragraphs
+/* Paragraphs */
 p {
   margin: 0 0 var(--ifm-paragraph-margin-bottom);
 }
 
-// Blockquotes
+/* Blockquotes */
 blockquote {
   border-left: 6px solid var(--ifm-color-emphasis-300);
   color: var(--ifm-blockquote-color);
@@ -72,7 +72,7 @@ blockquote {
   }
 }
 
-// Horizontal Rules
+/* Horizontal Rules */
 hr {
   border-color: var(--ifm-hr-border-color);
   border-style: solid;

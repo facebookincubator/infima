@@ -37,6 +37,7 @@
         background: var(--ifm-breadcrumb-separator) center;
         content: ' ';
         display: inline-block;
+        filter: var(--ifm-breadcrumb-separator-filter);
         height: calc(
           var(--ifm-breadcrumb-separator-size) *
             var(--ifm-breadcrumb-size-multiplier) *
@@ -49,7 +50,6 @@
             var(--ifm-breadcrumb-size-multiplier) *
             var(--ifm-breadcrumb-separator-size-multiplier)
         );
-        filter: var(--ifm-breadcrumb-separator-filter);
       }
     }
 
