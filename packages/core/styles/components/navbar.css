@@ -195,37 +195,37 @@
     background-color: var(--ifm-navbar-background-color);
     bottom: 0;
     box-shadow: var(--ifm-global-shadow-md);
-    display: none;
     left: 0;
+    opacity: 0;
+    overflow: auto;
     position: fixed;
     top: 0;
     transform: translateX(-100%);
-    @mixin transition transform, var(--ifm-transition-fast), ease;
+    visibility: hidden;
     width: var(--ifm-navbar-sidebar-width);
-    overflow: auto;
+    @mixin transition opacity visibility transform, 250ms, ease-in-out;
 
     &--show {
+      ^&, ^&__backdrop  {
+        opacity: 1;
+        visibility: visible;
+      }
+
       ^& {
         transform: translateX(0);
       }
-
-      ^&__backdrop {
-        display: block;
-      }
-    }
-
-    @media (--ifm-narrow-window) {
-      display: block;
     }
 
     &__backdrop {
       background-color: rgba(0, 0, 0, 0.6);
       bottom: 0;
-      display: none;
       left: 0;
-      right: 0;
+      opacity: 0;
       position: fixed;
+      right: 0;
       top: 0;
+      transition: opacity 100ms ease-in-out, visibility 0ms linear 100ms;
+      visibility: hidden;
     }
 
     &__brand {
