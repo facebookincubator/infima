@@ -200,7 +200,7 @@
     overflow: auto;
     position: fixed;
     top: 0;
-    transform: translateX(-100%);
+    transform: translate3d(-100%, 0, 0);
     visibility: hidden;
     width: var(--ifm-navbar-sidebar-width);
     @mixin transition opacity visibility transform, 250ms, ease-in-out;
@@ -212,7 +212,7 @@
       }
 
       ^& {
-        transform: translateX(0);
+        transform: translate3d(0, 0, 0);
       }
     }
 
