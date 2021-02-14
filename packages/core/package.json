@@ -38,7 +38,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
-    "lint": "stylelint \"styles/**/*.css\""
+    "lint:fix": "stylelint \"styles/**/*.css\" --fix"
   },
   "engines": {
     "node": ">=8"
