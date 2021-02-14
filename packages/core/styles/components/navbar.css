@@ -83,6 +83,9 @@
     cursor: pointer;
     display: none;
     margin-right: 0.5rem;
+    border: 0;
+    background: 0 0;
+    padding: 0;
 
     @media (--ifm-narrow-window) {
       display: inherit;
