@@ -189,23 +189,23 @@
   }
 
   &-sidebar {
+    background-color: var(--ifm-navbar-background-color);
+    bottom: 0;
+    box-shadow: var(--ifm-global-shadow-md);
+    left: 0;
+    opacity: 0;
+    overflow: auto;
     position: fixed;
     top: 0;
-    left: 0;
-    bottom: 0;
-    visibility: hidden;
-    opacity: 0;
-    width: var(--ifm-navbar-sidebar-width);
-    background-color: var(--ifm-navbar-background-color);
-    box-shadow: var(--ifm-global-shadow-md);
-    overflow: auto;
     transform: translateX(-100%);
+    visibility: hidden;
+    width: var(--ifm-navbar-sidebar-width);
     @mixin transition opacity visibility transform, 250ms, ease-in-out;
 
     &--show {
       ^&, ^&__backdrop  {
-        visibility: visible;
         opacity: 1;
+        visibility: visible;
       }
 
       ^& {
@@ -214,15 +214,15 @@
     }
 
     &__backdrop {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      opacity: 0;
-      visibility: hidden;
       background-color: rgba(0, 0, 0, 0.6);
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      position: fixed;
+      right: 0;
+      top: 0;
       transition: opacity 100ms ease-in-out, visibility 0ms linear 100ms;
+      visibility: hidden;
     }
 
     &__brand {
