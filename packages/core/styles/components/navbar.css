@@ -189,50 +189,40 @@
   }
 
   &-sidebar {
-    background-color: var(--ifm-navbar-background-color);
-    bottom: 0;
-    box-shadow: var(--ifm-global-shadow-md);
-    display: none;
-    left: calc(var(--ifm-navbar-sidebar-width) * -1);
     position: fixed;
     top: 0;
-    transition: transform var(--ifm-transition-fast) ease-in-out;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
     width: var(--ifm-navbar-sidebar-width);
+    background-color: var(--ifm-navbar-background-color);
+    box-shadow: var(--ifm-global-shadow-md);
     overflow: auto;
+    transform: translateX(-100%);
+    @mixin transition opacity visibility transform, 250ms, ease-in-out;
 
     &--show {
-      ^& {
-        transform: translate3d(calc(var(--ifm-navbar-sidebar-width)), 0, 0);
-      }
-
-      ^&__backdrop {
-        display: block;
-        animation: fadeInBackdrop 200ms ease forwards;
-      }
-    }
-
-    @keyframes fadeInBackdrop {
-      from {
-        opacity: 0;
-      }
-      to {
+      ^&, ^&__backdrop  {
+        visibility: visible;
         opacity: 1;
       }
-    }
 
-    @media (--ifm-narrow-window) {
-      display: block;
+      ^& {
+        transform: translateX(0);
+      }
     }
 
     &__backdrop {
-      background-color: rgba(0, 0, 0, 0.6);
-      display: none;
       position: fixed;
       top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       opacity: 0;
-      width: 100%;
-      height: 100%;
-      animation: fadeInBackdrop var(--ifm-transition-fast) ease forwards;
+      visibility: hidden;
+      background-color: rgba(0, 0, 0, 0.6);
+      transition: opacity 100ms ease-in-out, visibility 0ms linear 100ms;
     }
 
     &__brand {
