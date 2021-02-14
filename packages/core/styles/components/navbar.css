@@ -193,21 +193,30 @@
     bottom: 0;
     box-shadow: var(--ifm-global-shadow-md);
     display: none;
-    left: 0;
+    left: calc(var(--ifm-navbar-sidebar-width) * -1);
     position: fixed;
     top: 0;
-    transform: translateX(-100%);
-    @mixin transition transform, var(--ifm-transition-fast), ease;
+    transition: transform var(--ifm-transition-fast) ease-in-out;
     width: var(--ifm-navbar-sidebar-width);
     overflow: auto;
 
     &--show {
       ^& {
-        transform: translateX(0);
+        transform: translate3d(calc(var(--ifm-navbar-sidebar-width)), 0, 0);
       }
 
       ^&__backdrop {
         display: block;
+        animation: fadeInBackdrop 200ms ease forwards;
+      }
+    }
+
+    @keyframes fadeInBackdrop {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
       }
     }
 
@@ -217,12 +226,13 @@
 
     &__backdrop {
       background-color: rgba(0, 0, 0, 0.6);
-      bottom: 0;
       display: none;
-      left: 0;
-      right: 0;
       position: fixed;
       top: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      animation: fadeInBackdrop var(--ifm-transition-fast) ease forwards;
     }
 
     &__brand {
