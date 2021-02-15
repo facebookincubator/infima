@@ -64,7 +64,10 @@ function copyScriptsToDemo() {
 function serve() {
   return gulp.src('./demo').pipe(
     webserver({
-      livereload: true, // Not working. Figure out why.
+      livereload: {
+        enable: true,
+        filter: () => true
+      },
       open: true,
     }),
   );
@@ -98,4 +101,4 @@ function watch(cb) {
 
 exports.clean = clean;
 exports.build = gulp.series(clean, transformMinifyAndCopy);
-exports.default = gulp.series(clean, watch, transformAndCopy, serve);
+exports.default = gulp.series(clean, transformAndCopy, serve, watch);
