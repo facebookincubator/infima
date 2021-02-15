@@ -13,8 +13,8 @@
 }
 
 .thin-scrollbar::-webkit-scrollbar {
-  width: var(--ifm-scrollbar-size);
   height: var(--ifm-scrollbar-size);
+  width: var(--ifm-scrollbar-size);
 }
 .thin-scrollbar::-webkit-scrollbar-track {
   background: var(--ifm-scrollbar-track-background-color);

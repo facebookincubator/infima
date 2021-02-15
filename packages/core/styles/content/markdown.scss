@@ -6,8 +6,8 @@
  */
 
 :root {
-  // Leading is the distance between two baselines
-  // TODO: add appropriate mobile leading
+  /* Leading is the distance between two baselines */
+  /* TODO: add appropriate mobile leading */
   --ifm-leading-desktop: 1.25;
   --ifm-leading: calc(var(--ifm-leading-desktop) * 1rem);
 }
@@ -78,7 +78,7 @@
     );
   }
 
-  // Consistent spacing between content paragraphs.
+  /* Consistent spacing between content paragraphs. */
   & > pre,
   & > ul,
   & > p {

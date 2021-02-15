@@ -25,11 +25,11 @@
   }
   
   &__list {
-    margin: 0;
     list-style-type: none;
+    margin: 0;
     padding-left: 0;
 
-    // Non-top level menus
+    /* Non-top level menus */
     ^&__list {
       margin-left: var(--ifm-menu-link-padding-horizontal);
     }
@@ -55,8 +55,8 @@
     color: var(--ifm-menu-color);
     cursor: pointer;
     display: flex;
-    line-height: 20px;
     justify-content: space-between;
+    line-height: 20px;
     padding: var(--ifm-menu-link-padding-vertical)
       var(--ifm-menu-link-padding-horizontal);
     @mixin transition color background;
@@ -69,11 +69,11 @@
       background: var(--ifm-menu-link-sublist-icon) 50% / 2rem 2rem;
       content: ' ';
       display: inline-block;
+      filter: var(--ifm-menu-link-sublist-icon-filter);
       height: 1.25rem;
+      transform: rotate(180deg);
       width: 1.25rem;
       @mixin transition transform, var(--ifm-transition-fast), linear;
-      transform: rotate(180deg);
-      filter: var(--ifm-menu-link-sublist-icon-filter);
     }
 
     &:hover {
@@ -117,7 +117,6 @@
   }
 
   &--show {
-    -ms-scroll-chaining: none;
     background: var(--ifm-background-surface-color);
     bottom: 0;
     left: 0;
@@ -125,6 +124,7 @@
     padding: 1rem;
     position: fixed;
     right: 0;
+    -ms-scroll-chaining: none;
     top: 0;
     z-index: var(--ifm-z-index-overlay);
 

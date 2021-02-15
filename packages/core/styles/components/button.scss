@@ -24,9 +24,9 @@
   appearance: none;
   background-color: var(--ifm-button-background-color);
   border-color: var(--ifm-button-border-color);
+  border-radius: var(--ifm-button-border-radius);
   border-style: solid;
   border-width: var(--ifm-button-border-width);
-  border-radius: var(--ifm-button-border-radius);
   color: var(--ifm-button-color);
   cursor: pointer;
   display: inline-block;
@@ -41,13 +41,13 @@
     );
   text-align: center;
   text-decoration: none;
-  @mixin transition color background border-color, var(--ifm-button-transition-duration), var(--ifm-transition-timing-default);
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  @mixin transition color background border-color, var(--ifm-button-transition-duration), var(--ifm-transition-timing-default);
 
   &:hover {
-    color: var(--ifm-button-color); // Override for button links.
+    color: var(--ifm-button-color); /* Override for button links. */
     text-decoration: none;
   }
 
@@ -126,7 +126,7 @@
     }
   }
 
-  // Increase specificity.
+  /* Increase specificity. */
   .button--$(color) {
     &:active,
     &.button--active {
@@ -135,10 +135,10 @@
 
       background-color: var(
         --ifm-color-$(color)-darker
-      ); // Has to be explicitly defined because .button--outline has quite high specificity.
+      ); /* Has to be explicitly defined because .button--outline has quite high specificity. */
       border-color: var(
         --ifm-color-$(color)-darker
-      ); // Has to be explicitly defined because .button--outline has quite high specificity.
+      ); /* Has to be explicitly defined because .button--outline has quite high specificity. */
     }
   }
 }
