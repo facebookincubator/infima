@@ -32,10 +32,10 @@
     "postcss-strip-inline-comments": "^0.1.5"
   },
   "peerDependencies": {
-    "infima": "^0.2.0-alpha.18"
+    "infima": "^0.2.0-alpha.19"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "files": [
     "index.js"
