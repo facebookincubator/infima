@@ -5,15 +5,15 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-// Common
+/* Common */
 @import 'common/variables';
 @import 'common/base';
 
-// Layout
+/* Layout */
 @import 'layout/grid';
 @import 'layout/spacing';
 
-// Content
+/* Content */
 @import 'content/code';
 @import 'content/heading';
 @import 'content/image';
@@ -22,7 +22,7 @@
 @import 'content/table';
 @import 'content/typography';
 
-// Components
+/* Components */
 @import 'components/alert';
 @import 'components/avatar';
 @import 'components/badge';
@@ -43,10 +43,10 @@
 @import 'components/pills';
 @import 'components/tabs';
 
-// Utilities
+/* Utilities */
 @import 'utilities/shadow';
 @import 'utilities/text';
 @import 'utilities/custom_scrollbar';
 
-// Mode
+/* Mode */
 @import 'common/dark-mode';

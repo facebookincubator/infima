@@ -10,8 +10,8 @@
 }
 
 .container {
-  max-width: var(--ifm-container-width);
   margin: 0 auto;
+  max-width: var(--ifm-container-width);
   padding: 0 var(--ifm-spacing-horizontal);
   width: 100%;
 
@@ -41,13 +41,13 @@
     }
 
     @media (--ifm-narrow-window) {
-      // Increase specificity.
+      /* Increase specificity. */
       &.col.col {
         --ifm-col-width: 100%;
         flex-basis: var(--ifm-col-width);
         margin-left: 0;
 
-        max-width: var(--ifm-col-width); // @compat
+        max-width: var(--ifm-col-width);
       }
     }
 
@@ -55,8 +55,8 @@
       &.col--$(column) {
         --ifm-col-width: calc($(column) / 12 * 100%);
 
-        flex: 0 0 var(--ifm-col-width); // @compat
-        max-width: var(--ifm-col-width); // @compat
+        flex: 0 0 var(--ifm-col-width);
+        max-width: var(--ifm-col-width);
       }
 
       &.col--offset-$(column) {

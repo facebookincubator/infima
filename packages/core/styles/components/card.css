@@ -16,9 +16,9 @@
   background-color: var(--ifm-card-background-color);
   border-radius: var(--ifm-card-border-radius);
   box-shadow: var(--ifm-global-shadow-lw);
-  overflow: hidden; // Because of border-radius.
   display: flex;
   flex-direction: column;
+  overflow: hidden; /* Because of border-radius. */
 
   &--full-height {
     height: 100%;
@@ -47,6 +47,6 @@
   }
 
   &__footer {
-    margin-top: auto; // Pushes the footer to the bottom of the card.
+    margin-top: auto; /* Pushes the footer to the bottom of the card. */
   }
 }

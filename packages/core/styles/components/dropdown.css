@@ -41,14 +41,14 @@
     background-color: var(--ifm-dropdown-background-color);
     border-radius: var(--ifm-global-radius);
     box-shadow: var(--ifm-global-shadow-md);
-    visibility: hidden;
-    opacity: 0;
-    transform: scale(.8);
-    min-width: 10rem;
     list-style: none;
+    min-width: 10rem;
+    opacity: 0;
     padding: 0.5rem;
     position: absolute;
     top: 100%;
+    transform: scale(.8);
+    visibility: hidden;
     z-index: var(--ifm-z-index-dropdown);
     @mixin transition opacity transform visibility, , cubic-bezier(.24,.22,.015,1.56);
   }
@@ -64,8 +64,8 @@
     &:hover,
     &--active {
       background-color: var(--ifm-dropdown-hover-background-color);
-      text-decoration: none;
       color: var(--ifm-dropdown-link-color);
+      text-decoration: none;
     }
     
     &--active,
@@ -75,9 +75,9 @@
   }
   
   & > .navbar__link:after {
+    border-color: currentColor transparent;
     border-style: solid;
     border-width: .4em .4em 0;
-    border-color: currentColor transparent;
     content: '';
     display: inline-block;
     margin-left: 0.3em;

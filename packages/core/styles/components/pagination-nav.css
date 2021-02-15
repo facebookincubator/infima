@@ -35,8 +35,8 @@
     border: 1px solid var(--ifm-color-emphasis-300);
     border-radius: var(--ifm-pagination-nav-border-radius);
     flex-grow: 1;
-    padding: var(--ifm-global-spacing);
     line-height: var(--ifm-heading-line-height);
+    padding: var(--ifm-global-spacing);
     @mixin transition border-color;
     
     &:hover {
@@ -52,8 +52,8 @@
   }
   
   &__sublabel {
-    font-size: var(--ifm-h5-font-size);
     color: var(--ifm-color-content-secondary);
+    font-size: var(--ifm-h5-font-size);
     font-weight: var(--ifm-font-weight-semibold);
     margin-bottom: 0.25rem;
   }

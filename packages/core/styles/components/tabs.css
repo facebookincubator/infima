@@ -14,11 +14,11 @@
 }
 
 .tabs {
-  display: flex;
-  overflow-x: auto;
   color: var(--ifm-tabs-color);
+  display: flex;
   font-weight: var(--ifm-font-weight-bold);
   margin-bottom: 0;
+  overflow-x: auto;
   padding-left: 0;
 
   @media print {
@@ -26,13 +26,13 @@
   }
 
   &__item {
-    box-sizing: content-box;
     border-bottom: 3px solid transparent;
     border-radius: var(--ifm-global-radius);
+    box-sizing: content-box;
     cursor: pointer;
     display: inline-flex;
-    padding: var(--ifm-tabs-padding-vertical) var(--ifm-tabs-padding-horizontal);
     margin: 0;
+    padding: var(--ifm-tabs-padding-vertical) var(--ifm-tabs-padding-horizontal);
     @mixin transition background-color;
 
     &--active {
