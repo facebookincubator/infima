@@ -19,7 +19,7 @@ const webserver = require('gulp-webserver');
 function transformStyles() {
   const modernPreset = postcssPresetInfima();
   return gulp
-    .src('./styles/themes/**/*.scss')
+    .src('./styles/themes/**/*.pcss')
     .pipe(postcss(modernPreset.plugins, { syntax: modernPreset.syntax }))
     .pipe(rename({ extname: '.css' }))
     .pipe(gulp.dest('./dist/css'));
@@ -86,7 +86,7 @@ const transformMinifyAndCopy = gulp.series(
 
 function watch(cb) {
   gulp.watch(
-    ['./styles/**/*.scss'],
+    ['./styles/**/*.pcss'],
     gulp.series(transformStyles, copyStylesToDemo),
   );
   gulp.watch(
