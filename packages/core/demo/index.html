@@ -222,12 +222,12 @@
           >
             Toggle Mode (or press X)
           </button>
-		  <button
-			class="button button--secondary button--outline button--lg"
-			id="minification-toggle"
-		  >
-			Toggle Minification (or press M)
-		  </button>
+          <button
+            class="button button--secondary button--outline button--lg"
+            id="minification-toggle"
+          >
+            Toggle Minification (or press M)
+          </button>
         </div>
       </div>
     </div>
@@ -2646,9 +2646,9 @@ let myFun = (x, y) =&gt; {
         function toggleMinification() {
           if (document.styleSheets[1].href.includes('min')) {
             document.querySelector("link[href='" + minCssHref + "']").href = cssHref;
-		  } else {
+          } else {
             document.querySelector("link[href='" + cssHref + "']").href = minCssHref;
-		  }
+          }
 		}
 
         document
