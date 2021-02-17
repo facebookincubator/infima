@@ -40,7 +40,7 @@ function transformScripts() {
 
 function minifyStyles() {
   return gulp
-    .src('./dist/css/**/*.css')
+    .src('./dist/css/**/*[!.min].css')
     .pipe(rename({ suffix: '.min' }))
     .pipe(postcss([cssnano()]))
     .pipe(gulp.dest('./dist/css'));
@@ -48,7 +48,7 @@ function minifyStyles() {
 
 function minifyScripts() {
   return gulp
-    .src('./dist/js/**/*.js')
+    .src('./dist/js/**/*[!.min].js')
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./dist/js'));
 }
@@ -80,7 +80,7 @@ function clean() {
 const transformAssets = gulp.parallel(gulp.series(transformStyles, createRtlStyles), transformScripts);
 const copyAssetsToDemo = gulp.parallel(copyStylesToDemo, copyScriptsToDemo);
 const minifyAssets = gulp.parallel(minifyStyles, minifyScripts);
-const transformAndCopy = gulp.series(transformAssets, copyAssetsToDemo);
+
 const transformMinifyAndCopy = gulp.series(
   transformAssets,
   minifyAssets,
@@ -101,4 +101,4 @@ function watch(cb) {
 
 exports.clean = clean;
 exports.build = gulp.series(clean, transformMinifyAndCopy);
-exports.default = gulp.series(clean, transformAndCopy, serve, watch);
+exports.default = gulp.series(clean, transformMinifyAndCopy, serve, watch);

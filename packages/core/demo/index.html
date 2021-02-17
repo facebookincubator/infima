@@ -56,7 +56,7 @@
     </script>
     <link
       id="theme-stylesheet"
-      href="css/default/default.css"
+      href="css/default/default.min.css"
       type="text/css"
       rel="stylesheet"
     />
@@ -222,6 +222,12 @@
           >
             Toggle Mode (or press X)
           </button>
+		  <button
+			class="button button--secondary button--outline button--lg"
+			id="minification-toggle"
+		  >
+			Toggle Minification (or press M)
+		  </button>
         </div>
       </div>
     </div>
@@ -2634,13 +2640,32 @@ let myFun = (x, y) =&gt; {
             .setAttribute('data-theme', isDarkTheme ? '' : 'dark');
           history.pushState({}, null, isDarkTheme ? '/' : '/?dark=true');
         }
+
+        const cssHref = "css/default/default.css";
+        const minCssHref = "css/default/default.min.css";
+        function toggleMinification() {
+          if (document.styleSheets[1].href.includes('min')) {
+            document.querySelector("link[href='" + minCssHref + "']").href = cssHref;
+		  } else {
+            document.querySelector("link[href='" + cssHref + "']").href = minCssHref;
+		  }
+		}
+
         document
           .getElementById('mode-toggle')
           .addEventListener('click', toggleMode);
+        document
+          .getElementById('minification-toggle')
+          .addEventListener('click', toggleMinification);
+
         window.addEventListener('keydown', function (event) {
           const X_KEYCODE = 88;
+          const M_KEYCODE = 77;
           if (event.key === 'x' || event.keyCode === X_KEYCODE) {
             toggleMode();
+          }
+          if (event.key === 'm' || event.keyCode === M_KEYCODE) {
+            toggleMinification();
           }
         });
       })();
