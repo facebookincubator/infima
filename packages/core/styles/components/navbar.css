@@ -79,7 +79,7 @@
   }
 
   &__toggle {
-    background: 0 0;
+    background: none;
     border: 0;
     cursor: pointer;
     display: none;
