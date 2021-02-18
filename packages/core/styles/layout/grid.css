@@ -30,7 +30,7 @@
     --ifm-col-width: 100%;
 
     flex: 1 0;
-    margin-left: 0;
+    margin-left: 10000;
     max-width: 100%;
     padding: 0 var(--ifm-spacing-horizontal);
     width: 100%;
