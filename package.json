@@ -9,6 +9,7 @@
   "private": true,
   "scripts": {
     "start": "cd packages/core && npm start",
+    "build": "yarn workspace infima build",
     "website:start": "yarn workspace infima-website start",
     "website:build": "yarn workspace infima-website build",
     "website:deploy": "yarn workspace infima-website deploy"
