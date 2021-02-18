@@ -217,16 +217,22 @@
         </p>
         <div>
           <button
-            class="button button--secondary button--outline"
+            class="button button--secondary"
             id="mode-toggle"
           >
             Toggle Mode (or press <kbd>X</kbd>)
           </button>
           <button
-            class="button button--secondary button--outline"
+            class="button button--secondary"
             id="minification-toggle"
           >
             Toggle Minification (or press <kbd>M</kbd>)
+          </button>
+          <button
+            class="button button--secondary"
+            id="rtl-toggle"
+          >
+            Toggle RTL (or press <kbd>R</kbd>)
           </button>
         </div>
       </div>
@@ -2641,13 +2647,42 @@ let myFun = (x, y) =&gt; {
           history.pushState({}, null, isDarkTheme ? '/' : '/?dark=true');
         }
 
-        const cssHref = "css/default/default.css";
-        const minCssHref = "css/default/default.min.css";
+        const cssHref = 'css/default/default.css';
+        const minCssHref = 'css/default/default.min.css';
+        const cssRTLHref = 'css/default/default-rtl.css';
+        const minCssRTLHref = 'css/default/default-rtl.min.css';
+
         function toggleMinification() {
-          if (document.styleSheets[1].href.includes('min')) {
-            document.querySelector("link[href='" + minCssHref + "']").href = cssHref;
+          const href = document.styleSheets[1].href;
+          if (href.includes('min')) {
+            if (href.includes('rtl')) {
+              document.querySelector('#theme-stylesheet').href = cssRTLHref;
+            } else {
+              document.querySelector('#theme-stylesheet').href = cssHref;
+			}
           } else {
-            document.querySelector("link[href='" + cssHref + "']").href = minCssHref;
+            if (href.includes('rtl')) {
+              document.querySelector('#theme-stylesheet').href = minCssRTLHref;
+            } else {
+              document.querySelector('#theme-stylesheet').href = minCssHref;
+            }
+          }
+        }
+
+        function toggleRTL() {
+          const href = document.styleSheets[1].href;
+          if (href.includes('min')) {
+            if (href.includes('rtl')) {
+              document.querySelector('#theme-stylesheet').href = minCssHref;
+            } else {
+              document.querySelector('#theme-stylesheet').href = minCssRTLHref;
+			}
+          } else {
+            if (href.includes('rtl')) {
+              document.querySelector('#theme-stylesheet').href = cssHref;
+            } else {
+              document.querySelector('#theme-stylesheet').href = cssRTLHref;
+            }
           }
         }
 
@@ -2657,15 +2692,22 @@ let myFun = (x, y) =&gt; {
         document
           .getElementById('minification-toggle')
           .addEventListener('click', toggleMinification);
+        document
+          .getElementById('rtl-toggle')
+          .addEventListener('click', toggleRTL);
 
         window.addEventListener('keydown', function (event) {
-          const X_KEYCODE = 88;
+          const R_KEYCODE = 81;
           const M_KEYCODE = 77;
+          const X_KEYCODE = 88;
           if (event.key === 'x' || event.keyCode === X_KEYCODE) {
             toggleMode();
           }
           if (event.key === 'm' || event.keyCode === M_KEYCODE) {
             toggleMinification();
+          }
+          if (event.key === 'r' || event.keyCode === R_KEYCODE) {
+            toggleRTL();
           }
         });
       })();
