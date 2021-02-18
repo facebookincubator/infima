@@ -27,8 +27,7 @@
     "postcss-nested": "^4.2.1",
     "postcss-nested-ancestors": "^2.0.0",
     "postcss-preset-env": "^6.6.0",
-    "postcss-sort-media-queries": "^1.7.26",
-    "postcss-strip-inline-comments": "^0.1.5"
+    "postcss-sort-media-queries": "^1.7.26"
   },
   "peerDependencies": {
     "infima": "^0.2.0-alpha.19"

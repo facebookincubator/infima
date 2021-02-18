@@ -11,7 +11,6 @@ const postcssEach = require('postcss-each');
 const postcssImport = require('postcss-import');
 const postcssFor = require('postcss-for');
 const postcssPresetEnv = require('postcss-preset-env');
-const postcssStripInlineComments = require('postcss-strip-inline-comments');
 const postcssNested = require('postcss-nested');
 const postcssNestedAncestors = require('postcss-nested-ancestors');
 const postcssMixins = require('postcss-mixins');
@@ -21,7 +20,6 @@ const postcssSortMediaQueries = require('postcss-sort-media-queries');
 module.exports = () => ({
   plugins: [
     postcssImport,
-    postcssStripInlineComments,
     postcssEach,
     postcssFor,
     postcssNestedAncestors,
