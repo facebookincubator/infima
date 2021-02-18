@@ -7,7 +7,6 @@
 
 :root {
   --ifm-container-width: 1140px;
-  margin-top: 10px;
 }
 
 .container {
@@ -15,8 +14,6 @@
   max-width: var(--ifm-container-width);
   padding: 0 var(--ifm-spacing-horizontal);
   width: 100%;
-  margin-top: 10px;
-
 
   &--fluid {
     max-width: inherit;
@@ -27,8 +24,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 10px;
-
   margin: 0 calc(var(--ifm-spacing-horizontal) * -1);
 
   & .col {
@@ -46,8 +41,6 @@
     }
 
     @media (--ifm-narrow-window) {
-      margin-top: 10px;
-
       /* Increase specificity. */
       &.col.col {
         --ifm-col-width: 100%;
@@ -64,9 +57,7 @@
 
         flex: 0 0 var(--ifm-col-width);
         max-width: var(--ifm-col-width);
-      margin-top: 10px;
-
-    }
+      }
 
       &.col--offset-$(column) {
         margin-left: calc($(column) / 12 * 100%);
