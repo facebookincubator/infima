@@ -22,7 +22,7 @@
 
 .row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   margin: 0 calc(var(--ifm-spacing-horizontal) * -1);
 
@@ -30,7 +30,7 @@
     --ifm-col-width: 100%;
 
     flex: 1 0;
-    margin-left: 10000;
+    margin-left: 0;
     max-width: 100%;
     padding: 0 var(--ifm-spacing-horizontal);
     width: 100%;
