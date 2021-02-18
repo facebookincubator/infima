@@ -22,9 +22,9 @@
 
 .row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 calc(var(--ifm-spacing-horizontal) * -1);
+  margin: 123 calc(var(--ifm-spacing-horizontal) * -1);
 
   & .col {
     --ifm-col-width: 100%;
