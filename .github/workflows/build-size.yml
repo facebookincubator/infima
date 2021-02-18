@@ -6,13 +6,14 @@ on:
       - master
 
 jobs:
-  build:
+  report-build-size-diff:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
       - uses: preactjs/compressed-size-action@v2
         with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          build-script: 'build'
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          build-script: "build"
           pattern: "./packages/core/dist/**/*.{js,css}"
-          minimum-change-threshold: 100
