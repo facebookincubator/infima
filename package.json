@@ -11,7 +11,7 @@
     "prettier": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx}\"",
     "prettier:docs": "prettier --config .prettierrc --write \"**/*.{md,mdx}\"",
     "prettier:ci": "prettier --config .prettierrc --check \"**/*.{js,jsx,ts,tsx,md,mdx}\"",
-    "lint:ci": "yarn workspace infima lint:ci",
+    "lint:ci": "yarn workspace infima lint",
     "start": "cd packages/core && npm start",
     "build": "yarn workspace infima build",
     "website:start": "yarn workspace infima-website start",
