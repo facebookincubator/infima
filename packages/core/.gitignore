@@ -1,5 +1,0 @@
-demo/css
-demo/js
-
-# We add the dist files on purpose: it is easier to review the diff and see the dist impact of a PR
-# dist
