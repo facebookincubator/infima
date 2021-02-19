@@ -14,7 +14,7 @@ html {
   color: var(--ifm-font-color-base);
   font: var(--ifm-font-size-base)/var(--ifm-line-height-base) var(--ifm-font-family-base);
   -webkit-font-smoothing: antialiased;
-  -webkit-tap-highlight-color: transparent; 
+  -webkit-tap-highlight-color: transparent;
   text-rendering: optimizelegibility;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
