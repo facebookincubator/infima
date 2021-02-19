@@ -4,3 +4,6 @@ node_modules
 build
 coverage
 .docusaurus
+
+packages/core/demo/js
+packages/core/demo/css
