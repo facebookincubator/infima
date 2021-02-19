@@ -27,7 +27,7 @@ module.exports = () => ({
     postcssPresetEnv({
       stage: 1,
       features: {
-        'color-mod-function': { unresolved: 'ignore' },
+        'color-mod-function': {unresolved: 'ignore'},
         'custom-properties': false,
       },
     }),
@@ -42,14 +42,14 @@ module.exports = () => ({
               'transition-property': properties.replace(/\s/g, ', '),
               'transition-duration': duration,
               'transition-timing-function': timing,
-            }
+            };
           } else {
             return {
-              transition: [properties, duration, timing].join(' ')
-            }
+              transition: [properties, duration, timing].join(' '),
+            };
           }
-        }
-      }
+        },
+      },
     }),
     postcssSortMediaQueries,
     postcssCombineDuplicatedSelectors,

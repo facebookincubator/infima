@@ -20,8 +20,8 @@ function transformStyles() {
   const modernPreset = postcssPresetInfima();
   return gulp
     .src('./styles/themes/**/*.pcss')
-    .pipe(postcss(modernPreset.plugins, { syntax: modernPreset.syntax }))
-    .pipe(rename({ extname: '.css' }))
+    .pipe(postcss(modernPreset.plugins, {syntax: modernPreset.syntax}))
+    .pipe(rename({extname: '.css'}))
     .pipe(gulp.dest('./dist/css'));
 }
 
@@ -41,7 +41,7 @@ function transformScripts() {
 function minifyStyles() {
   return gulp
     .src('./dist/css/**/*[!.min].css')
-    .pipe(rename({ suffix: '.min' }))
+    .pipe(rename({suffix: '.min'}))
     .pipe(postcss([cssnano()]))
     .pipe(gulp.dest('./dist/css'));
 }
@@ -49,7 +49,7 @@ function minifyStyles() {
 function minifyScripts() {
   return gulp
     .src('./dist/js/**/*[!.min].js')
-    .pipe(rename({ suffix: '.min' }))
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./dist/js'));
 }
 
@@ -66,7 +66,7 @@ function serve() {
     webserver({
       livereload: {
         enable: true,
-        filter: () => true
+        filter: () => true,
       },
       open: true,
     }),
@@ -77,7 +77,10 @@ function clean() {
   return del(['./dist/**/*', './demo/css/**', './demo/js/**']);
 }
 
-const transformAssets = gulp.parallel(gulp.series(transformStyles, createRtlStyles), transformScripts);
+const transformAssets = gulp.parallel(
+  gulp.series(transformStyles, createRtlStyles),
+  transformScripts,
+);
 const copyAssetsToDemo = gulp.parallel(copyStylesToDemo, copyScriptsToDemo);
 const minifyAssets = gulp.parallel(minifyStyles, minifyScripts);
 

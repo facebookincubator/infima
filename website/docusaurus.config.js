@@ -6,87 +6,87 @@
  */
 
 // See Netlify env variables here: https://docs.netlify.com/configure-builds/environment-variables/#build-metadata
-const isNetlify = process.env.NETLIFY === "true";
+const isNetlify = process.env.NETLIFY === 'true';
 const isNetlifyDeployPreview =
-  isNetlify && process.env.CONTEXT === "deploy-preview";
+  isNetlify && process.env.CONTEXT === 'deploy-preview';
 
 module.exports = {
-  title: "Infima",
-  tagline: "A modern styling framework for content-driven websites 🔥",
-  organizationName: "facebookincubator",
-  projectName: "infima",
+  title: 'Infima',
+  tagline: 'A modern styling framework for content-driven websites 🔥',
+  organizationName: 'facebookincubator',
+  projectName: 'infima',
   baseUrl: isNetlify
-    ? "/"
+    ? '/'
     : // for GH pages: https://facebookincubator.github.io/infima/
-      "/infima/",
-  url: "https://facebookincubator.github.io",
-  favicon: "img/logo.png",
+      '/infima/',
+  url: 'https://facebookincubator.github.io',
+  favicon: 'img/logo.png',
   themeConfig: {
     navbar: {
-      title: "Infima",
+      title: 'Infima',
       logo: {
-        alt: "Infima Logo",
-        src: "img/logo.png",
+        alt: 'Infima Logo',
+        src: 'img/logo.png',
       },
       items: [
         {
-          to: "docs/getting-started/introduction",
-          label: "Docs",
-          position: "left",
+          to: 'docs/getting-started/introduction',
+          label: 'Docs',
+          position: 'left',
         },
         isNetlifyDeployPreview && {
-          to: "pathname:///demo",
-          label: "Demo",
-          position: "left",
+          to: 'pathname:///demo',
+          label: 'Demo',
+          position: 'left',
         },
       ].filter(Boolean),
     },
     footer: {
-      style: "dark",
+      style: 'dark',
       links: [
         {
-          title: "Docs",
+          title: 'Docs',
           items: [
             {
-              label: "Introduction",
-              to: "docs/getting-started/introduction",
+              label: 'Introduction',
+              to: 'docs/getting-started/introduction',
             },
           ],
         },
         {
-          title: "Community",
+          title: 'Community',
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/infima",
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/infima',
             },
           ],
         },
         {
-          title: "Social",
+          title: 'Social',
           items: [
             {
-              label: "GitHub",
-              href: "https://github.com/facebookincubator/infima",
+              label: 'GitHub',
+              href: 'https://github.com/facebookincubator/infima',
             },
           ],
         },
       ],
       logo: {
-        alt: "Facebook Open Source Logo",
-        src: "https://docusaurus.io/img/oss_logo.png",
-        href: "https://opensource.facebook.com",
+        alt: 'Facebook Open Source Logo',
+        src: 'https://docusaurus.io/img/oss_logo.png',
+        href: 'https://opensource.facebook.com',
       },
       copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
     },
   },
   presets: [
     [
-      "@docusaurus/preset-classic",
+      '@docusaurus/preset-classic',
       {
         docs: {
-          path: "docs",
-          sidebarPath: require.resolve("./sidebars.js"),
+          path: 'docs',
+          sidebarPath: require.resolve('./sidebars.js'),
         },
       },
     ],

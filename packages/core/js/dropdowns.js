@@ -6,13 +6,13 @@
  */
 
 function dropdowns($elements) {
-  $elements.forEach($dropdown => {
+  $elements.forEach(($dropdown) => {
     if ($dropdown.classList.contains('dropdown--hoverable')) {
       return;
     }
 
     const $toggle = $dropdown.querySelector('[data-toggle="dropdown"]');
-    $toggle.addEventListener('click', e => {
+    $toggle.addEventListener('click', (e) => {
       function dismissDropdown() {
         $toggle.classList.remove('button--active');
         $dropdown.classList.remove('dropdown--show');

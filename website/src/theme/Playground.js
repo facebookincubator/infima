@@ -23,7 +23,7 @@ function Playground(props) {
     <div>
       <div
         {...props.componentContainerProps}
-        dangerouslySetInnerHTML={{ __html: htmlString }}
+        dangerouslySetInnerHTML={{__html: htmlString}}
       />
       <br />
       <CodeBlock className="html">{htmlString}</CodeBlock>
