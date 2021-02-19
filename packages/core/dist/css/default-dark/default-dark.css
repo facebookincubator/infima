@@ -353,6 +353,13 @@
   --ifm-hover-overlay: rgba(255, 255, 255, 0.05);
 }
 
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
 * {
   box-sizing: border-box;
 }
@@ -366,7 +373,6 @@ html {
   text-rendering: optimizelegibility;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-
 }
 
 body {
