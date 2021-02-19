@@ -41,15 +41,15 @@
   "scripts": {
     "build": "gulp build",
     "start": "gulp",
-    "lint": "stylelint \"styles/**/*.css\"",
-    "lint:fix": "stylelint \"styles/**/*.css\" --fix"
+    "lint": "stylelint \"styles/**/*.pcss\"",
+    "lint:fix": "stylelint \"styles/**/*.pcss\" --fix"
   },
   "engines": {
     "node": ">=10"
   },
   "files": [
     "dist/{css,js}/**/*.{css,js}",
-    "styles/**/*.css"
+    "styles/**/*.pcss"
   ],
   "stylelint": {
     "plugins": [
@@ -65,10 +65,10 @@
       "plugin/no-low-performance-animation-properties": true
     },
     "ignoreFiles": [
-      "**/variables.css"
+      "**/variables.pcss"
     ]
   },
   "lint-staged": {
-    "*.css": "npm run lint:fix"
+    "*.pcss": "npm run lint:fix"
   }
 }
