@@ -63,3 +63,8 @@ typings/
 # idea intellij
 .idea
 *.iml
+
+# Demo files
+# packages/core/dist
+packages/core/demo/css
+packages/core/demo/js

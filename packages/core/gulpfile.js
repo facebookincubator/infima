@@ -18,15 +18,10 @@ const webserver = require('gulp-webserver');
 
 function transformStyles() {
   const modernPreset = postcssPresetInfima();
-
   return gulp
-    .src('./styles/themes/**/*.css', {
-      ignore: [
-        '**/_*', // Exclude files starting with '_'.
-        '**/_*/**', // Exclude entire directories starting with '_'.
-      ],
-    })
+    .src('./styles/themes/**/*.pcss')
     .pipe(postcss(modernPreset.plugins, {syntax: modernPreset.syntax}))
+    .pipe(rename({extname: '.css'}))
     .pipe(gulp.dest('./dist/css'));
 }
 
@@ -45,7 +40,7 @@ function transformScripts() {
 
 function minifyStyles() {
   return gulp
-    .src('./dist/css/**/*.css')
+    .src('./dist/css/**/*[!.min].css')
     .pipe(rename({suffix: '.min'}))
     .pipe(postcss([cssnano()]))
     .pipe(gulp.dest('./dist/css'));
@@ -53,7 +48,7 @@ function minifyStyles() {
 
 function minifyScripts() {
   return gulp
-    .src('./dist/js/**/*.js')
+    .src('./dist/js/**/*[!.min].js')
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./dist/js'));
 }
@@ -69,7 +64,10 @@ function copyScriptsToDemo() {
 function serve() {
   return gulp.src('./demo').pipe(
     webserver({
-      livereload: true, // Not working. Figure out why.
+      livereload: {
+        enable: true,
+        filter: () => true,
+      },
       open: true,
     }),
   );
@@ -85,8 +83,8 @@ const transformAssets = gulp.parallel(
 );
 const copyAssetsToDemo = gulp.parallel(copyStylesToDemo, copyScriptsToDemo);
 const minifyAssets = gulp.parallel(minifyStyles, minifyScripts);
-const transformAndCopy = gulp.series(transformAssets, copyAssetsToDemo);
-const tranformMinifyAndCopy = gulp.series(
+
+const transformMinifyAndCopy = gulp.series(
   transformAssets,
   minifyAssets,
   copyAssetsToDemo,
@@ -94,7 +92,7 @@ const tranformMinifyAndCopy = gulp.series(
 
 function watch(cb) {
   gulp.watch(
-    ['./styles/**/*.css'],
+    ['./styles/**/*.pcss'],
     gulp.series(transformStyles, copyStylesToDemo),
   );
   gulp.watch(
@@ -105,5 +103,5 @@ function watch(cb) {
 }
 
 exports.clean = clean;
-exports.build = gulp.series(clean, tranformMinifyAndCopy);
-exports.default = gulp.series(clean, watch, transformAndCopy, serve);
+exports.build = gulp.series(clean, transformMinifyAndCopy);
+exports.default = gulp.series(clean, transformMinifyAndCopy, serve, watch);

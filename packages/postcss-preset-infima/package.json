@@ -18,22 +18,23 @@
     "url": "https://github.com/facebookincubator/infima/issues"
   },
   "dependencies": {
-    "postcss-combine-duplicated-selectors": "^9.1.0",
-    "postcss-css-variables": "^0.12.0",
+    "postcss": "^8.2.6",
+    "postcss-combine-duplicated-selectors": "^10.0.2",
+    "postcss-css-variables": "^0.17.0",
     "postcss-each": "^0.10.0",
-    "postcss-easy-import": "^3.0.0",
+    "postcss-import": "^14.0.0",
     "postcss-for": "^2.1.1",
     "postcss-mixins": "^6.2.3",
     "postcss-nested": "^4.2.1",
     "postcss-nested-ancestors": "^2.0.0",
-    "postcss-preset-env": "^6.6.0",
-    "postcss-sort-media-queries": "^1.7.26"
+    "postcss-preset-env": "^6.7.0",
+    "postcss-sort-media-queries": "^3.4.3"
   },
   "peerDependencies": {
     "infima": "^0.2.0-alpha.19"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "files": [
     "index.js"

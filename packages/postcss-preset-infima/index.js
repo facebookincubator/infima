@@ -8,7 +8,7 @@
 'use strict';
 
 const postcssEach = require('postcss-each');
-const postcssEasyImport = require('postcss-easy-import');
+const postcssImport = require('postcss-import');
 const postcssFor = require('postcss-for');
 const postcssPresetEnv = require('postcss-preset-env');
 const postcssNested = require('postcss-nested');
@@ -17,9 +17,9 @@ const postcssMixins = require('postcss-mixins');
 const postcssCombineDuplicatedSelectors = require('postcss-combine-duplicated-selectors');
 const postcssSortMediaQueries = require('postcss-sort-media-queries');
 
-module.exports = (options) => ({
+module.exports = () => ({
   plugins: [
-    postcssEasyImport({prefix: '_'}),
+    postcssImport,
     postcssEach,
     postcssFor,
     postcssNestedAncestors,
@@ -27,7 +27,7 @@ module.exports = (options) => ({
     postcssPresetEnv({
       stage: 1,
       features: {
-        'color-mod-function': {unresolved: 'warn'},
+        'color-mod-function': {unresolved: 'ignore'},
         'custom-properties': false,
       },
     }),
