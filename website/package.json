@@ -7,11 +7,12 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "eject": "docusaurus eject",
+    "serve": "docusaurus serve",
     "deploy": "GIT_USER=facebookincubator USE_SSH=true docusaurus deploy"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.70",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.70",
+    "@docusaurus/core": "2.0.0-alpha.a58baacdc",
+    "@docusaurus/preset-classic": "2.0.0-alpha.a58baacdc",
     "classnames": "^2.2.6",
     "prettier": "^1.17.1",
     "react": "^16.12.0",
