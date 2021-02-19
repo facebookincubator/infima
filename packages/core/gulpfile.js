@@ -12,20 +12,24 @@ const del = require('del');
 const gulp = require('gulp');
 const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
+const rtlcss = require('gulp-rtlcss');
 const postcssPresetInfima = require('postcss-preset-infima');
 const webserver = require('gulp-webserver');
 
 function transformStyles() {
   const modernPreset = postcssPresetInfima();
-
   return gulp
-    .src('./styles/themes/**/*.css', {
-      ignore: [
-        '**/_*', // Exclude files starting with '_'.
-        '**/_*/**', // Exclude entire directories starting with '_'.
-      ],
-    })
-    .pipe(postcss(modernPreset.plugins, { syntax: modernPreset.syntax }))
+    .src('./styles/themes/**/*.pcss')
+    .pipe(postcss(modernPreset.plugins, {syntax: modernPreset.syntax}))
+    .pipe(rename({extname: '.css'}))
+    .pipe(gulp.dest('./dist/css'));
+}
+
+function createRtlStyles() {
+  return gulp
+    .src('./dist/css/**/*.css')
+    .pipe(rtlcss())
+    .pipe(rename({suffix: '-rtl'}))
     .pipe(gulp.dest('./dist/css'));
 }
 
@@ -36,16 +40,16 @@ function transformScripts() {
 
 function minifyStyles() {
   return gulp
-    .src('./dist/css/**/*.css')
-    .pipe(rename({ suffix: '.min' }))
+    .src('./dist/css/**/*[!.min].css')
+    .pipe(rename({suffix: '.min'}))
     .pipe(postcss([cssnano()]))
     .pipe(gulp.dest('./dist/css'));
 }
 
 function minifyScripts() {
   return gulp
-    .src('./dist/js/**/*.js')
-    .pipe(rename({ suffix: '.min' }))
+    .src('./dist/js/**/*[!.min].js')
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./dist/js'));
 }
 
@@ -60,7 +64,10 @@ function copyScriptsToDemo() {
 function serve() {
   return gulp.src('./demo').pipe(
     webserver({
-      livereload: true, // Not working. Figure out why.
+      livereload: {
+        enable: true,
+        filter: () => true,
+      },
       open: true,
     }),
   );
@@ -70,11 +77,14 @@ function clean() {
   return del(['./dist/**/*', './demo/css/**', './demo/js/**']);
 }
 
-const transformAssets = gulp.parallel(transformStyles, transformScripts);
+const transformAssets = gulp.parallel(
+  gulp.series(transformStyles, createRtlStyles),
+  transformScripts,
+);
 const copyAssetsToDemo = gulp.parallel(copyStylesToDemo, copyScriptsToDemo);
 const minifyAssets = gulp.parallel(minifyStyles, minifyScripts);
-const transformAndCopy = gulp.series(transformAssets, copyAssetsToDemo);
-const tranformMinifyAndCopy = gulp.series(
+
+const transformMinifyAndCopy = gulp.series(
   transformAssets,
   minifyAssets,
   copyAssetsToDemo,
@@ -82,7 +92,7 @@ const tranformMinifyAndCopy = gulp.series(
 
 function watch(cb) {
   gulp.watch(
-    ['./styles/**/*.css'],
+    ['./styles/**/*.pcss'],
     gulp.series(transformStyles, copyStylesToDemo),
   );
   gulp.watch(
@@ -93,5 +103,5 @@ function watch(cb) {
 }
 
 exports.clean = clean;
-exports.build = gulp.series(clean, tranformMinifyAndCopy);
-exports.default = gulp.series(clean, watch, transformAndCopy, serve);
+exports.build = gulp.series(clean, transformMinifyAndCopy);
+exports.default = gulp.series(clean, transformMinifyAndCopy, serve, watch);

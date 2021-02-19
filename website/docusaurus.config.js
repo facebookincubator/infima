@@ -5,12 +5,20 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+// See Netlify env variables here: https://docs.netlify.com/configure-builds/environment-variables/#build-metadata
+const isNetlify = process.env.NETLIFY === 'true';
+const isNetlifyDeployPreview =
+  isNetlify && process.env.CONTEXT === 'deploy-preview';
+
 module.exports = {
   title: 'Infima',
   tagline: 'A modern styling framework for content-driven websites 🔥',
   organizationName: 'facebookincubator',
   projectName: 'infima',
-  baseUrl: '/infima/',
+  baseUrl: isNetlify
+    ? '/'
+    : // for GH pages: https://facebookincubator.github.io/infima/
+      '/infima/',
   url: 'https://facebookincubator.github.io',
   favicon: 'img/logo.png',
   themeConfig: {
@@ -26,7 +34,12 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-      ],
+        isNetlifyDeployPreview && {
+          to: 'pathname:///demo',
+          label: 'Demo',
+          position: 'left',
+        },
+      ].filter(Boolean),
     },
     footer: {
       style: 'dark',

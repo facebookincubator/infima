@@ -7,23 +7,19 @@
 
 'use strict';
 
-const autoprefixer = require('autoprefixer');
 const postcssEach = require('postcss-each');
-const postcssEasyImport = require('postcss-easy-import');
+const postcssImport = require('postcss-import');
 const postcssFor = require('postcss-for');
 const postcssPresetEnv = require('postcss-preset-env');
-const postcssStripInlineComments = require('postcss-strip-inline-comments');
 const postcssNested = require('postcss-nested');
 const postcssNestedAncestors = require('postcss-nested-ancestors');
 const postcssMixins = require('postcss-mixins');
 const postcssCombineDuplicatedSelectors = require('postcss-combine-duplicated-selectors');
 const postcssSortMediaQueries = require('postcss-sort-media-queries');
-const scss = require('postcss-scss');
 
-module.exports = (options) => ({
+module.exports = () => ({
   plugins: [
-    postcssEasyImport({ prefix: '_' }),
-    postcssStripInlineComments,
+    postcssImport,
     postcssEach,
     postcssFor,
     postcssNestedAncestors,
@@ -31,7 +27,7 @@ module.exports = (options) => ({
     postcssPresetEnv({
       stage: 1,
       features: {
-        'color-mod-function': { unresolved: 'warn' },
+        'color-mod-function': {unresolved: 'ignore'},
         'custom-properties': false,
       },
     }),
@@ -46,17 +42,16 @@ module.exports = (options) => ({
               'transition-property': properties.replace(/\s/g, ', '),
               'transition-duration': duration,
               'transition-timing-function': timing,
-            }
+            };
           } else {
             return {
-              transition: [properties, duration, timing].join(' ')
-            }
+              transition: [properties, duration, timing].join(' '),
+            };
           }
-        }
-      }
+        },
+      },
     }),
     postcssSortMediaQueries,
     postcssCombineDuplicatedSelectors,
   ].filter(Boolean),
-  syntax: scss,
 });

@@ -8,9 +8,26 @@
   ],
   "private": true,
   "scripts": {
+    "prettier": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx}\"",
+    "prettier:docs": "prettier --config .prettierrc --write \"**/*.{md,mdx}\"",
     "start": "cd packages/core && npm start",
+    "build": "yarn workspace infima build",
     "website:start": "yarn workspace infima-website start",
     "website:build": "yarn workspace infima-website build",
-    "website:deploy": "yarn workspace infima-website deploy"
+    "website:deploy": "yarn workspace infima-website deploy",
+    "postinstall": "is-ci || husky install"
+  },
+  "devDependencies": {
+    "husky": "^5.0.9",
+    "is-ci": "^3.0.0",
+    "prettier": "^2.2.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write"
+    ],
+    "*.{md,mdx}": [
+      "prettier --write"
+    ]
   }
 }
