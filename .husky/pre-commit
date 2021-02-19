@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "pre-commit start"
+
+yarn build
+git add packages/core/dist
+
+echo "pre-commit end"
