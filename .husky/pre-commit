@@ -3,6 +3,7 @@
 
 echo "pre-commit start"
 
+yarn lint-staged
 yarn workspace infima lint-staged
 
 yarn build

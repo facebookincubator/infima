@@ -1,0 +1,21 @@
+name: Lint
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install
+        run: yarn install
+      - name: Prettier
+        run: yarn prettier:ci
+      - name: Stylelint
+        run: yarn lint:ci
+      # Ensure that all the expected files have been commited (yarn.lock, /dist...)
+      - name: Git staged is empty
+        run: yarn build && git diff --exit-code
