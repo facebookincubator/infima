@@ -22,16 +22,17 @@
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "del": "^4.1.0",
-    "gulp": "^4.0.0",
-    "gulp-postcss": "^8.0.0",
-    "gulp-rename": "^1.2.2",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
     "gulp-rtlcss": "^1.4.1",
-    "gulp-sass": "^4.0.1",
+    "gulp-sass": "^4.1.0",
     "gulp-webserver": "^0.9.1",
     "lint-staged": "^10.5.4",
     "natives": "^1.1.6",
-    "postcss-preset-infima": "^0.2.0-alpha.18",
+    "postcss": "^8.2.6",
+    "postcss-preset-infima": "^0.2.0-alpha.19",
     "stylelint": "^13.10.0",
     "stylelint-copyright": "^2.0.0-alpha.69",
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
@@ -45,7 +46,7 @@
     "lint:fix": "stylelint \"styles/**/*.pcss\" --fix"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "files": [
     "dist/{css,js}/**/*.{css,js}",
