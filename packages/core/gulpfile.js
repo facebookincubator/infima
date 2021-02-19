@@ -26,7 +26,7 @@ function transformStyles() {
         '**/_*/**', // Exclude entire directories starting with '_'.
       ],
     })
-    .pipe(postcss(modernPreset.plugins, { syntax: modernPreset.syntax }))
+    .pipe(postcss(modernPreset.plugins, {syntax: modernPreset.syntax}))
     .pipe(gulp.dest('./dist/css'));
 }
 
@@ -46,7 +46,7 @@ function transformScripts() {
 function minifyStyles() {
   return gulp
     .src('./dist/css/**/*.css')
-    .pipe(rename({ suffix: '.min' }))
+    .pipe(rename({suffix: '.min'}))
     .pipe(postcss([cssnano()]))
     .pipe(gulp.dest('./dist/css'));
 }
@@ -54,7 +54,7 @@ function minifyStyles() {
 function minifyScripts() {
   return gulp
     .src('./dist/js/**/*.js')
-    .pipe(rename({ suffix: '.min' }))
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./dist/js'));
 }
 
@@ -79,7 +79,10 @@ function clean() {
   return del(['./dist/**/*', './demo/css/**', './demo/js/**']);
 }
 
-const transformAssets = gulp.parallel(gulp.series(transformStyles, createRtlStyles), transformScripts);
+const transformAssets = gulp.parallel(
+  gulp.series(transformStyles, createRtlStyles),
+  transformScripts,
+);
 const copyAssetsToDemo = gulp.parallel(copyStylesToDemo, copyScriptsToDemo);
 const minifyAssets = gulp.parallel(minifyStyles, minifyScripts);
 const transformAndCopy = gulp.series(transformAssets, copyAssetsToDemo);

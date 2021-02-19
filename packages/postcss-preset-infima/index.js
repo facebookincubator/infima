@@ -19,7 +19,7 @@ const postcssSortMediaQueries = require('postcss-sort-media-queries');
 
 module.exports = (options) => ({
   plugins: [
-    postcssEasyImport({ prefix: '_' }),
+    postcssEasyImport({prefix: '_'}),
     postcssEach,
     postcssFor,
     postcssNestedAncestors,
@@ -27,7 +27,7 @@ module.exports = (options) => ({
     postcssPresetEnv({
       stage: 1,
       features: {
-        'color-mod-function': { unresolved: 'warn' },
+        'color-mod-function': {unresolved: 'warn'},
         'custom-properties': false,
       },
     }),
@@ -42,14 +42,14 @@ module.exports = (options) => ({
               'transition-property': properties.replace(/\s/g, ', '),
               'transition-duration': duration,
               'transition-timing-function': timing,
-            }
+            };
           } else {
             return {
-              transition: [properties, duration, timing].join(' ')
-            }
+              transition: [properties, duration, timing].join(' '),
+            };
           }
-        }
-      }
+        },
+      },
     }),
     postcssSortMediaQueries,
     postcssCombineDuplicatedSelectors,

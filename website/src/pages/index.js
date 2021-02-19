@@ -15,13 +15,12 @@ import styles from './index.module.css';
 
 function Home() {
   const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
+  const {siteConfig = {}} = context;
 
   return (
     <Layout
       title={siteConfig.title}
-      description="A modern styling framework for content-driven websites"
-    >
+      description="A modern styling framework for content-driven websites">
       <header className={classnames('hero', styles.heroBanner)}>
         <div className="container">
           <img
@@ -36,8 +35,7 @@ function Home() {
                 'button button--primary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/getting-started/introduction')}
-            >
+              to={useBaseUrl('docs/getting-started/introduction')}>
               Get Started&nbsp;&nbsp;→
             </Link>
           </div>
@@ -56,8 +54,7 @@ function Home() {
                       className={styles.sectionDarkLink}
                       href="https://v2.docusaurus.io"
                       rel="noreferrer noopener"
-                      target="_blank"
-                    >
+                      target="_blank">
                       Docusaurus 2
                     </a>
                   </h2>
