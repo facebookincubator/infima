@@ -2641,53 +2641,60 @@ let myFun = (x, y) =&gt; {
         const html = document.documentElement;
         const themeStyleSheet = document.querySelector('#theme-stylesheet');
 
-        function toggleMode() {
-          const isDarkTheme = html.getAttribute('data-theme') === 'dark';
-          html.setAttribute('data-theme', isDarkTheme ? '' : 'dark');
-          history.pushState({}, null, isDarkTheme ? '/' : '/?dark=true');
+        const initialQueryString = new URLSearchParams(window.location.search);
+
+        // Mutable state
+        let dark = initialQueryString.get("dark") === "true";
+        let rtl = initialQueryString.get("rtl") === "true";
+        let min = initialQueryString.get("min") === "true";
+
+        function sync() {
+          function syncCSS() {
+            const rtlPart = rtl ? "-rtl" : ""
+            const minPart = min ? ".min" : ""
+            themeStyleSheet.href = `css/default/default${rtlPart}${minPart}.css`;
+          }
+
+          function syncQueryString() {
+            const params = new URLSearchParams(window.location.search)
+            dark ? params.set("dark",true) : params.delete("dark");
+            rtl ? params.set("rtl",true) : params.delete("rtl");
+            min ? params.set("min",true) : params.delete("min");
+            const paramsString = params.toString();
+            history.pushState(null, null, `${window.location.pathname}${paramsString ? `?${paramsString}` : ''}`);
+          }
+
+          function syncRTL() {
+            html.dir = rtl ? "rtl" : "ltr";
+          }
+
+          function syncTheme() {
+            html.setAttribute('data-theme', dark ? 'dark' : '');
+          }
+
+          syncCSS();
+          syncQueryString();
+          syncRTL();
+          syncTheme();
         }
 
-        const cssHref = 'css/default/default.css';
-        const minCssHref = 'css/default/default.min.css';
-        const cssRTLHref = 'css/default/default-rtl.css';
-        const minCssRTLHref = 'css/default/default-rtl.min.css';
+        function toggleMode() {
+          dark = !dark;
+          sync();
+        }
 
         function toggleMinification() {
-          const href = themeStyleSheet.href;
-          if (href.includes('min')) {
-            if (href.includes('rtl')) {
-              themeStyleSheet.href = cssRTLHref;
-            } else {
-              themeStyleSheet.href = cssHref;
-			      }
-          } else {
-            if (href.includes('rtl')) {
-              themeStyleSheet.href = minCssRTLHref;
-            } else {
-              themeStyleSheet.href = minCssHref;
-            }
-          }
+          min = !min;
+          sync();
         }
 
         function toggleRTL() {
-          const href = themeStyleSheet.href;
-          const isRTL = href.includes('rtl');
-
-          if (href.includes('min')) {
-            if (isRTL) {
-              themeStyleSheet.href = minCssHref;
-            } else {
-              themeStyleSheet.href = minCssRTLHref;
-			      }
-          } else {
-            if (isRTL) {
-              themeStyleSheet.href = cssHref;
-            } else {
-              themeStyleSheet.href = cssRTLHref;
-            }
-          }
-          html.dir = isRTL ? "ltr" : "rtl";
+          rtl = !rtl;
+          sync();
         }
+
+        // update the initial html according to initial querystring
+        sync();
 
         document
           .getElementById('mode-toggle')
