@@ -10,7 +10,24 @@ const isNetlify = process.env.NETLIFY === 'true';
 const isNetlifyDeployPreview =
   isNetlify && process.env.CONTEXT === 'deploy-preview';
 
+// Deploy preview: we want to test the Infima RTL support!
+const i18n = isNetlifyDeployPreview
+  ? {
+      defaultLocale: 'LTR',
+      locales: ['LTR', 'RTL'],
+      localeConfigs: {
+        LTR: {
+          direction: 'ltr',
+        },
+        RTL: {
+          direction: 'rtl',
+        },
+      },
+    }
+  : undefined;
+
 module.exports = {
+  i18n,
   title: 'Infima',
   tagline: 'A modern styling framework for content-driven websites 🔥',
   organizationName: 'facebookincubator',
@@ -37,6 +54,10 @@ module.exports = {
         isNetlifyDeployPreview && {
           to: 'pathname:///demo',
           label: 'Demo',
+          position: 'left',
+        },
+        isNetlifyDeployPreview && {
+          type: 'localeDropdown',
           position: 'left',
         },
       ].filter(Boolean),
