@@ -2637,13 +2637,13 @@ let myFun = (x, y) =&gt; {
           navbar(document.querySelectorAll('.navbar'));
           tabs(document.querySelectorAll('.tabs'));
         });
+
+        const html = document.documentElement;
+        const themeStyleSheet = document.querySelector('#theme-stylesheet');
+
         function toggleMode() {
-          const isDarkTheme =
-            document.querySelector('html').getAttribute('data-theme') ===
-            'dark';
-          document
-            .querySelector('html')
-            .setAttribute('data-theme', isDarkTheme ? '' : 'dark');
+          const isDarkTheme = html.getAttribute('data-theme') === 'dark';
+          html.setAttribute('data-theme', isDarkTheme ? '' : 'dark');
           history.pushState({}, null, isDarkTheme ? '/' : '/?dark=true');
         }
 
@@ -2653,37 +2653,40 @@ let myFun = (x, y) =&gt; {
         const minCssRTLHref = 'css/default/default-rtl.min.css';
 
         function toggleMinification() {
-          const href = document.styleSheets[1].href;
+          const href = themeStyleSheet.href;
           if (href.includes('min')) {
             if (href.includes('rtl')) {
-              document.querySelector('#theme-stylesheet').href = cssRTLHref;
+              themeStyleSheet.href = cssRTLHref;
             } else {
-              document.querySelector('#theme-stylesheet').href = cssHref;
-			}
+              themeStyleSheet.href = cssHref;
+			      }
           } else {
             if (href.includes('rtl')) {
-              document.querySelector('#theme-stylesheet').href = minCssRTLHref;
+              themeStyleSheet.href = minCssRTLHref;
             } else {
-              document.querySelector('#theme-stylesheet').href = minCssHref;
+              themeStyleSheet.href = minCssHref;
             }
           }
         }
 
         function toggleRTL() {
-          const href = document.styleSheets[1].href;
+          const href = themeStyleSheet.href;
+          const isRTL = href.includes('rtl');
+
           if (href.includes('min')) {
-            if (href.includes('rtl')) {
-              document.querySelector('#theme-stylesheet').href = minCssHref;
+            if (isRTL) {
+              themeStyleSheet.href = minCssHref;
             } else {
-              document.querySelector('#theme-stylesheet').href = minCssRTLHref;
-			}
+              themeStyleSheet.href = minCssRTLHref;
+			      }
           } else {
-            if (href.includes('rtl')) {
-              document.querySelector('#theme-stylesheet').href = cssHref;
+            if (isRTL) {
+              themeStyleSheet.href = cssHref;
             } else {
-              document.querySelector('#theme-stylesheet').href = cssRTLHref;
+              themeStyleSheet.href = cssRTLHref;
             }
           }
+          html.dir = isRTL ? "ltr" : "rtl";
         }
 
         document
