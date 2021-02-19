@@ -17,3 +17,4 @@ jobs:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           build-script: "build"
           pattern: "./packages/core/dist/**/*.{js,css}"
+          compression: 'none'
