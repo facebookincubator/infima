@@ -6,8 +6,8 @@
  */
 
 function menu($elements) {
-  $elements.forEach($menu => {
-    $menu.addEventListener('click', event => {
+  $elements.forEach(($menu) => {
+    $menu.addEventListener('click', (event) => {
       let $listItem = event.target;
       while ($listItem) {
         if ($listItem.classList.contains('menu')) {
@@ -37,7 +37,7 @@ function menu($elements) {
 
       $menu
         .querySelectorAll('.menu__link')
-        .forEach($elItem => $elItem.classList.remove('menu__link--active'));
+        .forEach(($elItem) => $elItem.classList.remove('menu__link--active'));
 
       // Traverse parents and add active class.
       while ($listItem) {
@@ -58,7 +58,7 @@ function menu($elements) {
 
     $button = $menu.querySelector('.menu__button');
     if ($button) {
-      $button.addEventListener('click', e => {
+      $button.addEventListener('click', (e) => {
         $menu.classList.toggle('menu--show');
       });
     }
