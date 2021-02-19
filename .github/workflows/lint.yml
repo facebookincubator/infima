@@ -10,10 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Install
+        run: yarn install
       - name: Prettier
         run: yarn prettier --list-different
       - name: Stylelint
         run: yarn workspace infima lint
       # Ensure that all the expected files have been commited (yarn.lock, /dist...)
       - name: Git staged is empty
-        run: yarn install && yarn build && git diff --exit-code
+        run: yarn build && git diff --exit-code
