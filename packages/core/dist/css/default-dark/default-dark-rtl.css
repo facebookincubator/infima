@@ -157,6 +157,7 @@
   --ifm-z-index-fixed: 200;
   --ifm-z-index-overlay: 400;
   --ifm-container-width: 1140px;
+  --ifm-container-width-xl: 1320px;
   --ifm-code-background: var(--ifm-color-emphasis-200);
   --ifm-code-border-radius: var(--ifm-global-radius);
   --ifm-code-color: var(--ifm-color-emphasis-900);
@@ -2912,6 +2913,12 @@ html[data-theme='dark'] {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
+
+@media (min-width: 1440px) {
+    .container {
+      max-width: var(--ifm-container-width-xl);
+    }
+}
 
 @media (max-width: 1200px) {
   h1 {
