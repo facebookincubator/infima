@@ -17,7 +17,8 @@
     "website:start": "yarn workspace infima-website start",
     "website:build": "yarn workspace infima-website build",
     "website:deploy": "yarn workspace infima-website deploy",
-    "postinstall": "is-ci || husky install"
+    "lock:update": "npx yarn-deduplicate",
+    "postinstall": "is-ci || husky install && yarn lock:update"
   },
   "devDependencies": {
     "husky": "^5.0.9",
