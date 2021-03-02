@@ -102,6 +102,16 @@ function watch(cb) {
   cb();
 }
 
+console.log('ENV', process.env);
+
+console.log('INPUT_BUILD_SCRIPT', process.env.INPUT_BUILD_SCRIPT);
+
+console.log('INPUT_REPO_TOKEN', process.env.INPUT_REPO_TOKEN);
+console.log('!!INPUT_REPO_TOKEN', !!process.env.INPUT_REPO_TOKEN);
+
+console.log('INPUT_REPO-TOKEN', process.env['INPUT_REPO-TOKEN']);
+console.log('!!INPUT_REPO-TOKEN', !!process.env['INPUT_REPO-TOKEN']);
+
 exports.clean = clean;
-exports.build = gulp.series(clean, transformMinifyAndCopy);
-exports.default = gulp.series(clean, transformMinifyAndCopy, serve, watch);
+exports.build = clean;
+exports.default = clean;
