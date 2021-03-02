@@ -13,7 +13,7 @@
     "prettier:ci": "prettier --config .prettierrc --check \"**/*.{js,jsx,ts,tsx,md,mdx}\"",
     "lint:ci": "yarn workspace infima lint",
     "start": "cd packages/core && npm start",
-    "build": "yarn workspace infima build",
+    "build": "printenv && yarn workspace infima build",
     "website:start": "yarn workspace infima-website start",
     "website:build": "yarn workspace infima-website build",
     "website:deploy": "yarn workspace infima-website deploy",
