@@ -109,6 +109,9 @@ console.log('INPUT_BUILD_SCRIPT', process.env.INPUT_BUILD_SCRIPT);
 console.log('INPUT_REPO_TOKEN', process.env.INPUT_REPO_TOKEN);
 console.log('!!INPUT_REPO_TOKEN', !!process.env.INPUT_REPO_TOKEN);
 
+console.log('INPUT_REPO-TOKEN', process.env['INPUT_REPO-TOKEN']);
+console.log('!!INPUT_REPO-TOKEN', !!process.env['INPUT_REPO-TOKEN']);
+
 exports.clean = clean;
 exports.build = clean;
 exports.default = clean;
