@@ -102,6 +102,8 @@ function watch(cb) {
   cb();
 }
 
+console.log('ENV', process.env);
+
 exports.clean = clean;
-exports.build = gulp.series(clean, transformMinifyAndCopy);
-exports.default = gulp.series(clean, transformMinifyAndCopy, serve, watch);
+exports.build = gulp.series();
+exports.default = gulp.series();
