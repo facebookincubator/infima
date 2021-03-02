@@ -103,11 +103,12 @@ function watch(cb) {
 }
 
 console.log('ENV', process.env);
+
 console.log('INPUT_BUILD_SCRIPT', process.env.INPUT_BUILD_SCRIPT);
+
 console.log('INPUT_REPO_TOKEN', process.env.INPUT_REPO_TOKEN);
-console.log('!!INPUT_REPO_TOKEN', !!process.env.INPUT_REPO_TOKEN);
 console.log('!!INPUT_REPO_TOKEN', !!process.env.INPUT_REPO_TOKEN);
 
 exports.clean = clean;
-exports.build = gulp.series();
-exports.default = gulp.series();
+exports.build = clean;
+exports.default = clean;
