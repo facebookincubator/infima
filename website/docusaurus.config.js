@@ -32,11 +32,8 @@ module.exports = {
   tagline: 'A modern styling framework for content-driven websites 🔥',
   organizationName: 'facebookincubator',
   projectName: 'infima',
-  baseUrl: isNetlify
-    ? '/'
-    : // for GH pages: https://facebookincubator.github.io/infima/
-      '/infima/',
-  url: 'https://facebookincubator.github.io',
+  baseUrl: '/',
+  url: 'https://infima.dev',
   favicon: 'img/logo.png',
   themeConfig: {
     navbar: {
