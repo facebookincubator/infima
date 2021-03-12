@@ -11,8 +11,8 @@
     "deploy": "GIT_USER=facebookincubator USE_SSH=true docusaurus deploy"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.a58baacdc",
-    "@docusaurus/preset-classic": "2.0.0-alpha.a58baacdc",
+    "@docusaurus/core": "2.0.0-alpha.71",
+    "@docusaurus/preset-classic": "2.0.0-alpha.71",
     "classnames": "^2.2.6",
     "prettier": "^1.17.1",
     "react": "^16.12.0",
