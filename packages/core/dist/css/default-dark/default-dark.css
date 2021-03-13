@@ -2316,7 +2316,6 @@ hr:after {
   }
 
 .navbar--fixed-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: var(--ifm-z-index-fixed);
@@ -2351,7 +2350,8 @@ hr:after {
 
 .navbar__toggle {
     background: none;
-    border: 0;
+    border: none;
+    color: inherit;
     cursor: pointer;
     display: none;
     margin-right: 0.5rem;
@@ -2469,22 +2469,20 @@ hr:after {
     position: fixed;
     top: 0;
     transform: translate3d(-100%, 0, 0);
+    visibility: hidden;
     width: var(--ifm-navbar-sidebar-width);
-    transition-property: opacity, transform;
+    transition-property: opacity, visibility, transform;
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
   }
 
 .navbar-sidebar--show .navbar-sidebar, .navbar-sidebar--show .navbar-sidebar__backdrop  {
         opacity: 1;
+        visibility: visible;
       }
 
 .navbar-sidebar--show .navbar-sidebar {
         transform: translate3d(0, 0, 0);
-      }
-
-.navbar-sidebar--show .navbar-sidebar__backdrop {
-        pointer-events: all;
       }
 
 .navbar-sidebar__backdrop {
@@ -2492,11 +2490,13 @@ hr:after {
       bottom: 0;
       left: 0;
       opacity: 0;
-      pointer-events: none;
       position: fixed;
       right: 0;
       top: 0;
-      transition: opacity 100ms ease-in-out;
+      visibility: hidden;
+      transition-property: opacity, visibility;
+      transition-duration: 100ms;
+      transition-timing-function: ease-in-out;
     }
 
 .navbar-sidebar__brand {

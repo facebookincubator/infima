@@ -80,7 +80,8 @@
 
   &__toggle {
     background: none;
-    border: 0;
+    border: none;
+    color: inherit;
     cursor: pointer;
     display: none;
     margin-right: 0.5rem;
@@ -200,20 +201,18 @@
     position: fixed;
     top: 0;
     transform: translate3d(-100%, 0, 0);
+    visibility: hidden;
     width: var(--ifm-navbar-sidebar-width);
-    @mixin transition opacity transform, 250ms, ease-in-out;
+    @mixin transition opacity visibility transform, 250ms, ease-in-out;
 
     &--show {
       ^&, ^&__backdrop  {
         opacity: 1;
+        visibility: visible;
       }
 
       ^& {
         transform: translate3d(0, 0, 0);
-      }
-      
-      ^&__backdrop {
-        pointer-events: all;
       }
     }
 
@@ -222,11 +221,11 @@
       bottom: 0;
       left: 0;
       opacity: 0;
-      pointer-events: none;
       position: fixed;
       right: 0;
       top: 0;
-      transition: opacity 100ms ease-in-out;
+      visibility: hidden;
+      @mixin transition opacity visibility, 100ms, ease-in-out;
     }
 
     &__brand {
