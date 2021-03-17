@@ -8,6 +8,7 @@ On `master`:
 1. bump versions in `package.json` of all packages
 1. bump `postcss-preset-infima` version in `core` package `devDependencies`
 1. bump `infima` version in `postcss-preset-infima` package `peerDependencies`
+1. `yarn install` (to update lock after versions bump)
 1. `git commit -a -m "release: v0.2.0-alpha.xx"`
 1. `git tag -a "v0.2.0-alpha.xx" -m "release: v0.2.0-alpha.xx"`
 1. `yarn workspace infima publish`
