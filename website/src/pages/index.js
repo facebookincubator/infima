@@ -52,7 +52,7 @@ function Home() {
                     developed alongside{' '}
                     <a
                       className={styles.sectionDarkLink}
-                      href="https://v2.docusaurus.io"
+                      href="https://docusaurus.io"
                       rel="noreferrer noopener"
                       target="_blank">
                       Docusaurus 2
