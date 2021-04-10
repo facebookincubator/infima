@@ -19,11 +19,11 @@
 .menu {
   font-weight: var(--ifm-font-weight-semibold);
   overflow-x: hidden;
-  
+
   @media print {
     display: none;
   }
-  
+
   &__list {
     list-style-type: none;
     margin: 0;
@@ -58,9 +58,12 @@
     justify-content: space-between;
     line-height: 20px;
     padding: var(--ifm-menu-link-padding-vertical)
+      calc(var(--ifm-menu-link-padding-horizontal) + 1.25rem)
+      var(--ifm-menu-link-padding-vertical)
       var(--ifm-menu-link-padding-horizontal);
+    position: relative;
     @mixin transition color background;
-      
+
     &:hover {
       text-decoration: none;
     }
@@ -71,6 +74,9 @@
       display: inline-block;
       filter: var(--ifm-menu-link-sublist-icon-filter);
       height: 1.25rem;
+      position: absolute;
+      right: var(--ifm-menu-link-padding-horizontal);
+      top: var(--ifm-menu-link-padding-vertical);
       transform: rotate(180deg);
       width: 1.25rem;
       @mixin transition transform, var(--ifm-transition-fast), linear;
@@ -84,11 +90,11 @@
 
     &--active {
       color: var(--ifm-menu-color-active);
-      
+
       &:hover {
         color: var(--ifm-menu-color-active);
       }
-      
+
       &:not(^&--sublist) {
         background: var(--ifm-menu-color-background-active);
       }
