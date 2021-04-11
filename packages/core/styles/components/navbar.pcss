@@ -31,7 +31,7 @@
   padding: var(--ifm-navbar-padding-vertical)
     var(--ifm-navbar-padding-horizontal);
   width: 100%;
-  
+
   @media print {
     display: none;
   }
@@ -66,6 +66,7 @@
     font-weight: bold;
     height: 2rem;
     margin-right: 1rem;
+    min-width: 0;
 
     &:hover {
       color: inherit;
@@ -74,8 +75,10 @@
   }
 
   &__title {
-    flex-shrink: 0;
-    max-width: 100%;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   &__toggle {
@@ -100,7 +103,8 @@
   &__items {
     align-items: center;
     display: flex;
-    flex: 1 1 auto;
+    flex: 1 1 0;
+    min-width: 0;
 
     &--center {
       flex: 0 0 auto;
@@ -111,6 +115,7 @@
     }
 
     &--right {
+      flex: 0 0 auto;
       justify-content: flex-end;
     }
   }
@@ -139,6 +144,7 @@
     font-weight: var(--ifm-font-weight-semibold);
     padding: var(--ifm-navbar-item-padding-vertical)
       var(--ifm-navbar-item-padding-horizontal);
+    position: relative;
     text-decoration: none;
 
     &:hover,
@@ -166,11 +172,10 @@
   }
 
   &__search {
-    padding-left: var(--ifm-navbar-padding-horizontal);
-
     &-input {
       appearance: none; /* Algolia will add type="search" to the input in Safari and Safari's styling will override the styling here. */
-      background: var(--ifm-navbar-search-input-background-color) var(--ifm-navbar-search-input-icon) no-repeat 0.75rem center / 1rem 1rem;
+      background: var(--ifm-navbar-search-input-background-color)
+        var(--ifm-navbar-search-input-icon) no-repeat 0.75rem center / 1rem 1rem;
       border: none;
       border-radius: 2rem;
       color: var(--ifm-navbar-search-input-color);
@@ -206,7 +211,8 @@
     @mixin transition opacity visibility transform, 250ms, ease-in-out;
 
     &--show {
-      ^&, ^&__backdrop  {
+      ^&,
+      ^&__backdrop {
         opacity: 1;
         visibility: visible;
       }
@@ -232,6 +238,7 @@
       align-items: center;
       box-shadow: var(--ifm-navbar-shadow);
       display: flex;
+      flex: 1;
       height: var(--ifm-navbar-height);
       padding: var(--ifm-navbar-padding-vertical)
         var(--ifm-navbar-padding-horizontal);
