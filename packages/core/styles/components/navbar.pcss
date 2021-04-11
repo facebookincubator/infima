@@ -103,7 +103,7 @@
   &__items {
     align-items: center;
     display: flex;
-    flex: 1 1 0;
+    flex: 1;
     min-width: 0;
 
     &--center {
@@ -111,6 +111,10 @@
 
       ^^&__brand {
         margin: 0;
+      }
+
+      + ^&--right {
+        flex: 1;
       }
     }
 

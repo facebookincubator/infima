@@ -2362,7 +2362,7 @@ hr:after {
 .navbar__items {
     align-items: center;
     display: flex;
-    flex: 1 1 0;
+    flex: 1;
     min-width: 0;
   }
 
@@ -2372,6 +2372,10 @@ hr:after {
 
 .navbar__items--center .navbar__brand {
         margin: 0;
+      }
+
+.navbar__items--center + .navbar__items--right {
+        flex: 1;
       }
 
 .navbar__items--right {
