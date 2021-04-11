@@ -2043,12 +2043,12 @@ hr:after {
     padding: 0.5rem;
     position: absolute;
     top: 100%;
-    transform: scale(.8);
+    transform: scale(0.8);
     visibility: hidden;
     z-index: var(--ifm-z-index-dropdown);
     transition-property: opacity, transform, visibility;
     transition-duration: var(--ifm-transition-fast);
-    transition-timing-function: cubic-bezier(.24,.22,.015,1.56);
+    transition-timing-function: cubic-bezier(0.24, 0.22, 0.015, 1.56);
   }
 
 .dropdown__link {
@@ -2075,11 +2075,12 @@ hr:after {
 .dropdown > .navbar__link:after {
     border-color: currentColor transparent;
     border-style: solid;
-    border-width: .4em .4em 0;
+    border-width: 0.4em 0.4em 0;
     content: '';
-    display: inline-block;
     margin-left: 0.3em;
-    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
 /**
@@ -2336,6 +2337,7 @@ hr:after {
     font-weight: bold;
     height: 2rem;
     margin-right: 1rem;
+    min-width: 0;
   }
 
 .navbar__brand:hover {
@@ -2344,8 +2346,10 @@ hr:after {
     }
 
 .navbar__title {
-    flex-shrink: 0;
-    max-width: 100%;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
 .navbar__toggle {
@@ -2366,7 +2370,8 @@ hr:after {
 .navbar__items {
     align-items: center;
     display: flex;
-    flex: 1 1 auto;
+    flex: 1 1 0;
+    min-width: 0;
   }
 
 .navbar__items--center {
@@ -2378,6 +2383,7 @@ hr:after {
       }
 
 .navbar__items--right {
+      flex: 0 0 auto;
       justify-content: flex-end;
     }
 
@@ -2401,6 +2407,7 @@ hr:after {
     font-weight: var(--ifm-font-weight-semibold);
     padding: var(--ifm-navbar-item-padding-vertical)
       var(--ifm-navbar-item-padding-horizontal);
+    position: relative;
     text-decoration: none;
   }
 
@@ -2427,15 +2434,12 @@ hr:after {
     --ifm-navbar-search-input-placeholder-color: rgba(255, 255, 255, 0.5);
   }
 
-.navbar__search {
-    padding-left: var(--ifm-navbar-padding-horizontal);
-  }
-
 .navbar__search-input {
       -webkit-appearance: none;
          -moz-appearance: none;
               appearance: none; /* Algolia will add type="search" to the input in Safari and Safari's styling will override the styling here. */
-      background: var(--ifm-navbar-search-input-background-color) var(--ifm-navbar-search-input-icon) no-repeat 0.75rem center / 1rem 1rem;
+      background: var(--ifm-navbar-search-input-background-color)
+        var(--ifm-navbar-search-input-icon) no-repeat 0.75rem center / 1rem 1rem;
       border: none;
       border-radius: 2rem;
       color: var(--ifm-navbar-search-input-color);
@@ -2476,7 +2480,8 @@ hr:after {
     transition-timing-function: ease-in-out;
   }
 
-.navbar-sidebar--show .navbar-sidebar, .navbar-sidebar--show .navbar-sidebar__backdrop  {
+.navbar-sidebar--show .navbar-sidebar,
+      .navbar-sidebar--show .navbar-sidebar__backdrop {
         opacity: 1;
         visibility: visible;
       }
@@ -2503,6 +2508,7 @@ hr:after {
       align-items: center;
       box-shadow: var(--ifm-navbar-shadow);
       display: flex;
+      flex: 1;
       height: var(--ifm-navbar-height);
       padding: var(--ifm-navbar-padding-vertical)
         var(--ifm-navbar-padding-horizontal);
