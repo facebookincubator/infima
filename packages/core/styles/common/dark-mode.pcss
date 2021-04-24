@@ -27,5 +27,9 @@ html[data-theme='dark'] {
 
   --ifm-color-content-secondary: rgba(255, 255, 255, 1);
   
-  --ifm-breadcrumb-separator-filter: invert(64%) sepia(11%) saturate(0%) hue-rotate(149deg) brightness(99%) contrast(95%); 
+  --ifm-breadcrumb-separator-filter: invert(64%) sepia(11%) saturate(0%) hue-rotate(149deg) brightness(99%) contrast(95%);
+  
+  --ifm-code-background: color-mod(
+    var(--ifm-color-gray-900) tint(var(--ifm-dark-value))
+  );
 }
