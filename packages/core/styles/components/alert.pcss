@@ -17,10 +17,8 @@
 
 .alert {
   background-color: var(--ifm-alert-background-color);
-  border-color: var(--ifm-alert-border-color);
+  border: var(--ifm-alert-border-width) solid var(--ifm-alert-border-color);
   border-radius: var(--ifm-alert-border-radius);
-  border-style: solid;
-  border-width: var(--ifm-alert-border-width);
   color: var(--ifm-alert-color);
   padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
 
@@ -41,7 +39,6 @@
   }
 
   .close {
-    margin-right: calc(var(--ifm-alert-padding-horizontal) * -1);
-    margin-top: calc(var(--ifm-alert-padding-vertical) * -1);
+    margin: calc(var(--ifm-alert-padding-vertical) * -1) calc(var(--ifm-alert-padding-horizontal) * -1) 0 0;
   }
 }
