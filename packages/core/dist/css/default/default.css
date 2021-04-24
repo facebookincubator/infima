@@ -357,8 +357,9 @@ html {
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
   text-rendering: optimizelegibility;
-  -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
 }
 
 body {
@@ -2277,11 +2278,11 @@ hr:after {
     background: var(--ifm-background-surface-color);
     bottom: 0;
     left: 0;
-    overscroll-behavior: contain;
+    -ms-scroll-chaining: none;
+        overscroll-behavior: contain;
     padding: 1rem;
     position: fixed;
     right: 0;
-    -ms-scroll-chaining: none;
     top: 0;
     z-index: var(--ifm-z-index-overlay);
   }
