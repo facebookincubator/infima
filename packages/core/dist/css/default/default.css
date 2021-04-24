@@ -157,13 +157,13 @@
   --ifm-z-index-fixed: 200;
   --ifm-z-index-overlay: 400;
   --ifm-container-width: 1140px;
-  --ifm-container-width-xl: 1320px;
-  --ifm-code-background: var(--ifm-color-emphasis-200);
+  --ifm-container-width-xl: 1320px;  
+  --ifm-code-background: rgb(246, 247, 248);
   --ifm-code-border-radius: var(--ifm-global-radius);
   --ifm-code-color: var(--ifm-color-emphasis-900);
   --ifm-code-font-size: 90%;
-  --ifm-code-padding-horizontal: 0.4rem;
-  --ifm-code-padding-vertical: 0.2rem;
+  --ifm-code-padding-horizontal: 0.3rem;
+  --ifm-code-padding-vertical: 0.1rem;
 
   --ifm-pre-background: var(--ifm-color-emphasis-100);
   --ifm-pre-border-radius: var(--ifm-code-border-radius);
@@ -948,11 +948,13 @@ body {
 
 code {
   background-color: var(--ifm-code-background);
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
   border-radius: var(--ifm-code-border-radius);
   color: var(--ifm-code-color);
   font-family: var(--ifm-font-family-monospace);
   font-size: var(--ifm-code-font-size);
   padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
+  vertical-align: middle;
 }
 
 a code {
@@ -967,18 +969,14 @@ pre {
   margin: 0 0 var(--ifm-spacing-vertical);
   overflow: auto;
   padding: var(--ifm-pre-padding);
-  word-wrap: normal;
 }
 
 pre code {
     background-color: transparent;
-    display: inline;
+    border: none;
     font-size: 100%;
     line-height: inherit;
     padding: 0;
-    white-space: pre;
-    word-break: normal;
-    word-wrap: normal;
   }
 
 kbd {
@@ -2910,7 +2908,9 @@ html[data-theme='dark'] {
 
   --ifm-color-content-secondary: rgba(255, 255, 255, 1);
   
-  --ifm-breadcrumb-separator-filter: invert(64%) sepia(11%) saturate(0%) hue-rotate(149deg) brightness(99%) contrast(95%); 
+  --ifm-breadcrumb-separator-filter: invert(64%) sepia(11%) saturate(0%) hue-rotate(149deg) brightness(99%) contrast(95%);
+  
+  --ifm-code-background: rgb(51, 52, 55);
 }
 
 @media (min-width: 1440px) {

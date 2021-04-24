@@ -5,13 +5,15 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-:root {
-  --ifm-code-background: var(--ifm-color-emphasis-200);
+:root {  
+  --ifm-code-background: color-mod(
+    var(--ifm-color-emphasis-100) tint(var(--ifm-light-value))
+  );
   --ifm-code-border-radius: var(--ifm-global-radius);
   --ifm-code-color: var(--ifm-color-emphasis-900);
   --ifm-code-font-size: 90%;
-  --ifm-code-padding-horizontal: 0.4rem;
-  --ifm-code-padding-vertical: 0.2rem;
+  --ifm-code-padding-horizontal: 0.3rem;
+  --ifm-code-padding-vertical: 0.1rem;
 
   --ifm-pre-background: var(--ifm-color-emphasis-100);
   --ifm-pre-border-radius: var(--ifm-code-border-radius);
@@ -22,11 +24,13 @@
 
 code {
   background-color: var(--ifm-code-background);
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
   border-radius: var(--ifm-code-border-radius);
   color: var(--ifm-code-color);
   font-family: var(--ifm-font-family-monospace);
   font-size: var(--ifm-code-font-size);
   padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
+  vertical-align: middle;
 }
 
 a code {
@@ -41,17 +45,13 @@ pre {
   margin: 0 0 var(--ifm-spacing-vertical);
   overflow: auto;
   padding: var(--ifm-pre-padding);
-  word-wrap: normal;
 
   code {
     background-color: transparent;
-    display: inline;
+    border: none;
     font-size: 100%;
     line-height: inherit;
     padding: 0;
-    white-space: pre;
-    word-break: normal;
-    word-wrap: normal;
   }
 }
 
