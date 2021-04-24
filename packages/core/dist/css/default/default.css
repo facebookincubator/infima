@@ -2118,6 +2118,8 @@ hr:after {
 
 .footer__title {
     color: var(--ifm-footer-title-color);
+    font: bold var(--ifm-h4-font-size)/var(--ifm-heading-line-height) var(--ifm-font-family-base);    
+    margin-bottom: var(--ifm-heading-margin-bottom);
   }
 
 .footer__item {
