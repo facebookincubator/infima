@@ -2071,20 +2071,17 @@ hr:after {
       --ifm-dropdown-link-color: var(--ifm-link-color);
     }
 
-.dropdown:not(.dropdown--nocaret) > .navbar__link {
-    padding-left: calc(var(--ifm-navbar-item-padding-horizontal) + 1.1em);
+.dropdown > .navbar__link:after {
+    border-color: currentColor transparent;
+    border-style: solid;
+    border-width: 0.4em 0.4em 0;
+    content: '';
+    display: inline-block;
+    margin-right: 0.3em;
+    position: relative;
+    top: 1px;
+    transform: translateY(-50%);
   }
-
-.dropdown:not(.dropdown--nocaret) > .navbar__link:after {
-      border-color: currentColor transparent;
-      border-style: solid;
-      border-width: 0.4em 0.4em 0;
-      content: '';
-      margin-right: 0.3em;
-      position: absolute;
-      top: 55%;
-      transform: translateY(-50%);
-    }
 
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -2234,9 +2231,7 @@ hr:after {
     justify-content: space-between;
     line-height: 20px;
     padding: var(--ifm-menu-link-padding-vertical)
-      var(--ifm-menu-link-padding-horizontal)
-      var(--ifm-menu-link-padding-vertical)
-      calc(var(--ifm-menu-link-padding-horizontal) + 1.25rem);
+      var(--ifm-menu-link-padding-horizontal);
     position: relative;
     transition-property: color, background;
     transition-duration: var(--ifm-transition-fast);
@@ -2253,16 +2248,13 @@ hr:after {
     }
 
 .menu__link--sublist:after {
-      background: var(--ifm-menu-link-sublist-icon) 50% / 2rem 2rem;
+      background: var(--ifm-menu-link-sublist-icon) 50% / 2rem 2rem no-repeat;
       content: ' ';
       display: inline-block;
       filter: var(--ifm-menu-link-sublist-icon-filter);
       height: 1.25rem;
-      position: absolute;
-      left: var(--ifm-menu-link-padding-horizontal);
-      top: var(--ifm-menu-link-padding-vertical);
+      min-width: 1.25rem;
       transform: rotate(-180deg);
-      width: 1.25rem;
       transition: transform var(--ifm-transition-fast) linear;
     }
 
