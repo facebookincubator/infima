@@ -18,6 +18,6 @@ jobs:
       - uses: preactjs/compressed-size-action@v2
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          build-script: "yarn build:packages && yarn build:v2 --locale en"
+          build-script: "build:en"
           pattern: "./packages/core/dist/**/*.{js,css}"
           compression: 'none'
