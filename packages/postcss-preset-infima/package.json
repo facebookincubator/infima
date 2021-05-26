@@ -18,7 +18,7 @@
     "url": "https://github.com/facebookincubator/infima/issues"
   },
   "dependencies": {
-    "postcss": "^8.2.6",
+    "postcss": "^8.2.10",
     "postcss-combine-duplicated-selectors": "^10.0.2",
     "postcss-css-variables": "^0.17.0",
     "postcss-each": "^0.10.0",
