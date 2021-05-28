@@ -2065,7 +2065,7 @@ hr:after {
     display: inline-block;
     margin-left: 0.3em;
     position: relative;
-    top: 1px;
+    top: 2px;
     transform: translateY(-50%);
   }
 
@@ -2234,7 +2234,7 @@ hr:after {
     }
 
 .menu__link--sublist:after {
-      background: var(--ifm-menu-link-sublist-icon) 50% / 2rem 2rem no-repeat;
+      background: var(--ifm-menu-link-sublist-icon) 50% / 2rem 2rem;
       content: ' ';
       display: inline-block;
       filter: var(--ifm-menu-link-sublist-icon-filter);
