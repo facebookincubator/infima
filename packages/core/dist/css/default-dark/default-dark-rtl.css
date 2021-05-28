@@ -1212,7 +1212,9 @@ table {
 }
 
 table thead tr {
-    border-bottom: 2px solid var(--ifm-table-border-color);
+    border-bottom-color: var(--ifm-table-border-color);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
   }
 
 table tr {
