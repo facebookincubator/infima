@@ -2386,6 +2386,10 @@ hr:after {
       justify-content: flex-end;
     }
 
+.navbar__items--right > :last-child {
+        padding-left: 0;
+      }
+
 .navbar__item {
     display: inline-block;
     padding: var(--ifm-navbar-item-padding-vertical)

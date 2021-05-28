@@ -2400,6 +2400,10 @@ hr:after {
       justify-content: flex-end;
     }
 
+.navbar__items--right > :last-child {
+        padding-right: 0;
+      }
+
 .navbar__item {
     display: inline-block;
     padding: var(--ifm-navbar-item-padding-vertical)
