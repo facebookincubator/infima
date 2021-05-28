@@ -75,18 +75,15 @@
     }
   }
 
-  &:not(&--nocaret) > .navbar__link {
-    padding-right: calc(var(--ifm-navbar-item-padding-horizontal) + 1.1em);
-    
-    &:after {
-      border-color: currentColor transparent;
-      border-style: solid;
-      border-width: 0.4em 0.4em 0;
-      content: '';
-      margin-left: 0.3em;
-      position: absolute;
-      top: 55%;
-      transform: translateY(-50%);
-    }
+  & > .navbar__link:after {
+    border-color: currentColor transparent;
+    border-style: solid;
+    border-width: 0.4em 0.4em 0;
+    content: '';
+    display: inline-block;
+    margin-left: 0.3em;
+    position: relative;
+    top: 2px;
+    transform: translateY(-50%);
   }
 }
