@@ -21,7 +21,6 @@
 }
 
 .button {
-  appearance: none;
   background-color: var(--ifm-button-background-color);
   border-color: var(--ifm-button-border-color);
   border-radius: var(--ifm-button-border-radius);
@@ -40,11 +39,11 @@
       var(--ifm-button-padding-horizontal) * var(--ifm-button-size-multiplier)
     );
   text-align: center;
-  text-decoration: none;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  @mixin transition color background border-color, var(--ifm-button-transition-duration), var(--ifm-transition-timing-default);
+  @mixin transition color background border-color,
+    var(--ifm-button-transition-duration), var(--ifm-transition-timing-default);
 
   &:hover {
     color: var(--ifm-button-color); /* Override for button links. */

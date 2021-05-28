@@ -14,6 +14,7 @@
     "lint:ci": "yarn workspace infima lint",
     "start": "cd packages/core && npm start",
     "build": "yarn workspace infima build",
+    "build:en": "yarn workspace infima build --locale en",
     "website:start": "yarn workspace infima-website start",
     "website:build": "yarn workspace infima-website build",
     "website:deploy": "yarn workspace infima-website deploy",
