@@ -1195,6 +1195,12 @@ table {
   width: 100%;
 }
 
+table thead tr {
+    border-bottom-color: var(--ifm-table-border-color);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+  }
+
 table tr {
     background-color: var(--ifm-table-background);
     border-top: var(--ifm-table-border-width) solid
