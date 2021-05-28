@@ -2863,25 +2863,6 @@ hr:after {
  * LICENSE file in the root directory of this source tree.
  */
 
-.thin-scrollbar::-webkit-scrollbar {
-  height: var(--ifm-scrollbar-size);
-  width: var(--ifm-scrollbar-size);
-}
-
-.thin-scrollbar::-webkit-scrollbar-track {
-  background: var(--ifm-scrollbar-track-background-color);
-  border-radius: 10px;
-}
-
-.thin-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--ifm-scrollbar-thumb-background-color);
-  border-radius: 10px;
-}
-
-.thin-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: var(--ifm-scrollbar-thumb-hover-background-color);
-}
-
 /* Mode */
 
 /**
@@ -3010,6 +2991,24 @@ html[data-theme='dark'] {
         .tabs--block .tabs__item:not(:last-child) {
           margin-bottom: var(--ifm-tabs-spacing);
         }
+}
+
+@media (pointer: fine) {
+  .thin-scrollbar::-webkit-scrollbar {
+    height: var(--ifm-scrollbar-size);
+    width: var(--ifm-scrollbar-size);
+  }
+  .thin-scrollbar::-webkit-scrollbar-track {
+    background: var(--ifm-scrollbar-track-background-color);
+    border-radius: 10px;
+  }
+  .thin-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--ifm-scrollbar-thumb-background-color);
+    border-radius: 10px;
+  }
+  .thin-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--ifm-scrollbar-thumb-hover-background-color);
+  }
 }
 
 @media print {
