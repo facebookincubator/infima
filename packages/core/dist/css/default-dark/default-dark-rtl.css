@@ -1295,7 +1295,9 @@ blockquote > :last-child {
 /* Horizontal Rules */
 
 hr {
-  border: var(--ifm-hr-border-width) solid var(--ifm-hr-border-color);
+  border-color: var(--ifm-hr-border-color);
+  border-style: solid;
+  border-width: var(--ifm-hr-border-width);
   box-sizing: content-box;
   margin: var(--ifm-hr-margin-vertical) 0;
   overflow: hidden;
@@ -1323,8 +1325,10 @@ hr:after {
 
 .alert {
   background-color: var(--ifm-alert-background-color);
-  border: var(--ifm-alert-border-width) solid var(--ifm-alert-border-color);
+  border-color: var(--ifm-alert-border-color);
   border-radius: var(--ifm-alert-border-radius);
+  border-style: solid;
+  border-width: var(--ifm-alert-border-width);
   color: var(--ifm-alert-color);
   padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
 }
@@ -1366,7 +1370,8 @@ hr:after {
   }
 
 .alert .close {
-    margin: calc(var(--ifm-alert-padding-vertical) * -1) 0 0 calc(var(--ifm-alert-padding-horizontal) * -1);
+    margin: calc(var(--ifm-alert-padding-vertical) * -1)
+      0 0 calc(var(--ifm-alert-padding-horizontal) * -1);
   }
 
 /**
@@ -1579,8 +1584,10 @@ hr:after {
 
 .button {
   background-color: var(--ifm-button-background-color);
-  border: var(--ifm-button-border-width) solid var(--ifm-button-border-color);
+  border-color: var(--ifm-button-border-color);
   border-radius: var(--ifm-button-border-radius);
+  border-style: solid;
+  border-width: var(--ifm-button-border-width);
   color: var(--ifm-button-color);
   cursor: pointer;
   display: inline-block;
