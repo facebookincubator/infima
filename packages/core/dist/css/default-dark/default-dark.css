@@ -2033,8 +2033,10 @@ hr:after {
     border-radius: var(--ifm-global-radius);
     box-shadow: var(--ifm-global-shadow-md);
     list-style: none;
+    max-height: calc(100vh - var(--ifm-navbar-height));
     min-width: 10rem;
     opacity: 0;
+    overflow-y: auto;
     padding: 0.5rem;
     position: absolute;
     top: 100%;
