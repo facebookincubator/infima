@@ -2225,7 +2225,7 @@ hr:after {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    line-height: 20px;
+    line-height: 1.25;
     padding: var(--ifm-menu-link-padding-vertical)
       var(--ifm-menu-link-padding-horizontal);
     position: relative;
@@ -2453,7 +2453,7 @@ hr:after {
       cursor: text;
       display: inline-block;
       font-size: 0.9rem;
-      line-height: 2rem;
+      height: 2rem;
       padding: 0 2.25rem 0 0.5rem;
       width: 12.5rem;
     }
