@@ -22,7 +22,7 @@
   &--show {
     ^&__menu {
       opacity: 1;
-      transform: scale(1);
+      transform: translateY(0);
       visibility: visible;
     }
   }
@@ -47,11 +47,10 @@
     padding: 0.5rem;
     position: absolute;
     top: 100%;
-    transform: scale(0.8);
+    transform: translateY(-10px);
     visibility: hidden;
     z-index: var(--ifm-z-index-dropdown);
-    @mixin transition opacity transform visibility, ,
-      cubic-bezier(0.24, 0.22, 0.015, 1.56);
+    @mixin transition opacity transform visibility;
   }
 
   &__link {

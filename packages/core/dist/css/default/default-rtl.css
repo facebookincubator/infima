@@ -2002,7 +2002,7 @@ hr:after {
 
 .dropdown--hoverable:hover .dropdown__menu, .dropdown--show .dropdown__menu {
       opacity: 1;
-      transform: scale(1);
+      transform: translateY(0);
       visibility: visible;
     }
 
@@ -2024,12 +2024,12 @@ hr:after {
     padding: 0.5rem;
     position: absolute;
     top: 100%;
-    transform: scale(0.8);
+    transform: translateY(-10px);
     visibility: hidden;
     z-index: var(--ifm-z-index-dropdown);
     transition-property: opacity, transform, visibility;
     transition-duration: var(--ifm-transition-fast);
-    transition-timing-function: cubic-bezier(0.24, 0.22, 0.015, 1.56);
+    transition-timing-function: var(--ifm-transition-timing-default);
   }
 
 .dropdown__link {
