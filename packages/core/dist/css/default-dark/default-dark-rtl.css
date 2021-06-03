@@ -2209,7 +2209,7 @@ hr:after {
     }
 
 .menu__list-item {
-    margin: 0.25rem 0;
+    margin-top: 0.25rem;
   }
 
 .menu__list-item--collapsed .menu__list {
