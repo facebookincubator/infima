@@ -1428,7 +1428,8 @@ hr:after {
   }
 
 .avatar__name {
-    margin: 0;
+    font: bold var(--ifm-h4-font-size) / var(--ifm-heading-line-height)
+      var(--ifm-font-family-base);
   }
 
 .avatar__subtitle {
@@ -2049,11 +2050,12 @@ hr:after {
   }
 
 .dropdown__link {
-    border-radius: 0.375rem;
+    border-radius: 0.25rem;
     color: var(--ifm-dropdown-link-color);
     display: block;
     font-size: 0.875rem;
-    padding: 0.375rem 0.5rem;
+    margin-top: 0.2rem;
+    padding: 0.25rem 0.5rem;
     white-space: nowrap;
   }
 
