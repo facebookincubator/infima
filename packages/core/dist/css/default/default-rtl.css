@@ -108,7 +108,7 @@
   /* Base. */
   --ifm-color-content: var(--ifm-color-emphasis-900);
   --ifm-color-content-inverse: var(--ifm-color-emphasis-0);
-  --ifm-color-content-secondary: #606770;
+  --ifm-color-content-secondary: #525860;
 
   --ifm-background-color: transparent; /* Body's background. */
   --ifm-background-surface-color: var(--ifm-color-content-inverse);
@@ -299,7 +299,7 @@
   --ifm-menu-link-sublist-icon-filter: none;
   --ifm-navbar-background-color: var(--ifm-background-surface-color);
   --ifm-navbar-height: 3.75rem;
-  --ifm-navbar-item-padding-horizontal: 1rem;
+  --ifm-navbar-item-padding-horizontal: 0.75rem;
   --ifm-navbar-item-padding-vertical: 0.25rem;
   --ifm-navbar-link-color: var(--ifm-font-color-base);
   --ifm-navbar-link-hover-color: var(--ifm-color-primary);
