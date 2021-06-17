@@ -1,6 +1,6 @@
 {
   "name": "postcss-preset-infima",
-  "version": "0.2.0-alpha.24",
+  "version": "0.2.0-alpha.25",
   "description": "Postcss preset for Infima",
   "main": "index.js",
   "author": "Yangshun Tay",
@@ -31,7 +31,7 @@
     "postcss-sort-media-queries": "^3.4.3"
   },
   "peerDependencies": {
-    "infima": "^0.2.0-alpha.24"
+    "infima": "^0.2.0-alpha.25"
   },
   "engines": {
     "node": ">=12"
