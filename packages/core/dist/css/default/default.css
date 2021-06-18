@@ -223,6 +223,10 @@
   --ifm-hr-border-color: var(--ifm-color-emphasis-500);
   --ifm-hr-border-width: 1px;
   --ifm-hr-margin-vertical: 1.5rem;
+  --ifm-scrollbar-size: 7px;
+  --ifm-scrollbar-track-background-color: #f1f1f1;
+  --ifm-scrollbar-thumb-background-color: #888;
+  --ifm-scrollbar-thumb-hover-background-color: #555;
   --ifm-alert-background-color: inherit; /* Set a default which will be overridden later. */
   --ifm-alert-border-color: inherit; /* Set a default which will be overridden later. */
   --ifm-alert-border-radius: var(--ifm-global-radius);
@@ -332,10 +336,6 @@
   --ifm-tabs-padding-horizontal: 1rem;
   --ifm-tabs-padding-vertical: 1rem;
   --ifm-tabs-spacing: 0.0625rem;
-  --ifm-scrollbar-size: 7px;
-  --ifm-scrollbar-track-background-color: #f1f1f1;
-  --ifm-scrollbar-thumb-background-color: #888;
-  --ifm-scrollbar-thumb-hover-background-color: #555;
 }
 
 /**
@@ -1303,6 +1303,144 @@ hr:after {
     content: '';
     display: table;
   }
+
+/* Utilities */
+
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.shadow--lw {
+    box-shadow: var(--ifm-global-shadow-lw) !important;
+  }
+
+.shadow--md {
+    box-shadow: var(--ifm-global-shadow-md) !important;
+  }
+
+.shadow--tl {
+    box-shadow: var(--ifm-global-shadow-tl) !important;
+  }
+
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.text--primary {
+    color: var(--ifm-color-primary);
+  }
+
+.text--secondary {
+    color: var(--ifm-color-secondary);
+  }
+
+.text--success {
+    color: var(--ifm-color-success);
+  }
+
+.text--info {
+    color: var(--ifm-color-info);
+  }
+
+.text--warning {
+    color: var(--ifm-color-warning);
+  }
+
+.text--danger {
+    color: var(--ifm-color-danger);
+  }
+
+.text--center {
+    text-align: center;
+  }
+
+.text--left {
+    text-align: left;
+  }
+
+.text--justify {
+    text-align: justify;
+  }
+
+.text--right {
+    text-align: right;
+  }
+
+.text--capitalize {
+    text-transform: capitalize;
+  }
+
+.text--lowercase {
+    text-transform: lowercase;
+  }
+
+.text--uppercase {
+    text-transform: uppercase;
+  }
+
+.text--light {
+    font-weight: var(--ifm-font-weight-light);
+  }
+
+.text--normal {
+    font-weight: var(--ifm-font-weight-normal);
+  }
+
+.text--semibold {
+    font-weight: var(--ifm-font-weight-semibold);
+  }
+
+.text--bold {
+    font-weight: var(--ifm-font-weight-bold);
+  }
+
+.text--italic {
+  font-style: italic;
+}
+
+.text--truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text--break {
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+.text--no-decoration,
+  .text--no-decoration:hover {
+    text-decoration: none;
+  }
+
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.clean-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+}
 
 /* Components */
 
@@ -2290,6 +2428,12 @@ hr:after {
  * LICENSE file in the root directory of this source tree.
  */
 
+html[data-theme='dark'],
+.navbar--dark {
+  --ifm-menu-link-sublist-icon-filter: invert(100%) sepia(94%) saturate(17%)
+    hue-rotate(223deg) brightness(104%) contrast(98%);
+}
+
 .navbar {
   background-color: var(--ifm-navbar-background-color);
   box-shadow: var(--ifm-navbar-shadow);
@@ -2411,12 +2555,18 @@ hr:after {
 
 .navbar--dark {
     --ifm-navbar-background-color: #242526;
-    --ifm-navbar-link-color: var(--ifm-color-white);
+    --ifm-navbar-link-color: var(--ifm-color-gray-100);
     --ifm-navbar-link-hover-color: var(--ifm-color-primary);
     --ifm-navbar-search-input-background-color: rgba(255, 255, 255, 0.1);
     --ifm-navbar-search-input-color: var(--ifm-color-white);
     --ifm-navbar-search-input-placeholder-color: rgba(255, 255, 255, 0.5);
+    --ifm-menu-color: var(--ifm-color-gray-300);
+    --ifm-navbar-toggle-color: var(--ifm-color-white);
   }
+
+.navbar--dark .navbar__toggle {
+      color: var(--ifm-color-white);
+    }
 
 .navbar--primary {
     --ifm-navbar-background-color: var(--ifm-color-primary);
@@ -2729,144 +2879,6 @@ hr:after {
       justify-content: center;
     }
 
-/* Utilities */
-
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-.shadow--lw {
-    box-shadow: var(--ifm-global-shadow-lw) !important;
-  }
-
-.shadow--md {
-    box-shadow: var(--ifm-global-shadow-md) !important;
-  }
-
-.shadow--tl {
-    box-shadow: var(--ifm-global-shadow-tl) !important;
-  }
-
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-.text--primary {
-    color: var(--ifm-color-primary);
-  }
-
-.text--secondary {
-    color: var(--ifm-color-secondary);
-  }
-
-.text--success {
-    color: var(--ifm-color-success);
-  }
-
-.text--info {
-    color: var(--ifm-color-info);
-  }
-
-.text--warning {
-    color: var(--ifm-color-warning);
-  }
-
-.text--danger {
-    color: var(--ifm-color-danger);
-  }
-
-.text--center {
-    text-align: center;
-  }
-
-.text--left {
-    text-align: left;
-  }
-
-.text--justify {
-    text-align: justify;
-  }
-
-.text--right {
-    text-align: right;
-  }
-
-.text--capitalize {
-    text-transform: capitalize;
-  }
-
-.text--lowercase {
-    text-transform: lowercase;
-  }
-
-.text--uppercase {
-    text-transform: uppercase;
-  }
-
-.text--light {
-    font-weight: var(--ifm-font-weight-light);
-  }
-
-.text--normal {
-    font-weight: var(--ifm-font-weight-normal);
-  }
-
-.text--semibold {
-    font-weight: var(--ifm-font-weight-semibold);
-  }
-
-.text--bold {
-    font-weight: var(--ifm-font-weight-bold);
-  }
-
-.text--italic {
-  font-style: italic;
-}
-
-.text--truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.text--break {
-  word-wrap: break-word !important;
-  word-break: break-word !important;
-}
-
-.text--no-decoration,
-  .text--no-decoration:hover {
-    text-decoration: none;
-  }
-
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-.clean-btn {
-  background: none;
-  border: none;
-  color: inherit;
-  cursor: pointer;
-  padding: 0;
-}
-
 /* Mode */
 
 /**
@@ -2894,13 +2906,12 @@ html[data-theme='dark'] {
 
   --ifm-hover-overlay: rgba(255, 255, 255, 0.05);
 
-  --ifm-menu-link-sublist-icon-filter: invert(100%) sepia(94%) saturate(17%) hue-rotate(223deg) brightness(104%) contrast(98%);
-
   --ifm-color-content-secondary: rgba(255, 255, 255, 1);
-  
-  --ifm-breadcrumb-separator-filter: invert(64%) sepia(11%) saturate(0%) hue-rotate(149deg) brightness(99%) contrast(95%);
-  
-  --ifm-code-background: hsla(0, 0%, 100%, .1);
+
+  --ifm-breadcrumb-separator-filter: invert(64%) sepia(11%) saturate(0%)
+    hue-rotate(149deg) brightness(99%) contrast(95%);
+
+  --ifm-code-background: hsla(0, 0%, 100%, 0.1);
 }
 
 @media (min-width: 1440px) {
