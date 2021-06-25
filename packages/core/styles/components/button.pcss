@@ -132,12 +132,10 @@
       --ifm-button-border-color: var(--ifm-color-$(color)-darker);
       --ifm-button-background-color: var(--ifm-color-$(color)-darker);
 
-      background-color: var(
-        --ifm-color-$(color)-darker
-      ); /* Has to be explicitly defined because .button--outline has quite high specificity. */
-      border-color: var(
-        --ifm-color-$(color)-darker
-      ); /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      background-color: var(--ifm-color-$(color)-darker);
+      /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      border-color: var(--ifm-color-$(color)-darker);
     }
   }
 }

@@ -1826,12 +1826,10 @@ hr:after {
       --ifm-button-border-color: var(--ifm-color-primary-darker);
       --ifm-button-background-color: var(--ifm-color-primary-darker);
 
-      background-color: var(
-        --ifm-color-primary-darker
-      ); /* Has to be explicitly defined because .button--outline has quite high specificity. */
-      border-color: var(
-        --ifm-color-primary-darker
-      ); /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      background-color: var(--ifm-color-primary-darker);
+      /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      border-color: var(--ifm-color-primary-darker);
     }
 
 .button--secondary {
@@ -1854,12 +1852,10 @@ hr:after {
       --ifm-button-border-color: var(--ifm-color-secondary-darker);
       --ifm-button-background-color: var(--ifm-color-secondary-darker);
 
-      background-color: var(
-        --ifm-color-secondary-darker
-      ); /* Has to be explicitly defined because .button--outline has quite high specificity. */
-      border-color: var(
-        --ifm-color-secondary-darker
-      ); /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      background-color: var(--ifm-color-secondary-darker);
+      /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      border-color: var(--ifm-color-secondary-darker);
     }
 
 .button--success {
@@ -1882,12 +1878,10 @@ hr:after {
       --ifm-button-border-color: var(--ifm-color-success-darker);
       --ifm-button-background-color: var(--ifm-color-success-darker);
 
-      background-color: var(
-        --ifm-color-success-darker
-      ); /* Has to be explicitly defined because .button--outline has quite high specificity. */
-      border-color: var(
-        --ifm-color-success-darker
-      ); /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      background-color: var(--ifm-color-success-darker);
+      /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      border-color: var(--ifm-color-success-darker);
     }
 
 .button--info {
@@ -1910,12 +1904,10 @@ hr:after {
       --ifm-button-border-color: var(--ifm-color-info-darker);
       --ifm-button-background-color: var(--ifm-color-info-darker);
 
-      background-color: var(
-        --ifm-color-info-darker
-      ); /* Has to be explicitly defined because .button--outline has quite high specificity. */
-      border-color: var(
-        --ifm-color-info-darker
-      ); /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      background-color: var(--ifm-color-info-darker);
+      /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      border-color: var(--ifm-color-info-darker);
     }
 
 .button--warning {
@@ -1938,12 +1930,10 @@ hr:after {
       --ifm-button-border-color: var(--ifm-color-warning-darker);
       --ifm-button-background-color: var(--ifm-color-warning-darker);
 
-      background-color: var(
-        --ifm-color-warning-darker
-      ); /* Has to be explicitly defined because .button--outline has quite high specificity. */
-      border-color: var(
-        --ifm-color-warning-darker
-      ); /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      background-color: var(--ifm-color-warning-darker);
+      /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      border-color: var(--ifm-color-warning-darker);
     }
 
 .button--danger {
@@ -1966,12 +1956,10 @@ hr:after {
       --ifm-button-border-color: var(--ifm-color-danger-darker);
       --ifm-button-background-color: var(--ifm-color-danger-darker);
 
-      background-color: var(
-        --ifm-color-danger-darker
-      ); /* Has to be explicitly defined because .button--outline has quite high specificity. */
-      border-color: var(
-        --ifm-color-danger-darker
-      ); /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      background-color: var(--ifm-color-danger-darker);
+      /* Has to be explicitly defined because .button--outline has quite high specificity. */
+      border-color: var(--ifm-color-danger-darker);
     }
 
 /**
