@@ -2616,7 +2616,7 @@ html[data-theme='dark'],
     box-shadow: var(--ifm-global-shadow-md);
     left: 0;
     opacity: 0;
-    overflow: auto;
+    overflow-x: hidden;
     position: fixed;
     top: 0;
     transform: translate3d(-100%, 0, 0);
@@ -2661,7 +2661,7 @@ html[data-theme='dark'],
         var(--ifm-navbar-padding-horizontal);
     }
 
-.navbar-sidebar__items {
+.navbar-sidebar__items > div {
       padding: 0.5rem;
     }
 
