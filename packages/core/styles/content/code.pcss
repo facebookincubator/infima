@@ -5,8 +5,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-:root {  
-  --ifm-code-background: rgba(0, 0, 0, .05);
+:root {
+  --ifm-code-background: color-mod(
+    var(--ifm-color-emphasis-100) tint(var(--ifm-light-value))
+  );
   --ifm-code-border-radius: var(--ifm-global-radius);
   --ifm-code-font-size: 90%;
   --ifm-code-padding-horizontal: 0.3rem;
@@ -37,7 +39,8 @@ pre {
   background-color: var(--ifm-pre-background);
   border-radius: var(--ifm-pre-border-radius);
   color: var(--ifm-pre-color);
-  font: var(--ifm-code-font-size)/var(--ifm-pre-line-height) var(--ifm-font-family-monospace);
+  font: var(--ifm-code-font-size) / var(--ifm-pre-line-height)
+    var(--ifm-font-family-monospace);
   margin: 0 0 var(--ifm-spacing-vertical);
   overflow: auto;
   padding: var(--ifm-pre-padding);
