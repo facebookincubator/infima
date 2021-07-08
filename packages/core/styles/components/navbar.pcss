@@ -259,8 +259,15 @@ html[data-theme='dark'],
         var(--ifm-navbar-padding-horizontal);
     }
 
-    &__items > div {
-      padding: 0.5rem;
+    &__items {
+      display: flex;
+      height: calc(100% - var(--ifm-navbar-height));
+
+      & > div {
+        flex-shrink: 0;
+        padding: 0.5rem;
+        width: calc(var(--ifm-navbar-sidebar-width));
+      }
     }
   }
 }

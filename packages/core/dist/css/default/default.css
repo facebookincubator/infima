@@ -2650,9 +2650,16 @@ html[data-theme='dark'],
         var(--ifm-navbar-padding-horizontal);
     }
 
-.navbar-sidebar__items > div {
-      padding: 0.5rem;
+.navbar-sidebar__items {
+      display: flex;
+      height: calc(100% - var(--ifm-navbar-height));
     }
+
+.navbar-sidebar__items > div {
+        flex-shrink: 0;
+        padding: 0.5rem;
+        width: calc(var(--ifm-navbar-sidebar-width));
+      }
 
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
