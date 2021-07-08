@@ -22,6 +22,8 @@
  */
 
 :root {
+  --ifm-color-scheme: light;
+
   /* Colors. */
   --ifm-dark-value: 10%;
   --ifm-darker-value: 15%;
@@ -352,6 +354,7 @@
 html {
   background-color: var(--ifm-background-color);
   color: var(--ifm-font-color-base);
+  color-scheme: var(--ifm-color-scheme);
   font: var(--ifm-font-size-base)/var(--ifm-line-height-base) var(--ifm-font-family-base);
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
@@ -2880,7 +2883,7 @@ html[data-theme='dark'],
  */
 
 html[data-theme='dark'] {
-  color-scheme: dark;
+  --ifm-color-scheme: dark;
 
   --ifm-color-emphasis-0: var(--ifm-color-gray-1000);
   --ifm-color-emphasis-100: var(--ifm-color-gray-900);
