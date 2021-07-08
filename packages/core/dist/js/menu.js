@@ -55,12 +55,5 @@ function menu($elements) {
         $listItem = $listItem.parentNode;
       }
     });
-
-    $button = $menu.querySelector('.menu__button');
-    if ($button) {
-      $button.addEventListener('click', (e) => {
-        $menu.classList.toggle('menu--show');
-      });
-    }
   });
 }

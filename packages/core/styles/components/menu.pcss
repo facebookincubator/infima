@@ -95,43 +95,4 @@
       }
     }
   }
-
-  &--responsive {
-    ^&__button {
-      bottom: 2rem;
-      display: none;
-      position: fixed;
-      right: 1rem;
-      z-index: var(--ifm-z-index-fixed);
-
-      @media (--ifm-narrow-window) {
-        display: inherit;
-      }
-    }
-
-    @media (--ifm-narrow-window) {
-      &:not(.menu--show) ^&__list {
-        display: none;
-        opacity: 0;
-      }
-    }
-  }
-
-  &--show {
-    background: var(--ifm-background-surface-color);
-    bottom: 0;
-    left: 0;
-    overscroll-behavior: contain;
-    padding: 1rem;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: var(--ifm-z-index-overlay);
-
-    ^&__list {
-      display: inherit;
-      opacity: 1;
-      @mixin transition opacity, var(--ifm-transition-fast), linear;
-    }
-  }
 }

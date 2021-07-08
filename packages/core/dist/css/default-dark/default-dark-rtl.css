@@ -2404,33 +2404,6 @@ hr:after {
         background: var(--ifm-menu-color-background-active);
       }
 
-.menu--responsive .menu__button {
-      bottom: 2rem;
-      display: none;
-      position: fixed;
-      left: 1rem;
-      z-index: var(--ifm-z-index-fixed);
-    }
-
-.menu--show {
-    background: var(--ifm-background-surface-color);
-    bottom: 0;
-    right: 0;
-    -ms-scroll-chaining: none;
-        overscroll-behavior: contain;
-    padding: 1rem;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: var(--ifm-z-index-overlay);
-  }
-
-.menu--show .menu__list {
-      display: inherit;
-      opacity: 1;
-      transition: opacity var(--ifm-transition-fast) linear;
-    }
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -2989,14 +2962,6 @@ html[data-theme='dark'] {
     padding-right: 0;
     padding-left: 0
 }
-
-.menu--responsive .menu__button {
-        display: inherit
-    }
-      .menu--responsive:not(.menu--show) .menu__list {
-        display: none;
-        opacity: 0;
-      }
 
 .navbar > .container,
   .navbar > .container-fluid {
