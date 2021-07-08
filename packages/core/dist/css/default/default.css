@@ -2880,6 +2880,8 @@ html[data-theme='dark'],
  */
 
 html[data-theme='dark'] {
+  color-scheme: dark;
+
   --ifm-color-emphasis-0: var(--ifm-color-gray-1000);
   --ifm-color-emphasis-100: var(--ifm-color-gray-900);
   --ifm-color-emphasis-200: var(--ifm-color-gray-800);
