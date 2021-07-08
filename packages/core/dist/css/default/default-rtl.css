@@ -2098,10 +2098,7 @@ hr:after {
  */
 
 .close {
-  background: none;
-  border: none;
   color: var(--ifm-color-black);
-  cursor: pointer;
   float: left;
   font-size: 1.5rem;
   font-weight: var(--ifm-font-weight-bold);
@@ -2450,7 +2447,6 @@ html[data-theme='dark'],
   }
 
 .navbar__inner {
-    align-items: stretch;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -2797,7 +2793,6 @@ html[data-theme='dark'],
     border-radius: 0.5rem;
     cursor: pointer;
     display: inline-block;
-    list-style-type: none;
     padding: 0.25rem 1rem;
     transition: background var(--ifm-transition-fast) var(--ifm-transition-timing-default);
   }
@@ -2852,10 +2847,8 @@ html[data-theme='dark'],
 .tabs__item {
     border-bottom: 3px solid transparent;
     border-radius: var(--ifm-global-radius);
-    box-sizing: content-box;
     cursor: pointer;
     display: inline-flex;
-    margin: 0;
     padding: var(--ifm-tabs-padding-vertical) var(--ifm-tabs-padding-horizontal);
     transition: background-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
   }
