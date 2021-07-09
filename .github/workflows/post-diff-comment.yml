@@ -1,4 +1,3 @@
-
 # Because we want to easily inspect the
 
 name: Post Diff Comment
@@ -32,16 +31,18 @@ jobs:
           yarn workspace infima build
           yarn install
 
-          OUTPUT=$(git diff --no-index --color packages/core/dist/css/default/default.css packages/core/dist-branch/css/default/default.css | cat)
-
-          echo "::set-output name=result::$OUTPUT"
+          echo "::set-output name=default-css-diff::$(git diff --no-index --color packages/core/dist/css/default/default.css packages/core/dist-branch/css/default/default.css | cat)"
 
       - uses: marocchino/sticky-pull-request-comment@v2
         with:
           header: post-diff-comment
           message: |
-            ```
-            Dist CSS diff:
+            # Dist CSS Diff
 
-            ${{ steps.dists.outputs.result }}
+            ## default.css:
+
+            Diff computed for `dist/css/default/default.css`
+
+            ```diff
+            ${{ steps.dists.outputs.default-css-diff }}
             ```
