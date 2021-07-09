@@ -46,10 +46,6 @@ jobs:
           message: |
             # Dist CSS Diff
 
-            ## default.css:
-
-            Diff computed for `dist/css/default/default.css`
-
             ```diff
             ${{ steps.dists.outputs.default-css-diff }}
             ```
