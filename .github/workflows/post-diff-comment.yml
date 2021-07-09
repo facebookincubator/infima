@@ -27,6 +27,7 @@ jobs:
           yarn workspace infima build
           mv packages/core/dist packages/core/dist-branch
 
+          git fetch origin master
           git checkout master
           yarn workspace infima build
           yarn install
