@@ -67,3 +67,7 @@ typings/
 # Demo files
 packages/core/demo/css
 packages/core/demo/js
+
+# Dist folders
+packages/core/dist
+packages/core/dist-branch

@@ -7,6 +7,5 @@ yarn lint-staged
 yarn workspace infima lint-staged
 
 yarn build
-git add packages/core/dist
 
 echo "pre-commit end"
