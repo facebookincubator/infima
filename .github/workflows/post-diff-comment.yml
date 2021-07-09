@@ -1,0 +1,51 @@
+
+# Because we want to easily inspect the
+
+name: Post Diff Comment
+
+on:
+  # Note! you can't safely use "pull_request_target" here
+  # This workflow is mostly useful for "internal PRs"
+  # External PRs won't be able to post a PR comment
+  # See https://github.com/preactjs/compressed-size-action/issues/54
+  # See https://securitylab.github.com/research/github-actions-preventing-pwn-requests
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  post-diff-comment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Compute dist diff
+        id: dists
+        run: |
+
+          yarn install
+          yarn workspace infima build
+          mv packages/core/dist packages/core/dist-branch
+
+          git fetch origin master
+          git checkout master
+          yarn workspace infima build
+          yarn install
+
+          DEFAULT_CSS_DIFF=$(git diff --no-index packages/core/dist/css/default/default.css packages/core/dist-branch/css/default/default.css | cat)
+
+          # Escaping for multiline output support... see https://github.community/t/set-output-truncates-multiline-strings/16852/11
+          DEFAULT_CSS_DIFF="${DEFAULT_CSS_DIFF//'%'/'%25'}"
+          DEFAULT_CSS_DIFF="${DEFAULT_CSS_DIFF//$'\n'/'%0A'}"
+          DEFAULT_CSS_DIFF="${DEFAULT_CSS_DIFF//$'\r'/'%0D'}"
+          echo "::set-output name=default-css-diff::$DEFAULT_CSS_DIFF"
+
+      - uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: post-diff-comment
+          message: |
+            # Dist CSS Diff
+
+            ```diff
+            ${{ steps.dists.outputs.default-css-diff }}
+            ```
