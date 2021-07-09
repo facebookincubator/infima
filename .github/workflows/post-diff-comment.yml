@@ -18,9 +18,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: preactjs/compressed-size-action@v2
+      - name: Build master/branch dists
+        id: dists
+        run: |
+          yarn workspace infima build
+          mv packages/core/dist packages/core/dist-branch
+          git checkout master
+          yarn workspace infima build
+          OUTPUT=$(git diff --no-index --color packages/core/dist/css/default/default.css packages/core/dist-branch/css/default/default.css | cat)
+          echo "::set-output name=result::$OUTPUT"
+
+      - uses: marocchino/sticky-pull-request-comment@v2
         with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          build-script: "yarn workspace infima build"
-          pattern: "./packages/core/dist/**/*.{js,css}"
-          compression: 'none'
+          header: post-diff-comment
+          message: |
+            ```
+            Dist CSS diff:
+
+            ${{ steps.dists.outputs.result }}
+            ```
