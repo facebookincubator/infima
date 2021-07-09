@@ -1,0 +1,26 @@
+
+# Because we want to easily inspect the
+
+name: Post Diff Comment
+
+on:
+  # Note! you can't safely use "pull_request_target" here
+  # This workflow is mostly useful for "internal PRs"
+  # External PRs won't be able to post a PR comment
+  # See https://github.com/preactjs/compressed-size-action/issues/54
+  # See https://securitylab.github.com/research/github-actions-preventing-pwn-requests
+  pull_request_target:
+    branches:
+      - master
+
+jobs:
+  post-diff-comment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: preactjs/compressed-size-action@v2
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          build-script: "yarn workspace infima build"
+          pattern: "./packages/core/dist/**/*.{js,css}"
+          compression: 'none'

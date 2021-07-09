@@ -67,3 +67,5 @@ typings/
 # Demo files
 packages/core/demo/css
 packages/core/demo/js
+
+packages/core/dist
