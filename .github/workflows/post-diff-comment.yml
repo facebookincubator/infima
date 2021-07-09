@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Build master/branch dists
+      - name: Compute dist diff
         id: dists
         run: |
 
@@ -34,6 +34,10 @@ jobs:
 
           DEFAULT_CSS_DIFF=$(git diff --no-index packages/core/dist/css/default/default.css packages/core/dist-branch/css/default/default.css | cat)
 
+          # Escaping for multiline output support... see https://github.community/t/set-output-truncates-multiline-strings/16852/11
+          DEFAULT_CSS_DIFF="${DEFAULT_CSS_DIFF//'%'/'%25'}"
+          DEFAULT_CSS_DIFF="${DEFAULT_CSS_DIFF//$'\n'/'%0A'}"
+          DEFAULT_CSS_DIFF="${DEFAULT_CSS_DIFF//$'\r'/'%0D'}"
           echo "::set-output name=default-css-diff::$DEFAULT_CSS_DIFF"
 
       - uses: marocchino/sticky-pull-request-comment@v2
