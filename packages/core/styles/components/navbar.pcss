@@ -262,15 +262,15 @@ html[data-theme='dark'],
     &__items {
       display: flex;
       height: calc(100% - var(--ifm-navbar-height));
-      transform: translateZ(0) !important;
-      transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transform: translateZ(0);
+      transition: transform var(--ifm-transition-fast) ease-in-out;
 
       &--show-secondary {
         transform: translate3d(
           calc((var(--ifm-navbar-sidebar-width)) * -1),
           0,
           0
-        ) !important;
+        );
       }
     }
 
