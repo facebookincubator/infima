@@ -55,5 +55,15 @@ function menu($elements) {
         $listItem = $listItem.parentNode;
       }
     });
+
+    $navbarSidebarBackButton = document.querySelector('.navbar-sidebar__back');
+    $navbarSidebarItems = document.querySelector('.navbar-sidebar__items');
+    if ($navbarSidebarBackButton) {
+      $navbarSidebarBackButton.addEventListener('click', () => {
+        $navbarSidebarItems.classList.remove(
+          'navbar-sidebar__items--show-secondary',
+        );
+      });
+    }
   });
 }

@@ -12,6 +12,7 @@ function navbar($elements) {
     const $sidebar = $navbar.querySelector('.navbar-sidebar');
     const $sidebarClose = $navbar.querySelector('.navbar-sidebar__close');
     const $backdrop = $navbar.querySelector('.navbar-sidebar__backdrop');
+    const $sidebarItems = $navbar.querySelector('.navbar-sidebar__items');
 
     if ($toggle == null || $sidebarClose == null) {
       return;
@@ -19,6 +20,7 @@ function navbar($elements) {
 
     $toggle.addEventListener('click', (e) => {
       $navbar.classList.add('navbar-sidebar--show');
+      $sidebarItems.classList.add('navbar-sidebar__items--show-secondary');
     });
 
     [$backdrop, $sidebarClose].forEach(($el) =>

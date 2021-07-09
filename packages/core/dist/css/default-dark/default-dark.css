@@ -2642,13 +2642,37 @@ html[data-theme='dark'],
 .navbar-sidebar__items {
       display: flex;
       height: calc(100% - var(--ifm-navbar-height));
+      transform: translateZ(0) !important;
+      transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-.navbar-sidebar__items > div {
-        flex-shrink: 0;
-        padding: 0.5rem;
-        width: calc(var(--ifm-navbar-sidebar-width));
+.navbar-sidebar__items--show-secondary {
+        transform: translate3d(
+          calc((var(--ifm-navbar-sidebar-width)) * -1),
+          0,
+          0
+        ) !important;
       }
+
+.navbar-sidebar__item {
+      flex-shrink: 0;
+      padding: 0.5rem;
+      width: calc(var(--ifm-navbar-sidebar-width));
+    }
+
+.navbar-sidebar__item--secondary {
+        padding-top: 0;
+      }
+
+.navbar-sidebar__back {
+      background: var(--ifm-menu-color-background-active);
+      font-size: 15px;
+      font-weight: var(--ifm-button-font-weight);
+      margin: 0 0 0.7rem -0.5rem;
+      padding: 0.6rem 1.5rem;
+      text-align: left;
+      width: calc(100% + 1rem);
+    }
 
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
