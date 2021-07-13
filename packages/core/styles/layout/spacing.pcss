@@ -10,23 +10,23 @@
     (0, 0.25rem, 0.5rem, 1rem, 2rem, 5rem)
   {
     .$(type)--$(size) {
-      $(type): $(value) !important;
+      $(type): $(value);
     }
 
     @each $side in (top, left, bottom, right) {
       .$(type)-$(side)--$(size) {
-        $(type)-$(side): $(value) !important;
+        $(type)-$(side): $(value);
       }
     }
 
     .$(type)-vert--$(size) {
-      $(type)-bottom: $(value) !important;
-      $(type)-top: $(value) !important;
+      $(type)-bottom: $(value);
+      $(type)-top: $(value);
     }
 
     .$(type)-horiz--$(size) {
-      $(type)-left: $(value) !important;
-      $(type)-right: $(value) !important;
+      $(type)-left: $(value);
+      $(type)-right: $(value);
     }
   }
 }
