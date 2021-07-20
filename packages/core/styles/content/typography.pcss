@@ -65,7 +65,6 @@ p {
 
 /* Blockquotes */
 blockquote {
-
   --ifm-code-background: color-mod(var(--ifm-color-secondary) alpha(15%));
   --ifm-link-color: var(--ifm-blockquote-emphasis-color);
   --ifm-link-hover-color: var(--ifm-blockquote-emphasis-color);
@@ -94,12 +93,9 @@ blockquote {
   }
 
   a {
-    opacity: 0.85;
-    &:hover {
-      opacity: 1;
-    }
+    &:hover,
     &:focus {
-      opacity: 1;
+      text-decoration-thickness: 2px;
     }
   }
 }
