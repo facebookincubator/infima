@@ -22,4 +22,15 @@
   --ifm-background-surface-color: #1e2125;
 
   --ifm-hover-overlay: rgba(255, 255, 255, 0.05);
+
+  @each $color in (primary, secondary, success, info, warning, danger) {
+    --ifm-color-$(color)-contrast-background: color-mod(
+            var(--ifm-color-$(color)),
+            shade(var(--ifm-contrast-background-value))
+    );
+    --ifm-color-$(color)-contrast-emphasis: color-mod(
+            var(--ifm-color-$(color)),
+            tint(var(--ifm-contrast-emphasis-value))
+    );
+  }
 }

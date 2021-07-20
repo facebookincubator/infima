@@ -9,39 +9,39 @@
   --ifm-alert-background-color: inherit; /* Set a default which will be overridden later. */
   --ifm-alert-border-color: inherit; /* Set a default which will be overridden later. */
   --ifm-alert-border-radius: var(--ifm-global-radius);
-  --ifm-alert-border-width: var(--ifm-global-border-width);
-  --ifm-alert-color: var(--ifm-font-color-base-inverse);
+  --ifm-alert-border-left-width: 5px;
+  --ifm-alert-color: var(--ifm-font-color-base);
   --ifm-alert-padding-horizontal: var(--ifm-spacing-horizontal);
   --ifm-alert-padding-vertical: var(--ifm-spacing-vertical);
 }
 
 .alert {
-  --ifm-code-background: rgba(0, 0, 0, 0.05);
-  background-color: var(--ifm-alert-background-color);
-  border-color: var(--ifm-alert-border-color);
-  border-radius: var(--ifm-alert-border-radius);
-  border-style: solid;
-  border-width: var(--ifm-alert-border-width);
-  color: var(--ifm-alert-color);
-  padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
-
   @each $color in (primary, secondary, success, info, warning, danger) {
     &--$(color) {
-      --ifm-alert-background-color: var(--ifm-color-$(color));
-      --ifm-alert-border-color: var(--ifm-color-$(color));
+      --ifm-alert-background-color: var(
+        --ifm-color-$(color)-contrast-background
+      );
+      --ifm-alert-emphasis-color: var(--ifm-color-$(color)-contrast-emphasis);
+      --ifm-alert-border-color: var(--ifm-color-$(color)-dark);
+      --ifm-code-background: color-mod(var(--ifm-color-$(color)) alpha(20%));
     }
   }
 
+  background-color: var(--ifm-alert-background-color);
+  border-color: var(--ifm-alert-border-color);
+  border-left-style: solid;
+  border-left-width: var(--ifm-alert-border-left-width);
+  border-radius: var(--ifm-alert-border-radius);
+  color: var(--ifm-alert-emphasis-color);
+  padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
+
   a {
-    color: var(--ifm-alert-color);
+    color: var(--ifm-alert-emphasis-color);
     text-decoration: underline;
   }
 
-  &--secondary {
-    --ifm-alert-color: var(--ifm-color-gray-900);
-  }
-
   .close {
+    color: var(--ifm-alert-emphasis-color);
     margin: calc(var(--ifm-alert-padding-vertical) * -1)
       calc(var(--ifm-alert-padding-horizontal) * -1) 0 0;
   }
