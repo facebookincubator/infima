@@ -23,11 +23,21 @@
       --ifm-alert-background-color: var(
         --ifm-color-$(color)-contrast-background
       );
+      --ifm-alert-background-color-highlight: color-mod(
+        var(--ifm-color-$(color)) alpha(15%)
+      );
       --ifm-alert-emphasis-color: var(--ifm-color-$(color)-contrast-emphasis);
       --ifm-alert-border-color: var(--ifm-color-$(color)-dark);
-      --ifm-code-background: color-mod(var(--ifm-color-$(color)) alpha(20%));
     }
   }
+
+  --ifm-code-background: var(--ifm-alert-background-color-highlight);
+  --ifm-link-color: var(--ifm-alert-emphasis-color);
+  --ifm-link-hover-color: var(--ifm-alert-emphasis-color);
+  --ifm-link-decoration: underline;
+  --ifm-tabs-color: var(--ifm-alert-emphasis-color);
+  --ifm-tabs-color-active: var(--ifm-alert-emphasis-color);
+  --ifm-tabs-color-active-border: var(--ifm-alert-border-color);
 
   background-color: var(--ifm-alert-background-color);
   border-color: var(--ifm-alert-border-color);
@@ -38,11 +48,6 @@
   box-shadow: var(--ifm-alert-shadow);
   color: var(--ifm-alert-emphasis-color);
   padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
-
-  a {
-    color: var(--ifm-alert-emphasis-color);
-    text-decoration: underline;
-  }
 
   .close {
     color: var(--ifm-alert-emphasis-color);
