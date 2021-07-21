@@ -2809,7 +2809,15 @@ let myFun = (x, y) =&gt; {
             colorElement.setAttribute('alt', `${color} (click to copy)`);
             colorElement.setAttribute('title', `${color} (click to copy)`);
             colorElement.style.cursor = "pointer";
-            colorElement.addEventListener('click', () => copyText(color).catch(console.error));
+            colorElement.addEventListener('click', () => {
+              // Not sure why, need to redo that to get the good color reliably (otherwise it may copy #ffffff)
+              const clickedColor = rgba2hex(computedStyle.backgroundColor);
+              copyText(clickedColor).catch(console.error)
+              console.log(
+                "Color copied to clipboard",
+                {color,clickedColor,rgba: computedStyle.backgroundColor, var: colorElement.style.backgroundColor}
+              );
+            });
           })
         })();
 
