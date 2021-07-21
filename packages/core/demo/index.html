@@ -2811,6 +2811,7 @@ let myFun = (x, y) =&gt; {
             colorElement.style.cursor = "pointer";
             colorElement.addEventListener('click', () => {
               // Not sure why, need to redo that to get the good color reliably (otherwise it may copy #ffffff)
+              // Looks related to using themed css variables: the good color can only be obtained after stylesheet has loaded?
               const clickedColor = rgba2hex(computedStyle.backgroundColor);
               copyText(clickedColor).catch(console.error)
               console.log(
