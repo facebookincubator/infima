@@ -16,8 +16,17 @@
   --ifm-lighter-value: 30%;
   --ifm-lightest-value: 50%;
 
+  /*
+  This seems like a lot, but we want to ensure enough contrast.
+  Goal is to have a min score of 3 on https://www.myndex.com/APCA/fullmatrix
+  For fontWeight 400 + score 3, the cell must show a value < 16px (fontsize we use in places like alerts)
+  See also https://github.com/facebookincubator/infima/issues/55#issuecomment-884023075
+   */
   --ifm-contrast-background-value: 70%;
-  --ifm-contrast-emphasis-value: 70%;
+  --ifm-contrast-emphasis-value: 90%;
+  /* Using slightly different values for dark mode */
+  --ifm-contrast-background-dark-value: 70%;
+  --ifm-contrast-emphasis-dark-value: 90%;
 
   --ifm-color-primary: #3578e5;
   --ifm-color-secondary: #ebedf0;
