@@ -16,160 +16,58 @@
   --ifm-lighter-value: 30%;
   --ifm-lightest-value: 50%;
 
+  /*
+  This seems like a lot, but we want to ensure enough contrast.
+  Goal is to have a min score of 3 on https://www.myndex.com/APCA/fullmatrix
+  For fontWeight 400 + score 3, the cell must show a value < 16px (fontsize we use in places like alerts)
+  See also https://github.com/facebookincubator/infima/issues/55#issuecomment-884023075
+   */
+  --ifm-contrast-background-value: 90%;
+  --ifm-contrast-emphasis-value: 70%;
+  /* Using slightly different values for dark mode */
+  --ifm-contrast-background-dark-value: 70%;
+  --ifm-contrast-emphasis-dark-value: 90%;
+
   --ifm-color-primary: #3578e5;
-  --ifm-color-primary-dark: color-mod(
-    var(--ifm-color-primary) shade(var(--ifm-dark-value))
-  );
-  --ifm-color-primary-darker: color-mod(
-    var(--ifm-color-primary),
-    shade(var(--ifm-darker-value))
-  );
-  --ifm-color-primary-darkest: color-mod(
-    var(--ifm-color-primary),
-    shade(var(--ifm-darkest-value))
-  );
-  --ifm-color-primary-light: color-mod(
-    var(--ifm-color-primary),
-    tint(var(--ifm-light-value))
-  );
-  --ifm-color-primary-lighter: color-mod(
-    var(--ifm-color-primary),
-    tint(var(--ifm-lighter-value))
-  );
-  --ifm-color-primary-lightest: color-mod(
-    var(--ifm-color-primary),
-    tint(var(--ifm-lightest-value))
-  );
-
   --ifm-color-secondary: #ebedf0;
-  --ifm-color-secondary-dark: color-mod(
-    var(--ifm-color-secondary),
-    shade(var(--ifm-dark-value))
-  );
-  --ifm-color-secondary-darker: color-mod(
-    var(--ifm-color-secondary),
-    shade(var(--ifm-darker-value))
-  );
-  --ifm-color-secondary-darkest: color-mod(
-    var(--ifm-color-secondary),
-    shade(var(--ifm-darkest-value))
-  );
-  --ifm-color-secondary-light: color-mod(
-    var(--ifm-color-secondary),
-    tint(var(--ifm-light-value))
-  );
-  --ifm-color-secondary-lighter: color-mod(
-    var(--ifm-color-secondary),
-    tint(var(--ifm-lighter-value))
-  );
-  --ifm-color-secondary-lightest: color-mod(
-    var(--ifm-color-secondary),
-    tint(var(--ifm-lightest-value))
-  );
-
   --ifm-color-success: #00a400;
-  --ifm-color-success-dark: color-mod(
-    var(--ifm-color-success),
-    shade(var(--ifm-dark-value))
-  );
-  --ifm-color-success-darker: color-mod(
-    var(--ifm-color-success),
-    shade(var(--ifm-darker-value))
-  );
-  --ifm-color-success-darkest: color-mod(
-    var(--ifm-color-success),
-    shade(var(--ifm-darkest-value))
-  );
-  --ifm-color-success-light: color-mod(
-    var(--ifm-color-success),
-    tint(var(--ifm-light-value))
-  );
-  --ifm-color-success-lighter: color-mod(
-    var(--ifm-color-success),
-    tint(var(--ifm-lighter-value))
-  );
-  --ifm-color-success-lightest: color-mod(
-    var(--ifm-color-success),
-    tint(var(--ifm-lightest-value))
-  );
-
   --ifm-color-info: #54c7ec;
-  --ifm-color-info-dark: color-mod(
-    var(--ifm-color-info),
-    shade(var(--ifm-dark-value))
-  );
-  --ifm-color-info-darker: color-mod(
-    var(--ifm-color-info),
-    shade(var(--ifm-darker-value))
-  );
-  --ifm-color-info-darkest: color-mod(
-    var(--ifm-color-info),
-    shade(var(--ifm-darkest-value))
-  );
-  --ifm-color-info-light: color-mod(
-    var(--ifm-color-info),
-    tint(var(--ifm-light-value))
-  );
-  --ifm-color-info-lighter: color-mod(
-    var(--ifm-color-info),
-    tint(var(--ifm-lighter-value))
-  );
-  --ifm-color-info-lightest: color-mod(
-    var(--ifm-color-info),
-    tint(var(--ifm-lightest-value))
-  );
-
   --ifm-color-warning: #ffba00;
-  --ifm-color-warning-dark: color-mod(
-    var(--ifm-color-warning),
-    shade(var(--ifm-dark-value))
-  );
-  --ifm-color-warning-darker: color-mod(
-    var(--ifm-color-warning),
-    shade(var(--ifm-darker-value))
-  );
-  --ifm-color-warning-darkest: color-mod(
-    var(--ifm-color-warning),
-    shade(var(--ifm-darkest-value))
-  );
-  --ifm-color-warning-light: color-mod(
-    var(--ifm-color-warning),
-    tint(var(--ifm-light-value))
-  );
-  --ifm-color-warning-lighter: color-mod(
-    var(--ifm-color-warning),
-    tint(var(--ifm-lighter-value))
-  );
-  --ifm-color-warning-lightest: color-mod(
-    var(--ifm-color-warning),
-    tint(var(--ifm-lightest-value))
-  );
-
   --ifm-color-danger: #fa383e;
-  --ifm-color-danger-dark: color-mod(
-    var(--ifm-color-danger),
-    shade(var(--ifm-dark-value))
-  );
-  --ifm-color-danger-darker: color-mod(
-    var(--ifm-color-danger),
-    shade(var(--ifm-darker-value))
-  );
-  --ifm-color-danger-darkest: color-mod(
-    var(--ifm-color-danger),
-    shade(var(--ifm-darkest-value))
-  );
-  --ifm-color-danger-light: color-mod(
-    var(--ifm-color-danger),
-    tint(var(--ifm-light-value))
-  );
-  --ifm-color-danger-lighter: color-mod(
-    var(--ifm-color-danger),
-    tint(var(--ifm-lighter-value))
-  );
-  --ifm-color-danger-lightest: color-mod(
-    var(--ifm-color-danger),
-    tint(var(--ifm-lightest-value))
-  );
+
+  @each $color in (primary, secondary, success, info, warning, danger) {
+    --ifm-color-$(color)-dark: color-mod(
+      var(--ifm-color-$(color)) shade(var(--ifm-dark-value))
+    );
+    --ifm-color-$(color)-darker: color-mod(
+      var(--ifm-color-$(color)),
+      shade(var(--ifm-darker-value))
+    );
+    --ifm-color-$(color)-darkest: color-mod(
+      var(--ifm-color-$(color)),
+      shade(var(--ifm-darkest-value))
+    );
+    --ifm-color-$(color)-light: color-mod(
+      var(--ifm-color-$(color)),
+      tint(var(--ifm-light-value))
+    );
+    --ifm-color-$(color)-lighter: color-mod(
+      var(--ifm-color-$(color)),
+      tint(var(--ifm-lighter-value))
+    );
+    --ifm-color-$(color)-lightest: color-mod(
+      var(--ifm-color-$(color)),
+      tint(var(--ifm-lightest-value))
+    );
+    --ifm-color-$(color)-contrast-background: color-mod(
+      var(--ifm-color-$(color)),
+      tint(var(--ifm-contrast-background-value))
+    );
+    --ifm-color-$(color)-contrast-emphasis: color-mod(
+      var(--ifm-color-$(color)),
+      shade(var(--ifm-contrast-emphasis-value))
+    );
+  }
 
   --ifm-color-white: #fff;
   --ifm-color-black: #000;

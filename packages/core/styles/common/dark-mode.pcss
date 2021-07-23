@@ -37,4 +37,15 @@ html[data-theme='dark'] {
   --ifm-scrollbar-track-background-color: #444444;
   --ifm-scrollbar-thumb-background-color: #686868;
   --ifm-scrollbar-thumb-hover-background-color: #7a7a7a;
+
+  @each $color in (primary, secondary, success, info, warning, danger) {
+    --ifm-color-$(color)-contrast-background: color-mod(
+            var(--ifm-color-$(color)),
+            shade(var(--ifm-contrast-background-dark-value))
+    );
+    --ifm-color-$(color)-contrast-emphasis: color-mod(
+            var(--ifm-color-$(color)),
+            tint(var(--ifm-contrast-emphasis-dark-value))
+    );
+  }
 }
