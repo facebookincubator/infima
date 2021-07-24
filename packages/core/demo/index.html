@@ -168,8 +168,8 @@
             <span class="navbar__title">Infima long long long long long long long long long</span>
           </a>
         </div>
-        <div class="navbar-sidebar__items">
-          <div class="menu">
+        <div class="navbar-sidebar__items navbar-sidebar__items--show-secondary">
+          <div class="navbar-sidebar__item menu">
             <ul class="menu__list">
               <li class="menu__list-item">
                 <a class="menu__link" href="#url">
@@ -207,6 +207,45 @@
                     </a>
                   </li>
                 </ul>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="navbar-sidebar__item navbar-sidebar__item--secondary menu">
+            <button type="button" class="clean-btn navbar-sidebar__back">← Back to main menu</button>
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__link" href="#url">
+                  First Level
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link menu__link--sublist" href="#url">
+                  Category
+                </a>
+                <ul class="menu__list">
+                  <li class="menu__list-item">
+                    <a class="menu__link menu__link--active" href="#url">
+                      Second Level
+                    </a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a class="menu__link" href="#url">
+                      Another Second Level
+                    </a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a class="menu__link" href="#url">
+                      Another Second Level
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#url">And The List</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#url">Goes On</a>
               </li>
             </ul>
           </div>
@@ -676,12 +715,7 @@
           <h1>Menu and Contents <a id="menu-contents" href="#menu-contents">#</a></h1>
           <div class="row">
             <div class="col col--3">
-              <div class="menu menu--responsive thin-scrollbar">
-                <button
-                  class="button button--secondary button--sm menu__button"
-                >
-                  <i class="fa fa-bars"></i>
-                </button>
+              <div class="menu thin-scrollbar">
                 <ul class="menu__list">
                   <li class="menu__list-item">
                     <a class="menu__link" href="#url">

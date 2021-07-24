@@ -56,10 +56,13 @@ function menu($elements) {
       }
     });
 
-    $button = $menu.querySelector('.menu__button');
-    if ($button) {
-      $button.addEventListener('click', (e) => {
-        $menu.classList.toggle('menu--show');
+    $navbarSidebarBackButton = document.querySelector('.navbar-sidebar__back');
+    $navbarSidebarItems = document.querySelector('.navbar-sidebar__items');
+    if ($navbarSidebarBackButton) {
+      $navbarSidebarBackButton.addEventListener('click', () => {
+        $navbarSidebarItems.classList.remove(
+          'navbar-sidebar__items--show-secondary',
+        );
       });
     }
   });
