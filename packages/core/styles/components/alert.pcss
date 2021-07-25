@@ -51,6 +51,26 @@
   color: var(--ifm-alert-foreground-color);
   padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
 
+  &__heading {
+    align-items: center;
+    display: flex;
+    font: bold var(--ifm-h5-font-size) / var(--ifm-heading-line-height)
+      var(--ifm-heading-font-family);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    display: inline-flex;
+    margin-right: 0.4em;
+
+    svg {
+      fill: var(--ifm-alert-foreground-color);
+      stroke: var(--ifm-alert-foreground-color);
+      stroke-width: 0;
+    }
+  }
+
   .close {
     color: var(--ifm-alert-foreground-color);
     margin: calc(var(--ifm-alert-padding-vertical) * -1)
