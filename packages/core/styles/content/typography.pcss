@@ -16,19 +16,21 @@
   --ifm-paragraph-margin-bottom: var(--ifm-leading);
 
   /* Blockquotes. */
+  --ifm-blockquote-base-background: #ffe773;
   --ifm-blockquote-font-size: var(--ifm-font-size-base);
-  --ifm-blockquote-border-radius: var(--ifm-global-radius);
-  --ifm-blockquote-border-width: 0px; /* For users that want to easily add a border */
   --ifm-blockquote-border-left-width: 5px;
   --ifm-blockquote-color: var(--ifm-font-color-base);
   --ifm-blockquote-padding-horizontal: var(--ifm-spacing-horizontal);
   --ifm-blockquote-padding-vertical: var(--ifm-spacing-vertical);
   --ifm-blockquote-shadow: var(--ifm-global-shadow-lw);
-  --ifm-blockquote-background-color: var(
-    --ifm-color-secondary-contrast-background
+  --ifm-blockquote-background-color: color-mod(
+    var(--ifm-blockquote-base-background),
+    alpha(20%)
   );
-  --ifm-blockquote-emphasis-color: var(--ifm-color-secondary-contrast-emphasis);
-  --ifm-blockquote-border-color: var(--ifm-color-secondary-dark);
+  --ifm-blockquote-foreground-color: var(--ifm-font-color-base);
+  --ifm-blockquote-border-color: color-mod(
+    var(--ifm-blockquote-base-background) shade(5%)
+  );
 
   /* Horizontal Rules. */
   --ifm-hr-border-color: var(--ifm-color-emphasis-500);
@@ -66,19 +68,17 @@ p {
 /* Blockquotes */
 blockquote {
   --ifm-code-background: color-mod(var(--ifm-color-secondary) alpha(15%));
-  --ifm-link-color: var(--ifm-blockquote-emphasis-color);
-  --ifm-link-hover-color: var(--ifm-blockquote-emphasis-color);
+  --ifm-link-color: var(--ifm-blockquote-foreground-color);
+  --ifm-link-hover-color: var(--ifm-blockquote-foreground-color);
   --ifm-link-decoration: underline;
 
   background-color: var(--ifm-blockquote-background-color);
   border-color: var(--ifm-blockquote-border-color);
   border-style: solid;
-  border-width: var(--ifm-blockquote-border-width);
+  border-width: 0;
   border-left-width: var(--ifm-blockquote-border-left-width);
-  border-radius: var(--ifm-blockquote-border-radius);
   box-shadow: var(--ifm-blockquote-shadow);
-  color: var(--ifm-blockquote-emphasis-color);
-
+  color: var(--ifm-blockquote-foreground-color);
   font-size: var(--ifm-blockquote-font-size);
   margin: 0 0 var(--ifm-spacing-vertical);
   padding: var(--ifm-blockquote-padding-vertical)
@@ -94,8 +94,8 @@ blockquote {
 
   a {
     text-decoration-color: var(--ifm-blockquote-border-color);
-    &:hover,
-    &:focus {
+
+    &:hover {
       text-decoration-thickness: 2px;
     }
   }
