@@ -26,17 +26,19 @@
       --ifm-alert-background-color-highlight: color-mod(
         var(--ifm-color-$(color)) alpha(15%)
       );
-      --ifm-alert-emphasis-color: var(--ifm-color-$(color)-contrast-emphasis);
+      --ifm-alert-foreground-color: var(
+        --ifm-color-$(color)-contrast-foreground
+      );
       --ifm-alert-border-color: var(--ifm-color-$(color)-dark);
     }
   }
 
   --ifm-code-background: var(--ifm-alert-background-color-highlight);
-  --ifm-link-color: var(--ifm-alert-emphasis-color);
-  --ifm-link-hover-color: var(--ifm-alert-emphasis-color);
+  --ifm-link-color: var(--ifm-alert-foreground-color);
+  --ifm-link-hover-color: var(--ifm-alert-foreground-color);
   --ifm-link-decoration: underline;
-  --ifm-tabs-color: var(--ifm-alert-emphasis-color);
-  --ifm-tabs-color-active: var(--ifm-alert-emphasis-color);
+  --ifm-tabs-color: var(--ifm-alert-foreground-color);
+  --ifm-tabs-color-active: var(--ifm-alert-foreground-color);
   --ifm-tabs-color-active-border: var(--ifm-alert-border-color);
 
   background-color: var(--ifm-alert-background-color);
@@ -46,11 +48,31 @@
   border-left-width: var(--ifm-alert-border-left-width);
   border-radius: var(--ifm-alert-border-radius);
   box-shadow: var(--ifm-alert-shadow);
-  color: var(--ifm-alert-emphasis-color);
+  color: var(--ifm-alert-foreground-color);
   padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
 
+  &__heading {
+    align-items: center;
+    display: flex;
+    font: bold var(--ifm-h5-font-size) / var(--ifm-heading-line-height)
+      var(--ifm-heading-font-family);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    display: inline-flex;
+    margin-right: 0.4em;
+
+    svg {
+      fill: var(--ifm-alert-foreground-color);
+      stroke: var(--ifm-alert-foreground-color);
+      stroke-width: 0;
+    }
+  }
+
   .close {
-    color: var(--ifm-alert-emphasis-color);
+    color: var(--ifm-alert-foreground-color);
     margin: calc(var(--ifm-alert-padding-vertical) * -1)
       calc(var(--ifm-alert-padding-horizontal) * -1) 0 0;
 
@@ -65,8 +87,7 @@
 
   a {
     text-decoration-color: var(--ifm-alert-border-color);
-    &:hover,
-    &:focus {
+    &:hover {
       text-decoration-thickness: 2px;
     }
   }

@@ -34,18 +34,23 @@ html[data-theme='dark'] {
     var(--ifm-color-gray-900) tint(var(--ifm-dark-value))
   );
 
+  --ifm-blockquote-background-color: color-mod(
+    var(--ifm-blockquote-base-background),
+    shade(var(--ifm-contrast-background-dark-value))
+  );
+
   --ifm-scrollbar-track-background-color: #444444;
   --ifm-scrollbar-thumb-background-color: #686868;
   --ifm-scrollbar-thumb-hover-background-color: #7a7a7a;
 
   @each $color in (primary, secondary, success, info, warning, danger) {
     --ifm-color-$(color)-contrast-background: color-mod(
-            var(--ifm-color-$(color)),
-            shade(var(--ifm-contrast-background-dark-value))
+      var(--ifm-color-$(color)),
+      shade(var(--ifm-contrast-background-dark-value))
     );
-    --ifm-color-$(color)-contrast-emphasis: color-mod(
-            var(--ifm-color-$(color)),
-            tint(var(--ifm-contrast-emphasis-dark-value))
+    --ifm-color-$(color)-contrast-foreground: color-mod(
+      var(--ifm-color-$(color)),
+      tint(var(--ifm-contrast-foreground-dark-value))
     );
   }
 }

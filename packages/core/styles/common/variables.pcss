@@ -23,10 +23,10 @@
   See also https://github.com/facebookincubator/infima/issues/55#issuecomment-884023075
    */
   --ifm-contrast-background-value: 90%;
-  --ifm-contrast-emphasis-value: 70%;
+  --ifm-contrast-foreground-value: 70%;
   /* Using slightly different values for dark mode */
   --ifm-contrast-background-dark-value: 70%;
-  --ifm-contrast-emphasis-dark-value: 90%;
+  --ifm-contrast-foreground-dark-value: 90%;
 
   --ifm-color-primary: #3578e5;
   --ifm-color-secondary: #ebedf0;
@@ -63,9 +63,9 @@
       var(--ifm-color-$(color)),
       tint(var(--ifm-contrast-background-value))
     );
-    --ifm-color-$(color)-contrast-emphasis: color-mod(
+    --ifm-color-$(color)-contrast-foreground: color-mod(
       var(--ifm-color-$(color)),
-      shade(var(--ifm-contrast-emphasis-value))
+      shade(var(--ifm-contrast-foreground-value))
     );
   }
 
