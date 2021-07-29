@@ -48,8 +48,8 @@
     overflow-y: auto;
     padding: 0.5rem;
     position: absolute;
-    top: 100%;
-    transform: translateY(-10px);
+    top: calc(100% - var(--ifm-navbar-item-padding-vertical));
+    transform: translateY(-0.625rem);
     visibility: hidden;
     z-index: var(--ifm-z-index-dropdown);
     @mixin transition opacity transform visibility;
