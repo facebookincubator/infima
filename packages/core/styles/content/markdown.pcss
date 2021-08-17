@@ -32,21 +32,16 @@
     display: table;
   }
 
-  & > *:first-child {
-    margin-top: 0 !important;
-  }
-
   & > *:last-child {
     margin-bottom: 0 !important;
   }
 
-  & > h1 {
+  & h1:first-child {
     --ifm-h1-font-size: 3rem;
 
     margin-bottom: calc(
       var(--ifm-h1-vertical-rhythm-bottom) * var(--ifm-leading)
     );
-    margin-top: calc(var(--ifm-h1-vertical-rhythm-top) * var(--ifm-leading));
   }
 
   & > h2 {
