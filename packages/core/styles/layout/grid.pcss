@@ -61,9 +61,6 @@
     @for $column from 1 to 12 {
       &.col--$(column) {
         --ifm-col-width: calc($(column) / 12 * 100%);
-
-        flex: 0 0 var(--ifm-col-width);
-        max-width: var(--ifm-col-width);
       }
 
       &.col--offset-$(column) {
