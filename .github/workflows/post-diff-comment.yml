@@ -1,4 +1,3 @@
-
 # Because we want to easily inspect the
 
 name: Post Diff Comment
@@ -11,7 +10,7 @@ on:
   # See https://securitylab.github.com/research/github-actions-preventing-pwn-requests
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   post-diff-comment:
@@ -27,8 +26,8 @@ jobs:
           yarn workspace infima build
           mv packages/core/dist packages/core/dist-branch
 
-          git fetch origin master
-          git checkout master
+          git fetch origin main
+          git checkout main
           yarn workspace infima build
           yarn install
 
