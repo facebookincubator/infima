@@ -1,6 +1,6 @@
 # Publish process
 
-On `master` (or a feature branch):
+On `main` (or a feature branch):
 
 1. `git pull`
 1. `yarn install`
