@@ -8,7 +8,7 @@ on:
   # See https://securitylab.github.com/research/github-actions-preventing-pwn-requests
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   report-build-size-diff:
