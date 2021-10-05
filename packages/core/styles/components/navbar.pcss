@@ -154,29 +154,28 @@ html[data-theme='dark'],
     }
   }
 
+  &--dark,
+  &--primary {
+    --ifm-menu-color: var(--ifm-color-gray-300);
+    --ifm-navbar-link-color: var(--ifm-color-gray-100);
+    --ifm-navbar-search-input-background-color: rgba(255, 255, 255, 0.1);
+    --ifm-navbar-search-input-placeholder-color: rgba(255, 255, 255, 0.5);
+
+    color: var(--ifm-color-white);
+  }
+
   &--dark {
     --ifm-navbar-background-color: #242526;
-    --ifm-menu-color-background-active: rgba(255, 255, 255, 0.05);
-    --ifm-navbar-link-color: var(--ifm-color-gray-100);
     --ifm-navbar-link-hover-color: var(--ifm-color-primary);
-    --ifm-navbar-search-input-background-color: rgba(255, 255, 255, 0.1);
+    --ifm-menu-color-background-active: rgba(255, 255, 255, 0.05);
     --ifm-navbar-search-input-color: var(--ifm-color-white);
-    --ifm-navbar-search-input-placeholder-color: rgba(255, 255, 255, 0.5);
-    --ifm-menu-color: var(--ifm-color-gray-300);
-
-    ^&__toggle,
-    ^&-sidebar__close,
-    ^&-sidebar__back {
-      color: var(--ifm-color-white);
-    }
   }
 
   &--primary {
     --ifm-navbar-background-color: var(--ifm-color-primary);
     --ifm-navbar-link-hover-color: var(--ifm-color-white);
-    --ifm-navbar-search-input-background-color: rgba(255, 255, 255, 0.1);
+    --ifm-menu-color-active: var(--ifm-color-white);
     --ifm-navbar-search-input-color: var(--ifm-color-emphasis-500);
-    --ifm-navbar-search-input-placeholder-color: rgba(255, 255, 255, 0.5);
   }
 
   &__search {
