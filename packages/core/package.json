@@ -1,6 +1,6 @@
 {
   "name": "infima",
-  "version": "0.2.0-alpha.33",
+  "version": "0.2.0-alpha.34",
   "description": "A UI framework for content-centric websites.",
   "author": "Yangshun Tay",
   "license": "MIT",
@@ -33,7 +33,7 @@
     "lint-staged": "^10.5.4",
     "natives": "^1.1.6",
     "postcss": "^8.2.10",
-    "postcss-preset-infima": "^0.2.0-alpha.33",
+    "postcss-preset-infima": "^0.2.0-alpha.34",
     "prettier": "^2.2.1",
     "stylelint": "^13.10.0",
     "stylelint-copyright": "^2.0.0-alpha.69",
