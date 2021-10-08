@@ -67,7 +67,6 @@ html[data-theme='dark'],
     align-items: center;
     color: var(--ifm-navbar-link-color);
     display: flex;
-    height: 2rem;
     margin-right: 1rem;
     min-width: 0;
 
@@ -94,8 +93,13 @@ html[data-theme='dark'],
   }
 
   &__logo {
-    height: 100%;
+    flex: 0 0 auto;
+    height: 2rem;
     margin-right: 0.5rem;
+    
+    img {
+      height: 100%;
+    }
   }
 
   &__items {
