@@ -37,7 +37,7 @@ module.exports = {
   favicon: 'img/logo.png',
   themeConfig: {
     colorMode: {
-      respectPrefersColorScheme: true
+      respectPrefersColorScheme: true,
     },
     navbar: {
       title: 'Infima',
