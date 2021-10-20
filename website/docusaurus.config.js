@@ -36,6 +36,9 @@ module.exports = {
   url: 'https://infima.dev',
   favicon: 'img/logo.png',
   themeConfig: {
+    colorMode: {
+      respectPrefersColorScheme: true
+    },
     navbar: {
       title: 'Infima',
       logo: {
