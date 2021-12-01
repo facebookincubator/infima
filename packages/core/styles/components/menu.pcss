@@ -25,6 +25,16 @@
   @mixin transition transform, var(--ifm-transition-fast), linear;
 }
 
+@define-mixin menu-item {
+  border-radius: 0.25rem;
+  display: flex;
+  @mixin transition background;
+
+  &:hover {
+    background: var(--ifm-menu-color-background-hover);
+  }
+}
+
 .menu {
   font-weight: var(--ifm-font-weight-semibold);
   overflow-x: hidden;
@@ -47,9 +57,6 @@
   }
 
   &__list-item {
-    display: flex;
-    flex-wrap: wrap;
-
     &:not(:first-child) {
       margin-top: 0.25rem;
     }
@@ -65,17 +72,28 @@
         transform: rotateZ(90deg);
       }
     }
+
+    &-collapsible {
+      flex-wrap: wrap;
+      position: relative;
+      @mixin menu-item;
+
+      &--active {
+        background: var(--ifm-menu-color-background-hover);
+      }
+
+      ^^&__link {
+        &:hover,
+        &--active {
+          background: none !important;
+        }
+      }
+    }
   }
 
   &__link,
   &__caret {
-    border-radius: 0.25rem;
-    display: flex;
-    @mixin transition background;
-
-    &:hover {
-      background: var(--ifm-menu-color-background-hover);
-    }
+    @mixin menu-item;
   }
 
   &__link {
@@ -100,7 +118,7 @@
 
     &:hover {
       color: var(--ifm-menu-color);
-      @mixin transition color background;
+      @mixin transition color;
     }
 
     &--active {

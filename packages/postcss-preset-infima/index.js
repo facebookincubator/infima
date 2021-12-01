@@ -22,15 +22,6 @@ module.exports = () => ({
     postcssImport,
     postcssEach,
     postcssFor,
-    postcssNestedAncestors,
-    postcssNested,
-    postcssPresetEnv({
-      stage: 1,
-      features: {
-        'color-mod-function': {unresolved: 'ignore'},
-        'custom-properties': false,
-      },
-    }),
     postcssMixins({
       mixins: {
         transition: (mixin, properties, duration, timing) => {
@@ -49,6 +40,15 @@ module.exports = () => ({
             };
           }
         },
+      },
+    }),
+    postcssNestedAncestors,
+    postcssNested,
+    postcssPresetEnv({
+      stage: 1,
+      features: {
+        'color-mod-function': {unresolved: 'ignore'},
+        'custom-properties': false,
       },
     }),
     postcssSortMediaQueries,
