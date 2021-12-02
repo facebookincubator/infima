@@ -25,8 +25,12 @@ function menu($elements) {
         return;
       }
 
-      event.preventDefault();
-      if ($listItem.classList.contains('menu__list-item')) {
+      const regularSubList =
+        $listItem.classList.contains('menu__list-item') &&
+        !$listItem.querySelector('.menu__list-item-collapsible');
+      const caretBtn = event.target.classList.contains('menu__caret');
+
+      if (regularSubList || caretBtn) {
         $listItem.classList.toggle('menu__list-item--collapsed');
       }
 
@@ -49,6 +53,15 @@ function menu($elements) {
           const $link = $listItem.querySelector('.menu__link');
           if ($link) {
             $link.classList.add('menu__link--active');
+          }
+
+          const $listItemCollapsible = $listItem.querySelector(
+            '.menu__list-item-collapsible',
+          );
+          if ($listItemCollapsible) {
+            $listItemCollapsible.classList.add(
+              'menu__list-item-collapsible--active',
+            );
           }
         }
 
