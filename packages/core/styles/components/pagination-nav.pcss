@@ -21,11 +21,11 @@
     display: flex;
     flex: 1 50%;
     max-width: 50%;
-    
+
     &--next {
       text-align: right;
     }
-    
+
     & + & {
       margin-left: var(--ifm-spacing-horizontal);
     }
@@ -38,19 +38,27 @@
     line-height: var(--ifm-heading-line-height);
     padding: var(--ifm-global-spacing);
     @mixin transition border-color;
-    
+
     &:hover {
       border-color: var(--ifm-pagination-nav-color-hover);
       text-decoration: none;
     }
   }
-  
+
   &__label {
     font-size: var(--ifm-h4-font-size);
     font-weight: var(--ifm-heading-font-weight);
     word-break: break-word;
+
+    ^&__item:first-child &::before {
+      content: '« '
+    }
+
+    ^&__item--next &::after {
+      content: ' »';
+    }
   }
-  
+
   &__sublabel {
     color: var(--ifm-color-content-secondary);
     font-size: var(--ifm-h5-font-size);
