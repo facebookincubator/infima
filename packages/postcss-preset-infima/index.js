@@ -47,7 +47,6 @@ module.exports = () => ({
     postcssPresetEnv({
       stage: 1,
       features: {
-        'color-mod-function': {unresolved: 'ignore'},
         'custom-properties': false,
       },
     }),
