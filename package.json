@@ -8,8 +8,7 @@
   ],
   "private": true,
   "scripts": {
-    "prettier": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx}\"",
-    "prettier:docs": "prettier --config .prettierrc --write \"**/*.{md,mdx}\"",
+    "prettier": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx,md,mdx}\"",
     "prettier:ci": "prettier --config .prettierrc --check \"**/*.{js,jsx,ts,tsx,md,mdx}\"",
     "lint:ci": "yarn workspace infima lint",
     "start": "cd packages/core && npm start",
@@ -27,10 +26,7 @@
     "prettier": "^2.5.1"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "prettier --write"
-    ],
-    "*.{md,mdx}": [
+    "*.{js,jsx,ts,tsx,md,mdx}": [
       "prettier --write"
     ]
   }
