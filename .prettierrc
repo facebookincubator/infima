@@ -1,6 +1,7 @@
 {
   "arrowParens": "always",
   "bracketSpacing": false,
+  "bracketSameLine": true,
   "printWidth": 80,
   "proseWrap": "never",
   "singleQuote": true,
