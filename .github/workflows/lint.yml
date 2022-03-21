@@ -15,7 +15,7 @@ jobs:
       - name: Prettier
         run: yarn format:ci
       - name: Stylelint
-        run: yarn lint:ci
+        run: yarn lint
       # Ensure that all the expected files have been commited (yarn.lock, /dist...)
       - name: Git staged is empty
         run: yarn build && git diff --exit-code

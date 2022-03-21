@@ -11,7 +11,8 @@
     "format": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx}\"",
     "format:docs": "prettier --config .prettierrc --write \"**/*.{md,mdx}\"",
     "format:ci": "prettier --config .prettierrc --check \"**/*.{js,jsx,ts,tsx,md,mdx}\"",
-    "lint:ci": "yarn workspace infima lint",
+    "lint": "stylelint \"**/*.pcss\"",
+    "lint:fix": "stylelint \"**/*.pcss\" --fix",
     "start": "cd packages/core && npm start",
     "build": "yarn workspace infima build",
     "build:en": "yarn workspace infima build --locale en",
@@ -24,14 +25,12 @@
   },
   "devDependencies": {
     "husky": "^7.0.4",
-    "prettier": "^2.6.0"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "prettier --write"
-    ],
-    "*.{md,mdx}": [
-      "prettier --write"
-    ]
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.0",
+    "stylelint": "^13.10.0",
+    "stylelint-copyright": "^2.0.0-alpha.69",
+    "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
+    "stylelint-high-performance-animation": "^1.5.2",
+    "stylelint-order": "^4.1.0"
   }
 }

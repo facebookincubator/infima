@@ -1,11 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-echo "pre-commit start"
-
-yarn lint-staged
-yarn workspace infima lint-staged
-
+yarn lint-staged --allow-empty
 yarn build
-
-echo "pre-commit end"
