@@ -4,3 +4,5 @@
   command = "yarn workspace infima build && yarn workspace infima-website build && cp -R packages/core/demo website/build/demo"
   publish = "/website/build"
 
+[build.environment]
+  NODE_VERSION = "16"
