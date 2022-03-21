@@ -1,0 +1,4 @@
+{
+  "*.pcss": ["stylelint --allow-empty-input --fix"],
+  "*": ["prettier --ignore-unknown --write"]
+}
