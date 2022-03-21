@@ -21,7 +21,7 @@
     "postcss": "^8.4.12",
     "postcss-combine-duplicated-selectors": "^10.0.3",
     "postcss-css-variables": "^0.18.0",
-    "postcss-each": "^1.1.0",
+    "postcss-each": "^0.10.0",
     "postcss-for": "^2.1.1",
     "postcss-import": "^14.0.2",
     "postcss-mixins": "^9.0.2",
