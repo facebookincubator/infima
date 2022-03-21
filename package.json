@@ -26,10 +26,10 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
     "prettier": "^2.6.0",
-    "stylelint": "^13.10.0",
+    "stylelint": "^14.6.0",
     "stylelint-copyright": "^2.0.0-alpha.69",
-    "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
-    "stylelint-high-performance-animation": "^1.5.2",
-    "stylelint-order": "^4.1.0"
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
+    "stylelint-high-performance-animation": "^1.6.0",
+    "stylelint-order": "^5.0.0"
   }
 }
