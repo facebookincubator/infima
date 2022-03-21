@@ -10,6 +10,7 @@
 const postcssEach = require('postcss-each');
 const postcssImport = require('postcss-import');
 const postcssFor = require('postcss-for');
+const postcssColorModFunction = require('postcss-color-mod-function');
 const postcssPresetEnv = require('postcss-preset-env');
 const postcssNested = require('postcss-nested');
 const postcssNestedAncestors = require('postcss-nested-ancestors');
@@ -20,6 +21,8 @@ const postcssSortMediaQueries = require('postcss-sort-media-queries');
 module.exports = () => ({
   plugins: [
     postcssImport,
+    // TODO postcss-each v1 doesn't seem to be compatible due to color-mod.
+    // Need to upgrade later
     postcssEach,
     postcssFor,
     postcssMixins({
@@ -44,10 +47,13 @@ module.exports = () => ({
     }),
     postcssNestedAncestors,
     postcssNested,
+    // color-mod has been removed from the spec, so it's not included in
+    // preset-env. Using a separate plugin instead. We probably would eventually
+    // get rid of color-mod
+    postcssColorModFunction({unresolved: 'ignore'}),
     postcssPresetEnv({
       stage: 1,
       features: {
-        'color-mod-function': {unresolved: 'ignore'},
         'custom-properties': false,
       },
     }),
