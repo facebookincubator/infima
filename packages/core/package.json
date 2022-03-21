@@ -21,7 +21,7 @@
     "url": "https://github.com/facebookincubator/infima/issues"
   },
   "devDependencies": {
-    "cssnano": "^4.1.10",
+    "cssnano": "^5.1.4",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.1",
