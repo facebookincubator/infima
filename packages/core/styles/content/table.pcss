@@ -18,6 +18,8 @@
   --ifm-table-head-color: inherit;
   --ifm-table-head-font-weight: var(--ifm-font-weight-bold);
 
+  --ifm-table-row-hover-color: rgba(0, 0, 0, 0.01);
+
   --ifm-table-cell-color: inherit;
 }
 
@@ -40,7 +42,7 @@ table {
   }
 
   tr:hover td {
-    background: var(--ifm-table-head-background);
+    background: var(--ifm-table-row-hover-color);
   }
 
   tr:nth-child(2n) {
