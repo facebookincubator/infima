@@ -13,7 +13,7 @@ jobs:
       - name: Install
         run: yarn install
       - name: Prettier
-        run: yarn format:ci
+        run: yarn format:check
       - name: Stylelint
         run: yarn lint
       # Ensure that all the expected files have been commited (yarn.lock, /dist...)

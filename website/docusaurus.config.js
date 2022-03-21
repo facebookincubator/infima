@@ -118,6 +118,7 @@ module.exports = {
       },
       copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
     },
+    autoCollapseSidebarCategories: true,
   },
   presets: [
     [
@@ -126,6 +127,7 @@ module.exports = {
         docs: {
           path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
+          remarkPlugins: [require('./src/remark/playground')],
         },
       },
     ],
