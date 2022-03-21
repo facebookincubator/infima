@@ -21,15 +21,15 @@
     "url": "https://github.com/facebookincubator/infima/issues"
   },
   "devDependencies": {
-    "cssnano": "^4.1.10",
+    "cssnano": "^5.1.4",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
-    "gulp-postcss": "^9.0.0",
+    "gulp-postcss": "^9.0.1",
     "gulp-rename": "^2.0.0",
-    "gulp-rtlcss": "^1.4.1",
+    "gulp-rtlcss": "^1.4.2",
     "gulp-webserver": "^0.9.1",
     "natives": "^1.1.6",
-    "postcss": "^8.2.10",
+    "postcss": "^8.4.12",
     "postcss-preset-infima": "^0.2.0-alpha.37"
   },
   "scripts": {
