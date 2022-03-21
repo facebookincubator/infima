@@ -14,7 +14,7 @@
   --ifm-table-border-width: 1px;
   --ifm-table-border-color: var(--ifm-color-emphasis-300);
 
-  --ifm-table-head-background: inherit;
+  --ifm-table-head-background: rgba(0, 0, 0, 0.06);
   --ifm-table-head-color: inherit;
   --ifm-table-head-font-weight: var(--ifm-font-weight-bold);
 
@@ -33,14 +33,14 @@ table {
     border-bottom-width: 2px;
   }
 
-  thead {
-    background-color: var(--ifm-table-stripe-background);
-  }
-
   tr {
     background-color: var(--ifm-table-background);
     border-top: var(--ifm-table-border-width) solid
       var(--ifm-table-border-color);
+  }
+
+  tr:hover td {
+    background: var(--ifm-table-head-background);
   }
 
   tr:nth-child(2n) {
