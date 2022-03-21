@@ -8,9 +8,8 @@
   ],
   "private": true,
   "scripts": {
-    "format": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx}\"",
-    "format:docs": "prettier --config .prettierrc --write \"**/*.{md,mdx}\"",
-    "format:ci": "prettier --config .prettierrc --check \"**/*.{js,jsx,ts,tsx,md,mdx}\"",
+    "format": "prettier --config .prettierrc --write --ignore-unknown \"**/*\"",
+    "format:check": "prettier --config .prettierrc --check --ignore-unknown \"**/*\"",
     "lint": "stylelint \"**/*.pcss\"",
     "lint:fix": "stylelint \"**/*.pcss\" --fix",
     "start": "cd packages/core && npm start",
