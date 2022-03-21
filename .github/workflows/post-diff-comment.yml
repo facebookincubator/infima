@@ -28,8 +28,8 @@ jobs:
 
           git fetch origin main
           git checkout main
-          yarn workspace infima build
           yarn install
+          yarn workspace infima build
 
           DEFAULT_CSS_DIFF=$(git diff --no-index packages/core/dist/css/default/default.css packages/core/dist-branch/css/default/default.css | cat)
 
