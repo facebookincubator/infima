@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import classnames from 'classnames';
+import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -21,17 +21,17 @@ function Home() {
     <Layout
       title={siteConfig.title}
       description="A modern styling framework for content-driven websites">
-      <header className={classnames('hero', styles.heroBanner)}>
+      <header className={clsx('hero', styles.heroBanner)}>
         <div className="container">
           <img
-            className={classnames(styles.heroBannerLogo, 'margin-vert--md')}
+            className={clsx(styles.heroBannerLogo, 'margin-vert--md')}
             src={useBaseUrl('img/logo.png')}
           />
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
-              className={classnames(
+              className={clsx(
                 'button button--primary button--lg',
                 styles.getStarted,
               )}

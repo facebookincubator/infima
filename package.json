@@ -19,11 +19,11 @@
     "website:build": "yarn workspace infima-website build",
     "website:deploy": "yarn workspace infima-website deploy",
     "lock:update": "npx yarn-deduplicate",
-    "postinstall": "is-ci || husky install && yarn lock:update"
+    "postinstall": "yarn lock:update",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "husky": "^5.0.9",
-    "is-ci": "^3.0.0",
+    "husky": "^7.0.4",
     "prettier": "^2.6.0"
   },
   "lint-staged": {
