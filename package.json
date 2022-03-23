@@ -27,7 +27,7 @@
     "lint-staged": "^12.3.7",
     "prettier": "^2.6.0",
     "stylelint": "^14.6.0",
-    "stylelint-copyright": "^2.0.0-alpha.69",
+    "stylelint-copyright": "^2.0.0-beta.17",
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
     "stylelint-high-performance-animation": "^1.6.0",
     "stylelint-order": "^5.0.0"
