@@ -777,9 +777,28 @@
                       </li>
                     </ul>
                   </li>
+
                   <li class="menu__list-item menu__list-item--collapsed">
-                    <a class="menu__link menu__link--sublist" href="#url">
-                      Not exactly category
+                    <div class="menu__list-item-collapsible">
+                      <a class="menu__link menu__link--sublist" href="#url">
+                        Category with link
+                      </a>
+                      <button
+                        type="button"
+                        class="clean-btn menu__caret"></button>
+                    </div>
+                    <ul class="menu__list">
+                      <li class="menu__list-item">
+                        <a class="menu__link" href="#url">Second Level</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="menu__list-item menu__list-item--collapsed">
+                    <a
+                      class="menu__link menu__link--sublist menu__link--sublist-caret"
+                      href="#url">
+                      Category without Link
                     </a>
                     <ul class="menu__list">
                       <li class="menu__list-item">
@@ -787,6 +806,7 @@
                       </li>
                     </ul>
                   </li>
+
                   <li class="menu__list-item">
                     <a class="menu__link" href="#url">And The List</a>
                   </li>
