@@ -93,6 +93,7 @@
 
   &__link,
   &__caret {
+    align-items: center;
     @mixin menu-item;
   }
 
@@ -107,14 +108,11 @@
       text-decoration: none;
     }
 
-    &--sublist-caret {
-      justify-content: space-between;
-
-      &:after {
-        content: '';
-        min-width: 1.25rem;
-        @mixin caret;
-      }
+    &--sublist-caret:after {
+      content: '';
+      margin-left: auto;
+      min-width: 1.25rem;
+      @mixin caret;
     }
 
     &:hover {
