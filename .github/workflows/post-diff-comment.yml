@@ -31,7 +31,7 @@ jobs:
           yarn install
           yarn workspace infima build
 
-          DEFAULT_CSS_DIFF=$(git diff --no-index packages/core/dist/css/default/default.css packages/core/dist-branch/css/default/default.css | cat)
+          DEFAULT_CSS_DIFF=$(git diff -w --no-index packages/core/dist/css/default/default.css packages/core/dist-branch/css/default/default.css | cat)
 
           # Escaping for multiline output support... see https://github.community/t/set-output-truncates-multiline-strings/16852/11
           DEFAULT_CSS_DIFF="${DEFAULT_CSS_DIFF//'%'/'%25'}"
