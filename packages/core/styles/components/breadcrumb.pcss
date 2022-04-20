@@ -46,15 +46,9 @@
     }
 
     &--active {
-      & .breadcrumbs__link {
+      & ^^&__link {
         background: var(--ifm-breadcrumb-item-background-active);
         color: var(--ifm-breadcrumb-color-active);
-      }
-    }
-
-    &:not(.breadcrumbs__item--active):hover {
-      & .breadcrumbs__link {
-        background: var(--ifm-breadcrumb-item-background-active);
       }
     }
   }
@@ -75,6 +69,7 @@
     @mixin transition background color;
 
     &:hover {
+      background: var(--ifm-breadcrumb-item-background-active);
       text-decoration: none;
     }
   }
