@@ -8,42 +8,30 @@
 :root {
   --ifm-avatar-intro-margin: 1rem;
   --ifm-avatar-intro-alignment: inherit;
-  --ifm-avatar-photo-size-sm: 2rem;
-  --ifm-avatar-photo-size-md: 3rem;
-  --ifm-avatar-photo-size-lg: 4rem;
-  --ifm-avatar-photo-size-xl: 6rem;
+  --ifm-avatar-photo-size: 3rem;
 }
 
 .avatar {
+  column-gap: var(--ifm-avatar-intro-margin);
   display: flex;
-
-  &__photo-link {
-    display: block;
-  }
 
   &__photo {
     border-radius: 50%;
-    height: var(--ifm-avatar-photo-size-md);
+    display: block;
+    height: var(--ifm-avatar-photo-size);
     overflow: hidden;
-    width: var(--ifm-avatar-photo-size-md);
+    width: var(--ifm-avatar-photo-size);
 
     &--sm {
-      height: var(--ifm-avatar-photo-size-sm);
-      width: var(--ifm-avatar-photo-size-sm);
+      --ifm-avatar-photo-size: 2rem;
     }
 
     &--lg {
-      height: var(--ifm-avatar-photo-size-lg);
-      width: var(--ifm-avatar-photo-size-lg);
+      --ifm-avatar-photo-size: 4rem;
     }
 
     &--xl {
-      height: var(--ifm-avatar-photo-size-xl);
-      width: var(--ifm-avatar-photo-size-xl);
-    }
-
-    & + ^&__intro {
-      margin-left: var(--ifm-avatar-intro-margin);
+      --ifm-avatar-photo-size: 6rem;
     }
   }
 
@@ -70,9 +58,5 @@
 
     align-items: center;
     flex-direction: column;
-
-    ^&__intro {
-      margin-left: 0; /* Reset the margin added in the horizontal layout. */
-    }
   }
 }
