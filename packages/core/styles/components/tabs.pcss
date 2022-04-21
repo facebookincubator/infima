@@ -11,7 +11,6 @@
   --ifm-tabs-color-active-border: var(--ifm-tabs-color-active);
   --ifm-tabs-padding-horizontal: 1rem;
   --ifm-tabs-padding-vertical: 1rem;
-  --ifm-tabs-spacing: 0.0625rem;
 }
 
 .tabs {
@@ -56,16 +55,6 @@
     ^&__item {
       flex-grow: 1;
       justify-content: center;
-
-      @media (--ifm-narrow-window) {
-        &:not(:first-child) {
-          margin-top: var(--ifm-tabs-spacing);
-        }
-
-        &:not(:last-child) {
-          margin-bottom: var(--ifm-tabs-spacing);
-        }
-      }
     }
   }
 }
