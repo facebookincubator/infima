@@ -81,7 +81,7 @@
   }
 
   li {
-    word-wrap: break-word;
+    overflow-wrap: break-word;
 
     & > p {
       margin-top: var(--ifm-list-paragraph-margin);
@@ -91,10 +91,8 @@
       margin-top: var(--ifm-list-item-margin);
     }
   }
-}
 
-@media (max-width: 576px) {
-  .markdown {
+  @media (max-width: 576px) {
     & h1:first-child {
       --ifm-h1-font-size: 2rem;
     }
