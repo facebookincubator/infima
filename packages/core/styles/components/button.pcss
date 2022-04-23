@@ -110,30 +110,21 @@
 }
 
 @each $color in (primary, secondary, success, info, warning, danger) {
-  .button--$(color) {
+  :where(.button--$(color)) {
     --ifm-button-border-color: var(--ifm-color-$(color));
+    --ifm-button-background-color: var(--ifm-color-$(color));
 
-    &:not(.button--outline) {
-      --ifm-button-background-color: var(--ifm-color-$(color));
-
-      &:hover {
-        --ifm-button-background-color: var(--ifm-color-$(color)-dark);
-        --ifm-button-border-color: var(--ifm-color-$(color)-dark);
-      }
+    &:not(.button--outline):hover {
+      --ifm-button-background-color: var(--ifm-color-$(color)-dark);
+      --ifm-button-border-color: var(--ifm-color-$(color)-dark);
     }
   }
 
-  /* Increase specificity. */
   .button--$(color) {
     &:active,
     &.button--active {
       --ifm-button-border-color: var(--ifm-color-$(color)-darker);
       --ifm-button-background-color: var(--ifm-color-$(color)-darker);
-
-      /* Has to be explicitly defined because .button--outline has quite high specificity. */
-      background-color: var(--ifm-color-$(color)-darker);
-      /* Has to be explicitly defined because .button--outline has quite high specificity. */
-      border-color: var(--ifm-color-$(color)-darker);
     }
   }
 }
