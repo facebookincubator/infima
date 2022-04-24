@@ -107,24 +107,24 @@
       color: var(--ifm-font-color-base);
     }
   }
-}
 
-@each $color in (primary, secondary, success, info, warning, danger) {
-  :where(.button--$(color)) {
-    --ifm-button-border-color: var(--ifm-color-$(color));
-    --ifm-button-background-color: var(--ifm-color-$(color));
+  @each $color in (primary, secondary, success, info, warning, danger) {
+    :where(&--$(color)) {
+      --ifm-button-background-color: var(--ifm-color-$(color));
+      --ifm-button-border-color: var(--ifm-color-$(color));
 
-    &:not(.button--outline):hover {
-      --ifm-button-background-color: var(--ifm-color-$(color)-dark);
-      --ifm-button-border-color: var(--ifm-color-$(color)-dark);
+      &:not(^&--outline):hover {
+        --ifm-button-background-color: var(--ifm-color-$(color)-dark);
+        --ifm-button-border-color: var(--ifm-color-$(color)-dark);
+      }
     }
-  }
 
-  .button--$(color) {
-    &:active,
-    &.button--active {
-      --ifm-button-border-color: var(--ifm-color-$(color)-darker);
-      --ifm-button-background-color: var(--ifm-color-$(color)-darker);
+    &--$(color) {
+      &:active,
+      &^&--active {
+        --ifm-button-background-color: var(--ifm-color-$(color)-darker);
+        --ifm-button-border-color: var(--ifm-color-$(color)-darker);
+      }
     }
   }
 }
