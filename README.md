@@ -1,4 +1,4 @@
-# [Infima](https://facebookincubator.github.io/infima/) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebookincubator/infima/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/infima.svg?style=flat)](https://www.npmjs.com/package/infima)
+# [Infima](https://infima.dev/) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebookincubator/infima/blob/main/LICENSE) [![npm version](https://img.shields.io/npm/v/infima.svg?style=flat)](https://www.npmjs.com/package/infima)
 
 > ⚠️ Infima is not yet ready for production use and is being developed alongside [Docusaurus 2](https://docusaurus.io/).
 

@@ -10,10 +10,29 @@
   --ifm-menu-color-active: var(--ifm-color-primary);
   --ifm-menu-color-background-active: var(--ifm-hover-overlay);
   --ifm-menu-color-background-hover: var(--ifm-hover-overlay);
-  --ifm-menu-link-padding-horizontal: 1rem;
+  --ifm-menu-link-padding-horizontal: 0.75rem;
   --ifm-menu-link-padding-vertical: 0.375rem;
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
   --ifm-menu-link-sublist-icon-filter: none;
+}
+
+@define-mixin caret {
+  background: var(--ifm-menu-link-sublist-icon) 50% / 2rem 2rem;
+  filter: var(--ifm-menu-link-sublist-icon-filter);
+  height: 1.25rem;
+  transform: rotate(180deg);
+  width: 1.25rem;
+  @mixin transition transform, var(--ifm-transition-fast), linear;
+}
+
+@define-mixin menu-item {
+  border-radius: 0.25rem;
+  display: flex;
+  @mixin transition background;
+
+  &:hover {
+    background: var(--ifm-menu-color-background-hover);
+  }
 }
 
 .menu {
@@ -25,13 +44,15 @@
   }
 
   &__list {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding-left: 0;
 
     /* Non-top level menus */
     ^&__list {
-      margin-left: var(--ifm-menu-link-padding-horizontal);
+      flex: 0 0 100%;
+      margin-top: 0.25rem;
+      padding-left: var(--ifm-menu-link-padding-horizontal);
     }
   }
 
@@ -46,47 +67,57 @@
         overflow: hidden;
       }
 
-      ^^&__link--sublist:after {
+      ^^&__link--sublist:after,
+      ^^&__caret:before {
         transform: rotateZ(90deg);
+      }
+    }
+
+    &-collapsible {
+      flex-wrap: wrap;
+      position: relative;
+      @mixin menu-item;
+
+      &--active {
+        background: var(--ifm-menu-color-background-hover);
+      }
+
+      ^^&__link {
+        &:hover,
+        &--active {
+          background: none !important;
+        }
       }
     }
   }
 
+  &__link,
+  &__caret {
+    align-items: center;
+    @mixin menu-item;
+  }
+
   &__link {
-    border-radius: 0.25rem;
     color: var(--ifm-menu-color);
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
+    flex: 1;
     line-height: 1.25;
     padding: var(--ifm-menu-link-padding-vertical)
       var(--ifm-menu-link-padding-horizontal);
-    position: relative;
-    @mixin transition color background;
 
     &:hover {
       text-decoration: none;
     }
 
-    &--sublist {
-      margin-bottom: 0.25rem;
-
-      &:after {
-        background: var(--ifm-menu-link-sublist-icon) 50% / 2rem 2rem;
-        content: ' ';
-        display: inline-block;
-        filter: var(--ifm-menu-link-sublist-icon-filter);
-        height: 1.25rem;
-        min-width: 1.25rem;
-        transform: rotate(180deg);
-        @mixin transition transform, var(--ifm-transition-fast), linear;
-      }
+    &--sublist-caret:after {
+      content: '';
+      margin-left: auto;
+      min-width: 1.25rem;
+      @mixin caret;
     }
 
     &:hover {
-      background: var(--ifm-menu-color-background-hover);
       color: var(--ifm-menu-color);
-      @mixin transition color background;
+      @mixin transition color;
     }
 
     &--active {
@@ -97,47 +128,18 @@
       }
 
       &:not(^&--sublist) {
-        background: var(--ifm-menu-color-background-active);
+        background-color: var(--ifm-menu-color-background-active);
       }
     }
   }
 
-  &--responsive {
-    ^&__button {
-      bottom: 2rem;
-      display: none;
-      position: fixed;
-      right: 1rem;
-      z-index: var(--ifm-z-index-fixed);
+  &__caret {
+    padding: var(--ifm-menu-link-padding-vertical)
+      var(--ifm-menu-link-padding-horizontal);
 
-      @media (--ifm-narrow-window) {
-        display: inherit;
-      }
-    }
-
-    @media (--ifm-narrow-window) {
-      &:not(.menu--show) ^&__list {
-        display: none;
-        opacity: 0;
-      }
-    }
-  }
-
-  &--show {
-    background: var(--ifm-background-surface-color);
-    bottom: 0;
-    left: 0;
-    overscroll-behavior: contain;
-    padding: 1rem;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: var(--ifm-z-index-overlay);
-
-    ^&__list {
-      display: inherit;
-      opacity: 1;
-      @mixin transition opacity, var(--ifm-transition-fast), linear;
+    &:before {
+      content: '';
+      @mixin caret;
     }
   }
 }

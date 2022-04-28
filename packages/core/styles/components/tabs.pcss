@@ -8,9 +8,9 @@
 :root {
   --ifm-tabs-color: var(--ifm-font-color-secondary);
   --ifm-tabs-color-active: var(--ifm-color-primary);
+  --ifm-tabs-color-active-border: var(--ifm-tabs-color-active);
   --ifm-tabs-padding-horizontal: 1rem;
   --ifm-tabs-padding-vertical: 1rem;
-  --ifm-tabs-spacing: 0.0625rem;
 }
 
 .tabs {
@@ -34,7 +34,7 @@
     @mixin transition background-color;
 
     &--active {
-      border-bottom-color: var(--ifm-tabs-color-active);
+      border-bottom-color: var(--ifm-tabs-color-active-border);
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
       color: var(--ifm-tabs-color-active);
@@ -55,16 +55,6 @@
     ^&__item {
       flex-grow: 1;
       justify-content: center;
-
-      @media (--ifm-narrow-window) {
-        &:not(:first-child) {
-          margin-top: var(--ifm-tabs-spacing);
-        }
-
-        &:not(:last-child) {
-          margin-bottom: var(--ifm-tabs-spacing);
-        }
-      }
     }
   }
 }

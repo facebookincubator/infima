@@ -1,7 +1,4 @@
----
-id: introduction
-title: Introduction
----
+# Introduction
 
 ## What is it?
 

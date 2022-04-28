@@ -3,7 +3,7 @@ name: Lint
 on:
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   lint:
@@ -13,9 +13,9 @@ jobs:
       - name: Install
         run: yarn install
       - name: Prettier
-        run: yarn prettier:ci
+        run: yarn format:check
       - name: Stylelint
-        run: yarn lint:ci
+        run: yarn lint
       # Ensure that all the expected files have been commited (yarn.lock, /dist...)
       - name: Git staged is empty
         run: yarn build && git diff --exit-code

@@ -9,7 +9,7 @@
   --ifm-table-cell-padding: 0.75rem;
 
   --ifm-table-background: transparent;
-  --ifm-table-stripe-background: var(--ifm-color-emphasis-100);
+  --ifm-table-stripe-background: rgba(0, 0, 0, 0.03);
 
   --ifm-table-border-width: 1px;
   --ifm-table-border-color: var(--ifm-color-emphasis-300);
@@ -26,12 +26,13 @@ table {
   display: block;
   margin-bottom: var(--ifm-spacing-vertical);
   overflow: auto;
-  width: 100%;
 
   thead tr {
-    border-bottom-color: var(--ifm-table-border-color);
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
+    border-bottom: 2px solid var(--ifm-table-border-color);
+  }
+
+  thead {
+    background-color: var(--ifm-table-stripe-background);
   }
 
   tr {

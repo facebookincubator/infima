@@ -1,6 +1,6 @@
 {
   "name": "postcss-preset-infima",
-  "version": "0.2.0-alpha.26",
+  "version": "0.2.0-alpha.38",
   "description": "Postcss preset for Infima",
   "main": "index.js",
   "author": "Yangshun Tay",
@@ -18,20 +18,21 @@
     "url": "https://github.com/facebookincubator/infima/issues"
   },
   "dependencies": {
-    "postcss": "^8.2.10",
-    "postcss-combine-duplicated-selectors": "^10.0.2",
-    "postcss-css-variables": "^0.17.0",
+    "postcss": "^8.4.12",
+    "postcss-color-mod-function": "^3.0.3",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
+    "postcss-css-variables": "^0.18.0",
     "postcss-each": "^0.10.0",
     "postcss-for": "^2.1.1",
-    "postcss-import": "^14.0.0",
-    "postcss-mixins": "^6.2.3",
-    "postcss-nested": "^4.2.1",
+    "postcss-import": "^14.0.2",
+    "postcss-mixins": "^9.0.2",
+    "postcss-nested": "^5.0.6",
     "postcss-nested-ancestors": "^2.0.0",
-    "postcss-preset-env": "^6.7.0",
-    "postcss-sort-media-queries": "^3.4.3"
+    "postcss-preset-env": "^7.4.3",
+    "postcss-sort-media-queries": "^4.2.1"
   },
   "peerDependencies": {
-    "infima": "^0.2.0-alpha.26"
+    "infima": "^0.2.0-alpha.38"
   },
   "engines": {
     "node": ">=12"

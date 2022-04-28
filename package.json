@@ -8,10 +8,10 @@
   ],
   "private": true,
   "scripts": {
-    "prettier": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx}\"",
-    "prettier:docs": "prettier --config .prettierrc --write \"**/*.{md,mdx}\"",
-    "prettier:ci": "prettier --config .prettierrc --check \"**/*.{js,jsx,ts,tsx,md,mdx}\"",
-    "lint:ci": "yarn workspace infima lint",
+    "format": "prettier --config .prettierrc --write --ignore-unknown \"**/*\"",
+    "format:check": "prettier --config .prettierrc --check --ignore-unknown \"**/*\"",
+    "lint": "stylelint \"**/*.pcss\"",
+    "lint:fix": "stylelint \"**/*.pcss\" --fix",
     "start": "cd packages/core && npm start",
     "build": "yarn workspace infima build",
     "build:en": "yarn workspace infima build --locale en",
@@ -19,19 +19,17 @@
     "website:build": "yarn workspace infima-website build",
     "website:deploy": "yarn workspace infima-website deploy",
     "lock:update": "npx yarn-deduplicate",
-    "postinstall": "is-ci || husky install && yarn lock:update"
+    "postinstall": "yarn lock:update",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "husky": "^5.0.9",
-    "is-ci": "^3.0.0",
-    "prettier": "^2.2.1"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "prettier --write"
-    ],
-    "*.{md,mdx}": [
-      "prettier --write"
-    ]
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.0",
+    "stylelint": "^14.6.0",
+    "stylelint-copyright": "^2.0.0-beta.17",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
+    "stylelint-high-performance-animation": "^1.6.0",
+    "stylelint-order": "^5.0.0"
   }
 }
