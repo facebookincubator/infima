@@ -25,8 +25,8 @@
   --ifm-blockquote-border-color: var(--ifm-color-emphasis-300);
 
   /* Horizontal Rules. */
-  --ifm-hr-border-color: var(--ifm-color-emphasis-500);
-  --ifm-hr-border-width: 1px;
+  --ifm-hr-background-color: var(--ifm-color-emphasis-500);
+  --ifm-hr-height: 1px;
   --ifm-hr-margin-vertical: 1.5rem;
 }
 
@@ -79,7 +79,8 @@ blockquote {
 
 /* Horizontal Rules */
 hr {
-  border: 0 solid var(--ifm-hr-border-color);
-  border-top-width: var(--ifm-hr-border-width);
+  background-color: var(--ifm-hr-background-color);
+  border: 0;
+  height: var(--ifm-hr-height);
   margin: var(--ifm-hr-margin-vertical) 0;
 }
