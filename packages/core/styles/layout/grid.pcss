@@ -29,7 +29,6 @@
 
 .row {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   margin: 0 calc(var(--ifm-spacing-horizontal) * -1);
 
@@ -48,7 +47,7 @@
     }
 
     @media (--ifm-narrow-window) {
-      &.col.col {
+      & {
         --ifm-col-width: 100%;
         flex-basis: var(--ifm-col-width);
         margin-left: 0;
@@ -56,11 +55,11 @@
     }
 
     @for $column from 1 to 12 {
-      &.col--$(column) {
+      &--$(column) {
         --ifm-col-width: calc($(column) / 12 * 100%);
       }
 
-      &.col--offset-$(column) {
+      &--offset-$(column) {
         margin-left: calc($(column) / 12 * 100%);
       }
     }
