@@ -1,6 +1,6 @@
 {
   "name": "infima",
-  "version": "0.2.0-alpha.38",
+  "version": "0.2.0-alpha.39",
   "description": "A UI framework for content-centric websites.",
   "author": "Yangshun Tay",
   "license": "MIT",
@@ -30,7 +30,7 @@
     "gulp-webserver": "^0.9.1",
     "natives": "^1.1.6",
     "postcss": "^8.4.13",
-    "postcss-preset-infima": "^0.2.0-alpha.38"
+    "postcss-preset-infima": "^0.2.0-alpha.39"
   },
   "scripts": {
     "build": "gulp build",
