@@ -22,10 +22,8 @@
 
 .button {
   background-color: var(--ifm-button-background-color);
-  border-color: var(--ifm-button-border-color);
+  border: var(--ifm-button-border-width) solid var(--ifm-button-border-color);
   border-radius: var(--ifm-button-border-radius);
-  border-style: solid;
-  border-width: var(--ifm-button-border-width);
   color: var(--ifm-button-color);
   cursor: pointer;
   display: inline-block;
@@ -109,33 +107,24 @@
       color: var(--ifm-font-color-base);
     }
   }
-}
 
-@each $color in (primary, secondary, success, info, warning, danger) {
-  .button--$(color) {
-    --ifm-button-border-color: var(--ifm-color-$(color));
-
-    &:not(.button--outline) {
+  @each $color in (primary, secondary, success, info, warning, danger) {
+    :where(&--$(color)) {
       --ifm-button-background-color: var(--ifm-color-$(color));
+      --ifm-button-border-color: var(--ifm-color-$(color));
 
-      &:hover {
+      &:not(^&--outline):hover {
         --ifm-button-background-color: var(--ifm-color-$(color)-dark);
         --ifm-button-border-color: var(--ifm-color-$(color)-dark);
       }
     }
-  }
 
-  /* Increase specificity. */
-  .button--$(color) {
-    &:active,
-    &.button--active {
-      --ifm-button-border-color: var(--ifm-color-$(color)-darker);
-      --ifm-button-background-color: var(--ifm-color-$(color)-darker);
-
-      /* Has to be explicitly defined because .button--outline has quite high specificity. */
-      background-color: var(--ifm-color-$(color)-darker);
-      /* Has to be explicitly defined because .button--outline has quite high specificity. */
-      border-color: var(--ifm-color-$(color)-darker);
+    &--$(color) {
+      &:active,
+      &^&--active {
+        --ifm-button-background-color: var(--ifm-color-$(color)-darker);
+        --ifm-button-border-color: var(--ifm-color-$(color)-darker);
+      }
     }
   }
 }

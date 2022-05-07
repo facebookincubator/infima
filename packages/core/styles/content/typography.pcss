@@ -25,8 +25,8 @@
   --ifm-blockquote-border-color: var(--ifm-color-emphasis-300);
 
   /* Horizontal Rules. */
-  --ifm-hr-border-color: var(--ifm-color-emphasis-500);
-  --ifm-hr-border-width: 1px;
+  --ifm-hr-background-color: var(--ifm-color-emphasis-500);
+  --ifm-hr-height: 1px;
   --ifm-hr-margin-vertical: 1.5rem;
 }
 
@@ -59,10 +59,8 @@ p {
 
 /* Blockquotes */
 blockquote {
-  border-color: var(--ifm-blockquote-border-color);
-  border-style: solid;
-  border-width: 0;
-  border-left-width: var(--ifm-blockquote-border-left-width);
+  border-left: var(--ifm-blockquote-border-left-width) solid
+    var(--ifm-blockquote-border-color);
   box-shadow: var(--ifm-blockquote-shadow);
   color: var(--ifm-blockquote-color);
   font-size: var(--ifm-blockquote-font-size);
@@ -81,8 +79,8 @@ blockquote {
 
 /* Horizontal Rules */
 hr {
-  border-color: var(--ifm-hr-border-color);
-  border-style: solid;
-  border-width: var(--ifm-hr-border-width);
+  background-color: var(--ifm-hr-background-color);
+  border: 0;
+  height: var(--ifm-hr-height);
   margin: var(--ifm-hr-margin-vertical) 0;
 }

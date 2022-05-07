@@ -42,9 +42,7 @@
   --ifm-tabs-color-active-border: var(--ifm-alert-border-color);
 
   background-color: var(--ifm-alert-background-color);
-  border-color: var(--ifm-alert-border-color);
-  border-style: solid;
-  border-width: var(--ifm-alert-border-width);
+  border: var(--ifm-alert-border-width) solid var(--ifm-alert-border-color);
   border-left-width: var(--ifm-alert-border-left-width);
   border-radius: var(--ifm-alert-border-radius);
   box-shadow: var(--ifm-alert-shadow);
@@ -77,9 +75,7 @@
       calc(var(--ifm-alert-padding-horizontal) * -1) 0 0;
 
     opacity: 0.75;
-    &:hover {
-      opacity: 1;
-    }
+    &:hover,
     &:focus {
       opacity: 1;
     }

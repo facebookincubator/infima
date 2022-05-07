@@ -94,7 +94,7 @@
               <div class="navbar__logo">
                 <img src="https://infima.dev/img/logo.png" />
               </div>
-              <span class="navbar__title">Infima</span>
+              <span class="navbar__title text--truncate">Infima</span>
             </a>
             <a class="navbar__item navbar__link" href="#url">Docs</a>
             <a class="navbar__item navbar__link" href="#url">Tutorial</a>
@@ -131,6 +131,28 @@
                 </li>
                 <li>
                   <a class="dropdown__link" href="#url">All Versions</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="navbar__item dropdown dropdown--hoverable dropdown--nocaret thin-scrollbar">
+              <a class="navbar__link" href="#url">
+                <i class="fas fa-language fa-2x"></i>
+              </a>
+              <ul class="dropdown__menu">
+                <li>
+                  <a class="dropdown__link" href="#url">简体中文</a>
+                </li>
+                <li>
+                  <a class="dropdown__link" href="#url">日本語</a>
+                </li>
+                <li>
+                  <a class="dropdown__link dropdown__link--active" href="#url">
+                    Français
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown__link" href="#url">Español</a>
                 </li>
               </ul>
             </div>
@@ -176,7 +198,7 @@
             <div class="navbar__logo">
               <img src="https://infima.dev/img/logo.png" />
             </div>
-            <span class="navbar__title">
+            <span class="navbar__title text--truncate">
               Infima long long long long long long long long long
             </span>
           </a>
@@ -199,7 +221,11 @@
                 <a class="menu__link" href="#url">Tutorial</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__link menu__link--sublist" href="#url">v2.0</a>
+                <a
+                  class="menu__link menu__link--sublist menu__link--sublist-caret"
+                  href="#url"
+                  >v2.0</a
+                >
                 <ul class="menu__list">
                   <li class="menu__list-item">
                     <a class="menu__link" href="#url">v1.8.0</a>
@@ -212,6 +238,27 @@
                   </li>
                   <li class="menu__list-item">
                     <a class="menu__link" href="#url">All Versions</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__list-item">
+                <a
+                  class="menu__link menu__link--sublist menu__link--sublist-caret"
+                  href="#url"
+                  >Community
+                  <svg
+                    class="svg-icon"
+                    style="width: 2em; height: 1em"
+                    viewBox="0 0 1024 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M861.2 103.2H369.7c-33 0-52.7 8.8-52.7 42v105h42v-103h516v379.1h-80v42h84c33 0 42-21.7 42-54.9V145.2c0.1-33.2-26.8-42-59.8-42zM429 586.4c22.8-0.5 41-19.1 41-41.9s-18.2-41.4-41-41.9c-23.1 0-41.9 18.8-41.9 41.9 0 23.2 18.7 41.9 41.9 41.9z m168 0c22.8-0.5 41-19.1 41-41.9 0-22.8-18.2-41.4-41-41.9-22.8 0.5-41 19.1-41 41.9s18.3 41.4 41 41.9z m113-294.2H145.9c-28.3 0-42 13.5-42 42.1v420.1c0 28.5 13.7 42 42 42h106v126L386.6 796l323.4 0.4c28.3 0 42-13.5 42-42V334.3c-0.5-28.2-14-42.1-42-42.1z m-2 461.2H357l-63 64v-64H147V335.3h561v418.1z m-447.1-167c23.1 0 41.9-18.8 41.9-41.9 0-23.1-18.8-41.9-41.9-41.9-23.1 0-41.9 18.8-41.9 41.9 0 23.2 18.7 41.9 41.9 41.9z m0 0"
+                      fill="#282828" /></svg
+                ></a>
+                <ul class="menu__list">
+                  <li class="menu__list-item">
+                    <a class="menu__link" href="#url">Facebook</a>
                   </li>
                 </ul>
               </li>
@@ -340,7 +387,7 @@
                 <div class="navbar__inner">
                   <div class="navbar__items">
                     <a class="navbar__brand">
-                      <span class="navbar__title">
+                      <span class="navbar__title text--truncate">
                         Infima long long long long long long long long long long
                         long long long long long long long
                       </span>
@@ -540,7 +587,7 @@
                   <div class="row footer__links">
                     <div class="col col--3 footer__col">
                       <div class="footer__title">Docs</div>
-                      <ul class="footer__items">
+                      <ul class="footer__items clean-list">
                         <li class="footer__item">
                           <a class="footer__link-item" href="#url">
                             Getting Started
@@ -556,7 +603,7 @@
                     </div>
                     <div class="col col--3 footer__col">
                       <div class="footer__title">Community</div>
-                      <ul class="footer__items">
+                      <ul class="footer__items clean-list">
                         <li class="footer__item">
                           <a class="footer__link-item" href="#url">Users</a>
                         </li>
@@ -574,7 +621,7 @@
                     </div>
                     <div class="col col--3 footer__col">
                       <div class="footer__title">Social</div>
-                      <ul class="footer__items">
+                      <ul class="footer__items clean-list">
                         <li class="footer__item">
                           <a class="footer__link-item" href="#url">GitHub</a>
                         </li>
@@ -588,7 +635,7 @@
                     </div>
                     <div class="col col--3 footer__col">
                       <div class="footer__title">More</div>
-                      <ul class="footer__items">
+                      <ul class="footer__items clean-list">
                         <li class="footer__item">
                           <a class="footer__link-item" href="#url">Tutorial</a>
                         </li>
@@ -636,7 +683,7 @@
                   <div class="row footer__links">
                     <div class="col footer__col">
                       <h4 class="footer__title">Docs</h4>
-                      <ul class="footer__items">
+                      <ul class="footer__items clean-list">
                         <li class="footer__item">
                           <a class="footer__link-item" href="#url">
                             Getting Started
@@ -652,7 +699,7 @@
                     </div>
                     <div class="col footer__col">
                       <h4 class="footer__title">Community</h4>
-                      <ul class="footer__items">
+                      <ul class="footer__items clean-list">
                         <li class="footer__item">
                           <a class="footer__link-item" href="#url">Users</a>
                         </li>
@@ -670,7 +717,7 @@
                     </div>
                     <div class="col footer__col">
                       <h4 class="footer__title">Social</h4>
-                      <ul class="footer__items">
+                      <ul class="footer__items clean-list">
                         <li class="footer__item">
                           <a class="footer__link-item" href="#url">GitHub</a>
                         </li>
@@ -684,7 +731,7 @@
                     </div>
                     <div class="col footer__col">
                       <h4 class="footer__title">More</h4>
-                      <ul class="footer__items">
+                      <ul class="footer__items clean-list">
                         <li class="footer__item">
                           <a class="footer__link-item" href="#url">Tutorial</a>
                         </li>
@@ -760,7 +807,9 @@
                         <a class="menu__link" href="#url">Second Level</a>
                       </li>
                       <li class="menu__list-item menu__list-item--collapsed">
-                        <a class="menu__link menu__link--sublist" href="#url">
+                        <a
+                          class="menu__link menu__link--sublist menu__link--sublist-caret"
+                          href="#url">
                           A Very Very Very Very Very Very Very Very Very Very
                           Very Very Long Subcategory
                         </a>
@@ -777,9 +826,28 @@
                       </li>
                     </ul>
                   </li>
+
                   <li class="menu__list-item menu__list-item--collapsed">
-                    <a class="menu__link menu__link--sublist" href="#url">
-                      Not exactly category
+                    <div class="menu__list-item-collapsible">
+                      <a class="menu__link menu__link--sublist" href="#url">
+                        Category with link
+                      </a>
+                      <button
+                        type="button"
+                        class="clean-btn menu__caret"></button>
+                    </div>
+                    <ul class="menu__list">
+                      <li class="menu__list-item">
+                        <a class="menu__link" href="#url">Second Level</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="menu__list-item menu__list-item--collapsed">
+                    <a
+                      class="menu__link menu__link--sublist menu__link--sublist-caret"
+                      href="#url">
+                      Category without Link
                     </a>
                     <ul class="menu__list">
                       <li class="menu__list-item">
@@ -787,6 +855,7 @@
                       </li>
                     </ul>
                   </li>
+
                   <li class="menu__list-item">
                     <a class="menu__link" href="#url">And The List</a>
                   </li>
@@ -823,20 +892,20 @@
                 <p>
                   Ut lectus arcu bibendum at. Quam adipiscing vitae proin
                   sagittis nisl rhoncus mattis rhoncus urna. Lacus laoreet non
-                  curabitur gravida. Neque viverra justo nec ultrices dui sapien
-                  eget mi. Et pharetra pharetra massa massa ultricies mi. Nulla
-                  aliquet enim tortor at. Euismod nisi porta lorem mollis
-                  aliquam.
+                  curabitur gravida. <code>Neque viverra justo</code> nec
+                  ultrices dui sapien eget mi. Et pharetra pharetra massa massa
+                  ultricies mi. Nulla aliquet enim tortor at. Euismod nisi porta
+                  lorem mollis aliquam.
                 </p>
                 <p>
-                  Ut lectus arcu bibendum at. Quam adipiscing vitae proin
-                  sagittis nisl rhoncus mattis rhoncus urna. Lacus laoreet non
-                  curabitur gravida. Neque viverra justo nec ultrices dui sapien
-                  eget mi. Et pharetra pharetra massa massa ultricies mi. Nulla
-                  aliquet enim tortor at. Euismod nisi porta lorem mollis
+                  <code>Ut lectus arcu bibendum</code> at. Quam adipiscing vitae
+                  proin sagittis nisl rhoncus mattis rhoncus urna. Lacus laoreet
+                  non curabitur gravida. Neque viverra justo nec ultrices dui
+                  sapien eget mi. Et pharetra pharetra massa massa ultricies mi.
+                  Nulla aliquet enim tortor at. Euismod nisi porta lorem mollis
                   aliquam.
                 </p>
-                <h2>Verifying Installation</h2>
+                <h2>Verifying <code>Installation</code></h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -2094,63 +2163,62 @@ const myFun = (x, y) =&gt; {
           <div class="row">
             <div class="col col--5">
               <nav class="pagination-nav">
-                <div class="pagination-nav__item">
-                  <a class="pagination-nav__link" href="#url">
-                    <div class="pagination-nav__sublabel">Previous</div>
-                    <div class="pagination-nav__label">Installation</div>
-                  </a>
-                </div>
-                <div class="pagination-nav__item pagination-nav__item--next">
-                  <a class="pagination-nav__link" href="#url">
-                    <div class="pagination-nav__sublabel">Next</div>
-                    <div class="pagination-nav__label">Getting Started</div>
-                  </a>
-                </div>
+                <a
+                  class="pagination-nav__link pagination-nav__link--prev"
+                  href="#url">
+                  <div class="pagination-nav__sublabel">Previous</div>
+                  <div class="pagination-nav__label">Installation</div>
+                </a>
+                <a
+                  class="pagination-nav__link pagination-nav__link--next"
+                  href="#url">
+                  <div class="pagination-nav__sublabel">Next</div>
+                  <div class="pagination-nav__label">Getting Started</div>
+                </a>
               </nav>
             </div>
             <div class="col col--6 col--offset-1">
               <nav class="pagination-nav">
-                <div class="pagination-nav__item">
-                  <a class="pagination-nav__link" href="#url">
-                    <div class="pagination-nav__sublabel">Previous</div>
-                    <div class="pagination-nav__label">
-                      Some Extremely Long Long Long Long Title
-                    </div>
-                  </a>
-                </div>
-                <div class="pagination-nav__item pagination-nav__item--next">
-                  <a class="pagination-nav__link" href="#url">
-                    <h5 class="pagination-nav__sublabel">Next</h5>
-                    <h4 class="pagination-nav__label">
-                      AnotherExtremelyLongTitleWithoutBreaksProbablyAComponent
-                    </h4>
-                  </a>
-                </div>
+                <a
+                  class="pagination-nav__link pagination-nav__link--prev"
+                  href="#url">
+                  <div class="pagination-nav__sublabel">Previous</div>
+                  <div class="pagination-nav__label">
+                    Some Extremely Long Long Long Long Title
+                  </div>
+                </a>
+                <a
+                  class="pagination-nav__link pagination-nav__link--next"
+                  href="#url">
+                  <h5 class="pagination-nav__sublabel">Next</h5>
+                  <h4 class="pagination-nav__label">
+                    AnotherExtremelyLongTitleWithoutBreaksProbablyAComponent
+                  </h4>
+                </a>
               </nav>
             </div>
           </div>
           <div class="row">
             <div class="col col--5">
               <nav class="pagination-nav">
-                <div class="pagination-nav__item">
-                  <a class="pagination-nav__link" href="#url">
-                    <div class="pagination-nav__sublabel">Previous</div>
-                    <div class="pagination-nav__label">Installation</div>
-                  </a>
-                </div>
+                <a
+                  class="pagination-nav__link pagination-nav__link--prev"
+                  href="#url">
+                  <div class="pagination-nav__sublabel">Previous</div>
+                  <div class="pagination-nav__label">Installation</div>
+                </a>
               </nav>
             </div>
             <div class="col col--6 col--offset-1">
               <nav class="pagination-nav">
-                <div class="pagination-nav__item"></div>
-                <div class="pagination-nav__item pagination-nav__item--next">
-                  <a class="pagination-nav__link" href="#url">
-                    <div class="pagination-nav__sublabel">Next</div>
-                    <div class="pagination-nav__label">
-                      AnotherExtremelyLongTitleWithoutBreaksProbablyAComponent
-                    </div>
-                  </a>
-                </div>
+                <a
+                  class="pagination-nav__link pagination-nav__link--next"
+                  href="#url">
+                  <div class="pagination-nav__sublabel">Next</div>
+                  <div class="pagination-nav__label">
+                    AnotherExtremelyLongTitleWithoutBreaksProbablyAComponent
+                  </div>
+                </a>
               </nav>
             </div>
           </div>
@@ -2230,10 +2298,9 @@ const myFun = (x, y) =&gt; {
           <div class="row">
             <div class="col">
               <div class="avatar">
-                <a
-                  class="avatar__photo avatar__photo--xl avatar__photo-link"
-                  href="https://twitter.com/dan_abramov">
+                <a href="https://twitter.com/dan_abramov">
                   <img
+                    class="avatar__photo avatar__photo--xl"
                     alt="Dan Abramov Profile"
                     src="https://avatars1.githubusercontent.com/u/810438?s=460" />
                 </a>
@@ -2572,6 +2639,8 @@ const myFun = (x, y) =&gt; {
               </blockquote>
             </div>
           </div>
+          <h2>Horizontal rule</h2>
+          <hr />
         </div>
         <div class="section">
           <div class="row">
@@ -2645,12 +2714,12 @@ const myFun = (x, y) =&gt; {
                 <tbody>
                   <tr>
                     <td>col 3 is</td>
-                    <td align="center">right-aligned</td>
+                    <td align="center"><code>right-aligned</code></td>
                     <td align="right">$1600</td>
                   </tr>
                   <tr>
                     <td>col 2 is</td>
-                    <td align="center">centered</td>
+                    <td align="center"><code>centered</code></td>
                     <td align="right">$12</td>
                   </tr>
                   <tr>
@@ -2873,7 +2942,7 @@ let myFun = (x, y) =&gt; {
         <div class="row footer__links">
           <div class="col footer__col">
             <h4 class="footer__title">Docs</h4>
-            <ul class="footer__items">
+            <ul class="footer__items clean-list">
               <li class="footer__item">
                 <a class="footer__link-item" href="#url">Getting Started</a>
               </li>
@@ -2887,7 +2956,7 @@ let myFun = (x, y) =&gt; {
           </div>
           <div class="col footer__col">
             <h4 class="footer__title">Community</h4>
-            <ul class="footer__items">
+            <ul class="footer__items clean-list">
               <li class="footer__item">
                 <a class="footer__link-item" href="#url">Users</a>
               </li>
@@ -2901,7 +2970,7 @@ let myFun = (x, y) =&gt; {
           </div>
           <div class="col footer__col">
             <h4 class="footer__title">Social</h4>
-            <ul class="footer__items">
+            <ul class="footer__items clean-list">
               <li class="footer__item">
                 <a class="footer__link-item" href="#url">GitHub</a>
               </li>
@@ -2915,7 +2984,7 @@ let myFun = (x, y) =&gt; {
           </div>
           <div class="col footer__col">
             <h4 class="footer__title">More</h4>
-            <ul class="footer__items">
+            <ul class="footer__items clean-list">
               <li class="footer__item">
                 <a class="footer__link-item" href="#url">Tutorial</a>
               </li>
