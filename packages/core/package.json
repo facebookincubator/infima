@@ -28,7 +28,6 @@
     "gulp-rename": "^2.0.0",
     "gulp-rtlcss": "^2.0.0",
     "gulp-webserver": "^0.9.1",
-    "natives": "^1.1.6",
     "postcss": "^8.4.13",
     "postcss-preset-infima": "^0.2.0-alpha.39"
   },
