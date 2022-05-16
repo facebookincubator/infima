@@ -5,12 +5,15 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+// @ts-check
+
 // See Netlify env variables here: https://docs.netlify.com/configure-builds/environment-variables/#build-metadata
 const isNetlify = process.env.NETLIFY === 'true';
 const isNetlifyDeployPreview =
   isNetlify && process.env.CONTEXT === 'deploy-preview';
 
 // Deploy preview: we want to test the Infima RTL support!
+/** @type {import("@docusaurus/types").I18nConfig} */
 const i18n = isNetlifyDeployPreview
   ? {
       defaultLocale: 'LTR',
@@ -26,7 +29,8 @@ const i18n = isNetlifyDeployPreview
     }
   : undefined;
 
-module.exports = {
+/** @type {import("@docusaurus/types").Config} */
+const config = {
   i18n,
   title: 'Infima',
   tagline: 'A modern styling framework for content-driven websites 🔥',
@@ -35,6 +39,7 @@ module.exports = {
   baseUrl: '/',
   url: 'https://infima.dev',
   favicon: 'img/logo.png',
+  /** @type {import("@docusaurus/preset-classic").ThemeConfig} */
   themeConfig: {
     colorMode: {
       respectPrefersColorScheme: true,
@@ -49,15 +54,18 @@ module.exports = {
         {
           to: 'docs/getting-started/introduction',
           label: 'Docs',
+          /** @type {"left" | "right"} */
           position: 'left',
         },
         isNetlifyDeployPreview && {
           to: 'pathname:///demo',
           label: 'Demo',
+          /** @type {"left" | "right"} */
           position: 'left',
         },
         isNetlifyDeployPreview && {
           type: 'localeDropdown',
+          /** @type {"left" | "right"} */
           position: 'left',
         },
       ].filter(Boolean),
@@ -118,18 +126,26 @@ module.exports = {
       },
       copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
     },
-    autoCollapseSidebarCategories: true,
+    docs: {
+      sidebar: {
+        autoCollapseCategories: true,
+      },
+    },
   },
   presets: [
     [
       '@docusaurus/preset-classic',
-      {
+      /** @type {import("@docusaurus/preset-classic").Options} */
+      ({
         docs: {
           path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [require('./src/remark/playground')],
         },
-      },
+        blog: false,
+      }),
     ],
   ],
 };
+
+module.exports = config;
