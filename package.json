@@ -23,11 +23,11 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "husky": "^7.0.4",
+    "husky": "^8.0.1",
     "lint-staged": "^12.4.1",
     "prettier": "^2.6.2",
-    "stylelint": "^14.8.1",
-    "stylelint-copyright": "^2.0.0-beta.18",
+    "stylelint": "^14.8.2",
+    "stylelint-copyright": "^2.0.0-beta.20",
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
     "stylelint-high-performance-animation": "^1.6.0",
     "stylelint-order": "^5.0.0"
