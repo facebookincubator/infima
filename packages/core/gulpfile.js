@@ -14,7 +14,7 @@ const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
 const rtlcss = require('gulp-rtlcss');
 const postcssPresetInfima = require('postcss-preset-infima');
-const server = require('gulp-server-livereload');
+const webserver = require('gulp-webserver');
 
 function transformStyles() {
   const modernPreset = postcssPresetInfima();
@@ -63,7 +63,7 @@ function copyScriptsToDemo() {
 
 function serve() {
   return gulp.src('./demo').pipe(
-    server({
+    webserver({
       livereload: {
         enable: true,
         filter: () => true,
