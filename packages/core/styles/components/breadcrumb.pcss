@@ -19,6 +19,14 @@
   --ifm-breadcrumb-separator-size-multiplier: 1.25;
 }
 
+html:dir(rtl) .breadcrumbs {
+  &__item {
+    &:not(:last-child):after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
 .breadcrumbs {
   margin-bottom: 0;
   padding-left: 0;
