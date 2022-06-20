@@ -18,7 +18,7 @@
     "url": "https://github.com/facebookincubator/infima/issues"
   },
   "dependencies": {
-    "postcss": "^8.4.13",
+    "postcss": "^8.4.14",
     "postcss-color-mod-function": "^3.0.3",
     "postcss-combine-duplicated-selectors": "^10.0.3",
     "postcss-css-variables": "^0.18.0",
@@ -28,7 +28,7 @@
     "postcss-mixins": "^9.0.2",
     "postcss-nested": "^5.0.6",
     "postcss-nested-ancestors": "^3.0.0",
-    "postcss-preset-env": "^7.5.0",
+    "postcss-preset-env": "^7.7.1",
     "postcss-sort-media-queries": "^4.2.1"
   },
   "peerDependencies": {
