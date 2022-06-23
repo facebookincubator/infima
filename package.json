@@ -18,7 +18,7 @@
     "website:start": "yarn workspace infima-website start",
     "website:build": "yarn workspace infima-website build",
     "website:deploy": "yarn workspace infima-website deploy",
-    "lock:update": "npx yarn-deduplicate",
+    "lock:update": "npx --yes yarn-deduplicate",
     "postinstall": "yarn lock:update",
     "prepare": "husky install"
   },
