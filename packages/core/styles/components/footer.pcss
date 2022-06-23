@@ -54,15 +54,6 @@
   &__logo {
     margin-top: 1rem;
     max-width: var(--ifm-footer-logo-max-width);
-
-    /* For footer images with a user-defined width: ensure by default to never overflow the viewport */
-    --ifm-footer-logo-max-width-dynamic: min(
-      var(--ifm-footer-logo-max-width),
-      90vw
-    );
-    @supports (max-width: var(--ifm-footer-logo-max-width-dynamic)) {
-      max-width: var(--ifm-footer-logo-max-width-dynamic);
-    }
   }
 
   &__title {
