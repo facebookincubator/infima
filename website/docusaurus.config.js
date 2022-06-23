@@ -106,13 +106,13 @@ const config = {
           items: [
             {
               label: 'Privacy',
-              href: 'https://opensource.facebook.com/legal/privacy/',
+              href: 'https://opensource.fb.com/legal/privacy/',
               target: '_blank',
               rel: 'noreferrer noopener',
             },
             {
               label: 'Terms',
-              href: 'https://opensource.facebook.com/legal/terms/',
+              href: 'https://opensource.fb.com/legal/terms/',
               target: '_blank',
               rel: 'noreferrer noopener',
             },
@@ -120,9 +120,11 @@ const config = {
         },
       ],
       logo: {
-        alt: 'Facebook Open Source Logo',
-        src: 'https://docusaurus.io/img/oss_logo.png',
-        href: 'https://opensource.facebook.com',
+        alt: 'Meta Open Source Logo',
+        // This default includes a positive & negative version, allowing for
+        // appropriate use depending on your site's style.
+        src: '/img/meta_opensource_logo_negative.svg',
+        href: 'https://opensource.fb.com',
       },
       copyright: `Copyright © ${new Date().getFullYear()} Meta Platforms, Inc.`,
     },

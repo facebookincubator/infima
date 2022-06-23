@@ -14,6 +14,7 @@
   --ifm-footer-padding-horizontal: calc(var(--ifm-spacing-horizontal) * 2);
   --ifm-footer-padding-vertical: calc(var(--ifm-spacing-vertical) * 2);
   --ifm-footer-title-color: inherit;
+  --ifm-footer-logo-max-width: min(30rem, 90vw);
 }
 
 .footer {
@@ -52,7 +53,7 @@
 
   &__logo {
     margin-top: 1rem;
-    max-width: 10rem;
+    max-width: var(--ifm-footer-logo-max-width);
   }
 
   &__title {
