@@ -43,7 +43,7 @@
   @mixin transition color background border-color,
     var(--ifm-button-transition-duration), var(--ifm-transition-timing-default);
 
-  &:hover {
+  &:any-link:hover {
     color: var(--ifm-button-color); /* Override for button links. */
     text-decoration: none;
   }

@@ -72,6 +72,9 @@ html[data-theme='dark'],
 
     &:hover {
       color: var(--ifm-navbar-link-hover-color);
+    }
+
+    &:any-link:hover {
       text-decoration: none;
     }
   }
@@ -148,6 +151,7 @@ html[data-theme='dark'],
     font-weight: var(--ifm-font-weight-semibold);
 
     &:hover,
+    &:any-link:hover,
     &--active {
       color: var(--ifm-navbar-link-hover-color);
       text-decoration: none;
