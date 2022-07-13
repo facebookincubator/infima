@@ -41,8 +41,7 @@ a {
   text-decoration: var(--ifm-link-decoration);
   @mixin transition color;
 
-  /* using :where() to avoid increasing specificity, see https://github.com/facebookincubator/infima/pull/266/files#r917208453 */
-  &:where(:any-link):hover {
+  &:hover {
     color: var(--ifm-link-hover-color);
     /* autoprefixer: ignore next */
     text-decoration: var(--ifm-link-hover-decoration);
