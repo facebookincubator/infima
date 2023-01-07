@@ -217,6 +217,10 @@ html[data-theme='dark'],
     width: var(--ifm-navbar-sidebar-width);
     @mixin transition opacity visibility transform, 250ms, ease-in-out;
 
+    @media (prefers-reduced-motion) {
+      @mixin transition visibility, 250ms, ease-in-out;
+    }
+
     &--show {
       ^&,
       ^&__backdrop {
@@ -239,6 +243,10 @@ html[data-theme='dark'],
       top: 0;
       visibility: hidden;
       @mixin transition opacity visibility, 100ms, ease-in-out;
+
+      @media (prefers-reduced-motion) {
+        @mixin transition visibility, 100ms, ease-in-out;
+      }
     }
 
     &__brand {
@@ -256,6 +264,10 @@ html[data-theme='dark'],
       height: calc(100% - var(--ifm-navbar-height));
       transform: translateZ(0);
       transition: transform var(--ifm-transition-fast) ease-in-out;
+
+      @media (prefers-reduced-motion) {
+        transition: none;
+      }
 
       &--show-secondary {
         transform: translate3d(
