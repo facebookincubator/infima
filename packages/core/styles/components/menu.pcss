@@ -23,6 +23,10 @@
   transform: rotate(180deg);
   width: 1.25rem;
   @mixin transition transform, var(--ifm-transition-fast), linear;
+
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
 @define-mixin menu-item {
