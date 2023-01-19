@@ -265,10 +265,6 @@ html[data-theme='dark'],
       transform: translateZ(0);
       transition: transform var(--ifm-transition-fast) ease-in-out;
 
-      @media (prefers-reduced-motion) {
-        transition: none;
-      }
-
       &--show-secondary {
         transform: translate3d(
           calc((var(--ifm-navbar-sidebar-width)) * -1),
