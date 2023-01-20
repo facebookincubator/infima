@@ -57,10 +57,6 @@
     visibility: hidden;
     z-index: var(--ifm-z-index-dropdown);
     @mixin transition opacity transform visibility;
-
-    @media (prefers-reduced-motion) {
-      @mixin transition visibility;
-    }
   }
 
   &__link {

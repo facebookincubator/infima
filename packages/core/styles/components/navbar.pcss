@@ -215,11 +215,8 @@ html[data-theme='dark'],
     transform: translate3d(-100%, 0, 0);
     visibility: hidden;
     width: var(--ifm-navbar-sidebar-width);
-    @mixin transition opacity visibility transform, 250ms, ease-in-out;
-
-    @media (prefers-reduced-motion) {
-      @mixin transition visibility, 250ms, ease-in-out;
-    }
+    @mixin transition opacity visibility transform, var(--ifm-transition-fast),
+      ease-in-out;
 
     &--show {
       ^&,
