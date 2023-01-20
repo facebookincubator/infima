@@ -239,11 +239,8 @@ html[data-theme='dark'],
       right: 0;
       top: 0;
       visibility: hidden;
-      @mixin transition opacity visibility, 100ms, ease-in-out;
-
-      @media (prefers-reduced-motion) {
-        @mixin transition visibility, 100ms, ease-in-out;
-      }
+      @mixin transition opacity visibility, var(--ifm-transition-fast),
+        ease-in-out;
     }
 
     &__brand {
