@@ -17,6 +17,7 @@
     "build:en": "yarn workspace infima build --locale en",
     "website:start": "yarn workspace infima-website start",
     "website:build": "yarn workspace infima-website build",
+    "website:serve": "yarn workspace infima-website serve",
     "website:deploy": "yarn workspace infima-website deploy",
     "lock:update": "npx --yes yarn-deduplicate",
     "postinstall": "yarn lock:update",
