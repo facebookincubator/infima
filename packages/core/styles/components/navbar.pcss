@@ -215,7 +215,8 @@ html[data-theme='dark'],
     transform: translate3d(-100%, 0, 0);
     visibility: hidden;
     width: var(--ifm-navbar-sidebar-width);
-    @mixin transition opacity visibility transform, 250ms, ease-in-out;
+    @mixin transition opacity visibility transform, var(--ifm-transition-fast),
+      ease-in-out;
 
     &--show {
       ^&,
@@ -238,7 +239,8 @@ html[data-theme='dark'],
       right: 0;
       top: 0;
       visibility: hidden;
-      @mixin transition opacity visibility, 100ms, ease-in-out;
+      @mixin transition opacity visibility, var(--ifm-transition-fast),
+        ease-in-out;
     }
 
     &__brand {

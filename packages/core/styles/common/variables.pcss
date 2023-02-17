@@ -149,4 +149,11 @@
   --ifm-z-index-overlay: 400;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ifm-transition-fast: 0ms;
+    --ifm-transition-slow: 0ms;
+  }
+}
+
 @custom-media --ifm-narrow-window (max-width: 996px);
