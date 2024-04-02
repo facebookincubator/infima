@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const visit = require('unist-util-visit');
+import { visit } from 'unist-util-visit';
 
 const codeBlockTitleRegex =
   /containerClassName=(?<quote>["'])(?<containerClassName>.*?)\1/;
@@ -28,3 +28,4 @@ module.exports = function plugin() {
   };
   return transformer;
 };
+0

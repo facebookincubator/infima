@@ -19,18 +19,19 @@
     "website:build": "yarn workspace infima-website build",
     "website:serve": "yarn workspace infima-website serve",
     "website:deploy": "yarn workspace infima-website deploy",
-    "lock:update": "npx --yes yarn-deduplicate",
+    "lock:update": "yarn dedupe --mode=update-lockfile",
     "postinstall": "yarn lock:update",
     "prepare": "husky install"
   },
   "devDependencies": {
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
-    "stylelint": "^15.10.1",
-    "stylelint-copyright": "^2.0.0-rc.1",
-    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
-    "stylelint-high-performance-animation": "^1.6.0",
-    "stylelint-order": "^5.0.0"
-  }
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "stylelint": "^16.3.1",
+    "stylelint-copyright": "^3.2.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
+    "stylelint-high-performance-animation": "^1.10.0",
+    "stylelint-order": "^6.0.4"
+  },
+  "packageManager": "yarn@4.1.1"
 }
