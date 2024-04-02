@@ -28,4 +28,3 @@ module.exports = function plugin() {
   };
   return transformer;
 };
-0
