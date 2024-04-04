@@ -75,6 +75,7 @@ packages/core/dist-branch
 # Yarn
 # https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
 .yarn/*
+website/.yarn/*
 !.yarn/releases
 !.yarn/patches
 !.yarn/plugins
