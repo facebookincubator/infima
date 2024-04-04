@@ -52,6 +52,7 @@ module.exports = function plugin() {
                               value: {
                                 type: 'Literal',
                                 value: `\`${html}\``,
+                                raw: `\`${html}\``,
                               },
                             },
                           ],
