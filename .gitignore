@@ -71,3 +71,18 @@ packages/core/demo/js
 # Dist folders
 packages/core/dist
 packages/core/dist-branch
+
+# Yarn
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+.yarn/*
+website/.yarn/*
+!.yarn/releases
+!.yarn/patches
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+# if you are NOT using Zero-installs, then:
+# comment the following lines
+#!.yarn/cache
+# and uncomment the following lines
+.pnp.*
