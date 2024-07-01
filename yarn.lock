@@ -8449,7 +8449,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"infima@npm:0.2.0-alpha.43, infima@workspace:packages/core":
+"infima@npm:0.2.0-alpha.43":
+  version: 0.2.0-alpha.43
+  resolution: "infima@npm:0.2.0-alpha.43"
+  checksum: 10c0/d248958713a97e1c9f73ace27ceff726ba86a9b534efb0ebdec3e72b785d8edb36db922e38ce09bbeb98a17b657e61357f22edc3a58f02ad51b7ae2ebd96e4e4
+  languageName: node
+  linkType: hard
+
+"infima@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "infima@workspace:packages/core"
   dependencies:
@@ -8461,7 +8468,7 @@ __metadata:
     gulp-rtlcss: "npm:^2.0.0"
     gulp-webserver: "npm:^0.9.1"
     postcss: "npm:^8.4.31"
-    postcss-preset-infima: "npm:^0.2.0-alpha.43"
+    postcss-preset-infima: "npm:^0.2.0-alpha.44"
   languageName: unknown
   linkType: soft
 
@@ -12802,7 +12809,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-preset-infima@npm:^0.2.0-alpha.43, postcss-preset-infima@workspace:packages/postcss-preset-infima":
+"postcss-preset-infima@npm:^0.2.0-alpha.44, postcss-preset-infima@workspace:packages/postcss-preset-infima":
   version: 0.0.0-use.local
   resolution: "postcss-preset-infima@workspace:packages/postcss-preset-infima"
   dependencies:
@@ -12819,7 +12826,7 @@ __metadata:
     postcss-preset-env: "npm:^7.7.2"
     postcss-sort-media-queries: "npm:^4.2.1"
   peerDependencies:
-    infima: ^0.2.0-alpha.43
+    infima: ^0.2.0-alpha.44
   languageName: unknown
   linkType: soft
 
