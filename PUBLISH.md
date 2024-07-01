@@ -1,5 +1,7 @@
 # Publish process
 
+Using Yarn v4 (install it with `corepack enable`)
+
 On `main` (or a feature branch):
 
 1. `git pull`
@@ -17,7 +19,9 @@ yarn install # Useful to update the lockfile
 git commit -a -m "release: v0.2.0-alpha.XXXXX"
 git tag -a "v0.2.0-alpha.XXXXX" -m "release: v0.2.0-alpha.XXXXX"
 
-yarn workspace infima publish
-yarn workspace postcss-preset-infima publish
+yarn workspace infima npm publish
+yarn workspace postcss-preset-infima npm publish
 git push && git push --tags
 ```
+
+(if needed, run `yarn npm login` first)
