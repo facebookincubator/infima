@@ -19,8 +19,8 @@ yarn install # Useful to update the lockfile
 git commit -a -m "release: v0.2.0-alpha.XXXXX"
 git tag -a "v0.2.0-alpha.XXXXX" -m "release: v0.2.0-alpha.XXXXX"
 
-yarn workspace infima npm publish
-yarn workspace postcss-preset-infima npm publish
+yarn workspace infima publish
+yarn workspace postcss-preset-infima publish
 git push && git push --tags
 ```
 
