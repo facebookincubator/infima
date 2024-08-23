@@ -13,7 +13,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-      - run: corepack enable
       - name: Install
         run: yarn install
       - name: Prettier
