@@ -20,8 +20,6 @@
     "website:serve": "yarn workspace infima-website serve",
     "website:deploy": "yarn workspace infima-website deploy",
     "website:clear": "yarn workspace infima-website clear",
-    "lock:update": "yarn dedupe --mode=update-lockfile",
-    "postinstall": "yarn lock:update",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -33,6 +31,5 @@
     "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
     "stylelint-high-performance-animation": "^1.10.0",
     "stylelint-order": "^6.0.4"
-  },
-  "packageManager": "yarn@4.1.1"
+  }
 }
