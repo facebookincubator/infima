@@ -31,5 +31,6 @@
     "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
     "stylelint-high-performance-animation": "^1.10.0",
     "stylelint-order": "^6.0.4"
-  }
+  },
+  "packageManager": "yarn@1.22.22"
 }
