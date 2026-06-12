@@ -14,6 +14,7 @@
     "url": "https://github.com/facebookincubator/infima.git",
     "directory": "packages/postcss-preset-infima"
   },
+  "homepage": "https://github.com/facebookincubator/infima/tree/main/packages/postcss-preset-infima#readme",
   "bugs": {
     "url": "https://github.com/facebookincubator/infima/issues"
   },
