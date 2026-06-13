@@ -1,6 +1,7 @@
 {
   "name": "postcss-preset-infima",
   "version": "0.2.0-alpha.45",
+  "homepage": "https://github.com/facebookincubator/infima",
   "description": "Postcss preset for Infima",
   "main": "index.js",
   "author": "Yangshun Tay",
